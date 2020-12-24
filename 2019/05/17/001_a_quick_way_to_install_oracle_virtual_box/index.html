@@ -318,12 +318,12 @@
 <p>Click ‘Finish’ the finalize it all and immediately start ‘Oracle VM VirtualBox’.</p>
 <hr>
 <p>Now <strong>what is installed</strong> in the background?</p>
-<p>Start by opening the ‘Device Management’ of Windows 10. Hit <code>&amp;lt;Windows-key&amp;gt;+&amp;lt;r&amp;gt;</code> to get the run-screen and type <code>devmgmt.msc</code></p>
+<p>Start by opening the ‘Device Management’ of Windows 10. Hit <code>&lt;Windows-key&gt;+&lt;r&gt;</code> to get the run-screen and type <code>devmgmt.msc</code></p>
 <p>Under the ‘Network adapter’ you should see a new network device called ‘VirtualBox Host-Only Ethernet Adapter’. This adapter is used to be able to make a network on your local machine with the image created that used this adapter. This makes it possible to make contact with the image from your local machine.</p>
 <p><img alt="general_002" class="post-img b-lazy" href="/images/posts/2019/001_a_quick_way_to_install_oracle_virtual_box/general_002.png" data-src="/images/posts/2019/001_a_quick_way_to_install_oracle_virtual_box/general_002.png"></p>
 <p>The same adapter can also be found in your control panel setting for windows 10. <code>Control Panel\Network and Internet\Network Connections</code></p>
 <p><img alt="general_003" class="post-img b-lazy" href="/images/posts/2019/001_a_quick_way_to_install_oracle_virtual_box/general_003.png" data-src="/images/posts/2019/001_a_quick_way_to_install_oracle_virtual_box/general_003.png"></p>
-<p>There is also a windows service installed. This can be seen by running the <code>services.msc</code> command in the run-screen <code>&amp;lt;Windows key&amp;gt;+&amp;lt;r&amp;gt;</code>. This service provides VBox services to expose the VBox API to your local machine. This way a developer can make calls to your VM images by custom created software.</p>
+<p>There is also a windows service installed. This can be seen by running the <code>services.msc</code> command in the run-screen <code>&lt;Windows key&gt;+&lt;r&gt;</code>. This service provides VBox services to expose the VBox API to your local machine. This way a developer can make calls to your VM images by custom created software.</p>
 <p><img alt="general_004" class="post-img b-lazy" href="/images/posts/2019/001_a_quick_way_to_install_oracle_virtual_box/general_004.png" data-src="/images/posts/2019/001_a_quick_way_to_install_oracle_virtual_box/general_004.png"></p>
 <p>Another nice thing to check out is to open the ‘Command Prompt’ with <code>cmd.exe</code> on the Windows run-screen.</p>
 <p>In the ‘Command Prompt’ give the command: <code>driverquery /FO list /v &gt; c:\temp\drivers.out</code></p>

@@ -335,7 +335,7 @@
 <p>Open your MobaXTerm to the CentOS VM we’re using and go to the ‘original’ location where your AppWorks installation journey started with the extracted installation directory!</p>
 <p>In my case the ‘home’ folder for the ‘otadmin’ installation account <code>cd /home/otadmin/opentext-appworks-suite-16.7-linux/OpenTextAppWorksPlatform/packagesigner</code></p>
 <p>First make the ‘packageigner.sh’ executable <code>chmod +x packagesigner.sh</code></p>
-<p>And do a fix command as this file contains windows-formatted <code>&amp;lt;Enter&amp;gt;</code> keys that the bash command does not like: <code>sed -i -e &#39;s/\r$//&#39; packagesigner.sh</code></p>
+<p>And do a fix command as this file contains windows-formatted <code>&lt;Enter&gt;</code> keys that the bash command does not like: <code>sed -i -e &#39;s/\r$//&#39; packagesigner.sh</code></p>
 <p>Now you can do <code>./packagesigner.sh</code> or <code>sh packagesigner.sh</code> to get some result back!</p>
 <p><img alt="deploy_009" class="post-img b-lazy" href="/images/posts/2020/052_how_to_deploy_an_appworks_package/deploy_009.png" data-src="/images/posts/2020/052_how_to_deploy_an_appworks_package/deploy_009.png"></p>
 <p>We can extend the command now with the correct parameters like this example:</p>

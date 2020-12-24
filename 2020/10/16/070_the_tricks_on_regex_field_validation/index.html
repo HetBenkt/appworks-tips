@@ -335,7 +335,7 @@
 <p>And craft it like this:</p>
 <p><img alt="validation_007" class="post-img b-lazy" href="/images/posts/2020/070_the_tricks_on_regex_field_validation/validation_007.png" data-src="/images/posts/2020/070_the_tricks_on_regex_field_validation/validation_007.png"></p>
 <blockquote>
-<p>For you to copy/paste: <code>item.Properties.todo_name.length() &amp;gt; 10</code></p>
+<p>For you to copy/paste: <code>item.Properties.todo_name.length() &gt; 10</code></p>
 </blockquote>
 <p>After save and publish of the entity you should see this error in runtime:</p>
 <p><img alt="validation_008" class="post-img b-lazy" href="/images/posts/2020/070_the_tricks_on_regex_field_validation/validation_008.png" data-src="/images/posts/2020/070_the_tricks_on_regex_field_validation/validation_008.png"></p>
@@ -348,7 +348,7 @@
 </ul>
 <p>Use the advanced editor and add this string: <code>! item.Properties.todo_name.matches(&quot;^([a-zA-Z]+)$&quot;)</code></p>
 <blockquote>
-<p>Note: Don’t forget that ! (exclamation point) operator as it causes the rule to fire if the value does &lt;u&gt;not&lt;/u&gt; match the regex.</p>
+<p>Note: Don’t forget that ! (exclamation point) operator as it causes the rule to fire if the value does <u>not</u> match the regex.</p>
 </blockquote>
 <p>With this error: ‘Name can only have alphabetical characters’</p>
 <hr>
@@ -381,7 +381,7 @@
 <li>Type: Event</li>
 <li>Name: onSaveCheckNumberRange</li>
 </ul>
-<p>Use the advanced editor and add this string: <code>! ((((integer) item.Properties.todo_name) &amp;gt;= 10)  &amp;&amp; (((integer) item.Properties.todo_name) &amp;lt;= 100))</code></p>
+<p>Use the advanced editor and add this string: <code>! ((((integer) item.Properties.todo_name) &gt;= 10)  &amp;&amp; (((integer) item.Properties.todo_name) &lt;= 100))</code></p>
 <p>With this error: ‘Name can only be a number between 10 and 100’</p>
 <blockquote>
 <p>And again, also remove the previous ‘onSaveCheckURL’ rule for testability!</p>

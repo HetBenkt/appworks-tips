@@ -327,12 +327,12 @@
 <li>First stop the Gateway tomcat instance <code>systemctl stop tomcat</code></li>
 <li>Edit the server.xml <code>vi /opt/tomcat/latest/conf/server.xml</code> with these 2 updates:</li>
 </ul>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">&amp;lt;</span>Connector ... useSendfile="false"/<span class="symbol">&amp;gt;</span></span><br><span class="line"><span class="symbol">&amp;lt;</span>Host ... undeployOldVersions="true"<span class="symbol">&amp;gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">...</span> <span class="attr">useSendfile</span>=<span class="string">"false"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Host</span> <span class="attr">...</span> <span class="attr">undeployOldVersions</span>=<span class="string">"true"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>Then we have a second file to edit <code>vi /opt/tomcat/latest/conf/context.xml</code> with this update:</li>
 </ul>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">&amp;lt;</span>Context antiResourceLocking="true" crossContext="true"<span class="symbol">&amp;gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">antiResourceLocking</span>=<span class="string">"true"</span> <span class="attr">crossContext</span>=<span class="string">"true"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>Next, we make the <a href="https://jdbc.postgresql.org/download.html" target="_blank" rel="noopener">PostgreSQL JDBC driver</a> (a .jar file) also (a copy from TomEE) available on the tomcat instance <code>cp /opt/tomee/latest/lib/postgresql-42.2.5.jar /opt/tomcat/latest/lib/postgresql-42.2.5.jar</code></p>
@@ -401,7 +401,7 @@
 </blockquote>
 <p>We’ll leave this screen for what it is for now, but ‘We’ll be back’ later…</p>
 <hr>
-<h5 id="Let-AppWorks-‘know’-we-have-a-Gateway-available-for-our-platform"><a href="#Let-AppWorks-‘know’-we-have-a-Gateway-available-for-our-platform" class="headerlink" title="Let AppWorks ‘know’ we have a Gateway available for our platform"></a>Let AppWorks ‘know’ we have a Gateway available for our platform</h5><p>For this we need to open our CMC tooling!…It’s the one where we need to set our display variable with <code>export DISPLAY=&amp;lt;IP:0.0&amp;gt;</code> and start it with <code>sudo /opt/opentext/AppWorksPlatform/defaultInst/bin/cmc.sh</code></p>
+<h5 id="Let-AppWorks-‘know’-we-have-a-Gateway-available-for-our-platform"><a href="#Let-AppWorks-‘know’-we-have-a-Gateway-available-for-our-platform" class="headerlink" title="Let AppWorks ‘know’ we have a Gateway available for our platform"></a>Let AppWorks ‘know’ we have a Gateway available for our platform</h5><p>For this we need to open our CMC tooling!…It’s the one where we need to set our display variable with <code>export DISPLAY=&lt;IP:0.0&gt;</code> and start it with <code>sudo /opt/opentext/AppWorksPlatform/defaultInst/bin/cmc.sh</code></p>
 <p>Add these 5 new properties with the corresponding values:</p>
 <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">com.opentext.appworks.gatewayUrl</span> = <span class="string">http://192.168.56.107:8181</span></span><br><span class="line"><span class="meta">com.opentext.appworks.username</span> = <span class="string">otag</span></span><br><span class="line"><span class="meta">com.opentext.appworks.password</span> = <span class="string">YWRtaW4=</span></span><br><span class="line"><span class="meta">com.opentext.appworks.OTDSAddress</span> = <span class="string">http://192.168.56.107:8181</span></span><br><span class="line"><span class="meta">com.opentext.appworks.OTDSResource</span> = <span class="string">d39b6ab8-7d8a-48d6-a7d5-b150865e8c0d</span></span><br></pre></td></tr></table></figure>
 
