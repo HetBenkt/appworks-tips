@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+	
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142664854-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-142664854-1');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Install Documentum with this ultimate guide | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="This guide will help you install Documentum on CentOS to support a CMS for our AppWorks platform.">
+
+	
+	<meta name="keywords" content="documentum, centos">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Install Documentum with this ultimate guide | AppWorks Tips">
+	<meta property="og:description" content="This guide will help you install Documentum on CentOS to support a CMS for our AppWorks platform.">
+	<meta property="og:url" content="http://www.appworks-tips.com/2019/12/27/032_install_documentum_with_this_ultimate_guide/">
+
+	
+	<meta property="article:published_time" content="2019-12-27T12:12:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2019/12/27/032_install_documentum_with_this_ultimate_guide/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/about" title="ABOUT">ABOUT</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/installation" title="INSTALLATION 20.4">INSTALLATION 20.4</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/ci_cd" title="CI/CD">CI/CD <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt" height="16pt" viewbox="0 0 16 16" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(255%,255%,0%);fill-opacity:1;" d="M 7.183594 7.742188 C 6.886719 7.867188 6.792969 8.105469 6.90625 8.371094 L 7.808594 7.992188 C 7.710938 7.761719 7.417969 7.644531 7.183594 7.742188 Z M 7.183594 7.742188 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(255%,255%,0%);fill-opacity:1;" d="M 14.480469 8.679688 L 15.601562 8 L 14.480469 7.320312 L 15.433594 6.417969 L 14.195312 5.984375 L 14.945312 4.90625 L 13.640625 4.742188 L 14.148438 3.53125 L 12.84375 3.640625 L 13.085938 2.351562 L 11.828125 2.726562 L 11.800781 1.417969 L 10.648438 2.046875 L 10.347656 0.769531 L 9.355469 1.628906 L 8.792969 0.441406 L 8 1.484375 L 7.207031 0.441406 L 6.644531 1.628906 L 5.652344 0.769531 L 5.351562 2.046875 L 4.199219 1.417969 L 4.171875 2.726562 L 2.914062 2.351562 L 3.160156 3.640625 L 1.851562 3.53125 L 2.359375 4.742188 L 1.058594 4.90625 L 1.804688 5.984375 L 0.566406 6.417969 L 1.519531 7.320312 L 0.398438 8 L 1.519531 8.679688 L 0.566406 9.582031 L 1.804688 10.011719 L 1.054688 11.089844 L 2.359375 11.257812 L 1.851562 12.46875 L 3.160156 12.359375 L 2.914062 13.648438 L 4.171875 13.269531 L 4.199219 14.582031 L 5.351562 13.953125 L 5.652344 15.230469 L 6.644531 14.371094 L 7.203125 15.558594 L 8 14.515625 L 8.792969 15.558594 L 9.355469 14.371094 L 10.347656 15.230469 L 10.648438 13.953125 L 11.800781 14.582031 L 11.828125 13.273438 L 13.085938 13.648438 L 12.839844 12.359375 L 14.148438 12.46875 L 13.640625 11.257812 L 14.945312 11.09375 L 14.195312 10.011719 L 15.433594 9.582031 Z M 5.421875 10.808594 L 4.863281 9.484375 C 4.757812 9.234375 4.597656 9.042969 4.316406 9.164062 C 4.011719 9.292969 4.011719 9.523438 4.148438 9.84375 L 4.6875 11.117188 L 3.695312 11.539062 L 2.636719 9.035156 L 3.542969 8.652344 L 3.707031 9.042969 C 3.804688 8.648438 3.980469 8.382812 4.359375 8.222656 C 5.015625 7.945312 5.492188 8.199219 5.78125 8.886719 L 6.414062 10.386719 Z M 8.011719 9.796875 C 7.210938 10.136719 6.394531 9.941406 6.039062 9.097656 C 5.695312 8.277344 6.085938 7.492188 6.890625 7.152344 C 7.816406 6.761719 8.644531 7.164062 9.015625 8.078125 L 7.117188 8.878906 C 7.246094 9.175781 7.554688 9.273438 7.820312 9.164062 C 7.976562 9.097656 8.089844 8.964844 8.097656 8.785156 L 9.050781 8.382812 C 9.140625 9.078125 8.597656 9.550781 8.011719 9.796875 Z M 12 8.027344 L 10.992188 6.722656 L 10.984375 6.726562 L 11.253906 8.339844 L 10.285156 8.75 L 8.402344 6.597656 L 9.371094 6.1875 L 10.40625 7.574219 L 10.417969 7.570312 L 10.148438 5.859375 L 10.992188 5.503906 L 12.027344 6.886719 L 12.035156 6.882812 L 11.769531 5.171875 L 12.710938 4.773438 L 12.96875 7.617188 Z M 12 8.027344 "/>
+</g>
+</svg>
+</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+            </li>
+            
+            
+            
+        </ul> 
+    </div>
+
+    
+    <div class="search-button">
+        <a class="subscribe-button" title="Search" href="#search" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+    </div>
+    
+
+    <div class="site-nav-right">
+        
+        <a class="subscribe-button" title="Search" href="#search" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+         
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2019-12-27T12:00:00.000Z" itemprop="datePublished">
+                    2019-12-27
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Installation/">Installation</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">Install Documentum with this ultimate guide</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2019/032_install_documentum_with_this_ultimate_guide/feature_tag.png)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>In this installment we’ll make a <strong>C</strong>ontent <strong>M</strong>anagement <strong>S</strong>ystem available as storage location for our data. The CMS is called ‘Documentum’ and is globally used at enterprise companies. Documentum saves data in a structured way in 1 location called a ‘repository’. All data in a repository is saved as an ‘object’ where the metadata is saved in a relational database and the content stored on a file storage.</p>
+<p>AppWorks has connectors available to connect several CMS systems and Documentum is one of them. AppWorks is an <strong>E</strong>nterprise <strong>S</strong>ervice <strong>B</strong>us that makes working with processes really easy but saving data in a structured way is something else. So, both systems working together is the best solution of all.</p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>Start your AppWorks VM and make connection with the MobaXTerm client with the in the samples created user ‘otadmin’ and related password ‘admin’.</p>
+<p>Go to the ‘Download’ section on the <a href="http://support.opentext.com/" target="_blank" rel="noopener">OpentText support</a> site and start looking for ‘Documentum Content Server’. We go for the latest 16.4 release (on CentOS 64-bits with PostgreSQL)</p>
+<p><a href="https://knowledge.opentext.com/knowledge/llisapi.dll?func=ll&objId=72073368&objAction=browse&viewType=1" target="_blank" rel="noopener"><strong><em>‘Documentum Server for LINUX64 Postgres Version 16.4’</em></strong></a></p>
+<p>Accept the license and start downloading the file ‘content_server_16.4_linux64_postgres.tar’</p>
+<p>Upload the downloaded file to the image in the home directory of in our case ‘/home/otadmin’</p>
+<p>Now we need to extract the file to some nice folder structure. Create a new folder with <code>mkdir content_server_16.4_linux64_postgres</code> and go into the folder with the <code>cd</code> command. Now extract the file <code>tar xvf ../content_server_16.4_linux64_postgres.tar</code></p>
+<p>This post will help you install Documentum, but make sure you also have the documentation available somewhere. This can again be found on the OpenText support site under the documentation section. Make sure you search for ‘Documentum Content Server’. The main PDF you need for now is the installation guide ‘Documentum Platform and Platform Extensions 16.4 Installation Guide’ and the release notes ‘Documentum Server 16.4 Release Notes’. </p>
+<p>The release notes refer to the ‘<a href="https://knowledge.opentext.com/knowledge/llisapi.dll?func=ll&objId=15507401&objAction=browse" target="_blank" rel="noopener">Product Compatibility Matrices</a>‘ where you can find an excel sheet ‘OpenText Product Compatibility Matrix (Current Maintenance).xlsx’ that covers all the compatibilities with the several software package. Nicely to have a look, but not required for now.</p>
+<p>In this ‘’Product Compatibility Matrices’ page there is also an important like to ‘Documentum Compatibility Matrices’ -&gt; ‘Documentum’ -&gt; ‘Documentum Platform - Compatibility’. Here you can find the PDF ‘Documentum Server_16.4.pdf’ that give you more inside on the compatibility specific for Documentum related software. Not required, but nice to know that it is available!</p>
+<hr>
+<h4 id="Pre-check-list"><a href="#Pre-check-list" class="headerlink" title="Pre-check list"></a>Pre-check list</h4><h5 id="Make-sure-you-are-administrator"><a href="#Make-sure-you-are-administrator" class="headerlink" title="Make sure you are administrator."></a>Make sure you are administrator.</h5><p>You have this privilege when you use the ‘otadmin’ user that we introduced in the posts on this site.</p>
+<h6 id="Install-‘TCL’-and-‘Expect’"><a href="#Install-‘TCL’-and-‘Expect’" class="headerlink" title="Install ‘TCL’ and ‘Expect’"></a>Install ‘TCL’ and ‘Expect’</h6><p>The EPEL repository is required for this, but already installed in other posts…These commands should run fine.</p>
+<blockquote>
+<p>Just install and don’t ask…I know…Sometimes it’s just what it is with Linux.</p>
+</blockquote>
+<p><code>sudo yum install tcl -y</code></p>
+<p><code>sudo yum install expect -y</code></p>
+<h5 id="XWindows-on-CentOS"><a href="#XWindows-on-CentOS" class="headerlink" title="XWindows on CentOS"></a>XWindows on CentOS</h5><p>Documentum uses an installation UI. Like we also saw for the AppWorks installation. You are covered when you use the MobaXTerm client! Make sure you EXPORT DISPLAY points to the correct value.</p>
+<h5 id="64-bits-architecture"><a href="#64-bits-architecture" class="headerlink" title="64-bits architecture"></a>64-bits architecture</h5><p>Make sure your VM has the 64-bits architecture with <code>uname -m</code> where the result should be <code>x86_64</code></p>
+<h5 id="Environment-variables"><a href="#Environment-variables" class="headerlink" title="Environment variables"></a>Environment variables</h5><p>Make the $DOCUMENTUM and $DM_HOME variables available and extend the $LD_LIBRARY_PATH with the Documentum bin directory. You can use these steps:</p>
+<ul>
+<li>Create a directory: <code>sudo mkdir /opt/documentum</code></li>
+<li>Own it to the otadmin user <code>sudo chown otadmin /opt/documentum/</code></li>
+<li>Edit the ~/.bash_profile of the ‘otadmin’ user: <code>sudo vi ~/.bash_profile</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .bash_profile</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Get the aliases and functions</span></span><br><span class="line"><span class="keyword">if</span> [ -f ~/.bashrc ]; <span class="keyword">then</span></span><br><span class="line">     . ~/.bashrc</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># User specific environment and startup programs</span></span><br><span class="line"></span><br><span class="line">CLASSPATH=<span class="variable">$CLASSPATH</span>:/opt/tomee/apache-tomee-plus-8.0.0-M2/lib/postgresql-42.2.5.jar:/opt/opentext/AppWorksPlatform/defaultInst/cordyscp.jar</span><br><span class="line"><span class="built_in">export</span> CLASSPATH</span><br><span class="line"></span><br><span class="line">JAVA_HOME=/usr/lib/jvm/java-11-openjdk</span><br><span class="line"><span class="built_in">export</span> JAVA_HOME</span><br><span class="line"></span><br><span class="line">PATH=<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/.<span class="built_in">local</span>/bin:<span class="variable">$HOME</span>/bin</span><br><span class="line"><span class="built_in">export</span> PATH</span><br><span class="line"></span><br><span class="line">LIB_PATH=/usr/lib/jvm/java-11-openjdk/lib/server/</span><br><span class="line"></span><br><span class="line">LD_LIBRARY_PATH=<span class="variable">$LD_LIBRARY_PATH</span>:<span class="variable">$LIB_PATH</span>:/opt/opentext/AppWorksPlatform/defaultInst/lib:/opt/documentum/product/16.4/bin</span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH</span><br><span class="line"></span><br><span class="line">CATALINA_HOME=/opt/tomee/apache-tomee-plus-8.0.0-M2</span><br><span class="line"><span class="built_in">export</span> CATALINA_HOME</span><br><span class="line"></span><br><span class="line">TOMCAT_HOME=/opt/tomcat/apache-tomcat-8.5.43</span><br><span class="line"><span class="built_in">export</span> TOMCAT_HOME</span><br><span class="line"></span><br><span class="line">DOCUMENTUM=/opt/documentum</span><br><span class="line"><span class="built_in">export</span> DOCUMENTUM</span><br><span class="line"></span><br><span class="line">DM_HOME=<span class="variable">$DOCUMENTUM</span>/product/16.4</span><br><span class="line"><span class="built_in">export</span> DM_HOME</span><br><span class="line"></span><br><span class="line">POSTGRESQL_HOME=/usr/pgsql-11/bin/</span><br><span class="line"><span class="built_in">export</span> POSTGRESQL_HOME</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>When done reload your profile via the command: <code>source ~/.bash_profile</code></li>
+<li>Check if it’s all OK via: <code>env | grep DM_HOME</code></li>
+</ul>
+<h5 id="Database"><a href="#Database" class="headerlink" title="Database"></a>Database</h5><p>Meat the PostgreSQL version from the compatibility matrix. For us the for AppWorks used ‘PostgreSQL 11.1.0 64-bits’ should be fine although 9.4 or 9.6 is recommended.</p>
+<h5 id="ODBC-connector"><a href="#ODBC-connector" class="headerlink" title="ODBC connector"></a>ODBC connector</h5><p>Make the PostgreSQL ODBC 64-bits connector available with these steps:</p>
+<ul>
+<li><code>sudo yum install postgresql-odbc.x86_64 -y</code></li>
+<li>Check if the availability is OK: <code>ls /usr/lib64/psqlodbcw* -l</code></li>
+<li>Check the odbc.ini location <code>odbcinst -j</code></li>
+<li>Create a new odbc.ini <code>sudo vi /etc/odbc.ini</code> with this content:</li>
+</ul>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">[MyPostgres]</span></span><br><span class="line"><span class="attr">Description</span> = <span class="string">PostgreSQL connection to MyPostgres</span></span><br><span class="line"><span class="attr">Driver</span> = <span class="string">PostgreSQL</span></span><br><span class="line"><span class="attr">Database</span> = <span class="string">postgres</span></span><br><span class="line"><span class="attr">Servername</span> = <span class="string">localhost</span></span><br><span class="line"><span class="attr">UserName</span> = <span class="string">postgres</span></span><br><span class="line"><span class="attr">Password</span> = <span class="string">admin</span></span><br><span class="line"><span class="attr">Port</span> = <span class="string">5432</span></span><br><span class="line"><span class="attr">Protocol</span> = <span class="string">7.4</span></span><br><span class="line"><span class="attr">ReadOnly</span> = <span class="string">No</span></span><br><span class="line"><span class="attr">RowVersioning</span> = <span class="string">No</span></span><br><span class="line"><span class="attr">ShowSystemTables</span> = <span class="string">No</span></span><br><span class="line"><span class="attr">ShowOidColumn</span> = <span class="string">No</span></span><br><span class="line"><span class="attr">FakeOidIndex</span> = <span class="string">No</span></span><br><span class="line"><span class="attr">UpdateableCursors</span> = <span class="string">Yes</span></span><br><span class="line"><span class="attr">DEBUG</span> = <span class="string">Yes</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="Fix-command"><a href="#Fix-command" class="headerlink" title="Fix command"></a>Fix command</h5><p>Do a fix command <code>sudo ln -s /usr/lib64/libsasl2.so.3 /usr/lib64/libsasl2.so.2</code></p>
+<h5 id="Directory-availability"><a href="#Directory-availability" class="headerlink" title="Directory availability"></a>Directory availability</h5><p>Create a mandatory directory for the repository and own it to the ‘postgres’ user</p>
+<ul>
+<li><p><code>sudo mkdir /var/lib/pgsql/11/data/db_aw_repo_dat.dat</code></p>
+</li>
+<li><p><code>sudo chown -R postgres:postgres /var/lib/pgsql/11/data/db_aw_repo_dat.dat</code></p>
+<blockquote>
+<p> ‘aw_repo’ will be the name of our Documentum repository!</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="Setup-services"><a href="#Setup-services" class="headerlink" title="Setup services"></a>Setup services</h5><p>Edit the services table <code>sudo vi /etc/services</code> and add these 2 lines at the end of the file</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dm_repo1        47625/tcp               <span class="comment"># 16.4 Repository native connection</span></span><br><span class="line">dm_repo1_s      47626/tcp               <span class="comment"># 16.4 Repository secure connection</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="Application-Server-Optional"><a href="#Application-Server-Optional" class="headerlink" title="Application Server (Optional)"></a>Application Server (Optional)</h5><p>Tomcat version….Maybe for DA, but not required!</p>
+<p>We will run an extra tomcat instance local our computer outside the VM as it makes the image rather heavy and is not needed for our AppWorks instance</p>
+<p>Documentum has several clients available, but the <strong>D</strong>ocumentum <strong>A</strong>dminstrator is for managing the environment, but we’ll see there are other tools also.</p>
+<h5 id="Port-availability"><a href="#Port-availability" class="headerlink" title="Port availability"></a>Port availability</h5><p>Make sure you have 20 follow up ports available for the JMS installation (standard port 9080)</p>
+<ul>
+<li><p>With <code>sudo netstat -ltnp | grep 90</code> you can check if ports are available</p>
+<blockquote>
+<p> AppWorks uses a java instance on port 9090, so our JMS should run on 9060!</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h4 id="Documentum-installation"><a href="#Documentum-installation" class="headerlink" title="Documentum installation"></a>Documentum installation</h4><p>Now the major step of this blog post.</p>
+<p>Go to your extracted installation files: <code>cd ~/content_server_16.4_linux64_postgres</code></p>
+<p>Give the bin file execution permission <code>chmod +x serverSetup.bin</code></p>
+<p>And execute the magic command: <code>./serverSetup.bin</code></p>
+<blockquote>
+<p>Don’t run with the sudo command as otadmin should be the owner of it all!</p>
+</blockquote>
+<blockquote>
+<p>Graphical installers are not supported by the VM. The console mode will be used instead…You need to make sure your DISPLAY variable is correct! <code>export DISPLAY=IP:0.0</code></p>
+</blockquote>
+<p>Now just follow the steps of the wizard and make sure to update the port number from 9080 to 9060!</p>
+<p><img alt="dctm_001" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_001.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_001.png"></p>
+<p>Accept the terms and hit Next</p>
+<p><img alt="dctm_002" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_002.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_002.png"></p>
+<p>Use password ‘admin’ and update the port to 9060!…Then hit ‘Next’</p>
+<p><img alt="dctm_003" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_003.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_003.png"></p>
+<p>Now hit that bright and shining ‘Install’ button</p>
+<p><img alt="dctm_004" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_004.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_004.png"></p>
+<p><img alt="dctm_005" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_005.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_005.png"></p>
+<p><img alt="dctm_006" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_006.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_006.png"></p>
+<p>Leave the ‘No’ option and click ‘Next’</p>
+<p><img alt="dctm_007" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_007.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_007.png"></p>
+<p>Choose the ‘Configure later’ and click ‘Done’</p>
+<p>As you can see in the last screenshot run this command: <code>sudo /opt/documentum/dba/dm_root_task_cs16.4</code></p>
+<p>Now the software installation part is done. Next is setting up a connection broker and a brand-new repository.</p>
+<hr>
+<h4 id="Connection-broker"><a href="#Connection-broker" class="headerlink" title="Connection broker"></a>Connection broker</h4><p>This is the component that runs as a broker between the repositories (if you have multiple) and the end-users. It makes it possible to only show those repositories related for the correct users. You always need one. Also, if you only run one repository like we do for our VM.</p>
+<p>So, it’s time the run the server configuration program at:   <code>/opt/documentum/product/16.4/install/dm_launch_server_config_program.sh</code></p>
+<p><img alt="dctm_008" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_008.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_008.png"></p>
+<p><img alt="dctm_009" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_009.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_009.png"></p>
+<p>Select the ‘Connection broker’ and click ‘Next’</p>
+<p><img alt="dctm_010" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_010.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_010.png"></p>
+<p>‘Add a connection broker’ and click ‘Next’</p>
+<p><img alt="dctm_011" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_011.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_011.png"></p>
+<p>Choose the ‘Native’ option for now and click ‘Next’</p>
+<blockquote>
+<p>Native is fine for our development image, but it’s also fine to use the ‘Native and Secure’ option</p>
+</blockquote>
+<p><img alt="dctm_012" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_012.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_012.png"></p>
+<p>Give the broker a name and leave to port as is. Click ‘Next’</p>
+<p><img alt="dctm_0013" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_013.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_013.png"></p>
+<p>And click ‘Next’</p>
+<p><img alt="dctm_014" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_014.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_014.png"></p>
+<p>And ‘Next’ again with the ‘Finish configuration’ option</p>
+<p><img alt="dctm_015" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_015.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_015.png"></p>
+<p>You might find some startup issues for the appserver instance. This has to do with IPV6!</p>
+<p>Look in the logging of the appserver instance <code>tail -f /opt/documentum/wildfly9.0.1/server/DctmServer_MethodServer/log/server.log</code></p>
+<p>Edit <code>vi /opt/documentum/wildfly9.0.1/server/startMethodServer.sh</code> and add <code>-Djava.net.preferIPv4Stack=true</code> to the JAVA_OPTS</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JAVA_OPTS=<span class="string">"<span class="variable">$USER_MEM_ARGS</span> -Djboss.server.base.dir=<span class="variable">$JBOSS_BASE_DIR</span> -Djava.net.preferIPv4Stack=true"</span></span><br></pre></td></tr></table></figure>
+
+<p>Now start this appserver again to see if things run better <code>/usr/bin/nohup /opt/documentum/wildfly9.0.1/server/startMethodServer.sh &amp;</code></p>
+<blockquote>
+<p>Might be the case you also need to start the connection broker again with <code>/opt/documentum/dba/dm_launch_ConnectionBroker</code></p>
+<p>Logging for the connection broker can be found here: <code>tail -f /opt/documentum/dba/log/docbroker.win-5skkmburvo7.mydomain.com.1489.log</code></p>
+</blockquote>
+<hr>
+<h4 id="Service-for-the-‘Connection-broker’"><a href="#Service-for-the-‘Connection-broker’" class="headerlink" title="Service for the ‘Connection broker’"></a>Service for the ‘Connection broker’</h4><p>Let’s create a new file <code>sudo vi /usr/lib/systemd/system/dm_connectionbroker.service</code> and add this content:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Documentum 16.4 Connection Broker</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line"></span><br><span class="line">User=otadmin</span><br><span class="line">Group=otadmin</span><br><span class="line"></span><br><span class="line">ExecStart=/opt/documentum/dba/dm_launch_ConnectionBroker</span><br><span class="line">ExecStop=/opt/documentum/dba/dm_stop_ConnectionBroker</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>Reload the services daemon: <code>systemctl daemon-reload</code></p>
+<p>And enable the service: <code>systemctl enable dm_connectionbroker.service</code></p>
+<p>Also Start/Stop/Status are available now: <code>systemctl start|stop|status dm_connectionbroker.service</code></p>
+<hr>
+<h4 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h4><p>This is the component that will store all our information. Everything you save in a repository is called on object. An object contains 2 parts! This first part is the metadata which is stored in the database. The second part in the optional content which is saved on the file storage.</p>
+<p>It’s time the run the server configuration program for the second time:   <code>/opt/documentum/product/16.4/install/dm_launch_server_config_program.sh</code></p>
+<p><img alt="dctm_016" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_016.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_016.png"></p>
+<p>Select the ‘Repository’ option and click ‘Next’</p>
+<p><img alt="dctm_017" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_017.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_017.png"></p>
+<p>‘Add a new repository’ and click ‘Next’</p>
+<p><img alt="dctm_018" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_018.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_018.png"></p>
+<p>Leave the AEK passphrase ‘empty’ and disable the ‘Lockbox’ option. Hit ‘Next’</p>
+<p><img alt="dctm_019" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_019.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_019.png"></p>
+<p>This screen is fine. Hit ‘Next’</p>
+<p><img alt="dctm_020" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_020.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_020.png"></p>
+<p>Also, this is fine. Hit ‘Next’</p>
+<p><img alt="dctm_021" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_021.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_021.png"></p>
+<p>Fine…’Next’</p>
+<p><img alt="dctm_022" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_022.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_022.png"></p>
+<p>Fill in the form like this, but might be anything you like except for the service name which should be the same as added to the <code>/etc/services</code></p>
+<ul>
+<li>Repository name: aw_repo</li>
+<li>Repository ID: 1234321</li>
+<li>Description: AppWorks Repository</li>
+<li>Service name: dm_repo1</li>
+</ul>
+<p>Hit ‘Next’</p>
+<p><img alt="dctm_023" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_023.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_023.png"></p>
+<p>Make sure the ‘Connection Broker’ is running and hit ‘Next’</p>
+<p><img alt="dctm_024" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_024.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_024.png"></p>
+<p>Select the ‘Native’ connection mode (as configured in the Connection Broker setup) and click ‘Next’</p>
+<p><img alt="dctm_025" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_025.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_025.png"></p>
+<p>Let the setup create the database information. Hit ‘Next’</p>
+<p><img alt="dctm_026" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_026.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_026.png"></p>
+<p>Provide the passwords. In my case ‘admin’ and hit ‘Next’</p>
+<p><img alt="dctm_027" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_027.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_027.png"></p>
+<p>Leave as is. Hit ‘Next’</p>
+<p><img alt="dctm_028" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_028.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_028.png"></p>
+<p>Provide the ‘dm_bof_registry’ user account with a password. We use the same password as the username. Hit ‘Next’.</p>
+<blockquote>
+<p>The dm_bof_registry user is part of the <strong>B</strong>usiness <strong>O</strong>bject <strong>F</strong>ramework. BOF make it easy to extend Documentum functionality!</p>
+</blockquote>
+<!--While you get a coffee...You see these screens passing by-->
+
+<p><img alt="dctm_029" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_029.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_029.png"></p>
+<p><img alt="dctm_030" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_030.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_030.png"></p>
+<p><img alt="dctm_031" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_031.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_031.png"></p>
+<p><img alt="dctm_032" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_032.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_032.png"></p>
+<p><img alt="dctm_033" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_033.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_033.png"></p>
+<p><img alt="dctm_034" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_034.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_034.png"></p>
+<p><img alt="dctm_035" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_035.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_035.png"></p>
+<p><img alt="dctm_036" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_036.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_036.png"></p>
+<p>Hit the almost final ‘Next’</p>
+<p><img alt="dctm_037" class="post-img b-lazy" href="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_037.png" data-src="/images/posts/2019/032_install_documentum_with_this_ultimate_guide/dctm_037.png"></p>
+<p>Hit the final ‘Next’ for ending the repository creation part.</p>
+<hr>
+<h4 id="Create-a-service-for-the-‘Repository’"><a href="#Create-a-service-for-the-‘Repository’" class="headerlink" title="Create a service for the ‘Repository’"></a>Create a service for the ‘Repository’</h4><p>Give this command <code>sudo vi /usr/lib/systemd/system/dm_repository.service</code> and add this content to the file:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Documentum 16.4 Repository</span><br><span class="line">After=dm_connectionbroker.service</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line"></span><br><span class="line">User=otadmin</span><br><span class="line">Group=otadmin</span><br><span class="line"></span><br><span class="line">ExecStart=/opt/documentum/dba/dm_start_aw_repo</span><br><span class="line">ExecStop=/opt/documentum/dba/dm_shutdown_aw_repo</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>Reload the services daemon: <code>systemctl daemon-reload</code></p>
+<p>Enable the service: <code>systemctl enable dm_repository.service</code></p>
+<p>Start/Stop/Status: <code>systemctl start|stop|status dm_repository.service</code></p>
+<p>Logging can be found here <code>tail -f /opt/documentum/dba/log/aw_repo.log</code></p>
+<hr>
+<h4 id="Create-a-service-for-the-‘Java-Method-Server-JMS-’"><a href="#Create-a-service-for-the-‘Java-Method-Server-JMS-’" class="headerlink" title="Create a service for the ‘Java Method Server (JMS)’"></a>Create a service for the ‘Java Method Server (JMS)’</h4><p>Yes…It’s the appserver instance created during the ‘Connection Broker’ setup!</p>
+<p>Give the command <code>sudo vi /usr/lib/systemd/system/dm_jms.service</code> with this content:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Documentum 16.4 JMS</span><br><span class="line">After=dm_repository.service</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line"></span><br><span class="line">User=otadmin</span><br><span class="line">Group=otadmin</span><br><span class="line"></span><br><span class="line">ExecStart=/usr/bin/nohup /opt/documentum/wildfly9.0.1/server/startMethodServer.sh &amp;</span><br><span class="line">ExecStop=/opt/documentum/wildfly9.0.1/server/stopMethodServer.sh</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>Reload the services daemon: <code>systemctl daemon-reload</code></p>
+<p>Enable the service: <code>systemctl enable dm_jms.service</code></p>
+<p>Start/Stop/Status: <code>systemctl start|stop|status dm_jms.service</code></p>
+<p>The Wildfly appserver console can be reached on the URL: <a href="http://192.168.56.107:9060" target="_blank" rel="noopener">http://192.168.56.107:9060</a></p>
+<hr>
+<h4 id="Deploy-a-Documentum-client"><a href="#Deploy-a-Documentum-client" class="headerlink" title="Deploy a Documentum client"></a>Deploy a Documentum client</h4><p>Now it’s time to create a client on our local machine (not the VM). We will not cover this part in this post as it is not needed for the AppWorks platform!</p>
+<p>For Documentum we can use the <strong>D</strong>ocumentum <strong>A</strong>dministrator client to login on our repository. This client can be downloaded also from the support side. It’s a .war file which can be deployed on a tomcat instance. Make sure you run the correct java version with the correct tomcat version. After the .war deployment you need to make sure the ‘dfc.properties’ of the clients point to the correct repository. Here is an example for my installation.</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">dfc.docbroker.host[0]</span>=<span class="string">192.168.56.107</span></span><br><span class="line"><span class="meta">dfc.docbroker.port[0]</span>=<span class="string">1489</span></span><br><span class="line"><span class="meta">dfc.globalregistry.repository</span>=<span class="string">aw_repo</span></span><br><span class="line"><span class="meta">dfc.globalregistry.password</span>=<span class="string">dm_bof_registry</span></span><br><span class="line"><span class="meta">dfc.globalregistry.username</span>=<span class="string">dm_bof_registry</span></span><br><span class="line"><span class="meta">dfc.session.secure_connect_default</span>=<span class="string">native</span></span><br><span class="line"><span class="meta">dfc.date_format</span>=<span class="string">dd/mm/yyyy hh:mi:ss</span></span><br><span class="line"><span class="meta">dfc.tracing.enable</span>=<span class="string">false</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="Expose-ports-Optional"><a href="#Expose-ports-Optional" class="headerlink" title="Expose ports (Optional)"></a>Expose ports (Optional)</h4><p>It could be that both the repository and connection broker service are not reachable from outside the VM. Run these commands:</p>
+<p><code>sudo netstat -ltnp | grep 1489</code></p>
+<p><code>sudo netstat -ltnp | grep 47625</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tcp        0      0 127.0.0.1:1489          0.0.0.0:*               LISTEN      5231/./dmdocbroker</span><br><span class="line">tcp        0      0 127.0.0.1:47625         0.0.0.0:*               LISTEN      5394/./documentum</span><br></pre></td></tr></table></figure>
+
+<p>Then 127.0.0.1 is your problem here. It  should be 0.0.0.0 or the correct IP.</p>
+<p><em>For the connection broker</em> you can start it like this to solve the problem</p>
+<p><code>sh /opt/documentum/dba/dm_launch_default -host 192.168.56.107</code></p>
+<p><em>For the repository</em> you need to edit the server.ini </p>
+<p><code>vi /opt/documentum/dba/config/aw_repo/server.ini</code> and add</p>
+<ol>
+<li><code>host = 192.168.56.107</code> in the [SERVER_STARTUP]</li>
+<li><code>host = 192.168.56.107</code> in the [DOCBROKER_PROJECTION_TARGET]</li>
+</ol>
+<p>After restart of both the services they should be reachable from outside the VM.</p>
+<hr>
+<h4 id="IDQL-and-IAPI"><a href="#IDQL-and-IAPI" class="headerlink" title="IDQL and IAPI"></a>IDQL and IAPI</h4><p>It is not required to have an end-user client because Documentum provides some basic tooling to view things in the repository. These tools are the IDQL and IAPI tools.</p>
+<p><strong>D</strong>ocumentum <strong>Q</strong>uery <strong>L</strong>anguage</p>
+<p>DQL is a subset of SQL with specific Documentum functionality. So, we can do all kind of query statement like a SELECT or on UPDATE. A DQL reference guide can be found in PDF format on the support side.</p>
+<p><strong>A</strong>pplication <strong>P</strong>rogramming <strong>I</strong>nterface</p>
+<p>API is the low-end communication from client to server. With this tool you can call specific function on 1 object. Like a SET or a CHECKOUT. Also, for API there is a reference guide available.</p>
+<p>Both tools run under the JVM delivered with Documentum (version 8), but for AppWorks we installed JVM version 11 and pointed also to this version from the $LD_LIBRARY_PATH variable with $LIB_PATH. For this to work you need to modify the $LD_LIBRARY_PATH variable so it only finds the Java 8 libraries:</p>
+<p><code>export LD_LIBRARY_PATH=/opt/documentum/product/16.4/bin:/opt/documentum/java64/1.8.0_152/jre/lib/amd64/server</code></p>
+<p>After this change you should be able to run </p>
+<p><code>/opt/documentum/product/16.4/bin/iapi aw_repo</code> </p>
+<blockquote>
+<p>Type ‘quit’ to exit</p>
+</blockquote>
+<p><code>/opt/documentum/product/16.4/bin/idql aw_repo</code></p>
+<blockquote>
+<p>Type ‘quit’ to exit</p>
+</blockquote>
+<p>Use <code>export LD_LIBRARY_PATH=$LIB_PATH:/opt/opentext/AppWorksPlatform/defaultInst/lib:/opt/documentum/product/16.4/bin</code> to get back to the original settings!</p>
+<p>Also make sure that your ‘dfc.properties’ <code>vi /opt/documentum/config/dfc.properties</code> is pointing to the correct IP address or hostname <code>dfc.docbroker.host[0]=192.168.56.107</code>. </p>
+<blockquote>
+<p>Should all be fine from the initial installation now.</p>
+</blockquote>
+<hr>
+<h5 id="Performance-tweaks"><a href="#Performance-tweaks" class="headerlink" title="Performance tweaks"></a>Performance tweaks</h5><p>As a last step we will do some tweaking as I see the VM we’ve created gets a bit slow on the resources it was initially applied too. That was 9Gb of RAM with 2 CPU’s.</p>
+<p>You can add extra memory to the machine, but we also tweak the services of in this case Documentum.</p>
+<p>Let’s start with the <strong>JMS service</strong></p>
+<p>Edit <code>vi /opt/documentum/wildfly9.0.1/server/startMethodServer.sh</code> and update the memory settings:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">USER_MEM_ARGS=<span class="string">"-Xms512m -Xmx512m -Xss256k -XX:+DisableExplicitGC"</span></span><br></pre></td></tr></table></figure>
+
+<p>Restart the service <code>systemctl stop|start dm_jms.service</code></p>
+<p>Then we have the <strong>Repository service</strong></p>
+<p>Edit <code>vi /opt/documentum/dba/config/aw_repo/server.ini</code> and update these values</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">method_server_threads</span> = <span class="string">3</span></span><br><span class="line"><span class="attr">start_index_agents</span> = <span class="string">F</span></span><br><span class="line"><span class="attr">use_estimate_search</span> = <span class="string">F</span></span><br><span class="line"><span class="comment">#This one is not available yet, but as we disabled IPV6 on the VM on another post this is a logic setting to do.</span></span><br><span class="line"><span class="attr">ip_mode</span> = <span class="string">V4ONLY</span></span><br></pre></td></tr></table></figure>
+
+<p>Restart the service <code>systemctl stop|start dm_repository.service</code></p>
+<hr>
+<h5 id="Mail-settings"><a href="#Mail-settings" class="headerlink" title="Mail settings"></a>Mail settings</h5><p>Documentum can use an SMTP server for sending out mail. If it sends out a mail is configured in the server.ini with the option <code>mail_notifcation = true</code>. When not configured TRUE is the default value.</p>
+<p>Only Documentum and specific the repository is not yet aware of an SMTP server. So, we’ll add one to the service with the IDQL tooling.</p>
+<p>Start IDQL as explained before and run this DQL query:</p>
+<p><code>SELECT r_object_id, object_name, r_host_name, mail_method, smtp_server FROM dm_server_config</code></p>
+<blockquote>
+<p>Give a ‘go’ command after the <code>&amp;lt;Enter&amp;gt;</code> to run the query!</p>
+</blockquote>
+<p>You’ll see the SMTP server is empty. Let’s update it:</p>
+<p><code>UPDATE dm_server_config OBJECT SET smtp_server = &#39;localhost&#39;</code></p>
+<blockquote>
+<p>The ‘mail_method’ can be left empty as the default value will be ‘dm_event_sender’. This one is pointing to a script located here: <code>less /opt/documentum/product/16.4/bin/dm_event_sender.ebs</code></p>
+</blockquote>
+<p>Then the installation owner ‘otadmin’ needs to have a mail address to send information to</p>
+<p><code>SELECT r_object_id, user_name, user_address FROM dm_user WHERE user_name = &#39;otadmin&#39;</code></p>
+<p>You’ll see the mail address of the user is not valid. Update can be done like this:</p>
+<p><code>UPDATE dm_user OBJECT SET user_address = &#39;otadmin@mydomain.com&#39; WHERE user_name = &#39;otadmin&#39;</code></p>
+<p>Restart the repository to apply the changes!</p>
+<p>Now regularly check your mail for the ‘otadmin’ user with the already configured Thunderbird client from another post.</p>
+<hr>
+<p>Not needed, but when %^^$&amp;% hits the fan on database level <code>sudo -u postgres psql</code></p>
+<ul>
+<li><code>\l</code> for listing the databases </li>
+<li><code>\c dm_aw_repo_docbase</code> to connect to the database</li>
+<li><code>DROP DATABASE dm_aw_repo_docbase;</code></li>
+<li><code>select * from pg_tablespace;</code></li>
+<li><code>DROP TABLESPACE dm_aw_repo_docbase;</code></li>
+<li><code>select * from pg_roles;</code></li>
+<li><code>DROP ROLE aw_repo;</code></li>
+</ul>
+<hr>
+<p>And that give us a ‘DONE’ we can be proud of. We have made Documentum available for our AppWorks platform where we can save our data in a structured way. Next step is to connect these 2 platforms to each other. Have a great day and I see you in the next post. Please let me know your thoughts in the comments and weather you would like to get more information about the end-user clients for Documentum.</p>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site.</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="Make the Documentum CMIS to AppWorks connection work for you" href="/2020/01/03/033_make_the_documentum_cmis_to_appworks_connection_work_for_you/">
+            ← Make the Documentum CMIS to AppWorks connection work for you
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="The lazy installation to make a mail service available" href="/2019/12/20/031_the_lazy_installation_to_make_a_mail_service_available/">
+            The lazy installation to make a mail service available →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Pre-check-list"><span class="toc-text">Pre-check list</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Make-sure-you-are-administrator"><span class="toc-text">Make sure you are administrator.</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#Install-‘TCL’-and-‘Expect’"><span class="toc-text">Install ‘TCL’ and ‘Expect’</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#XWindows-on-CentOS"><span class="toc-text">XWindows on CentOS</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#64-bits-architecture"><span class="toc-text">64-bits architecture</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Environment-variables"><span class="toc-text">Environment variables</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Database"><span class="toc-text">Database</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ODBC-connector"><span class="toc-text">ODBC connector</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Fix-command"><span class="toc-text">Fix command</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Directory-availability"><span class="toc-text">Directory availability</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Setup-services"><span class="toc-text">Setup services</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Application-Server-Optional"><span class="toc-text">Application Server (Optional)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Port-availability"><span class="toc-text">Port availability</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Documentum-installation"><span class="toc-text">Documentum installation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Connection-broker"><span class="toc-text">Connection broker</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Service-for-the-‘Connection-broker’"><span class="toc-text">Service for the ‘Connection broker’</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Repository"><span class="toc-text">Repository</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-service-for-the-‘Repository’"><span class="toc-text">Create a service for the ‘Repository’</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-service-for-the-‘Java-Method-Server-JMS-’"><span class="toc-text">Create a service for the ‘Java Method Server (JMS)’</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Deploy-a-Documentum-client"><span class="toc-text">Deploy a Documentum client</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Expose-ports-Optional"><span class="toc-text">Expose ports (Optional)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IDQL-and-IAPI"><span class="toc-text">IDQL and IAPI</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Performance-tweaks"><span class="toc-text">Performance tweaks</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Mail-settings"><span class="toc-text">Mail settings</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/">Developing and interceptor for the UDDI connector</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/12/18/077_a_dive_on_contract_based_development/">A dive on contract-based development</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/12/11/076_let_us_call_some_rest_from_an_xform/">Let's call some ReST from an xForm</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/12/04/075_change_the_sysadmin_password_with_these_steps/">Change the "sysadmin" password with these steps</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/27/074_automate_your_deployment_with_jenkins/">Automate your deployment with Jenkins</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/20/073_deploy_your_solution_with_ant_tasks/">Deploy your solution with ANT tasks</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/13/072_build_your_solution_with_the_cli/">Build your solution with the CLI</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/06/071_lets_develop_an_eis_connector/">Let's develop an EIS connector</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tips/">Tips</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 14px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 14px;">Anniversary</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/BPM/" style="font-size: 20.25px;">BPM</a> <a href="/tags/Building-blocks/" style="font-size: 16.5px;">Building blocks</a> <a href="/tags/CARS/" style="font-size: 15.25px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 16.5px;">CD/CI</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/Case-Instance-Monitor/" style="font-size: 14px;">Case Instance Monitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Condition/" style="font-size: 14px;">Condition</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Custom-webservice/" style="font-size: 14px;">Custom webservice</a> <a href="/tags/Customization/" style="font-size: 14px;">Customization</a> <a href="/tags/Database-metadata/" style="font-size: 15.25px;">Database metadata</a> <a href="/tags/Debugging/" style="font-size: 14px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 15.25px;">Digital</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/E-Mail/" style="font-size: 14px;">E-Mail</a> <a href="/tags/E-mail/" style="font-size: 14px;">E-mail</a> <a href="/tags/EIS-connector/" style="font-size: 14px;">EIS connector</a> <a href="/tags/EP2/" style="font-size: 14px;">EP2</a> <a href="/tags/EP3/" style="font-size: 14px;">EP3</a> <a href="/tags/EP4/" style="font-size: 14px;">EP4</a> <a href="/tags/EP7/" style="font-size: 14px;">EP7</a> <a href="/tags/Enterprise-world/" style="font-size: 15.25px;">Enterprise world</a> <a href="/tags/Entity/" style="font-size: 19px;">Entity</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Explorer/" style="font-size: 15.25px;">Explorer</a> <a href="/tags/For-loop/" style="font-size: 14px;">For-loop</a> <a href="/tags/Form/" style="font-size: 19px;">Form</a> <a href="/tags/Gateway/" style="font-size: 15.25px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/How-to/" style="font-size: 16.5px;">How to</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14px;">Identity</a> <a href="/tags/Information-Hub/" style="font-size: 14px;">Information Hub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.75px;">Installation</a> <a href="/tags/JSON/" style="font-size: 14px;">JSON</a> <a href="/tags/Java/" style="font-size: 15.25px;">Java</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/License/" style="font-size: 15.25px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.25px;">Lifecycle</a> <a href="/tags/Long-text-property/" style="font-size: 14px;">Long text property</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 15.25px;">Management</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Modeling/" style="font-size: 15.25px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 15.25px;">Monitoring</a> <a href="/tags/OTDS/" style="font-size: 16.5px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 15.25px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Organization/" style="font-size: 14px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/Package/" style="font-size: 16.5px;">Package</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/Progression-bar/" style="font-size: 14px;">Progression bar</a> <a href="/tags/Project/" style="font-size: 14px;">Project</a> <a href="/tags/Properties/" style="font-size: 15.25px;">Properties</a> <a href="/tags/Property/" style="font-size: 14px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/ReST/" style="font-size: 15.25px;">ReST</a> <a href="/tags/Recap/" style="font-size: 14px;">Recap</a> <a href="/tags/Regular-expression/" style="font-size: 14px;">Regular expression</a> <a href="/tags/Relations/" style="font-size: 14px;">Relations</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/Roles/" style="font-size: 14px;">Roles</a> <a href="/tags/SOAP/" style="font-size: 14px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 15.25px;">SVN</a> <a href="/tags/Service-container/" style="font-size: 14px;">Service container</a> <a href="/tags/Setup/" style="font-size: 17.75px;">Setup</a> <a href="/tags/Short-lived/" style="font-size: 14px;">Short lived</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 17.75px;">Software</a> <a href="/tags/Source-control/" style="font-size: 14px;">Source control</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/Subtyping/" style="font-size: 14px;">Subtyping</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 14px;">Task</a> <a href="/tags/Task-layout/" style="font-size: 14px;">Task layout</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Testing/" style="font-size: 14px;">Testing</a> <a href="/tags/Theme/" style="font-size: 14px;">Theme</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/UDDI/" style="font-size: 15.25px;">UDDI</a> <a href="/tags/Update/" style="font-size: 15.25px;">Update</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/Value-assistance/" style="font-size: 14px;">Value assistance</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WS-AppServer/" style="font-size: 14px;">WS-AppServer</a> <a href="/tags/Web-Library-Definition/" style="font-size: 14px;">Web Library Definition</a> <a href="/tags/WebService/" style="font-size: 14px;">WebService</a> <a href="/tags/Webservice/" style="font-size: 15.25px;">Webservice</a> <a href="/tags/Workspace/" style="font-size: 17.75px;">Workspace</a> <a href="/tags/XML/" style="font-size: 14px;">XML</a> <a href="/tags/iHub/" style="font-size: 14px;">iHub</a> <a href="/tags/interceptor/" style="font-size: 14px;">interceptor</a> <a href="/tags/linked-entity/" style="font-size: 14px;">linked entity</a> <a href="/tags/xForm/" style="font-size: 14px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="http://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="search" class="search-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="Search ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="http://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback</h1>
+        <h2 class="site-description">Send back any feedback so we can inspect and adapt our features.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="http://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2020
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Install Documentum with this ultimate guide</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+<script src="/js/mix/post-lazy-local.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+<script>searchFunc("/")</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>

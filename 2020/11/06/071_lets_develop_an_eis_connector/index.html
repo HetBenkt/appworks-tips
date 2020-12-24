@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+	
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142664854-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-142664854-1');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Let's develop an EIS connector | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="Manipulate external data via the entity modeling platform?...Use an EIS connector!">
+
+	
+	<meta name="keywords" content="appworks, eis connector, java">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Let's develop an EIS connector | AppWorks Tips">
+	<meta property="og:description" content="Manipulate external data via the entity modeling platform?...Use an EIS connector!">
+	<meta property="og:url" content="http://www.appworks-tips.com/2020/11/06/071_lets_develop_an_eis_connector/">
+
+	
+	<meta property="article:published_time" content="2020-11-06T12:11:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2020/11/06/071_lets_develop_an_eis_connector/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/about" title="ABOUT">ABOUT</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/installation" title="INSTALLATION 20.4">INSTALLATION 20.4</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/ci_cd" title="CI/CD">CI/CD <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt" height="16pt" viewbox="0 0 16 16" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(255%,255%,0%);fill-opacity:1;" d="M 7.183594 7.742188 C 6.886719 7.867188 6.792969 8.105469 6.90625 8.371094 L 7.808594 7.992188 C 7.710938 7.761719 7.417969 7.644531 7.183594 7.742188 Z M 7.183594 7.742188 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(255%,255%,0%);fill-opacity:1;" d="M 14.480469 8.679688 L 15.601562 8 L 14.480469 7.320312 L 15.433594 6.417969 L 14.195312 5.984375 L 14.945312 4.90625 L 13.640625 4.742188 L 14.148438 3.53125 L 12.84375 3.640625 L 13.085938 2.351562 L 11.828125 2.726562 L 11.800781 1.417969 L 10.648438 2.046875 L 10.347656 0.769531 L 9.355469 1.628906 L 8.792969 0.441406 L 8 1.484375 L 7.207031 0.441406 L 6.644531 1.628906 L 5.652344 0.769531 L 5.351562 2.046875 L 4.199219 1.417969 L 4.171875 2.726562 L 2.914062 2.351562 L 3.160156 3.640625 L 1.851562 3.53125 L 2.359375 4.742188 L 1.058594 4.90625 L 1.804688 5.984375 L 0.566406 6.417969 L 1.519531 7.320312 L 0.398438 8 L 1.519531 8.679688 L 0.566406 9.582031 L 1.804688 10.011719 L 1.054688 11.089844 L 2.359375 11.257812 L 1.851562 12.46875 L 3.160156 12.359375 L 2.914062 13.648438 L 4.171875 13.269531 L 4.199219 14.582031 L 5.351562 13.953125 L 5.652344 15.230469 L 6.644531 14.371094 L 7.203125 15.558594 L 8 14.515625 L 8.792969 15.558594 L 9.355469 14.371094 L 10.347656 15.230469 L 10.648438 13.953125 L 11.800781 14.582031 L 11.828125 13.273438 L 13.085938 13.648438 L 12.839844 12.359375 L 14.148438 12.46875 L 13.640625 11.257812 L 14.945312 11.09375 L 14.195312 10.011719 L 15.433594 9.582031 Z M 5.421875 10.808594 L 4.863281 9.484375 C 4.757812 9.234375 4.597656 9.042969 4.316406 9.164062 C 4.011719 9.292969 4.011719 9.523438 4.148438 9.84375 L 4.6875 11.117188 L 3.695312 11.539062 L 2.636719 9.035156 L 3.542969 8.652344 L 3.707031 9.042969 C 3.804688 8.648438 3.980469 8.382812 4.359375 8.222656 C 5.015625 7.945312 5.492188 8.199219 5.78125 8.886719 L 6.414062 10.386719 Z M 8.011719 9.796875 C 7.210938 10.136719 6.394531 9.941406 6.039062 9.097656 C 5.695312 8.277344 6.085938 7.492188 6.890625 7.152344 C 7.816406 6.761719 8.644531 7.164062 9.015625 8.078125 L 7.117188 8.878906 C 7.246094 9.175781 7.554688 9.273438 7.820312 9.164062 C 7.976562 9.097656 8.089844 8.964844 8.097656 8.785156 L 9.050781 8.382812 C 9.140625 9.078125 8.597656 9.550781 8.011719 9.796875 Z M 12 8.027344 L 10.992188 6.722656 L 10.984375 6.726562 L 11.253906 8.339844 L 10.285156 8.75 L 8.402344 6.597656 L 9.371094 6.1875 L 10.40625 7.574219 L 10.417969 7.570312 L 10.148438 5.859375 L 10.992188 5.503906 L 12.027344 6.886719 L 12.035156 6.882812 L 11.769531 5.171875 L 12.710938 4.773438 L 12.96875 7.617188 Z M 12 8.027344 "/>
+</g>
+</svg>
+</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+            </li>
+            
+            
+            
+        </ul> 
+    </div>
+
+    
+    <div class="search-button">
+        <a class="subscribe-button" title="Search" href="#search" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+    </div>
+    
+
+    <div class="site-nav-right">
+        
+        <a class="subscribe-button" title="Search" href="#search" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+         
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2020-11-06T12:00:00.000Z" itemprop="datePublished">
+                    2020-11-6
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Development/">Development</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">Let's develop an EIS connector</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2020/071_lets_develop_an_eis_connector/feature_tag.png)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>Today we start with a more advanced topic and that’s the creation of a brand-new <strong>E</strong>nterprise <strong>I</strong>nformation <strong>S</strong>ystem connector. Is it important to know? Yes it is! As it makes it possible to represent external data via entity modeling to our beloved platform users…Huh?…What!?</p>
+<p>Let me explain <strong>the use-case</strong>: We have our new AppWorks platform available in our organization, but we also have some an external legacy system we still want to manipulate or even keep in synch with our new platform. Let’s say that our external system is an invoice system with an old user interface. Would it not be great that our AppWorks users can create new invoice documents in the AppWorks runtime and that our external invoice system is updated with all the relative information?…That is what an EIS connector can do for you!!</p>
+<p>We already saw something similar with the post about ‘Simple steps on importing entities from database table’ where we could create new instances from a ‘linked’ entity where the data is directly updated in the linked database location…Also great stuff!</p>
+<p>With an EIS connector we do a bit the same, but now the entity is called an ‘external’ entity and as we are more in control on what is happening we also need to custom code some things (in Java) to make it all happen…Not hard to do, but it’s always difficult if you don’t have a good example…</p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>Spin up your machine, login to your workspace and make sure you are logged in with a user that has a <strong>developer role</strong> applied as well as the <strong>administrator role</strong>.  This last role is needed to see the EIS connector when using it…You’ll see that later…Trust me!</p>
+<p>Let’s take a look in the ‘Low-Code Design Guide’ in the section <strong>‘Building a custom EIS connector’</strong> which gives us a head start, but you’ll see that more will be covered in this post to get you better knowledge and a proper example.</p>
+<hr>
+<h5 id="The-creation-of-the-EIS-connector"><a href="#The-creation-of-the-EIS-connector" class="headerlink" title="The creation of the EIS connector"></a>The creation of the EIS connector</h5><p>We do this in a total separate workspace with also a separate project. The result will be a .CAP file package that will be deployed in the organizations where you need the functionalities of this connector. And yes…This creates a dependency to your project that needs to be deployed before you install your own solution!</p>
+<p>This will be my workspace with corresponding project:</p>
+<p><img alt="eis_001" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_001.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_001.png"></p>
+<p>On that project we get to the right-click context menu to create a new document of type ‘EIS Connector’</p>
+<p><img alt="eis_002" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_002.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_002.png"></p>
+<p>The new screen makes it possible to setup your connector settings. Make it for example like this:</p>
+<p><img alt="eis_003" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_003.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_003.png"></p>
+<blockquote>
+<p>Take a note of the ‘class’ definition as in my environment I see its’s jumping back to ‘com.opentext’ after a change…Something to notice as we want to use our own namespace. Later we’ll see that logging is much easier to filter down with our own namespace!</p>
+</blockquote>
+<p>For the properties tab I use these lines (it contains data to connect to an external system…if required!)</p>
+<p><img alt="eis_004" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_004.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_004.png"></p>
+<p>Now, save the document, jump back to the ‘General’ tab, and hit that blue ‘Generate API’ button to get some magic going on! You get some notification where you just click ‘Yes’ and ‘Close’ to and now you can also close this document so you get back to your project overview.</p>
+<p>And there you have it…The basics for our EIS entity!</p>
+<p><img alt="eis_005" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_005.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_005.png"></p>
+<p>What do we see from top to bottom?</p>
+<ul>
+<li>HelloWorld (with that arrows icon): that’s our just crafted EIS connector document</li>
+<li>HelloWorld folder (with all the subfolders): that’s our start framework for building the EIS connector with some Java files in it; We’ll get back on those later!</li>
+<li>HelloWorld_java (in that ‘crosscontext’ folder): that’s a ‘Java archive definition’ which is used when we start packaging the solution. It contains the information where our source files can be found (The Java files!) and the dependent libraries that our required for our source files</li>
+</ul>
+<p><img alt="eis_006" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_006.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_006.png"></p>
+<p>These are the default dependencies for a EIS connector. These .jar files can be found on the server in these locations:</p>
+<ul>
+<li><code>/opt/opentext/AppWorksPlatform/defaultInst/components/cws/lib/com.cordys.entity.services.eisconnector.jar</code></li>
+<li><code>/opt/opentext/AppWorksPlatform/defaultInst/crosscontext/entityruntime-bean-interface.jar</code></li>
+<li><code>/opt/opentext/AppWorksPlatform/defaultInst/components/basicutil/basicutil.jar</code></li>
+</ul>
+<p><img alt="eis_007" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_007.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_007.png"></p>
+<p>We (as good developers!) also add another good (External Java Archive) dependency with this location:</p>
+<p><code>/opt/opentext/AppWorksPlatform/defaultInst/components/managementlib/managementlib.jar</code></p>
+<p><img alt="eis_008" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_008.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_008.png"></p>
+<p>Why?…Because it contains classes to do proper logging (the Cordys-way of logging!)…You’ll see that later too!</p>
+<p>Now is the time to save it all and validate the project…There is no need to publish anything as we’ll only need to generate a .CAP package in the end.</p>
+<p>Next step?</p>
+<hr>
+<h5 id="The-implementation-of-those-Java-files"><a href="#The-implementation-of-those-Java-files" class="headerlink" title="The implementation of those Java files"></a>The implementation of those Java files</h5><p>First thing we need to do now is making those Java files (in our AppWorks project) available in our favorite IDE. For this to happen we need to do a synchronize action on our project folder!</p>
+<p><img alt="eis_009" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_009.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_009.png"></p>
+<p>With this action we make the content of our project available on the storage of our AppWorks platform server. </p>
+<p>Location: <code>/opt/opentext/AppWorksPlatform/defaultInst/cws/sync/appworks_tips/aw_eis_connector_ws/aw_eis_connector_project/HelloWorld/src</code></p>
+<p>Download this src-folder (with that folder structure and the Java files) somewhere locally on your local workstation. I use MobaXTerm for this job, but maybe you need to ask your administrator to download it…Or you can also open those files from the AppWorks project and copy the content from there!</p>
+<p>Now I open my favorite IDE ‘IntelliJ’ to start a new Java project with the fancy name ‘HelloWorldEISConnector’ and copy &amp; paste that downloaded ‘src’ folder into that new project…Now it looks like this:</p>
+<p><img alt="eis_010" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_010.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_010.png"></p>
+<p>You see it detects all kinds of errors, but that is because of the missing dependencies…Remember those dependent JAR files!? Also these need to be downloaded to your local workstation and placed in the class path of your project as external library!</p>
+<p>This is your end-result with all the ‘red’ stuff gone…</p>
+<p><img alt="eis_011" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_011.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_011.png"></p>
+<p>Now for <strong>the ‘real’ implementation</strong>!</p>
+<p>To start with <code>EISRepositoryConfigurationExternal</code>. You can leave this class as is. When you open it you will see that all your configured properties are in here. This class just converts these properties (with the provided values when we start to use the EIS connector) into a map object. And this map object is passed into the other 2 classes in both their <code>init(Map&amp;lt;String,String&amp;gt; map)</code> methods.</p>
+<p>Check out the result of that (unchanged) configuration code <a href="/images/posts/2020/071_lets_develop_an_eis_connector/EISRepositoryConfigurationExternal.java">here</a></p>
+<p>To get the values of the properties (of the passed map object) we can do something like this in those <em>init()</em> methods…You’ll see a sample later in the real code!:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String userName = map.get(<span class="string">"username"</span>);</span><br><span class="line">String password = map.get(<span class="string">"password"</span>);</span><br><span class="line">String domain = map.get(<span class="string">"domain"</span>);</span><br><span class="line">String repository = map.get(<span class="string">"repository"</span>);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>And yes…that password contains the <u>decoded</u> value!!</p>
+</blockquote>
+<p>Now jump to the <code>HelloWorldEISDefinitionProvider</code> as reading those properties is (for us now) only useful for the ‘real’ connection to an external system which is implemented in <code>HelloWorldEISRepositoryProvider</code>. And we even don’t use it in that class either (for now) as we just want to play around with the connector.  An ‘in memory’ serializable list already gives us a good impressions of the capabilities!</p>
+<hr>
+<p><strong>HelloWorldEISDefinitionProvider</strong></p>
+<p>You see that this class implements the interface <code>IEISDefinitionProvider</code> which comes with a set of methods that require some implementation. This is how it looks like when it’s empty:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(Map&amp;lt;String, String&amp;gt; map)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> EISEntity <span class="title">getEntity</span><span class="params">(String entityName)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> List&amp;lt;EISEntity&amp;gt; getEntities() &#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>We leave the <em>init()</em> empty as we don’t need to do anything in it. That map object contains the variables we defined, but we don’t need them for the entity ‘definition’ code!</li>
+<li>We make sure that the <em>getEntity()</em> can give back a new entity definition based on a provided name<ul>
+<li>We use 2 entities names that we support: ‘project’ and ‘task’</li>
+<li>Both will have 2 properties:<ul>
+<li>‘id’ of type ‘Integer’ that has a reference id to the ID of the instance in our external system!<ul>
+<li>The ‘id’ can also of type ‘String’, but make sure to set the length and pass also the correct value type in the rest of your code (a thing I ran into!)</li>
+</ul>
+</li>
+<li>‘subject’ is just a field to play with</li>
+</ul>
+</li>
+<li>Make sure to use the <em>setPrimaryKey()</em> on the property that makes it unique…In our case that ‘id’ property!</li>
+</ul>
+</li>
+<li>The <em>getEntities()</em> method should return all supported entities by default, so we just build a list of accepted entities to return.</li>
+</ul>
+<p>Check out the result of the ‘definition’ code <a href="/images/posts/2020/071_lets_develop_an_eis_connector/HelloWorldEISDefinitionProvider.java">here</a></p>
+<blockquote>
+<p>In the ‘Low-code Design Guide’ you can find many more implementation examples of other type of fields to use on your entity!</p>
+</blockquote>
+<hr>
+<p><strong>HelloWorldEISRepositoryProvider</strong></p>
+<p>You see that this class implements the interface <code>IEISRepositoryProvider</code> which also comes with a set of methods that require some implementation. This is how it looks like when empty:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(Map&amp;lt;String, String&amp;gt; map)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">testConnection</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> EISEntityRow <span class="title">create</span><span class="params">(EISContext eisContext, EISRepositoryEntity eisRepositoryEntity, EISEntityRow eisEntityRow)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> EISEntityRow <span class="title">get</span><span class="params">(EISContext eisContext, EISRepositoryEntity eisRepositoryEntity, EISEntityRow eisEntityRow)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">update</span><span class="params">(EISContext eisContext, EISRepositoryEntity eisRepositoryEntity, EISEntityRow eisEntityRow)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">delete</span><span class="params">(EISContext eisContext, EISRepositoryEntity eisRepositoryEntity, List&amp;lt;EISEntityRow&amp;gt; list)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Long <span class="title">getTotalRecordCount</span><span class="params">(EISContext eisContext, EISRepositoryEntity eisRepositoryEntity, QueryWrapper queryWrapper)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="keyword">public</span> List&amp;lt;EISEntityRow&amp;gt; doQuery(EISContext eisContext, EISRepositoryEntity eisRepositoryEntity, QueryWrapper queryWrapper) &#123;</span><br><span class="line">    <span class="comment">//TODO Auto-generated method</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>First a small part about the logging. We can define a new LOGGER object like this:</p>
+<p><code>private static final CordysLogger LOGGER = CordysLogger.getCordysLogger(HelloWorldEISRepositoryProvider.class);</code></p>
+<p>With this statement we can make calls to the AppWorks log file <code>/opt/opentext/AppWorksPlatform/defaultInst/Logs/Application_Server.xml</code></p>
+<p>We can do this by making a statement like this: <code>LOGGER.debug(&quot;&quot;);</code></p>
+<p>And (as good developer) you want to check if the log level is set to debug before you use the above statement:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (LOGGER.isDebugEnabled()) &#123;</span><br><span class="line">    LOGGER.debug(<span class="string">""</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>In the <em>init()</em> we can read the map object like this <code>map.get(&quot;username&quot;);</code>. This information can be used in other methods to make a ‘real’ connection to an external system (as described before).</li>
+<li>The <em>testConnection()</em> can (for now) just return <code>true</code> as we create an ‘in memory’ database that is always available. Normally you would use the credentials from the <em>init()</em> map object to make a test connection to your external system.</li>
+</ul>
+<p>We also have the <strong>C</strong>reate<strong>R</strong>ead<strong>U</strong>pdate<strong>D</strong>elete methods to implement:</p>
+<ul>
+<li><em>create()</em>: our external system will get a new entry created here and with that we generate a unique ID to use. This ID is also used in the reference back to the AppWorks platform. That is why we pass it back in the ‘eisEntityRow’ object!</li>
+<li><em>get()</em>: also our ‘Read’ method where we get the entry from our external system (based on that saved unique ID that is also referenced in AppWorks). The ID is part of the ‘eisEntityRow’ object.</li>
+<li><em>update()</em>: As we already saw we can get the ID from the ‘eisEntityRow’ object; retrieve the entry from our external system with that ID; update it and send it back to our external system again</li>
+<li><em>delete()</em>: All the same info; you might wondering why (this time) it’s a list of ‘EISEntityRow’ objects?…Well, you can select multiple entities in runtime and delete them…that’s why! &#128077;</li>
+</ul>
+<p>Then we have the <em>doQuery()</em> which is triggered when we click to ‘AllProjects’ list building block that we’ll create later.</p>
+<p>And as last part we have 2 helper methods to reduce duplicate code in <em>buildEntityRow()</em> and to generate that ID in ‘generateUniqueId()’</p>
+<p>Check out the result of the ‘repository’ code <a href="/images/posts/2020/071_lets_develop_an_eis_connector/HelloWorldEISRepositoryProvider.java">here</a></p>
+<blockquote>
+<p>A simple to use ‘in memory’ synchronized <strong>D</strong>ata <strong>A</strong>ccess <strong>O</strong>bject <code>ProjectDAO</code> is created for now for the ‘project’ entity so we have something nice to test with. The next step off course is to implement a real connection to some other external system with the provided configuration values in that ‘map’ object!</p>
+<p>Also in the ‘Low-code Design Guide’ you can find many more implementation examples for the methods in this class.</p>
+</blockquote>
+<p>The full package of sources can be found in <a href="/images/posts/2020/071_lets_develop_an_eis_connector/src.zip">this .zip file</a></p>
+<p>As final step for this section we need to make the updated sources available again within our AppWorks project (created in the beginning of this post!). How?…Well, I thought to be smart and upload it all to the server in: <code>/opt/opentext/AppWorksPlatform/defaultInst/cws/sync/appworks_tips/aw_eis_connector_ws/aw_eis_connector_project/HelloWorld/src</code></p>
+<p>And do a ‘synchronize’ again, but that will failed as there is no link available yet for those new ‘DAO’ files!</p>
+<p>Solution? Just upload them by hand with the ‘upload document’ functionality on your project!</p>
+<blockquote>
+<p>I didn’t try it out, but you should also be able to create a JAR file of the compiled classes, upload it to the server (<code>/opt/opentext/AppWorksPlatform/defaultInst/crosscontext/</code>) and put it as dependency to the Java Library Definition (like the other libraries)!</p>
+</blockquote>
+<p>This should be the result for now:</p>
+<p><img alt="eis_012" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_012.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_012.png"></p>
+<hr>
+<h5 id="Generating-a-package"><a href="#Generating-a-package" class="headerlink" title="Generating a package"></a>Generating a package</h5><p>The first thing we want to do here is changing the default packaging options!</p>
+<p><img alt="eis_013" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_013.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_013.png"></p>
+<p>Let’s change the setting of the ‘Supported Deployment Spaces’ so the ‘Organization’ option is also marked. </p>
+<blockquote>
+<p>It’s the most common way of packaging!</p>
+</blockquote>
+<p><img alt="eis_014" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_014.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_014.png"></p>
+<p>Let’s generate that package now and download the CAP file!</p>
+<p><img alt="eis_015" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_015.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_015.png"></p>
+<p>When you extract that CAP file you will see this folder tree with a new generated JAR! So the packaging feature compiles our sources nicely and makes it a re-usable JAR file that will be uploaded in the ‘crosscontext’ folder on the server…nice! </p>
+<p><img alt="eis_016" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_016.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_016.png"></p>
+<hr>
+<h5 id="The-package-deployment"><a href="#The-package-deployment" class="headerlink" title="The package deployment"></a>The package deployment</h5><p>Now it’s time to make our EIS entities available in our solution!</p>
+<p>For this we switch to the ‘System’ organization with our ‘sysadmin’ account as this is the place where we do deployments in a specific organization or in the shared space. We’ll deploy it in the shared space so all organization can use our brand-new entities…Hooray!</p>
+<p>Browse to your CAP file and ‘Upload and Deploy’ it to the platform…</p>
+<p><img alt="eis_017" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_017.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_017.png"></p>
+<p>…and we just follow the screens for the deployment.</p>
+<p><img alt="eis_018" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_018.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_018.png"></p>
+<p>Click ‘Next &gt;’</p>
+<p><img alt="eis_019" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_019.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_019.png"></p>
+<p>Click ‘Next &gt;’</p>
+<p><img alt="eis_020" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_020.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_020.png"></p>
+<p>Click ‘Next &gt;’</p>
+<p><img alt="eis_021" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_021.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_021.png"></p>
+<p>Mark the ‘Revert on Failure’ option and click ‘Deploy’</p>
+<p><img alt="eis_022" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_022.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_022.png"></p>
+<p>And ‘Finish’ it.</p>
+<p>There you have it…Our new package nicely deployed in the ‘shared’ space</p>
+<p><img alt="eis_023" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_023.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_023.png"></p>
+<blockquote>
+<p>Maybe you got into the issue that you CAP file is not a valid signed package to install!?</p>
+<p>You can choose the hard way and make it signed (<a href="#search">search</a> for ‘Package Signer’ on this site) so it’s accepted, but for our development way of working it’s easier to loosen up the restriction for signed packages. This can be done in the ‘Security Administration’ artifact where you need to change the ‘Code Signing’ settings:</p>
+<p><img alt="eis_024" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_024.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_024.png"></p>
+</blockquote>
+<p>After this deployment we also need to do a last post step! And that is making the deployed JAR files on the server available on the class path for the ‘CWS’ service container.</p>
+<p>And yes…they are uploaded:</p>
+<p><img alt="eis_025" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_025.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_025.png"></p>
+<p>In that same ‘System’ organization open the ‘System Resource Manager’ artifact and update the class path in the JRE configuration tab. You can use this value <code>?CORDYS_INSTALL_DIR?/crosscontext/*.jar</code></p>
+<p><img alt="eis_026" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_026.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_026.png"></p>
+<p>Restart the container…And as the documentation is telling us….Restart the TomEE instance!</p>
+<hr>
+<h5 id="Configure-the-connection-properties"><a href="#Configure-the-connection-properties" class="headerlink" title="Configure the connection properties"></a>Configure the connection properties</h5><p>TomEE restarted and back in design-time?</p>
+<p>Our EIS connector will have a connection to an external system and the connection details need to be provided somewhere…We will do this in our own (non-system) organization. </p>
+<p>Make sure you are an ‘Administrator’ and open the ‘System Resource Manager’ artifact where you can click on the secret button called the ‘Manage EIS Repository Configurations’…Even I needed to look for that one!</p>
+<p><img alt="eis_027" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_027.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_027.png"></p>
+<p>In that new screen you should be able add a new ‘EIS Repository configuration’ with these settings</p>
+<p><img alt="eis_028" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_028.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_028.png"></p>
+<blockquote>
+<p>If that green plus-sign is grayed out it can’t find your deployed EIS connector. Make sure it’s valid and indeed deployed.</p>
+</blockquote>
+<p>When done, there is no need to hit that green ‘test’ button as it will fail at this moment (I don’t no way)! We need something extra to configure later to pass this test (I guess…because later it works for some strange reason!).</p>
+<p><img alt="eis_029" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_029.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_029.png"></p>
+<p>Let’s just continue the job…</p>
+<hr>
+<h5 id="Create-the-EIS-repository-reference"><a href="#Create-the-EIS-repository-reference" class="headerlink" title="Create the EIS repository reference"></a>Create the EIS repository reference</h5><p>In your favorite organization (where you EIS connector is available now) you need to open your favorite workspace and corresponding project. From here (with our developer role) we create a new document of type ‘EIS Repository Reference’</p>
+<p><img alt="eis_030" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_030.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_030.png"></p>
+<p>Fill in ‘HelloWorld’ for the ‘Display name’, ‘Name’ and ‘Description’ and jump to the next tab ‘Entities’ where you should be able to select you EIS connector so the entities can be retrieved with that ‘Load entities’ button…That’s nice stuff what’s happening here…right?</p>
+<p><img alt="eis_031" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_031.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_031.png"></p>
+<p>Save the reference and hit that ‘Synchronize’ button as a pro for some more ‘magician stuff’!!</p>
+<p><img alt="eis_032" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_032.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_032.png"></p>
+<p>And there it is…</p>
+<p><img alt="eis_033" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_033.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_033.png"></p>
+<p>Let’s open the project ‘external’ entity and check out the available building blocks:</p>
+<p><img alt="eis_034" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_034.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_034.png"></p>
+<p>So, you see that it’s not a full-blown entity with all building blocks available! But we are now in full control as when we create a new instance of this entity (in runtime) our custom code is triggered where we can also update our external system (for us now an ‘in memory’ data object!)</p>
+<p>Great!…Do a validation, publish your project, and go to the next step…</p>
+<hr>
+<h5 id="Back-to-that-‘test’-button-to-make-it-work"><a href="#Back-to-that-‘test’-button-to-make-it-work" class="headerlink" title="Back to that ‘test’ button to make it work"></a>Back to that ‘test’ button to make it work</h5><p>I was just wondering if that ‘test’ button from the ‘Configure the connection properties’ section is willing to work now…</p>
+<p><img alt="eis_035" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_035.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_035.png"></p>
+<p>And that’s a success…I don’t know what the trigger was, but I only created the ‘EIS repository reference’ document with a synch in the meantime!</p>
+<p>OK…Don’t blame a winning team!…Next step…</p>
+<hr>
+<h5 id="Adding-some-building-blocks"><a href="#Adding-some-building-blocks" class="headerlink" title="Adding some building blocks"></a>Adding some building blocks</h5><p>Now, let’s open the ‘project’ entity and craft these building blocks:</p>
+<ul>
+<li>‘Create’ form</li>
+<li>‘Default’ form (that shows the create form)</li>
+<li>‘AllProjects’ list</li>
+</ul>
+<p><img alt="eis_036" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_036.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_036.png"></p>
+<p>When done, you can publish and test it out in runtime.</p>
+<blockquote>
+<p>If you don’t see things in runtime you probably are not a user with ‘Entity runtime’ roll.</p>
+<p>Another setting might also not in place yet in the ‘/app/admin’ panel where you also have a bright and shining ‘Synchronize repository’ button to make some ‘magic’ runtime updates!!</p>
+<p><img alt="eis_037" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_037.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_037.png"></p>
+</blockquote>
+<p>But after some time…you also…will be able to create an instance of your first ‘external’ project entity in runtime!…You get yourself a beer now…cheers!</p>
+<p><img alt="eis_038" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_038.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_038.png"></p>
+<p>Hit that ‘Create and open’ and see if we failed or where we can improve things!? &#128540;</p>
+<hr>
+<h5 id="Time-to-run-TomEE-in-debug-mode-when-hits-the-fan"><a href="#Time-to-run-TomEE-in-debug-mode-when-hits-the-fan" class="headerlink" title="Time to run TomEE in debug mode (when ^%$^$ hits the fan!)"></a>Time to run TomEE in debug mode (when ^%$^$ hits the fan!)</h5><p>Stop you TomEE instance <code>systemctl stop tomee</code></p>
+<p>Now set a JDPA_ADDRESS variable with <code>export JPDA_ADDRESS=&quot;192.168.56.107:8000&quot;</code></p>
+<blockquote>
+<p>To make it smooth we’ll add it to the bash profile of the user too So, edit the ~/.bash_profile of the ‘otadmin’ user: <code>vi ~/.bash_profile</code></p>
+<p>When done reload your profile via the command: <code>source ~/.bash_profile</code></p>
+<p><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/jpda/architecture.html" target="_blank" rel="noopener">Here</a> is more information about JDPA</p>
+</blockquote>
+<p>And run TomEE via this command: <code>sudo JPDA_ADDRESS=$JPDA_ADDRESS sh /opt/tomee/apache-tomee-plus-8.0.1/bin/catalina.sh jpda run</code></p>
+<p>Now your TomEE is listening for incoming debug request that we can start with our IDE!</p>
+<p>In IntelliJ (locally on your workstation) you create a ‘Remote’ run configuration like this:</p>
+<p><img alt="eis_039" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_039.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_039.png"></p>
+<p>Just pass in your host name and the port where your TomEE (or better the JVM in that TomEE) is listening on. Apply the correct module to use during this connection so we can start debugging the correct code!</p>
+<p>Start that new ‘Run configuration’ and you should see this message passing by: <code>Connected to the target VM, address: &#39;192.168.56.119:8000&#39;, transport: &#39;socket&#39;</code></p>
+<blockquote>
+<p>This is the string to use (if you have another IDE): <code>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000</code></p>
+</blockquote>
+<p>Now it is the time to place some breakpoints in the code, create a project instance in runtime and see the debugger doing its job!</p>
+<hr>
+<h5 id="AppWorks-platform-log-level"><a href="#AppWorks-platform-log-level" class="headerlink" title="AppWorks platform log level"></a>AppWorks platform log level</h5><p>Now that we can debug things it would also be a great thing to adjust to logging of our platform. And especially the logging of the code in our namespace ‘nl.bos’ as you might have seen in the downloaded src.zip file!</p>
+<p>In those sources you see these lines of code:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (LOGGER.isDebugEnabled()) &#123;</span><br><span class="line">	LOGGER.debug(<span class="string">"..."</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Well, would it not be great to spit out these debug messages in the logfile?</p>
+<p>Edit the log configuration file on the server: <code>sudo vi /opt/opentext/AppWorksPlatform/defaultInst/config/Log4jConfiguration.xml</code></p>
+<p>And a new ‘category’ tag before the ‘root’ tag!</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">&amp;lt;</span>category name="nl.bos"<span class="symbol">&amp;gt;</span></span><br><span class="line">    <span class="symbol">&amp;lt;</span>priority value="debug"/<span class="symbol">&amp;gt;</span></span><br><span class="line"><span class="symbol">&amp;lt;</span>/category<span class="symbol">&amp;gt;</span></span><br><span class="line"><span class="symbol">&amp;lt;</span>root<span class="symbol">&amp;gt;</span></span><br><span class="line">    <span class="symbol">&amp;lt;</span>priority value="error"/<span class="symbol">&amp;gt;</span></span><br><span class="line">    <span class="symbol">&amp;lt;</span>appender-ref ref="file"/<span class="symbol">&amp;gt;</span></span><br><span class="line">    <span class="symbol">&amp;lt;</span>appender-ref ref="dbappender"/<span class="symbol">&amp;gt;</span></span><br><span class="line"><span class="symbol">&amp;lt;</span>/root<span class="symbol">&amp;gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>That ‘root’ tag is for all the platform logging…You can also put that on ‘debug’ level, but that might be some overkill off logging statements!</p>
+</blockquote>
+<p>After this change (no restart needed!) you will see your messages via: <code>sudo tail -f /opt/opentext/AppWorksPlatform/defaultInst/Logs/Application_Server.xml</code></p>
+<hr>
+<h5 id="Steps-for-updating-the-EIS-connector-When-you-change-things"><a href="#Steps-for-updating-the-EIS-connector-When-you-change-things" class="headerlink" title="Steps for updating the EIS connector (When you change things)"></a>Steps for updating the EIS connector (When you change things)</h5><p>It depends also a bit on what is changed (when you only changed the ‘repository’ code) we can use the fast development way:</p>
+<ul>
+<li>Change the code in your IDE</li>
+<li>Generate your own JAR out of it (with the same name ‘HelloWorldEISConnector.jar’)</li>
+<li>Upload the JAR to the server in <code>/opt/opentext/AppWorksPlatform/defaultInst/crosscontext/</code></li>
+<li>Restart TomEE </li>
+<li>Retest in runtime</li>
+</ul>
+<p>If the entity ‘definition’ code is changed you also need to do some extra in design-time</p>
+<ul>
+<li>Open the ‘EIS Repository Reference’ from you project and do a re-‘Synchronize’ on the entities.</li>
+<li>And do a publish of the project to see results in the front-end</li>
+</ul>
+<p>Another way of working would be:</p>
+<ul>
+<li><p>Change the code in your IDE</p>
+</li>
+<li><p>Upload the code in the EIS connector project</p>
+</li>
+<li><p>Create and download a new package (with maybe a new version?)</p>
+</li>
+<li><p>Un-deploy the old package</p>
+<p><img alt="eis_040" class="post-img b-lazy" href="/images/posts/2020/071_lets_develop_an_eis_connector/eis_040.png" data-src="/images/posts/2020/071_lets_develop_an_eis_connector/eis_040.png"></p>
+</li>
+<li><p>Deploy the new CAP file</p>
+</li>
+<li><p>Open the ‘EIS Repository Reference’ document and hit that ‘Synchronize’ again to get the last stuff again!</p>
+</li>
+</ul>
+<blockquote>
+<p>For all the ways of working you can also go to the ‘/app/admin’ panel and use the ‘Synchronize’ button again to update the changes in runtime (if you see strange things happening)!</p>
+</blockquote>
+<hr>
+<p>And yessssss…That’s a “DONE”…It was hard work, but we made it till the end. I think again a great post where we learned more about the platform capabilities and several hidden buttons and settings you would not think off! Now it’s your turn to something far more fancy for your feature (or maybe start by implementing the ‘task’ entity!), but for sure this post will help you on the progress of your EIS connector. I see you in the next post where we talk more about another great topic in a new AppWorks Tips installment…Cheers and have a great weekend!</p>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="Build your solution with the CLI" href="/2020/11/13/072_build_your_solution_with_the_cli/">
+            ← Build your solution with the CLI
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Update on OpenText Enterprise World (Digital 2020 Q4)" href="/2020/10/30/070b_update_enterprise_world_digital/">
+            Update on OpenText Enterprise World (Digital 2020 Q4) →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#The-creation-of-the-EIS-connector"><span class="toc-text">The creation of the EIS connector</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#The-implementation-of-those-Java-files"><span class="toc-text">The implementation of those Java files</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Generating-a-package"><span class="toc-text">Generating a package</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#The-package-deployment"><span class="toc-text">The package deployment</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Configure-the-connection-properties"><span class="toc-text">Configure the connection properties</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Create-the-EIS-repository-reference"><span class="toc-text">Create the EIS repository reference</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Back-to-that-‘test’-button-to-make-it-work"><span class="toc-text">Back to that ‘test’ button to make it work</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Adding-some-building-blocks"><span class="toc-text">Adding some building blocks</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Time-to-run-TomEE-in-debug-mode-when-hits-the-fan"><span class="toc-text">Time to run TomEE in debug mode (when ^%$^$ hits the fan!)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#AppWorks-platform-log-level"><span class="toc-text">AppWorks platform log level</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Steps-for-updating-the-EIS-connector-When-you-change-things"><span class="toc-text">Steps for updating the EIS connector (When you change things)</span></a></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/">Developing and interceptor for the UDDI connector</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/12/18/077_a_dive_on_contract_based_development/">A dive on contract-based development</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/12/11/076_let_us_call_some_rest_from_an_xform/">Let's call some ReST from an xForm</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/12/04/075_change_the_sysadmin_password_with_these_steps/">Change the "sysadmin" password with these steps</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/27/074_automate_your_deployment_with_jenkins/">Automate your deployment with Jenkins</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/20/073_deploy_your_solution_with_ant_tasks/">Deploy your solution with ANT tasks</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/13/072_build_your_solution_with_the_cli/">Build your solution with the CLI</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/06/071_lets_develop_an_eis_connector/">Let's develop an EIS connector</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tips/">Tips</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 14px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 14px;">Anniversary</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/BPM/" style="font-size: 20.25px;">BPM</a> <a href="/tags/Building-blocks/" style="font-size: 16.5px;">Building blocks</a> <a href="/tags/CARS/" style="font-size: 15.25px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 16.5px;">CD/CI</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/Case-Instance-Monitor/" style="font-size: 14px;">Case Instance Monitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Condition/" style="font-size: 14px;">Condition</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Custom-webservice/" style="font-size: 14px;">Custom webservice</a> <a href="/tags/Customization/" style="font-size: 14px;">Customization</a> <a href="/tags/Database-metadata/" style="font-size: 15.25px;">Database metadata</a> <a href="/tags/Debugging/" style="font-size: 14px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 15.25px;">Digital</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/E-Mail/" style="font-size: 14px;">E-Mail</a> <a href="/tags/E-mail/" style="font-size: 14px;">E-mail</a> <a href="/tags/EIS-connector/" style="font-size: 14px;">EIS connector</a> <a href="/tags/EP2/" style="font-size: 14px;">EP2</a> <a href="/tags/EP3/" style="font-size: 14px;">EP3</a> <a href="/tags/EP4/" style="font-size: 14px;">EP4</a> <a href="/tags/EP7/" style="font-size: 14px;">EP7</a> <a href="/tags/Enterprise-world/" style="font-size: 15.25px;">Enterprise world</a> <a href="/tags/Entity/" style="font-size: 19px;">Entity</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Explorer/" style="font-size: 15.25px;">Explorer</a> <a href="/tags/For-loop/" style="font-size: 14px;">For-loop</a> <a href="/tags/Form/" style="font-size: 19px;">Form</a> <a href="/tags/Gateway/" style="font-size: 15.25px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/How-to/" style="font-size: 16.5px;">How to</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14px;">Identity</a> <a href="/tags/Information-Hub/" style="font-size: 14px;">Information Hub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.75px;">Installation</a> <a href="/tags/JSON/" style="font-size: 14px;">JSON</a> <a href="/tags/Java/" style="font-size: 15.25px;">Java</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/License/" style="font-size: 15.25px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.25px;">Lifecycle</a> <a href="/tags/Long-text-property/" style="font-size: 14px;">Long text property</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 15.25px;">Management</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Modeling/" style="font-size: 15.25px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 15.25px;">Monitoring</a> <a href="/tags/OTDS/" style="font-size: 16.5px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 15.25px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Organization/" style="font-size: 14px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/Package/" style="font-size: 16.5px;">Package</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/Progression-bar/" style="font-size: 14px;">Progression bar</a> <a href="/tags/Project/" style="font-size: 14px;">Project</a> <a href="/tags/Properties/" style="font-size: 15.25px;">Properties</a> <a href="/tags/Property/" style="font-size: 14px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/ReST/" style="font-size: 15.25px;">ReST</a> <a href="/tags/Recap/" style="font-size: 14px;">Recap</a> <a href="/tags/Regular-expression/" style="font-size: 14px;">Regular expression</a> <a href="/tags/Relations/" style="font-size: 14px;">Relations</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/Roles/" style="font-size: 14px;">Roles</a> <a href="/tags/SOAP/" style="font-size: 14px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 15.25px;">SVN</a> <a href="/tags/Service-container/" style="font-size: 14px;">Service container</a> <a href="/tags/Setup/" style="font-size: 17.75px;">Setup</a> <a href="/tags/Short-lived/" style="font-size: 14px;">Short lived</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 17.75px;">Software</a> <a href="/tags/Source-control/" style="font-size: 14px;">Source control</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/Subtyping/" style="font-size: 14px;">Subtyping</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 14px;">Task</a> <a href="/tags/Task-layout/" style="font-size: 14px;">Task layout</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Testing/" style="font-size: 14px;">Testing</a> <a href="/tags/Theme/" style="font-size: 14px;">Theme</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/UDDI/" style="font-size: 15.25px;">UDDI</a> <a href="/tags/Update/" style="font-size: 15.25px;">Update</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/Value-assistance/" style="font-size: 14px;">Value assistance</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WS-AppServer/" style="font-size: 14px;">WS-AppServer</a> <a href="/tags/Web-Library-Definition/" style="font-size: 14px;">Web Library Definition</a> <a href="/tags/WebService/" style="font-size: 14px;">WebService</a> <a href="/tags/Webservice/" style="font-size: 15.25px;">Webservice</a> <a href="/tags/Workspace/" style="font-size: 17.75px;">Workspace</a> <a href="/tags/XML/" style="font-size: 14px;">XML</a> <a href="/tags/iHub/" style="font-size: 14px;">iHub</a> <a href="/tags/interceptor/" style="font-size: 14px;">interceptor</a> <a href="/tags/linked-entity/" style="font-size: 14px;">linked entity</a> <a href="/tags/xForm/" style="font-size: 14px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="http://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="search" class="search-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="Search ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="http://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback</h1>
+        <h2 class="site-description">Send back any feedback so we can inspect and adapt our features.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="http://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2020
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Let's develop an EIS connector</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+<script src="/js/mix/post-lazy-local.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+<script>searchFunc("/")</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>

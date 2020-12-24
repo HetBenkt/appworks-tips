@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>AppWorks Tips</title>
+  <icon>http://www.appworks-tips.com/images/favicon.png</icon>
+  <subtitle>Installments, thoughts, tricks and ideas</subtitle>
+  <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
+  
+  <link href="http://www.appworks-tips.com/"/>
+  <updated>2020-12-24T23:01:36.181Z</updated>
+  <id>http://www.appworks-tips.com/</id>
+  
+  <author>
+    <name>Antal Bos</name>
+    <uri>http://www.appworks-tips.com/</uri>
+    <email>contact@appworks-tips.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Developing and interceptor for the UDDI connector</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/078_developing_an_interceptor_for_the_uddi_connector/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/</id>
+    <published>2020-12-25T12:00:00.000Z</published>
+    <updated>2020-12-24T23:01:36.181Z</updated>
+    
+    <summary type="html">
+    
+      When your SOAP call via UDDI is not working, what do you do?...you build an interceptor!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/078_developing_an_interceptor_for_the_uddi_connector/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="UDDI" scheme="http://www.appworks-tips.com/tags/UDDI/"/>
+    
+      <category term="interceptor" scheme="http://www.appworks-tips.com/tags/interceptor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A dive on contract-based development</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/12/18/077_a_dive_on_contract_based_development/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/077_a_dive_on_contract_based_development/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/12/18/077_a_dive_on_contract_based_development/</id>
+    <published>2020-12-18T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.382Z</updated>
+    
+    <summary type="html">
+    
+      Design first and low code later...That&#39;s the power of CBD!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/077_a_dive_on_contract_based_development/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
+    
+      <category term="CBD" scheme="http://www.appworks-tips.com/tags/CBD/"/>
+    
+      <category term="XML" scheme="http://www.appworks-tips.com/tags/XML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Let&#39;s call some ReST from an xForm</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/12/11/076_let_us_call_some_rest_from_an_xform/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/076_let_us_call_some_rest_from_an_xform/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/12/11/076_let_us_call_some_rest_from_an_xform/</id>
+    <published>2020-12-11T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.382Z</updated>
+    
+    <summary type="html">
+    
+      ReST calls are a hot topic...See how we can call it from an xForm
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/076_let_us_call_some_rest_from_an_xform/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="xForm" scheme="http://www.appworks-tips.com/tags/xForm/"/>
+    
+      <category term="ReST" scheme="http://www.appworks-tips.com/tags/ReST/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Change the &quot;sysadmin&quot; password with these steps</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/12/04/075_change_the_sysadmin_password_with_these_steps/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/075_change_the_sysadmin_password_with_these_steps/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/12/04/075_change_the_sysadmin_password_with_these_steps/</id>
+    <published>2020-12-04T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.381Z</updated>
+    
+    <summary type="html">
+    
+      Let&#39;s update the &#39;sysadmin&#39; password and see what happens!?
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/075_change_the_sysadmin_password_with_these_steps/feature_tag.png" />
+    
+      <category term="Management" scheme="http://www.appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Sysadmin" scheme="http://www.appworks-tips.com/tags/Sysadmin/"/>
+    
+      <category term="Password" scheme="http://www.appworks-tips.com/tags/Password/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Automate your deployment with Jenkins</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/11/27/074_automate_your_deployment_with_jenkins/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/074_automate_your_deployment_with_jenkins/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/11/27/074_automate_your_deployment_with_jenkins/</id>
+    <published>2020-11-27T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.381Z</updated>
+    
+    <summary type="html">
+    
+      Last (automagically) phase on our CD/CI with &quot;Jenkins&quot;
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/074_automate_your_deployment_with_jenkins/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="Jenkins" scheme="http://www.appworks-tips.com/tags/Jenkins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Deploy your solution with ANT tasks</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/11/20/073_deploy_your_solution_with_ant_tasks/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/073_deploy_your_solution_with_ant_tasks/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/11/20/073_deploy_your_solution_with_ant_tasks/</id>
+    <published>2020-11-20T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.380Z</updated>
+    
+    <summary type="html">
+    
+      Next phase for continuous deployment with &quot;Ant-tasks&quot;
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/073_deploy_your_solution_with_ant_tasks/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="ANT" scheme="http://www.appworks-tips.com/tags/ANT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Build your solution with the CLI</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/11/13/072_build_your_solution_with_the_cli/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/072_build_your_solution_with_the_cli/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/11/13/072_build_your_solution_with_the_cli/</id>
+    <published>2020-11-13T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.380Z</updated>
+    
+    <summary type="html">
+    
+      First steps for continuous deployment with the &quot;Command Line Interface&quot;
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/072_build_your_solution_with_the_cli/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="CLI" scheme="http://www.appworks-tips.com/tags/CLI/"/>
+    
+      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Let&#39;s develop an EIS connector</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/11/06/071_lets_develop_an_eis_connector/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/071_lets_develop_an_eis_connector/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/11/06/071_lets_develop_an_eis_connector/</id>
+    <published>2020-11-06T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.379Z</updated>
+    
+    <summary type="html">
+    
+      Manipulate external data via the entity modeling platform?...Use an EIS connector!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/071_lets_develop_an_eis_connector/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Java" scheme="http://www.appworks-tips.com/tags/Java/"/>
+    
+      <category term="EIS connector" scheme="http://www.appworks-tips.com/tags/EIS-connector/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Update on OpenText Enterprise World (Digital 2020 Q4)</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/10/30/070b_update_enterprise_world_digital/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/070b_update_enterprise_world_digital/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/10/30/070b_update_enterprise_world_digital/</id>
+    <published>2020-10-30T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.379Z</updated>
+    
+    <summary type="html">
+    
+      Again, a free digital event during the pandemic...Is it what we can expect from it? (Oh yeah!!)
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/070b_update_enterprise_world_digital/feature_tag.png" />
+    
+      <category term="Enterprise world" scheme="http://www.appworks-tips.com/categories/Enterprise-world/"/>
+    
+    
+      <category term="OpenText" scheme="http://www.appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Enterprise world" scheme="http://www.appworks-tips.com/tags/Enterprise-world/"/>
+    
+      <category term="Digital" scheme="http://www.appworks-tips.com/tags/Digital/"/>
+    
+      <category term="Update" scheme="http://www.appworks-tips.com/tags/Update/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Installation survival guide update 20.4 (and what&#39;s new!)</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/10/23/070a_installation_survival_guide_update_20_4/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/070a_installation_survival_guide_update_20_4/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/10/23/070a_installation_survival_guide_update_20_4/</id>
+    <published>2020-10-23T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.378Z</updated>
+    
+    <summary type="html">
+    
+      A brand-new quarter with a brand-new version of the platform...This is AppWorks 20.4!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/070a_installation_survival_guide_update_20_4/feature_tag.png" />
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/categories/Installation/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="VM" scheme="http://www.appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/tags/Installation/"/>
+    
+      <category term="EP4" scheme="http://www.appworks-tips.com/tags/EP4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The tricks on &#39;regular expressions&#39; field validation</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/10/16/070_the_tricks_on_regex_field_validation/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/070_the_tricks_on_regex_field_validation/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/10/16/070_the_tricks_on_regex_field_validation/</id>
+    <published>2020-10-16T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.377Z</updated>
+    
+    <summary type="html">
+    
+      If you want to validate something more advanced on your field...use RegEx!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/070_the_tricks_on_regex_field_validation/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
+    
+      <category term="Validation" scheme="http://www.appworks-tips.com/tags/Validation/"/>
+    
+      <category term="Regular expression" scheme="http://www.appworks-tips.com/tags/Regular-expression/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Playing with lifecycle state conditions</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/10/09/069_playing_with_lifecycle_state_conditions/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/069_playing_with_lifecycle_state_conditions/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/10/09/069_playing_with_lifecycle_state_conditions/</id>
+    <published>2020-10-09T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.377Z</updated>
+    
+    <summary type="html">
+    
+      Moving to the next lifecycle state based on a condition?...keep reading for the answer!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/069_playing_with_lifecycle_state_conditions/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Lifecycle" scheme="http://www.appworks-tips.com/tags/Lifecycle/"/>
+    
+      <category term="State" scheme="http://www.appworks-tips.com/tags/State/"/>
+    
+      <category term="Condition" scheme="http://www.appworks-tips.com/tags/Condition/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The secret path of adding a keywords property</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/10/02/068_the_secret_path_of_adding_a_keywords_property/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/068_the_secret_path_of_adding_a_keywords_property/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/10/02/068_the_secret_path_of_adding_a_keywords_property/</id>
+    <published>2020-10-02T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.376Z</updated>
+    
+    <summary type="html">
+    
+      Using a labeling property on your form. Hard to find, but nice to use!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/068_the_secret_path_of_adding_a_keywords_property/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Property" scheme="http://www.appworks-tips.com/tags/Property/"/>
+    
+      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
+    
+      <category term="Keywords" scheme="http://www.appworks-tips.com/tags/Keywords/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The very easy &quot;Docker installation&quot; steps</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/09/25/067_the_very_easy_docker_installation_steps/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/067_the_very_easy_docker_installation_steps/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/09/25/067_the_very_easy_docker_installation_steps/</id>
+    <published>2020-09-25T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.376Z</updated>
+    
+    <summary type="html">
+    
+      This is it...the Docker installation...Finally!...And production ready!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/067_the_very_easy_docker_installation_steps/feature_tag.png" />
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/categories/Installation/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Docker" scheme="http://www.appworks-tips.com/tags/Docker/"/>
+    
+      <category term="Containerization" scheme="http://www.appworks-tips.com/tags/Containerization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The trick of using an entity task layout in your BPM</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/09/18/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/09/18/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/</id>
+    <published>2020-09-18T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.375Z</updated>
+    
+    <summary type="html">
+    
+      Starting a BPM from an entity lifecycle and loosing track because of an XForm?...Read the solution!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Entity" scheme="http://www.appworks-tips.com/tags/Entity/"/>
+    
+      <category term="Task layout" scheme="http://www.appworks-tips.com/tags/Task-layout/"/>
+    
+      <category term="Task" scheme="http://www.appworks-tips.com/tags/Task/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Install iHub with this simple guide</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/09/11/065_install_ihub_with_this_simple_guide/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/065_install_ihub_with_this_simple_guide/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/09/11/065_install_ihub_with_this_simple_guide/</id>
+    <published>2020-09-11T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.374Z</updated>
+    
+    <summary type="html">
+    
+      Need reporting on AppWorks?...For that we need iHub! Let&#39;s install...
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/065_install_ihub_with_this_simple_guide/feature_tag.png" />
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/categories/Installation/"/>
+    
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/tags/Installation/"/>
+    
+      <category term="iHub" scheme="http://www.appworks-tips.com/tags/iHub/"/>
+    
+      <category term="Information Hub" scheme="http://www.appworks-tips.com/tags/Information-Hub/"/>
+    
+      <category term="Magellan" scheme="http://www.appworks-tips.com/tags/Magellan/"/>
+    
+      <category term="Reporting" scheme="http://www.appworks-tips.com/tags/Reporting/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>See how easy you can create an OTDS tenant</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/09/04/064_see_how_easy_you_can_create_an_otds_tenant/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/064_see_how_easy_you_can_create_an_otds_tenant/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/09/04/064_see_how_easy_you_can_create_an_otds_tenant/</id>
+    <published>2020-09-04T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.374Z</updated>
+    
+    <summary type="html">
+    
+      Need a second ODTS instance? Solve it with a new tenant on the current instance!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/064_see_how_easy_you_can_create_an_otds_tenant/feature_tag.png" />
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/categories/Installation/"/>
+    
+    
+      <category term="OTDS" scheme="http://www.appworks-tips.com/tags/OTDS/"/>
+    
+      <category term="Tenant" scheme="http://www.appworks-tips.com/tags/Tenant/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Your final destination on consuming JSON data via ReST</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/08/28/063_your_final_destination_on_consuming_json_data_via_rest/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/063_your_final_destination_on_consuming_json_data_via_rest/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/08/28/063_your_final_destination_on_consuming_json_data_via_rest/</id>
+    <published>2020-08-28T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.373Z</updated>
+    
+    <summary type="html">
+    
+      A very common though &quot;consuming JSON via ReST&quot;...right? Keep reading to see the possibilities!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/063_your_final_destination_on_consuming_json_data_via_rest/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="ReST" scheme="http://www.appworks-tips.com/tags/ReST/"/>
+    
+      <category term="JSON" scheme="http://www.appworks-tips.com/tags/JSON/"/>
+    
+      <category term="WebService" scheme="http://www.appworks-tips.com/tags/WebService/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The art of creating a singleton entity</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/08/21/062_the_art_of_creating_a_singleton_entity/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/062_the_art_of_creating_a_singleton_entity/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/08/21/062_the_art_of_creating_a_singleton_entity/</id>
+    <published>2020-08-21T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.373Z</updated>
+    
+    <summary type="html">
+    
+      Back into the design patterns where only one instance can be created for the singleton entity.
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/062_the_art_of_creating_a_singleton_entity/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Entity" scheme="http://www.appworks-tips.com/tags/Entity/"/>
+    
+      <category term="Singleton" scheme="http://www.appworks-tips.com/tags/Singleton/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Your best shot on end-user (synchronized) BPM interaction</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/08/14/061_your_best_shot_on_enduser_bpm_interaction/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/061_your_best_shot_on_enduser_bpm_interaction/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/08/14/061_your_best_shot_on_enduser_bpm_interaction/</id>
+    <published>2020-08-14T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.372Z</updated>
+    
+    <summary type="html">
+    
+      Interact with a BPM directly in the user interface?...This is your post!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/061_your_best_shot_on_enduser_bpm_interaction/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Short lived" scheme="http://www.appworks-tips.com/tags/Short-lived/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tips on making a SOAP service available via UDDI container</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/08/07/060_tips_on_making_a_soap_service_available_via_uddi_container/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/060_tips_on_making_a_soap_service_available_via_uddi_container/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/08/07/060_tips_on_making_a_soap_service_available_via_uddi_container/</id>
+    <published>2020-08-07T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.372Z</updated>
+    
+    <summary type="html">
+    
+      How nice would it be to expose our own SOAP service in AppWorks...Here is the solution!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/060_tips_on_making_a_soap_service_available_via_uddi_container/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Spring" scheme="http://www.appworks-tips.com/tags/Spring/"/>
+    
+      <category term="SOAP" scheme="http://www.appworks-tips.com/tags/SOAP/"/>
+    
+      <category term="UDDI" scheme="http://www.appworks-tips.com/tags/UDDI/"/>
+    
+      <category term="Service container" scheme="http://www.appworks-tips.com/tags/Service-container/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Play with masterdata webservice in BPM loop</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/07/31/059_play_with_masterdata_webservice_in_bpm_loop/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/059_play_with_masterdata_webservice_in_bpm_loop/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/07/31/059_play_with_masterdata_webservice_in_bpm_loop/</id>
+    <published>2020-07-31T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.371Z</updated>
+    
+    <summary type="html">
+    
+      Mastering webservice data in a BPM...Great stuff to see, valuable lessons to learn!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/059_play_with_masterdata_webservice_in_bpm_loop/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Webservice" scheme="http://www.appworks-tips.com/tags/Webservice/"/>
+    
+      <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
+    
+      <category term="For-loop" scheme="http://www.appworks-tips.com/tags/For-loop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Simple steps on importing entities from database table</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/07/24/058_simple_steps_on_importing_entities_from_database_table/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/058_simple_steps_on_importing_entities_from_database_table/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/07/24/058_simple_steps_on_importing_entities_from_database_table/</id>
+    <published>2020-07-24T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.371Z</updated>
+    
+    <summary type="html">
+    
+      How easy can we make it...Generating entities from a database table, but with some pros and cons!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/058_simple_steps_on_importing_entities_from_database_table/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="linked entity" scheme="http://www.appworks-tips.com/tags/linked-entity/"/>
+    
+      <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Installation survival guide update 20.3 (and what&#39;s new!)</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/07/17/057a_installation_survival_guide_update_20_3/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/057a_installation_survival_guide_update_20_3/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/07/17/057a_installation_survival_guide_update_20_3/</id>
+    <published>2020-07-17T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.370Z</updated>
+    
+    <summary type="html">
+    
+      An update post on the 16.6 installation from the main menu (This is AppWorks 20.3!)
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/057a_installation_survival_guide_update_20_3/feature_tag.png" />
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/categories/Installation/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="VM" scheme="http://www.appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/tags/Installation/"/>
+    
+      <category term="EP3" scheme="http://www.appworks-tips.com/tags/EP3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Make a web library definition work for you</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/07/10/057_make_a_web_library_definition_work_for_you/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/057_make_a_web_library_definition_work_for_you/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/07/10/057_make_a_web_library_definition_work_for_you/</id>
+    <published>2020-07-10T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.370Z</updated>
+    
+    <summary type="html">
+    
+      Handling your web resources (images, icons, CSS, etc.) the proper &#39;AppWorks&#39; way of working
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/057_make_a_web_library_definition_work_for_you/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Web Library Definition" scheme="http://www.appworks-tips.com/tags/Web-Library-Definition/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Your best shot on monitoring lifecycles with CIM</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/07/03/056_your_best_shot_on_monitoring_lifecycles_with_cim/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/056_your_best_shot_on_monitoring_lifecycles_with_cim/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/07/03/056_your_best_shot_on_monitoring_lifecycles_with_cim/</id>
+    <published>2020-07-03T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.369Z</updated>
+    
+    <summary type="html">
+    
+      Exploring the &#39;Case Instance Manager&#39; artifact that shows info we would not expect to be in there!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/056_your_best_shot_on_monitoring_lifecycles_with_cim/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Monitoring" scheme="http://www.appworks-tips.com/tags/Monitoring/"/>
+    
+      <category term="Lifecycle" scheme="http://www.appworks-tips.com/tags/Lifecycle/"/>
+    
+      <category term="Case Instance Monitor" scheme="http://www.appworks-tips.com/tags/Case-Instance-Monitor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>See how easy a CSS theme is used</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/06/26/055_see_how_easy_a_css_theme_is_used/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/055_see_how_easy_a_css_theme_is_used/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/06/26/055_see_how_easy_a_css_theme_is_used/</id>
+    <published>2020-06-26T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.369Z</updated>
+    
+    <summary type="html">
+    
+      We&#39;ll cover your own logo in the header and how your company color standard can be used.
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/055_see_how_easy_a_css_theme_is_used/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Theme" scheme="http://www.appworks-tips.com/tags/Theme/"/>
+    
+      <category term="CSS" scheme="http://www.appworks-tips.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Playing with the mobile building blocks</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/06/19/054_playing_with_the_mobile_building_blocks/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/054_playing_with_the_mobile_building_blocks/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/06/19/054_playing_with_the_mobile_building_blocks/</id>
+    <published>2020-06-19T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.368Z</updated>
+    
+    <summary type="html">
+    
+      We&#39;ll take a closer look on the mobile building blocks deployed on the Gateway
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/054_playing_with_the_mobile_building_blocks/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Gateway" scheme="http://www.appworks-tips.com/tags/Gateway/"/>
+    
+      <category term="Mobile" scheme="http://www.appworks-tips.com/tags/Mobile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Easy steps to make the AppWorks Gateway available</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/06/12/053_easy_steps_to_make_the_appworks_gateway_available/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/053_easy_steps_to_make_the_appworks_gateway_available/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/06/12/053_easy_steps_to_make_the_appworks_gateway_available/</id>
+    <published>2020-06-12T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.368Z</updated>
+    
+    <summary type="html">
+    
+      The Gateway makes the mobile building blocks accessible!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/053_easy_steps_to_make_the_appworks_gateway_available/feature_tag.png" />
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/categories/Installation/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Gateway" scheme="http://www.appworks-tips.com/tags/Gateway/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to deploy an AppWorks package</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/06/05/052_how_to_deploy_an_appworks_package/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/052_how_to_deploy_an_appworks_package/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/06/05/052_how_to_deploy_an_appworks_package/</id>
+    <published>2020-06-05T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.367Z</updated>
+    
+    <summary type="html">
+    
+      See how the deployment of a package (with self-signed certificate) works on a clean environment
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/052_how_to_deploy_an_appworks_package/feature_tag.png" />
+    
+      <category term="Management" scheme="http://www.appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Package" scheme="http://www.appworks-tips.com/tags/Package/"/>
+    
+      <category term="How to" scheme="http://www.appworks-tips.com/tags/How-to/"/>
+    
+      <category term="Deploy" scheme="http://www.appworks-tips.com/tags/Deploy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to create an AppWorks package</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/05/29/051_how_to_create_an_appworks_package/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/051_how_to_create_an_appworks_package/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/05/29/051_how_to_create_an_appworks_package/</id>
+    <published>2020-05-29T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.367Z</updated>
+    
+    <summary type="html">
+    
+      Always nice to know how to package a solution once you&#39;re ready with your final craftsmanship
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/051_how_to_create_an_appworks_package/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Package" scheme="http://www.appworks-tips.com/tags/Package/"/>
+    
+      <category term="How to" scheme="http://www.appworks-tips.com/tags/How-to/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Play with diacritics in a textfield</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/050_play_with_diacritics_in_a_textfield/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/</id>
+    <published>2020-05-22T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.367Z</updated>
+    
+    <summary type="html">
+    
+      A thing we&#39;ll all face in our lives...diacritic characters...What about it in AppWorks!?
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/050_play_with_diacritics_in_a_textfield/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Diacritics" scheme="http://www.appworks-tips.com/tags/Diacritics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1-year anniversary!</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/05/15/049a_1_year_anniversary/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/049a_1_year_anniversary/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/05/15/049a_1_year_anniversary/</id>
+    <published>2020-05-15T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.367Z</updated>
+    
+    <summary type="html">
+    
+      Yes, we&#39;ve reached it!...1 year of commitment on AppWorks blog posts. Let&#39;s recap the results!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/049a_1_year_anniversary/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="Anniversary" scheme="http://www.appworks-tips.com/tags/Anniversary/"/>
+    
+      <category term="Recap" scheme="http://www.appworks-tips.com/tags/Recap/"/>
+    
+      <category term="Analytics" scheme="http://www.appworks-tips.com/tags/Analytics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Deleting an entity the proper way</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/05/08/049_deleting_an_entity_the_proper_way/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/049_deleting_an_entity_the_proper_way/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/05/08/049_deleting_an_entity_the_proper_way/</id>
+    <published>2020-05-08T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.366Z</updated>
+    
+    <summary type="html">
+    
+      Steps and actions required after deleting an entity in design-time!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/049_deleting_an_entity_the_proper_way/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Entity" scheme="http://www.appworks-tips.com/tags/Entity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Exceed number of follow up zeros</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/05/01/048_exceed_number_of_follow_up_zeros/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/048_exceed_number_of_follow_up_zeros/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/05/01/048_exceed_number_of_follow_up_zeros/</id>
+    <published>2020-05-01T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.366Z</updated>
+    
+    <summary type="html">
+    
+      What happens when we exceed the number of follow up zeros configured on the identity of an entity?
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/048_exceed_number_of_follow_up_zeros/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Properties" scheme="http://www.appworks-tips.com/tags/Properties/"/>
+    
+      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
+    
+      <category term="Identity" scheme="http://www.appworks-tips.com/tags/Identity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A dive on how long a long text is</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/04/24/047_a_dive_on_how_long_is_a_long_text/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/047_a_dive_on_how_long_is_a_long_text/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/04/24/047_a_dive_on_how_long_is_a_long_text/</id>
+    <published>2020-04-24T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.365Z</updated>
+    
+    <summary type="html">
+    
+      Let&#39;s do a dive on the &#39;long text&#39; property and how long it can be!?
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/047_a_dive_on_how_long_is_a_long_text/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
+    
+      <category term="Long text property" scheme="http://www.appworks-tips.com/tags/Long-text-property/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Update on OpenText Enterprise World (Digital)</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/04/17/046b_update_enterprise_world_digital/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/046b_update_enterprise_world_digital/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/04/17/046b_update_enterprise_world_digital/</id>
+    <published>2020-04-17T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.364Z</updated>
+    
+    <summary type="html">
+    
+      A free digital event...Is it what we can expect from it? (Spoiler...Hell yeah!!)
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/046b_update_enterprise_world_digital/feature_tag.png" />
+    
+      <category term="Enterprise world" scheme="http://www.appworks-tips.com/categories/Enterprise-world/"/>
+    
+    
+      <category term="OpenText" scheme="http://www.appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Enterprise world" scheme="http://www.appworks-tips.com/tags/Enterprise-world/"/>
+    
+      <category term="Digital" scheme="http://www.appworks-tips.com/tags/Digital/"/>
+    
+      <category term="Update" scheme="http://www.appworks-tips.com/tags/Update/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Installation survival guide update 20.2 (and what&#39;s new!)</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/04/10/046a_installation_survival_guide_update_20_2/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/046a_installation_survival_guide_update_20_2/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/04/10/046a_installation_survival_guide_update_20_2/</id>
+    <published>2020-04-10T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.363Z</updated>
+    
+    <summary type="html">
+    
+      An update post on the 16.6 installation from the main menu (This is AppWorks 20.2!)
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/046a_installation_survival_guide_update_20_2/feature_tag.png" />
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/categories/Installation/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="VM" scheme="http://www.appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/tags/Installation/"/>
+    
+      <category term="EP2" scheme="http://www.appworks-tips.com/tags/EP2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Next level form creation</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/04/03/046_next_level_form_creation/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/046_next_level_form_creation/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/04/03/046_next_level_form_creation/</id>
+    <published>2020-04-03T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.363Z</updated>
+    
+    <summary type="html">
+    
+      Let&#39;s do a deeper dive on the form creation building block
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/046_next_level_form_creation/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to create conditional value assistance on 2 properties</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/03/27/045_how_to_create_conditional_value_assistance_on_two_props/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/045_how_to_create_conditional_value_assistance_on_two_props/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/03/27/045_how_to_create_conditional_value_assistance_on_two_props/</id>
+    <published>2020-03-27T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.362Z</updated>
+    
+    <summary type="html">
+    
+      A &#39;how to&#39; tutorial on creating value assistance between 2 properties on a form
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/045_how_to_create_conditional_value_assistance_on_two_props/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
+    
+      <category term="Value assistance" scheme="http://www.appworks-tips.com/tags/Value-assistance/"/>
+    
+      <category term="How to" scheme="http://www.appworks-tips.com/tags/How-to/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The explanation of versioning AppWorks releases</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/03/20/044_the_explanation_of_versioning_appworks_releases/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/044_the_explanation_of_versioning_appworks_releases/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/03/20/044_the_explanation_of_versioning_appworks_releases/</id>
+    <published>2020-03-20T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.361Z</updated>
+    
+    <summary type="html">
+    
+      An overview of the version labeling of the AppWorks releases
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/044_the_explanation_of_versioning_appworks_releases/feature_tag.png" />
+    
+      <category term="Management" scheme="http://www.appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Versioning" scheme="http://www.appworks-tips.com/tags/Versioning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The required tips to send/retrieve E-mail with attachments</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/03/13/043_the_required_tips_to_send_retrieve_email_with_attachments/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/043_the_required_tips_to_send_retrieve_email_with_attachments/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/03/13/043_the_required_tips_to_send_retrieve_email_with_attachments/</id>
+    <published>2020-03-13T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.360Z</updated>
+    
+    <summary type="html">
+    
+      This post is a deeper dive on sending out and receiving mail from AppWorks.
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/043_the_required_tips_to_send_retrieve_email_with_attachments/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Building blocks" scheme="http://www.appworks-tips.com/tags/Building-blocks/"/>
+    
+      <category term="E-mail" scheme="http://www.appworks-tips.com/tags/E-mail/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Your guide on creating a &#39;Dynamic Enumerated Text&#39; property</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/03/06/042_your_guide_on_creating_a_dynamic_enumerated_text_property/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/042_your_guide_on_creating_a_dynamic_enumerated_text_property/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/03/06/042_your_guide_on_creating_a_dynamic_enumerated_text_property/</id>
+    <published>2020-03-06T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.359Z</updated>
+    
+    <summary type="html">
+    
+      Wondering how a &#39;Dynamic Enumerated Text&#39; can be used as a property...Keep reading for the answer!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/042_your_guide_on_creating_a_dynamic_enumerated_text_property/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Enumerated" scheme="http://www.appworks-tips.com/tags/Enumerated/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Generate a random int for a property value</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/02/28/041_generate_a_random_int_for_a_property_value/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/041_generate_a_random_int_for_a_property_value/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/02/28/041_generate_a_random_int_for_a_property_value/</id>
+    <published>2020-02-28T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.358Z</updated>
+    
+    <summary type="html">
+    
+      A demo on a small custom webservice that can be used to generate a random int value for a property
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/041_generate_a_random_int_for_a_property_value/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Custom webservice" scheme="http://www.appworks-tips.com/tags/Custom-webservice/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Your guide on playing with progression bars</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/02/21/040_your_guide_on_playing_with_progression_bars/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/040_your_guide_on_playing_with_progression_bars/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/02/21/040_your_guide_on_playing_with_progression_bars/</id>
+    <published>2020-02-21T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.357Z</updated>
+    
+    <summary type="html">
+    
+      This post will give you all the insides on using those nicely looking progression bars
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/040_your_guide_on_playing_with_progression_bars/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Progression bar" scheme="http://www.appworks-tips.com/tags/Progression-bar/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The best guide on entity property creation</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/02/14/039_the_best_guide_on_entity_property_creation/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/039_the_best_guide_on_entity_property_creation/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/02/14/039_the_best_guide_on_entity_property_creation/</id>
+    <published>2020-02-14T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.357Z</updated>
+    
+    <summary type="html">
+    
+      A best of all guide about the creation of properties on an entity. Who doesn&#39;t want to know?
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/039_the_best_guide_on_entity_property_creation/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Building blocks" scheme="http://www.appworks-tips.com/tags/Building-blocks/"/>
+    
+      <category term="Properties" scheme="http://www.appworks-tips.com/tags/Properties/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>An overview on the building blocks categories</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/02/07/038_an_overview_on_the_building_blocks_categories/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/038_an_overview_on_the_building_blocks_categories/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/02/07/038_an_overview_on_the_building_blocks_categories/</id>
+    <published>2020-02-07T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.356Z</updated>
+    
+    <summary type="html">
+    
+      This post gives an overview and thoughts about the several building blocks categories available
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/038_an_overview_on_the_building_blocks_categories/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Building blocks" scheme="http://www.appworks-tips.com/tags/Building-blocks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Your best shot on BPM debugging</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/01/31/037_your_best_shot_on_bpm_debugging/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/037_your_best_shot_on_bpm_debugging/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/01/31/037_your_best_shot_on_bpm_debugging/</id>
+    <published>2020-01-31T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.355Z</updated>
+    
+    <summary type="html">
+    
+      This post covers your best shot for debugging your Business process model
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/037_your_best_shot_on_bpm_debugging/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Debugging" scheme="http://www.appworks-tips.com/tags/Debugging/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PIM brings BPM monitoring to the next level</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/01/24/036_pim_brings_bpm_monitoring_to_the_next_level/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/036_pim_brings_bpm_monitoring_to_the_next_level/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/01/24/036_pim_brings_bpm_monitoring_to_the_next_level/</id>
+    <published>2020-01-24T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.354Z</updated>
+    
+    <summary type="html">
+    
+      This post covers a great way to monitor your BPM instances with PIM
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/036_pim_brings_bpm_monitoring_to_the_next_level/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Monitoring" scheme="http://www.appworks-tips.com/tags/Monitoring/"/>
+    
+      <category term="PIM" scheme="http://www.appworks-tips.com/tags/PIM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The trick that makes it possible to update Documentum data</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/01/17/035_the_trick_that_makes_it_possible_to_update_documentum_data/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/035_the_trick_that_makes_it_possible_to_update_documentum_data/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2020/01/17/035_the_trick_that_makes_it_possible_to_update_documentum_data/</id>
+    <published>2020-01-17T12:00:00.000Z</published>
+    <updated>2020-12-24T15:41:52.352Z</updated>
+    
+    <summary type="html">
+    
+      This post covers the possibility to update data on the Documentum side via an AppWorks BPM
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/035_the_trick_that_makes_it_possible_to_update_documentum_data/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Webservice" scheme="http://www.appworks-tips.com/tags/Webservice/"/>
+    
+      <category term="Documentum" scheme="http://www.appworks-tips.com/tags/Documentum/"/>
+    
+      <category term="Synchronization" scheme="http://www.appworks-tips.com/tags/Synchronization/"/>
+    
+      <category term="Customization" scheme="http://www.appworks-tips.com/tags/Customization/"/>
+    
+  </entry>
+  
+</feed>

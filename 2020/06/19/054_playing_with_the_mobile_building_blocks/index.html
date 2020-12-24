@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+	
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142664854-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-142664854-1');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Playing with the mobile building blocks | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="We'll take a closer look on the mobile building blocks deployed on the Gateway">
+
+	
+	<meta name="keywords" content="appworks, gateway, mobile">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Playing with the mobile building blocks | AppWorks Tips">
+	<meta property="og:description" content="We'll take a closer look on the mobile building blocks deployed on the Gateway">
+	<meta property="og:url" content="http://www.appworks-tips.com/2020/06/19/054_playing_with_the_mobile_building_blocks/">
+
+	
+	<meta property="article:published_time" content="2020-06-19T12:06:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2020/06/19/054_playing_with_the_mobile_building_blocks/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/about" title="ABOUT">ABOUT</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/installation" title="INSTALLATION 20.4">INSTALLATION 20.4</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/ci_cd" title="CI/CD">CI/CD <?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt" height="16pt" viewbox="0 0 16 16" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(255%,255%,0%);fill-opacity:1;" d="M 7.183594 7.742188 C 6.886719 7.867188 6.792969 8.105469 6.90625 8.371094 L 7.808594 7.992188 C 7.710938 7.761719 7.417969 7.644531 7.183594 7.742188 Z M 7.183594 7.742188 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(255%,255%,0%);fill-opacity:1;" d="M 14.480469 8.679688 L 15.601562 8 L 14.480469 7.320312 L 15.433594 6.417969 L 14.195312 5.984375 L 14.945312 4.90625 L 13.640625 4.742188 L 14.148438 3.53125 L 12.84375 3.640625 L 13.085938 2.351562 L 11.828125 2.726562 L 11.800781 1.417969 L 10.648438 2.046875 L 10.347656 0.769531 L 9.355469 1.628906 L 8.792969 0.441406 L 8 1.484375 L 7.207031 0.441406 L 6.644531 1.628906 L 5.652344 0.769531 L 5.351562 2.046875 L 4.199219 1.417969 L 4.171875 2.726562 L 2.914062 2.351562 L 3.160156 3.640625 L 1.851562 3.53125 L 2.359375 4.742188 L 1.058594 4.90625 L 1.804688 5.984375 L 0.566406 6.417969 L 1.519531 7.320312 L 0.398438 8 L 1.519531 8.679688 L 0.566406 9.582031 L 1.804688 10.011719 L 1.054688 11.089844 L 2.359375 11.257812 L 1.851562 12.46875 L 3.160156 12.359375 L 2.914062 13.648438 L 4.171875 13.269531 L 4.199219 14.582031 L 5.351562 13.953125 L 5.652344 15.230469 L 6.644531 14.371094 L 7.203125 15.558594 L 8 14.515625 L 8.792969 15.558594 L 9.355469 14.371094 L 10.347656 15.230469 L 10.648438 13.953125 L 11.800781 14.582031 L 11.828125 13.273438 L 13.085938 13.648438 L 12.839844 12.359375 L 14.148438 12.46875 L 13.640625 11.257812 L 14.945312 11.09375 L 14.195312 10.011719 L 15.433594 9.582031 Z M 5.421875 10.808594 L 4.863281 9.484375 C 4.757812 9.234375 4.597656 9.042969 4.316406 9.164062 C 4.011719 9.292969 4.011719 9.523438 4.148438 9.84375 L 4.6875 11.117188 L 3.695312 11.539062 L 2.636719 9.035156 L 3.542969 8.652344 L 3.707031 9.042969 C 3.804688 8.648438 3.980469 8.382812 4.359375 8.222656 C 5.015625 7.945312 5.492188 8.199219 5.78125 8.886719 L 6.414062 10.386719 Z M 8.011719 9.796875 C 7.210938 10.136719 6.394531 9.941406 6.039062 9.097656 C 5.695312 8.277344 6.085938 7.492188 6.890625 7.152344 C 7.816406 6.761719 8.644531 7.164062 9.015625 8.078125 L 7.117188 8.878906 C 7.246094 9.175781 7.554688 9.273438 7.820312 9.164062 C 7.976562 9.097656 8.089844 8.964844 8.097656 8.785156 L 9.050781 8.382812 C 9.140625 9.078125 8.597656 9.550781 8.011719 9.796875 Z M 12 8.027344 L 10.992188 6.722656 L 10.984375 6.726562 L 11.253906 8.339844 L 10.285156 8.75 L 8.402344 6.597656 L 9.371094 6.1875 L 10.40625 7.574219 L 10.417969 7.570312 L 10.148438 5.859375 L 10.992188 5.503906 L 12.027344 6.886719 L 12.035156 6.882812 L 11.769531 5.171875 L 12.710938 4.773438 L 12.96875 7.617188 Z M 12 8.027344 "/>
+</g>
+</svg>
+</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+            </li>
+            
+            
+            
+        </ul> 
+    </div>
+
+    
+    <div class="search-button">
+        <a class="subscribe-button" title="Search" href="#search" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+    </div>
+    
+
+    <div class="site-nav-right">
+        
+        <a class="subscribe-button" title="Search" href="#search" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+         
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2020-06-19T12:00:00.000Z" itemprop="datePublished">
+                    2020-06-19
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Development/">Development</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">Playing with the mobile building blocks</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2020/054_playing_with_the_mobile_building_blocks/feature_tag.png)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>And for today…We will torture our brand-new Gateway web application with some mobile building block functionality on an entity. Not that hard to do so…I thought!</p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>Spin up the VM, open the ‘Explorer’ interface with your workspace and the corresponding project. We now just pick an entity to play with…For me it’s the ‘Category’ entity (we use this one for most of our try-outs)</p>
+<p>Open the entity and add the ‘Mobile app’ building block from the ‘Functional’ category</p>
+<p><img alt="mobile_001" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_001.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_001.png"></p>
+<p>You get a create screen that looks like this:</p>
+<p><img alt="mobile_002" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_002.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_002.png"></p>
+<p>Give the app a name like ‘AllCategories’ and hit that blue ‘Add’ button for the next screen.</p>
+<p>The first thing you’ll see is the ‘readiness’ of the Gateway!</p>
+<p><img alt="mobile_003" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_003.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_003.png"></p>
+<p>Make sure you get a ‘Green’ status. If not, you need to check the previous post where you add some properties in the AppWorks platform configuration with the CMC tool…remember that CMC tool from the previous post?!</p>
+<p>Now we first need to make 2 other building blocks available.</p>
+<hr>
+<h5 id="1-A-new-list"><a href="#1-A-new-list" class="headerlink" title="1. A new list"></a>1. A new list</h5><p>You probably have it already, but in case you don’t you can add a new ‘List’ building block with the name ‘AllCategories’ and just add some properties. This is how it looks in my environment.</p>
+<p><img alt="mobile_004" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_004.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_004.png"></p>
+<h5 id="2-A-new-layout"><a href="#2-A-new-layout" class="headerlink" title="2. A new layout"></a>2. A new layout</h5><p>Next is adding a new ‘Layout’ building block. Give it the name ‘MobileLayoutAllCategories’</p>
+<p><img alt="mobile_005" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_005.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_005.png"></p>
+<p>And hit that blue ‘Add’ button to continue crafting a new layout…great!</p>
+<p>This layout is makes it possible to ‘Open’ our selected entity for viewing/editing, so we just add 2 panels for now.</p>
+<p>First is a ‘Form’ panel that you can drag &amp; drop in the middle of the screen and make sure you select the ‘Default’ form of the current ‘Category’ entity (if not available just create this one also, but you probably have it already!)</p>
+<p>Next is the drag &amp; drop of an ‘Actions’ panel on top of the ‘Form’ panel and you can keep the default settings for this panel.</p>
+<p>The result should look a bit like this:</p>
+<p><img alt="mobile_006" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_006.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_006.png"></p>
+<p>Save the layout and go back to the mobile app ‘AllCategories’ building block where you now can select the brand-new crafted ‘Layout’ and the already available ‘List’.</p>
+<hr>
+<p>To make it all nice and shiny we’ll add a cool ‘App Icon’ to it.</p>
+<p><img alt="mobile_007" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_007.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_007.png"></p>
+<p>But wait for the deployment…there is more to do to make it all work…</p>
+<hr>
+<p>We are required to expose the <strong>CRUD services for the entity</strong>. So, add the Web service building block like this</p>
+<p><img alt="mobile_007_1" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_007_1.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_007_1.png"></p>
+<p>And make sure you expose all 4 operations!</p>
+<p><img alt="mobile_007_2" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_007_2.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_007_2.png"></p>
+<p>Last step is to save the entity and publish the damn thing!</p>
+<hr>
+<p>Now…the moment of truth!</p>
+<p>Yes, go back to the mobile app configuration where you can hit that bright shining ‘Deploy’ button for some Gateway magic to happen and wait for the status change to ‘Deployed’</p>
+<p><img alt="mobile_008" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_008.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_008.png"></p>
+<p>Ok…Let’s have a look on the ‘Gateway’…<a href="http://192.168.56.107:8181/gateway" target="_blank" rel="noopener">http://192.168.56.107:8181/gateway</a></p>
+<p>Login with username ‘otag’ and password ‘admin’ and see our deployed application!</p>
+<p><img alt="mobile_009" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_009.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_009.png"></p>
+<blockquote>
+<p>Note: don’t ‘enable’ the application from the gateway view with that blue button! Make sure you enable/disable the app from the mobile app building block…I saw strange things happening…trust me!</p>
+</blockquote>
+<hr>
+<p>Now the big question…<strong>How do we view this app on our mobile device??</strong></p>
+<p>For that, my AppWorks friends, we’ll use one of the <a href="https://developer.opentext.com/webaccess/#url=%2Fawd%2Fresources%2Fdownloads%23ManageRuntimeClients&tab=501" target="_blank" rel="noopener">AppWorks Managed Runtime Clients</a> for Android or iOS, There is also a desktop version (x86 and x64) available, but this client is not suitable for our application as it is deployed as a ‘mobile app’ and not a ‘desktop app’…Take a good look in de screenshot again (left corner of the app, under the ‘Enable’ button)</p>
+<p>But…For the mobile part you need to have your VM image ‘reachable’ on my mobile device…agree? </p>
+<p>What we also can do is to simulate a mobile device on our local Windows pc! A great tool for this is <a href="https://www.bluestacks.com/download.html" target="_blank" rel="noopener">BlueStacks</a>. Just install it and let it run. Provide it with a google account so you can access the play store.</p>
+<p>The google play store will bring you to the correct app with the name ‘OpenText AppWorks 16’</p>
+<p><img alt="mobile_010" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_010.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_010.png"></p>
+<p>Click the google app and install it on the current running BlueStacks instance.</p>
+<p>When installed you can open the app.</p>
+<p><img alt="mobile_011" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_011.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_011.png"></p>
+<p>Just give it an ‘Allow’</p>
+<p><img alt="mobile_012" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_012.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_012.png"></p>
+<p>Fill in the correct gateway URL <a href="http://192.168.56.107:8282" target="_blank" rel="noopener">http://192.168.56.107:8282</a> and hit that black mark in the top right corner to save and continue.</p>
+<p><img alt="mobile_013" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_013.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_013.png"></p>
+<p>Now you get a login screen…This is (and should be) an OTDS login screen (You know because there is an ‘forgot password’ option available)! So, fill-in credentials for OTDS to get access and hit that ‘Sign in’ option.</p>
+<blockquote>
+<p>The ‘normal’ screen would look like this, but this is not working for me!</p>
+<p><img alt="mobile_014" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_014.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_014.png"></p>
+</blockquote>
+<p>You see that we’re getting close to and end as we see our application now</p>
+<p><img alt="mobile_015" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_015.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_015.png"></p>
+<p>Hit the plus-sign to ‘add’ the application to you ‘App Library’.</p>
+<p><img alt="mobile_016" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_016.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_016.png"></p>
+<p>Now you can use it…Hooray!</p>
+<hr>
+<p>The next section is <strong>about the struggles I had</strong> during my app deployment as it might give me/you some headache!</p>
+<h5 id="1-Login-URL-validation"><a href="#1-Login-URL-validation" class="headerlink" title="1. Login URL validation"></a>1. Login URL validation</h5><p>Check the result on this gateway URL <a href="http://192.168.56.107:8282/v3/admin/auth/loginurl" target="_blank" rel="noopener">http://192.168.56.107:8282/v3/admin/auth/loginurl</a></p>
+<p>With this json as result where you need to make sure the ‘loginUrl’ value is correct and accessible from your desktop client/android/iOS gateway app!</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="attr">"loginUrl"</span>:<span class="string">"http://192.168.56.107:8282/otdsws/login"</span>,<span class="attr">"clientId"</span>:<span class="string">"otag-otagOAuthClient"</span>,<span class="attr">"supportsAnonymousAccess"</span>:<span class="literal">false</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<p>If not, you can update this URL in the gateway console</p>
+<p><img alt="mobile_018" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_018.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_018.png"></p>
+<h5 id="2-Gateway-admin-status"><a href="#2-Gateway-admin-status" class="headerlink" title="2. Gateway admin status"></a>2. Gateway admin status</h5><p>This URL is also an interesting one <a href="http://192.168.56.116:8282/v3/admin/status" target="_blank" rel="noopener">http://192.168.56.116:8282/v3/admin/status</a> to see if ODTS is on your side! with a result like this</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="attr">"dbSetup"</span>:<span class="literal">true</span>,<span class="attr">"dbConnected"</span>:<span class="literal">true</span>,<span class="attr">"embeddedOtdsIncluded"</span>:<span class="literal">false</span>,<span class="attr">"derbyIncluded"</span>:<span class="literal">false</span>,<span class="attr">"otdsSetup"</span>:<span class="literal">true</span>,<span class="attr">"otdsConnected"</span>:<span class="literal">true</span>,<span class="attr">"developerMode"</span>:<span class="literal">false</span>,<span class="attr">"tenantMode"</span>:<span class="literal">false</span>,<span class="attr">"tenantId"</span>:<span class="string">""</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-App-setting"><a href="#3-App-setting" class="headerlink" title="3. App setting"></a>3. App setting</h5><p>Another thing I noticed is the app settings itself after deployment!</p>
+<p><img alt="mobile_019" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_019.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_019.png"></p>
+<p>You’ll see these settings where you need to make sure the URL’s are correct!</p>
+<p><img alt="mobile_020" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_020.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_020.png"></p>
+<h5 id="4-OTDS-Authentication-end-to-end"><a href="#4-OTDS-Authentication-end-to-end" class="headerlink" title="4. OTDS Authentication end-to-end"></a>4. OTDS Authentication end-to-end</h5><p>Make sure you have a proper OTDS user available that has access to these bullets</p>
+<ul>
+<li><p>Be an Entity Runtime User role within your organization</p>
+<ul>
+<li>You can do this in the user management artifact with an administrator user like ‘sysadmin’</li>
+</ul>
+</li>
+<li><p>Make sure the correct OTDS Resource ID is used</p>
+<ul>
+<li>In the deployed app</li>
+<li>But also, in the AppWorks properties <code>com.opentext.appworks.OTDSResource</code> (with the CMC tool!)</li>
+</ul>
+</li>
+<li><p>Make the AppWorks partition accessible to the OTDS OTAG partition!</p>
+<ul>
+<li>This can be done in the otds-admin console…don’t forget to hit that ‘save’</li>
+</ul>
+</li>
+<li><p>And make the OTAG partition accessible to the OTDS AppWorks partition!</p>
+<ul>
+<li>Also, from the same otds-admin console (with the ‘save’)</li>
+</ul>
+<p><img alt="mobile_021" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_021.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_021.png"></p>
+</li>
+<li><p>What I also did was adding my OTDS user also to the otagadmins group</p>
+<ul>
+<li>This let you login to the gateway with this user (probably not required, but it might help you!)</li>
+</ul>
+<p><img alt="mobile_022" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022.png"></p>
+</li>
+</ul>
+<h5 id="5-Application-end-to-end"><a href="#5-Application-end-to-end" class="headerlink" title="5. Application end-to-end"></a>5. Application end-to-end</h5><p>Also make sure you pin-point these bullets</p>
+<ul>
+<li>Save your entities and make sure they are deployed.<ul>
+<li>This is to make sure you CRUD webservices are available in runtime!</li>
+</ul>
+</li>
+<li>Make sure you can create some entity instances with the OTDS user account in the /app/start front-end</li>
+</ul>
+<h5 id="6-Logging"><a href="#6-Logging" class="headerlink" title="6. Logging"></a>6. Logging</h5><p>And last but least is off course the logging (the eyes of your system!). And in this case the gateway logging!</p>
+<p>Set the gateway log level to ‘debug’ in <code>sudo vi /opt/tomcat2/latest/gateway/WEB-INF/classes/log4j2.xml</code></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">&amp;lt;</span>Root level="debug"<span class="symbol">&amp;gt;</span><span class="symbol">&amp;lt;</span>AppenderRef ref="OTAG"/<span class="symbol">&amp;gt;</span><span class="symbol">&amp;lt;</span>/Root<span class="symbol">&amp;gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>After this you can monitor this file</p>
+<p><code>sudo tail -f /opt/tomcat2/latest/logs/gateway-otag.log</code></p>
+<p>Also, this file did help me on my way!</p>
+<p><code>sudo tail -f /opt/tomcat2/latest/logs/localhost_access_log.&amp;lt;date&amp;gt;.txt</code></p>
+<h5 id="7-Other-resources"><a href="#7-Other-resources" class="headerlink" title="7. Other resources"></a>7. Other resources</h5><p>During my journey I also used these resources</p>
+<ul>
+<li><a href="http://bpm.timoheinz.de/add-a-mobile-app/" target="_blank" rel="noopener">This post</a> where those mobile building blocks are also used!</li>
+<li>And the “OpenText™ AppWorks™ Gateway Installation and Administration Guide”<ul>
+<li>Not part of the AppWorks suite documentation but we downloaded it from <a href="https://developer.opentext.com/awd/content/getlarge/otag-igd-en_16.7.pdf" target="_blank" rel="noopener">here</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="Update-and-lessons-learned-on-a-second-third-and-fourth-try"><a href="#Update-and-lessons-learned-on-a-second-third-and-fourth-try" class="headerlink" title="Update and lessons learned on a second, third and fourth try!"></a>Update and lessons learned on a second, third and fourth try!</h5><p><strong>RTFM…again and again!</strong></p>
+<p>In the final comments you can read that I finish the post with an error about authentication. After reading the “Gateway Installation and Administration Guide” documentation again (and after an insider’s tip) I noticed this note:</p>
+<p><img alt="mobile_022_1" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_1.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_1.png"></p>
+<p>That’s an option you need to enable in the <a href="http://192.168.56.116:8282/#!/dashboard/admin/settings" target="_blank" rel="noopener">gateway settings</a>.</p>
+<p><img alt="mobile_022_2" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_2.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_2.png"></p>
+<p>And restart your gateway instance <code>systemctl restart tomcat2</code> in my case.</p>
+<p>This helped me to login into the app itself in BlueStacks</p>
+<blockquote>
+<p>Now you will also see the ‘normal’ (non-OTDS) login screen again and the OTDS authentication happens in the next step!</p>
+</blockquote>
+<p><img alt="mobile_022_3" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_3.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_3.png"></p>
+<p>With a result like this…indeed…an empty app!?</p>
+<p><img alt="mobile_022_4" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_4.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_4.png"></p>
+<p>But why not creating some instances of the ‘Category’ entity!?….Trust me, they’re created with the same user in the /app/start front-end! And that made me…</p>
+<h5 id="Change-the-organization-in-the-app-settings"><a href="#Change-the-organization-in-the-app-settings" class="headerlink" title="Change the organization in the app settings"></a>Change the organization in the app settings</h5><p><img alt="mobile_022_5" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_5.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_5.png"></p>
+<p>But this change still gave me no results in the app…Even after cleaning the app cache in BlueStacks!</p>
+<h5 id="Back-to-the-eyes-of-the-system…our-logging"><a href="#Back-to-the-eyes-of-the-system…our-logging" class="headerlink" title="Back to the eyes of the system…our logging!"></a>Back to the eyes of the system…our logging!</h5><p>As OTAG and OTDS are passed, our next logfile would be the TomEE where AppWorks is running!</p>
+<p><code>sudo tail -f /opt/tomee/apache-tomee-plus-8.0.0/logs/localhost_access_log.&amp;lt;date&amp;gt;.txt</code></p>
+<p>And there we see some interesting stuff passing by…Where the first should (as I would think) give back some items…</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">/home/appworks_tips/app/entityRestService/Elements(6550dfdcfc863508a5afbc5ceff0a9de.F8B156B4FF8F11E6EE191FD794C6571A)/ResultItems?Identity.Id=327681&amp;Identity.ContextId=82B840A98FA64175BBAECA4667661BFD&amp;Identity.PanelId=82B840A98FA64175BBAECA4667661BFD</span><br><span class="line"></span><br><span class="line">With a JSON result:</span><br><span class="line">&#123;<span class="attr">"result"</span>:&#123;<span class="attr">"skip"</span>:<span class="number">0</span>,<span class="attr">"nextSkip"</span>:<span class="number">0</span>,<span class="attr">"top"</span>:<span class="number">0</span>,<span class="attr">"count"</span>:<span class="number">0</span>,<span class="attr">"items"</span>:[]&#125;&#125;</span><br><span class="line"></span><br><span class="line">/home/appworks_tips/app/entityRestService/Elements(58f8221d347d3656a4b34b55395d125e.0800276907f1a1ea825d289bf5bb91c7)</span><br><span class="line"></span><br><span class="line">Also, with some fine JSON result!</span><br><span class="line"></span><br><span class="line">/home/appworks_tips/app/entityRestService/Items($user)?userId=$me&amp;language=en-US&amp;include=All,List.User.HomePages</span><br><span class="line"></span><br><span class="line">And again, with some fine JSON result...</span><br></pre></td></tr></table></figure>
+
+<h5 id="Why-is-there-no-result-in-the-items-array-“items”-from-the-first-URL"><a href="#Why-is-there-no-result-in-the-items-array-“items”-from-the-first-URL" class="headerlink" title="Why is there no result in the items array “items”:[] from the first URL?"></a>Why is there no result in the items array “items”:[] from the first URL?</h5><p>Looks like we need a fifth session…damn!</p>
+<p>…A weekend is passed, and a light was shining again in the far end of the tunnel!</p>
+<p>We expose webservices on the entity and that also means we need a service that make them executable/reachable…For this we need an ‘Application Server’. Or in other words the AppServer service container! And in my ‘restored’ environment this service is missing.</p>
+<p>This can also be checked by testing the service with the ‘Web Service Interface Explorer’ artifact that is available for us low-code people! Check the screenshot for input and the expected error!</p>
+<p><img alt="mobile_022_6" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_6.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_6.png"></p>
+<p>To solve this, we need to expose an AppServer service container to our solution!</p>
+<p>You can follow the post ‘Creating a WS-AppServer service container the proper way’ on this site, but this time we don’t need a ‘WS-AppServer, but an ‘AppServer’  with an end-result like this where you also added the ‘Method Set Entity category’ to the Web Service Interfaces.</p>
+<p><img alt="mobile_022_7" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_7.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_7.png"></p>
+<p>Save it all and start the service container. You are now able to test the service properly with a sample request like this and get a result back:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">&amp;lt;</span>SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/"<span class="symbol">&amp;gt;</span></span><br><span class="line">  <span class="symbol">&amp;lt;</span>SOAP:Body<span class="symbol">&amp;gt;</span></span><br><span class="line">    <span class="symbol">&amp;lt;</span>Readcategory xmlns="http://schemas/AppWorksTipsAppWorks/category/operations"<span class="symbol">&amp;gt;</span></span><br><span class="line">      <span class="symbol">&amp;lt;</span>ns0:category-id xmlns:ns0="http://schemas/AppWorksTipsAppWorks/category"<span class="symbol">&amp;gt;</span></span><br><span class="line">        <span class="symbol">&amp;lt;</span>ns0:ItemId<span class="symbol">&amp;gt;</span>0800276907f1a1ea825c64f7cdc2116a.1<span class="symbol">&amp;lt;</span>/ns0:ItemId<span class="symbol">&amp;gt;</span></span><br><span class="line">      <span class="symbol">&amp;lt;</span>/ns0:category-id<span class="symbol">&amp;gt;</span></span><br><span class="line">    <span class="symbol">&amp;lt;</span>/Readcategory<span class="symbol">&amp;gt;</span></span><br><span class="line">  <span class="symbol">&amp;lt;</span>/SOAP:Body<span class="symbol">&amp;gt;</span></span><br><span class="line"><span class="symbol">&amp;lt;</span>/SOAP:Envelope<span class="symbol">&amp;gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>And?…After restarting my TomEE with <code>systemctl restart tomee</code>, cleaning app data in BlueStack…No result!!?? Even no result when I add all users ‘Allowed’ in the security settings of the AppServer Service Container…!</p>
+<p><img alt="mobile_022_8" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_8.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_022_8.png"></p>
+<p>I don’t get it…It should not be that hard to complete this feature, but it’s still not working.</p>
+<blockquote>
+<p>This is the end of the updates where it took multiple sessions to make it all happen. We’ll get closer and closer to a result, but it’s still not a final DONE!</p>
+<p>I notice the post is a bit un-structed, but now you also see that things are not always as bright as they are pretended to be.</p>
+</blockquote>
+<hr>
+<p>OK…You’ll probably guessed it and I will admit that I was not able to open the app without this annoying error!</p>
+<p><img alt="mobile_023" class="post-img b-lazy" href="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_023.png" data-src="/images/posts/2020/054_playing_with_the_mobile_building_blocks/mobile_023.png"></p>
+<blockquote>
+<p>Please note that there is an ‘Update and lessons learned on a second, third and fourth try!’ in the last section of this post also several actions we tried out. We got closer to a result, but still no final DONE!</p>
+</blockquote>
+<p>It all has to do with authentication from the Android side that tries to access this Rest URL <code>/v3/admin/settings?appName=AllCategories</code> with a 401 HTTP unauthorized response error. Really strange because the same user account was able to access the gateway URL and opening the application settings without any problem!</p>
+<p>But as we all want to continue with our life I just wanted to share as much information that I struggled with to give this post a ‘DONE’ for now. I’ll give it a final try in the future (it’s on the backlog)…I see you in the next one…Have a nice weekend!</p>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="See how easy a CSS theme is used" href="/2020/06/26/055_see_how_easy_a_css_theme_is_used/">
+            ← See how easy a CSS theme is used
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Easy steps to make the AppWorks Gateway available" href="/2020/06/12/053_easy_steps_to_make_the_appworks_gateway_available/">
+            Easy steps to make the AppWorks Gateway available →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-A-new-list"><span class="toc-text">1. A new list</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-A-new-layout"><span class="toc-text">2. A new layout</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-Login-URL-validation"><span class="toc-text">1. Login URL validation</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-Gateway-admin-status"><span class="toc-text">2. Gateway admin status</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-App-setting"><span class="toc-text">3. App setting</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-OTDS-Authentication-end-to-end"><span class="toc-text">4. OTDS Authentication end-to-end</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-Application-end-to-end"><span class="toc-text">5. Application end-to-end</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-Logging"><span class="toc-text">6. Logging</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-Other-resources"><span class="toc-text">7. Other resources</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Update-and-lessons-learned-on-a-second-third-and-fourth-try"><span class="toc-text">Update and lessons learned on a second, third and fourth try!</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Change-the-organization-in-the-app-settings"><span class="toc-text">Change the organization in the app settings</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Back-to-the-eyes-of-the-system…our-logging"><span class="toc-text">Back to the eyes of the system…our logging!</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Why-is-there-no-result-in-the-items-array-“items”-from-the-first-URL"><span class="toc-text">Why is there no result in the items array “items”:[] from the first URL?</span></a></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/">Developing and interceptor for the UDDI connector</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/12/18/077_a_dive_on_contract_based_development/">A dive on contract-based development</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/12/11/076_let_us_call_some_rest_from_an_xform/">Let's call some ReST from an xForm</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/12/04/075_change_the_sysadmin_password_with_these_steps/">Change the "sysadmin" password with these steps</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/27/074_automate_your_deployment_with_jenkins/">Automate your deployment with Jenkins</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/20/073_deploy_your_solution_with_ant_tasks/">Deploy your solution with ANT tasks</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/13/072_build_your_solution_with_the_cli/">Build your solution with the CLI</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/11/06/071_lets_develop_an_eis_connector/">Let's develop an EIS connector</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tips/">Tips</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 14px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 14px;">Anniversary</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/BPM/" style="font-size: 20.25px;">BPM</a> <a href="/tags/Building-blocks/" style="font-size: 16.5px;">Building blocks</a> <a href="/tags/CARS/" style="font-size: 15.25px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 16.5px;">CD/CI</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/Case-Instance-Monitor/" style="font-size: 14px;">Case Instance Monitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Condition/" style="font-size: 14px;">Condition</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Custom-webservice/" style="font-size: 14px;">Custom webservice</a> <a href="/tags/Customization/" style="font-size: 14px;">Customization</a> <a href="/tags/Database-metadata/" style="font-size: 15.25px;">Database metadata</a> <a href="/tags/Debugging/" style="font-size: 14px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 15.25px;">Digital</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/E-Mail/" style="font-size: 14px;">E-Mail</a> <a href="/tags/E-mail/" style="font-size: 14px;">E-mail</a> <a href="/tags/EIS-connector/" style="font-size: 14px;">EIS connector</a> <a href="/tags/EP2/" style="font-size: 14px;">EP2</a> <a href="/tags/EP3/" style="font-size: 14px;">EP3</a> <a href="/tags/EP4/" style="font-size: 14px;">EP4</a> <a href="/tags/EP7/" style="font-size: 14px;">EP7</a> <a href="/tags/Enterprise-world/" style="font-size: 15.25px;">Enterprise world</a> <a href="/tags/Entity/" style="font-size: 19px;">Entity</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Explorer/" style="font-size: 15.25px;">Explorer</a> <a href="/tags/For-loop/" style="font-size: 14px;">For-loop</a> <a href="/tags/Form/" style="font-size: 19px;">Form</a> <a href="/tags/Gateway/" style="font-size: 15.25px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/How-to/" style="font-size: 16.5px;">How to</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14px;">Identity</a> <a href="/tags/Information-Hub/" style="font-size: 14px;">Information Hub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.75px;">Installation</a> <a href="/tags/JSON/" style="font-size: 14px;">JSON</a> <a href="/tags/Java/" style="font-size: 15.25px;">Java</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/License/" style="font-size: 15.25px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.25px;">Lifecycle</a> <a href="/tags/Long-text-property/" style="font-size: 14px;">Long text property</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 15.25px;">Management</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Modeling/" style="font-size: 15.25px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 15.25px;">Monitoring</a> <a href="/tags/OTDS/" style="font-size: 16.5px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 15.25px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Organization/" style="font-size: 14px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/Package/" style="font-size: 16.5px;">Package</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/Progression-bar/" style="font-size: 14px;">Progression bar</a> <a href="/tags/Project/" style="font-size: 14px;">Project</a> <a href="/tags/Properties/" style="font-size: 15.25px;">Properties</a> <a href="/tags/Property/" style="font-size: 14px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/ReST/" style="font-size: 15.25px;">ReST</a> <a href="/tags/Recap/" style="font-size: 14px;">Recap</a> <a href="/tags/Regular-expression/" style="font-size: 14px;">Regular expression</a> <a href="/tags/Relations/" style="font-size: 14px;">Relations</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/Roles/" style="font-size: 14px;">Roles</a> <a href="/tags/SOAP/" style="font-size: 14px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 15.25px;">SVN</a> <a href="/tags/Service-container/" style="font-size: 14px;">Service container</a> <a href="/tags/Setup/" style="font-size: 17.75px;">Setup</a> <a href="/tags/Short-lived/" style="font-size: 14px;">Short lived</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 17.75px;">Software</a> <a href="/tags/Source-control/" style="font-size: 14px;">Source control</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/Subtyping/" style="font-size: 14px;">Subtyping</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 14px;">Task</a> <a href="/tags/Task-layout/" style="font-size: 14px;">Task layout</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Testing/" style="font-size: 14px;">Testing</a> <a href="/tags/Theme/" style="font-size: 14px;">Theme</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/UDDI/" style="font-size: 15.25px;">UDDI</a> <a href="/tags/Update/" style="font-size: 15.25px;">Update</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/Value-assistance/" style="font-size: 14px;">Value assistance</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WS-AppServer/" style="font-size: 14px;">WS-AppServer</a> <a href="/tags/Web-Library-Definition/" style="font-size: 14px;">Web Library Definition</a> <a href="/tags/WebService/" style="font-size: 14px;">WebService</a> <a href="/tags/Webservice/" style="font-size: 15.25px;">Webservice</a> <a href="/tags/Workspace/" style="font-size: 17.75px;">Workspace</a> <a href="/tags/XML/" style="font-size: 14px;">XML</a> <a href="/tags/iHub/" style="font-size: 14px;">iHub</a> <a href="/tags/interceptor/" style="font-size: 14px;">interceptor</a> <a href="/tags/linked-entity/" style="font-size: 14px;">linked entity</a> <a href="/tags/xForm/" style="font-size: 14px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="http://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="search" class="search-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="Search ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="http://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback</h1>
+        <h2 class="site-description">Send back any feedback so we can inspect and adapt our features.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="http://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2020
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Playing with the mobile building blocks</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+<script src="/js/mix/post-lazy-local.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+<script>searchFunc("/")</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>
