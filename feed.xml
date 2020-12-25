@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2020-12-24T23:01:36.181Z</updated>
+  <updated>2020-12-25T22:40:48.407Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -18,12 +18,12 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Developing and interceptor for the UDDI connector</title>
+    <title>Developing an interceptor for the UDDI connector</title>
     <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/"/>
     <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/078_developing_an_interceptor_for_the_uddi_connector/feature_tag.png" />
     <id>http://www.appworks-tips.com/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/</id>
     <published>2020-12-25T12:00:00.000Z</published>
-    <updated>2020-12-24T23:01:36.181Z</updated>
+    <updated>2020-12-25T22:40:48.407Z</updated>
     
     <summary type="html">
     
@@ -169,9 +169,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
-    
       <category term="ANT" scheme="http://www.appworks-tips.com/tags/ANT/"/>
+    
+      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
     
   </entry>
   
@@ -195,9 +195,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CLI" scheme="http://www.appworks-tips.com/tags/CLI/"/>
-    
       <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="CLI" scheme="http://www.appworks-tips.com/tags/CLI/"/>
     
   </entry>
   
@@ -635,9 +635,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
-    
       <category term="linked entity" scheme="http://www.appworks-tips.com/tags/linked-entity/"/>
+    
+      <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
     
   </entry>
   
