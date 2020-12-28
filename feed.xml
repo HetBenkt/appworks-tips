@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2020-12-25T22:40:48.407Z</updated>
+  <updated>2020-12-24T23:57:57.985Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to use the &#39;Northwind&#39; database example data</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/05/28/100_how_to_use_the_northwind_database_example_data/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/100_how_to_use_the_northwind_database_example_data/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/05/28/100_how_to_use_the_northwind_database_example_data/</id>
+    <published>2021-05-28T12:00:00.000Z</published>
+    <updated>2020-12-24T23:57:57.985Z</updated>
+    
+    <summary type="html">
+    
+      You read it in all the documentation, but now a post on how you really start with it...
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/100_how_to_use_the_northwind_database_example_data/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="northwind" scheme="http://www.appworks-tips.com/tags/northwind/"/>
+    
+      <category term="database" scheme="http://www.appworks-tips.com/tags/database/"/>
+    
+  </entry>
   
   <entry>
     <title>Developing an interceptor for the UDDI connector</title>
@@ -1312,38 +1338,6 @@
       <category term="Monitoring" scheme="http://www.appworks-tips.com/tags/Monitoring/"/>
     
       <category term="PIM" scheme="http://www.appworks-tips.com/tags/PIM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>The trick that makes it possible to update Documentum data</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/01/17/035_the_trick_that_makes_it_possible_to_update_documentum_data/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/035_the_trick_that_makes_it_possible_to_update_documentum_data/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/01/17/035_the_trick_that_makes_it_possible_to_update_documentum_data/</id>
-    <published>2020-01-17T12:00:00.000Z</published>
-    <updated>2020-12-24T23:28:51.567Z</updated>
-    
-    <summary type="html">
-    
-      This post covers the possibility to update data on the Documentum side via an AppWorks BPM
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/035_the_trick_that_makes_it_possible_to_update_documentum_data/feature_tag.png" />
-    
-      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
-    
-      <category term="Webservice" scheme="http://www.appworks-tips.com/tags/Webservice/"/>
-    
-      <category term="Documentum" scheme="http://www.appworks-tips.com/tags/Documentum/"/>
-    
-      <category term="Synchronization" scheme="http://www.appworks-tips.com/tags/Synchronization/"/>
-    
-      <category term="Customization" scheme="http://www.appworks-tips.com/tags/Customization/"/>
     
   </entry>
   
