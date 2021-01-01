@@ -289,7 +289,7 @@
                 <div id="lightgallery" class="markdown-body">
                     <p>Hi there AppWorks fans,</p>
 <p>Welcome to a new installment of AppWorks tips.</p>
-<p>This guide will help you installing ‘<strong>C</strong>ordys <strong>A</strong>dministration <strong>R</strong>epository <strong>S</strong>erver’ (CARS) on the TomEE and PostgreSQL supported CentOS VM image. AppWorks requires a system to store information about all kind of created objects by the system or by the user. CARS in the supported and required system to store all this information.</p>
+<p>This guide will help you to install ‘<strong>C</strong>ordys <strong>A</strong>dministration <strong>R</strong>epository <strong>S</strong>erver’ (CARS) on the TomEE and PostgreSQL supported CentOS VM image. AppWorks requires a system to store information about all kind of created objects by the system or by the user. CARS in the supported and required system to store all this information.</p>
 <p>This post is part of the series for ‘AppWorks installation in 10 great steps’.</p>
 <p>This is the <strong>list of ingredients</strong> we are going to use:</p>
 <ul>
@@ -299,7 +299,7 @@
 <li>Includes the OpenText documentation</li>
 </ul>
 </li>
-<li>MobaXterm (X server and SSH client). Downloaded from <a href="https://mobaxterm.mobatek.net" target="_blank" rel="noopener">mobatek.net</a></li>
+<li>MobaXterm (X server and SSH client). Downloaded from: <a href="https://mobaxterm.mobatek.net" target="_blank" rel="noopener">mobatek.net</a></li>
 </ul>
 <hr>
 <p><strong>Let get right into it…</strong></p>
@@ -319,7 +319,7 @@
 <li>Make sure to meet the system requirements as mentioned in chapter 2. You should be fine on a laptop with 16Gb of memory, 4 cores CPU and 320Gb SSD.</li>
 <li>Meet the checklist on chapter 3. <ol>
 <li>We have the ‘sysadmin’ user as our administrator account. </li>
-<li>The server has  a <strong>F</strong>ully <strong>Q</strong>ualified <strong>D</strong>omain <strong>N</strong>ame like: appworks.mydomain.com. Check this with <code>hostname --fqdn</code></li>
+<li>The server has  a <strong>F</strong>ully <strong>Q</strong>ualified <strong>D</strong>omain <strong>N</strong>ame like: appworks.mydomain.com. Check this with: <code>hostname --fqdn</code></li>
 </ol>
 </li>
 <li>Correct Java version is available: <code>java -version</code>. Should be fine if you followed the ‘Java installation…’ post on this series.</li>
@@ -327,20 +327,20 @@
 <li>Correct TomEE version and it’s running: <code>ps aux | grep tomee</code>. Should be fine if you followed the ‘TomEE installation…’ post on this series.</li>
 </ol>
 <blockquote>
-<p>It’s fine that TomEE is running on port 8080. The documentation is telling you to change it to post 81, but the first 1024 ports on Linux are reserved to the ‘root’ account</p>
+<p>It’s fine to have TomEE running on port 8080. The documentation is telling you to change it to post 81, but the first 1024 ports on Linux are reserved to the ‘root’ account.</p>
 </blockquote>
 <hr>
 <p>Now let’s get ready to rumble with the <strong>installation of AppWorks</strong>…Finally! &#128522;</p>
 <p>For this one we really need to make connection with <a href="https://mobaxterm.mobatek.net" target="_blank" rel="noopener">MobaXterm</a> because this tool has a build in X-server that is needed to run a GUI from an installer. You can test this by running the <code>xterm</code> command that will give you a small clock app:</p>
 <p><img alt="general_001" class="post-img b-lazy" href="/images/posts/2019/008_see_how_easily_you_can_install_cars/general_001.png" data-src="/images/posts/2019/008_see_how_easily_you_can_install_cars/general_001.png"></p>
 <blockquote>
-<p>Make sure the send it to the correct DISPLAY variable: <code>export DISPLAY=IP:0.0</code></p>
+<p>Make sure to send it to the correct DISPLAY variable: <code>export DISPLAY=IP:0.0</code></p>
 <p><strong><em>Example</em></strong>: <code>export DISPLAY=192.168.180.101:0.0</code></p>
 <p>The IP can be found on top of your SSH session</p>
 <p><img alt="general_002" class="post-img b-lazy" href="/images/posts/2019/008_see_how_easily_you_can_install_cars/general_002.png" data-src="/images/posts/2019/008_see_how_easily_you_can_install_cars/general_002.png"></p>
 </blockquote>
 <blockquote>
-<p>Also this can be done to enable a GUI to your X11 Server:</p>
+<p>Also, this can be done to enable a GUI to your X11 Server:</p>
 <ul>
 <li><code>cd /etc/ssh</code></li>
 <li><code>sudo vi sshd_config</code></li>
@@ -348,7 +348,7 @@
 <li>Save and close with <code>:wq</code></li>
 <li>Restart sshd service: <code>systemctl restart sshd</code></li>
 <li>Login again, and start an application <code>xclock</code></li>
-<li>Check for an xauth entry: <code>xauth list</code></li>
+<li>Check for a xauth entry: <code>xauth list</code></li>
 <li>Copy the Xauthority to ‘root’ to make it also work for sudo commands: <code>sudo cp ~/.Xauthority /root/</code></li>
 </ul>
 </blockquote>
@@ -356,7 +356,7 @@
 <p>And update the execution option in the .bin files</p>
 <p><code>chmod +x OpenText_CARS_2.7.bin</code> and <code>chmod +x OpenText_AppWorks_Platform_20.4.bin</code></p>
 <hr>
-<p>And now you are really, really ready to start with the installation of … No, first we <strong>install the required CARS</strong>: <code>sudo ./OpenText_CARS_2.6.bin</code></p>
+<p>Now you are really, really ready to start with the installation of … No, first we <strong>install the required CARS</strong>: <code>sudo ./OpenText_CARS_2.6.bin</code></p>
 <p><img alt="install_cars_001" class="post-img b-lazy" href="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_001.png" data-src="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_001.png"></p>
 <p>Hit ‘Next’</p>
 <p><img alt="install_cars_002" class="post-img b-lazy" href="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_002.png" data-src="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_002.png"></p>
@@ -368,9 +368,9 @@
 <p><img alt="install_cars_005" class="post-img b-lazy" href="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_005.png" data-src="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_005.png"></p>
 <p>Again…Leave the basic setting and hit ‘Next’…Never been so easy! &#128522;</p>
 <p><img alt="install_cars_006" class="post-img b-lazy" href="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_006.png" data-src="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_006.png"></p>
-<p>Leave the username as is and provide it with a password for example ‘admin’. Hit ‘Next’</p>
+<p>Leave the username as is and provide it with a password for example ‘admin’. Hit ‘Next’.</p>
 <p><img alt="install_cars_006_1" class="post-img b-lazy" href="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_006_1.png" data-src="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_006_1.png"></p>
-<p>Use ‘admin’ (or your own password) as password. Hit ‘Next’</p>
+<p>Use ‘admin’ (or your own password) as password. Hit ‘Next’.</p>
 <p><img alt="install_cars_007" class="post-img b-lazy" href="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_007.png" data-src="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_007.png"></p>
 <p>Hit the bright and shining ‘Install’ button to let the magic start doing its thing…</p>
 <p><img alt="install_cars_008" class="post-img b-lazy" href="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_008.png" data-src="/images/posts/2019/008_see_how_easily_you_can_install_cars/install_cars_008.png"></p>
@@ -394,7 +394,7 @@
 <p>Reload the daemon <code>systemctl daemon-reload</code> and restart CARS.</p>
 <p>The debug logging can then be monitored with <code>tail -f /opt/opentext/cars/defaultInst/sbin/openldap.log</code></p>
 <hr>
-<p>And that is a ‘DONE’ for the first step on the AppWorks installation itself. Great stuff and you see how smooth it went. Have a nice day and we’ll continue our journey with the series of ‘AppWorks installation in 10 great steps’. The next step in the installation of AppWorks itself.</p>
+<p>And that is a ‘DONE’ for the first step on the AppWorks installation itself. Great stuff, and you see how smooth it went. Have a nice day, and we’ll continue our journey with the series of ‘AppWorks installation in 10 great steps’. The next step in the installation of AppWorks itself.</p>
 
                 </div>
             </section>
@@ -470,6 +470,12 @@
       
       
       <li>
+        <a href="/2021/01/01/079_the_endless_bpm_while_loop_with_conditional_breakpoint/">The endless BPM while-loop with conditional breakpoint</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/">Developing an interceptor for the UDDI connector</a>
       </li>
       
@@ -510,10 +516,6 @@
       </li>
       
       
-      
-      <li>
-        <a href="/2020/11/06/071_lets_develop_an_eis_connector/">Let's develop an EIS connector</a>
-      </li>
       
       
       
@@ -702,7 +704,7 @@
 		<h3 class="read-next-card-header-title">Tag Cloud</h3>
 	</header>
 	<div class="read-next-card-content-ext">
-		<a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 14px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 14px;">Anniversary</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/BPM/" style="font-size: 20.25px;">BPM</a> <a href="/tags/Building-blocks/" style="font-size: 16.5px;">Building blocks</a> <a href="/tags/CARS/" style="font-size: 15.25px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 16.5px;">CD/CI</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/Case-Instance-Monitor/" style="font-size: 14px;">Case Instance Monitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Condition/" style="font-size: 14px;">Condition</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Custom-webservice/" style="font-size: 14px;">Custom webservice</a> <a href="/tags/Customization/" style="font-size: 14px;">Customization</a> <a href="/tags/Database-metadata/" style="font-size: 15.25px;">Database metadata</a> <a href="/tags/Debugging/" style="font-size: 14px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 15.25px;">Digital</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/E-Mail/" style="font-size: 14px;">E-Mail</a> <a href="/tags/E-mail/" style="font-size: 14px;">E-mail</a> <a href="/tags/EIS-connector/" style="font-size: 14px;">EIS connector</a> <a href="/tags/EP2/" style="font-size: 14px;">EP2</a> <a href="/tags/EP3/" style="font-size: 14px;">EP3</a> <a href="/tags/EP4/" style="font-size: 14px;">EP4</a> <a href="/tags/EP7/" style="font-size: 14px;">EP7</a> <a href="/tags/Enterprise-world/" style="font-size: 15.25px;">Enterprise world</a> <a href="/tags/Entity/" style="font-size: 19px;">Entity</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Explorer/" style="font-size: 15.25px;">Explorer</a> <a href="/tags/For-loop/" style="font-size: 14px;">For-loop</a> <a href="/tags/Form/" style="font-size: 19px;">Form</a> <a href="/tags/Gateway/" style="font-size: 15.25px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/How-to/" style="font-size: 16.5px;">How to</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14px;">Identity</a> <a href="/tags/Information-Hub/" style="font-size: 14px;">Information Hub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.75px;">Installation</a> <a href="/tags/JSON/" style="font-size: 14px;">JSON</a> <a href="/tags/Java/" style="font-size: 15.25px;">Java</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/License/" style="font-size: 15.25px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.25px;">Lifecycle</a> <a href="/tags/Long-text-property/" style="font-size: 14px;">Long text property</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 15.25px;">Management</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Modeling/" style="font-size: 15.25px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 15.25px;">Monitoring</a> <a href="/tags/OTDS/" style="font-size: 16.5px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 15.25px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Organization/" style="font-size: 14px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/Package/" style="font-size: 16.5px;">Package</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/Progression-bar/" style="font-size: 14px;">Progression bar</a> <a href="/tags/Project/" style="font-size: 14px;">Project</a> <a href="/tags/Properties/" style="font-size: 15.25px;">Properties</a> <a href="/tags/Property/" style="font-size: 14px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/ReST/" style="font-size: 15.25px;">ReST</a> <a href="/tags/Recap/" style="font-size: 14px;">Recap</a> <a href="/tags/Regular-expression/" style="font-size: 14px;">Regular expression</a> <a href="/tags/Relations/" style="font-size: 14px;">Relations</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/Roles/" style="font-size: 14px;">Roles</a> <a href="/tags/SOAP/" style="font-size: 14px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 15.25px;">SVN</a> <a href="/tags/Service-container/" style="font-size: 14px;">Service container</a> <a href="/tags/Setup/" style="font-size: 17.75px;">Setup</a> <a href="/tags/Short-lived/" style="font-size: 14px;">Short lived</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 17.75px;">Software</a> <a href="/tags/Source-control/" style="font-size: 14px;">Source control</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/Subtyping/" style="font-size: 14px;">Subtyping</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 14px;">Task</a> <a href="/tags/Task-layout/" style="font-size: 14px;">Task layout</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Testing/" style="font-size: 14px;">Testing</a> <a href="/tags/Theme/" style="font-size: 14px;">Theme</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/UDDI/" style="font-size: 15.25px;">UDDI</a> <a href="/tags/Update/" style="font-size: 15.25px;">Update</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/Value-assistance/" style="font-size: 14px;">Value assistance</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WS-AppServer/" style="font-size: 14px;">WS-AppServer</a> <a href="/tags/Web-Library-Definition/" style="font-size: 14px;">Web Library Definition</a> <a href="/tags/WebService/" style="font-size: 14px;">WebService</a> <a href="/tags/Webservice/" style="font-size: 15.25px;">Webservice</a> <a href="/tags/Workspace/" style="font-size: 17.75px;">Workspace</a> <a href="/tags/XML/" style="font-size: 14px;">XML</a> <a href="/tags/iHub/" style="font-size: 14px;">iHub</a> <a href="/tags/interceptor/" style="font-size: 14px;">interceptor</a> <a href="/tags/linked-entity/" style="font-size: 14px;">linked entity</a> <a href="/tags/xForm/" style="font-size: 14px;">xForm</a>
+		<a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 14px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 14px;">Anniversary</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/BPM/" style="font-size: 20.25px;">BPM</a> <a href="/tags/Building-blocks/" style="font-size: 16.5px;">Building blocks</a> <a href="/tags/CARS/" style="font-size: 15.25px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 16.5px;">CD/CI</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/Case-Instance-Monitor/" style="font-size: 14px;">Case Instance Monitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Condition/" style="font-size: 14px;">Condition</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Custom-webservice/" style="font-size: 14px;">Custom webservice</a> <a href="/tags/Customization/" style="font-size: 14px;">Customization</a> <a href="/tags/Database-metadata/" style="font-size: 15.25px;">Database metadata</a> <a href="/tags/Debugging/" style="font-size: 14px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 15.25px;">Digital</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/E-Mail/" style="font-size: 14px;">E-Mail</a> <a href="/tags/E-mail/" style="font-size: 14px;">E-mail</a> <a href="/tags/EIS-connector/" style="font-size: 14px;">EIS connector</a> <a href="/tags/EP2/" style="font-size: 14px;">EP2</a> <a href="/tags/EP3/" style="font-size: 14px;">EP3</a> <a href="/tags/EP4/" style="font-size: 14px;">EP4</a> <a href="/tags/EP7/" style="font-size: 14px;">EP7</a> <a href="/tags/Enterprise-world/" style="font-size: 15.25px;">Enterprise world</a> <a href="/tags/Entity/" style="font-size: 19px;">Entity</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Explorer/" style="font-size: 15.25px;">Explorer</a> <a href="/tags/For-loop/" style="font-size: 14px;">For-loop</a> <a href="/tags/Form/" style="font-size: 19px;">Form</a> <a href="/tags/Gateway/" style="font-size: 15.25px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/How-to/" style="font-size: 16.5px;">How to</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14px;">Identity</a> <a href="/tags/Information-Hub/" style="font-size: 14px;">Information Hub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.75px;">Installation</a> <a href="/tags/JSON/" style="font-size: 14px;">JSON</a> <a href="/tags/Java/" style="font-size: 15.25px;">Java</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/License/" style="font-size: 15.25px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.25px;">Lifecycle</a> <a href="/tags/Long-text-property/" style="font-size: 14px;">Long text property</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 15.25px;">Management</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Modeling/" style="font-size: 15.25px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 15.25px;">Monitoring</a> <a href="/tags/OTDS/" style="font-size: 16.5px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 15.25px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Organization/" style="font-size: 14px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/Package/" style="font-size: 16.5px;">Package</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/Progression-bar/" style="font-size: 14px;">Progression bar</a> <a href="/tags/Project/" style="font-size: 14px;">Project</a> <a href="/tags/Properties/" style="font-size: 15.25px;">Properties</a> <a href="/tags/Property/" style="font-size: 14px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/ReST/" style="font-size: 15.25px;">ReST</a> <a href="/tags/Recap/" style="font-size: 14px;">Recap</a> <a href="/tags/Regular-expression/" style="font-size: 14px;">Regular expression</a> <a href="/tags/Relations/" style="font-size: 14px;">Relations</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/Roles/" style="font-size: 14px;">Roles</a> <a href="/tags/SOAP/" style="font-size: 14px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 15.25px;">SVN</a> <a href="/tags/Service-container/" style="font-size: 14px;">Service container</a> <a href="/tags/Setup/" style="font-size: 17.75px;">Setup</a> <a href="/tags/Short-lived/" style="font-size: 14px;">Short lived</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 17.75px;">Software</a> <a href="/tags/Source-control/" style="font-size: 14px;">Source control</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/Subtyping/" style="font-size: 14px;">Subtyping</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 14px;">Task</a> <a href="/tags/Task-layout/" style="font-size: 14px;">Task layout</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Testing/" style="font-size: 14px;">Testing</a> <a href="/tags/Theme/" style="font-size: 14px;">Theme</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/UDDI/" style="font-size: 15.25px;">UDDI</a> <a href="/tags/Update/" style="font-size: 15.25px;">Update</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/Value-assistance/" style="font-size: 14px;">Value assistance</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WS-AppServer/" style="font-size: 14px;">WS-AppServer</a> <a href="/tags/Web-Library-Definition/" style="font-size: 14px;">Web Library Definition</a> <a href="/tags/WebService/" style="font-size: 14px;">WebService</a> <a href="/tags/Webservice/" style="font-size: 15.25px;">Webservice</a> <a href="/tags/Workspace/" style="font-size: 17.75px;">Workspace</a> <a href="/tags/XML/" style="font-size: 14px;">XML</a> <a href="/tags/iHub/" style="font-size: 14px;">iHub</a> <a href="/tags/interceptor/" style="font-size: 14px;">interceptor</a> <a href="/tags/linked-entity/" style="font-size: 14px;">linked entity</a> <a href="/tags/while-loop/" style="font-size: 14px;">while-loop</a> <a href="/tags/xForm/" style="font-size: 14px;">xForm</a>
 	</div>
 </article>
 
@@ -847,7 +849,7 @@
 	<div class="site-footer-content inner">
 		<section class="copyright">
 			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
-			&copy; 2020
+			&copy; 2021
 		</section>
 		<section class="title">
 			Low-code development platform powered by OpenText

@@ -2,6 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://www.appworks-tips.com/2021/01/01/079_the_endless_bpm_while_loop_with_conditional_breakpoint/</loc>
+        
+        <lastmod>2020-12-30T22:12:41.303Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/07/19/010_make_package_deployment_work_for_you/</loc>
+        
+        <lastmod>2020-12-30T22:12:41.290Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/07/12/009_the_appworks_installation_survival_guide/</loc>
+        
+        <lastmod>2020-12-30T22:12:41.270Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/06/14/005_a_few_quick_tips_to_help_you_install_java/</loc>
+        
+        <lastmod>2020-12-30T22:00:45.003Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/05/24/002_prepare_a_vm_image_in_this_ultimate_guide/</loc>
+        
+        <lastmod>2020-12-30T22:00:44.996Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/06/21/006_the_secret_of_successful_installing_tomee/</loc>
+        
+        <lastmod>2020-12-30T22:00:44.985Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/06/07/004_back_to_the_basics_with_centos/</loc>
+        
+        <lastmod>2020-12-30T22:00:44.977Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/07/05/008_see_how_easily_you_can_install_cars/</loc>
+        
+        <lastmod>2020-12-30T22:00:44.967Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/06/28/007_your_way_to_a_done_postgresql_installation/</loc>
+        
+        <lastmod>2020-12-30T22:00:44.958Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/05/31/003_an_appworks_license_in_5_amazing_steps/</loc>
+        
+        <lastmod>2020-12-30T22:00:44.950Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/05/17/001_a_quick_way_to_install_oracle_virtual_box/</loc>
+        
+        <lastmod>2020-12-30T22:00:44.930Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://www.appworks-tips.com/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/</loc>
         
         <lastmod>2020-12-25T22:40:48.407Z</lastmod>
@@ -37,20 +114,6 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/05/24/002_prepare_a_vm_image_in_this_ultimate_guide/</loc>
-        
-        <lastmod>2020-12-24T23:28:51.682Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/06/07/004_back_to_the_basics_with_centos/</loc>
-        
-        <lastmod>2020-12-24T23:28:51.676Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>http://www.appworks-tips.com/2020/10/16/070_the_tricks_on_regex_field_validation/</loc>
         
         <lastmod>2020-12-24T23:28:51.670Z</lastmod>
@@ -68,13 +131,6 @@
         <loc>http://www.appworks-tips.com/2020/02/28/041_generate_a_random_int_for_a_property_value/</loc>
         
         <lastmod>2020-12-24T23:28:51.657Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/06/14/005_a_few_quick_tips_to_help_you_install_java/</loc>
-        
-        <lastmod>2020-12-24T23:28:51.651Z</lastmod>
         
     </url>
     
@@ -166,13 +222,6 @@
         <loc>http://www.appworks-tips.com/2020/01/17/035_the_trick_that_makes_it_possible_to_update_documentum_data/</loc>
         
         <lastmod>2020-12-24T23:28:51.567Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/05/17/001_a_quick_way_to_install_oracle_virtual_box/</loc>
-        
-        <lastmod>2020-12-24T23:28:51.560Z</lastmod>
         
     </url>
     
@@ -275,13 +324,6 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/07/05/008_see_how_easily_you_can_install_cars/</loc>
-        
-        <lastmod>2020-12-24T23:28:51.405Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>http://www.appworks-tips.com/2020/09/18/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/</loc>
         
         <lastmod>2020-12-24T23:28:51.399Z</lastmod>
@@ -320,13 +362,6 @@
         <loc>http://www.appworks-tips.com/2020/02/14/039_the_best_guide_on_entity_property_creation/</loc>
         
         <lastmod>2020-12-24T23:28:51.367Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/06/21/006_the_secret_of_successful_installing_tomee/</loc>
-        
-        <lastmod>2020-12-24T23:28:51.359Z</lastmod>
         
     </url>
     
@@ -387,6 +422,13 @@
     </url>
     
     <url>
+        <loc>http://www.appworks-tips.com/2020/05/29/051_how_to_create_an_appworks_package/</loc>
+        
+        <lastmod>2020-12-24T15:41:52.367Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://www.appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/</loc>
         
         <lastmod>2020-12-24T15:41:52.367Z</lastmod>
@@ -395,13 +437,6 @@
     
     <url>
         <loc>http://www.appworks-tips.com/2020/05/15/049a_1_year_anniversary/</loc>
-        
-        <lastmod>2020-12-24T15:41:52.367Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2020/05/29/051_how_to_create_an_appworks_package/</loc>
         
         <lastmod>2020-12-24T15:41:52.367Z</lastmod>
         
@@ -457,14 +492,14 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2020/01/03/033_make_the_documentum_cmis_to_appworks_connection_work_for_you/</loc>
+        <loc>http://www.appworks-tips.com/2020/01/10/034_creating_a_ws_appserver_service_container_the_proper_way/</loc>
         
         <lastmod>2020-12-24T15:41:52.341Z</lastmod>
         
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2020/01/10/034_creating_a_ws_appserver_service_container_the_proper_way/</loc>
+        <loc>http://www.appworks-tips.com/2020/01/03/033_make_the_documentum_cmis_to_appworks_connection_work_for_you/</loc>
         
         <lastmod>2020-12-24T15:41:52.341Z</lastmod>
         
@@ -548,6 +583,13 @@
     </url>
     
     <url>
+        <loc>http://www.appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
+        
+        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://www.appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
@@ -563,13 +605,6 @@
     
     <url>
         <loc>http://www.appworks-tips.com/2019/09/27/020_how_to_make_abstraction_generalization_and_subtyping_possible/</loc>
-        
-        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
         
@@ -597,37 +632,9 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/07/19/010_make_package_deployment_work_for_you/</loc>
-        
-        <lastmod>2020-12-24T14:46:41.186Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>http://www.appworks-tips.com/2019/07/26/011_uninstalling_appworks_the_proper_way/</loc>
         
         <lastmod>2020-12-24T14:46:41.186Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/07/12/009_the_appworks_installation_survival_guide/</loc>
-        
-        <lastmod>2020-12-24T14:46:41.185Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/06/28/007_your_way_to_a_done_postgresql_installation/</loc>
-        
-        <lastmod>2020-12-24T14:46:41.184Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/05/31/003_an_appworks_license_in_5_amazing_steps/</loc>
-        
-        <lastmod>2020-12-24T14:46:41.181Z</lastmod>
         
     </url>
     
