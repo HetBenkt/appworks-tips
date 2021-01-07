@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2020-12-30T22:12:41.303Z</updated>
+  <updated>2021-01-07T16:05:44.389Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Let&#39;s customize a result list panel on a homepage layout.</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/01/08/080_lets_customize_a_result_panel_on_a_homepage_layout/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/080_lets_customize_a_result_panel_on_a_homepage_layout/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/01/08/080_lets_customize_a_result_panel_on_a_homepage_layout/</id>
+    <published>2021-01-08T12:00:00.000Z</published>
+    <updated>2021-01-07T16:05:44.389Z</updated>
+    
+    <summary type="html">
+    
+      Customizing a result list panel with a simple &#39;HelloWorld&#39; example.
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/080_lets_customize_a_result_panel_on_a_homepage_layout/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="homepage" scheme="http://www.appworks-tips.com/tags/homepage/"/>
+    
+      <category term="result list" scheme="http://www.appworks-tips.com/tags/result-list/"/>
+    
+      <category term="customization" scheme="http://www.appworks-tips.com/tags/customization/"/>
+    
+  </entry>
   
   <entry>
     <title>The endless BPM while-loop with conditional breakpoint</title>
@@ -631,9 +659,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Webservice" scheme="http://www.appworks-tips.com/tags/Webservice/"/>
-    
       <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Webservice" scheme="http://www.appworks-tips.com/tags/Webservice/"/>
     
       <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
     
@@ -1310,34 +1338,6 @@
       <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
     
       <category term="Debugging" scheme="http://www.appworks-tips.com/tags/Debugging/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PIM brings BPM monitoring to the next level</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/01/24/036_pim_brings_bpm_monitoring_to_the_next_level/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/036_pim_brings_bpm_monitoring_to_the_next_level/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/01/24/036_pim_brings_bpm_monitoring_to_the_next_level/</id>
-    <published>2020-01-24T12:00:00.000Z</published>
-    <updated>2020-12-24T15:41:52.354Z</updated>
-    
-    <summary type="html">
-    
-      This post covers a great way to monitor your BPM instances with PIM
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/036_pim_brings_bpm_monitoring_to_the_next_level/feature_tag.png" />
-    
-      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
-    
-      <category term="Monitoring" scheme="http://www.appworks-tips.com/tags/Monitoring/"/>
-    
-      <category term="PIM" scheme="http://www.appworks-tips.com/tags/PIM/"/>
     
   </entry>
   
