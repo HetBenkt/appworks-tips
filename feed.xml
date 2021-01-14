@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2021-01-07T16:05:44.389Z</updated>
+  <updated>2021-01-14T21:14:08.079Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bootstrap your testing with Selenium</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/01/15/081_bootstrap_your_testing_with_selenium/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/081_bootstrap_your_testing_with_selenium/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/01/15/081_bootstrap_your_testing_with_selenium/</id>
+    <published>2021-01-15T12:00:00.000Z</published>
+    <updated>2021-01-14T21:14:08.079Z</updated>
+    
+    <summary type="html">
+    
+      Just a quick jump on how to start with Selenium testing on our platform
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/081_bootstrap_your_testing_with_selenium/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Testing" scheme="http://www.appworks-tips.com/tags/Testing/"/>
+    
+      <category term="Selenium" scheme="http://www.appworks-tips.com/tags/Selenium/"/>
+    
+  </entry>
   
   <entry>
     <title>Let&#39;s customize a result list panel on a homepage layout.</title>
@@ -659,9 +685,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
-    
       <category term="Webservice" scheme="http://www.appworks-tips.com/tags/Webservice/"/>
+    
+      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
     
       <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
     
@@ -1312,32 +1338,6 @@
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
       <category term="Building blocks" scheme="http://www.appworks-tips.com/tags/Building-blocks/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Your best shot on BPM debugging</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/01/31/037_your_best_shot_on_bpm_debugging/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/037_your_best_shot_on_bpm_debugging/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/01/31/037_your_best_shot_on_bpm_debugging/</id>
-    <published>2020-01-31T12:00:00.000Z</published>
-    <updated>2020-12-24T23:28:51.431Z</updated>
-    
-    <summary type="html">
-    
-      This post covers your best shot for debugging your Business process model
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/037_your_best_shot_on_bpm_debugging/feature_tag.png" />
-    
-      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
-    
-      <category term="Debugging" scheme="http://www.appworks-tips.com/tags/Debugging/"/>
     
   </entry>
   
