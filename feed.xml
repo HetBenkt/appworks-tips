@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2021-01-14T21:14:08.079Z</updated>
+  <updated>2021-01-21T21:11:42.580Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bootstrap your testing with JMeter</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/01/22/082_bootstrap_your_testing_with_jmeter/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/082_bootstrap_your_testing_with_jmeter/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/01/22/082_bootstrap_your_testing_with_jmeter/</id>
+    <published>2021-01-22T12:00:00.000Z</published>
+    <updated>2021-01-21T21:11:42.580Z</updated>
+    
+    <summary type="html">
+    
+      Just a quick jump on how to start with JMeter testing on our beloved platform
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/082_bootstrap_your_testing_with_jmeter/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Testing" scheme="http://www.appworks-tips.com/tags/Testing/"/>
+    
+      <category term="JMeter" scheme="http://www.appworks-tips.com/tags/JMeter/"/>
+    
+  </entry>
   
   <entry>
     <title>Bootstrap your testing with Selenium</title>
@@ -1159,9 +1185,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Value assistance" scheme="http://www.appworks-tips.com/tags/Value-assistance/"/>
-    
       <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
+    
+      <category term="Value assistance" scheme="http://www.appworks-tips.com/tags/Value-assistance/"/>
     
       <category term="How to" scheme="http://www.appworks-tips.com/tags/How-to/"/>
     
@@ -1314,30 +1340,6 @@
       <category term="Building blocks" scheme="http://www.appworks-tips.com/tags/Building-blocks/"/>
     
       <category term="Properties" scheme="http://www.appworks-tips.com/tags/Properties/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>An overview on the building blocks categories</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/02/07/038_an_overview_on_the_building_blocks_categories/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/038_an_overview_on_the_building_blocks_categories/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/02/07/038_an_overview_on_the_building_blocks_categories/</id>
-    <published>2020-02-07T12:00:00.000Z</published>
-    <updated>2020-12-24T15:41:52.356Z</updated>
-    
-    <summary type="html">
-    
-      This post gives an overview and thoughts about the several building blocks categories available
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/038_an_overview_on_the_building_blocks_categories/feature_tag.png" />
-    
-      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Building blocks" scheme="http://www.appworks-tips.com/tags/Building-blocks/"/>
     
   </entry>
   

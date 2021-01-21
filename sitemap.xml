@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://www.appworks-tips.com/2021/01/22/082_bootstrap_your_testing_with_jmeter/</loc>
+        
+        <lastmod>2021-01-21T21:11:42.580Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://www.appworks-tips.com/2021/01/15/081_bootstrap_your_testing_with_selenium/</loc>
         
         <lastmod>2021-01-14T21:14:08.079Z</lastmod>
@@ -436,6 +443,13 @@
     </url>
     
     <url>
+        <loc>http://www.appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/</loc>
+        
+        <lastmod>2020-12-24T15:41:52.367Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://www.appworks-tips.com/2020/05/15/049a_1_year_anniversary/</loc>
         
         <lastmod>2020-12-24T15:41:52.367Z</lastmod>
@@ -444,13 +458,6 @@
     
     <url>
         <loc>http://www.appworks-tips.com/2020/05/29/051_how_to_create_an_appworks_package/</loc>
-        
-        <lastmod>2020-12-24T15:41:52.367Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/</loc>
         
         <lastmod>2020-12-24T15:41:52.367Z</lastmod>
         
@@ -506,14 +513,14 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2020/01/10/034_creating_a_ws_appserver_service_container_the_proper_way/</loc>
+        <loc>http://www.appworks-tips.com/2020/01/03/033_make_the_documentum_cmis_to_appworks_connection_work_for_you/</loc>
         
         <lastmod>2020-12-24T15:41:52.341Z</lastmod>
         
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2020/01/03/033_make_the_documentum_cmis_to_appworks_connection_work_for_you/</loc>
+        <loc>http://www.appworks-tips.com/2020/01/10/034_creating_a_ws_appserver_service_container_the_proper_way/</loc>
         
         <lastmod>2020-12-24T15:41:52.341Z</lastmod>
         
@@ -576,14 +583,14 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/10/25/024_an_overview_of_the_low_code_workspace/</loc>
+        <loc>http://www.appworks-tips.com/2019/10/11/022_make_the_svn_buttons_work_for_you/</loc>
         
         <lastmod>2020-12-24T14:46:41.193Z</lastmod>
         
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/10/11/022_make_the_svn_buttons_work_for_you/</loc>
+        <loc>http://www.appworks-tips.com/2019/10/25/024_an_overview_of_the_low_code_workspace/</loc>
         
         <lastmod>2020-12-24T14:46:41.193Z</lastmod>
         
@@ -611,14 +618,14 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/09/27/020_how_to_make_abstraction_generalization_and_subtyping_possible/</loc>
+        <loc>http://www.appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
         
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
+        <loc>http://www.appworks-tips.com/2019/09/27/020_how_to_make_abstraction_generalization_and_subtyping_possible/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
         
