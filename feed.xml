@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2021-01-21T21:11:42.580Z</updated>
+  <updated>2021-01-28T20:51:34.462Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -18,12 +18,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Consuming the Identity package</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/01/29/083_consuming_the_identity_package/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/083_consuming_the_identity_package/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/01/29/083_consuming_the_identity_package/</id>
+    <published>2021-01-29T12:00:00.000Z</published>
+    <updated>2021-01-28T20:51:34.462Z</updated>
+    
+    <summary type="html">
+    
+      Let&#39;s consume the OpenText identity package from our platform
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/083_consuming_the_identity_package/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Identity package" scheme="http://www.appworks-tips.com/tags/Identity-package/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Bootstrap your testing with JMeter</title>
     <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/01/22/082_bootstrap_your_testing_with_jmeter/"/>
     <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/082_bootstrap_your_testing_with_jmeter/feature_tag.png" />
     <id>http://www.appworks-tips.com/2021/01/22/082_bootstrap_your_testing_with_jmeter/</id>
     <published>2021-01-22T12:00:00.000Z</published>
-    <updated>2021-01-21T21:11:42.580Z</updated>
+    <updated>2021-01-21T21:26:25.879Z</updated>
     
     <summary type="html">
     
@@ -275,9 +299,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="ANT" scheme="http://www.appworks-tips.com/tags/ANT/"/>
-    
       <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="ANT" scheme="http://www.appworks-tips.com/tags/ANT/"/>
     
   </entry>
   
@@ -301,9 +325,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
-    
       <category term="CLI" scheme="http://www.appworks-tips.com/tags/CLI/"/>
+    
+      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
     
   </entry>
   
@@ -1185,9 +1209,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
-    
       <category term="Value assistance" scheme="http://www.appworks-tips.com/tags/Value-assistance/"/>
+    
+      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
     
       <category term="How to" scheme="http://www.appworks-tips.com/tags/How-to/"/>
     
@@ -1314,32 +1338,6 @@
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
       <category term="Progression bar" scheme="http://www.appworks-tips.com/tags/Progression-bar/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>The best guide on entity property creation</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/02/14/039_the_best_guide_on_entity_property_creation/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/039_the_best_guide_on_entity_property_creation/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/02/14/039_the_best_guide_on_entity_property_creation/</id>
-    <published>2020-02-14T12:00:00.000Z</published>
-    <updated>2020-12-24T23:28:51.367Z</updated>
-    
-    <summary type="html">
-    
-      A best of all guide about the creation of properties on an entity. Who doesn&#39;t want to know?
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/039_the_best_guide_on_entity_property_creation/feature_tag.png" />
-    
-      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Building blocks" scheme="http://www.appworks-tips.com/tags/Building-blocks/"/>
-    
-      <category term="Properties" scheme="http://www.appworks-tips.com/tags/Properties/"/>
     
   </entry>
   
