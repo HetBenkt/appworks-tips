@@ -299,9 +299,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
-    
       <category term="ANT" scheme="http://www.appworks-tips.com/tags/ANT/"/>
+    
+      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
     
   </entry>
   
@@ -325,9 +325,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CLI" scheme="http://www.appworks-tips.com/tags/CLI/"/>
-    
       <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="CLI" scheme="http://www.appworks-tips.com/tags/CLI/"/>
     
   </entry>
   
@@ -611,7 +611,7 @@
     <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/063_your_final_destination_on_consuming_json_data_via_rest/feature_tag.png" />
     <id>http://www.appworks-tips.com/2020/08/28/063_your_final_destination_on_consuming_json_data_via_rest/</id>
     <published>2020-08-28T12:00:00.000Z</published>
-    <updated>2020-12-24T23:28:51.612Z</updated>
+    <updated>2021-01-29T21:04:31.609Z</updated>
     
     <summary type="html">
     

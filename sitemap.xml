@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://www.appworks-tips.com/2019/12/06/029_update_your_license_the_proper_way/</loc>
+        
+        <lastmod>2021-01-29T21:04:31.622Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2020/08/28/063_your_final_destination_on_consuming_json_data_via_rest/</loc>
+        
+        <lastmod>2021-01-29T21:04:31.609Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2020/01/03/033_make_the_documentum_cmis_to_appworks_connection_work_for_you/</loc>
+        
+        <lastmod>2021-01-29T21:04:31.595Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/12/27/032_install_documentum_with_this_ultimate_guide/</loc>
+        
+        <lastmod>2021-01-29T21:04:31.564Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://www.appworks-tips.com/2021/01/29/083_consuming_the_identity_package/</loc>
         
         <lastmod>2021-01-28T20:51:34.462Z</lastmod>
@@ -163,13 +191,6 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/12/27/032_install_documentum_with_this_ultimate_guide/</loc>
-        
-        <lastmod>2020-12-24T23:28:51.644Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>http://www.appworks-tips.com/2020/11/06/071_lets_develop_an_eis_connector/</loc>
         
         <lastmod>2020-12-24T23:28:51.638Z</lastmod>
@@ -194,13 +215,6 @@
         <loc>http://www.appworks-tips.com/2020/03/06/042_your_guide_on_creating_a_dynamic_enumerated_text_property/</loc>
         
         <lastmod>2020-12-24T23:28:51.618Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2020/08/28/063_your_final_destination_on_consuming_json_data_via_rest/</loc>
-        
-        <lastmod>2020-12-24T23:28:51.612Z</lastmod>
         
     </url>
     
@@ -334,13 +348,6 @@
         <loc>http://www.appworks-tips.com/2019/12/20/031_the_lazy_installation_to_make_a_mail_service_available/</loc>
         
         <lastmod>2020-12-24T23:28:51.423Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/12/06/029_update_your_license_the_proper_way/</loc>
-        
-        <lastmod>2020-12-24T23:28:51.417Z</lastmod>
         
     </url>
     
@@ -527,13 +534,6 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2020/01/03/033_make_the_documentum_cmis_to_appworks_connection_work_for_you/</loc>
-        
-        <lastmod>2020-12-24T15:41:52.341Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>http://www.appworks-tips.com/where_to_start/index.html</loc>
         
         <lastmod>2020-12-24T14:46:43.479Z</lastmod>
@@ -590,14 +590,14 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/10/25/024_an_overview_of_the_low_code_workspace/</loc>
+        <loc>http://www.appworks-tips.com/2019/10/11/022_make_the_svn_buttons_work_for_you/</loc>
         
         <lastmod>2020-12-24T14:46:41.193Z</lastmod>
         
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/10/11/022_make_the_svn_buttons_work_for_you/</loc>
+        <loc>http://www.appworks-tips.com/2019/10/25/024_an_overview_of_the_low_code_workspace/</loc>
         
         <lastmod>2020-12-24T14:46:41.193Z</lastmod>
         
@@ -611,13 +611,6 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
-        
-        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>http://www.appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
@@ -626,6 +619,13 @@
     
     <url>
         <loc>http://www.appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
+        
+        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
         
