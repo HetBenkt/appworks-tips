@@ -2,6 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://www.appworks-tips.com/2021/02/05/083a_installation_survival_guide_update_21_1/</loc>
+        
+        <lastmod>2021-02-04T19:38:47.558Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/05/17/001_a_quick_way_to_install_oracle_virtual_box/</loc>
+        
+        <lastmod>2021-01-30T21:15:27.744Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/07/12/009_the_appworks_installation_survival_guide/</loc>
+        
+        <lastmod>2021-01-30T21:15:27.729Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/06/21/006_the_secret_of_successful_installing_tomee/</loc>
+        
+        <lastmod>2021-01-30T21:15:27.722Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/07/19/010_make_package_deployment_work_for_you/</loc>
+        
+        <lastmod>2021-01-30T21:15:27.715Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/06/07/004_back_to_the_basics_with_centos/</loc>
+        
+        <lastmod>2021-01-30T21:15:27.708Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/05/24/002_prepare_a_vm_image_in_this_ultimate_guide/</loc>
+        
+        <lastmod>2021-01-30T21:15:27.700Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/06/28/007_your_way_to_a_done_postgresql_installation/</loc>
+        
+        <lastmod>2021-01-30T21:15:27.693Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/06/14/005_a_few_quick_tips_to_help_you_install_java/</loc>
+        
+        <lastmod>2021-01-30T21:15:27.673Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/07/05/008_see_how_easily_you_can_install_cars/</loc>
+        
+        <lastmod>2021-01-29T23:00:40.225Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://www.appworks-tips.com/2019/12/06/029_update_your_license_the_proper_way/</loc>
         
         <lastmod>2021-01-29T21:04:31.622Z</lastmod>
@@ -65,72 +135,9 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/07/19/010_make_package_deployment_work_for_you/</loc>
-        
-        <lastmod>2020-12-30T22:12:41.290Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/07/12/009_the_appworks_installation_survival_guide/</loc>
-        
-        <lastmod>2020-12-30T22:12:41.270Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/06/14/005_a_few_quick_tips_to_help_you_install_java/</loc>
-        
-        <lastmod>2020-12-30T22:00:45.003Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/05/24/002_prepare_a_vm_image_in_this_ultimate_guide/</loc>
-        
-        <lastmod>2020-12-30T22:00:44.996Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/06/21/006_the_secret_of_successful_installing_tomee/</loc>
-        
-        <lastmod>2020-12-30T22:00:44.985Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/06/07/004_back_to_the_basics_with_centos/</loc>
-        
-        <lastmod>2020-12-30T22:00:44.977Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/07/05/008_see_how_easily_you_can_install_cars/</loc>
-        
-        <lastmod>2020-12-30T22:00:44.967Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/06/28/007_your_way_to_a_done_postgresql_installation/</loc>
-        
-        <lastmod>2020-12-30T22:00:44.958Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>http://www.appworks-tips.com/2019/05/31/003_an_appworks_license_in_5_amazing_steps/</loc>
         
         <lastmod>2020-12-30T22:00:44.950Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/05/17/001_a_quick_way_to_install_oracle_virtual_box/</loc>
-        
-        <lastmod>2020-12-30T22:00:44.930Z</lastmod>
         
     </url>
     
@@ -611,6 +618,13 @@
     </url>
     
     <url>
+        <loc>http://www.appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
+        
+        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://www.appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
@@ -619,13 +633,6 @@
     
     <url>
         <loc>http://www.appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
-        
-        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
         

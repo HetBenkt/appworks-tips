@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2021-01-28T20:51:34.462Z</updated>
+  <updated>2021-02-04T19:38:47.558Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Installation survival guide update 21.1 (and what&#39;s new!)</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/02/05/083a_installation_survival_guide_update_21_1/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/083a_installation_survival_guide_update_21_1/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/02/05/083a_installation_survival_guide_update_21_1/</id>
+    <published>2021-02-05T12:00:00.000Z</published>
+    <updated>2021-02-04T19:38:47.558Z</updated>
+    
+    <summary type="html">
+    
+      A new year with a new &#39;ReThink on a new version of the platform...This is AppWorks 21.1!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/083a_installation_survival_guide_update_21_1/feature_tag.png" />
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/categories/Installation/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="VM" scheme="http://www.appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="http://www.appworks-tips.com/tags/Installation/"/>
+    
+      <category term="release" scheme="http://www.appworks-tips.com/tags/release/"/>
+    
+  </entry>
   
   <entry>
     <title>Consuming the Identity package</title>
@@ -765,9 +793,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="linked entity" scheme="http://www.appworks-tips.com/tags/linked-entity/"/>
-    
       <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
+    
+      <category term="linked entity" scheme="http://www.appworks-tips.com/tags/linked-entity/"/>
     
   </entry>
   
@@ -1314,30 +1342,6 @@
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
       <category term="Custom webservice" scheme="http://www.appworks-tips.com/tags/Custom-webservice/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Your guide on playing with progression bars</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/02/21/040_your_guide_on_playing_with_progression_bars/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/040_your_guide_on_playing_with_progression_bars/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/02/21/040_your_guide_on_playing_with_progression_bars/</id>
-    <published>2020-02-21T12:00:00.000Z</published>
-    <updated>2020-12-24T15:41:52.357Z</updated>
-    
-    <summary type="html">
-    
-      This post will give you all the insides on using those nicely looking progression bars
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/040_your_guide_on_playing_with_progression_bars/feature_tag.png" />
-    
-      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Progression bar" scheme="http://www.appworks-tips.com/tags/Progression-bar/"/>
     
   </entry>
   
