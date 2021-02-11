@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2021-02-04T19:38:47.558Z</updated>
+  <updated>2021-02-11T21:41:35.814Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Working with tasks (role/team/worklist/personal)</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/02/12/084_working_with_tasks_role_team_worklist_personal/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/084_working_with_tasks_role_team_worklist_personal/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/02/12/084_working_with_tasks_role_team_worklist_personal/</id>
+    <published>2021-02-12T12:00:00.000Z</published>
+    <updated>2021-02-11T21:41:35.814Z</updated>
+    
+    <summary type="html">
+    
+      Send out tasks to your users?...Let&#39;s check the possibilities!?
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/084_working_with_tasks_role_team_worklist_personal/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Tasks" scheme="http://www.appworks-tips.com/tags/Tasks/"/>
+    
+      <category term="Role" scheme="http://www.appworks-tips.com/tags/Role/"/>
+    
+      <category term="Team" scheme="http://www.appworks-tips.com/tags/Team/"/>
+    
+      <category term="Worklist" scheme="http://www.appworks-tips.com/tags/Worklist/"/>
+    
+      <category term="Personal" scheme="http://www.appworks-tips.com/tags/Personal/"/>
+    
+  </entry>
   
   <entry>
     <title>Installation survival guide update 21.1 (and what&#39;s new!)</title>
@@ -327,9 +359,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="ANT" scheme="http://www.appworks-tips.com/tags/ANT/"/>
-    
       <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="ANT" scheme="http://www.appworks-tips.com/tags/ANT/"/>
     
   </entry>
   
@@ -353,9 +385,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
-    
       <category term="CLI" scheme="http://www.appworks-tips.com/tags/CLI/"/>
+    
+      <category term="CD/CI" scheme="http://www.appworks-tips.com/tags/CD-CI/"/>
     
   </entry>
   
@@ -733,9 +765,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Spring" scheme="http://www.appworks-tips.com/tags/Spring/"/>
-    
       <category term="SOAP" scheme="http://www.appworks-tips.com/tags/SOAP/"/>
+    
+      <category term="Spring" scheme="http://www.appworks-tips.com/tags/Spring/"/>
     
       <category term="UDDI" scheme="http://www.appworks-tips.com/tags/UDDI/"/>
     
@@ -793,9 +825,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
-    
       <category term="linked entity" scheme="http://www.appworks-tips.com/tags/linked-entity/"/>
+    
+      <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
     
   </entry>
   
@@ -1237,9 +1269,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Value assistance" scheme="http://www.appworks-tips.com/tags/Value-assistance/"/>
-    
       <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
+    
+      <category term="Value assistance" scheme="http://www.appworks-tips.com/tags/Value-assistance/"/>
     
       <category term="How to" scheme="http://www.appworks-tips.com/tags/How-to/"/>
     
@@ -1318,30 +1350,6 @@
       <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
     
       <category term="Enumerated" scheme="http://www.appworks-tips.com/tags/Enumerated/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Generate a random int for a property value</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/02/28/041_generate_a_random_int_for_a_property_value/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/041_generate_a_random_int_for_a_property_value/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/02/28/041_generate_a_random_int_for_a_property_value/</id>
-    <published>2020-02-28T12:00:00.000Z</published>
-    <updated>2020-12-24T23:28:51.657Z</updated>
-    
-    <summary type="html">
-    
-      A demo on a small custom webservice that can be used to generate a random int value for a property
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/041_generate_a_random_int_for_a_property_value/feature_tag.png" />
-    
-      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Custom webservice" scheme="http://www.appworks-tips.com/tags/Custom-webservice/"/>
     
   </entry>
   
