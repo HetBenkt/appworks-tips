@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://www.appworks-tips.com/2021/02/19/085_the_art_of_playing_with_caf_files/</loc>
+        
+        <lastmod>2021-02-18T20:40:20.056Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>http://www.appworks-tips.com/2019/06/07/004_back_to_the_basics_with_centos/</loc>
+        
+        <lastmod>2021-02-12T15:59:49.660Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>http://www.appworks-tips.com/2021/02/12/084_working_with_tasks_role_team_worklist_personal/</loc>
         
         <lastmod>2021-02-11T21:41:35.814Z</lastmod>
@@ -40,13 +54,6 @@
         <loc>http://www.appworks-tips.com/2019/07/19/010_make_package_deployment_work_for_you/</loc>
         
         <lastmod>2021-01-30T21:15:27.715Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>http://www.appworks-tips.com/2019/06/07/004_back_to_the_basics_with_centos/</loc>
-        
-        <lastmod>2021-01-30T21:15:27.708Z</lastmod>
         
     </url>
     
@@ -569,14 +576,14 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/abbreviations/index.html</loc>
+        <loc>http://www.appworks-tips.com/about/index.html</loc>
         
         <lastmod>2020-12-24T14:46:41.235Z</lastmod>
         
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/about/index.html</loc>
+        <loc>http://www.appworks-tips.com/abbreviations/index.html</loc>
         
         <lastmod>2020-12-24T14:46:41.235Z</lastmod>
         
@@ -625,14 +632,14 @@
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
+        <loc>http://www.appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
         
     </url>
     
     <url>
-        <loc>http://www.appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
+        <loc>http://www.appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
         

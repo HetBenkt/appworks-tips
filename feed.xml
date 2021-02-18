@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2021-02-11T21:41:35.814Z</updated>
+  <updated>2021-02-18T20:40:20.056Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The art of playing with CAF files</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/02/19/085_the_art_of_playing_with_caf_files/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/085_the_art_of_playing_with_caf_files/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/02/19/085_the_art_of_playing_with_caf_files/</id>
+    <published>2021-02-19T12:00:00.000Z</published>
+    <updated>2021-02-18T20:40:20.056Z</updated>
+    
+    <summary type="html">
+    
+      Maybe not that sexy, but still available!...The xForm .CAF files.
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/085_the_art_of_playing_with_caf_files/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="xForm" scheme="http://www.appworks-tips.com/tags/xForm/"/>
+    
+      <category term="CAF" scheme="http://www.appworks-tips.com/tags/CAF/"/>
+    
+  </entry>
   
   <entry>
     <title>Working with tasks (role/team/worklist/personal)</title>
@@ -281,9 +307,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="xForm" scheme="http://www.appworks-tips.com/tags/xForm/"/>
-    
       <category term="ReST" scheme="http://www.appworks-tips.com/tags/ReST/"/>
+    
+      <category term="xForm" scheme="http://www.appworks-tips.com/tags/xForm/"/>
     
   </entry>
   
@@ -521,11 +547,11 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
+      <category term="Condition" scheme="http://www.appworks-tips.com/tags/Condition/"/>
+    
       <category term="Lifecycle" scheme="http://www.appworks-tips.com/tags/Lifecycle/"/>
     
       <category term="State" scheme="http://www.appworks-tips.com/tags/State/"/>
-    
-      <category term="Condition" scheme="http://www.appworks-tips.com/tags/Condition/"/>
     
   </entry>
   
@@ -1324,32 +1350,6 @@
       <category term="Building blocks" scheme="http://www.appworks-tips.com/tags/Building-blocks/"/>
     
       <category term="E-mail" scheme="http://www.appworks-tips.com/tags/E-mail/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Your guide on creating a &#39;Dynamic Enumerated Text&#39; property</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/03/06/042_your_guide_on_creating_a_dynamic_enumerated_text_property/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/042_your_guide_on_creating_a_dynamic_enumerated_text_property/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/03/06/042_your_guide_on_creating_a_dynamic_enumerated_text_property/</id>
-    <published>2020-03-06T12:00:00.000Z</published>
-    <updated>2020-12-24T23:28:51.618Z</updated>
-    
-    <summary type="html">
-    
-      Wondering how a &#39;Dynamic Enumerated Text&#39; can be used as a property...Keep reading for the answer!
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/042_your_guide_on_creating_a_dynamic_enumerated_text_property/feature_tag.png" />
-    
-      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="BPM" scheme="http://www.appworks-tips.com/tags/BPM/"/>
-    
-      <category term="Enumerated" scheme="http://www.appworks-tips.com/tags/Enumerated/"/>
     
   </entry>
   
