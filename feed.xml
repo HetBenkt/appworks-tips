@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2021-02-18T20:40:20.056Z</updated>
+  <updated>2021-02-24T21:46:40.638Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Deployment of a language pack (nl-NL)</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/02/26/086_deployment_of_a_language_pack/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/086_deployment_of_a_language_pack/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/02/26/086_deployment_of_a_language_pack/</id>
+    <published>2021-02-26T12:00:00.000Z</published>
+    <updated>2021-02-24T21:46:40.638Z</updated>
+    
+    <summary type="html">
+    
+      Your design-time and/or runtime in another language?...This is where you need to be!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/086_deployment_of_a_language_pack/feature_tag.png" />
+    
+      <category term="Management" scheme="http://www.appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Language pack" scheme="http://www.appworks-tips.com/tags/Language-pack/"/>
+    
+  </entry>
   
   <entry>
     <title>The art of playing with CAF files</title>
@@ -1324,32 +1348,6 @@
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
       <category term="Versioning" scheme="http://www.appworks-tips.com/tags/Versioning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>The required tips to send/retrieve E-mail with attachments</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/03/13/043_the_required_tips_to_send_retrieve_email_with_attachments/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/043_the_required_tips_to_send_retrieve_email_with_attachments/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/03/13/043_the_required_tips_to_send_retrieve_email_with_attachments/</id>
-    <published>2020-03-13T12:00:00.000Z</published>
-    <updated>2020-12-24T23:28:51.600Z</updated>
-    
-    <summary type="html">
-    
-      This post is a deeper dive on sending out and receiving mail from AppWorks.
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/043_the_required_tips_to_send_retrieve_email_with_attachments/feature_tag.png" />
-    
-      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Building blocks" scheme="http://www.appworks-tips.com/tags/Building-blocks/"/>
-    
-      <category term="E-mail" scheme="http://www.appworks-tips.com/tags/E-mail/"/>
     
   </entry>
   
