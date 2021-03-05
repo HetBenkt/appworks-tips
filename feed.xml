@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2021-02-24T21:46:40.638Z</updated>
+  <updated>2021-03-05T08:05:55.155Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>What happens when decreasing a property length?</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/03/05/087_what_happens_when_decreasing_a_property_length/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/087_what_happens_when_decreasing_a_property_length/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/03/05/087_what_happens_when_decreasing_a_property_length/</id>
+    <published>2021-03-05T12:00:00.000Z</published>
+    <updated>2021-03-05T08:05:55.155Z</updated>
+    
+    <summary type="html">
+    
+      And what happens with the data already created in runtime!?
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/087_what_happens_when_decreasing_a_property_length/feature_tag.png" />
+    
+      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Property" scheme="http://www.appworks-tips.com/tags/Property/"/>
+    
+      <category term="Database" scheme="http://www.appworks-tips.com/tags/Database/"/>
+    
+  </entry>
   
   <entry>
     <title>Deployment of a language pack (nl-NL)</title>
@@ -599,9 +625,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Property" scheme="http://www.appworks-tips.com/tags/Property/"/>
-    
       <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
+    
+      <category term="Property" scheme="http://www.appworks-tips.com/tags/Property/"/>
     
       <category term="Keywords" scheme="http://www.appworks-tips.com/tags/Keywords/"/>
     
@@ -875,9 +901,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="linked entity" scheme="http://www.appworks-tips.com/tags/linked-entity/"/>
-    
       <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
+    
+      <category term="linked entity" scheme="http://www.appworks-tips.com/tags/linked-entity/"/>
     
   </entry>
   
@@ -1319,35 +1345,11 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
-    
       <category term="Value assistance" scheme="http://www.appworks-tips.com/tags/Value-assistance/"/>
     
+      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
+    
       <category term="How to" scheme="http://www.appworks-tips.com/tags/How-to/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>The explanation of versioning AppWorks releases</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/03/20/044_the_explanation_of_versioning_appworks_releases/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/044_the_explanation_of_versioning_appworks_releases/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/03/20/044_the_explanation_of_versioning_appworks_releases/</id>
-    <published>2020-03-20T12:00:00.000Z</published>
-    <updated>2020-12-24T15:41:52.361Z</updated>
-    
-    <summary type="html">
-    
-      An overview of the version labeling of the AppWorks releases
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/044_the_explanation_of_versioning_appworks_releases/feature_tag.png" />
-    
-      <category term="Management" scheme="http://www.appworks-tips.com/categories/Management/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Versioning" scheme="http://www.appworks-tips.com/tags/Versioning/"/>
     
   </entry>
   
