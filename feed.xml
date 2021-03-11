@@ -6,7 +6,7 @@
   <link rel="self" href="http://www.appworks-tips.com/feed.xml"/>
   
   <link href="http://www.appworks-tips.com/"/>
-  <updated>2021-03-05T08:05:55.155Z</updated>
+  <updated>2021-03-11T19:52:04.297Z</updated>
   <id>http://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Do a proper removal of an organization</title>
+    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2021/03/12/088_do_a_proper_removal_of_an_organization/"/>
+    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2021/088_do_a_proper_removal_of_an_organization/feature_tag.png" />
+    <id>http://www.appworks-tips.com/2021/03/12/088_do_a_proper_removal_of_an_organization/</id>
+    <published>2021-03-12T12:00:00.000Z</published>
+    <updated>2021-03-11T19:52:04.297Z</updated>
+    
+    <summary type="html">
+    
+      We&#39;ll do a dive on the &quot;organizationremovaltool&quot;!
+    
+    </summary>
+    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2021/088_do_a_proper_removal_of_an_organization/feature_tag.png" />
+    
+      <category term="Management" scheme="http://www.appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Organization" scheme="http://www.appworks-tips.com/tags/Organization/"/>
+    
+      <category term="Tool" scheme="http://www.appworks-tips.com/tags/Tool/"/>
+    
+  </entry>
   
   <entry>
     <title>What happens when decreasing a property length?</title>
@@ -901,9 +927,9 @@
     
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
-    
       <category term="linked entity" scheme="http://www.appworks-tips.com/tags/linked-entity/"/>
+    
+      <category term="Database metadata" scheme="http://www.appworks-tips.com/tags/Database-metadata/"/>
     
   </entry>
   
@@ -1322,34 +1348,6 @@
       <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
     
       <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to create conditional value assistance on 2 properties</title>
-    <link rel="alternate" type="text/html" href="http://www.appworks-tips.com/2020/03/27/045_how_to_create_conditional_value_assistance_on_two_props/"/>
-    <link rel="enclosure" type="image/png" href="http://www.appworks-tips.com/images/posts/2020/045_how_to_create_conditional_value_assistance_on_two_props/feature_tag.png" />
-    <id>http://www.appworks-tips.com/2020/03/27/045_how_to_create_conditional_value_assistance_on_two_props/</id>
-    <published>2020-03-27T12:00:00.000Z</published>
-    <updated>2020-12-24T23:28:51.631Z</updated>
-    
-    <summary type="html">
-    
-      A &#39;how to&#39; tutorial on creating value assistance between 2 properties on a form
-    
-    </summary>
-    <media:thumbnail url="http://www.appworks-tips.com/images/posts/2020/045_how_to_create_conditional_value_assistance_on_two_props/feature_tag.png" />
-    
-      <category term="Development" scheme="http://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="http://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Value assistance" scheme="http://www.appworks-tips.com/tags/Value-assistance/"/>
-    
-      <category term="Form" scheme="http://www.appworks-tips.com/tags/Form/"/>
-    
-      <category term="How to" scheme="http://www.appworks-tips.com/tags/How-to/"/>
     
   </entry>
   
