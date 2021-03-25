@@ -6,7 +6,7 @@
   <link rel="self" href="https://www.appworks-tips.com/feed.xml"/>
   
   <link href="https://www.appworks-tips.com/"/>
-  <updated>2021-03-18T13:44:49.841Z</updated>
+  <updated>2021-03-25T14:21:37.083Z</updated>
   <id>https://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Your golden ticket to A | M | I tasks in a lifecycle</title>
+    <link rel="alternate" type="text/html" href="https://www.appworks-tips.com/2021/03/26/090_your_golden_ticket_to_a_m_i_tasks_in_a_lifecycle/"/>
+    <link rel="enclosure" type="image/png" href="https://www.appworks-tips.com/images/posts/2021/090_your_golden_ticket_to_a_m_i_tasks_in_a_lifecycle/feature_tag.png" />
+    <id>https://www.appworks-tips.com/2021/03/26/090_your_golden_ticket_to_a_m_i_tasks_in_a_lifecycle/</id>
+    <published>2021-03-26T12:00:00.000Z</published>
+    <updated>2021-03-25T14:21:37.083Z</updated>
+    
+    <summary type="html">
+    
+      Let&#39;s dive in the &#39;automatic&#39;, &#39;manual&#39; and &#39;intermediate&#39; tasks on a lifecycle...
+    
+    </summary>
+    <media:thumbnail url="https://www.appworks-tips.com/images/posts/2021/090_your_golden_ticket_to_a_m_i_tasks_in_a_lifecycle/feature_tag.png" />
+    
+      <category term="Development" scheme="https://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="lifecycle" scheme="https://www.appworks-tips.com/tags/lifecycle/"/>
+    
+      <category term="tasks" scheme="https://www.appworks-tips.com/tags/tasks/"/>
+    
+  </entry>
   
   <entry>
     <title>The search for content on the server</title>
@@ -459,9 +485,9 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CD/CI" scheme="https://www.appworks-tips.com/tags/CD-CI/"/>
-    
       <category term="Jenkins" scheme="https://www.appworks-tips.com/tags/Jenkins/"/>
+    
+      <category term="CD/CI" scheme="https://www.appworks-tips.com/tags/CD-CI/"/>
     
   </entry>
   
@@ -511,9 +537,9 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CLI" scheme="https://www.appworks-tips.com/tags/CLI/"/>
-    
       <category term="CD/CI" scheme="https://www.appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="CLI" scheme="https://www.appworks-tips.com/tags/CLI/"/>
     
   </entry>
   
@@ -951,9 +977,9 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="linked entity" scheme="https://www.appworks-tips.com/tags/linked-entity/"/>
-    
       <category term="Database metadata" scheme="https://www.appworks-tips.com/tags/Database-metadata/"/>
+    
+      <category term="linked entity" scheme="https://www.appworks-tips.com/tags/linked-entity/"/>
     
   </entry>
   
@@ -1320,34 +1346,6 @@
       <category term="Digital" scheme="https://www.appworks-tips.com/tags/Digital/"/>
     
       <category term="Update" scheme="https://www.appworks-tips.com/tags/Update/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Installation survival guide update 20.2 (and what&#39;s new!)</title>
-    <link rel="alternate" type="text/html" href="https://www.appworks-tips.com/2020/04/10/046a_installation_survival_guide_update_20_2/"/>
-    <link rel="enclosure" type="image/png" href="https://www.appworks-tips.com/images/posts/2020/046a_installation_survival_guide_update_20_2/feature_tag.png" />
-    <id>https://www.appworks-tips.com/2020/04/10/046a_installation_survival_guide_update_20_2/</id>
-    <published>2020-04-10T12:00:00.000Z</published>
-    <updated>2020-12-24T15:41:52.363Z</updated>
-    
-    <summary type="html">
-    
-      An update post on the 16.6 installation from the main menu (This is AppWorks 20.2!)
-    
-    </summary>
-    <media:thumbnail url="https://www.appworks-tips.com/images/posts/2020/046a_installation_survival_guide_update_20_2/feature_tag.png" />
-    
-      <category term="Installation" scheme="https://www.appworks-tips.com/categories/Installation/"/>
-    
-    
-      <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="VM" scheme="https://www.appworks-tips.com/tags/VM/"/>
-    
-      <category term="Installation" scheme="https://www.appworks-tips.com/tags/Installation/"/>
-    
-      <category term="EP2" scheme="https://www.appworks-tips.com/tags/EP2/"/>
     
   </entry>
   
