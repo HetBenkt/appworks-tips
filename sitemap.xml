@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://www.appworks-tips.com/2021/04/02/091_the_magic_of_crafting_a_custom_document_store/</loc>
+        
+        <lastmod>2021-04-01T17:34:52.651Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>https://www.appworks-tips.com/2021/03/26/090_your_golden_ticket_to_a_m_i_tasks_in_a_lifecycle/</loc>
         
         <lastmod>2021-03-25T14:21:37.083Z</lastmod>
@@ -513,13 +520,6 @@
     </url>
     
     <url>
-        <loc>https://www.appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/</loc>
-        
-        <lastmod>2020-12-24T15:41:52.367Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://www.appworks-tips.com/2020/05/15/049a_1_year_anniversary/</loc>
         
         <lastmod>2020-12-24T15:41:52.367Z</lastmod>
@@ -528,6 +528,13 @@
     
     <url>
         <loc>https://www.appworks-tips.com/2020/05/29/051_how_to_create_an_appworks_package/</loc>
+        
+        <lastmod>2020-12-24T15:41:52.367Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://www.appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/</loc>
         
         <lastmod>2020-12-24T15:41:52.367Z</lastmod>
         
@@ -611,14 +618,14 @@
     </url>
     
     <url>
-        <loc>https://www.appworks-tips.com/abbreviations/index.html</loc>
+        <loc>https://www.appworks-tips.com/about/index.html</loc>
         
         <lastmod>2020-12-24T14:46:41.235Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://www.appworks-tips.com/about/index.html</loc>
+        <loc>https://www.appworks-tips.com/abbreviations/index.html</loc>
         
         <lastmod>2020-12-24T14:46:41.235Z</lastmod>
         
@@ -667,13 +674,6 @@
     </url>
     
     <url>
-        <loc>https://www.appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
-        
-        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://www.appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
@@ -682,6 +682,13 @@
     
     <url>
         <loc>https://www.appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
+        
+        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://www.appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
         

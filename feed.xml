@@ -6,7 +6,7 @@
   <link rel="self" href="https://www.appworks-tips.com/feed.xml"/>
   
   <link href="https://www.appworks-tips.com/"/>
-  <updated>2021-03-25T14:21:37.083Z</updated>
+  <updated>2021-04-01T17:34:52.651Z</updated>
   <id>https://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The magic of crafting a custom document store</title>
+    <link rel="alternate" type="text/html" href="https://www.appworks-tips.com/2021/04/02/091_the_magic_of_crafting_a_custom_document_store/"/>
+    <link rel="enclosure" type="image/png" href="https://www.appworks-tips.com/images/posts/2021/091_the_magic_of_crafting_a_custom_document_store/feature_tag.png" />
+    <id>https://www.appworks-tips.com/2021/04/02/091_the_magic_of_crafting_a_custom_document_store/</id>
+    <published>2021-04-02T12:00:00.000Z</published>
+    <updated>2021-04-01T17:34:52.651Z</updated>
+    
+    <summary type="html">
+    
+      This post will demonstrate the build of a custom document store connector with all the pitfalls!
+    
+    </summary>
+    <media:thumbnail url="https://www.appworks-tips.com/images/posts/2021/091_the_magic_of_crafting_a_custom_document_store/feature_tag.png" />
+    
+      <category term="Development" scheme="https://www.appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="document store" scheme="https://www.appworks-tips.com/tags/document-store/"/>
+    
+  </entry>
   
   <entry>
     <title>Your golden ticket to A | M | I tasks in a lifecycle</title>
@@ -485,9 +509,9 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Jenkins" scheme="https://www.appworks-tips.com/tags/Jenkins/"/>
-    
       <category term="CD/CI" scheme="https://www.appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="Jenkins" scheme="https://www.appworks-tips.com/tags/Jenkins/"/>
     
   </entry>
   
@@ -537,9 +561,9 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CD/CI" scheme="https://www.appworks-tips.com/tags/CD-CI/"/>
-    
       <category term="CLI" scheme="https://www.appworks-tips.com/tags/CLI/"/>
+    
+      <category term="CD/CI" scheme="https://www.appworks-tips.com/tags/CD-CI/"/>
     
   </entry>
   
@@ -977,9 +1001,9 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Database metadata" scheme="https://www.appworks-tips.com/tags/Database-metadata/"/>
-    
       <category term="linked entity" scheme="https://www.appworks-tips.com/tags/linked-entity/"/>
+    
+      <category term="Database metadata" scheme="https://www.appworks-tips.com/tags/Database-metadata/"/>
     
   </entry>
   
@@ -1159,9 +1183,9 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Package" scheme="https://www.appworks-tips.com/tags/Package/"/>
-    
       <category term="How to" scheme="https://www.appworks-tips.com/tags/How-to/"/>
+    
+      <category term="Package" scheme="https://www.appworks-tips.com/tags/Package/"/>
     
       <category term="Deploy" scheme="https://www.appworks-tips.com/tags/Deploy/"/>
     
@@ -1187,9 +1211,9 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Package" scheme="https://www.appworks-tips.com/tags/Package/"/>
-    
       <category term="How to" scheme="https://www.appworks-tips.com/tags/How-to/"/>
+    
+      <category term="Package" scheme="https://www.appworks-tips.com/tags/Package/"/>
     
   </entry>
   
@@ -1318,34 +1342,6 @@
       <category term="Form" scheme="https://www.appworks-tips.com/tags/Form/"/>
     
       <category term="Long text property" scheme="https://www.appworks-tips.com/tags/Long-text-property/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Update on OpenText Enterprise World (Digital)</title>
-    <link rel="alternate" type="text/html" href="https://www.appworks-tips.com/2020/04/17/046b_update_enterprise_world_digital/"/>
-    <link rel="enclosure" type="image/png" href="https://www.appworks-tips.com/images/posts/2020/046b_update_enterprise_world_digital/feature_tag.png" />
-    <id>https://www.appworks-tips.com/2020/04/17/046b_update_enterprise_world_digital/</id>
-    <published>2020-04-17T12:00:00.000Z</published>
-    <updated>2020-12-24T15:41:52.364Z</updated>
-    
-    <summary type="html">
-    
-      A free digital event...Is it what we can expect from it? (Spoiler...Hell yeah!!)
-    
-    </summary>
-    <media:thumbnail url="https://www.appworks-tips.com/images/posts/2020/046b_update_enterprise_world_digital/feature_tag.png" />
-    
-      <category term="Enterprise world" scheme="https://www.appworks-tips.com/categories/Enterprise-world/"/>
-    
-    
-      <category term="OpenText" scheme="https://www.appworks-tips.com/tags/OpenText/"/>
-    
-      <category term="Enterprise world" scheme="https://www.appworks-tips.com/tags/Enterprise-world/"/>
-    
-      <category term="Digital" scheme="https://www.appworks-tips.com/tags/Digital/"/>
-    
-      <category term="Update" scheme="https://www.appworks-tips.com/tags/Update/"/>
     
   </entry>
   
