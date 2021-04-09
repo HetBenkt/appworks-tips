@@ -6,7 +6,7 @@
   <link rel="self" href="https://www.appworks-tips.com/feed.xml"/>
   
   <link href="https://www.appworks-tips.com/"/>
-  <updated>2021-04-01T17:34:52.651Z</updated>
+  <updated>2021-04-08T09:25:56.368Z</updated>
   <id>https://www.appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Is &#39;Apache Directory Studio&#39; a replacement for CMC?</title>
+    <link rel="alternate" type="text/html" href="https://www.appworks-tips.com/2021/04/09/092_is_apache_directory_studio_a_replacement_for_cmc/"/>
+    <link rel="enclosure" type="image/png" href="https://www.appworks-tips.com/images/posts/2021/092_is_apache_directory_studio_a_replacement_for_cmc/feature_tag.png" />
+    <id>https://www.appworks-tips.com/2021/04/09/092_is_apache_directory_studio_a_replacement_for_cmc/</id>
+    <published>2021-04-09T12:00:00.000Z</published>
+    <updated>2021-04-08T09:25:56.368Z</updated>
+    
+    <summary type="html">
+    
+      What value can &#39;Apache Directory Studio&#39; bring to our platform...let&#39;s find out!
+    
+    </summary>
+    <media:thumbnail url="https://www.appworks-tips.com/images/posts/2021/092_is_apache_directory_studio_a_replacement_for_cmc/feature_tag.png" />
+    
+      <category term="Management" scheme="https://www.appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="LDAP" scheme="https://www.appworks-tips.com/tags/LDAP/"/>
+    
+      <category term="Tools" scheme="https://www.appworks-tips.com/tags/Tools/"/>
+    
+      <category term="CMC" scheme="https://www.appworks-tips.com/tags/CMC/"/>
+    
+      <category term="Apache Directory Studio" scheme="https://www.appworks-tips.com/tags/Apache-Directory-Studio/"/>
+    
+  </entry>
   
   <entry>
     <title>The magic of crafting a custom document store</title>
@@ -1183,9 +1213,9 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="How to" scheme="https://www.appworks-tips.com/tags/How-to/"/>
-    
       <category term="Package" scheme="https://www.appworks-tips.com/tags/Package/"/>
+    
+      <category term="How to" scheme="https://www.appworks-tips.com/tags/How-to/"/>
     
       <category term="Deploy" scheme="https://www.appworks-tips.com/tags/Deploy/"/>
     
@@ -1211,9 +1241,9 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="How to" scheme="https://www.appworks-tips.com/tags/How-to/"/>
-    
       <category term="Package" scheme="https://www.appworks-tips.com/tags/Package/"/>
+    
+      <category term="How to" scheme="https://www.appworks-tips.com/tags/How-to/"/>
     
   </entry>
   
@@ -1311,37 +1341,11 @@
     
       <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
     
+      <category term="Form" scheme="https://www.appworks-tips.com/tags/Form/"/>
+    
       <category term="Properties" scheme="https://www.appworks-tips.com/tags/Properties/"/>
     
-      <category term="Form" scheme="https://www.appworks-tips.com/tags/Form/"/>
-    
       <category term="Identity" scheme="https://www.appworks-tips.com/tags/Identity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>A dive on how long a long text is</title>
-    <link rel="alternate" type="text/html" href="https://www.appworks-tips.com/2020/04/24/047_a_dive_on_how_long_is_a_long_text/"/>
-    <link rel="enclosure" type="image/png" href="https://www.appworks-tips.com/images/posts/2020/047_a_dive_on_how_long_is_a_long_text/feature_tag.png" />
-    <id>https://www.appworks-tips.com/2020/04/24/047_a_dive_on_how_long_is_a_long_text/</id>
-    <published>2020-04-24T12:00:00.000Z</published>
-    <updated>2020-12-24T23:28:51.380Z</updated>
-    
-    <summary type="html">
-    
-      Let&#39;s do a dive on the &#39;long text&#39; property and how long it can be!?
-    
-    </summary>
-    <media:thumbnail url="https://www.appworks-tips.com/images/posts/2020/047_a_dive_on_how_long_is_a_long_text/feature_tag.png" />
-    
-      <category term="Development" scheme="https://www.appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="https://www.appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Form" scheme="https://www.appworks-tips.com/tags/Form/"/>
-    
-      <category term="Long text property" scheme="https://www.appworks-tips.com/tags/Long-text-property/"/>
     
   </entry>
   
