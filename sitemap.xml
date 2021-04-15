@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://appworks-tips.com/2021/04/16/092a_update_enterprise_world_digital/</loc>
+        
+        <lastmod>2021-04-15T15:14:45.877Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/07/17/057a_installation_survival_guide_update_20_3/</loc>
+        
+        <lastmod>2021-04-15T12:28:26.422Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>https://appworks-tips.com/2021/04/09/092_is_apache_directory_studio_a_replacement_for_cmc/</loc>
         
-        <lastmod>2021-04-08T09:25:56.368Z</lastmod>
+        <lastmod>2021-04-12T08:25:33.598Z</lastmod>
         
     </url>
     
@@ -401,13 +415,6 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/07/17/057a_installation_survival_guide_update_20_3/</loc>
-        
-        <lastmod>2020-12-24T23:28:51.475Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://appworks-tips.com/2020/01/31/037_your_best_shot_on_bpm_debugging/</loc>
         
         <lastmod>2020-12-24T23:28:51.431Z</lastmod>
@@ -625,14 +632,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/abbreviations/index.html</loc>
+        <loc>https://appworks-tips.com/about/index.html</loc>
         
         <lastmod>2020-12-24T14:46:41.235Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/about/index.html</loc>
+        <loc>https://appworks-tips.com/abbreviations/index.html</loc>
         
         <lastmod>2020-12-24T14:46:41.235Z</lastmod>
         

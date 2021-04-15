@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2021-04-08T09:25:56.368Z</updated>
+  <updated>2021-04-15T15:14:45.877Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -18,12 +18,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Update on OpenText Enterprise World Europe (Digital 2021 Q2)</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2021/04/16/092a_update_enterprise_world_digital/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/092a_update_enterprise_world_digital/feature_tag.png" />
+    <id>https://appworks-tips.com/2021/04/16/092a_update_enterprise_world_digital/</id>
+    <published>2021-04-16T12:00:00.000Z</published>
+    <updated>2021-04-15T15:14:45.877Z</updated>
+    
+    <summary type="html">
+    
+      A free digital event during the ongoing pandemic...Can we expect all the greatness again? (Ohw mama!!)
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2021/092a_update_enterprise_world_digital/feature_tag.png" />
+    
+      <category term="Enterprise world" scheme="https://appworks-tips.com/categories/Enterprise-world/"/>
+    
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Enterprise world" scheme="https://appworks-tips.com/tags/Enterprise-world/"/>
+    
+      <category term="Digital" scheme="https://appworks-tips.com/tags/Digital/"/>
+    
+      <category term="Update" scheme="https://appworks-tips.com/tags/Update/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Is &#39;Apache Directory Studio&#39; a replacement for CMC?</title>
     <link rel="alternate" type="text/html" href="https://appworks-tips.com/2021/04/09/092_is_apache_directory_studio_a_replacement_for_cmc/"/>
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/092_is_apache_directory_studio_a_replacement_for_cmc/feature_tag.png" />
     <id>https://appworks-tips.com/2021/04/09/092_is_apache_directory_studio_a_replacement_for_cmc/</id>
     <published>2021-04-09T12:00:00.000Z</published>
-    <updated>2021-04-08T09:25:56.368Z</updated>
+    <updated>2021-04-12T08:25:33.598Z</updated>
     
     <summary type="html">
     
@@ -565,9 +593,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="ANT" scheme="https://appworks-tips.com/tags/ANT/"/>
-    
       <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="ANT" scheme="https://appworks-tips.com/tags/ANT/"/>
     
   </entry>
   
@@ -591,9 +619,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
-    
       <category term="CLI" scheme="https://appworks-tips.com/tags/CLI/"/>
+    
+      <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
     
   </entry>
   
@@ -755,9 +783,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Property" scheme="https://appworks-tips.com/tags/Property/"/>
-    
       <category term="Form" scheme="https://appworks-tips.com/tags/Form/"/>
+    
+      <category term="Property" scheme="https://appworks-tips.com/tags/Property/"/>
     
       <category term="Keywords" scheme="https://appworks-tips.com/tags/Keywords/"/>
     
@@ -1043,7 +1071,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/057a_installation_survival_guide_update_20_3/feature_tag.png" />
     <id>https://appworks-tips.com/2020/07/17/057a_installation_survival_guide_update_20_3/</id>
     <published>2020-07-17T12:00:00.000Z</published>
-    <updated>2020-12-24T23:28:51.475Z</updated>
+    <updated>2021-04-15T12:28:26.422Z</updated>
     
     <summary type="html">
     
@@ -1318,34 +1346,6 @@
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
       <category term="Entity" scheme="https://appworks-tips.com/tags/Entity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Exceed number of follow up zeros</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2020/05/01/048_exceed_number_of_follow_up_zeros/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/048_exceed_number_of_follow_up_zeros/feature_tag.png" />
-    <id>https://appworks-tips.com/2020/05/01/048_exceed_number_of_follow_up_zeros/</id>
-    <published>2020-05-01T12:00:00.000Z</published>
-    <updated>2020-12-24T15:41:52.366Z</updated>
-    
-    <summary type="html">
-    
-      What happens when we exceed the number of follow up zeros configured on the identity of an entity?
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2020/048_exceed_number_of_follow_up_zeros/feature_tag.png" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Properties" scheme="https://appworks-tips.com/tags/Properties/"/>
-    
-      <category term="Form" scheme="https://appworks-tips.com/tags/Form/"/>
-    
-      <category term="Identity" scheme="https://appworks-tips.com/tags/Identity/"/>
     
   </entry>
   
