@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2021-04-23T08:14:05.423Z</updated>
+  <updated>2021-04-28T14:32:10.734Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Installation survival guide update 21.2 (and what&#39;s new!)</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2021/04/30/093a_installation_survival_guide_update_21_2/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/093a_installation_survival_guide_update_21_2/feature_tag.png" />
+    <id>https://appworks-tips.com/2021/04/30/093a_installation_survival_guide_update_21_2/</id>
+    <published>2021-04-30T12:00:00.000Z</published>
+    <updated>2021-04-28T14:32:10.734Z</updated>
+    
+    <summary type="html">
+    
+      A new year in &#39;Growth&#39; with a new version of the platform...This is AppWorks 21.2!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2021/093a_installation_survival_guide_update_21_2/feature_tag.png" />
+    
+      <category term="Installation" scheme="https://appworks-tips.com/categories/Installation/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="release" scheme="https://appworks-tips.com/tags/release/"/>
+    
+  </entry>
   
   <entry>
     <title>Call the &quot;LinkDocument&quot; webservice (feature since 20.3)</title>
@@ -331,9 +359,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
       <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     
       <category term="release" scheme="https://appworks-tips.com/tags/release/"/>
     
@@ -727,9 +755,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
       <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     
       <category term="EP4" scheme="https://appworks-tips.com/tags/EP4/"/>
     
@@ -811,9 +839,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Property" scheme="https://appworks-tips.com/tags/Property/"/>
-    
       <category term="Form" scheme="https://appworks-tips.com/tags/Form/"/>
+    
+      <category term="Property" scheme="https://appworks-tips.com/tags/Property/"/>
     
       <category term="Keywords" scheme="https://appworks-tips.com/tags/Keywords/"/>
     
@@ -1113,9 +1141,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
       <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     
       <category term="EP3" scheme="https://appworks-tips.com/tags/EP3/"/>
     
@@ -1324,32 +1352,6 @@
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
       <category term="Diacritics" scheme="https://appworks-tips.com/tags/Diacritics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1-year anniversary!</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2020/05/15/049a_1_year_anniversary/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/049a_1_year_anniversary/feature_tag.png" />
-    <id>https://appworks-tips.com/2020/05/15/049a_1_year_anniversary/</id>
-    <published>2020-05-15T12:00:00.000Z</published>
-    <updated>2021-04-23T07:02:11.572Z</updated>
-    
-    <summary type="html">
-    
-      Yes, we&#39;ve reached it!...1 year of commitment on AppWorks blog posts. Let&#39;s recap the results!
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2020/049a_1_year_anniversary/feature_tag.png" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="Anniversary" scheme="https://appworks-tips.com/tags/Anniversary/"/>
-    
-      <category term="Recap" scheme="https://appworks-tips.com/tags/Recap/"/>
-    
-      <category term="Analytics" scheme="https://appworks-tips.com/tags/Analytics/"/>
     
   </entry>
   

@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://appworks-tips.com/2021/04/30/093a_installation_survival_guide_update_21_2/</loc>
+        
+        <lastmod>2021-04-28T14:32:10.734Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/06/14/005_a_few_quick_tips_to_help_you_install_java/</loc>
+        
+        <lastmod>2021-04-25T19:47:06.015Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/06/21/006_the_secret_of_successful_installing_tomee/</loc>
+        
+        <lastmod>2021-04-25T19:47:06.007Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/05/24/002_prepare_a_vm_image_in_this_ultimate_guide/</loc>
+        
+        <lastmod>2021-04-25T19:47:05.998Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/06/28/007_your_way_to_a_done_postgresql_installation/</loc>
+        
+        <lastmod>2021-04-25T19:44:53.745Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/07/12/009_the_appworks_installation_survival_guide/</loc>
+        
+        <lastmod>2021-04-25T19:27:43.318Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/07/05/008_see_how_easily_you_can_install_cars/</loc>
+        
+        <lastmod>2021-04-25T19:03:25.384Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>https://appworks-tips.com/2021/04/23/093_call_the_linkdocument_webservice_20.3_feature/</loc>
         
         <lastmod>2021-04-23T08:14:05.423Z</lastmod>
@@ -156,14 +205,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/08/07/060_tips_on_making_a_soap_service_available_via_uddi_container/</loc>
+        <loc>https://appworks-tips.com/2020/07/31/059_play_with_masterdata_webservice_in_bpm_loop/</loc>
         
         <lastmod>2021-04-23T07:02:11.580Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/07/31/059_play_with_masterdata_webservice_in_bpm_loop/</loc>
+        <loc>https://appworks-tips.com/2020/08/07/060_tips_on_making_a_soap_service_available_via_uddi_container/</loc>
         
         <lastmod>2021-04-23T07:02:11.580Z</lastmod>
         
@@ -254,13 +303,6 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/05/01/048_exceed_number_of_follow_up_zeros/</loc>
-        
-        <lastmod>2021-04-23T07:02:11.571Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://appworks-tips.com/2020/04/24/047_a_dive_on_how_long_is_a_long_text/</loc>
         
         <lastmod>2021-04-23T07:02:11.571Z</lastmod>
@@ -268,14 +310,21 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/04/17/046b_update_enterprise_world_digital/</loc>
+        <loc>https://appworks-tips.com/2020/05/01/048_exceed_number_of_follow_up_zeros/</loc>
+        
+        <lastmod>2021-04-23T07:02:11.571Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/04/10/046a_installation_survival_guide_update_20_2/</loc>
         
         <lastmod>2021-04-23T07:02:11.570Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/04/10/046a_installation_survival_guide_update_20_2/</loc>
+        <loc>https://appworks-tips.com/2020/04/17/046b_update_enterprise_world_digital/</loc>
         
         <lastmod>2021-04-23T07:02:11.570Z</lastmod>
         
@@ -289,14 +338,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/03/20/044_the_explanation_of_versioning_appworks_releases/</loc>
+        <loc>https://appworks-tips.com/2020/03/27/045_how_to_create_conditional_value_assistance_on_two_props/</loc>
         
         <lastmod>2021-04-23T07:02:11.568Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/03/27/045_how_to_create_conditional_value_assistance_on_two_props/</loc>
+        <loc>https://appworks-tips.com/2020/03/20/044_the_explanation_of_versioning_appworks_releases/</loc>
         
         <lastmod>2021-04-23T07:02:11.568Z</lastmod>
         
@@ -499,51 +548,9 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/07/12/009_the_appworks_installation_survival_guide/</loc>
-        
-        <lastmod>2021-01-30T21:15:27.729Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/06/21/006_the_secret_of_successful_installing_tomee/</loc>
-        
-        <lastmod>2021-01-30T21:15:27.722Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://appworks-tips.com/2019/07/19/010_make_package_deployment_work_for_you/</loc>
         
         <lastmod>2021-01-30T21:15:27.715Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/05/24/002_prepare_a_vm_image_in_this_ultimate_guide/</loc>
-        
-        <lastmod>2021-01-30T21:15:27.700Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/06/28/007_your_way_to_a_done_postgresql_installation/</loc>
-        
-        <lastmod>2021-01-30T21:15:27.693Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/06/14/005_a_few_quick_tips_to_help_you_install_java/</loc>
-        
-        <lastmod>2021-01-30T21:15:27.673Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/07/05/008_see_how_easily_you_can_install_cars/</loc>
-        
-        <lastmod>2021-01-29T23:00:40.225Z</lastmod>
         
     </url>
     
@@ -674,14 +681,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/10/25/024_an_overview_of_the_low_code_workspace/</loc>
+        <loc>https://appworks-tips.com/2019/10/11/022_make_the_svn_buttons_work_for_you/</loc>
         
         <lastmod>2020-12-24T14:46:41.193Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/10/11/022_make_the_svn_buttons_work_for_you/</loc>
+        <loc>https://appworks-tips.com/2019/10/25/024_an_overview_of_the_low_code_workspace/</loc>
         
         <lastmod>2020-12-24T14:46:41.193Z</lastmod>
         
@@ -702,13 +709,6 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/09/27/020_how_to_make_abstraction_generalization_and_subtyping_possible/</loc>
-        
-        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
@@ -717,6 +717,13 @@
     
     <url>
         <loc>https://appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
+        
+        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/09/27/020_how_to_make_abstraction_generalization_and_subtyping_possible/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
         
