@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2021-04-28T14:32:10.734Z</updated>
+  <updated>2021-05-06T21:27:27.363Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Another LDAP browser tool for CARS (JXplorer)</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2021/05/07/094_other_ldap_browser_tool_jxplorer/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/094_other_ldap_browser_tool_jxplorer/feature_tag.png" />
+    <id>https://appworks-tips.com/2021/05/07/094_other_ldap_browser_tool_jxplorer/</id>
+    <published>2021-05-07T12:00:00.000Z</published>
+    <updated>2021-05-06T21:27:27.363Z</updated>
+    
+    <summary type="html">
+    
+      Reading a manual will bring new tools to the surface...let&#39;s see what value it provides.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2021/094_other_ldap_browser_tool_jxplorer/feature_tag.png" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
+    
+      <category term="JXplorer" scheme="https://appworks-tips.com/tags/JXplorer/"/>
+    
+      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
+    
+  </entry>
   
   <entry>
     <title>Installation survival guide update 21.2 (and what&#39;s new!)</title>
@@ -649,9 +677,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="ANT" scheme="https://appworks-tips.com/tags/ANT/"/>
-    
       <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="ANT" scheme="https://appworks-tips.com/tags/ANT/"/>
     
   </entry>
   
@@ -675,9 +703,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
-    
       <category term="CLI" scheme="https://appworks-tips.com/tags/CLI/"/>
+    
+      <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
     
   </entry>
   
@@ -1328,30 +1356,6 @@
       <category term="Package" scheme="https://appworks-tips.com/tags/Package/"/>
     
       <category term="How to" scheme="https://appworks-tips.com/tags/How-to/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Play with diacritics in a textfield</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/050_play_with_diacritics_in_a_textfield/feature_tag.png" />
-    <id>https://appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/</id>
-    <published>2020-05-22T12:00:00.000Z</published>
-    <updated>2021-04-23T07:02:11.573Z</updated>
-    
-    <summary type="html">
-    
-      A thing we&#39;ll all face in our lives...diacritic characters...What about it in AppWorks!?
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2020/050_play_with_diacritics_in_a_textfield/feature_tag.png" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Diacritics" scheme="https://appworks-tips.com/tags/Diacritics/"/>
     
   </entry>
   
