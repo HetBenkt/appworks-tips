@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://appworks-tips.com/2021/05/14/094a_2_year_anniversary/</loc>
+        
+        <lastmod>2021-05-12T07:10:20.307Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>https://appworks-tips.com/2021/05/07/094_other_ldap_browser_tool_jxplorer/</loc>
         
         <lastmod>2021-05-06T21:27:27.363Z</lastmod>
@@ -121,14 +128,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/10/30/070b_update_enterprise_world_digital/</loc>
+        <loc>https://appworks-tips.com/2020/11/06/071_lets_develop_an_eis_connector/</loc>
         
         <lastmod>2021-04-23T07:02:11.588Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/11/06/071_lets_develop_an_eis_connector/</loc>
+        <loc>https://appworks-tips.com/2020/10/30/070b_update_enterprise_world_digital/</loc>
         
         <lastmod>2021-04-23T07:02:11.588Z</lastmod>
         
@@ -149,13 +156,6 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/10/09/069_playing_with_lifecycle_state_conditions/</loc>
-        
-        <lastmod>2021-04-23T07:02:11.585Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://appworks-tips.com/2020/10/02/068_the_secret_path_of_adding_a_keywords_property/</loc>
         
         <lastmod>2021-04-23T07:02:11.585Z</lastmod>
@@ -163,14 +163,21 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/09/18/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/</loc>
+        <loc>https://appworks-tips.com/2020/10/09/069_playing_with_lifecycle_state_conditions/</loc>
+        
+        <lastmod>2021-04-23T07:02:11.585Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/09/25/067_the_very_easy_docker_installation_steps/</loc>
         
         <lastmod>2021-04-23T07:02:11.584Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/09/25/067_the_very_easy_docker_installation_steps/</loc>
+        <loc>https://appworks-tips.com/2020/09/18/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/</loc>
         
         <lastmod>2021-04-23T07:02:11.584Z</lastmod>
         
@@ -212,14 +219,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/07/31/059_play_with_masterdata_webservice_in_bpm_loop/</loc>
+        <loc>https://appworks-tips.com/2020/08/07/060_tips_on_making_a_soap_service_available_via_uddi_container/</loc>
         
         <lastmod>2021-04-23T07:02:11.580Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/08/07/060_tips_on_making_a_soap_service_available_via_uddi_container/</loc>
+        <loc>https://appworks-tips.com/2020/07/31/059_play_with_masterdata_webservice_in_bpm_loop/</loc>
         
         <lastmod>2021-04-23T07:02:11.580Z</lastmod>
         
@@ -247,13 +254,6 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/07/03/056_your_best_shot_on_monitoring_lifecycles_with_cim/</loc>
-        
-        <lastmod>2021-04-23T07:02:11.577Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://appworks-tips.com/2020/06/26/055_see_how_easy_a_css_theme_is_used/</loc>
         
         <lastmod>2021-04-23T07:02:11.577Z</lastmod>
@@ -261,14 +261,21 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/06/19/054_playing_with_the_mobile_building_blocks/</loc>
+        <loc>https://appworks-tips.com/2020/07/03/056_your_best_shot_on_monitoring_lifecycles_with_cim/</loc>
+        
+        <lastmod>2021-04-23T07:02:11.577Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/06/12/053_easy_steps_to_make_the_appworks_gateway_available/</loc>
         
         <lastmod>2021-04-23T07:02:11.576Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/06/12/053_easy_steps_to_make_the_appworks_gateway_available/</loc>
+        <loc>https://appworks-tips.com/2020/06/19/054_playing_with_the_mobile_building_blocks/</loc>
         
         <lastmod>2021-04-23T07:02:11.576Z</lastmod>
         
@@ -310,13 +317,6 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/05/01/048_exceed_number_of_follow_up_zeros/</loc>
-        
-        <lastmod>2021-04-23T07:02:11.571Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://appworks-tips.com/2020/04/24/047_a_dive_on_how_long_is_a_long_text/</loc>
         
         <lastmod>2021-04-23T07:02:11.571Z</lastmod>
@@ -324,14 +324,21 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/04/17/046b_update_enterprise_world_digital/</loc>
+        <loc>https://appworks-tips.com/2020/05/01/048_exceed_number_of_follow_up_zeros/</loc>
+        
+        <lastmod>2021-04-23T07:02:11.571Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/04/10/046a_installation_survival_guide_update_20_2/</loc>
         
         <lastmod>2021-04-23T07:02:11.570Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/04/10/046a_installation_survival_guide_update_20_2/</loc>
+        <loc>https://appworks-tips.com/2020/04/17/046b_update_enterprise_world_digital/</loc>
         
         <lastmod>2021-04-23T07:02:11.570Z</lastmod>
         
@@ -373,14 +380,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/02/28/041_generate_a_random_int_for_a_property_value/</loc>
+        <loc>https://appworks-tips.com/2020/02/21/040_your_guide_on_playing_with_progression_bars/</loc>
         
         <lastmod>2021-04-23T07:02:11.566Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/02/21/040_your_guide_on_playing_with_progression_bars/</loc>
+        <loc>https://appworks-tips.com/2020/02/28/041_generate_a_random_int_for_a_property_value/</loc>
         
         <lastmod>2021-04-23T07:02:11.566Z</lastmod>
         
@@ -499,14 +506,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2021/02/05/083a_installation_survival_guide_update_21_1/</loc>
+        <loc>https://appworks-tips.com/2021/01/29/083_consuming_the_identity_package/</loc>
         
         <lastmod>2021-04-23T07:01:08.275Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2021/01/29/083_consuming_the_identity_package/</loc>
+        <loc>https://appworks-tips.com/2021/02/05/083a_installation_survival_guide_update_21_1/</loc>
         
         <lastmod>2021-04-23T07:01:08.275Z</lastmod>
         
@@ -653,14 +660,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/about/index.html</loc>
+        <loc>https://appworks-tips.com/abbreviations/index.html</loc>
         
         <lastmod>2020-12-24T14:46:41.235Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/abbreviations/index.html</loc>
+        <loc>https://appworks-tips.com/about/index.html</loc>
         
         <lastmod>2020-12-24T14:46:41.235Z</lastmod>
         
@@ -709,13 +716,6 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/09/27/020_how_to_make_abstraction_generalization_and_subtyping_possible/</loc>
-        
-        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
-        
-    </url>
-    
-    <url>
         <loc>https://appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
@@ -724,6 +724,13 @@
     
     <url>
         <loc>https://appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
+        
+        <lastmod>2020-12-24T14:46:41.190Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/09/27/020_how_to_make_abstraction_generalization_and_subtyping_possible/</loc>
         
         <lastmod>2020-12-24T14:46:41.190Z</lastmod>
         

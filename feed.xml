@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2021-05-06T21:27:27.363Z</updated>
+  <updated>2021-05-12T07:10:20.307Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2-year anniversary!</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2021/05/14/094a_2_year_anniversary/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/094a_2_year_anniversary/feature_tag.png" />
+    <id>https://appworks-tips.com/2021/05/14/094a_2_year_anniversary/</id>
+    <published>2021-05-14T12:00:00.000Z</published>
+    <updated>2021-05-12T07:10:20.307Z</updated>
+    
+    <summary type="html">
+    
+      Yes, we&#39;ve made it!...2 years of grinding on AppWorks blog posts. Let&#39;s recap some results!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2021/094a_2_year_anniversary/feature_tag.png" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="Anniversary" scheme="https://appworks-tips.com/tags/Anniversary/"/>
+    
+      <category term="Recap" scheme="https://appworks-tips.com/tags/Recap/"/>
+    
+      <category term="Analytics" scheme="https://appworks-tips.com/tags/Analytics/"/>
+    
+  </entry>
   
   <entry>
     <title>Another LDAP browser tool for CARS (JXplorer)</title>
@@ -39,9 +65,9 @@
     
       <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
     
-      <category term="JXplorer" scheme="https://appworks-tips.com/tags/JXplorer/"/>
-    
       <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
+    
+      <category term="JXplorer" scheme="https://appworks-tips.com/tags/JXplorer/"/>
     
   </entry>
   
@@ -149,13 +175,13 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
-    
-      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
-    
       <category term="CMC" scheme="https://appworks-tips.com/tags/CMC/"/>
     
+      <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
+    
       <category term="Apache Directory Studio" scheme="https://appworks-tips.com/tags/Apache-Directory-Studio/"/>
+    
+      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
     
   </entry>
   
@@ -677,9 +703,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
-    
       <category term="ANT" scheme="https://appworks-tips.com/tags/ANT/"/>
+    
+      <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
     
   </entry>
   
@@ -703,9 +729,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CLI" scheme="https://appworks-tips.com/tags/CLI/"/>
-    
       <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="CLI" scheme="https://appworks-tips.com/tags/CLI/"/>
     
   </entry>
   
@@ -1330,32 +1356,6 @@
       <category term="How to" scheme="https://appworks-tips.com/tags/How-to/"/>
     
       <category term="Deploy" scheme="https://appworks-tips.com/tags/Deploy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to create an AppWorks package</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2020/05/29/051_how_to_create_an_appworks_package/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/051_how_to_create_an_appworks_package/feature_tag.png" />
-    <id>https://appworks-tips.com/2020/05/29/051_how_to_create_an_appworks_package/</id>
-    <published>2020-05-29T12:00:00.000Z</published>
-    <updated>2021-04-23T07:02:11.573Z</updated>
-    
-    <summary type="html">
-    
-      Always nice to know how to package a solution once you&#39;re ready with your final craftsmanship
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2020/051_how_to_create_an_appworks_package/feature_tag.png" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Package" scheme="https://appworks-tips.com/tags/Package/"/>
-    
-      <category term="How to" scheme="https://appworks-tips.com/tags/How-to/"/>
     
   </entry>
   
