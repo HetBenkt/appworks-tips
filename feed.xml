@@ -143,9 +143,9 @@
     
       <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
     
-      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
-    
       <category term="JXplorer" scheme="https://appworks-tips.com/tags/JXplorer/"/>
+    
+      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
     
   </entry>
   
@@ -253,13 +253,13 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CMC" scheme="https://appworks-tips.com/tags/CMC/"/>
-    
       <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
     
-      <category term="Apache Directory Studio" scheme="https://appworks-tips.com/tags/Apache-Directory-Studio/"/>
-    
       <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
+    
+      <category term="CMC" scheme="https://appworks-tips.com/tags/CMC/"/>
+    
+      <category term="Apache Directory Studio" scheme="https://appworks-tips.com/tags/Apache-Directory-Studio/"/>
     
   </entry>
   
@@ -1245,9 +1245,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Linked entity" scheme="https://appworks-tips.com/tags/Linked-entity/"/>
-    
       <category term="Database metadata" scheme="https://appworks-tips.com/tags/Database-metadata/"/>
+    
+      <category term="Linked entity" scheme="https://appworks-tips.com/tags/Linked-entity/"/>
     
   </entry>
   
