@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2021-06-06T09:16:09.671Z</updated>
+  <updated>2021-06-10T20:15:05.564Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -18,12 +18,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Load a homepage into a homepage</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2021/06/11/098_load_a_homepage_into_a_homepage/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/098_load_a_homepage_into_a_homepage/feature_tag.png" />
+    <id>https://appworks-tips.com/2021/06/11/098_load_a_homepage_into_a_homepage/</id>
+    <published>2021-06-11T12:00:00.000Z</published>
+    <updated>2021-06-10T20:15:05.564Z</updated>
+    
+    <summary type="html">
+    
+      ...and see if we can create an endless homepage loop!?
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2021/098_load_a_homepage_into_a_homepage/feature_tag.png" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Homepage" scheme="https://appworks-tips.com/tags/Homepage/"/>
+    
+  </entry>
+  
+  <entry>
     <title>The no. 1 tip on BPM message mapping</title>
     <link rel="alternate" type="text/html" href="https://appworks-tips.com/2021/06/04/097_the_number_one_tip_on_bpm_message_mapping/"/>
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/097_the_number_one_tip_on_bpm_message_mapping/feature_tag.png" />
     <id>https://appworks-tips.com/2021/06/04/097_the_number_one_tip_on_bpm_message_mapping/</id>
     <published>2021-06-04T12:00:00.000Z</published>
-    <updated>2021-06-06T09:16:09.671Z</updated>
+    <updated>2021-06-10T20:37:49.614Z</updated>
     
     <summary type="html">
     
@@ -47,7 +71,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/096_grab_your_details_on_brava_content_viewer/feature_tag.png" />
     <id>https://appworks-tips.com/2021/05/28/096_grab_your_details_on_brava_content_viewer/</id>
     <published>2021-05-28T12:00:00.000Z</published>
-    <updated>2021-06-06T09:17:04.164Z</updated>
+    <updated>2021-06-10T20:42:49.717Z</updated>
     
     <summary type="html">
     
@@ -75,7 +99,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/095_how_to_layout_metadata_with_content_side_by_side/feature_tag.png" />
     <id>https://appworks-tips.com/2021/05/21/095_how_to_layout_metadata_with_content_side_by_side/</id>
     <published>2021-05-21T12:00:00.000Z</published>
-    <updated>2021-06-06T09:18:07.447Z</updated>
+    <updated>2021-06-10T20:37:49.612Z</updated>
     
     <summary type="html">
     
@@ -101,7 +125,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/094a_2_year_anniversary/feature_tag.png" />
     <id>https://appworks-tips.com/2021/05/14/094a_2_year_anniversary/</id>
     <published>2021-05-14T12:00:00.000Z</published>
-    <updated>2021-06-06T09:18:07.446Z</updated>
+    <updated>2021-06-10T20:42:39.145Z</updated>
     
     <summary type="html">
     
@@ -127,7 +151,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/094_other_ldap_browser_tool_jxplorer/feature_tag.png" />
     <id>https://appworks-tips.com/2021/05/07/094_other_ldap_browser_tool_jxplorer/</id>
     <published>2021-05-07T12:00:00.000Z</published>
-    <updated>2021-06-06T09:07:52.514Z</updated>
+    <updated>2021-06-10T20:33:26.511Z</updated>
     
     <summary type="html">
     
@@ -143,9 +167,9 @@
     
       <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
     
-      <category term="JXplorer" scheme="https://appworks-tips.com/tags/JXplorer/"/>
-    
       <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
+    
+      <category term="JXplorer" scheme="https://appworks-tips.com/tags/JXplorer/"/>
     
   </entry>
   
@@ -155,7 +179,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/093a_installation_survival_guide_update_21_2/feature_tag.png" />
     <id>https://appworks-tips.com/2021/04/30/093a_installation_survival_guide_update_21_2/</id>
     <published>2021-04-30T12:00:00.000Z</published>
-    <updated>2021-06-06T09:07:52.512Z</updated>
+    <updated>2021-06-10T20:33:26.510Z</updated>
     
     <summary type="html">
     
@@ -199,9 +223,9 @@
     
       <category term="Webservice" scheme="https://appworks-tips.com/tags/Webservice/"/>
     
-      <category term="Content" scheme="https://appworks-tips.com/tags/Content/"/>
-    
       <category term="LinkDocument" scheme="https://appworks-tips.com/tags/LinkDocument/"/>
+    
+      <category term="Content" scheme="https://appworks-tips.com/tags/Content/"/>
     
   </entry>
   
@@ -253,13 +277,13 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
-    
-      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
-    
       <category term="CMC" scheme="https://appworks-tips.com/tags/CMC/"/>
     
+      <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
+    
       <category term="Apache Directory Studio" scheme="https://appworks-tips.com/tags/Apache-Directory-Studio/"/>
+    
+      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
     
   </entry>
   
@@ -595,9 +619,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Homepage" scheme="https://appworks-tips.com/tags/Homepage/"/>
-    
       <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
+    
+      <category term="Homepage" scheme="https://appworks-tips.com/tags/Homepage/"/>
     
       <category term="Result list" scheme="https://appworks-tips.com/tags/Result-list/"/>
     
@@ -1245,9 +1269,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Database metadata" scheme="https://appworks-tips.com/tags/Database-metadata/"/>
-    
       <category term="Linked entity" scheme="https://appworks-tips.com/tags/Linked-entity/"/>
+    
+      <category term="Database metadata" scheme="https://appworks-tips.com/tags/Database-metadata/"/>
     
   </entry>
   
@@ -1328,32 +1352,6 @@
       <category term="Lifecycle" scheme="https://appworks-tips.com/tags/Lifecycle/"/>
     
       <category term="Case Instance Monitor" scheme="https://appworks-tips.com/tags/Case-Instance-Monitor/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>See how easy a CSS theme is used</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2020/06/26/055_see_how_easy_a_css_theme_is_used/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/055_see_how_easy_a_css_theme_is_used/feature_tag.png" />
-    <id>https://appworks-tips.com/2020/06/26/055_see_how_easy_a_css_theme_is_used/</id>
-    <published>2020-06-26T12:00:00.000Z</published>
-    <updated>2021-04-23T07:02:11.577Z</updated>
-    
-    <summary type="html">
-    
-      We&#39;ll cover your own logo in the header and how your company color standard can be used.
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2020/055_see_how_easy_a_css_theme_is_used/feature_tag.png" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Theme" scheme="https://appworks-tips.com/tags/Theme/"/>
-    
-      <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
     
   </entry>
   
