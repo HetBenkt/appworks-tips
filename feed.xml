@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2021-06-24T19:22:37.510Z</updated>
+  <updated>2021-06-24T19:30:25.100Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -23,7 +23,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/100_how_to_use_the_northwind_database_example_data/feature_tag.png" />
     <id>https://appworks-tips.com/2021/06/25/100_how_to_use_the_northwind_database_example_data/</id>
     <published>2021-06-25T12:00:00.000Z</published>
-    <updated>2021-06-24T19:22:37.510Z</updated>
+    <updated>2021-06-24T19:30:25.100Z</updated>
     
     <summary type="html">
     
@@ -1319,9 +1319,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Linked entity" scheme="https://appworks-tips.com/tags/Linked-entity/"/>
-    
       <category term="Database metadata" scheme="https://appworks-tips.com/tags/Database-metadata/"/>
+    
+      <category term="Linked entity" scheme="https://appworks-tips.com/tags/Linked-entity/"/>
     
   </entry>
   

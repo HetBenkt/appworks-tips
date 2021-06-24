@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://appworks-tips.com/2021/06/25/100_how_to_use_the_northwind_database_example_data/</loc>
+        
+        <lastmod>2021-06-24T19:30:25.100Z</lastmod>
+        
+    </url>
+    
+    <url>
         <loc>https://appworks-tips.com/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/</loc>
         
         <lastmod>2021-06-24T19:25:12.814Z</lastmod>
@@ -401,14 +408,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/11/15/027_the_secret_of_successful_installing_tomcat/</loc>
+        <loc>https://appworks-tips.com/2019/11/22/028_the_otds_installation_survival_guide/</loc>
         
         <lastmod>2021-06-24T19:25:12.701Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/11/22/028_the_otds_installation_survival_guide/</loc>
+        <loc>https://appworks-tips.com/2019/11/15/027_the_secret_of_successful_installing_tomcat/</loc>
         
         <lastmod>2021-06-24T19:25:12.701Z</lastmod>
         
@@ -471,14 +478,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
+        <loc>https://appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
         
         <lastmod>2021-06-24T19:25:12.694Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
+        <loc>https://appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
         
         <lastmod>2021-06-24T19:25:12.694Z</lastmod>
         
@@ -499,14 +506,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/08/16/014_the_secret_of_successful_adding_your_first_users/</loc>
+        <loc>https://appworks-tips.com/2019/08/09/013_5_useful_steps_for_organization_management/</loc>
         
         <lastmod>2021-06-24T19:25:12.692Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/08/09/013_5_useful_steps_for_organization_management/</loc>
+        <loc>https://appworks-tips.com/2019/08/16/014_the_secret_of_successful_adding_your_first_users/</loc>
         
         <lastmod>2021-06-24T19:25:12.692Z</lastmod>
         
@@ -593,13 +600,6 @@
         <loc>https://appworks-tips.com/2019/05/17/001_a_quick_way_to_install_oracle_virtual_box/</loc>
         
         <lastmod>2021-06-24T19:25:12.672Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/06/25/100_how_to_use_the_northwind_database_example_data/</loc>
-        
-        <lastmod>2021-06-24T19:22:37.510Z</lastmod>
         
     </url>
     
