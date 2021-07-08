@@ -427,7 +427,7 @@ h1 {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
-    overflow-y: hidden
+    /*overflow-y: hidden*/
 }
 
 .site-nav-left {

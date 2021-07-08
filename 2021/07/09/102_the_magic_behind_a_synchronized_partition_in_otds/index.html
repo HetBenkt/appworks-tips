@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+<link rel="stylesheet" href="/css/products.css">
+
+	
+<link rel="stylesheet" href="/css/nav.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142664854-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-142664854-1');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>The magic behind a synchronized partition in OTDS | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="Let's connect an LDAP interface to OTDS (synchronized!)">
+
+	
+	<meta name="keywords" content="appworks, synchronized partition, otds">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="The magic behind a synchronized partition in OTDS | AppWorks Tips">
+	<meta property="og:description" content="Let's connect an LDAP interface to OTDS (synchronized!)">
+	<meta property="og:url" content="https://appworks-tips.com/2021/07/09/102_the_magic_behind_a_synchronized_partition_in_otds/">
+
+	
+	<meta property="article:published_time" content="2021-07-09T12:07:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2021/07/09/102_the_magic_behind_a_synchronized_partition_in_otds/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+<nav class="site-nav">
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                
+                
+                    <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+                
+                
+                
+                    <a href="/installation" title="INSTALLATION 21.2">INSTALLATION 21.2</a>
+                
+                
+                
+                    <a href="/ci_cd" title="CI/CD">CI/CD</a>
+                
+                
+                
+                    <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+                
+                
+                
+                    <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+                
+                
+                
+                    <a href="/about" title="ABOUT">ABOUT</a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="search-button">
+        <a class="subscribe-button" title="Search" href="#search" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+    </div>
+    
+
+    <div class="site-nav-right">
+        
+        <a class="subscribe-button" title="Search" href="#search" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+         
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback / Question" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2021-07-09T12:00:00.000Z" itemprop="datePublished">
+                    2021-07-9
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Management/">Management</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">The magic behind a synchronized partition in OTDS</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/feature_tag.png)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>This time an interesting one (as always!) about OTDS and synchronized partitions! Why? Well, because in almost every company sharing of user/group information can be done in a separate <strong>L</strong>ightweight <strong>D</strong>irectory <strong>A</strong>ccess <strong>P</strong>rotocol supported interface like for example ‘Active Directory’, but there are other software tools that implement LDAP. So, what we are interested in is how to consume this separated LDAP information from our platform? In other words…How to set up our own LDAP server, connect it to OTDS and make sure our users from our beloved AppWorks platform can be authenticated against it?</p>
+<p>Well…watch and learn as this will again be a hell of a ride…</p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>What do we need?…Well, an LDAP server?…Or better an interface that implements LDAP! Like ‘Active Directory’…wait!…Do I hear someone says “CARS”?? Very good!! Do we want to use it for our purpose? Well, I would say ‘no’ as it contains too much AppWorks specific data to play around with. We really want to keep things simple and clean! FYI, the back-end of CARS is just plain OpenLDAP! Aha…Now we’re getting somewhere! So, a Google search brings us to <a href="https://www.openldap.org/" target="_blank" rel="noopener">https://www.openldap.org/</a>. After some further searching it also brings us to a <a href="https://linuxhostsupport.com/blog/how-to-install-ldap-on-centos-7/" target="_blank" rel="noopener">nice installation manual</a> on how to install OpenLDAP on our CentOS environment.</p>
+<p>Spin up your VM and let’s follow that manual with our own interpretation…</p>
+<p>First command: <code>sudo yum install -y openldap openldap-clients openldap-servers</code></p>
+<p>After this installation we also do a start: <code>systemctl start slapd.service</code></p>
+<p>And enable the service on server startup: <code>systemctl enable slapd.service</code></p>
+<blockquote>
+<p>Keep in mind we still have our CARS up and running also!! Remember this call:</p>
+<p><code>systemctl status|stop|start cars-slapddefaultInst.service</code></p>
+<p>Our CARS / OpenLDAP will run on port 6366 and that new OpenLDAP will run on port 389 (or 636 secured over SSL)</p>
+</blockquote>
+<p>If you use a tool like <a href="http://jxplorer.org/" target="_blank" rel="noopener">JXplorer</a> you should be able to connect anonymously, but nothing is there to browse (yet)…</p>
+<p><img alt="openldap_001" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_001.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_001.png"></p>
+<hr>
+<h4 id="Add-an-OpenLDAP-admin-account"><a href="#Add-an-OpenLDAP-admin-account" class="headerlink" title="Add an OpenLDAP admin account"></a>Add an OpenLDAP admin account</h4><p>Give the command: <code>slappasswd</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[sysadmin@WIN-5SKKMBURVO7 ~]$ slappasswd</span><br><span class="line">New password:</span><br><span class="line">Re-enter new password:</span><br><span class="line">&#123;SSHA&#125;KazYxO8GrscktaaHkU5ZCLF9VPOSDX3F</span><br><span class="line">[sysadmin@WIN-5SKKMBURVO7 ~]$</span><br></pre></td></tr></table></figure>
+
+<p>You need to provide a password (I just use ‘admin’), and the output will be an SSH encrypted string of the password…Save it for later usage!</p>
+<p>Now, we will create a new file with the name ‘db.ldif’ to get you a heads start on the OpenLDAP configuration!</p>
+<p>I give this command: <code>vi db.ldif</code> and pass in this content (Note that SSH encrypted string, and the ‘dc’ value where you can use your own name!):</p>
+<figure class="highlight ldif"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">dn</span>: olcDatabase=&#123;2&#125;hdb,cn=config</span><br><span class="line"><span class="attribute">changetype</span>: modify</span><br><span class="line"><span class="attribute">replace</span>: olcSuffix</span><br><span class="line"><span class="attribute">olcSuffix</span>: dc=mydomain,dc=com</span><br><span class="line"></span><br><span class="line"><span class="attribute">dn</span>: olcDatabase=&#123;2&#125;hdb,cn=config</span><br><span class="line"><span class="attribute">changetype</span>: modify</span><br><span class="line"><span class="attribute">replace</span>: olcRootDN</span><br><span class="line"><span class="attribute">olcRootDN</span>: cn=ldapadm,dc=mydomain,dc=com</span><br><span class="line"></span><br><span class="line"><span class="attribute">dn</span>: olcDatabase=&#123;2&#125;hdb,cn=config</span><br><span class="line"><span class="attribute">changetype</span>: modify</span><br><span class="line"><span class="attribute">replace</span>: olcRootPW</span><br><span class="line"><span class="attribute">olcRootPW</span>: &#123;SSHA&#125;KazYxO8GrscktaaHkU5ZCLF9VPOSDX3F</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Note that LDIF does not like trailing spaced in the end of a line!!</p>
+</blockquote>
+<p>After a save in the user home directory on the server we do a modification on our LDAP instance:</p>
+<p><code>sudo ldapmodify -Y EXTERNAL -H ldapi:/// -f db.ldif</code></p>
+<blockquote>
+<p>Use <code>sudo ldapmodify -h</code> to get more info on all the other parameters for this call.</p>
+</blockquote>
+<p>This should be the response output:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SASL/EXTERNAL authentication started</span><br><span class="line">SASL username: gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth</span><br><span class="line">SASL SSF: 0</span><br><span class="line">modifying entry <span class="string">"olcDatabase=&#123;2&#125;hdb,cn=config"</span></span><br><span class="line">modifying entry <span class="string">"olcDatabase=&#123;2&#125;hdb,cn=config"</span></span><br><span class="line">modifying entry <span class="string">"olcDatabase=&#123;2&#125;hdb,cn=config"</span></span><br></pre></td></tr></table></figure>
+
+<p>So, now we have a ‘ldapadm’ account in place…Let’s do a second try on the connection like this (that hidden password is off course ‘admin’):</p>
+<p><img alt="openldap_002" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_002.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_002.png"></p>
+<p>Connection can be made, but still no entries to browse through (yet)!</p>
+<hr>
+<h4 id="Add-new-entries-into-our-LDAP-server"><a href="#Add-new-entries-into-our-LDAP-server" class="headerlink" title="Add new entries into our LDAP server"></a>Add new entries into our LDAP server</h4><p>Ready?…Time for our first entries in LDAP.</p>
+<p><code>vi base.ldif</code></p>
+<p>Put this content into it (with your own ‘dc’ value!)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">dn: dc&#x3D;mydomain,dc&#x3D;com</span><br><span class="line">objectClass: dcObject</span><br><span class="line">objectClass: organization</span><br><span class="line">o: mydomain.com</span><br><span class="line">dc: mydomain</span><br><span class="line"></span><br><span class="line">dn: ou&#x3D;users,dc&#x3D;mydomain,dc&#x3D;com</span><br><span class="line">objectClass: organizationalUnit</span><br><span class="line">objectClass: top</span><br><span class="line">ou: users</span><br><span class="line"></span><br><span class="line">dn: ou&#x3D;groups,dc&#x3D;mydomain,dc&#x3D;com</span><br><span class="line">objectClass: organizationalUnit</span><br><span class="line">objectClass: top</span><br><span class="line">ou: groups</span><br></pre></td></tr></table></figure>
+
+<p>Now run the command to add new entries into our LDAP server:</p>
+<p><code>ldapadd -x -W -D &quot;cn=ldapadm,dc=mydomain,dc=com&quot; -f base.ldif</code></p>
+<p>The end-result from the JXplorer perspective will look like this:</p>
+<p><img alt="openldap_003" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_003.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_003.png"></p>
+<p>A nice first setup to start with…All we miss are some users!?</p>
+<p>Before we continue we need add some standard LDAP schema’s to consume from:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo ldapadd -Y EXTERNAL -H ldapi:&#x2F;&#x2F;&#x2F; -f &#x2F;etc&#x2F;openldap&#x2F;schema&#x2F;cosine.ldif</span><br><span class="line">sudo ldapadd -Y EXTERNAL -H ldapi:&#x2F;&#x2F;&#x2F; -f &#x2F;etc&#x2F;openldap&#x2F;schema&#x2F;nis.ldif</span><br><span class="line">sudo ldapadd -Y EXTERNAL -H ldapi:&#x2F;&#x2F;&#x2F; -f &#x2F;etc&#x2F;openldap&#x2F;schema&#x2F;inetorgperson.ldif</span><br></pre></td></tr></table></figure>
+
+<p>With these schemas you get a bunch of class types and attributes to be used on the new entries we create.</p>
+<p>Now, let’s create a new LDIF file for a brand-new user:</p>
+<p><code>vi adam.ldif</code></p>
+<p>With this content:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">dn: uid&#x3D;adam,ou&#x3D;users,dc&#x3D;mydomain,dc&#x3D;com</span><br><span class="line">objectClass: top</span><br><span class="line">objectClass: account</span><br><span class="line">objectClass: posixAccount</span><br><span class="line">objectClass: shadowAccount</span><br><span class="line">cn: adam</span><br><span class="line">uid: adam</span><br><span class="line">uidNumber: 16859</span><br><span class="line">gidNumber: 100</span><br><span class="line">homeDirectory: &#x2F;home&#x2F;adam</span><br><span class="line">loginShell: &#x2F;bin&#x2F;bash</span><br><span class="line">gecos: adam</span><br><span class="line">userPassword: &#123;crypt&#125;x</span><br><span class="line">shadowLastChange: 0</span><br><span class="line">shadowMax: 0</span><br><span class="line">shadowWarning: 0</span><br></pre></td></tr></table></figure>
+
+<p>Add it to LDAP with this command: <code>ldapadd -x -W -D &quot;cn=ldapadm,dc=mydomain,dc=com&quot; -f adam.ldif</code></p>
+<p>In JXplorer we will start to see our new user account:</p>
+<p><img alt="openldap_004" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_004.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_004.png"></p>
+<p>Time for a password for our ‘adam’ account:</p>
+<p><code>ldappasswd -s welcome123 -W -D &quot;cn=ldapadm,dc=mydomain,dc=com&quot; -x &quot;uid=adam,ou=users,dc=mydomain,dc=com&quot;</code></p>
+<p>Now we have a user account…It’s time to also add a new group!</p>
+<p><code>vi appworks.ldif</code></p>
+<p>With this content:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dn: cn&#x3D;appworks,ou&#x3D;groups,dc&#x3D;mydomain,dc&#x3D;com</span><br><span class="line">objectClass: top</span><br><span class="line">objectClass: posixGroup</span><br><span class="line">gidNumber: 678</span><br></pre></td></tr></table></figure>
+
+<p>Add the entry to LDAP: <code>ldapadd -x -W -D &quot;cn=ldapadm,dc=mydomain,dc=com&quot; -f appworks.ldif</code></p>
+<p>Finally, we also add our user to this new group:</p>
+<p>Create a new file: <code>vi adamtogroup.ldif</code></p>
+<p>Add content:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dn: cn&#x3D;appworks,ou&#x3D;groups,dc&#x3D;mydomain,dc&#x3D;com</span><br><span class="line">changetype: modify</span><br><span class="line">add: memberuid</span><br><span class="line">memberuid: adam</span><br></pre></td></tr></table></figure>
+
+<p>Do a ldapmodify to execute: <code>ldapmodify -x -W -D &quot;cn=ldapadm,dc=mydomain,dc=com&quot; -f adamtogroup.ldif</code></p>
+<p>A double check will show you something like this:</p>
+<p><img alt="openldap_005" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_005.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_005.png"></p>
+<p>That’s our first DONE! where we also learned some basics on the setup of an LDAP server…great!</p>
+<p>Next…</p>
+<hr>
+<h4 id="Create-a-synchronized-partition-in-OTDS"><a href="#Create-a-synchronized-partition-in-OTDS" class="headerlink" title="Create a synchronized partition in OTDS"></a>Create a synchronized partition in OTDS</h4><p>Hmmm…did I tell you upfront we need to have an OTDS instance up and running on our VM? &#128540; Check the <a href="/tags/OTDS/">OTDS</a> tag</p>
+<p>Well, once you have it up and running, open the OTDS admin portal via: <a href="http://192.168.56.107:8181/otds-admin/" target="_blank" rel="noopener">http://192.168.56.107:8181/otds-admin/</a> and go to the ‘Partitions’ category on the left side…And…Just create a new one! Make sure it’s of type ‘synchronized.</p>
+<p><img alt="openldap_006" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_006.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_006.png"></p>
+<p>A new wizard is starting up that you need to follow with input on those fields…</p>
+<p><img alt="openldap_007" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_007.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_007.png"></p>
+<p>Use the correct host/port and test the connection…When OK, click ‘Next &gt;’</p>
+<p><img alt="openldap_008" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_008.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_008.png"></p>
+<p>Make sure you use the same authentication parameters as we did in JXplorer, test the authentication…When OK, click ‘Next &gt;’</p>
+<p><img alt="openldap_009" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_009.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_009.png"></p>
+<p>Give a nice name and verify it…Click ‘Next &gt;’ when ready…</p>
+<p><img alt="openldap_010" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_010.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_010.png"></p>
+<p>Just verify those server settings and click ‘Next &gt;’</p>
+<p><img alt="openldap_011" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_011.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_011.png"></p>
+<p>Make sure to apply the correct filters to grab the correct group entries from LDAP. Use the ‘Test Filters and Locations’ to get a result like this example:</p>
+<p><img alt="openldap_012" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_012.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_012.png"></p>
+<p>How do I know those filters? Well, check JXplorer on that group entry!</p>
+<p><img alt="openldap_013" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_013.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_013.png"></p>
+<p>When ready…Click ‘Next &gt;’</p>
+<p><img alt="openldap_014" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_014.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_014.png"></p>
+<p>We can do that same trick for our users…Test it and hit ‘Next &gt;’ when ready.</p>
+<p>Leave the ‘User mapping’ of the attributes as is, and we just click ‘Next &gt;’</p>
+<p>The same for those ‘Group mapping’ attributes…click ‘Next &gt;’</p>
+<p><img alt="openldap_015" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_015.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_015.png"></p>
+<p>I just leave the monitoring as is and click ‘Next &gt;’</p>
+<p><img alt="openldap_016" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_016.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_016.png"></p>
+<p>Also, the schedule settings I leave as is…hit ‘Next &gt;’</p>
+<p><img alt="openldap_017" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_017.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_017.png"></p>
+<p>I just click ‘Test Search’ and hit ‘Next &gt;’</p>
+<p><img alt="openldap_018" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_018.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_018.png"></p>
+<p>Again…Just ‘Test Attributes’ and hit ‘Next &gt;’ on this last step.</p>
+<p>Finally, we hit that ‘Save’ button for our synchronized partition.</p>
+<p>The end-result?</p>
+<p><img alt="openldap_019" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_019.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_019.png"></p>
+<p>Exactly what we’ve expected! &#128074;</p>
+<p>With a view on our member…</p>
+<p><img alt="openldap_020" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_020.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_020.png"></p>
+<hr>
+<h4 id="Verify-our-‘adam-OpenLDAP’-account"><a href="#Verify-our-‘adam-OpenLDAP’-account" class="headerlink" title="Verify our ‘adam@OpenLDAP’ account"></a>Verify our ‘adam@OpenLDAP’ account</h4><p>Let’s see (just as double check) if we can make our brand-new synched account an ‘Administrator’ in OTDS and that we are able to login with it!</p>
+<p>Go to ‘User &amp; Groups’ in OTDS to edit the membership of our new account:</p>
+<p><img alt="openldap_021" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_021.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_021.png"></p>
+<p>Hit the ‘Add To Group’ button in the top:</p>
+<p><img alt="openldap_022" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_022.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_022.png"></p>
+<p>Select the ‘otdsadmins@otds.admin’ group and add this group as member to the account. Close the panel, and you should see something like this:</p>
+<p><img alt="openldap_023" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_023.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_023.png"></p>
+<p>Great…Logout from OTDS and login again!</p>
+<p><img alt="openldap_024" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_024.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_024.png"></p>
+<p>Password? Well, in my case ‘welcome123’…As you passed as value during this command <code>ldappasswd...</code> (check back in the top of this post!)</p>
+<p>Ohhhh Yeah…That’s a green light for me! &#128678; </p>
+<p>Next…(after reverting the last group assignment)</p>
+<hr>
+<h4 id="Make-the-Authentication-from-AppWorks-happen"><a href="#Make-the-Authentication-from-AppWorks-happen" class="headerlink" title="Make the Authentication from AppWorks happen"></a>Make the Authentication from AppWorks happen</h4><p>For this to happen we just follow the steps from <a href="/2019/12/13/030_make_otds_authentication_work_for_you/">this</a> post</p>
+<p>In short:</p>
+<ul>
+<li>Use our synchronized partition (Not a non-synchronized partition like in the suggested post!)</li>
+<li>Connect OTDS to our own organization instead of ‘system’</li>
+<li>Make ‘sysadmin’ part of our organization and add ‘OTDS Push Service’ role (needs to be done from ‘system’ in the ‘Organization management’ artifact!)</li>
+<li>Create a new resource in OTDS:<ul>
+<li>Name: AppWorksPlatform</li>
+<li>Connector type: REST (Generic)</li>
+<li>OTDS Push service URL: <a href="http://192.168.56.107:8080/home/appworks_tips/app/otdspush" target="_blank" rel="noopener">http://192.168.56.107:8080/home/appworks_tips/app/otdspush</a></li>
+<li>Username: sysadmin (with ‘admin’ password in my case)</li>
+<li>Save to resource ID in the end (with <u>NO</u> “Verify Activation”!!)</li>
+</ul>
+</li>
+<li>Create a new OTDS Resource in AppWorks (from the ‘Security Administration’ artifact)<ul>
+<li>Use an organization configuration</li>
+<li>OTDS server URL: <a href="http://192.168.56.107:8181" target="_blank" rel="noopener">http://192.168.56.107:8181</a></li>
+<li>Provide the resource ID</li>
+<li>Save and activate the resource</li>
+</ul>
+</li>
+<li>Create a new Authenticator in AppWorks (also from the ‘Security Administration’ artifact)<ul>
+<li>ID: OTDS</li>
+<li>Type: OTDS</li>
+<li>URL and resource ID will be filled in already.</li>
+</ul>
+</li>
+<li>Now verify the activation status from the OTDS resource. You should have a green light.</li>
+<li>Add <a href="http://192.168.56.107:8080" target="_blank" rel="noopener">http://192.168.56.107:8080</a> as trusted site in OTDS</li>
+<li>Disable http.negotiate as ‘Auth Handler’</li>
+<li>Add the ‘Synchronized partitions’ to the new ‘Access Roles’ in OTDS<ul>
+<li>Don’t forget to save to make that first consolidate action happen to the AppWorks platform!</li>
+</ul>
+</li>
+</ul>
+<p>The end-result in AppWorks (with 2 basic roles applied manually!):</p>
+<p><img alt="openldap_025" class="post-img b-lazy" href="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_025.png" data-src="/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/openldap_025.png"></p>
+<p>Finally, we will do a logout and login with our new consolidated user called ‘adam@OpenLDAP’…</p>
+<p>Don’t for to login through OTDS with that ‘authID’ parameter in the URL: <a href="http://192.168.56.107:8080/home/appworks_tips/?authID=OTDS" target="_blank" rel="noopener">http://192.168.56.107:8080/home/appworks_tips/?authID=OTDS</a></p>
+<p>Ohhh mama…!! Green lights everyone…How nice and what a thrill when a plan falls into place. &#128525;</p>
+<hr>
+<p>“DONE” people…We made it till the end and what an experience again where we learned more about setting up our own LDAP server with a user that is connected to OTDS, pushed through ReST to our AppWorks platform and authenticated back against our OTDS identity provider. Great stuff to play around with, and now you also know how it’s done…Have a great week-end, and I see you in the next one, next week.</p>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="The trick to bring roles alive in the identity package" href="/2021/07/02/101_the_trick_to_bring_roles_alive_in_the_identity_package/">
+            The trick to bring roles alive in the identity package →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Add-an-OpenLDAP-admin-account"><span class="toc-text">Add an OpenLDAP admin account</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Add-new-entries-into-our-LDAP-server"><span class="toc-text">Add new entries into our LDAP server</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-synchronized-partition-in-OTDS"><span class="toc-text">Create a synchronized partition in OTDS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Verify-our-‘adam-OpenLDAP’-account"><span class="toc-text">Verify our ‘adam@OpenLDAP’ account</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Make-the-Authentication-from-AppWorks-happen"><span class="toc-text">Make the Authentication from AppWorks happen</span></a></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2021/07/09/102_the_magic_behind_a_synchronized_partition_in_otds/">The magic behind a synchronized partition in OTDS</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2021/07/02/101_the_trick_to_bring_roles_alive_in_the_identity_package/">The trick to bring roles alive in the identity package</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2021/06/25/100_how_to_use_the_northwind_database_example_data/">How to use the 'Northwind' database example data</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2021/06/18/099_the_tips_to_get_rid_of_the_identity_package/">Tips to get rid of the "Identity Package" homepage in runtime</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2021/06/11/098_load_a_homepage_into_a_homepage/">Load a homepage into a homepage</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2021/06/04/097_the_number_one_tip_on_bpm_message_mapping/">The no. 1 tip on BPM message mapping</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2021/05/28/096_grab_your_details_on_brava_content_viewer/">Grab your details on the Brava! content viewer</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2021/05/21/095_how_to_layout_metadata_with_content_side_by_side/">How to layout metadata with content side by side</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tips/">Tips</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 15.25px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 15.25px;">Anniversary</a> <a href="/tags/Apache-Directory-Studio/" style="font-size: 14px;">Apache Directory Studio</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/BPM/" style="font-size: 20.25px;">BPM</a> <a href="/tags/Brava/" style="font-size: 14px;">Brava!</a> <a href="/tags/Building-blocks/" style="font-size: 16.5px;">Building blocks</a> <a href="/tags/CAF/" style="font-size: 14px;">CAF</a> <a href="/tags/CARS/" style="font-size: 15.25px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 16.5px;">CD/CI</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMC/" style="font-size: 14px;">CMC</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/Case-Instance-Monitor/" style="font-size: 14px;">Case Instance Monitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Condition/" style="font-size: 14px;">Condition</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Content/" style="font-size: 17.75px;">Content</a> <a href="/tags/Custom-webservice/" style="font-size: 14px;">Custom webservice</a> <a href="/tags/Customization/" style="font-size: 15.25px;">Customization</a> <a href="/tags/Database/" style="font-size: 14px;">Database</a> <a href="/tags/Database-metadata/" style="font-size: 15.25px;">Database metadata</a> <a href="/tags/Debugging/" style="font-size: 14px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 16.5px;">Digital</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/Document-store/" style="font-size: 14px;">Document store</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/E-Mail/" style="font-size: 14px;">E-Mail</a> <a href="/tags/EIS-connector/" style="font-size: 14px;">EIS connector</a> <a href="/tags/EP2/" style="font-size: 14px;">EP2</a> <a href="/tags/EP3/" style="font-size: 14px;">EP3</a> <a href="/tags/EP4/" style="font-size: 14px;">EP4</a> <a href="/tags/EP7/" style="font-size: 14px;">EP7</a> <a href="/tags/Email/" style="font-size: 14px;">Email</a> <a href="/tags/Enterprise-world/" style="font-size: 16.5px;">Enterprise world</a> <a href="/tags/Entity/" style="font-size: 19px;">Entity</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Explorer/" style="font-size: 15.25px;">Explorer</a> <a href="/tags/For-loop/" style="font-size: 14px;">For-loop</a> <a href="/tags/Form/" style="font-size: 19px;">Form</a> <a href="/tags/Gateway/" style="font-size: 15.25px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/Homepage/" style="font-size: 15.25px;">Homepage</a> <a href="/tags/How-to/" style="font-size: 16.5px;">How to</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14px;">Identity</a> <a href="/tags/Identity-Package/" style="font-size: 14px;">Identity Package</a> <a href="/tags/Identity-package/" style="font-size: 15.25px;">Identity package</a> <a href="/tags/Information-Hub/" style="font-size: 14px;">Information Hub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.75px;">Installation</a> <a href="/tags/Interceptor/" style="font-size: 14px;">Interceptor</a> <a href="/tags/JMeter/" style="font-size: 14px;">JMeter</a> <a href="/tags/JSON/" style="font-size: 14px;">JSON</a> <a href="/tags/JXplorer/" style="font-size: 14px;">JXplorer</a> <a href="/tags/Java/" style="font-size: 15.25px;">Java</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/LDAP/" style="font-size: 15.25px;">LDAP</a> <a href="/tags/Language-pack/" style="font-size: 14px;">Language pack</a> <a href="/tags/License/" style="font-size: 15.25px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 16.5px;">Lifecycle</a> <a href="/tags/LinkDocument/" style="font-size: 14px;">LinkDocument</a> <a href="/tags/Linked-entity/" style="font-size: 14px;">Linked entity</a> <a href="/tags/Long-text-property/" style="font-size: 14px;">Long text property</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 15.25px;">Management</a> <a href="/tags/Metadata/" style="font-size: 14px;">Metadata</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Modeling/" style="font-size: 15.25px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 15.25px;">Monitoring</a> <a href="/tags/OTDS/" style="font-size: 17.75px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 16.5px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Organization/" style="font-size: 15.25px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/Package/" style="font-size: 16.5px;">Package</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/Personal/" style="font-size: 14px;">Personal</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/Progression-bar/" style="font-size: 14px;">Progression bar</a> <a href="/tags/Project/" style="font-size: 14px;">Project</a> <a href="/tags/Properties/" style="font-size: 15.25px;">Properties</a> <a href="/tags/Property/" style="font-size: 15.25px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/ReST/" style="font-size: 15.25px;">ReST</a> <a href="/tags/Recap/" style="font-size: 15.25px;">Recap</a> <a href="/tags/Regular-expression/" style="font-size: 14px;">Regular expression</a> <a href="/tags/Relations/" style="font-size: 14px;">Relations</a> <a href="/tags/Release/" style="font-size: 15.25px;">Release</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/Result-list/" style="font-size: 14px;">Result list</a> <a href="/tags/Role/" style="font-size: 14px;">Role</a> <a href="/tags/Roles/" style="font-size: 15.25px;">Roles</a> <a href="/tags/SOAP/" style="font-size: 14px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 15.25px;">SVN</a> <a href="/tags/Selenium/" style="font-size: 14px;">Selenium</a> <a href="/tags/Service-container/" style="font-size: 14px;">Service container</a> <a href="/tags/Setup/" style="font-size: 17.75px;">Setup</a> <a href="/tags/Short-lived/" style="font-size: 14px;">Short lived</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 17.75px;">Software</a> <a href="/tags/Source-control/" style="font-size: 14px;">Source control</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/Subtyping/" style="font-size: 14px;">Subtyping</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/Synchronized-partition/" style="font-size: 14px;">Synchronized partition</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 14px;">Task</a> <a href="/tags/Task-layout/" style="font-size: 14px;">Task layout</a> <a href="/tags/Tasks/" style="font-size: 15.25px;">Tasks</a> <a href="/tags/Team/" style="font-size: 14px;">Team</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Testing/" style="font-size: 16.5px;">Testing</a> <a href="/tags/Theme/" style="font-size: 14px;">Theme</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/Tool/" style="font-size: 14px;">Tool</a> <a href="/tags/Tools/" style="font-size: 15.25px;">Tools</a> <a href="/tags/UDDI/" style="font-size: 15.25px;">UDDI</a> <a href="/tags/Update/" style="font-size: 16.5px;">Update</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/Value-assistance/" style="font-size: 14px;">Value assistance</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/Viewer/" style="font-size: 14px;">Viewer</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WS-AppServer/" style="font-size: 14px;">WS-AppServer</a> <a href="/tags/Web-Library-Definition/" style="font-size: 14px;">Web Library Definition</a> <a href="/tags/Webservice/" style="font-size: 17.75px;">Webservice</a> <a href="/tags/While-loop/" style="font-size: 14px;">While loop</a> <a href="/tags/Worklist/" style="font-size: 14px;">Worklist</a> <a href="/tags/Workspace/" style="font-size: 17.75px;">Workspace</a> <a href="/tags/XForm/" style="font-size: 15.25px;">XForm</a> <a href="/tags/XML/" style="font-size: 14px;">XML</a> <a href="/tags/database/" style="font-size: 14px;">database</a> <a href="/tags/northwind/" style="font-size: 14px;">northwind</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="search" class="search-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="Search ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback or any question</h1>
+        <h2 class="site-description">Send back any feedback or question so we can inspect and adapt our features or help you on your own journey.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback or any question"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Send"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2021
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">The magic behind a synchronized partition in OTDS</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+<script src="/js/mix/post-lazy-local.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+<script>searchFunc("/")</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>

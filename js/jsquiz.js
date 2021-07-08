@@ -160,10 +160,30 @@ $("#mail").keyup(function(){
 });
 
 setTimeout( function(){
-    if(window.location.pathname === '/') {
-        window.location.href = "/#quizask";
+    var myCookie = getCookie("appworks_tips");
+
+    if (myCookie == null) {
+        setCookie('appworks_tips', 'quiz_ask', 30);
+        if(window.location.pathname === '/') {
+            window.location.href = "/#quizask";
+        }
+    }
+    else {
+        // do cookie exists stuff
     }
 }  , 3000 );
+
+function getCookie(name) {
+    var match = document.cookie.match(RegExp('(?:^|;\\s*)' + name + '=([^;]*)'));
+    return match ? match[1] : null;
+}
+
+function setCookie(cName, cValue, expDays) {
+    let date = new Date();
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+}
 
 function handleNo() {
     window.location.href = "/#";

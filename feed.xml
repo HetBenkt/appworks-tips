@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2021-07-02T08:03:30.398Z</updated>
+  <updated>2021-07-08T11:33:53.535Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The magic behind a synchronized partition in OTDS</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2021/07/09/102_the_magic_behind_a_synchronized_partition_in_otds/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/feature_tag.png" />
+    <id>https://appworks-tips.com/2021/07/09/102_the_magic_behind_a_synchronized_partition_in_otds/</id>
+    <published>2021-07-09T12:00:00.000Z</published>
+    <updated>2021-07-08T11:33:53.535Z</updated>
+    
+    <summary type="html">
+    
+      Let&#39;s connect an LDAP interface to OTDS (synchronized!)
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2021/102_the_magic_behind_a_synchronized_partition_in_otds/feature_tag.png" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OTDS" scheme="https://appworks-tips.com/tags/OTDS/"/>
+    
+      <category term="Synchronized partition" scheme="https://appworks-tips.com/tags/Synchronized-partition/"/>
+    
+  </entry>
   
   <entry>
     <title>The trick to bring roles alive in the identity package</title>
@@ -735,7 +761,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/078_developing_an_interceptor_for_the_uddi_connector/feature_tag.png" />
     <id>https://appworks-tips.com/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/</id>
     <published>2020-12-25T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.213Z</updated>
+    <updated>2021-07-08T11:35:16.666Z</updated>
     
     <summary type="html">
     
@@ -761,7 +787,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/077_a_dive_on_contract_based_development/feature_tag.png" />
     <id>https://appworks-tips.com/2020/12/18/077_a_dive_on_contract_based_development/</id>
     <published>2020-12-18T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.212Z</updated>
+    <updated>2021-07-08T11:35:16.665Z</updated>
     
     <summary type="html">
     
@@ -789,7 +815,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/076_let_us_call_some_rest_from_an_xform/feature_tag.png" />
     <id>https://appworks-tips.com/2020/12/11/076_let_us_call_some_rest_from_an_xform/</id>
     <published>2020-12-11T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.211Z</updated>
+    <updated>2021-07-08T11:35:16.664Z</updated>
     
     <summary type="html">
     
@@ -815,7 +841,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/075_change_the_sysadmin_password_with_these_steps/feature_tag.png" />
     <id>https://appworks-tips.com/2020/12/04/075_change_the_sysadmin_password_with_these_steps/</id>
     <published>2020-12-04T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.210Z</updated>
+    <updated>2021-07-08T11:35:16.663Z</updated>
     
     <summary type="html">
     
@@ -841,7 +867,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/074_automate_your_deployment_with_jenkins/feature_tag.png" />
     <id>https://appworks-tips.com/2020/11/27/074_automate_your_deployment_with_jenkins/</id>
     <published>2020-11-27T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.210Z</updated>
+    <updated>2021-07-08T11:35:16.662Z</updated>
     
     <summary type="html">
     
@@ -867,7 +893,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/073_deploy_your_solution_with_ant_tasks/feature_tag.png" />
     <id>https://appworks-tips.com/2020/11/20/073_deploy_your_solution_with_ant_tasks/</id>
     <published>2020-11-20T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.208Z</updated>
+    <updated>2021-07-08T11:35:16.661Z</updated>
     
     <summary type="html">
     
@@ -881,9 +907,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="ANT" scheme="https://appworks-tips.com/tags/ANT/"/>
-    
       <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
+    
+      <category term="ANT" scheme="https://appworks-tips.com/tags/ANT/"/>
     
   </entry>
   
@@ -893,7 +919,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/072_build_your_solution_with_the_cli/feature_tag.png" />
     <id>https://appworks-tips.com/2020/11/13/072_build_your_solution_with_the_cli/</id>
     <published>2020-11-13T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.208Z</updated>
+    <updated>2021-07-08T11:35:16.661Z</updated>
     
     <summary type="html">
     
@@ -907,9 +933,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
-    
       <category term="CLI" scheme="https://appworks-tips.com/tags/CLI/"/>
+    
+      <category term="CD/CI" scheme="https://appworks-tips.com/tags/CD-CI/"/>
     
   </entry>
   
@@ -919,7 +945,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/071_lets_develop_an_eis_connector/feature_tag.png" />
     <id>https://appworks-tips.com/2020/11/06/071_lets_develop_an_eis_connector/</id>
     <published>2020-11-06T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.206Z</updated>
+    <updated>2021-07-08T11:35:16.659Z</updated>
     
     <summary type="html">
     
@@ -945,7 +971,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/070b_update_enterprise_world_digital/feature_tag.png" />
     <id>https://appworks-tips.com/2020/10/30/070b_update_enterprise_world_digital/</id>
     <published>2020-10-30T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.205Z</updated>
+    <updated>2021-07-08T11:35:16.658Z</updated>
     
     <summary type="html">
     
@@ -973,7 +999,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/070a_installation_survival_guide_update_20_4/feature_tag.png" />
     <id>https://appworks-tips.com/2020/10/23/070a_installation_survival_guide_update_20_4/</id>
     <published>2020-10-23T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.204Z</updated>
+    <updated>2021-07-08T11:35:16.657Z</updated>
     
     <summary type="html">
     
@@ -1001,7 +1027,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/070_the_tricks_on_regex_field_validation/feature_tag.png" />
     <id>https://appworks-tips.com/2020/10/16/070_the_tricks_on_regex_field_validation/</id>
     <published>2020-10-16T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.203Z</updated>
+    <updated>2021-07-08T11:35:16.655Z</updated>
     
     <summary type="html">
     
@@ -1029,7 +1055,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/069_playing_with_lifecycle_state_conditions/feature_tag.png" />
     <id>https://appworks-tips.com/2020/10/09/069_playing_with_lifecycle_state_conditions/</id>
     <published>2020-10-09T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.202Z</updated>
+    <updated>2021-07-08T11:35:16.654Z</updated>
     
     <summary type="html">
     
@@ -1057,7 +1083,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/068_the_secret_path_of_adding_a_keywords_property/feature_tag.png" />
     <id>https://appworks-tips.com/2020/10/02/068_the_secret_path_of_adding_a_keywords_property/</id>
     <published>2020-10-02T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.202Z</updated>
+    <updated>2021-07-08T11:35:16.653Z</updated>
     
     <summary type="html">
     
@@ -1085,7 +1111,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/067_the_very_easy_docker_installation_steps/feature_tag.png" />
     <id>https://appworks-tips.com/2020/09/25/067_the_very_easy_docker_installation_steps/</id>
     <published>2020-09-25T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.201Z</updated>
+    <updated>2021-07-08T11:35:16.652Z</updated>
     
     <summary type="html">
     
@@ -1111,7 +1137,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/feature_tag.png" />
     <id>https://appworks-tips.com/2020/09/18/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/</id>
     <published>2020-09-18T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.200Z</updated>
+    <updated>2021-07-08T11:35:16.650Z</updated>
     
     <summary type="html">
     
@@ -1139,7 +1165,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/065_install_ihub_with_this_simple_guide/feature_tag.png" />
     <id>https://appworks-tips.com/2020/09/11/065_install_ihub_with_this_simple_guide/</id>
     <published>2020-09-11T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.199Z</updated>
+    <updated>2021-07-08T11:35:16.649Z</updated>
     
     <summary type="html">
     
@@ -1167,7 +1193,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/064_see_how_easy_you_can_create_an_otds_tenant/feature_tag.png" />
     <id>https://appworks-tips.com/2020/09/04/064_see_how_easy_you_can_create_an_otds_tenant/</id>
     <published>2020-09-04T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.198Z</updated>
+    <updated>2021-07-08T11:35:16.647Z</updated>
     
     <summary type="html">
     
@@ -1191,7 +1217,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/063_your_final_destination_on_consuming_json_data_via_rest/feature_tag.png" />
     <id>https://appworks-tips.com/2020/08/28/063_your_final_destination_on_consuming_json_data_via_rest/</id>
     <published>2020-08-28T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.197Z</updated>
+    <updated>2021-07-08T11:35:16.646Z</updated>
     
     <summary type="html">
     
@@ -1219,7 +1245,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/062_the_art_of_creating_a_singleton_entity/feature_tag.png" />
     <id>https://appworks-tips.com/2020/08/21/062_the_art_of_creating_a_singleton_entity/</id>
     <published>2020-08-21T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.196Z</updated>
+    <updated>2021-07-08T11:35:16.645Z</updated>
     
     <summary type="html">
     
@@ -1245,7 +1271,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/061_your_best_shot_on_enduser_bpm_interaction/feature_tag.png" />
     <id>https://appworks-tips.com/2020/08/14/061_your_best_shot_on_enduser_bpm_interaction/</id>
     <published>2020-08-14T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.195Z</updated>
+    <updated>2021-07-08T11:35:16.644Z</updated>
     
     <summary type="html">
     
@@ -1271,7 +1297,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/060_tips_on_making_a_soap_service_available_via_uddi_container/feature_tag.png" />
     <id>https://appworks-tips.com/2020/08/07/060_tips_on_making_a_soap_service_available_via_uddi_container/</id>
     <published>2020-08-07T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.194Z</updated>
+    <updated>2021-07-08T11:35:16.642Z</updated>
     
     <summary type="html">
     
@@ -1301,7 +1327,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/059_play_with_masterdata_webservice_in_bpm_loop/feature_tag.png" />
     <id>https://appworks-tips.com/2020/07/31/059_play_with_masterdata_webservice_in_bpm_loop/</id>
     <published>2020-07-31T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.193Z</updated>
+    <updated>2021-07-08T11:35:16.641Z</updated>
     
     <summary type="html">
     
@@ -1322,32 +1348,6 @@
       <category term="Database metadata" scheme="https://appworks-tips.com/tags/Database-metadata/"/>
     
       <category term="For-loop" scheme="https://appworks-tips.com/tags/For-loop/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Simple steps on importing entities from database table</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2020/07/24/058_simple_steps_on_importing_entities_from_database_table/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2020/058_simple_steps_on_importing_entities_from_database_table/feature_tag.png" />
-    <id>https://appworks-tips.com/2020/07/24/058_simple_steps_on_importing_entities_from_database_table/</id>
-    <published>2020-07-24T12:00:00.000Z</published>
-    <updated>2021-07-02T08:05:07.192Z</updated>
-    
-    <summary type="html">
-    
-      How easy can we make it...Generating entities from a database table, but with some pros and cons!
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2020/058_simple_steps_on_importing_entities_from_database_table/feature_tag.png" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Database metadata" scheme="https://appworks-tips.com/tags/Database-metadata/"/>
-    
-      <category term="Linked entity" scheme="https://appworks-tips.com/tags/Linked-entity/"/>
     
   </entry>
   

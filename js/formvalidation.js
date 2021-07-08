@@ -50,7 +50,7 @@ $(function() {
         messages: {
             "k8XsmX0JQC": "Please enter your first name",
             "5R9Tw5dSJv": "Please enter your last name",
-            "09pKJqfKgH": "Please enter your feedback",
+            "09pKJqfKgH": "Please enter your feedback / question",
             "nr0rSpcGwX": "Please enter a valid email address"
         },
         submitHandler: function(form) {
