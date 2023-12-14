@@ -1,0 +1,84 @@
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 12px;
+    border: none;
+    outline: none;
+    color: white;
+    opacity: 0.8;
+    padding: 10px 12px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #6C77BE;
+    opacity: 100;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    /*display: block;*/
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#hire_me {
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+.hire_me_live {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    animation: blinker 2s linear infinite;
+    background-color: red;
+    margin-right: -8px;
+    margin-left: 15px;
+    margin-bottom: 2px;
+}
+
+.hire_me_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

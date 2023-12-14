@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Page Title</title>
+		<link rel="stylesheet" href="../app/start/web/startup.css" type="text/css"/>
+		<script src="/cordys/thirdparty/jquery/jquery.debug.js" type="text/javascript"></script>
+		<script src="./../js/playground.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>New API demo</h1>
+		<p>This is a paragraph.</p>
+		<input id="btnClickMe" type="submit" value="Click me"/>
+		<input id="btnDoAction" type="submit" value="Do action"/>
+		<input id="btnNavigate" type="submit" value="Do navigation"/>
+		<div class="form-container" style="padding-top: 10px">
+			<div id="formName" style="padding-bottom: 8px">
+				<input class="ot-control" id="inputName" placeholder="Name" maxlength="64"/>
+			</div>
+			<div id="formAge" style="padding-bottom: 8px">
+				<input class="ot-control" id="inputAge" placeholder="Age"/>
+			</div>
+			<div id="formIdentity" style="padding-bottom: 8px">
+				<input class="ot-control" id="inputIdentity" placeholder="Identity" maxlength="64"/>
+			</div>
+			<div id="formLayoutId" style="padding-bottom: 8px">
+				<input class="ot-control" id="inputLayoutId" placeholder="LayoutId"/>
+			</div>
+		</div>
+	</body>
+</html>

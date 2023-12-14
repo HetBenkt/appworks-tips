@@ -1,0 +1,202 @@
+.panel-testimonial {
+    background-color: rgba(108, 119, 190, 0.1);
+    border-color: #4754A5;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 150px;
+}
+
+.panel-who {
+    background-color: rgba(255, 219, 129, 0.1);
+    border-color: #4754A5;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.panel-who-hr {
+    width: 100px;
+    border-color: #4754A5;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.panel-who-h1 {
+    color: #4754A5;
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+.panel-who-nr {
+    float: right;
+    width: 75px;
+    height: 75px;
+    border-style: solid;
+    border-color: #4754A5;
+    border-width: medium;
+    border-radius: 100%;
+    margin-top: -40px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+    color: #DEAB2C;
+    text-shadow: 2px 2px #6a6a6a;
+}
+
+.panel-who-body {
+    color: #6a6a6a;
+}
+
+.panel-who-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.panel-who-title {
+    font-size: 12px;
+}
+
+.panel-who-img {
+    float: right;
+    width: 80px;
+    height: 80px;
+    border-style: solid;
+    border-color: #6C77BE;
+    border-width: thin;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+ol.booklet {
+    list-style: none;
+    counter-reset: item;
+    margin-left: 3.2em;
+    padding-right: 145px;
+}
+ol.booklet li {
+    counter-increment: item;
+    text-indent: -3.2em;
+}
+ol.booklet li::before {
+    content: "#" counter(item);
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 2.5em;
+    text-align: center;
+    display: inline-block;
+    border: solid 3px #DEAB2C;
+    text-indent: 0;
+}
+
+.tile-inline {
+    float: left;
+    width: 200px;
+    padding: 10px;
+    margin-right:15px;
+    margin-bottom:40px;
+    height: 320px;
+    border-style: solid;
+    border-color: #6C77BE;
+    border-width: thin;
+    border-radius: 5px;
+}
+
+.buy-button {
+    float: left;
+    width: 250px;
+    padding: 16px;
+    margin-left: 25px;
+    height: 86px;
+    border-style: solid;
+    border-color: #6C77BE;
+    background-color: #F0C454;
+    border-width: thin;
+    border-radius: 5px;
+    text-align:center;
+    font-size:31px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.buy-button:hover {
+    background-color:#DEAB2C;
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    cursor: grab;
+}
+
+.sponsor-button-div {
+    border-style: solid;
+    border-color: #6C77BE;
+    border-width: thin;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.sponsor-wrapper {
+    float: left;
+    margin-left: 25px;
+    margin-top: 23px;
+    width: 140px;
+}
+
+.tile {
+    float: left;
+    width: 250px;
+    padding: 10px;
+    height: 400px;
+    border-style: solid;
+    border-color: #6C77BE;
+    border-width: thin;
+    border-radius: 5px;
+    margin: 0px 15px 60px;
+}
+
+.tile-text {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 400px;
+    font-weight: bold;
+}
+
+.project {
+    /*background-color:#FFDB81;*/
+}
+.project:hover {
+    /*background-color:#F0C454;*/
+    /*filter: blur(1px);*/
+    /*-webkit-filter: blur(1px);*/
+    border-color: #F0C454;
+    border-width: medium;
+    border-radius: 5px;
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    cursor: grab;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

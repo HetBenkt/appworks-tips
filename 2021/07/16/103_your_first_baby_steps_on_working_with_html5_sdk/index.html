@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+<link rel="stylesheet" href="/css/products.css">
+
+	
+<link rel="stylesheet" href="/css/nav.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+    
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y597KBTG4E"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-Y597KBTG4E');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Your first baby steps on working with the HTML5 SDK | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="Something really nice is lurking around the corner...Let's find out how to use it!?">
+
+	
+	<meta name="keywords" content="appworks, opentext, html5, sdk">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Your first baby steps on working with the HTML5 SDK | AppWorks Tips">
+	<meta property="og:description" content="Something really nice is lurking around the corner...Let's find out how to use it!?">
+	<meta property="og:url" content="https://appworks-tips.com/2021/07/16/103_your_first_baby_steps_on_working_with_html5_sdk/">
+
+	
+	<meta property="article:published_time" content="2021-07-16T12:07:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2021/07/16/103_your_first_baby_steps_on_working_with_html5_sdk/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+        <div class="site-header-sponsor">
+            
+                <a href="https://bos-ictservices.nl" target="_blank">
+                <img class="sponsor-image" src="https://bos-ictservices.nl/img/logo.png">
+                </a>
+            
+                <a href="https://github.com/sponsors/HetBenkt" target="_blank">
+                <img class="sponsor-image" src="/images/sponsor_here.png">
+                </a>
+            
+        </div>
+        
+        
+
+<nav class="site-nav">
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                
+                
+                    <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+                
+                
+                
+                    <a href="/installation" title="INSTALLATION 23.4">INSTALLATION 23.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
+  <g id="surface1">
+   <path d="m7.18359,7.74219c-0.29687,0.125 -0.39062,0.36328 -0.27734,0.6289l0.90234,-0.3789c-0.09765,-0.23047 -0.39062,-0.34766 -0.625,-0.25zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_1"/>
+   <path d="m14.48047,8.67969l1.12109,-0.67969l-1.12109,-0.67969l0.95312,-0.90234l-1.23828,-0.43359l0.75,-1.07813l-1.30468,-0.16406l0.50781,-1.21094l-1.30469,0.10938l0.24219,-1.28907l-1.25781,0.375l-0.02735,-1.30859l-1.15234,0.62891l-0.30078,-1.27735l-0.99219,0.85938l-0.5625,-1.1875l-0.79297,1.04297l-0.79297,-1.04297l-0.5625,1.1875l-0.99219,-0.85938l-0.30078,1.27735l-1.15234,-0.62891l-0.02734,1.30859l-1.25782,-0.375l0.2461,1.28907l-1.3086,-0.10938l0.50782,1.21094l-1.30079,0.16406l0.7461,1.07813l-1.23828,0.43359l0.95312,0.90234l-1.12109,0.67969l1.12109,0.67969l-0.95312,0.90234l1.23828,0.42969l-0.75,1.07812l1.30469,0.16797l-0.50782,1.21094l1.3086,-0.10937l-0.2461,1.28906l1.25782,-0.37891l0.02734,1.3125l1.15234,-0.6289l0.30078,1.27734l0.99219,-0.85938l0.5586,1.1875l0.79687,-1.04296l0.79297,1.04296l0.5625,-1.1875l0.99219,0.85938l0.30078,-1.27734l1.15234,0.6289l0.02735,-1.30859l1.25781,0.375l-0.2461,-1.28906l1.3086,0.10937l-0.50781,-1.21094l1.30468,-0.16406l-0.75,-1.08203l1.23828,-0.42969l-0.95312,-0.90234zm-9.05859,2.1289l-0.5586,-1.32421c-0.10547,-0.25 -0.26562,-0.44141 -0.54687,-0.32032c-0.30469,0.12891 -0.30469,0.35938 -0.16797,0.67969l0.53906,1.27344l-0.99219,0.42187l-1.05859,-2.5039l0.90625,-0.38282l0.16406,0.39063c0.09766,-0.39453 0.27344,-0.66016 0.65235,-0.82031c0.65625,-0.27735 1.13281,-0.02344 1.42187,0.66406l0.63281,1.5l-0.99218,0.42187zm2.58984,-1.01171c-0.80078,0.33984 -1.61719,0.14453 -1.97266,-0.69922c-0.34375,-0.82032 0.04688,-1.60547 0.85157,-1.94532c0.92578,-0.39062 1.7539,0.01172 2.125,0.92579l-1.89844,0.80078c0.1289,0.29687 0.4375,0.39453 0.70312,0.28515c0.15625,-0.0664 0.26953,-0.19922 0.27735,-0.3789l0.95312,-0.40235c0.08985,0.69532 -0.45312,1.16797 -1.03906,1.41407zm3.98828,-1.76954l-1.00781,-1.30468l-0.00781,0.0039l0.26953,1.61328l-0.96875,0.41016l-1.88282,-2.15234l0.96875,-0.41016l1.03516,1.38672l0.01172,-0.00391l-0.26953,-1.71093l0.84375,-0.35547l1.03515,1.38281l0.00782,-0.00391l-0.26563,-1.71093l0.94141,-0.39844l0.25781,2.84375l-0.96875,0.41015zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_2" stroke="null"/>
+  </g>
+ </g>
+
+</svg></a>
+                
+                
+                
+                    <a href="/ci_cd" title="CI/CD">CI/CD</a>
+                
+                
+                
+                    <a href="/products" title="PRODUCTS">PRODUCTS</a>
+                
+                
+                
+                    <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+                
+                
+                
+                    <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+                
+                
+                
+                    <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME">HIRE ME</a>
+                
+                
+                
+                    <a href="/about" title="ABOUT">ABOUT</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <ul class="nav">
+                    <li>
+                        <div class="hire_me_content">
+                        <i class="hire_me_live"></i>
+                        <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME" id="hire_me">HIRE ME</a>
+                        </div>
+                    </li>
+                </ul>
+        
+        
+        
+        
+        
+    </div>
+
+    <div class="search-button">
+
+    
+    <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+        <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+            <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+        </svg> Sponsor
+    </a>
+    
+
+    
+
+    
+        <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </a>
+    
+
+    </div>
+
+    <div class="site-nav-right">
+        
+        <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+            <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+                <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+            </svg> Sponsor
+        </a>
+        
+
+        
+
+        
+            <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            </a>
+        
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback / Question" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2021-07-16T12:00:00.000Z" itemprop="datePublished">
+                    2021-07-16
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Development/">Development</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">Your first baby steps on working with the HTML5 SDK</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/feature_tag.webp)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>This time we just do a dive on the HTML5 SDK that is available on our AppWorks platform. With this JavaScript! SDK it should be possible to create your own HTML pages that are tightly connected to the platform. Meaning AppWorks authentication and calling AppWorks functionality is directly available under our fingertips from a custom HTML-page with JavaScript and CSS to style it out…Nice! How does it work and how can we bring it into advantage with the entity modeling principles? That’s where it gets interesting so let’s find out!</p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>…where we first try to find some quick answers to these questions:</p>
+<p><strong><em>What is the HTML5 SDK?</em></strong></p>
+<p>It’s just a JavaScript library designed to work with AppWorks…nice! It uses standard libraries (like <a href="https://jquery.com/" target="_blank" rel="noopener">jQuery</a> and <a href="https://knockoutjs.com/" target="_blank" rel="noopener">KnockoutJS</a>) that we see a lot these days in web application (like our ‘runtime’!), but also in mobile applications where we see support of libraries like <a href="https://www.sencha.com/products/touch/" target="_blank" rel="noopener">Sencha Touch</a> and <a href="https://jquerymobile.com/" target="_blank" rel="noopener">jQuery Mobile</a>. Also, well-known libraries for mobile development. When you take a closer look at the SDK you will see that a lot of features are built-in already, like calling entity models, webservices, translations, workflow tasks, etc. Most interesting is the already available authentication part which handles a user login! This means that it should be possible to reuse our user session with the platform and do all kinds of fancy custom creations on a basic HTML page. This HTML page can of-course be called from our own runtime, but if you typed in the URL from a mobile perspective it would also work…That is where the fun starts! &#128540;</p>
+<p>Where can we find it and what does it look like?</p>
+<p>Well, a search on my VM brought me to a location where I find these 2 files:</p>
+<ul>
+<li><p><code>/cordys/html5/cordys.html5sdk.js</code></p>
+</li>
+<li><p><code>/cordys/html5/cordys.html5sdk.debug.js</code></p>
+</li>
+</ul>
+<p>The debug variant is not minified (a minified JS file is faster!) and is readable directly in runtime by calling this URL:<br><a href="http://192.168.56.107:8080/cordys/html5/cordys.html5sdk.debug.js" target="_blank" rel="noopener">http://192.168.56.107:8080/cordys/html5/cordys.html5sdk.debug.js</a></p>
+<p>Take some time to get familiar with it as we will use it during this post!</p>
+<p><strong>What else?</strong></p>
+<p>Well, after some research I see there is a specific CAP-file for this SDK (deployed by default!) with the fancy name: <strong><em>Cordys HTML5 SDK</em></strong></p>
+<p><img alt="html5sdk_001" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_001.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_001.png"></p>
+<p><strong>What else?</strong></p>
+<p>After some browsing thought the files in that VM directory I see a lot of these kinds of calls passing by…Interesting…What do they do and how are we supposed we call them? Most of them are pretty logic, but some raise questions!?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$.cordys.ajax(..)</span><br><span class="line">$.cordys.model(..)</span><br><span class="line">$.cordys.json(..)</span><br><span class="line">$.cordys.workflow(..)</span><br><span class="line">$.cordys.utils(..)</span><br><span class="line">$.cordys.translation(..)</span><br><span class="line">$.cordys.mobile(..)</span><br><span class="line">$.cordys.preferences(..)</span><br><span class="line">$.cordys.loadScript(..)</span><br><span class="line">$.cordys.binding(..)</span><br><span class="line">$.cordys.authentication(..)</span><br><span class="line">$.cordys.formatting(..)</span><br><span class="line">etc...</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>Where can I find documentation?</em></strong></p>
+<p>A dive into the AppWorks help (opened from design time in that left small panel) will give me this image:</p>
+<p><img alt="html5sdk_002" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_002.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_002.png"></p>
+<blockquote>
+<p>The image already shows us similarities of the <code>$.cordys</code> examples from above!</p>
+</blockquote>
+<p>The normal PDF documentation has off-course also these kinds of sections</p>
+<ul>
+<li>The AppWorks development guide sections <strong><em>‘Working with HTML5 SDK’</em></strong> and <strong><em>‘Developing applications with HTML5 SDK’</em></strong></li>
+<li>The API Reference Guide in section <strong><em>‘HTML5 SDK’</em></strong></li>
+</ul>
+<p>Other helpful locations will be on the internet</p>
+<ul>
+<li>The AppWorks support side: <a href="https://forums.opentext.com/forums/support/categories/appworks-platform" target="_blank" rel="noopener">https://forums.opentext.com/forums/support/categories/appworks-platform</a></li>
+<li>The Appworks developer portal: <a href="https://forums.opentext.com/forums/developer/categories/appworks" target="_blank" rel="noopener">https://forums.opentext.com/forums/developer/categories/appworks</a></li>
+</ul>
+<p><strong><em>Are there any other examples to be found?</em></strong></p>
+<p>A search on Google on the above topics will bring you to some resources, but it looks to me there is not that much information available.</p>
+<p>Looks like my best shot is in the demo folder: <code>/opt/opentext/AppWorksPlatform/defaultInst/webroot/shared/html5/demo/emptypage.htm</code></p>
+<p>That can be accessed via URL: <a href="http://192.168.56.107:8080/cordys/html5/demo/emptypage.htm" target="_blank" rel="noopener">http://192.168.56.107:8080/cordys/html5/demo/emptypage.htm</a></p>
+<p>Also, this one is interesting, but it requires to have the Northwind data up and running with the correctly generate webservices:<br><a href="http://192.168.56.107:8080/cordys/html5/demo/employees.htm" target="_blank" rel="noopener">http://192.168.56.107:8080/cordys/html5/demo/employees.htm</a></p>
+<p>This last one is indeed a great example (even with the <a href="/2021/06/25/100_how_to_use_the_northwind_database_example_data">post</a> on the Northwind database), but let’s see if we can build something ourselves that calls our own entity model information! &#128517;</p>
+<p><strong><em>How can we use it with our entity modeling?</em></strong></p>
+<p>We should be able to create an ‘assets’ folder with a ‘html’ subfolder that contains a customized HTML file. The assets will be published into runtime with a web library definition, and we can use a ‘Web content’ panel on an entity layout to call this HTML file via a relative URL. That is our entrance!!</p>
+<p>Ok, looks like the bar has been set with this last Q/A!</p>
+<hr>
+<h4 id="Let’s-start-simple"><a href="#Let’s-start-simple" class="headerlink" title="Let’s start simple!"></a>Let’s start simple!</h4><p>By ‘simple’ I mean…Let’s call a basic HTML file (created in our project ‘Assets’ folder) from an entity layout as a start!?</p>
+<p>So, spin up the VM, enter design time with ‘awdev’ and create that first folder structure where we start by creating a new ‘Web Library Definition’ in the ‘assets’ folder:</p>
+<p><img alt="html5sdk_003" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_003.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_003.png"></p>
+<p>This is how it will look like:</p>
+<p><img alt="html5sdk_004" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_004.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_004.png"></p>
+<p>Just make sure to point to that ‘assets’ folder and save it…Publication is not (yet!) needed.</p>
+<p>We also set the ‘Start Point of Qualified Name’…Remember that one?…check <a href="/2020/07/10/057_make_a_web_library_definition_work_for_you/">this</a> post on the WLD or <a href="/2021/01/08/080_lets_customize_a_result_panel_on_a_homepage_layout/">this</a> post where we use that ‘Start Point…’ option!</p>
+<p><img alt="html5sdk_005" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_005.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_005.png"></p>
+<p>Now we create a new ‘<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage’ file (in the ‘html’ folder)</p>
+<p><img alt="html5sdk_006" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_006.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_006.png"></p>
+<p>For now, we just add some basic HTML that we copy from <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">w3schools</a></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Page Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is a Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>We save that new document with a nice name ‘playground.htm’ and now we can publish our project…</p>
+<p>Result in runtime?</p>
+<p><a href="http://192.168.56.107:8080/home/appworks_tips/html/playground.htm" target="_blank" rel="noopener">http://192.168.56.107:8080/home/appworks_tips/html/playground.htm</a></p>
+<p>Hooray! Our first step towards greatness! &#128527;</p>
+<hr>
+<h4 id="Call-HTML-file-from-entity-layout"><a href="#Call-HTML-file-from-entity-layout" class="headerlink" title="Call HTML file from entity layout!?"></a>Call HTML file from entity layout!?</h4><p>Ok…For this one we create an easy ‘person’ entity in the ‘entities’ folder with 2 fields ‘age’ of type integer and ‘name’ of type text. When all the default BBs, to create new instances in runtime, are crafted/generated, we can start this section in the ‘DefaultLayout’ BB where we add a new panel of type ‘Web Content’.</p>
+<p><img alt="html5sdk_007" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_007.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_007.png"></p>
+<blockquote>
+<p>We use this relative path: <code>./../../../html/playground.htm</code></p>
+<p>As <code>/html/playground.htm</code> will resolve into a URL like this: <a href="http://192.168.56.107:8080/html/playground.htm" target="_blank" rel="noopener">http://192.168.56.107:8080/html/playground.htm</a></p>
+<p><code>./html/playground.htm</code> will have this URL as result: <a href="http://192.168.56.107:8080/home/appworks_tips/app/start/web/html/playground.htm" target="_blank" rel="noopener">http://192.168.56.107:8080/home/appworks_tips/app/start/web/html/playground.htm</a></p>
+<p>So, we just need to be 3 folders upwards to get our result!</p>
+</blockquote>
+<p>Result in runtime?</p>
+<p><img alt="html5sdk_008" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_008.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_008.png"></p>
+<p>Nice!…next?</p>
+<hr>
+<h4 id="Faster-development"><a href="#Faster-development" class="headerlink" title="Faster development?"></a>Faster development?</h4><p>Nice, that we can edit the HTML file in design time, but we’re much faster with a nice external HTML editor like <a href="https://notepad-plus-plus.org" target="_blank" rel="noopener">Notepad++</a>, <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a>, <a href="https://www.eclipse.org" target="_blank" rel="noopener">Eclipse</a>, <a href="https://www.jetbrains.com/idea" target="_blank" rel="noopener">IntelliJ IDEA (CE)</a> or the great <a href="https://www.jetbrains.com/webstorm" target="_blank" rel="noopener">IntelliJ Webstorms</a> (not free!)</p>
+<p>Approachable options:</p>
+<p><strong>1. Directly edit the file from server (in ‘webroot’)</strong></p>
+<p>After a first publish to runtime our ‘assets’ folder is available in this location:</p>
+<p><code>/opt/opentext/AppWorksPlatform/defaultInst/webroot/organization/appworks_tips/html/playground.htm</code></p>
+<p>We can create an SSH connection with ‘MobaXTerm’ and edit the file directly!</p>
+<p>The <strong>advantage</strong> is that we see the file directly getting updated in runtime after a refresh of the page and no extra actions need to be done. The <strong>disadvantage</strong> is our project is out of synch and republish from design time will lose changes if you didn’t upload the latest version eventually into the project.</p>
+<p><strong>2. Directly edit the file from server (after CWS synch)</strong></p>
+<p>On our project we can do a ‘synchronization’ action on the project. This action makes our ‘assets’ folder available on the server in this location:</p>
+<p><code>/opt/opentext/AppWorksPlatform/defaultInst/cws/sync/appworks_tips/aw_dev_ws/proj_gen/nl-bos/assets/html/playground.htm</code></p>
+<p>Again, we can create an SSH connection and edit the file in this location directly.</p>
+<p>The <strong>advantage</strong> is that the content is more under control of our platform as a resynch will upload the content directly back into our project. The <strong>disadvantage</strong> is we need to do more manual action like an extra publish from our project after that synch.</p>
+<blockquote>
+<p>In my opinion it’s best to first go for option 1 for quick prototyping and when done, you upload the document into the project. You can do this via the synch (option 2) or manually with the ‘Upload Document…’ on the project!</p>
+</blockquote>
+<p><strong>3. Use a maven project with install/upload task</strong></p>
+<p>When you are on a bigger project it’s better to have a local Maven project and let Maven handle the upload to the server!</p>
+<p>How?</p>
+<p>Well, make sure you have installed <a href="https://maven.apache.org/" target="_blank" rel="noopener">Maven</a> locally on your system. When ready you should be able to do a call from your terminal/command line: <code>mvn -v</code> with this kind of output:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-04T21:00:29+02:00)</span><br><span class="line">Maven home: C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin\..</span><br><span class="line">Java version: 14.0.1, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-14.0.1</span><br><span class="line">Default locale: en_US, platform encoding: UTF-8</span><br><span class="line">OS name: <span class="string">"windows 10"</span>, version: <span class="string">"10.0"</span>, arch: <span class="string">"amd64"</span>, family: <span class="string">"windows"</span></span><br></pre></td></tr></table></figure>
+
+<p>Go to a nice directory where we will create a new maven ‘webapp’ project with this command:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn archetype:generate -DgroupId=nl.bos.webproject -DartifactId=AppWorksAssets -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=<span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>This will create a new skeleton project with a ‘webapp’ folder, and a clean ‘index.jsp’ where we can also create new HTML files!</p>
+<p>Make sure you are in the project folder (where the ‘pom.xml is generated) and try the command: <code>mvn clean package</code>. This will clean the latest output and will generate a new WAR file which can be uploaded to a webserver for further deployment/testing. This last thing is not that interesting for this post, but what is interesting is that we can also make use of Maven tasks! This makes it possible to connect to a remote server and upload data to our ‘webroot’ location with a call like: <code>mvn clean install</code></p>
+<p>For this to happen we need to update our ‘pom.xml’ that was generated for our new maven project!</p>
+<p>First we add a ‘properties’ section:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- DEFAULT APPWORKS HOST PROPERTIES --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">aw.host</span>&gt;</span>192.168.56.107<span class="tag">&lt;/<span class="name">aw.host</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">aw.port</span>&gt;</span>22<span class="tag">&lt;/<span class="name">aw.port</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">aw.user</span>&gt;</span>root<span class="tag">&lt;/<span class="name">aw.user</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">aw.password</span>&gt;</span>$&#123;env.AW_PASSWORD&#125;<span class="tag">&lt;/<span class="name">aw.password</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">aw.deployDirectory</span>&gt;</span>/opt/opentext/AppWorksPlatform/defaultInst/webroot/organization/appworks_tips/html<span class="tag">&lt;/<span class="name">aw.deployDirectory</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>The <code>aw.password</code> is retrieved from a local variable from my local system. You can also use a password directly, but it not a recommendation to add hardcoded passwords in these kinds of files as in a later moment you might want to share this project through GIT or SVN.</p>
+</blockquote>
+<p>Next we need to add a ‘build’ section where we reuse those properties and make use of the <a href="https://mvnrepository.com/artifact/org.apache.ant/ant-jsch" target="_blank" rel="noopener">ant-jsch</a> dependency to copy files to a remote server!:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-antrun-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">phase</span>&gt;</span>install<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">goal</span>&gt;</span>run<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">tasks</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;<span class="name">scp</span> <span class="attr">file</span>=<span class="string">"$&#123;project.build.directory&#125;/$&#123;project.build.finalName&#125;/playground.htm"</span></span></span><br><span class="line"><span class="tag">                                     <span class="attr">todir</span>=<span class="string">"$&#123;aw.user&#125;:$&#123;aw.password&#125;@$&#123;aw.host&#125;:$&#123;aw.deployDirectory&#125;"</span></span></span><br><span class="line"><span class="tag">                                     <span class="attr">port</span>=<span class="string">"$&#123;aw.port&#125;"</span> <span class="attr">trust</span>=<span class="string">"true"</span> <span class="attr">verbose</span>=<span class="string">"true"</span> <span class="attr">failonerror</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">                                <span class="tag">&lt;/<span class="name">scp</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;/<span class="name">tasks</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.ant<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>ant-jsch<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.9.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>You can clearly see the reusability of the property values, and my playgound.htm file being copied. <a href="https://ant.apache.org/manual/Tasks/scp.html" target="_blank" rel="noopener">Here</a> is some more information on the SCP parameters!</p>
+<p>My Maven project can be downloaded <a href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/AppWorksAssets.zip">here</a>.</p>
+<hr>
+<h4 id="Add-some-JavaScript…"><a href="#Add-some-JavaScript…" class="headerlink" title="Add some JavaScript…"></a>Add some JavaScript…</h4><p>OK, back to our ‘playground.htm’ file where we will add some basic JavaScript to play around with. First we add the basic scripts, and a CSS file:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Page Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"/cordys/thirdparty/jquery/cordys.min.css"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> /&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/cordys/thirdparty/jquery/jquery.debug.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/cordys/html5/cordys.html5sdk.debug.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/cordys/html5/cordys.html5sdk.util.debug.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./js/playground.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is a Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>NOTES:</p>
+<ul>
+<li>You will see relative paths because these files are all available on our server already…great!!</li>
+<li>I added a ‘playground.js’ file, so we can play around in our own JavaScript file! For this…<ul>
+<li>…I created also a ‘js’ folder on the server in the ‘webroots’ location.</li>
+<li>…I also added a second ‘scp’ node in the ‘pom.xml’ to copy this JS file too.</li>
+</ul>
+</li>
+<li>It’s also better to have a Chrome incognito tab available, so you have better control of the cache on these type of files.</li>
+</ul>
+</blockquote>
+<p>Let’s create a simple function in our ‘playground.js’:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hello world...'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>This function will be called on page load be default…That’s how jQuery works with the $-sign! More <a href="https://www.w3schools.com/jquery/jquery_syntax.asp" target="_blank" rel="noopener">here</a>.</p>
+<p>After deployment and a refresh of the browser you should see the output in the developer tools console (with <code>&lt;F12&gt;</code>) of Chrome…Ready and steady? Next…</p>
+<p>Let’s call some ReST with 2 calls in our <code>$(document).ready(function() {..}</code> function (both do the same, but then you see a bit more of the possibilities):</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> url = <span class="string">"https://jsonplaceholder.typicode.com/todos/1"</span>;</span><br><span class="line"></span><br><span class="line">$.<span class="keyword">get</span>(url, function() &#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'Success'</span>);</span><br><span class="line">&#125;).done(<span class="function"><span class="keyword">function</span>(<span class="params">data, status</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Data:"</span>, data);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Status:"</span>, status);</span><br><span class="line">&#125;).fail(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log( <span class="string">"Error:"</span>, error);</span><br><span class="line">&#125;).always(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Finished"</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">$.ajax(&#123;</span><br><span class="line">	url: url,</span><br><span class="line">	type: <span class="string">"GET"</span></span><br><span class="line">&#125;).done(<span class="function"><span class="keyword">function</span>(<span class="params">data, status</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Data:"</span>, data);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Status:"</span>, status);</span><br><span class="line">&#125;).fail(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log( <span class="string">"Error:"</span>, error);</span><br><span class="line">&#125;).always(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Finished"</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>We use the <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener">JSONPlaceholder</a> open API to play around…Deploy and check out the dev console in Chrome! If you want to know more on these type of calls…Check <a href="https://api.jquery.com/jquery.ajax/" target="_blank" rel="noopener">this</a>!</p>
+<p>Let’s continue the grind as we don’t do any fancy AppWorks stuff (yet!).</p>
+<p>A rewrite of that last function:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">	url: url,</span><br><span class="line">	type: <span class="string">"GET"</span>,</span><br><span class="line">	success: <span class="function"><span class="keyword">function</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">"Response:"</span>, response);</span><br><span class="line">	&#125;,</span><br><span class="line">	error: <span class="function"><span class="keyword">function</span>(<span class="params">error</span>)</span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">"Error:"</span>, error);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>An even nicer way of that same call (when we need to extend the code):</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">	url: url,</span><br><span class="line">	type: <span class="string">"GET"</span>,</span><br><span class="line">	success: successFunction,</span><br><span class="line">	error: errorFunction</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">successFunction</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Response:"</span>, response);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">errorFunction</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Error:"</span>, error);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Great…Looks like we’ve understood the basics of calling jQuery stuff and playing around with some functions.</p>
+<p>Now let’s dive into our <strong>demo examples</strong> that were found on our AppWorks VM!</p>
+<p>We will try it with a call like this:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$.cordys.ajax(&#123;</span><br><span class="line">	method: <span class="string">"AllPersons"</span>,</span><br><span class="line">	namespace: <span class="string">"http://schemas/AppWorksTipsproj_gen/person/operations"</span>,</span><br><span class="line">	success: successFunction,</span><br><span class="line">	error: errorFunction</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">successFunction</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Response:"</span>, <span class="built_in">JSON</span>.stringify(response));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">errorFunction</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Error:"</span>, error);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Here you see we switch to another ‘ajax’ call, the one in scope of ‘cordys’ which is our AppWorks platform. The advantage? Well, authentication is handled for us within this ‘cordys’ scope and that makes it much simpler to call any webservice that is exposed…Like the webservices we can expose with the ‘Webservice’ BB on our entity!</p>
+<p>Now we’re getting somewhere…Did you see already the call to the method ‘Allpersons’ with that namespace parameter? Where did we get that information from and how can we build this call in our AppWorks platform? That’s our next section…For now just publish it all, but when you call it you will get an error like this one (when not authenticated):</p>
+<p><img alt="html5sdk_009" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_009.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_009.png"></p>
+<p>Or you get this error (where I manipulated the method to raise the error!)</p>
+<p><img alt="html5sdk_010" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_010.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_010.png"></p>
+<blockquote>
+<p>I first log into the platform (the regular way) and then calling my page externally like this <a href="http://192.168.56.107:8080/home/appworks_tips/html/playground.htm" target="_blank" rel="noopener">http://192.168.56.107:8080/home/appworks_tips/html/playground.htm</a>. Later on we include this page in runtime, but for testing this link refreshes faster, but first requires a session!</p>
+</blockquote>
+<p>So, the next section will explain how to make the ‘AllPersons’ method available…</p>
+<hr>
+<h4 id="Expose-the-‘AllPersons’-webservice"><a href="#Expose-the-‘AllPersons’-webservice" class="headerlink" title="Expose the ‘AllPersons’ webservice"></a>Expose the ‘AllPersons’ webservice</h4><p>For this to happen we go back to our simple entity ‘person’…Nicely saved in the ‘entities’ folder. On this entity we add the ‘Webservices’ BB which we configure with a new find operation called…Yeah…You guessed it correct!…’AllPersons’.</p>
+<p>It should all look like this (where I also enabled the ‘Read’ operation):</p>
+<p><img alt="html5sdk_011" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_011.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_011.png"></p>
+<p>Now we have this BB enabled, we are also required to create a new service container that can help us to execute on this service operations.</p>
+<p>In quick steps (as we covered this already in another post!):</p>
+<ul>
+<li>Open ‘System resource manager’ in your organization space</li>
+<li>Create a new service group<ul>
+<li>Connector type: Application Server Connector</li>
+<li>Name: AppServer</li>
+<li>Web interfaces: Only the one for our ‘person’ called ‘Method Set Entity person’</li>
+<li>Make sure to assign it to OS process ‘Application Server’ which can handle web requests through our TomEE instance!</li>
+<li>Let it start automagically</li>
+</ul>
+</li>
+</ul>
+<p>When the new service container is up and running you should be able to test our webservice with the ‘Web Service Interface Explorer’ artifact.</p>
+<p><img alt="html5sdk_012" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_012.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_012.png"></p>
+<p>You should see a SOAP request like this:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">SOAP:Envelope</span> <span class="attr">xmlns:SOAP</span>=<span class="string">"http://schemas.xmlsoap.org/soap/envelope/"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">SOAP:Body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">AllPersons</span> <span class="attr">xmlns</span>=<span class="string">"http://schemas/AppWorksTipsproj_gen/person/operations"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ns0:Cursor</span> <span class="attr">xmlns:ns0</span>=<span class="string">"http://schemas.opentext.com/bps/entity/core"</span> <span class="attr">offset</span>=<span class="string">"0"</span> <span class="attr">limit</span>=<span class="string">"100"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">AllPersons</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">SOAP:Body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">SOAP:Envelope</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Now, have a look again in our ‘playground.js’ file, and you will recognize that ‘namespace’ value and ‘method’ value!</p>
+<p>Well, where are you waiting for…Let’s invoke it like a pro with an output like this (I hope you understand you need to create person instances in runtime first…duh!?) where I cleaned the XML namespace parts:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">data</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">wstxns1:AllPersonsResponse</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">wstxns2:person</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">age</span>&gt;</span>18<span class="tag">&lt;/<span class="name">age</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">name</span>&gt;</span>Antal<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">person-id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Id</span>&gt;</span>1<span class="tag">&lt;/<span class="name">Id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ItemId</span>&gt;</span>080027069dbea1eb968ea38c41a18af9.1<span class="tag">&lt;/<span class="name">ItemId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">person-id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">wstxns2:person</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">wstxns1:AllPersonsResponse</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">data</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Nice…Back to our ‘playground.htm’ in runtime and see if we don’t see any errors…</p>
+<p><img alt="html5sdk_013" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_013.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_013.png"></p>
+<p>Ohwww YEAH…&#128525;</p>
+<hr>
+<h4 id="Add-a-table-view-and-bind-the-data-to-it"><a href="#Add-a-table-view-and-bind-the-data-to-it" class="headerlink" title="Add a table view (and bind the data to it!)"></a>Add a table view (and bind the data to it!)</h4><p>For this section we can extend our ‘successFunction’ with this content in the JavaScript file:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">successFunction</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"Response: "</span>, <span class="built_in">JSON</span>.stringify(response));</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> persons = [];</span><br><span class="line">    jQuery.each(response, <span class="function"><span class="keyword">function</span>(<span class="params">entry, data</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(entry.includes(<span class="string">"person"</span>)) &#123;</span><br><span class="line">            persons.push(&#123;<span class="attr">name</span>: data.name, <span class="attr">age</span>: data.age&#125;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    ko.applyBindings(&#123;</span><br><span class="line">        persons</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>What do we do here? Well, we use ‘KnockoutJS’ to bind our response data to a ‘persons’ object. To have a better understanding it’s recommended to read some documentation on this <a href="https://knockoutjs.com/documentation/introduction.html" target="_blank" rel="noopener">site</a>. On our HTML page we can use that ‘persons’ object to read all the data from it and plot it on a table in the ‘body’ tag:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>Persons<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>Table of content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>Age<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">tbody</span> <span class="attr">data-bind</span>=<span class="string">"foreach: persons"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span> <span class="attr">data-bind</span>=<span class="string">"text: name"</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span> <span class="attr">data-bind</span>=<span class="string">"text: age"</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>The only thing we now need to add is the ‘KnockoutJS’ library by adding this line in the ‘head’ tag:</p>
+<p><code>&lt;script src=&quot;/cordys/thirdparty/knockout/knockout.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code></p>
+<p>You see this library is also already available on the platform.</p>
+<p>Now, publish and check the result in runtime:</p>
+<p><img alt="html5sdk_014" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_014.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_014.png"></p>
+<p>Ohw mama…do we learn some stuff today! &#128074;</p>
+<blockquote>
+<p>Another nice library to play around with is <a href="https://www.jsviews.com/#jsrender" target="_blank" rel="noopener">JsRender</a>, but also this (included) third library is ‘binding based’, which makes it much easier to pass data around in your <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication. It’s all about automatic refreshing the UI when data in the back-end is changing.</p>
+<p><code>&lt;script src=&quot;/cordys/thirdparty/jsrender/jsrender.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code></p>
+<p>Have a look on the server for other interesting libraries to play around with (It’s like entering a new world of knowledge!):</p>
+<p><code>cd /opt/opentext/AppWorksPlatform/defaultInst/webroot/shared/thirdparty/</code></p>
+</blockquote>
+<hr>
+<h4 id="An-example-call-with-JsRender"><a href="#An-example-call-with-JsRender" class="headerlink" title="An example call with JsRender"></a>An example call with JsRender</h4><p>The ‘successFunction’ in the JavaScript file:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">successFunction</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"Response: "</span>, <span class="built_in">JSON</span>.stringify(response));</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> persons = [];</span><br><span class="line">    jQuery.each(response, <span class="function"><span class="keyword">function</span>(<span class="params">entry, data</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(entry.includes(<span class="string">"person"</span>)) &#123;</span><br><span class="line">            persons.push(&#123;<span class="attr">name</span>: data.name, <span class="attr">age</span>: data.age&#125;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> template = $.templates(<span class="string">"#theTmpl"</span>);</span><br><span class="line">    <span class="keyword">let</span> htmlOutput = template.render(persons);</span><br><span class="line">    $(<span class="string">"#result"</span>).html(htmlOutput);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>The HTML update in the body:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>Persons<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>Table of content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>Age<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">tbody</span> <span class="attr">id</span>=<span class="string">"result"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>And a JsRender template to build the table (with the inclusion of the library itself!):</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/cordys/thirdparty/jsrender/jsrender.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"theTmpl"</span> <span class="attr">type</span>=<span class="string">"text/x-jsrender"</span>&gt;</span></span><br><span class="line"><span class="handlebars"><span class="xml">	<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">		<span class="tag">&lt;<span class="name">td</span>&gt;</span></span><span class="template-variable">&#123;&#123;:name&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">		<span class="tag">&lt;<span class="name">td</span>&gt;</span></span><span class="template-variable">&#123;&#123;:age&#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span></span><br><span class="line"><span class="handlebars"><span class="xml">	<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>After deployment, we will get the same result in runtime, but now you see another approach is always possible!</p>
+<p>Next…</p>
+<hr>
+<h4 id="Call-some-styling"><a href="#Call-some-styling" class="headerlink" title="Call some styling!?"></a>Call some styling!?</h4><p>You see our table a rather clean and styleless…It would be great to be in line with the rest of the runtime UI…correct?</p>
+<p>Let’s start with the font type…Real simple and efficient:</p>
+<p><code>&lt;body class=&quot;ui-body-c&quot;&gt;</code></p>
+<p>The updates the body style from the included CSS <code>/cordys/thirdparty/jquery/cordys.min.css</code></p>
+<p>The end-result will look like this:</p>
+<p><img alt="html5sdk_015" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_015.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_015.png"></p>
+<p>This is a mobile style from jQuery mobile which gives you a nice head start but is intentionally meant to be used for mobile interfaces, but that’s not wat we really want…Let’s do another approach with another CSS file!</p>
+<p>Let’s start with the inclusion of this CSS file…Do you recognize this one?:</p>
+<p><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;../app/start/web/startup.css&quot; type=&quot;text/css&quot; /&gt;</code></p>
+<p>After we remove the <code>ui-body-c</code> class from the body we get a nicer “look and feel” in line with the rest…</p>
+<p><img alt="html5sdk_016" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_016.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_016.png"></p>
+<p>Great stuff…Next…First a coffee break! &#9749;</p>
+<hr>
+<h4 id="Push-the-‘current-entity-ID’-as-parameter"><a href="#Push-the-‘current-entity-ID’-as-parameter" class="headerlink" title="Push the ‘current entity ID’ as parameter"></a>Push the ‘current entity ID’ as parameter</h4><p>We see in our table filled with all the entries of the persons. Nice, but in our screen we are only interested in our current person. Let’s see how we can filter our data!?</p>
+<p>The first thing we need to check (as your already did this if you followed the steps) is the exposure of the ‘Read’ operation on the ‘Webservice’ BB on the ‘person’ entity! With this operation enabled you should be able to test the ‘Readperson’ webservice with a SOAP request like this:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">SOAP:Envelope</span> <span class="attr">xmlns:SOAP</span>=<span class="string">"http://schemas.xmlsoap.org/soap/envelope/"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">SOAP:Body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Readperson</span> <span class="attr">xmlns</span>=<span class="string">"http://schemas/AppWorksTipsproj_gen/person/operations"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ns0:person-id</span> <span class="attr">xmlns:ns0</span>=<span class="string">"http://schemas/AppWorksTipsproj_gen/person"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ns0:ItemId</span>&gt;</span>080027069dbea1eb968ea38c41a18af9.1<span class="tag">&lt;/<span class="name">ns0:ItemId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">ns0:person-id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Readperson</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">SOAP:Body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">SOAP:Envelope</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Great, but how do we get the ‘ItemId’ value into our ‘playground.htm’ file!?</p>
+<p>Well, for that setting we jump into our default layout BB for the ‘person’ entity with we update the line behind the ‘Web Content’ panel like this:</p>
+<p><code>./../../../html/playground.htm?itemid={item.Identity.ItemId}</code></p>
+<p>After deployment, we clearly see nice information in the developer console of chrome:</p>
+<p><img alt="html5sdk_017" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_017.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_017.png"></p>
+<p>To grab the ‘itemid’ parameter value into our ‘playground.js’ file, we can add this piece of code in the <code>$(document).ready(function() {...}</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$.urlParam = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> results = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'[\?&amp;]'</span> + name + <span class="string">'=([^&amp;#]*)'</span>).exec(<span class="built_in">window</span>.location.href);</span><br><span class="line">	<span class="keyword">if</span> (results==<span class="literal">null</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> results[<span class="number">1</span>] || <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"itemid:"</span>, <span class="built_in">decodeURIComponent</span>($.urlParam(<span class="string">'itemid'</span>)));</span><br></pre></td></tr></table></figure>
+
+<p>Finally, we’ll update this JS file further with a call to the ‘Readperson’ operation (including the correct parameter!)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> itemId = <span class="built_in">decodeURIComponent</span>($.urlParam(<span class="string">'itemid'</span>));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"itemId:"</span>, itemId);</span><br><span class="line"></span><br><span class="line">$.cordys.ajax(&#123;</span><br><span class="line">	method: <span class="string">"Readperson"</span>,</span><br><span class="line">	namespace: <span class="string">"http://schemas/AppWorksTipsproj_gen/person/operations"</span>,</span><br><span class="line">	parameters: &#123;</span><br><span class="line">		<span class="string">"person-id"</span>: &#123;</span><br><span class="line">			ItemId: itemId</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,</span><br><span class="line">	success: successFunction,</span><br><span class="line">	error: errorFunction</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>Take a note of the ‘parameters’ input where you can clearly see a match in naming of the earlier SOAP request!</p>
+<p>Publish and double check in runtime, but you probably did this already!</p>
+<hr>
+<h4 id="Final-result-after-some-small-style-changes"><a href="#Final-result-after-some-small-style-changes" class="headerlink" title="Final result (after some small style changes!)"></a>Final result (after some small style changes!)</h4><p><img alt="html5sdk_018" class="post-img b-lazy" href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_018.png" data-src="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/html5sdk_018.png"></p>
+<p>My ‘playground’ project can be downloaded <a href="/images/posts/2021/103_your_first_baby_steps_on_working_with_html5_sdk/AppWorksAssets_final.zip">here</a>. Is there more to explore? For sure, like a call with all the other <code>$.cordys</code> functions, but that is something I’ll leave with you. The same for a dive in all the external JS libraries you saw passing by in this post…A whole new world to dive in, but not for this post…I leave it with you, but don’t hesitate to share some nice coding examples, so others can learn from your experiences too.</p>
+<hr>
+<p>That’s it…Hard work to figure out all this stuff, but what a learning experience! That’s a “DONE” where we can be proud of. We really learned some baby steps on how to start working with the HTML5SDK that is delivered with the platform. We also saw a lot of other frameworks that can be used to add some efficient development to create the most creative SPA deliveries that we can craft. Great stuff to play around with, and we opened a whole new perspective on the AppWorks platform…Have a great week-end, and I see you in the next one where we continue to play around with all the greatness that the AppWorks platform is delivering us…Cheers!</p>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="Calling SOAP and ReST via Postman (incl. authentication)" href="/2021/07/23/104_calling_soap_and_rest_via_postman/">
+            <i class="fa-solid fa-backward"></i> Calling SOAP and ReST via Postman (incl. authentication)
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="The magic behind a synchronized partition in OTDS" href="/2021/07/09/102_the_magic_behind_a_synchronized_partition_in_otds/">
+            The magic behind a synchronized partition in OTDS <i class="fa-solid fa-forward"></i>
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Let’s-start-simple"><span class="toc-text">Let’s start simple!</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Call-HTML-file-from-entity-layout"><span class="toc-text">Call HTML file from entity layout!?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Faster-development"><span class="toc-text">Faster development?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Add-some-JavaScript…"><span class="toc-text">Add some JavaScript…</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Expose-the-‘AllPersons’-webservice"><span class="toc-text">Expose the ‘AllPersons’ webservice</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Add-a-table-view-and-bind-the-data-to-it"><span class="toc-text">Add a table view (and bind the data to it!)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#An-example-call-with-JsRender"><span class="toc-text">An example call with JsRender</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Call-some-styling"><span class="toc-text">Call some styling!?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Push-the-‘current-entity-ID’-as-parameter"><span class="toc-text">Push the ‘current entity ID’ as parameter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Final-result-after-some-small-style-changes"><span class="toc-text">Final result (after some small style changes!)</span></a></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2023/12/15/204_connect_source_control_after_project_creation/">The ultimate workspace wizardry; How to supercharge your WS with source control after creation</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/12/08/203_auto_assign_cases_tasks/">Ultimate productivity with this jaw-dropping follow-up to auto-assign Cases and Tasks</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/12/01/202_working_with_task_workqueues/">Unlock your knowledge for dominating task workqueues; You'll never work the same way again</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/24/201_subtyping_vs_database/">Shocking showdown; Subtyping vs. Database - You won't believe what happens</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/17/200_speedtest_parallel_processing/">Unbelievable results revealed; Harnessing parallel processing for mind-blowing insights</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/10/199_feel_the_power_of_a_form_section/">Behold the power of a section within an entity 'Form' building block</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/03/198_iconize_buttons_with_unicode/">Discover how to revolutionize your action buttons with Unicode icons</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/10/27/197_xslt_data_transformation/">Prepare the magic; Watch how XML data gets a mind-blowing makeover with XSLT</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Release/">Release</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/AI/" style="font-size: 14px;">AI</a> <a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/API/" style="font-size: 14.63px;">API</a> <a href="/tags/Abstract/" style="font-size: 14px;">Abstract</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/ActiveMQ/" style="font-size: 14.63px;">ActiveMQ</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 15.88px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 15.88px;">Anniversary</a> <a href="/tags/Apache/" style="font-size: 14.63px;">Apache</a> <a href="/tags/ApacheDirectoryStudio/" style="font-size: 14px;">ApacheDirectoryStudio</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Archive/" style="font-size: 14.63px;">Archive</a> <a href="/tags/Artifact/" style="font-size: 15.25px;">Artifact</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/Audit/" style="font-size: 14px;">Audit</a> <a href="/tags/Authentication/" style="font-size: 14.63px;">Authentication</a> <a href="/tags/BPM/" style="font-size: 22.75px;">BPM</a> <a href="/tags/Base64/" style="font-size: 14px;">Base64</a> <a href="/tags/Brava/" style="font-size: 14px;">Brava!</a> <a href="/tags/BuildingBlock/" style="font-size: 15.25px;">BuildingBlock</a> <a href="/tags/BuildingBlocks/" style="font-size: 15.25px;">BuildingBlocks</a> <a href="/tags/BulkUpdate/" style="font-size: 14px;">BulkUpdate</a> <a href="/tags/BusinessID/" style="font-size: 14px;">BusinessID</a> <a href="/tags/BusinessIdentifier/" style="font-size: 14px;">BusinessIdentifier</a> <a href="/tags/BusinessWorkspace/" style="font-size: 14px;">BusinessWorkspace</a> <a href="/tags/CAF/" style="font-size: 14px;">CAF</a> <a href="/tags/CARS/" style="font-size: 14.63px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 15.25px;">CD/CI</a> <a href="/tags/CIM/" style="font-size: 14px;">CIM</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMC/" style="font-size: 14px;">CMC</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 16.5px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/CaseInstanceMonitor/" style="font-size: 14px;">CaseInstanceMonitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Charts/" style="font-size: 14px;">Charts</a> <a href="/tags/ChatGPT/" style="font-size: 14px;">ChatGPT</a> <a href="/tags/Cleaning/" style="font-size: 14.63px;">Cleaning</a> <a href="/tags/Cloud/" style="font-size: 14px;">Cloud</a> <a href="/tags/Condition/" style="font-size: 14.63px;">Condition</a> <a href="/tags/ConfigEntity/" style="font-size: 14px;">ConfigEntity</a> <a href="/tags/ConnectedWorkspace/" style="font-size: 14px;">ConnectedWorkspace</a> <a href="/tags/Connector/" style="font-size: 15.88px;">Connector</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Content/" style="font-size: 16.5px;">Content</a> <a href="/tags/ContentServer/" style="font-size: 16.5px;">ContentServer</a> <a href="/tags/Custom/" style="font-size: 15.88px;">Custom</a> <a href="/tags/CustomWebservice/" style="font-size: 14px;">CustomWebservice</a> <a href="/tags/Customization/" style="font-size: 16.5px;">Customization</a> <a href="/tags/Data/" style="font-size: 14px;">Data</a> <a href="/tags/Database/" style="font-size: 17.13px;">Database</a> <a href="/tags/DatabaseMetadata/" style="font-size: 14.63px;">DatabaseMetadata</a> <a href="/tags/Date/" style="font-size: 14px;">Date</a> <a href="/tags/DateTime/" style="font-size: 14px;">DateTime</a> <a href="/tags/Debugging/" style="font-size: 14.63px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 17.75px;">Digital</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/DocumentstoreConnector/" style="font-size: 15.25px;">DocumentstoreConnector</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/EISConnector/" style="font-size: 14.63px;">EISConnector</a> <a href="/tags/Email/" style="font-size: 14.63px;">Email</a> <a href="/tags/EnterpriseWorld/" style="font-size: 19px;">EnterpriseWorld</a> <a href="/tags/Entity/" style="font-size: 20.25px;">Entity</a> <a href="/tags/EntityContext/" style="font-size: 14px;">EntityContext</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Explorer/" style="font-size: 14.63px;">Explorer</a> <a href="/tags/Expressions/" style="font-size: 14px;">Expressions</a> <a href="/tags/Feature/" style="font-size: 14px;">Feature</a> <a href="/tags/FileConnector/" style="font-size: 14px;">FileConnector</a> <a href="/tags/Filter/" style="font-size: 14px;">Filter</a> <a href="/tags/Flag/" style="font-size: 14px;">Flag</a> <a href="/tags/ForLoop/" style="font-size: 14px;">ForLoop</a> <a href="/tags/Form/" style="font-size: 19.63px;">Form</a> <a href="/tags/Function/" style="font-size: 14px;">Function</a> <a href="/tags/Gateway/" style="font-size: 14.63px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Google/" style="font-size: 14px;">Google</a> <a href="/tags/Graphics/" style="font-size: 14px;">Graphics</a> <a href="/tags/Grid/" style="font-size: 14px;">Grid</a> <a href="/tags/HTML5/" style="font-size: 14px;">HTML5</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/Homepage/" style="font-size: 14.63px;">Homepage</a> <a href="/tags/HowTo/" style="font-size: 15.88px;">HowTo</a> <a href="/tags/Icons/" style="font-size: 14px;">Icons</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14.63px;">Identity</a> <a href="/tags/IdentityPackage/" style="font-size: 15.25px;">IdentityPackage</a> <a href="/tags/InformationHub/" style="font-size: 14px;">InformationHub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.13px;">Installation</a> <a href="/tags/IntelligentViewing/" style="font-size: 14.63px;">IntelligentViewing</a> <a href="/tags/Interceptor/" style="font-size: 14px;">Interceptor</a> <a href="/tags/IsTemporaryCopy/" style="font-size: 14px;">IsTemporaryCopy</a> <a href="/tags/ItemStatus/" style="font-size: 14px;">ItemStatus</a> <a href="/tags/JMS/" style="font-size: 14.63px;">JMS</a> <a href="/tags/JMeter/" style="font-size: 14px;">JMeter</a> <a href="/tags/JSON/" style="font-size: 15.25px;">JSON</a> <a href="/tags/JShell/" style="font-size: 14px;">JShell</a> <a href="/tags/JUnit/" style="font-size: 14px;">JUnit</a> <a href="/tags/JXplorer/" style="font-size: 14px;">JXplorer</a> <a href="/tags/Java/" style="font-size: 15.88px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 14.63px;">JavaScript</a> <a href="/tags/JavaUI/" style="font-size: 14px;">JavaUI</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/LDAP/" style="font-size: 14.63px;">LDAP</a> <a href="/tags/LandingPage/" style="font-size: 14px;">LandingPage</a> <a href="/tags/Language/" style="font-size: 14.63px;">Language</a> <a href="/tags/LanguagePack/" style="font-size: 14px;">LanguagePack</a> <a href="/tags/Less/" style="font-size: 14px;">Less</a> <a href="/tags/License/" style="font-size: 14.63px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.88px;">Lifecycle</a> <a href="/tags/LinkDocument/" style="font-size: 14px;">LinkDocument</a> <a href="/tags/LinkedEntity/" style="font-size: 14px;">LinkedEntity</a> <a href="/tags/List/" style="font-size: 14.63px;">List</a> <a href="/tags/Logging/" style="font-size: 14px;">Logging</a> <a href="/tags/LongTextProperty/" style="font-size: 14px;">LongTextProperty</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 14.63px;">Management</a> <a href="/tags/Message/" style="font-size: 14px;">Message</a> <a href="/tags/Metadata/" style="font-size: 14px;">Metadata</a> <a href="/tags/Method/" style="font-size: 14px;">Method</a> <a href="/tags/Migration/" style="font-size: 14px;">Migration</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Mockito/" style="font-size: 14px;">Mockito</a> <a href="/tags/Model/" style="font-size: 14px;">Model</a> <a href="/tags/Modeling/" style="font-size: 14.63px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 14.63px;">Monitoring</a> <a href="/tags/NGINX/" style="font-size: 14px;">NGINX</a> <a href="/tags/Northwind/" style="font-size: 14px;">Northwind</a> <a href="/tags/Notification/" style="font-size: 14px;">Notification</a> <a href="/tags/OKTA/" style="font-size: 14px;">OKTA</a> <a href="/tags/OTDS/" style="font-size: 17.75px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 23.38px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Order/" style="font-size: 14px;">Order</a> <a href="/tags/Organization/" style="font-size: 15.25px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/Package/" style="font-size: 15.25px;">Package</a> <a href="/tags/Parallel/" style="font-size: 14px;">Parallel</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/Pattern/" style="font-size: 14px;">Pattern</a> <a href="/tags/Personal/" style="font-size: 14px;">Personal</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 14px;">Postman</a> <a href="/tags/PowerMockito/" style="font-size: 14px;">PowerMockito</a> <a href="/tags/Preferences/" style="font-size: 14px;">Preferences</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/ProgressionBar/" style="font-size: 14px;">ProgressionBar</a> <a href="/tags/Project/" style="font-size: 15.25px;">Project</a> <a href="/tags/Projects/" style="font-size: 14px;">Projects</a> <a href="/tags/Properties/" style="font-size: 14.63px;">Properties</a> <a href="/tags/Property/" style="font-size: 15.25px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/RHEL/" style="font-size: 14px;">RHEL</a> <a href="/tags/ReST/" style="font-size: 15.88px;">ReST</a> <a href="/tags/ReST-Gateway/" style="font-size: 14px;">ReST Gateway</a> <a href="/tags/Recap/" style="font-size: 15.88px;">Recap</a> <a href="/tags/RegularExpression/" style="font-size: 14.63px;">RegularExpression</a> <a href="/tags/Relations/" style="font-size: 15.25px;">Relations</a> <a href="/tags/Release/" style="font-size: 20.88px;">Release</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/ResultList/" style="font-size: 15.25px;">ResultList</a> <a href="/tags/Reusability/" style="font-size: 14px;">Reusability</a> <a href="/tags/Reverse-proxy/" style="font-size: 14px;">Reverse proxy</a> <a href="/tags/Role/" style="font-size: 14px;">Role</a> <a href="/tags/Roles/" style="font-size: 14.63px;">Roles</a> <a href="/tags/Rule/" style="font-size: 14.63px;">Rule</a> <a href="/tags/Rules/" style="font-size: 14px;">Rules</a> <a href="/tags/Runtime-Security/" style="font-size: 14px;">Runtime Security</a> <a href="/tags/SAML/" style="font-size: 14px;">SAML</a> <a href="/tags/SDK/" style="font-size: 14.63px;">SDK</a> <a href="/tags/SOAP/" style="font-size: 15.25px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 14.63px;">SVN</a> <a href="/tags/Scheduler/" style="font-size: 14px;">Scheduler</a> <a href="/tags/Search/" style="font-size: 14px;">Search</a> <a href="/tags/Section/" style="font-size: 14px;">Section</a> <a href="/tags/Sections/" style="font-size: 14px;">Sections</a> <a href="/tags/Security/" style="font-size: 14px;">Security</a> <a href="/tags/Selenium/" style="font-size: 14px;">Selenium</a> <a href="/tags/Service/" style="font-size: 14px;">Service</a> <a href="/tags/ServiceContainer/" style="font-size: 14px;">ServiceContainer</a> <a href="/tags/Setup/" style="font-size: 15.88px;">Setup</a> <a href="/tags/ShortLived/" style="font-size: 14px;">ShortLived</a> <a href="/tags/SimpleClient/" style="font-size: 14px;">SimpleClient</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 15.88px;">Software</a> <a href="/tags/Solutions/" style="font-size: 14px;">Solutions</a> <a href="/tags/SourceControl/" style="font-size: 14px;">SourceControl</a> <a href="/tags/Sources/" style="font-size: 14px;">Sources</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Storage/" style="font-size: 14px;">Storage</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/SubProcess/" style="font-size: 14px;">SubProcess</a> <a href="/tags/Subtyping/" style="font-size: 14.63px;">Subtyping</a> <a href="/tags/Sync/" style="font-size: 14px;">Sync</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/SynchronizedPartition/" style="font-size: 14px;">SynchronizedPartition</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 15.25px;">Task</a> <a href="/tags/TaskLayout/" style="font-size: 14px;">TaskLayout</a> <a href="/tags/Tasks/" style="font-size: 14.63px;">Tasks</a> <a href="/tags/Team/" style="font-size: 14px;">Team</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Test/" style="font-size: 14px;">Test</a> <a href="/tags/Testing/" style="font-size: 15.25px;">Testing</a> <a href="/tags/Theme/" style="font-size: 16.5px;">Theme</a> <a href="/tags/Time/" style="font-size: 14px;">Time</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/Title/" style="font-size: 14px;">Title</a> <a href="/tags/Toggle/" style="font-size: 14px;">Toggle</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/Tool/" style="font-size: 14px;">Tool</a> <a href="/tags/Tools/" style="font-size: 14.63px;">Tools</a> <a href="/tags/Transformation/" style="font-size: 14px;">Transformation</a> <a href="/tags/Translation/" style="font-size: 14.63px;">Translation</a> <a href="/tags/UDDI/" style="font-size: 14.63px;">UDDI</a> <a href="/tags/UnInstallation/" style="font-size: 14px;">UnInstallation</a> <a href="/tags/Unicode/" style="font-size: 14px;">Unicode</a> <a href="/tags/Update/" style="font-size: 18.38px;">Update</a> <a href="/tags/Upgrade/" style="font-size: 14px;">Upgrade</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/ValueAssistance/" style="font-size: 14.63px;">ValueAssistance</a> <a href="/tags/Version/" style="font-size: 14px;">Version</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/Video/" style="font-size: 14px;">Video</a> <a href="/tags/Viewer/" style="font-size: 14px;">Viewer</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WSAppServer/" style="font-size: 14px;">WSAppServer</a> <a href="/tags/WebLibraryDefinition/" style="font-size: 14.63px;">WebLibraryDefinition</a> <a href="/tags/Webservice/" style="font-size: 19.63px;">Webservice</a> <a href="/tags/WhileLoop/" style="font-size: 14px;">WhileLoop</a> <a href="/tags/Worklist/" style="font-size: 14px;">Worklist</a> <a href="/tags/Workqueue/" style="font-size: 14.63px;">Workqueue</a> <a href="/tags/Workspace/" style="font-size: 15.88px;">Workspace</a> <a href="/tags/XDS/" style="font-size: 14.63px;">XDS</a> <a href="/tags/XML/" style="font-size: 15.25px;">XML</a> <a href="/tags/XPath/" style="font-size: 15.25px;">XPath</a> <a href="/tags/XSLT/" style="font-size: 14px;">XSLT</a> <a href="/tags/xECM/" style="font-size: 16.5px;">xECM</a> <a href="/tags/xForm/" style="font-size: 16.5px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+
+	
+
+
+
+<div id="download002" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps prototyping booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download002" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="tfokgrtbsp">
+            <p><input class="search-input" type="text" placeholder="First name" name="UIMy41yrHk" id="id-UIMy41yrHk"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="frlQMmEVB9" id="id-frlQMmEVB9"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="p5xcHl0BfA" id="id-p5xcHl0BfA"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="download" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps fundamentals booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="qdlxpohveb">
+            <p><input class="search-input" type="text" placeholder="First name" name="9aiQvAsyHa" id="id-9aiQvAsyHa"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="pKdGB3hCf6" id="id-pKdGB3hCf6"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="8azv3a7ZO9" id="id-8azv3a7ZO9"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="hosting" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Plan you strategic AppWorks hosting</h1>
+        <h2 class="site-description">You will receive a mail with information on next steps</h2>
+        <form name="hosting" action="https://appworks-tips.email-provider.eu/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="ojenuvc25g">
+            <p><input class="search-input" type="text" placeholder="First name" name="kZYzubjXZ1" id="id-kZYzubjXZ1"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="DU7uu8Hd1B" id="id-DU7uu8Hd1B"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="7" name="waY3MUqJDo" id="id-waY3MUqJDo" placeholder="Turn you wish into a command"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="OTyYwKXWRE" id="id-OTyYwKXWRE"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><i>AppWorks hosting is a payable service handled via monthly invoicing. This means that you will be billed for the service <br>after it has been provided to you under our signed service agreement which we put in place after our free call.</i></p>
+            <p><input class="submit-input" type="submit" value="Take action!"></p>
+        </form>
+    </div>
+</div>
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="google" class="search-overlay subscribe-overlay">
+        <div class="search-form" style="height:8rem;">
+            
+            <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+            
+            <script async src="https://cse.google.com/cse.js?cx=784555e4960d85d09"></script>
+            <div id="cse" style="width: 80%; margin: 0 auto; text-align:left">
+            <div class="gcse-search"></div>
+            </div>
+            <a class="search-overlay-close" href="#"></a>
+        </div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback or any question</h1>
+        <h2 class="site-description">Send back any feedback or question so we can inspect and adapt our features or help you on your own journey.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback or any question"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Send"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2023
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Your first baby steps on working with the HTML5 SDK</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+
+<script src="/js/mix/post-lazy.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av.js"></script>-->
+
+<script src="/js/av.js"></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1112 @@
+Building appworks
+Step 1/63 : ARG BASE_VERSION=openjdk:11.0.6-jdk
+Step 2/63 : ARG TOMEE_DIR=/usr/local/tomee
+Step 3/63 : ARG INSTALL_DIR=/opt/appworks
+Step 4/63 : FROM $BASE_VERSION as throw_away
+11.0.6-jdk: Pulling from library/openjdk
+f15005b0235f: Pull complete
+41ebfd3d2fd0: Pull complete
+b998346ba308: Pull complete
+f01ec562c947: Pull complete
+74c11ae3efe8: Pull complete
+c65829cc6c71: Pull complete
+b98eacc09bf1: Pull complete
+Digest: sha256:9d8aa35c00b3c5dd86b2717c4a70b7aec0534c94945263cf0256fa9462b931af
+Status: Downloaded newer image for openjdk:11.0.6-jdk
+ ---> 8ae694851c0d
+Step 5/63 : ARG TOMEE_DIR
+ ---> Running in 6ea46048a1c7
+Removing intermediate container 6ea46048a1c7
+ ---> 7129c4d94330
+Step 6/63 : ARG INSTALL_DIR
+ ---> Running in b4d315b16265
+Removing intermediate container b4d315b16265
+ ---> 712c609a2e05
+Step 7/63 : RUN if [ -f "/etc/alpine-release" ]; then apk --no-cache add bash libstdc++ libuuid libxml2; fi
+ ---> Running in 7e8e89710ee7
+Removing intermediate container 7e8e89710ee7
+ ---> 8f2ff98af0fe
+Step 8/63 : RUN chmod -R 1777 /tmp
+ ---> Running in 8c29ab4ef6f7
+Removing intermediate container 8c29ab4ef6f7
+ ---> e48d28f9baa9
+Step 9/63 : ARG TOMEE_LOCATION=https://downloads.apache.org/tomee/tomee-8.0.1/apache-tomee-8.0.1-plus.tar.gz
+ ---> Running in 2c64854fde5f
+Removing intermediate container 2c64854fde5f
+ ---> bb77c56effed
+Step 10/63 : ARG TOMEE_SHA256=617ee5c490886f4fdde7cbd42cae004e73542f5e34370d8a63396f297ce12ed2
+ ---> Running in ba65e57b9078
+Removing intermediate container ba65e57b9078
+ ---> 803dd096dcef
+Step 11/63 : ADD $TOMEE_LOCATION /tmp/tomee.tar.gz
+ ---> 4cf08a9fa582
+Step 12/63 : RUN if [ -d /tmp/tomee.tar.gz ] ; then     mv /tmp/tomee.tar.gz/* "${TOMEE_DIR}";   else           echo "${TOMEE_SHA256} */tmp/tomee.tar.gz" | sha256sum -c;       mkdir "${TOMEE_DIR}";         tar -zxf /tmp/tomee.tar.gz --strip-components=1 -C "${TOMEE_DIR}";   fi;
+ ---> Running in 48f8ecd0349d
+/tmp/tomee.tar.gz: OK
+Removing intermediate container 48f8ecd0349d
+ ---> a7c0cb521ca6
+Step 13/63 : RUN rm -rf ${TOMEE_DIR}/bin/*.bat ${TOMEE_DIR}/bin/*.exe "${TOMEE_DIR}/webapps/ROOT" "${TOMEE_DIR}/webapps/docs" "${TOMEE_DIR}/webapps/manager" "${TOMEE_DIR}/webapps/host-manager"
+ ---> Running in f8339b0c12e5
+Removing intermediate container f8339b0c12e5
+ ---> 6542d8d46b42
+Step 14/63 : ARG POSTGRESQL_LOCATION=https://repo.maven.apache.org/maven2/org/postgresql/postgresql/42.2.10/postgresql-42.2.10.jar
+ ---> Running in 7c59f897ed9d
+Removing intermediate container 7c59f897ed9d
+ ---> dfd5eb970a12
+Step 15/63 : ARG POSTGRESQL_SHA256=7b9ce944866a87e9c173e5884cd0195e4555aff88e5ec74df7c11bedd2a73f74
+ ---> Running in 208238d422ed
+Removing intermediate container 208238d422ed
+ ---> 44b393396b48
+Step 16/63 : ADD ${POSTGRESQL_LOCATION} ${TOMEE_DIR}/lib/postgresql-jdbc.jar
+ ---> 45677ae9c6b2
+Step 17/63 : RUN echo "${POSTGRESQL_SHA256} *${TOMEE_DIR}/lib/postgresql-jdbc.jar" > sha256sum -c -
+ ---> Running in a1677de1dd93
+Removing intermediate container a1677de1dd93
+ ---> 348767c85dff
+Step 18/63 : ARG ORACLEDB_LOCATION=https://repo.maven.apache.org/maven2/com/oracle/ojdbc/ojdbc10/19.3.0.0/ojdbc10-19.3.0.0.jar
+ ---> Running in 65605de3c318
+Removing intermediate container 65605de3c318
+ ---> 1ca076ac08d5
+Step 19/63 : ARG ORACLEDB_SHA256=fa22689cd3fbb037f4ec864125ebe78325f3811fc50cf194c6bd70fe7e514568
+ ---> Running in f4adb46a5cea
+Removing intermediate container f4adb46a5cea
+ ---> 4184c868cf4c
+Step 20/63 : ADD ${ORACLEDB_LOCATION} ${TOMEE_DIR}/lib/oracledb-jdbc.jar
+ ---> 83e7447eb85c
+Step 21/63 : RUN echo "${ORACLEDB_SHA256} *${TOMEE_DIR}/lib/oracledb-jdbc.jar" | sha256sum -c
+ ---> Running in cf942e79d0fd
+/usr/local/tomee/lib/oracledb-jdbc.jar: OK
+Removing intermediate container cf942e79d0fd
+ ---> 738cc46ac032
+Step 22/63 : ARG MSSQL_LOCATION=https://repo.maven.apache.org/maven2/com/microsoft/sqlserver/mssql-jdbc/8.2.0.jre11/mssql-jdbc-8.2.0.jre11.jar
+ ---> Running in 8bbb779b02d6
+Removing intermediate container 8bbb779b02d6
+ ---> d91dae8ab7d5
+Step 23/63 : ARG MSSQL_SHA256=5317bbf494ffb91d92ffd447692fb916cbaab85cbd206dd093e5f9a237b65ac7
+ ---> Running in 5c970ee766f0
+Removing intermediate container 5c970ee766f0
+ ---> d40d444d3ea9
+Step 24/63 : ADD ${MSSQL_LOCATION} ${TOMEE_DIR}/lib/mssql-jdbc.jar
+ ---> fe04857abbab
+Step 25/63 : RUN echo "${MSSQL_SHA256} *${TOMEE_DIR}/lib/mssql-jdbc.jar" | sha256sum -c
+ ---> Running in 44b0db01d79c
+/usr/local/tomee/lib/mssql-jdbc.jar: OK
+Removing intermediate container 44b0db01d79c
+ ---> 72f7ed7cd037
+Step 26/63 : ARG PV_BASE_DIR=$INSTALL_DIR
+ ---> Running in 826cfaf1bc9b
+Removing intermediate container 826cfaf1bc9b
+ ---> d1cb0f201cf3
+Step 27/63 : ARG WCP_PROPERTY
+ ---> Running in 4b25cf8edd9f
+Removing intermediate container 4b25cf8edd9f
+ ---> 4fe054d28e4a
+Step 28/63 : ADD baselinefs.tar.gz ${INSTALL_DIR}/
+ ---> f147fa5cb428
+Step 29/63 : COPY cap/packages/ $INSTALL_DIR/packages/
+ ---> c8b0fe723a46
+Step 30/63 : COPY cap/templates/ $INSTALL_DIR/captmp/templates/
+ ---> 0baf9e2ed998
+Step 31/63 : COPY cap/certificates/ $INSTALL_DIR/tmp/certificates/
+ ---> 30e258f8bbc7
+Step 32/63 : COPY copy-to-image/appworks "${INSTALL_DIR}"
+ ---> 6a7ae0043911
+Step 33/63 : RUN true
+ ---> Running in be116466e531
+Removing intermediate container be116466e531
+ ---> a2fb2668de2f
+Step 34/63 : COPY copy-to-image/tomee "${TOMEE_DIR}"
+ ---> b7e1fe22b6ef
+Step 35/63 : RUN printf "\ncom.cordys.applicationserver.appBase=${TOMEE_DIR}/webapps\ncom.cordys.applicationserver.base=${TOMEE_DIR}\ncom.cordys.applicationserver.home=${TOMEE_DIR}\ncom.cordys.applicationserver.host=localhost\ncom.appworks.persistentdirectory=${PV_BASE_DIR}\ncom.opentext.appworks.packages.base.dir=${PV_BASE_DIR}/cluster/shared\ncom.eibus.web.tools.download.DownloadReadPath=${PV_BASE_DIR}/cluster/shared/downloadcontent\ncom.eibus.web.tools.upload.UploadWritePath=${PV_BASE_DIR}/cluster/shared/uploadcontent\ncom.eibus.license.LicMasterStoreDir=${PV_BASE_DIR}/cluster/shared/license/masterstore\ncom.eibus.license.MasterLogDir.key=${PV_BASE_DIR}/cluster/shared/license/master/log/key\ncom.eibus.license.MasterLogDir.report=${PV_BASE_DIR}/cluster/shared/license/master/log/report\ncom.eibus.license.LogDir.key=${PV_BASE_DIR}/cluster/shared/license/log/key\ncom.eibus.license.LogDir.report=${PV_BASE_DIR}/cluster/shared/license/log/report\ncom.cordys.xatransaction.logfiledir=${PV_BASE_DIR}/node/transactionlogs\ncordys.eventgateway.subscriptions.location=${PV_BASE_DIR}/node/eventservice\ncordys.home=${INSTALL_DIR}\nweb.root=${INSTALL_DIR}/webroot\njava.home=${JAVA_HOME}\n${WCP_PROPERTY:-}" >> "${INSTALL_DIR}/config/wcp.properties"
+ ---> Running in 039fe1757691
+Removing intermediate container 039fe1757691
+ ---> 738951c9e682
+Step 36/63 : RUN CORDYS_INSTALL_DIR="${INSTALL_DIR}" LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${INSTALL_DIR}/lib"  java -cp "${INSTALL_DIR}/cordyscp.jar:$(find ${TOMEE_DIR}/lib -name 'geronimo-config-impl-*.jar'):$(find ${TOMEE_DIR}/lib -name 'microprofile-config-api-*.jar')"       com.cordys.system.ApplicationServerClassLoader
+ ---> Running in eee377c9f5a8
+Removing intermediate container eee377c9f5a8
+ ---> 325c895be0ba
+Step 37/63 : RUN start=$(date +%s) && CORDYS_INSTALL_DIR="${INSTALL_DIR}" LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${INSTALL_DIR}/lib"       java -cp "${INSTALL_DIR}/cordyscp.jar" com.cordys.cap.framework.build.NodeArtifactExtractor && end=$(date +%s) && runtime=$((end-start)) && echo "Package installation took $runtime seconds."
+ ---> Running in 81c0203f4927
+------------------------------------------------------------------------
+Start processing package 'Cordys CAPConnector'
+Cordys CAPConnector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys XMLStore'
+Cordys XMLStore is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Security Admin Core'
+Cordys Security Admin Core is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys XForms Runtime'
+Cordys XForms Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Task Server'
+Cordys Task Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Tag Server'
+Cordys Tag Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Audit Service'
+Cordys Audit Service is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Web Gateway'
+Cordys Web Gateway is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Translator'
+Cordys Translator is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Single Sign-On'
+Cordys Single Sign-On is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Single Sign-On XForms'
+Cordys Single Sign-On XForms is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys XMLStore Content'
+Cordys XMLStore Content is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys ESBServer'
+Cordys ESBServer is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Application Server'
+Cordys Application Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys LDAP Connector'
+Cordys LDAP Connector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys ISVP Connector'
+Cordys ISVP Connector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys DBConnection'
+Cordys DBConnection is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Event Service'
+Cordys Event Service is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys AJAX Toolkit'
+Cordys AJAX Toolkit is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys@Work'
+Cordys@Work is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Preference'
+Cordys Preference is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText License'
+OpenText License is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Common Content Runtime'
+Cordys Common Content Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys XForms Runtime Messagebundle'
+Cordys XForms Runtime Messagebundle is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CAP Content'
+Cordys CAP Content is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CAP UI'
+Cordys CAP UI is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Rule Engine'
+Cordys Rule Engine is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS Core'
+Cordys CWS Core is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS Bootstrap Helper'
+Cordys CWS Bootstrap Helper is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS Build And Deploy Engine'
+Cordys CWS Build And Deploy Engine is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Translation Modeler Server'
+Cordys Translation Modeler Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS Code Generation'
+Cordys CWS Code Generation is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS Build And Deploy Implementation'
+Cordys CWS Build And Deploy Implementation is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Common Document Types'
+Cordys Common Document Types is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys ACL Modeler Server'
+Cordys ACL Modeler Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Runtime'
+OpenText Entity Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Core'
+OpenText Entity Core is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity FileStore'
+OpenText Entity FileStore is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Content Template'
+OpenText Entity Content Template is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Title'
+OpenText Entity Title is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Content'
+OpenText Entity Content is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys E-mail Connector'
+Cordys E-mail Connector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Archiving Engine'
+Cordys Archiving Engine is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Identity'
+OpenText Identity is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Notification'
+Cordys Notification is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys WS-AppServer'
+Cordys WS-AppServer is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Scheduler'
+Cordys Scheduler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys State Machine Engine'
+Cordys State Machine Engine is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys MessageList Server'
+Cordys MessageList Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Common Modeler Components'
+Cordys Common Modeler Components is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys XMLStore Modeler'
+Cordys XMLStore Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Business Calendar Runtime'
+Cordys Business Calendar Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Document Store'
+Cordys Document Store is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Business Process Engine'
+Cordys Business Process Engine is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Case Management Runtime'
+Cordys Case Management Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity EmailLog'
+OpenText Entity EmailLog is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText EISConnector'
+OpenText EISConnector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText iHub Connector'
+OpenText iHub Connector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Instance Role Modeler'
+OpenText Instance Role Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS Runtime XForms'
+Cordys CWS Runtime XForms is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys UDDI Connector'
+Cordys UDDI Connector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys XML Schema Server'
+Cordys XML Schema Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Tag Definition Server'
+Cordys Tag Definition Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Task Modeler Server'
+Cordys Task Modeler Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Role Modeler Server'
+Cordys Role Modeler Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Graphical Modeling Framework'
+Cordys Graphical Modeling Framework is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Organization Model Runtime'
+Cordys Organization Model Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Build Deploy Utility'
+Cordys Build Deploy Utility is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Organization Modeler'
+Cordys Organization Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Business Object Document'
+Cordys Business Object Document is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Application Connector Server'
+Cordys Application Connector Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Web Service Modeler Server'
+Cordys Web Service Modeler Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Database Schema Modeler'
+Cordys Database Schema Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys WS-AppServer Modeler'
+Cordys WS-AppServer Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Web Service Modeler Client'
+Cordys Web Service Modeler Client is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS Form Controls'
+Cordys CWS Form Controls is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Rule Modeler'
+Cordys Rule Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Tag Definition Client'
+Cordys Tag Definition Client is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity EmailConfiguration'
+OpenText Entity EmailConfiguration is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Email'
+OpenText Entity Email is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS Plugin Environment Runtime'
+Cordys CWS Plugin Environment Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS Document Exchange Runtime'
+Cordys CWS Document Exchange Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity ActionBar'
+OpenText Entity ActionBar is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Expression'
+OpenText Entity Expression is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Worklist'
+OpenText Entity Worklist is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Identity'
+OpenText Entity Identity is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Form'
+OpenText Entity Form is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Layout'
+OpenText Entity Layout is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Business Identifier Modeler'
+Cordys Business Identifier Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Common Attachments'
+Cordys Common Attachments is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Dispatch Algorithm Modeler'
+Cordys Dispatch Algorithm Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Schedule Modeler'
+Cordys Schedule Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Worklist Modeler'
+Cordys Worklist Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Business Calendar Modeler'
+Cordys Business Calendar Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys User Interface Modeler Server'
+Cordys User Interface Modeler Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys XForms Modeler Server'
+Cordys XForms Modeler Server is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys KPI Modeler'
+Cordys KPI Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Workflow Delivery Modeler'
+Cordys Workflow Delivery Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Inbox Modeler'
+Cordys Inbox Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys E-mail Modeler'
+Cordys E-mail Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Business Process Designer'
+Cordys Business Process Designer is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Business Context Modeler'
+Cordys Business Context Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Value Chain Modeler'
+Cordys Value Chain Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BPM Import Plugins'
+Cordys BPM Import Plugins is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BPM Export Plugins'
+Cordys BPM Export Plugins is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Organization Removal Tool'
+Cordys Organization Removal Tool is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Data Mapper Runtime'
+Cordys Data Mapper Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText OTDS Platform Push Connector'
+OpenText OTDS Platform Push Connector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Native'
+OpenText Entity Native is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Taxonomy Report Plugin'
+OpenText Taxonomy Report Plugin is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Activity Flow Instance'
+OpenText Entity Activity Flow Instance is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Case Management Modeler'
+Cordys Case Management Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity EmailTemplate'
+OpenText Entity EmailTemplate is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity InboxTask'
+OpenText Entity InboxTask is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Task List'
+OpenText Entity Task List is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Category'
+OpenText Entity Category is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Rule'
+OpenText Entity Rule is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Lifecycle'
+OpenText Entity Lifecycle is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys UDDIConn Runtime'
+Cordys UDDIConn Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Web Service'
+OpenText Entity Web Service is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText OTDS Authentication'
+OpenText OTDS Authentication is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Security Administration XForms'
+Cordys Security Administration XForms is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity PrimitiveTypes'
+OpenText Entity PrimitiveTypes is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Deadline'
+OpenText Entity Deadline is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Security'
+OpenText Entity Security is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText External Connection'
+OpenText External Connection is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText External Entity'
+OpenText External Entity is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Logviewer Runtime'
+Cordys Logviewer Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Document Store Services'
+OpenText Document Store Services is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys XML Schema Client'
+Cordys XML Schema Client is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText OTDS Platform Configurator'
+OpenText OTDS Platform Configurator is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Activity Flow'
+OpenText Entity Activity Flow is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Inbox Task Management'
+OpenText Inbox Task Management is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BPM Report Plugin'
+Cordys BPM Report Plugin is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText iHub Connector Runtime'
+OpenText iHub Connector Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Translation Modeler Client'
+Cordys Translation Modeler Client is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BPM Runtime'
+Cordys BPM Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Content Map Modeler'
+Cordys Content Map Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Assignee'
+OpenText Entity Assignee is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity DisplayOrganization'
+OpenText Entity DisplayOrganization is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BOP Language Pack_fr-FR'
+Cordys BOP Language Pack_fr-FR is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Markup File'
+OpenText Entity Markup File is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity HistoryLog'
+OpenText Entity HistoryLog is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity History'
+OpenText Entity History is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Common Models'
+OpenText Entity Common Models is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Identity Components'
+OpenText Entity Identity Components is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Instance Security'
+OpenText Entity Instance Security is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity DiscussionNote'
+OpenText Entity DiscussionNote is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BOP Language Pack_de-DE'
+Cordys BOP Language Pack_de-DE is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys ACL Modeler Client'
+Cordys ACL Modeler Client is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Notification Runtime'
+Cordys Notification Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys User Management'
+Cordys User Management is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys FTP Connector'
+Cordys FTP Connector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Google Maps'
+Cordys Google Maps is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Sharing'
+OpenText Entity Sharing is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText CWS Core Extensions'
+OpenText CWS Core Extensions is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText CWS Contract Package'
+OpenText CWS Contract Package is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BOP Language Pack_fr'
+Cordys BOP Language Pack_fr is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS Synchronizer'
+Cordys CWS Synchronizer is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys CWS SVNAdapter Plugin'
+Cordys CWS SVNAdapter Plugin is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys XForms Modeler Client'
+Cordys XForms Modeler Client is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Default Case Management Event Types'
+OpenText Default Case Management Event Types is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText CWS Document Deployer'
+OpenText CWS Document Deployer is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Default Case Event Type Meta Space'
+OpenText Default Case Event Type Meta Space is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Role Modeler Client'
+Cordys Role Modeler Client is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText HTTP Connector'
+OpenText HTTP Connector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText HTTP Connector Runtime'
+OpenText HTTP Connector Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys WS-AppServer Runtime'
+Cordys WS-AppServer Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys User Interface Modeler Client'
+Cordys User Interface Modeler Client is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Theme Editor'
+OpenText Theme Editor is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Integrator Admin UI'
+Cordys Integrator Admin UI is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Globalization Scripting Components'
+OpenText Globalization Scripting Components is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys EmailConn Runtime'
+Cordys EmailConn Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Tracking'
+OpenText Entity Tracking is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BOP Language Pack_sv-SE'
+Cordys BOP Language Pack_sv-SE is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys FusionCharts'
+Cordys FusionCharts is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Google Visualization'
+Cordys Google Visualization is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Configuration Entity'
+OpenText Configuration Entity is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Audit Runtime'
+Cordys Audit Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Default Case Management Event Types 1.0 Staging'
+Cordys Default Case Management Event Types 1.0 Staging is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText EISRepositoryReference'
+OpenText EISRepositoryReference is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys External Web Service Modeler'
+Cordys External Web Service Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Security Admin'
+Cordys Security Admin is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Documentation'
+Cordys Documentation is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Core Extensions'
+OpenText Entity Core Extensions is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys JMSTransport'
+Cordys JMSTransport is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText JMS Connector'
+OpenText JMS Connector is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText JMS Connector Extensions'
+OpenText JMS Connector Extensions is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BOP Language Pack_ar-SA'
+Cordys BOP Language Pack_ar-SA is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity BusinessWorkspace'
+OpenText Entity BusinessWorkspace is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys User Assignment'
+Cordys User Assignment is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BOP Language Pack_nl-NL'
+Cordys BOP Language Pack_nl-NL is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Application Connector Client'
+Cordys Application Connector Client is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Composite Controls Runtime'
+Cordys Composite Controls Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Default Organization Unit Types 1.0 Staging'
+Cordys Default Organization Unit Types 1.0 Staging is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Activity Flow Task'
+OpenText Entity Activity Flow Task is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys HTML5 SDK'
+Cordys HTML5 SDK is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys FTPConn Runtime'
+Cordys FTPConn Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys TaskModel Client'
+Cordys TaskModel Client is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Discussion'
+OpenText Entity Discussion is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BOP Language Pack_ko-KR'
+Cordys BOP Language Pack_ko-KR is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Mobile App Deployer'
+OpenText Mobile App Deployer is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Ant Tasks'
+Cordys Ant Tasks is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Collaborative Workspace'
+Cordys Collaborative Workspace is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BOP Language Pack_es-ES'
+Cordys BOP Language Pack_es-ES is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Java Call Modeler'
+Cordys Java Call Modeler is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BOP Language Pack_zh-CN'
+Cordys BOP Language Pack_zh-CN is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity PrimitiveType Deployer'
+OpenText Entity PrimitiveType Deployer is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys JavaScript Message Bundle'
+Cordys JavaScript Message Bundle is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BPM Model Components'
+Cordys BPM Model Components is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Extended ECM'
+OpenText Extended ECM is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText Entity Identity Runtime'
+OpenText Entity Identity Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Scheduler Runtime'
+Cordys Scheduler Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys BOP Language Pack_ja-JP'
+Cordys BOP Language Pack_ja-JP is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Log Viewer'
+Cordys Log Viewer is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'Cordys Document Store Runtime'
+Cordys Document Store Runtime is processed successfully
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Start processing package 'OpenText AppWorksApp'
+OpenText AppWorksApp is processed successfully
+------------------------------------------------------------------------
+Package installation took 96 seconds.
+Removing intermediate container 81c0203f4927
+ ---> 8dad9b75eab7
+Step 38/63 : RUN  echo "$INSTALL_DIR/cordyscp.jar:" >> $INSTALL_DIR/config/bcp.classpath && echo "\n#!/bin/bash -eu\n. $INSTALL_DIR/bin/wcpenv.sh\njava com.eibus.tools.admin.cmc.CordysManagementConsole" >> $INSTALL_DIR/bin/cmc.sh && echo "\n#!/bin/bash -eu\n. $INSTALL_DIR/bin/wcpenv.sh\njava com.eibus.tools.simpleclient.SimpleClient" >> $INSTALL_DIR/bin/simpleclient.sh && chmod +x $INSTALL_DIR/bin/*.sh && echo "Configuring TomEE." && $INSTALL_DIR/bin/configureapplicationserver.sh install true && echo "Finished configuring TomEE." && echo "CORDYS_HOME=$INSTALL_DIR" > $INSTALL_DIR/bin/wcpenv.sh && echo "JAVA_HOME=$JAVA_HOME" >> $INSTALL_DIR/bin/wcpenv.sh && echo "PATH=\$CORDYS_HOME/bin:\$JAVA_HOME/bin:\$PATH" >> $INSTALL_DIR/bin/wcpenv.sh && echo "CLASSPATH=\$CORDYS_HOME/cordyscp.jar:$(pwd)/lib/mssql-jdbc-$VERSION_MSSQL.jar:$(pwd)/lib/ojdbc10-$VERSION_ORACLEDB.jar:$(pwd)/lib/postgresql-$VERSION_POSTGRESQL.jar:$CLASSPATH:\$CLASSPATH" >> $INSTALL_DIR/bin/wcpenv.sh && echo "LD_LIBRARY_PATH=\$JAVA_HOME/lib/server:\$CORDYS_HOME/lib:\$JAVA_HOME/lib:\$LD_LIBRARY_PATH" >> $INSTALL_DIR/bin/wcpenv.sh && echo "export CORDYS_HOME PATH CLASSPATH LD_LIBRARY_PATH" >> $INSTALL_DIR/bin/wcpenv.sh
+ ---> Running in 5fa321814f69
+Configuring TomEE.
+Finished configuring TomEE.
+Removing intermediate container 5fa321814f69
+ ---> 9c5ab4abae0a
+Step 39/63 : RUN CORDYS_INSTALL_DIR="${INSTALL_DIR}" LD_LIBRARY_PATH="$LD_LIBRARY_PATH:${INSTALL_DIR}/lib"   java -cp "${INSTALL_DIR}/components/basicutil/basicutil.jar:${INSTALL_DIR}/components/platformloader/platformloader.jar:${INSTALL_DIR}/applicationservercp.jar" com.opentext.platform.configuration.documentation.Generator
+ ---> Running in 2de78504d84d
+Extracting entityRestService.war
+Extraction entityRestService.war completed
+Class com.cordys.organizationremoval.xds.XDSOrganizationDataCleanupHandler.XDSConfigProviderImpl has a name attribute with a class name that appears not to exist, or the mentioned class is not an Application Connector.
+Invalid BuildingBlock(s): [EntityWebserviceBuildingBlock]
+/opt/appworks/config/template/settings-all.html has been created
+/opt/appworks/config/template/settings-all.yml has been created
+/opt/appworks/config/template/settings-mandatory.yml has been created
+Removing intermediate container 2de78504d84d
+ ---> cdad25b72801
+Step 40/63 : RUN printf "#!/bin/bash -eu\n. ${INSTALL_DIR}/bin/wcpenv.sh\njava com.eibus.tools.admin.cmc.CordysManagementConsole" > "${INSTALL_DIR}/bin/cmc.sh" && printf "#!/bin/bash -eu\n. ${INSTALL_DIR}/bin/wcpenv.sh\njava com.eibus.tools.simpleclient.SimpleClient" > "${INSTALL_DIR}/bin/simpleclient.sh" && chmod +x ${INSTALL_DIR}/bin/*.sh
+ ---> Running in fe5c7b901684
+Removing intermediate container fe5c7b901684
+ ---> 6ed8d8315c1a
+Step 41/63 : RUN echo "CORDYS_HOME=${INSTALL_DIR}" > ${INSTALL_DIR}/bin/wcpenv.sh && echo "JAVA_HOME=${JAVA_HOME}" >> ${INSTALL_DIR}/bin/wcpenv.sh && echo "PATH=\${CORDYS_HOME}/bin:\${JAVA_HOME}/bin:\$PATH" >> ${INSTALL_DIR}/bin/wcpenv.sh && echo "CLASSPATH=\${CORDYS_HOME}/cordyscp.jar:${TOMEE_DIR}/lib/mssql-jdbc.jar:${TOMEE_DIR}/lib/oracledb-jdbc.jar:${TOMEE_DIR}/lib/postgresql-jdbc.jar:\${CLASSPATH:-.}" >> ${INSTALL_DIR}/bin/wcpenv.sh && echo "LD_LIBRARY_PATH=\${JAVA_HOME}/lib/server:\${CORDYS_HOME}/lib:\${JAVA_HOME}/lib:\${LD_LIBRARY_PATH:-.}" >> "${INSTALL_DIR}/bin/wcpenv.sh" && echo "export CORDYS_HOME PATH CLASSPATH LD_LIBRARY_PATH" >> "${INSTALL_DIR}/bin/wcpenv.sh"
+ ---> Running in 6d5a90bc24c2
+Removing intermediate container 6d5a90bc24c2
+ ---> fa597f8921e4
+Step 42/63 : RUN "${INSTALL_DIR}/bin/configureapplicationserver.sh" install true
+ ---> Running in ddfd710ccdd9
+Removing intermediate container ddfd710ccdd9
+ ---> 4165219ec81b
+Step 43/63 : RUN mkdir -p "${INSTALL_DIR}/cluster" "${INSTALL_DIR}/node"
+ ---> Running in 1b20bfff6db5
+Removing intermediate container 1b20bfff6db5
+ ---> b1d5d8501025
+Step 44/63 : FROM $BASE_VERSION
+ ---> 8ae694851c0d
+Step 45/63 : LABEL org.opencontainers.image.title="AppWorks Platform"       org.opencontainers.image.vendor="OpenText"       org.opencontainers.image.version="20.2+40"       org.opencontainers.image.revision="392233"
+ ---> Running in c9ba03176abc
+Removing intermediate container c9ba03176abc
+ ---> c606a86c5a05
+Step 46/63 : ARG TOMEE_DIR
+ ---> Running in b5321c81c343
+Removing intermediate container b5321c81c343
+ ---> 2a8216a49d04
+Step 47/63 : ARG INSTALL_DIR
+ ---> Running in 259c8b494eb1
+Removing intermediate container 259c8b494eb1
+ ---> 89b27faab931
+Step 48/63 : RUN adduser --disabled-password --gecos '' --home "${INSTALL_DIR}" --shell /bin/bash --uid ${USER_ID:-9999} appworks
+ ---> Running in f8cbbd17b475
+Adding user `appworks' ...
+Adding new group `appworks' (9999) ...
+Adding new user `appworks' (9999) with group `appworks' ...
+Creating home directory `/opt/appworks' ...
+Copying files from `/etc/skel' ...
+Removing intermediate container f8cbbd17b475
+ ---> b06929e49aba
+Step 49/63 : WORKDIR $INSTALL_DIR
+ ---> Running in 56f002b8f6b5
+Removing intermediate container 56f002b8f6b5
+ ---> cd730b19cca3
+Step 50/63 : ENV PATH ${INSTALL_DIR}/bin:${TOMEE_DIR}/bin:${PATH}
+ ---> Running in 15348910efa9
+Removing intermediate container 15348910efa9
+ ---> 5be770c7d90e
+Step 51/63 : EXPOSE 8080
+ ---> Running in 930e2cd37ee5
+Removing intermediate container 930e2cd37ee5
+ ---> ce4970252ca6
+Step 52/63 : RUN if [ -f "/etc/alpine-release" ]; then          apk --no-cache add bash libstdc++ libuuid libxml2;      fi
+ ---> Running in 6d9c2a39633f
+Removing intermediate container 6d9c2a39633f
+ ---> f72aaec553d9
+Step 53/63 : ARG INSTALL_DEBUG_TOOLS=false
+ ---> Running in 786d9b14bfca
+Removing intermediate container 786d9b14bfca
+ ---> f29acfe33876
+Step 54/63 : RUN if [ "$INSTALL_DEBUG_TOOLS" = "true" ]; then     if [ -f "/etc/alpine-release" ]; then                 apk --no-cache add bind-tools xorg-server net-tools procps busybox-extras vim;          else          apt-get update && apt-get install --no-install-recommends -y dnsutils libxi6 libxrender1 libxtst6 net-tools procps telnet vim && rm -rf /var/lib/apt/lists/*;           fi    fi
+ ---> Running in 795dc7aadd94
+Removing intermediate container 795dc7aadd94
+ ---> 9451be55200f
+Step 55/63 : USER appworks
+ ---> Running in 994bc0efacb5
+Removing intermediate container 994bc0efacb5
+ ---> 7f17b03234e9
+Step 56/63 : COPY --chown=appworks:appworks --from=throw_away ${TOMEE_DIR} ${TOMEE_DIR}
+ ---> 44b9ea6f9975
+Step 57/63 : COPY --chown=appworks:appworks --from=throw_away ${INSTALL_DIR} ${INSTALL_DIR}
+ ---> 1d0ac81d33e3
+Step 58/63 : COPY --chown=appworks:appworks start-scripts/*.sh /
+ ---> 75e050753528
+Step 59/63 : RUN chmod +x /*.sh
+ ---> Running in 828adbfb778b
+Removing intermediate container 828adbfb778b
+ ---> c5c7b05510f5
+Step 60/63 : HEALTHCHECK --start-period=60s --interval=10s --timeout=5s CMD /check_readiness.sh
+ ---> Running in 413baf3955de
+Removing intermediate container 413baf3955de
+ ---> 4d0886122686
+Step 61/63 : ENV INSTALL_DIR=${INSTALL_DIR}
+ ---> Running in 871ab8ba241e
+Removing intermediate container 871ab8ba241e
+ ---> 0d62f53e4e18
+Step 62/63 : ENTRYPOINT  ["/startup.sh"]
+ ---> Running in 3c330dbd8523
+Removing intermediate container 3c330dbd8523
+ ---> 8b7007598a97
+Step 63/63 : LABEL org.opencontainers.image.created=not provided
+ ---> Running in e506ae22936a
+Removing intermediate container e506ae22936a
+ ---> c315eedce4e2
+Successfully built c315eedce4e2
+Successfully tagged appworks/platform:20.2

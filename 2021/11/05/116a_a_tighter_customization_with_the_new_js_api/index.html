@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+<link rel="stylesheet" href="/css/products.css">
+
+	
+<link rel="stylesheet" href="/css/nav.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+    
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y597KBTG4E"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-Y597KBTG4E');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>A tighter customization with the brand-new JavaScript API | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="Let's have a dive together in the nicest 'Promise' object of the platform.">
+
+	
+	<meta name="keywords" content="appworks, opentext, javascript, api, customization">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="A tighter customization with the brand-new JavaScript API | AppWorks Tips">
+	<meta property="og:description" content="Let's have a dive together in the nicest 'Promise' object of the platform.">
+	<meta property="og:url" content="https://appworks-tips.com/2021/11/05/116a_a_tighter_customization_with_the_new_js_api/">
+
+	
+	<meta property="article:published_time" content="2021-11-05T12:11:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2021/11/05/116a_a_tighter_customization_with_the_new_js_api/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+        <div class="site-header-sponsor">
+            
+                <a href="https://bos-ictservices.nl" target="_blank">
+                <img class="sponsor-image" src="https://bos-ictservices.nl/img/logo.png">
+                </a>
+            
+                <a href="https://github.com/sponsors/HetBenkt" target="_blank">
+                <img class="sponsor-image" src="/images/sponsor_here.png">
+                </a>
+            
+        </div>
+        
+        
+
+<nav class="site-nav">
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                
+                
+                    <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+                
+                
+                
+                    <a href="/installation" title="INSTALLATION 23.4">INSTALLATION 23.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
+  <g id="surface1">
+   <path d="m7.18359,7.74219c-0.29687,0.125 -0.39062,0.36328 -0.27734,0.6289l0.90234,-0.3789c-0.09765,-0.23047 -0.39062,-0.34766 -0.625,-0.25zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_1"/>
+   <path d="m14.48047,8.67969l1.12109,-0.67969l-1.12109,-0.67969l0.95312,-0.90234l-1.23828,-0.43359l0.75,-1.07813l-1.30468,-0.16406l0.50781,-1.21094l-1.30469,0.10938l0.24219,-1.28907l-1.25781,0.375l-0.02735,-1.30859l-1.15234,0.62891l-0.30078,-1.27735l-0.99219,0.85938l-0.5625,-1.1875l-0.79297,1.04297l-0.79297,-1.04297l-0.5625,1.1875l-0.99219,-0.85938l-0.30078,1.27735l-1.15234,-0.62891l-0.02734,1.30859l-1.25782,-0.375l0.2461,1.28907l-1.3086,-0.10938l0.50782,1.21094l-1.30079,0.16406l0.7461,1.07813l-1.23828,0.43359l0.95312,0.90234l-1.12109,0.67969l1.12109,0.67969l-0.95312,0.90234l1.23828,0.42969l-0.75,1.07812l1.30469,0.16797l-0.50782,1.21094l1.3086,-0.10937l-0.2461,1.28906l1.25782,-0.37891l0.02734,1.3125l1.15234,-0.6289l0.30078,1.27734l0.99219,-0.85938l0.5586,1.1875l0.79687,-1.04296l0.79297,1.04296l0.5625,-1.1875l0.99219,0.85938l0.30078,-1.27734l1.15234,0.6289l0.02735,-1.30859l1.25781,0.375l-0.2461,-1.28906l1.3086,0.10937l-0.50781,-1.21094l1.30468,-0.16406l-0.75,-1.08203l1.23828,-0.42969l-0.95312,-0.90234zm-9.05859,2.1289l-0.5586,-1.32421c-0.10547,-0.25 -0.26562,-0.44141 -0.54687,-0.32032c-0.30469,0.12891 -0.30469,0.35938 -0.16797,0.67969l0.53906,1.27344l-0.99219,0.42187l-1.05859,-2.5039l0.90625,-0.38282l0.16406,0.39063c0.09766,-0.39453 0.27344,-0.66016 0.65235,-0.82031c0.65625,-0.27735 1.13281,-0.02344 1.42187,0.66406l0.63281,1.5l-0.99218,0.42187zm2.58984,-1.01171c-0.80078,0.33984 -1.61719,0.14453 -1.97266,-0.69922c-0.34375,-0.82032 0.04688,-1.60547 0.85157,-1.94532c0.92578,-0.39062 1.7539,0.01172 2.125,0.92579l-1.89844,0.80078c0.1289,0.29687 0.4375,0.39453 0.70312,0.28515c0.15625,-0.0664 0.26953,-0.19922 0.27735,-0.3789l0.95312,-0.40235c0.08985,0.69532 -0.45312,1.16797 -1.03906,1.41407zm3.98828,-1.76954l-1.00781,-1.30468l-0.00781,0.0039l0.26953,1.61328l-0.96875,0.41016l-1.88282,-2.15234l0.96875,-0.41016l1.03516,1.38672l0.01172,-0.00391l-0.26953,-1.71093l0.84375,-0.35547l1.03515,1.38281l0.00782,-0.00391l-0.26563,-1.71093l0.94141,-0.39844l0.25781,2.84375l-0.96875,0.41015zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_2" stroke="null"/>
+  </g>
+ </g>
+
+</svg></a>
+                
+                
+                
+                    <a href="/ci_cd" title="CI/CD">CI/CD</a>
+                
+                
+                
+                    <a href="/products" title="PRODUCTS">PRODUCTS</a>
+                
+                
+                
+                    <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+                
+                
+                
+                    <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+                
+                
+                
+                    <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME">HIRE ME</a>
+                
+                
+                
+                    <a href="/about" title="ABOUT">ABOUT</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <ul class="nav">
+                    <li>
+                        <div class="hire_me_content">
+                        <i class="hire_me_live"></i>
+                        <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME" id="hire_me">HIRE ME</a>
+                        </div>
+                    </li>
+                </ul>
+        
+        
+        
+        
+        
+    </div>
+
+    <div class="search-button">
+
+    
+    <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+        <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+            <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+        </svg> Sponsor
+    </a>
+    
+
+    
+
+    
+        <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </a>
+    
+
+    </div>
+
+    <div class="site-nav-right">
+        
+        <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+            <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+                <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+            </svg> Sponsor
+        </a>
+        
+
+        
+
+        
+            <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            </a>
+        
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback / Question" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2021-11-05T12:00:00.000Z" itemprop="datePublished">
+                    2021-11-5
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Development/">Development</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">A tighter customization with the brand-new JavaScript API</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/feature_tag.webp)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>This week we do a dive on the new JavaScript API delivered with the latest and greatest 21.4 release! Will it be great!? Heal YEAH!…It will be the future for extending the platform with nicely crafted customizations. Why? Well, what we are about to see in this post is a great JavaScript object called a ‘Promise’ which handles our requests a different way then what we normally would do with extensions done via the HTML5SDK or all the nice scripting in xForm documents. Read all about this ‘Promise’ object <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank" rel="noopener">here</a>, but in short: <em>The “Promise” object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.</em></p>
+<p>Key here is the asynchronous call which makes it possible to response on it (in a later moment in time) when the result is eventually received. This makes it more flexible to develop in a more reactive way based on what is retrieved in the response. Can we see it as an event-based way of programming? Well, I don’t think so. The big difference with events is that you register them somewhere upfront to wait for a callback which is <u>not</u> the same as an a-synchronized call which ‘smells’ like a quicker/tighter response.</p>
+<p>Don’t dive too much in all the comparison on other approached, but let’s focus on what is delivered with the new JavaScript API. Time to build some interesting samples and see how we can use the API for our own benefits on the solutions we build.</p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>Before we’ll dive into all the greatness I would like to start with a set of questions upfront:</p>
+<p><strong>Where to get more information?</strong></p>
+<p>Interesting resource for starting this post was found <a href="https://forums.opentext.com/forums/developer/discussion/308723/javascript-apis-for-appworks-platform-client-operations" target="_blank" rel="noopener">here</a>. Also <a href="https://www.joezimjs.com/javascript/javascript-asynchronous-architectures-events-vs-promises/" target="_blank" rel="noopener">this</a> resource helped me out on some open questions from my side! The platform itself is also delivered with documentation on the new JS API in the ‘OpenText AppWorks Platform 21.4 Advanced Development Guide.pdf’ under the section “Using the application JavaScript APIs”</p>
+<blockquote>
+<p>At OpenText I start to hear a rumor that documentation, samples sources, and demo content will be more shared via the platform developer.opentext.com. So, there is a move going on for sharing content more into the public domain which is in my opinion a great step for us developers. 🤗</p>
+</blockquote>
+<p><strong>Will it run outside the runtime UI?</strong></p>
+<p>The documentation is pretty clear on that one. Yes, it’s stated we should be able to perform actions from outside the application…Interesting!</p>
+<p><strong>How about authorization?</strong></p>
+<p>Well, when we run our custom code from within AppWorks runtime (like a web-content panel in a layout), it will probably use the authentication of the current user, but how about authentication outside the runtime? We’ll try that one out to see what will happen, and how to solve it.</p>
+<p><strong>Do we need to include any JavaScript library?</strong></p>
+<p>I can’t find anything about it in the documentation, but when I see sample code-lines like this <code>window.parent.publicAPIProvider</code>, it looks like we’re in an iFrame (like a web-content panel on a layout). We’ll have a look in the developer console to see what we can find on this <code>publicAPIProvider</code> object.</p>
+<hr>
+<h4 id="Our-first-steps-to-make-a-custom-page-available"><a href="#Our-first-steps-to-make-a-custom-page-available" class="headerlink" title="Our first steps to make a custom page available"></a>Our first steps to make a custom page available</h4><p>For this one I follow my own <a href="/2021/07/16/103_your_first_baby_steps_on_working_with_html5_sdk/">post</a> about the HTML5SDK. Not the full post, but the part where we introduce the ‘Web Library Definition’ for an ‘assets’ folder which make it possible to publish HTML and JavaScript files into runtime. I also followed the part where we start with a first <code>playground.htm</code> (called from a web-content panel on a layout of a ‘Person’ entity), and the part where we connect our first JavaScript file <code>playground.js</code>.</p>
+<p>This is how it looks like in my current project:</p>
+<p><img alt="api_001" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_001.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_001.png"></p>
+<p>After publication, double-check for these available artifacts in runtime:</p>
+<p><strong>playground.htm</strong></p>
+<p>The runtime URL will look like this: <a href="http://192.168.56.107:8080/home/appworks_tips/html/playground.htm" target="_blank" rel="noopener">http://192.168.56.107:8080/home/appworks_tips/html/playground.htm</a></p>
+<p>Initial content looks like this:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Page Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"../app/start/web/startup.css"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/cordys/thirdparty/jquery/jquery.debug.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./../js/playground.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>New API demo<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>This is a paragraph.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span> = <span class="string">"btnClickMe"</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Click me"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>playground.js</strong></p>
+<p>The runtime URL will look like this: <a href="http://192.168.56.107:8080/home/appworks_tips/js/playground.js" target="_blank" rel="noopener">http://192.168.56.107:8080/home/appworks_tips/js/playground.js</a></p>
+<p>Initial content looks like this:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"#btnClickMe"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'Hello world...'</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>‘Person’ entity</strong></p>
+<p>The ‘Person’ entity has these “play-around” properties applied (and all the default generated BB’s to start prototyping):</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Label</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>prs_name</td>
+<td>Name</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>prs_age</td>
+<td>Age</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>prs_avatar</td>
+<td>Avatar</td>
+<td>Image</td>
+</tr>
+<tr>
+<td>prs_salary</td>
+<td>Salary</td>
+<td>Currency</td>
+</tr>
+<tr>
+<td>prs_date_of_birth</td>
+<td>Date of birth</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>prs_is_active</td>
+<td>Is active</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>prs_id</td>
+<td>Identity</td>
+<td>Text</td>
+</tr>
+</tbody></table>
+<p>The Default ‘View’ layout for the entity looks like this (with the web-content panel to show our ‘playground.htm’)</p>
+<p><img alt="api_002" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_002.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_002.png"></p>
+<blockquote>
+<p>For you the copy the URL: <code>./../../../html/playground.htm?itemid={item.Identity.ItemId}</code></p>
+</blockquote>
+<p>In runtime, it will look like this after we’ve created and open a new instance of the ‘Person’ entity:</p>
+<p><img alt="api_003" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_003.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_003.png"></p>
+<p>You can clearly see our custom playground customization, and when we click that button we will see some console logging passing by… </p>
+<p>Great! Playground is open for further extension. </p>
+<hr>
+<h4 id="Get-a-grip-on-the-“itemId”"><a href="#Get-a-grip-on-the-“itemId”" class="headerlink" title="Get a grip on the “itemId”"></a>Get a grip on the “itemId”</h4><p>In the URL of the web-content panel we already passed the ‘itemId’ of the current entity as parameter in the URL. When you inspect the elements in runtime, you’ll see the web-content panel is just an iFrame loaded with a URL like this:<br><code>http://192.168.56.102:8080/home/appworks_tips/html/playground.htm?itemid=080027e84f06a1ec8deeaa8dab74a43a.1&amp;homepageIdData=90B11C6A8EBB11E6F0E862F2E28B7B87</code></p>
+<p>Time to extract the ‘itemId’ from the URL in our own JavaScript with an update like this:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $.urlParam = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> results = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'[\?&amp;]'</span> + name + <span class="string">'=([^&amp;#]*)'</span>).exec(<span class="built_in">window</span>.location.href);</span><br><span class="line">        <span class="keyword">if</span> (results==<span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> results[<span class="number">1</span>] || <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#btnClickMe"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'Hello world...'</span>);</span><br><span class="line">        <span class="built_in">console</span>.log($.urlParam(<span class="string">'itemid'</span>));</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>After publication and a refresh in runtime, we should see something like this:</p>
+<p><img alt="api_004" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_004.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_004.png"></p>
+<p>We’re getting closely for a first call on the <code>publicAPIProvider</code> object!</p>
+<p>Let’s do another update in the JavaScript:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#btnClickMe"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hello world...'</span>);</span><br><span class="line">    <span class="built_in">window</span>.parent.publicAPIProvider.updateData($.urlParam(<span class="string">'itemid'</span>), <span class="string">'prs_id'</span>, <span class="string">'hello id!!'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>Publish, and retest with a tightly interactive result:</p>
+<p><img alt="api_005" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_005.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_005.png"></p>
+<p>NICEEEEEE! &#x1F60D;</p>
+<p>Next step…</p>
+<hr>
+<h4 id="Make-the-‘Identity’-a-random-ID"><a href="#Make-the-‘Identity’-a-random-ID" class="headerlink" title="Make the ‘Identity’ a random ID"></a>Make the ‘Identity’ a random ID</h4><p>Just a JavaScript update like this will make it happen:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $.urlParam = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> results = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'[\?&amp;]'</span> + name + <span class="string">'=([^&amp;#]*)'</span>).exec(<span class="built_in">window</span>.location.href);</span><br><span class="line">        <span class="keyword">if</span> (results==<span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> results[<span class="number">1</span>] || <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    </span><br><span class="line">    $.makeid = <span class="function"><span class="keyword">function</span>(<span class="params">length</span>) </span>&#123;</span><br><span class="line">    	<span class="keyword">var</span> result = <span class="string">''</span>;</span><br><span class="line">    	<span class="keyword">var</span> characters = <span class="string">'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'</span>;</span><br><span class="line">    	<span class="keyword">var</span> charactersLength = characters.length;</span><br><span class="line">    	<span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; length; i++ ) &#123;</span><br><span class="line">      		result += characters.charAt(<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * charactersLength));</span><br><span class="line">   		&#125;</span><br><span class="line">   		<span class="keyword">return</span> result;</span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#btnClickMe"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'Hello world...'</span>);</span><br><span class="line">        <span class="built_in">window</span>.parent.publicAPIProvider.updateData($.urlParam(<span class="string">'itemid'</span>), <span class="string">'prs_id'</span>, $.makeid(<span class="number">5</span>));</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>After publication, it’s time to hit the ‘Click me’ button till you’re satisfied with a suitable Identity ID! &#x1F920;</p>
+<hr>
+<h4 id="Explore-the-object-“publicAPIProvider”"><a href="#Explore-the-object-“publicAPIProvider”" class="headerlink" title="Explore the object “publicAPIProvider”"></a>Explore the object “publicAPIProvider”</h4><p>Let’s have a look in the developer console of my Chrome browser (<code>&lt;F12&gt;</code>) while you have the runtime open. Jump to the ‘Console’ tab and have a look in at the API via this command: <code>window.parent.publicAPIProvider</code>:</p>
+<p><img alt="api_006" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_006.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_006.png"></p>
+<p>We can clearly see the available functions which we can use in our custom page…Let’s have a play with the other calls in the next sections!</p>
+<blockquote>
+<p><strong><em>Just a note for your information:</em></strong></p>
+<p>You also see the object is available from the JavaScript library <code>coreBundleAwpClient-9e875f5dfe.js</code> behind this URL<br><a href="http://192.168.56.107:8080/home/appworks_tips/app/start/web/bundles/coreBundleAwpClient-9e875f5dfe.js" target="_blank" rel="noopener">http://192.168.56.107:8080/home/appworks_tips/app/start/web/bundles/coreBundleAwpClient-9e875f5dfe.js</a> and is served from this location on the server: <code>/opt/tomee/apache-tomee-plus-8.0.6/webapps/home#app#start/web/bundles/coreBundleAwpClient-9e875f5dfe.js</code></p>
+<p>It looks like <a href="https://grantwinney.com/minification-vs-obfuscation/" target="_blank" rel="noopener">minified/obfuscated JavaScript</a>, but still interesting to have a view on it especially when you pretty-print it again:</p>
+<p><img alt="api_007" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_007.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_007.png"></p>
+</blockquote>
+<hr>
+<h4 id="Function-call-‘saveAllItems’"><a href="#Function-call-‘saveAllItems’" class="headerlink" title="Function call ‘saveAllItems’"></a>Function call ‘saveAllItems’</h4><p>This is an easy extension on top of our current ‘Click me’ button. Let’s extend the script with just one line:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#btnClickMe"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hello world...'</span>);</span><br><span class="line">    <span class="built_in">window</span>.parent.publicAPIProvider.updateData($.urlParam(<span class="string">'itemid'</span>), <span class="string">'prs_id'</span>, $.makeid(<span class="number">5</span>));</span><br><span class="line">    <span class="built_in">window</span>.parent.publicAPIProvider.saveAllItems();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>What do we see in runtime after a publication and hitting our button again? Exactly, a direct (auto-)save action on the form!</p>
+<p><img alt="api_008" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_008.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_008.png"></p>
+<p>Simple and effective…Next one!</p>
+<blockquote>
+<p><strong>HINT:</strong> This save action also triggers the ‘event’ type of Rule BBs defined for the entity!</p>
+</blockquote>
+<hr>
+<h4 id="Function-call-‘getItemData’"><a href="#Function-call-‘getItemData’" class="headerlink" title="Function call ‘getItemData’"></a>Function call ‘getItemData’</h4><p>This one ‘smells’ like a metadata read-action on my ‘itemId’ property! This way I don’t need to pass all the needed values through the parameters of the URL of the web-panel (into the iFrame). I only require the ‘itemId’ and have a call on getItemData() to retrieve the rest. Let’s try that one out with a simple form div-element like this in our playground.htm file:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	...</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-container"</span> <span class="attr">style</span>=<span class="string">"padding-top: 10px"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"formName"</span> <span class="attr">style</span>=<span class="string">"padding-bottom: 8px"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"ot-control"</span> <span class="attr">id</span>=<span class="string">"inputName"</span> <span class="attr">placeholder</span>=<span class="string">"Name"</span> <span class="attr">maxlength</span>=<span class="string">"64"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"formAge"</span> <span class="attr">style</span>=<span class="string">"padding-bottom: 8px"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"ot-control"</span> <span class="attr">id</span>=<span class="string">"inputAge"</span> <span class="attr">placeholder</span>=<span class="string">"Age"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"formIdentity"</span> <span class="attr">style</span>=<span class="string">"padding-bottom: 8px"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"ot-control"</span> <span class="attr">id</span>=<span class="string">"inputIdentity"</span> <span class="attr">placeholder</span>=<span class="string">"Identity"</span> <span class="attr">maxlength</span>=<span class="string">"64"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Time to extend the JavaScript content for our <code>playground.js</code> file at the end of the ‘ready’ function:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="built_in">window</span>.parent.publicAPIProvider.getItemData($.urlParam(<span class="string">'itemid'</span>)).then(<span class="function">(<span class="params">itemData</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(itemData);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>After publication, we see our valuable metadata passing by in the console log:</p>
+<p><img alt="api_009" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_009.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_009.png"></p>
+<p>Well, now it’s  easy to update my form-fields with an update like this:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.parent.publicAPIProvider.getItemData($.urlParam(<span class="string">'itemid'</span>)).then(<span class="function">(<span class="params">itemData</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(itemData);</span><br><span class="line">    $(<span class="string">'#inputName'</span>).attr(<span class="string">'value'</span>, itemData.Properties.prs_name);</span><br><span class="line">    $(<span class="string">'#inputAge'</span>).attr(<span class="string">'value'</span>, itemData.Properties.prs_age);</span><br><span class="line">    $(<span class="string">'#inputIdentity'</span>).attr(<span class="string">'value'</span>, itemData.Properties.prs_id);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>After publication and a retest, you will also have a green checkmark! &#9989;</p>
+<blockquote>
+<p>As the platform uses the <a href="https://aurelia.io/" target="_blank" rel="noopener">‘Aurelia’</a> framework for the runtime UX it should also be possible to make it all a bit clever with field-bindings, but my OOTB JavaScript knowledge limits with the basic functionalities of jQuery. I’m always eager to learn new stuff, but this was just one step too far for now! Anyone with an update on this JavaScript implementation? I’m available to have a nerdy chat about it. &#x1F913;</p>
+</blockquote>
+<hr>
+<h4 id="Function-call-‘performAction’"><a href="#Function-call-‘performAction’" class="headerlink" title="Function call ‘performAction’"></a>Function call ‘performAction’</h4><p>Interesting, but what actions are available? Sounds to me like the Rule BB of type ‘Action’ on our entity! Let’s create a simple one like this (and publish it):</p>
+<p><img alt="api_010" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_010.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_010.png"></p>
+<p>We just add a second button into our current <code>playground.htm</code> file…</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btnDoAction"</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Do action"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>…and add a second function into the ‘ready document’ method:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#btnDoAction"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="built_in">window</span>.parent.publicAPIProvider.performAction($.urlParam(<span class="string">'itemid'</span>), <span class="string">'a_set_prop_is_active'</span>);</span><br><span class="line">    <span class="keyword">if</span>(result) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'Action done!'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>After publication, we’ll have a nice result!</p>
+<p><img alt="api_011" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_011.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_011.png"></p>
+<blockquote>
+<p><strong>HINT:</strong> With the execution of the rule it’s also possible to have an interaction with the ‘normal’ entity modeling. Have a look again on the created ‘Rule’ BB where we have the option to show a modal popup before the rule action is performed!</p>
+</blockquote>
+<hr>
+<h4 id="Function-call-‘navigate’"><a href="#Function-call-‘navigate’" class="headerlink" title="Function call ‘navigate’"></a>Function call ‘navigate’</h4><p>Time to navigate around in the runtime UI. We can navigate directly to a homepage ID, and we are able to navigate directly to an ‘itemID’ of an entity instance. This last one might have multiple entity layouts applied, so we are able to pass in the ID of the entity layout to navigate to the correct one.</p>
+<p>Let’s start by creating a new button and return to the (in my case ) default homepage where we opened our ‘Person’ entity from the ‘All persons’ list. Looks like a simple action to me!</p>
+<p>The HTML button:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btnNavigate"</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Do navigation"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>The JavaScript part:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#btnNavigate"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="built_in">window</span>.parent.publicAPIProvider.navigate($.urlParam(<span class="string">'homepageIdData'</span>), &#123;&#125;);</span><br><span class="line">    <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>The only thing with this craftsmanship is that you can’t open the entity instance directly (without opening it via the homepage layout!). Why? Well, because you’ll see the parameter flag <code>homepageIdData</code> is missing in action in the URL of the iFrame! Later on you’ll see these are IDs (also for these homepages) are fixed values for the solution.</p>
+</blockquote>
+<p>After publication, it works as expected! Next one…</p>
+<p>Now we’ll try an entity navigation and move to another entity, but for this we need the ‘itemId’ of another entity instance! The simplest way do make this happen is via a “to_one” relation to the (for example) ‘User’ entity. With this relation in place (and available on the ‘Create’ form) it’s possible to make a navigate action like this (because the ‘relatedItemId’ is available from method “publicAPIProvider.getItemData()”):</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#btnNavigate"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">window</span>.parent.publicAPIProvider.getItemData($.urlParam(<span class="string">'itemid'</span>)).then(<span class="function">(<span class="params">itemData</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> result = <span class="built_in">window</span>.parent.publicAPIProvider.navigate(itemData.to_one_user.relatedItemId, &#123;&#125;);</span><br><span class="line">        <span class="built_in">console</span>.log(result);</span><br><span class="line">    &#125;);    </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>After a publication and the button-click in runtime, we see our ‘User’ entity is opened via the default layout for this entity instance! </p>
+<p><img alt="api_012" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_012.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_012.png"></p>
+<blockquote>
+<p>FYI: This “User” entity is part of the ‘Identity package’ of the platform with indeed its own BB implementations and for us to consume from. It looks rather empty, but that’s because I didn’t fill in all the data into OTDS where this user account is consolidated from. Don’t have a clue what I’m talking about? You should have a read <a href="/2021/01/29/083_consuming_the_identity_package/">here</a></p>
+</blockquote>
+<p>Let’s add the extra <code>clearBreadcrumb</code> flag in the request with the value ‘true’:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> result = <span class="built_in">window</span>.parent.publicAPIProvider.navigate(itemData.to_one_user.relatedItemId, &#123;<span class="string">'clearBreadcrumb'</span>:<span class="literal">true</span>&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>The difference? Well, have a look (compared with the previous screenshot):</p>
+<p><img alt="api_013" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_013.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_013.png"></p>
+<p>Finally, I also wanted to play around with jumping from one entity layout to another entity layout for the same ‘Person’ entity. This needs to be done based on a so-called “layoutId”. For our demo I just create a simple layout ID input field on our ‘playground.htm’ which we will update with a valid “layoutId” before we hit our custom ‘Do navigation’ button. Our navigate method will now look like this (where we “stay” at the current entity ‘itemId’, but only switch the layout):</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#btnNavigate"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">let</span> result = <span class="built_in">window</span>.parent.publicAPIProvider.navigate($.urlParam(<span class="string">'itemid'</span>), &#123;<span class="string">'clearBreadcrumb'</span>:<span class="literal">true</span>,<span class="string">'breadcrumbName'</span>:<span class="string">'Person-1'</span>,<span class="string">'layoutId'</span>:$(<span class="string">'#inputLayoutId'</span>).val()&#125;);</span><br><span class="line">        <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>This is my field in the HTML page (just after the other fields):</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"formLayoutId"</span> <span class="attr">style</span>=<span class="string">"padding-bottom: 8px"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"ot-control"</span> <span class="attr">id</span>=<span class="string">"inputLayoutId"</span> <span class="attr">placeholder</span>=<span class="string">"LayoutId"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Time to make the switch? Well, not yet as we first need a second layout on our ‘Person’ entity. Just create a second one next to the already available ‘default_layout’. I just made a copy of it and manipulated the panels a bit, so it ‘smells’ different! Now it’s time to get notice of the “layoutId” for those 2 layout items. Have a look here:</p>
+<p><img alt="api_014" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_014.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_014.png"></p>
+<p>In my case I have 2 values as “layoutId” to play with:</p>
+<ul>
+<li><code>080027e84f06a1ec8ef27e5b70bda744</code> (my default_layout2 where the action bar is placed in the <u>bottom</u>)</li>
+<li><code>080027e84f06a1ec8df07a5f26bfb1fb</code> (my default_layout where the action bar is placed in the <u>top</u>)</li>
+</ul>
+<p>After publication and testing it works like a charm…Nice stuff! </p>
+<p>Now the answer to a smart question: <em>Are these ID-values still valid when we package the solution and bring it the next environment?</em> For sure they are!!</p>
+<p><img alt="api_015" class="post-img b-lazy" href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_015.png" data-src="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/api_015.png"></p>
+<blockquote>
+<p>Also notice the breadcrumb! As if you might have seen, we also did a small update with the <code>breadcrumbName</code> parameter in the JavaScript call. Because we stay in the current entity, we clear the breadcrumb and set it to the current value for our demo. If not you would see some breadcrumb like this (after some switches!): <code>Home Page &gt; Person-1 &gt; Person-1 &gt; Person-1</code></p>
+</blockquote>
+<hr>
+<h4 id="Calling-from-outside-the-runtime-UI"><a href="#Calling-from-outside-the-runtime-UI" class="headerlink" title="Calling from outside the runtime UI!?"></a>Calling from outside the runtime UI!?</h4><p>Yes…That was an open question from my side! Is it possible!? Well, as we already learned we need to have access to the JavaScript library <code>coreBundleAwpClient-9e875f5dfe.js</code>. Let’s create a page (playground_external.htm) where we do something like this (where I also include all the JavaScript bundles I see passing by during the opening of the AppWorks runtime):</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Page Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"../app/start/web/startup.css"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/cordys/thirdparty/jquery/jquery.debug.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"../app/start/web/bundles/coreBundleAwpClient-9e875f5dfe.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"../app/start/web/bundles/extrasBundleAwpClient-3f10ad1cd4.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"../app/start/web/thirdpartylibs/csrf.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"../app/start/web/jspm_packages/system.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"../app/start/web/config.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"../app/start/web/worker/wsctf-worker.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="javascript">            $(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(<span class="string">'Hello world...'</span>);</span></span><br><span class="line"><span class="actionscript">                publicAPIProvider.updateData(<span class="string">'080027e84f06a1ec8deeaa8dab74a43a.1'</span>, <span class="string">'prs_id'</span>, <span class="string">'updated externally!'</span>);</span></span><br><span class="line">            &#125;);</span><br><span class="line">        <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>New API demo external<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>An extra note on this action: we are required to first login into the platform before we are able to access this all, but that’s the implementation of a login redirect which is a bit out of scope for this post. For now, we first open the regular platform runtime for a login and after this we update the URL to our external HTML file: <a href="http://192.168.56.107:8080/home/appworks_tips/html/playground_external.htm" target="_blank" rel="noopener">http://192.168.56.107:8080/home/appworks_tips/html/playground_external.htm</a></p>
+</blockquote>
+<p>After some debugging in runtime (and made sure to create a login session through the normal login screen!), I conclude it’s not working this easy? Or maybe it’s just my foolishness…Let me know!? Probably the bundled JavaScript requires something more to initialize/define the <code>publicAPIProvider</code>!?</p>
+<blockquote>
+<p>This is my stack trace from jQuery: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"ReferenceError: publicAPIProvider is not defined</span></span><br><span class="line"><span class="string">    at HTMLDocument.&lt;anonymous&gt; (http://192.168.56.107:8080/home/appworks_tips/html/playground_external.htm?itemid=080027e84f06a1ec8deeaa8dab74a43a.1:12:9)</span></span><br><span class="line"><span class="string">    at mightThrow (http://192.168.56.107:8080/cordys/thirdparty/jquery/jquery.debug.js:3762:29)</span></span><br><span class="line"><span class="string">    at process (http://192.168.56.107:8080/cordys/thirdparty/jquery/jquery.debug.js:3830:12)"</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><strong><em>Update after a very interesting <a href="https://forums.opentext.com/forums/developer/discussion/comment/960787#Comment_960787" target="_blank" rel="noopener">response</a> from OpenText…Thx again!</em></strong></p>
+<p>…</p>
+<p>We indeed miss some initialization from the AppWorks platform in the external call. To fix this we embed the AppWorks runtime in a ‘hidden’ iFrame, and we wait for it before we execute our custom code. This is the JavaScript part we can use:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"#btnClickMe"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'Hello world...'</span>);</span><br><span class="line">        <span class="keyword">let</span> intervalID = <span class="built_in">window</span>.setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">let</span> appworksFrame = <span class="built_in">document</span>.getElementById(<span class="string">'appworks_frame'</span>).contentWindow;</span><br><span class="line">            <span class="keyword">if</span> (appworksFrame) &#123;</span><br><span class="line">                <span class="keyword">if</span> (appworksFrame.publicAPIProvider &amp;&amp; appworksFrame.publicAPIProvider.updateData) &#123;</span><br><span class="line">                    <span class="keyword">let</span> result = appworksFrame.publicAPIProvider.updateData(<span class="string">'080027e84f06a1ec8deeaa8dab74a43a.1'</span>, <span class="string">'prs_id'</span>, <span class="string">'updated externally!'</span>);</span><br><span class="line">                    <span class="built_in">console</span>.log(result);</span><br><span class="line">                    <span class="keyword">let</span> result2 = appworksFrame.publicAPIProvider.saveAllItems();</span><br><span class="line">                    <span class="built_in">console</span>.log(result2);</span><br><span class="line">                    clearInterval(intervalID);</span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="string">'I found the API, Now clear the timer'</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'Hook not found, let this timer run again'</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="number">200</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>And…off-course the button with the ‘hidden’ iFrame:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"btnClickMe"</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Click me"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">id</span>=<span class="string">'appworks_frame'</span> <span class="attr">src</span>=<span class="string">"/home/appworks_tips/app/start/web/item/080027e84f06a1ec8deeaa8dab74a43a.1"</span> <span class="attr">style</span>=<span class="string">"display:none; tabindex:-1; width:100%; height:100%;"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>…</p>
+<p>Download my <a href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/playground.txt">‘playground.htm’</a> and <a href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/playground.js">‘playground.js’</a> for your reference. Also have a look at <a href="/images/posts/2021/116a_a_tighter_customization_with_the_new_js_api/playground_external.txt">‘playground_external.htm’</a></p>
+<hr>
+<p>That’s a greatly earned “DONE” with a high valuable ‘Promise’ approach on a tighter customization on our beloved platform. This truly brings hope for the future on the extendibility of AppWorks. It’s also a great replacement for the implementations we currently do with the HTML5SDK, and the scripting in xForm documents. More will definitely be available in the future for as developers to consume; this also depends on the demand, so keep curious on all the new stuff and just try it out and bring feedback to the team for new features. I’m enthusiast, but that’s already clear I hope! &#x1F917; Have a nice week-end and I CU in the next post.</p>
+<blockquote>
+<p><strong>Final hint:</strong> The future will be more brightened with event listeners which makes it possible our customization will listen for events triggered by the platform, so we can react on it! Own man…Will I sleep well tonight!</p>
+</blockquote>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="Extending the " restrequesthandler"" href="/2021/11/12/117_extending_the_restrequesthandler/">
+            <i class="fa-solid fa-backward"></i> Extending the "RestRequestHandler"
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Exposing the BPM 'Delay' construct" href="/2021/10/29/116_exposing_the_bpm_delay_timer/">
+            Exposing the BPM 'Delay' construct <i class="fa-solid fa-forward"></i>
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Our-first-steps-to-make-a-custom-page-available"><span class="toc-text">Our first steps to make a custom page available</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Get-a-grip-on-the-“itemId”"><span class="toc-text">Get a grip on the “itemId”</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Make-the-‘Identity’-a-random-ID"><span class="toc-text">Make the ‘Identity’ a random ID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Explore-the-object-“publicAPIProvider”"><span class="toc-text">Explore the object “publicAPIProvider”</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Function-call-‘saveAllItems’"><span class="toc-text">Function call ‘saveAllItems’</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Function-call-‘getItemData’"><span class="toc-text">Function call ‘getItemData’</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Function-call-‘performAction’"><span class="toc-text">Function call ‘performAction’</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Function-call-‘navigate’"><span class="toc-text">Function call ‘navigate’</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Calling-from-outside-the-runtime-UI"><span class="toc-text">Calling from outside the runtime UI!?</span></a></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2023/12/15/204_connect_source_control_after_project_creation/">The ultimate workspace wizardry; How to supercharge your WS with source control after creation</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/12/08/203_auto_assign_cases_tasks/">Ultimate productivity with this jaw-dropping follow-up to auto-assign Cases and Tasks</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/12/01/202_working_with_task_workqueues/">Unlock your knowledge for dominating task workqueues; You'll never work the same way again</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/24/201_subtyping_vs_database/">Shocking showdown; Subtyping vs. Database - You won't believe what happens</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/17/200_speedtest_parallel_processing/">Unbelievable results revealed; Harnessing parallel processing for mind-blowing insights</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/10/199_feel_the_power_of_a_form_section/">Behold the power of a section within an entity 'Form' building block</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/03/198_iconize_buttons_with_unicode/">Discover how to revolutionize your action buttons with Unicode icons</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/10/27/197_xslt_data_transformation/">Prepare the magic; Watch how XML data gets a mind-blowing makeover with XSLT</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Release/">Release</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/AI/" style="font-size: 14px;">AI</a> <a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/API/" style="font-size: 14.63px;">API</a> <a href="/tags/Abstract/" style="font-size: 14px;">Abstract</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/ActiveMQ/" style="font-size: 14.63px;">ActiveMQ</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 15.88px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 15.88px;">Anniversary</a> <a href="/tags/Apache/" style="font-size: 14.63px;">Apache</a> <a href="/tags/ApacheDirectoryStudio/" style="font-size: 14px;">ApacheDirectoryStudio</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Archive/" style="font-size: 14.63px;">Archive</a> <a href="/tags/Artifact/" style="font-size: 15.25px;">Artifact</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/Audit/" style="font-size: 14px;">Audit</a> <a href="/tags/Authentication/" style="font-size: 14.63px;">Authentication</a> <a href="/tags/BPM/" style="font-size: 22.75px;">BPM</a> <a href="/tags/Base64/" style="font-size: 14px;">Base64</a> <a href="/tags/Brava/" style="font-size: 14px;">Brava!</a> <a href="/tags/BuildingBlock/" style="font-size: 15.25px;">BuildingBlock</a> <a href="/tags/BuildingBlocks/" style="font-size: 15.25px;">BuildingBlocks</a> <a href="/tags/BulkUpdate/" style="font-size: 14px;">BulkUpdate</a> <a href="/tags/BusinessID/" style="font-size: 14px;">BusinessID</a> <a href="/tags/BusinessIdentifier/" style="font-size: 14px;">BusinessIdentifier</a> <a href="/tags/BusinessWorkspace/" style="font-size: 14px;">BusinessWorkspace</a> <a href="/tags/CAF/" style="font-size: 14px;">CAF</a> <a href="/tags/CARS/" style="font-size: 14.63px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 15.25px;">CD/CI</a> <a href="/tags/CIM/" style="font-size: 14px;">CIM</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMC/" style="font-size: 14px;">CMC</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 16.5px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/CaseInstanceMonitor/" style="font-size: 14px;">CaseInstanceMonitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Charts/" style="font-size: 14px;">Charts</a> <a href="/tags/ChatGPT/" style="font-size: 14px;">ChatGPT</a> <a href="/tags/Cleaning/" style="font-size: 14.63px;">Cleaning</a> <a href="/tags/Cloud/" style="font-size: 14px;">Cloud</a> <a href="/tags/Condition/" style="font-size: 14.63px;">Condition</a> <a href="/tags/ConfigEntity/" style="font-size: 14px;">ConfigEntity</a> <a href="/tags/ConnectedWorkspace/" style="font-size: 14px;">ConnectedWorkspace</a> <a href="/tags/Connector/" style="font-size: 15.88px;">Connector</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Content/" style="font-size: 16.5px;">Content</a> <a href="/tags/ContentServer/" style="font-size: 16.5px;">ContentServer</a> <a href="/tags/Custom/" style="font-size: 15.88px;">Custom</a> <a href="/tags/CustomWebservice/" style="font-size: 14px;">CustomWebservice</a> <a href="/tags/Customization/" style="font-size: 16.5px;">Customization</a> <a href="/tags/Data/" style="font-size: 14px;">Data</a> <a href="/tags/Database/" style="font-size: 17.13px;">Database</a> <a href="/tags/DatabaseMetadata/" style="font-size: 14.63px;">DatabaseMetadata</a> <a href="/tags/Date/" style="font-size: 14px;">Date</a> <a href="/tags/DateTime/" style="font-size: 14px;">DateTime</a> <a href="/tags/Debugging/" style="font-size: 14.63px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 17.75px;">Digital</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/DocumentstoreConnector/" style="font-size: 15.25px;">DocumentstoreConnector</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/EISConnector/" style="font-size: 14.63px;">EISConnector</a> <a href="/tags/Email/" style="font-size: 14.63px;">Email</a> <a href="/tags/EnterpriseWorld/" style="font-size: 19px;">EnterpriseWorld</a> <a href="/tags/Entity/" style="font-size: 20.25px;">Entity</a> <a href="/tags/EntityContext/" style="font-size: 14px;">EntityContext</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Explorer/" style="font-size: 14.63px;">Explorer</a> <a href="/tags/Expressions/" style="font-size: 14px;">Expressions</a> <a href="/tags/Feature/" style="font-size: 14px;">Feature</a> <a href="/tags/FileConnector/" style="font-size: 14px;">FileConnector</a> <a href="/tags/Filter/" style="font-size: 14px;">Filter</a> <a href="/tags/Flag/" style="font-size: 14px;">Flag</a> <a href="/tags/ForLoop/" style="font-size: 14px;">ForLoop</a> <a href="/tags/Form/" style="font-size: 19.63px;">Form</a> <a href="/tags/Function/" style="font-size: 14px;">Function</a> <a href="/tags/Gateway/" style="font-size: 14.63px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Google/" style="font-size: 14px;">Google</a> <a href="/tags/Graphics/" style="font-size: 14px;">Graphics</a> <a href="/tags/Grid/" style="font-size: 14px;">Grid</a> <a href="/tags/HTML5/" style="font-size: 14px;">HTML5</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/Homepage/" style="font-size: 14.63px;">Homepage</a> <a href="/tags/HowTo/" style="font-size: 15.88px;">HowTo</a> <a href="/tags/Icons/" style="font-size: 14px;">Icons</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14.63px;">Identity</a> <a href="/tags/IdentityPackage/" style="font-size: 15.25px;">IdentityPackage</a> <a href="/tags/InformationHub/" style="font-size: 14px;">InformationHub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.13px;">Installation</a> <a href="/tags/IntelligentViewing/" style="font-size: 14.63px;">IntelligentViewing</a> <a href="/tags/Interceptor/" style="font-size: 14px;">Interceptor</a> <a href="/tags/IsTemporaryCopy/" style="font-size: 14px;">IsTemporaryCopy</a> <a href="/tags/ItemStatus/" style="font-size: 14px;">ItemStatus</a> <a href="/tags/JMS/" style="font-size: 14.63px;">JMS</a> <a href="/tags/JMeter/" style="font-size: 14px;">JMeter</a> <a href="/tags/JSON/" style="font-size: 15.25px;">JSON</a> <a href="/tags/JShell/" style="font-size: 14px;">JShell</a> <a href="/tags/JUnit/" style="font-size: 14px;">JUnit</a> <a href="/tags/JXplorer/" style="font-size: 14px;">JXplorer</a> <a href="/tags/Java/" style="font-size: 15.88px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 14.63px;">JavaScript</a> <a href="/tags/JavaUI/" style="font-size: 14px;">JavaUI</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/LDAP/" style="font-size: 14.63px;">LDAP</a> <a href="/tags/LandingPage/" style="font-size: 14px;">LandingPage</a> <a href="/tags/Language/" style="font-size: 14.63px;">Language</a> <a href="/tags/LanguagePack/" style="font-size: 14px;">LanguagePack</a> <a href="/tags/Less/" style="font-size: 14px;">Less</a> <a href="/tags/License/" style="font-size: 14.63px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.88px;">Lifecycle</a> <a href="/tags/LinkDocument/" style="font-size: 14px;">LinkDocument</a> <a href="/tags/LinkedEntity/" style="font-size: 14px;">LinkedEntity</a> <a href="/tags/List/" style="font-size: 14.63px;">List</a> <a href="/tags/Logging/" style="font-size: 14px;">Logging</a> <a href="/tags/LongTextProperty/" style="font-size: 14px;">LongTextProperty</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 14.63px;">Management</a> <a href="/tags/Message/" style="font-size: 14px;">Message</a> <a href="/tags/Metadata/" style="font-size: 14px;">Metadata</a> <a href="/tags/Method/" style="font-size: 14px;">Method</a> <a href="/tags/Migration/" style="font-size: 14px;">Migration</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Mockito/" style="font-size: 14px;">Mockito</a> <a href="/tags/Model/" style="font-size: 14px;">Model</a> <a href="/tags/Modeling/" style="font-size: 14.63px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 14.63px;">Monitoring</a> <a href="/tags/NGINX/" style="font-size: 14px;">NGINX</a> <a href="/tags/Northwind/" style="font-size: 14px;">Northwind</a> <a href="/tags/Notification/" style="font-size: 14px;">Notification</a> <a href="/tags/OKTA/" style="font-size: 14px;">OKTA</a> <a href="/tags/OTDS/" style="font-size: 17.75px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 23.38px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Order/" style="font-size: 14px;">Order</a> <a href="/tags/Organization/" style="font-size: 15.25px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/Package/" style="font-size: 15.25px;">Package</a> <a href="/tags/Parallel/" style="font-size: 14px;">Parallel</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/Pattern/" style="font-size: 14px;">Pattern</a> <a href="/tags/Personal/" style="font-size: 14px;">Personal</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 14px;">Postman</a> <a href="/tags/PowerMockito/" style="font-size: 14px;">PowerMockito</a> <a href="/tags/Preferences/" style="font-size: 14px;">Preferences</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/ProgressionBar/" style="font-size: 14px;">ProgressionBar</a> <a href="/tags/Project/" style="font-size: 15.25px;">Project</a> <a href="/tags/Projects/" style="font-size: 14px;">Projects</a> <a href="/tags/Properties/" style="font-size: 14.63px;">Properties</a> <a href="/tags/Property/" style="font-size: 15.25px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/RHEL/" style="font-size: 14px;">RHEL</a> <a href="/tags/ReST/" style="font-size: 15.88px;">ReST</a> <a href="/tags/ReST-Gateway/" style="font-size: 14px;">ReST Gateway</a> <a href="/tags/Recap/" style="font-size: 15.88px;">Recap</a> <a href="/tags/RegularExpression/" style="font-size: 14.63px;">RegularExpression</a> <a href="/tags/Relations/" style="font-size: 15.25px;">Relations</a> <a href="/tags/Release/" style="font-size: 20.88px;">Release</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/ResultList/" style="font-size: 15.25px;">ResultList</a> <a href="/tags/Reusability/" style="font-size: 14px;">Reusability</a> <a href="/tags/Reverse-proxy/" style="font-size: 14px;">Reverse proxy</a> <a href="/tags/Role/" style="font-size: 14px;">Role</a> <a href="/tags/Roles/" style="font-size: 14.63px;">Roles</a> <a href="/tags/Rule/" style="font-size: 14.63px;">Rule</a> <a href="/tags/Rules/" style="font-size: 14px;">Rules</a> <a href="/tags/Runtime-Security/" style="font-size: 14px;">Runtime Security</a> <a href="/tags/SAML/" style="font-size: 14px;">SAML</a> <a href="/tags/SDK/" style="font-size: 14.63px;">SDK</a> <a href="/tags/SOAP/" style="font-size: 15.25px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 14.63px;">SVN</a> <a href="/tags/Scheduler/" style="font-size: 14px;">Scheduler</a> <a href="/tags/Search/" style="font-size: 14px;">Search</a> <a href="/tags/Section/" style="font-size: 14px;">Section</a> <a href="/tags/Sections/" style="font-size: 14px;">Sections</a> <a href="/tags/Security/" style="font-size: 14px;">Security</a> <a href="/tags/Selenium/" style="font-size: 14px;">Selenium</a> <a href="/tags/Service/" style="font-size: 14px;">Service</a> <a href="/tags/ServiceContainer/" style="font-size: 14px;">ServiceContainer</a> <a href="/tags/Setup/" style="font-size: 15.88px;">Setup</a> <a href="/tags/ShortLived/" style="font-size: 14px;">ShortLived</a> <a href="/tags/SimpleClient/" style="font-size: 14px;">SimpleClient</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 15.88px;">Software</a> <a href="/tags/Solutions/" style="font-size: 14px;">Solutions</a> <a href="/tags/SourceControl/" style="font-size: 14px;">SourceControl</a> <a href="/tags/Sources/" style="font-size: 14px;">Sources</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Storage/" style="font-size: 14px;">Storage</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/SubProcess/" style="font-size: 14px;">SubProcess</a> <a href="/tags/Subtyping/" style="font-size: 14.63px;">Subtyping</a> <a href="/tags/Sync/" style="font-size: 14px;">Sync</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/SynchronizedPartition/" style="font-size: 14px;">SynchronizedPartition</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 15.25px;">Task</a> <a href="/tags/TaskLayout/" style="font-size: 14px;">TaskLayout</a> <a href="/tags/Tasks/" style="font-size: 14.63px;">Tasks</a> <a href="/tags/Team/" style="font-size: 14px;">Team</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Test/" style="font-size: 14px;">Test</a> <a href="/tags/Testing/" style="font-size: 15.25px;">Testing</a> <a href="/tags/Theme/" style="font-size: 16.5px;">Theme</a> <a href="/tags/Time/" style="font-size: 14px;">Time</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/Title/" style="font-size: 14px;">Title</a> <a href="/tags/Toggle/" style="font-size: 14px;">Toggle</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/Tool/" style="font-size: 14px;">Tool</a> <a href="/tags/Tools/" style="font-size: 14.63px;">Tools</a> <a href="/tags/Transformation/" style="font-size: 14px;">Transformation</a> <a href="/tags/Translation/" style="font-size: 14.63px;">Translation</a> <a href="/tags/UDDI/" style="font-size: 14.63px;">UDDI</a> <a href="/tags/UnInstallation/" style="font-size: 14px;">UnInstallation</a> <a href="/tags/Unicode/" style="font-size: 14px;">Unicode</a> <a href="/tags/Update/" style="font-size: 18.38px;">Update</a> <a href="/tags/Upgrade/" style="font-size: 14px;">Upgrade</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/ValueAssistance/" style="font-size: 14.63px;">ValueAssistance</a> <a href="/tags/Version/" style="font-size: 14px;">Version</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/Video/" style="font-size: 14px;">Video</a> <a href="/tags/Viewer/" style="font-size: 14px;">Viewer</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WSAppServer/" style="font-size: 14px;">WSAppServer</a> <a href="/tags/WebLibraryDefinition/" style="font-size: 14.63px;">WebLibraryDefinition</a> <a href="/tags/Webservice/" style="font-size: 19.63px;">Webservice</a> <a href="/tags/WhileLoop/" style="font-size: 14px;">WhileLoop</a> <a href="/tags/Worklist/" style="font-size: 14px;">Worklist</a> <a href="/tags/Workqueue/" style="font-size: 14.63px;">Workqueue</a> <a href="/tags/Workspace/" style="font-size: 15.88px;">Workspace</a> <a href="/tags/XDS/" style="font-size: 14.63px;">XDS</a> <a href="/tags/XML/" style="font-size: 15.25px;">XML</a> <a href="/tags/XPath/" style="font-size: 15.25px;">XPath</a> <a href="/tags/XSLT/" style="font-size: 14px;">XSLT</a> <a href="/tags/xECM/" style="font-size: 16.5px;">xECM</a> <a href="/tags/xForm/" style="font-size: 16.5px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+
+	
+
+
+
+<div id="download002" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps prototyping booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download002" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="tfokgrtbsp">
+            <p><input class="search-input" type="text" placeholder="First name" name="UIMy41yrHk" id="id-UIMy41yrHk"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="frlQMmEVB9" id="id-frlQMmEVB9"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="p5xcHl0BfA" id="id-p5xcHl0BfA"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="download" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps fundamentals booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="qdlxpohveb">
+            <p><input class="search-input" type="text" placeholder="First name" name="9aiQvAsyHa" id="id-9aiQvAsyHa"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="pKdGB3hCf6" id="id-pKdGB3hCf6"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="8azv3a7ZO9" id="id-8azv3a7ZO9"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="hosting" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Plan you strategic AppWorks hosting</h1>
+        <h2 class="site-description">You will receive a mail with information on next steps</h2>
+        <form name="hosting" action="https://appworks-tips.email-provider.eu/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="ojenuvc25g">
+            <p><input class="search-input" type="text" placeholder="First name" name="kZYzubjXZ1" id="id-kZYzubjXZ1"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="DU7uu8Hd1B" id="id-DU7uu8Hd1B"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="7" name="waY3MUqJDo" id="id-waY3MUqJDo" placeholder="Turn you wish into a command"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="OTyYwKXWRE" id="id-OTyYwKXWRE"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><i>AppWorks hosting is a payable service handled via monthly invoicing. This means that you will be billed for the service <br>after it has been provided to you under our signed service agreement which we put in place after our free call.</i></p>
+            <p><input class="submit-input" type="submit" value="Take action!"></p>
+        </form>
+    </div>
+</div>
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="google" class="search-overlay subscribe-overlay">
+        <div class="search-form" style="height:8rem;">
+            
+            <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+            
+            <script async src="https://cse.google.com/cse.js?cx=784555e4960d85d09"></script>
+            <div id="cse" style="width: 80%; margin: 0 auto; text-align:left">
+            <div class="gcse-search"></div>
+            </div>
+            <a class="search-overlay-close" href="#"></a>
+        </div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback or any question</h1>
+        <h2 class="site-description">Send back any feedback or question so we can inspect and adapt our features or help you on your own journey.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback or any question"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Send"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2023
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">A tighter customization with the brand-new JavaScript API</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+
+<script src="/js/mix/post-lazy.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av.js"></script>-->
+
+<script src="/js/av.js"></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>

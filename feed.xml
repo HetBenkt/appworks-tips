@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>AppWorks Tips</title>
+  <icon>https://appworks-tips.com/images/favicon.png</icon>
+  <subtitle>Installments, thoughts, tricks and ideas</subtitle>
+  <link rel="self" href="https://appworks-tips.com/feed.xml"/>
+  
+  <link href="https://appworks-tips.com/"/>
+  <updated>2023-12-07T20:33:06.682Z</updated>
+  <id>https://appworks-tips.com/</id>
+  
+  <author>
+    <name>Antal Bos</name>
+    <uri>https://appworks-tips.com/</uri>
+    <email>contact@appworks-tips.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The ultimate workspace wizardry; How to supercharge your WS with source control after creation</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/12/15/204_connect_source_control_after_project_creation/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/204_connect_source_control_after_project_creation/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/12/15/204_connect_source_control_after_project_creation/</id>
+    <published>2023-12-15T12:00:00.000Z</published>
+    <updated>2023-12-07T20:33:06.682Z</updated>
+    
+    <summary type="html">
+    
+      You&#39;re not the first one concluding it was smarter to connect to SVN/GIT in the first place.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/204_connect_source_control_after_project_creation/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Project" scheme="https://appworks-tips.com/tags/Project/"/>
+    
+      <category term="Sync" scheme="https://appworks-tips.com/tags/Sync/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ultimate productivity with this jaw-dropping follow-up to auto-assign Cases and Tasks</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/12/08/203_auto_assign_cases_tasks/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/203_auto_assign_cases_tasks/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/12/08/203_auto_assign_cases_tasks/</id>
+    <published>2023-12-08T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.932Z</updated>
+    
+    <summary type="html">
+    
+      Let your knowledge workers work at their own pace grabbing tasks from a central queue.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/203_auto_assign_cases_tasks/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Task" scheme="https://appworks-tips.com/tags/Task/"/>
+    
+      <category term="Workqueue" scheme="https://appworks-tips.com/tags/Workqueue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unlock your knowledge for dominating task workqueues; You&#39;ll never work the same way again</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/12/01/202_working_with_task_workqueues/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/202_working_with_task_workqueues/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/12/01/202_working_with_task_workqueues/</id>
+    <published>2023-12-01T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.931Z</updated>
+    
+    <summary type="html">
+    
+      Let your knowledge workers work at their own pace grabbing tasks from a central queue.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/202_working_with_task_workqueues/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Task" scheme="https://appworks-tips.com/tags/Task/"/>
+    
+      <category term="Workqueue" scheme="https://appworks-tips.com/tags/Workqueue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shocking showdown; Subtyping vs. Database - You won&#39;t believe what happens</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/11/24/201_subtyping_vs_database/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/201_subtyping_vs_database/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/11/24/201_subtyping_vs_database/</id>
+    <published>2023-11-24T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.930Z</updated>
+    
+    <summary type="html">
+    
+      It is what it is; Just swallow it as you&#39;re not in control here, but just keep this post in mind!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/201_subtyping_vs_database/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Subtyping" scheme="https://appworks-tips.com/tags/Subtyping/"/>
+    
+      <category term="Database" scheme="https://appworks-tips.com/tags/Database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unbelievable results revealed; Harnessing parallel processing for mind-blowing insights</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/11/17/200_speedtest_parallel_processing/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/200_speedtest_parallel_processing/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/11/17/200_speedtest_parallel_processing/</id>
+    <published>2023-11-17T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.929Z</updated>
+    
+    <summary type="html">
+    
+      Don&#39;t limit yourself in sequential thinking in BPMs.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/200_speedtest_parallel_processing/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Parallel" scheme="https://appworks-tips.com/tags/Parallel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Behold the power of a section within an entity &#39;Form&#39; building block</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/11/10/199_feel_the_power_of_a_form_section/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/199_feel_the_power_of_a_form_section/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/11/10/199_feel_the_power_of_a_form_section/</id>
+    <published>2023-11-10T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.929Z</updated>
+    
+    <summary type="html">
+    
+      Finally, a use-case solved with the (I-never-understood) form sections feature.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/199_feel_the_power_of_a_form_section/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Form" scheme="https://appworks-tips.com/tags/Form/"/>
+    
+      <category term="Section" scheme="https://appworks-tips.com/tags/Section/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Discover how to revolutionize your action buttons with Unicode icons</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/11/03/198_iconize_buttons_with_unicode/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/198_iconize_buttons_with_unicode/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/11/03/198_iconize_buttons_with_unicode/</id>
+    <published>2023-11-03T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.928Z</updated>
+    
+    <summary type="html">
+    
+      A great trick, but I never thought of it...at least, not in context of AppWorks!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/198_iconize_buttons_with_unicode/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Icons" scheme="https://appworks-tips.com/tags/Icons/"/>
+    
+      <category term="Unicode" scheme="https://appworks-tips.com/tags/Unicode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Prepare the magic; Watch how XML data gets a mind-blowing makeover with XSLT</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/10/27/197_xslt_data_transformation/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/197_xslt_data_transformation/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/10/27/197_xslt_data_transformation/</id>
+    <published>2023-10-27T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.927Z</updated>
+    
+    <summary type="html">
+    
+      When it comes to XML transformation; XSLT is your friend for life.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/197_xslt_data_transformation/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="XSLT" scheme="https://appworks-tips.com/tags/XSLT/"/>
+    
+      <category term="Transformation" scheme="https://appworks-tips.com/tags/Transformation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Update on OpenText World (Limited V-Pass edition 2023 Q4)</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/10/20/196b_update_enterprise_world_v_pass/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/196b_update_enterprise_world_v_pass/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/10/20/196b_update_enterprise_world_v_pass/</id>
+    <published>2023-10-20T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.926Z</updated>
+    
+    <summary type="html">
+    
+      Q4 is here again; We dive into a limited digital world (Las Vegas) event 2023!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/196b_update_enterprise_world_v_pass/feature_tag.webp" />
+    
+      <category term="Enterprise world" scheme="https://appworks-tips.com/categories/Enterprise-world/"/>
+    
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="EnterpriseWorld" scheme="https://appworks-tips.com/tags/EnterpriseWorld/"/>
+    
+      <category term="Digital" scheme="https://appworks-tips.com/tags/Digital/"/>
+    
+      <category term="Update" scheme="https://appworks-tips.com/tags/Update/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>It&#39;s here; AppWorks 23.4; Fully GA and ready for consumption</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/10/13/196a_update_on_23_4/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/196a_update_on_23_4/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/10/13/196a_update_on_23_4/</id>
+    <published>2023-10-13T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.925Z</updated>
+    
+    <summary type="html">
+    
+      Let&#39;s have a look at the new features for Q4 2023.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/196a_update_on_23_4/feature_tag.webp" />
+    
+      <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Discover the hidden power of the JMS Connector; Revive life and transform your world</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/10/06/196_bring_life_in_jms_connector/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/196_bring_life_in_jms_connector/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/10/06/196_bring_life_in_jms_connector/</id>
+    <published>2023-10-06T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.924Z</updated>
+    
+    <summary type="html">
+    
+      Loosely coupled solutions are best built via queueing mechanisms.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/196_bring_life_in_jms_connector/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Connector" scheme="https://appworks-tips.com/tags/Connector/"/>
+    
+      <category term="Apache" scheme="https://appworks-tips.com/tags/Apache/"/>
+    
+      <category term="ActiveMQ" scheme="https://appworks-tips.com/tags/ActiveMQ/"/>
+    
+      <category term="JMS" scheme="https://appworks-tips.com/tags/JMS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unleashing the power of Apache ActiveMQ on RHEL; Prepare JMS like a bro</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/09/29/195_install_apache_activemq/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/195_install_apache_activemq/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/09/29/195_install_apache_activemq/</id>
+    <published>2023-09-29T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.923Z</updated>
+    
+    <summary type="html">
+    
+      The JMS connector is finally on the top of my backlog; This is the preparation phase.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/195_install_apache_activemq/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Apache" scheme="https://appworks-tips.com/tags/Apache/"/>
+    
+      <category term="ActiveMQ" scheme="https://appworks-tips.com/tags/ActiveMQ/"/>
+    
+      <category term="JMS" scheme="https://appworks-tips.com/tags/JMS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unveiling the best &quot;Return&quot; button implementation ever; You&#39;ll never want to go back</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/09/22/194_return_button_action_rule/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/194_return_button_action_rule/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/09/22/194_return_button_action_rule/</id>
+    <published>2023-09-22T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.922Z</updated>
+    
+    <summary type="html">
+    
+      I see a bad habit in each project which we can do much better.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/194_return_button_action_rule/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Rule" scheme="https://appworks-tips.com/tags/Rule/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WARNING; The shocking truth about the &#39;toOne&#39; entity relation</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/09/15/193_be_carefull_on_to_one_relations/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/193_be_carefull_on_to_one_relations/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/09/15/193_be_carefull_on_to_one_relations/</id>
+    <published>2023-09-15T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.920Z</updated>
+    
+    <summary type="html">
+    
+      This post explains the WHY? behind this title...
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/193_be_carefull_on_to_one_relations/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BuildingBlock" scheme="https://appworks-tips.com/tags/BuildingBlock/"/>
+    
+      <category term="Relations" scheme="https://appworks-tips.com/tags/Relations/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The mind-blowing secret behind the irresistible &#39;Title&#39; BB</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/09/08/192_magic_title_bb/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/192_magic_title_bb/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/09/08/192_magic_title_bb/</id>
+    <published>2023-09-08T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.918Z</updated>
+    
+    <summary type="html">
+    
+      Let me tell you, your guess is wrong; Prepare to be amazed...
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/192_magic_title_bb/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BuildingBlock" scheme="https://appworks-tips.com/tags/BuildingBlock/"/>
+    
+      <category term="Title" scheme="https://appworks-tips.com/tags/Title/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Turbocharge productivity with this mind-blowing &quot;queued&quot; BPMs technique</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/09/01/191_managing_queued_bpms/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/191_managing_queued_bpms/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/09/01/191_managing_queued_bpms/</id>
+    <published>2023-09-01T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.914Z</updated>
+    
+    <summary type="html">
+    
+      When @#^%$@! hits the fan, you need to know where to look for...
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/191_managing_queued_bpms/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unlocking configuration; Create mind-blowing custom properties for your entity in runtime</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/08/25/190_add_extra_props_to_entity_in_runtime/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/190_add_extra_props_to_entity_in_runtime/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/08/25/190_add_extra_props_to_entity_in_runtime/</id>
+    <published>2023-08-25T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.913Z</updated>
+    
+    <summary type="html">
+    
+      Give you knowledge worker the possibility to add extra metadata to a valuable entity instance.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/190_add_extra_props_to_entity_in_runtime/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Entity" scheme="https://appworks-tips.com/tags/Entity/"/>
+    
+      <category term="Property" scheme="https://appworks-tips.com/tags/Property/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Supercharge your AppWorks experience; Unleash the power of NGINX as the ultimate reverse proxy</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/08/18/189_nginx_as_reverse_proxy/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/189_nginx_as_reverse_proxy/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/08/18/189_nginx_as_reverse_proxy/</id>
+    <published>2023-08-18T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.911Z</updated>
+    
+    <summary type="html">
+    
+      A required trick to learn when you expose a public IP address safely to the world.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/189_nginx_as_reverse_proxy/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="NGINX" scheme="https://appworks-tips.com/tags/NGINX/"/>
+    
+      <category term="Reverse proxy" scheme="https://appworks-tips.com/tags/Reverse-proxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Be a Stoic; Craft your own &#39;Application Connector&#39; and transform your life forever</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/08/11/188_craft_your_own_connector/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/188_craft_your_own_connector/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/08/11/188_craft_your_own_connector/</id>
+    <published>2023-08-11T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.910Z</updated>
+    
+    <summary type="html">
+    
+      If the AWP does not provide it, we just build it ourselves!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/188_craft_your_own_connector/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Connector" scheme="https://appworks-tips.com/tags/Connector/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Master the art of the low-code config entity; Unleash the astonishing power of Base64 JSON</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/08/04/187_read_base64_json_from_config/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/187_read_base64_json_from_config/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/08/04/187_read_base64_json_from_config/</id>
+    <published>2023-08-04T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.909Z</updated>
+    
+    <summary type="html">
+    
+      When they think it&#39;s impossible, you just make it possible...
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/187_read_base64_json_from_config/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="JSON" scheme="https://appworks-tips.com/tags/JSON/"/>
+    
+      <category term="Base64" scheme="https://appworks-tips.com/tags/Base64/"/>
+    
+      <category term="ConfigEntity" scheme="https://appworks-tips.com/tags/ConfigEntity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>An astonishing XML secret; Discover the one correct level to read from the XML datastore</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/07/28/186_read_from_correct_level_in_xml_store/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/186_read_from_correct_level_in_xml_store/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/07/28/186_read_from_correct_level_in_xml_store/</id>
+    <published>2023-07-28T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.908Z</updated>
+    
+    <summary type="html">
+    
+      Finally exposing the differences in level between &#39;ISV&#39;, &#39;Organization&#39;, and &#39;User&#39;.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/186_read_from_correct_level_in_xml_store/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="XDS" scheme="https://appworks-tips.com/tags/XDS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mind-blowing secrets revealed; Unveiling the ultimate lifecycle update with jaw-dropping migration insights</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/07/21/185_lifecycle_update_with_migration_insights/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/185_lifecycle_update_with_migration_insights/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/07/21/185_lifecycle_update_with_migration_insights/</id>
+    <published>2023-07-21T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.907Z</updated>
+    
+    <summary type="html">
+    
+      Just a share after our challenge to get deeper database insights from an entity lifecycle BB update.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/185_lifecycle_update_with_migration_insights/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Database" scheme="https://appworks-tips.com/tags/Database/"/>
+    
+      <category term="Lifecycle" scheme="https://appworks-tips.com/tags/Lifecycle/"/>
+    
+      <category term="Migration" scheme="https://appworks-tips.com/tags/Migration/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Embrace the news; AppWorks 23.3 is GA and we dive through its new features</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/07/14/184a_update_on_23_3/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/184a_update_on_23_3/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/07/14/184a_update_on_23_3/</id>
+    <published>2023-07-14T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.907Z</updated>
+    
+    <summary type="html">
+    
+      A minor update, but we take the time for this small release in Q3 2023!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/184a_update_on_23_3/feature_tag.webp" />
+    
+      <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Exposed; Top secret ways to unlock and unleash entity list data like a pro</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/07/07/184_ways_to_expose_list_data/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/184_ways_to_expose_list_data/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/07/07/184_ways_to_expose_list_data/</id>
+    <published>2023-07-07T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.906Z</updated>
+    
+    <summary type="html">
+    
+      It&#39;s time to demonstrate multiple ways of exposing entity data.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/184_ways_to_expose_list_data/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Entity" scheme="https://appworks-tips.com/tags/Entity/"/>
+    
+      <category term="List" scheme="https://appworks-tips.com/tags/List/"/>
+    
+      <category term="Data" scheme="https://appworks-tips.com/tags/Data/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Revolutionary hack; The surprising way to version your entity instance in real-time</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/06/30/183_versioning_an_entity_instance/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/183_versioning_an_entity_instance/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/06/30/183_versioning_an_entity_instance/</id>
+    <published>2023-06-30T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.905Z</updated>
+    
+    <summary type="html">
+    
+      This is the creation of a new version of an entity instance in runtime.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/183_versioning_an_entity_instance/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Entity" scheme="https://appworks-tips.com/tags/Entity/"/>
+    
+      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Version" scheme="https://appworks-tips.com/tags/Version/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Stop leaving your list order to chance; The simple trick to take full control now</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/06/23/182_order_a_list_bb_manually/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/182_order_a_list_bb_manually/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/06/23/182_order_a_list_bb_manually/</id>
+    <published>2023-06-23T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.904Z</updated>
+    
+    <summary type="html">
+    
+      Just an easy trick to manually control the order of your &#39;List&#39; BB.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/182_order_a_list_bb_manually/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BuildingBlock" scheme="https://appworks-tips.com/tags/BuildingBlock/"/>
+    
+      <category term="List" scheme="https://appworks-tips.com/tags/List/"/>
+    
+      <category term="Order" scheme="https://appworks-tips.com/tags/Order/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>There is a surprisingly easy JavaUI tool; Say goodbye to tedious tasks with the &quot;Simple Client&quot;...Or not!?</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/06/16/181_run_javaui_tool/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/181_run_javaui_tool/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/06/16/181_run_javaui_tool/</id>
+    <published>2023-06-16T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.904Z</updated>
+    
+    <summary type="html">
+    
+      A secret tool! Let&#39;s see what value it&#39;ll bring to our base of knowledge.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/181_run_javaui_tool/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="JavaUI" scheme="https://appworks-tips.com/tags/JavaUI/"/>
+    
+      <category term="SimpleClient" scheme="https://appworks-tips.com/tags/SimpleClient/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unleash the hidden potential of the &#39;ReST Gateway Connector&#39;; Your gateway to next-level data integration</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/06/09/180_bring_alive_the_rest_gateway_connector/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/180_bring_alive_the_rest_gateway_connector/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/06/09/180_bring_alive_the_rest_gateway_connector/</id>
+    <published>2023-06-09T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.904Z</updated>
+    
+    <summary type="html">
+    
+      JSON is &quot;the new&quot; now, so let&#39;s just embrace it with this underrated connector.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/180_bring_alive_the_rest_gateway_connector/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Connector" scheme="https://appworks-tips.com/tags/Connector/"/>
+    
+      <category term="JSON" scheme="https://appworks-tips.com/tags/JSON/"/>
+    
+      <category term="ReST Gateway" scheme="https://appworks-tips.com/tags/ReST-Gateway/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unleash your creativity; Build the perfect landing-page with custom tiles - Read here now</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/06/02/179_create_custom_tile_landingpage/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/179_create_custom_tile_landingpage/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/06/02/179_create_custom_tile_landingpage/</id>
+    <published>2023-06-02T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.903Z</updated>
+    
+    <summary type="html">
+    
+      Every OpenText AppWorks demo has one, now it&#39;s time to copy that knowledge for our own advantage.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/179_create_custom_tile_landingpage/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Custom" scheme="https://appworks-tips.com/tags/Custom/"/>
+    
+      <category term="LandingPage" scheme="https://appworks-tips.com/tags/LandingPage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unleash your inner tech guru; Master the art of the &quot;FileConnector&quot;</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/05/26/178_playing_with_the_fileconnector/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/178_playing_with_the_fileconnector/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/05/26/178_playing_with_the_fileconnector/</id>
+    <published>2023-05-26T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.903Z</updated>
+    
+    <summary type="html">
+    
+      An underrated connector which can just solve that specific file-handling use-case.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/178_playing_with_the_fileconnector/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="FileConnector" scheme="https://appworks-tips.com/tags/FileConnector/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>4-year anniversary!</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/05/19/177c_4_year_anniversary/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/177c_4_year_anniversary/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/05/19/177c_4_year_anniversary/</id>
+    <published>2023-05-19T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.902Z</updated>
+    
+    <summary type="html">
+    
+      4 years on AppWorks blog posts pushing up that hill. Time to share the successes!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/177c_4_year_anniversary/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="Anniversary" scheme="https://appworks-tips.com/tags/Anniversary/"/>
+    
+      <category term="Recap" scheme="https://appworks-tips.com/tags/Recap/"/>
+    
+      <category term="Analytics" scheme="https://appworks-tips.com/tags/Analytics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Feel the excitement; AppWorks 23.2 is GA, and this post is updating you on the latest functionalities</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/05/12/177a_update_on_23_2/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/177a_update_on_23_2/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/05/12/177a_update_on_23_2/</id>
+    <published>2023-05-12T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.899Z</updated>
+    
+    <summary type="html">
+    
+      Let&#39;s get ourselves an update on the new stuff...AWP release Q2-2023 is here!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/177a_update_on_23_2/feature_tag.webp" />
+    
+      <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Update on OpenText World EMEA Innovation Summits</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/05/05/177b_update_ot_world_emea_london/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/177b_update_ot_world_emea_london/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/05/05/177b_update_ot_world_emea_london/</id>
+    <published>2023-05-05T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.901Z</updated>
+    
+    <summary type="html">
+    
+      Finally attending a live event in London...
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/177b_update_ot_world_emea_london/feature_tag.webp" />
+    
+      <category term="Enterprise world" scheme="https://appworks-tips.com/categories/Enterprise-world/"/>
+    
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="EnterpriseWorld" scheme="https://appworks-tips.com/tags/EnterpriseWorld/"/>
+    
+      <category term="Update" scheme="https://appworks-tips.com/tags/Update/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Revolutionize your business today; Learn how to reset your entity &#39;Business ID&#39; wisely</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/04/28/177_reset_business_id/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/177_reset_business_id/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/04/28/177_reset_business_id/</id>
+    <published>2023-04-28T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.899Z</updated>
+    
+    <summary type="html">
+    
+      A struggle we had in our project, but solved in a smart way...
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/177_reset_business_id/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BusinessID" scheme="https://appworks-tips.com/tags/BusinessID/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Get excited; easily format your precious value with the magic of &#39;sprintf()&#39;</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/04/21/176_update_date_time_prop_via_bpm_printf/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/176_update_date_time_prop_via_bpm_printf/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/04/21/176_update_date_time_prop_via_bpm_printf/</id>
+    <published>2023-04-21T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.898Z</updated>
+    
+    <summary type="html">
+    
+      An interesting thing passed my attention during my own journey to share with you all...
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/176_update_date_time_prop_via_bpm_printf/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
+    
+      <category term="Function" scheme="https://appworks-tips.com/tags/Function/"/>
+    
+      <category term="DateTime" scheme="https://appworks-tips.com/tags/DateTime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Discover how to import CSS in a &#39;Theme&#39; document like a pro</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/04/14/175_import_CSS_in_theme_doc_with_wld/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/175_import_CSS_in_theme_doc_with_wld/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/04/14/175_import_CSS_in_theme_doc_with_wld/</id>
+    <published>2023-04-14T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.897Z</updated>
+    
+    <summary type="html">
+    
+      Now I understand OpenText calls it &quot;Professional Services&quot;...Watch this trick!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/175_import_CSS_in_theme_doc_with_wld/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Theme" scheme="https://appworks-tips.com/tags/Theme/"/>
+    
+      <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
+    
+      <category term="WebLibraryDefinition" scheme="https://appworks-tips.com/tags/WebLibraryDefinition/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Discover the secret to effortlessly exporting your project model for maximum reusability</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/04/07/174_export_project_model_for_reusability/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/174_export_project_model_for_reusability/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/04/07/174_export_project_model_for_reusability/</id>
+    <published>2023-04-07T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.896Z</updated>
+    
+    <summary type="html">
+    
+      Time to reuse your entities the extended way.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/174_export_project_model_for_reusability/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Project" scheme="https://appworks-tips.com/tags/Project/"/>
+    
+      <category term="Model" scheme="https://appworks-tips.com/tags/Model/"/>
+    
+      <category term="Reusability" scheme="https://appworks-tips.com/tags/Reusability/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>You won&#39;t believe this simple trick for setting your date/time field default to 12PM</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/03/31/173_set_date_time_field_default_at_12pm/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/173_set_date_time_field_default_at_12pm/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/03/31/173_set_date_time_field_default_at_12pm/</id>
+    <published>2023-03-31T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.894Z</updated>
+    
+    <summary type="html">
+    
+      Not possible out of the box, but doable with a small workaround.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/173_set_date_time_field_default_at_12pm/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Date" scheme="https://appworks-tips.com/tags/Date/"/>
+    
+      <category term="Time" scheme="https://appworks-tips.com/tags/Time/"/>
+    
+      <category term="Rule" scheme="https://appworks-tips.com/tags/Rule/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The power of Less - A CSS-preprocessor that will boost your stylesheet</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/03/24/172_just_a_dive_into_less/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/172_just_a_dive_into_less/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/03/24/172_just_a_dive_into_less/</id>
+    <published>2023-03-24T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.894Z</updated>
+    
+    <summary type="html">
+    
+      Just a twenty-%-dive because we need the knowledge to play with a &#39;Theme&#39; document.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/172_just_a_dive_into_less/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Theme" scheme="https://appworks-tips.com/tags/Theme/"/>
+    
+      <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
+    
+      <category term="Less" scheme="https://appworks-tips.com/tags/Less/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unlock the power of conversation with ChatGPT; The ultimate &#39;Discussion&#39; BB</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/03/17/171a_calling_chatgpt_from_discussion_bb/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/171a_calling_chatgpt_from_discussion_bb/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/03/17/171a_calling_chatgpt_from_discussion_bb/</id>
+    <published>2023-03-17T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.893Z</updated>
+    
+    <summary type="html">
+    
+      It&#39;s a hype, we want it all...Well, here it is! Nicely embedded into our beloved platform.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/171a_calling_chatgpt_from_discussion_bb/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="Custom" scheme="https://appworks-tips.com/tags/Custom/"/>
+    
+      <category term="ChatGPT" scheme="https://appworks-tips.com/tags/ChatGPT/"/>
+    
+      <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Revolutionize your understanding of XDS with this comprehensive guide</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/03/10/171_understand_xds_with_this_guide/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/171_understand_xds_with_this_guide/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/03/10/171_understand_xds_with_this_guide/</id>
+    <published>2023-03-10T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.892Z</updated>
+    
+    <summary type="html">
+    
+      The XML Document Store exposes its secrets in this post.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/171_understand_xds_with_this_guide/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="XDS" scheme="https://appworks-tips.com/tags/XDS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Effortlessly copy values from any result list with this simple trick</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/03/03/170_copy_a_value_from_result_list/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/170_copy_a_value_from_result_list/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/03/03/170_copy_a_value_from_result_list/</id>
+    <published>2023-03-03T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.891Z</updated>
+    
+    <summary type="html">
+    
+      Unable to do it? Watch this &quot;magic&quot; mouse trick that saves the world!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/170_copy_a_value_from_result_list/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="ResultList" scheme="https://appworks-tips.com/tags/ResultList/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unleash the full potential of your Java skills with the amazing power of JShell</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/02/24/169_leverage_the_power_of_jshell/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/169_leverage_the_power_of_jshell/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/02/24/169_leverage_the_power_of_jshell/</id>
+    <published>2023-02-24T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.891Z</updated>
+    
+    <summary type="html">
+    
+      Just because we would like to run Java code from a RHEL console
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/169_leverage_the_power_of_jshell/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="JShell" scheme="https://appworks-tips.com/tags/JShell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Take the first steps toward mastering the AWP SDK with these essential tips</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/02/17/168_your_first_steps_embracing_awp_sdk/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/168_your_first_steps_embracing_awp_sdk/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/02/17/168_your_first_steps_embracing_awp_sdk/</id>
+    <published>2023-02-17T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.890Z</updated>
+    
+    <summary type="html">
+    
+      Let&#39;s have a first start on the SDK with interesting Java objects.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/168_your_first_steps_embracing_awp_sdk/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="SDK" scheme="https://appworks-tips.com/tags/SDK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Transform PRD with this advanced technique to make entities abstract</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/02/10/167_making_an_entity_abstract_after_usage_in_prd/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/167_making_an_entity_abstract_after_usage_in_prd/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/02/10/167_making_an_entity_abstract_after_usage_in_prd/</id>
+    <published>2023-02-10T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.889Z</updated>
+    
+    <summary type="html">
+    
+      What happens with your data when your analyst gay/gal decides to introduce an entity abstraction.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/167_making_an_entity_abstract_after_usage_in_prd/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Entity" scheme="https://appworks-tips.com/tags/Entity/"/>
+    
+      <category term="Abstract" scheme="https://appworks-tips.com/tags/Abstract/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Discover the exciting new features of AppWorks 23.1 in the GA release of 2023</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/02/03/166a_update_on_23_1/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/166a_update_on_23_1/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/02/03/166a_update_on_23_1/</id>
+    <published>2023-02-03T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.888Z</updated>
+    
+    <summary type="html">
+    
+      A new year, a new quarter...Let&#39;s share what&#39;s new on AWP 23.1!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/166a_update_on_23_1/feature_tag.webp" />
+    
+      <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unlock the ultimate pathway to runtime security with this essential guide</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/01/27/166_the_pathway_to_runtime_security_storage_location/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/166_the_pathway_to_runtime_security_storage_location/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/01/27/166_the_pathway_to_runtime_security_storage_location/</id>
+    <published>2023-01-27T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.887Z</updated>
+    
+    <summary type="html">
+    
+      You set it, you use it, but this post explains where it&#39;s eventually saved and validated.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/166_the_pathway_to_runtime_security_storage_location/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Runtime Security" scheme="https://appworks-tips.com/tags/Runtime-Security/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Discover the game-changing difference between relating data and saving data</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/01/20/165_relating_data_vs_saving_data/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/165_relating_data_vs_saving_data/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/01/20/165_relating_data_vs_saving_data/</id>
+    <published>2023-01-20T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.886Z</updated>
+    
+    <summary type="html">
+    
+      Persistence in your data with interesting techniques.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/165_relating_data_vs_saving_data/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Relations" scheme="https://appworks-tips.com/tags/Relations/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Effortlessly remove your inbox with this simple CSS hack</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/01/13/164_a_css_hack_to_remove_the_user_inbox/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/164_a_css_hack_to_remove_the_user_inbox/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/01/13/164_a_css_hack_to_remove_the_user_inbox/</id>
+    <published>2023-01-13T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.886Z</updated>
+    
+    <summary type="html">
+    
+      What to do if you really want to remove the user inbox from the UI? CSS is your friend!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/164_a_css_hack_to_remove_the_user_inbox/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Theme" scheme="https://appworks-tips.com/tags/Theme/"/>
+    
+      <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Revolutionize layouts with this simple trick adding a custom icon to a tab</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/01/06/163_add_a_custom_icon_on_layout_tab/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/163_add_a_custom_icon_on_layout_tab/feature_tag.webp" />
+    <id>https://appworks-tips.com/2023/01/06/163_add_a_custom_icon_on_layout_tab/</id>
+    <published>2023-01-06T12:00:00.000Z</published>
+    <updated>2023-12-09T11:57:54.885Z</updated>
+    
+    <summary type="html">
+    
+      When you miss UI elements in runtime, CSS is your friend to fix it.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/163_add_a_custom_icon_on_layout_tab/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Theme" scheme="https://appworks-tips.com/tags/Theme/"/>
+    
+      <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
+    
+  </entry>
+  
+</feed>

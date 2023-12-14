@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+<link rel="stylesheet" href="/css/products.css">
+
+	
+<link rel="stylesheet" href="/css/nav.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+    
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y597KBTG4E"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-Y597KBTG4E');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Feel the excitement; AppWorks 23.2 is GA, and this post is updating you on the latest functionalities | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="Let's get ourselves an update on the new stuff...AWP release Q2-2023 is here!">
+
+	
+	<meta name="keywords" content="appworks, opentext, installation, vm, release">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Feel the excitement; AppWorks 23.2 is GA, and this post is updating you on the latest functionalities | AppWorks Tips">
+	<meta property="og:description" content="Let's get ourselves an update on the new stuff...AWP release Q2-2023 is here!">
+	<meta property="og:url" content="https://appworks-tips.com/2023/05/12/177a_update_on_23_2/">
+
+	
+	<meta property="article:published_time" content="2023-05-12T12:05:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2023/05/12/177a_update_on_23_2/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+        <div class="site-header-sponsor">
+            
+                <a href="https://bos-ictservices.nl" target="_blank">
+                <img class="sponsor-image" src="https://bos-ictservices.nl/img/logo.png">
+                </a>
+            
+                <a href="https://github.com/sponsors/HetBenkt" target="_blank">
+                <img class="sponsor-image" src="/images/sponsor_here.png">
+                </a>
+            
+        </div>
+        
+        
+
+<nav class="site-nav">
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                
+                
+                    <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+                
+                
+                
+                    <a href="/installation" title="INSTALLATION 23.4">INSTALLATION 23.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
+  <g id="surface1">
+   <path d="m7.18359,7.74219c-0.29687,0.125 -0.39062,0.36328 -0.27734,0.6289l0.90234,-0.3789c-0.09765,-0.23047 -0.39062,-0.34766 -0.625,-0.25zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_1"/>
+   <path d="m14.48047,8.67969l1.12109,-0.67969l-1.12109,-0.67969l0.95312,-0.90234l-1.23828,-0.43359l0.75,-1.07813l-1.30468,-0.16406l0.50781,-1.21094l-1.30469,0.10938l0.24219,-1.28907l-1.25781,0.375l-0.02735,-1.30859l-1.15234,0.62891l-0.30078,-1.27735l-0.99219,0.85938l-0.5625,-1.1875l-0.79297,1.04297l-0.79297,-1.04297l-0.5625,1.1875l-0.99219,-0.85938l-0.30078,1.27735l-1.15234,-0.62891l-0.02734,1.30859l-1.25782,-0.375l0.2461,1.28907l-1.3086,-0.10938l0.50782,1.21094l-1.30079,0.16406l0.7461,1.07813l-1.23828,0.43359l0.95312,0.90234l-1.12109,0.67969l1.12109,0.67969l-0.95312,0.90234l1.23828,0.42969l-0.75,1.07812l1.30469,0.16797l-0.50782,1.21094l1.3086,-0.10937l-0.2461,1.28906l1.25782,-0.37891l0.02734,1.3125l1.15234,-0.6289l0.30078,1.27734l0.99219,-0.85938l0.5586,1.1875l0.79687,-1.04296l0.79297,1.04296l0.5625,-1.1875l0.99219,0.85938l0.30078,-1.27734l1.15234,0.6289l0.02735,-1.30859l1.25781,0.375l-0.2461,-1.28906l1.3086,0.10937l-0.50781,-1.21094l1.30468,-0.16406l-0.75,-1.08203l1.23828,-0.42969l-0.95312,-0.90234zm-9.05859,2.1289l-0.5586,-1.32421c-0.10547,-0.25 -0.26562,-0.44141 -0.54687,-0.32032c-0.30469,0.12891 -0.30469,0.35938 -0.16797,0.67969l0.53906,1.27344l-0.99219,0.42187l-1.05859,-2.5039l0.90625,-0.38282l0.16406,0.39063c0.09766,-0.39453 0.27344,-0.66016 0.65235,-0.82031c0.65625,-0.27735 1.13281,-0.02344 1.42187,0.66406l0.63281,1.5l-0.99218,0.42187zm2.58984,-1.01171c-0.80078,0.33984 -1.61719,0.14453 -1.97266,-0.69922c-0.34375,-0.82032 0.04688,-1.60547 0.85157,-1.94532c0.92578,-0.39062 1.7539,0.01172 2.125,0.92579l-1.89844,0.80078c0.1289,0.29687 0.4375,0.39453 0.70312,0.28515c0.15625,-0.0664 0.26953,-0.19922 0.27735,-0.3789l0.95312,-0.40235c0.08985,0.69532 -0.45312,1.16797 -1.03906,1.41407zm3.98828,-1.76954l-1.00781,-1.30468l-0.00781,0.0039l0.26953,1.61328l-0.96875,0.41016l-1.88282,-2.15234l0.96875,-0.41016l1.03516,1.38672l0.01172,-0.00391l-0.26953,-1.71093l0.84375,-0.35547l1.03515,1.38281l0.00782,-0.00391l-0.26563,-1.71093l0.94141,-0.39844l0.25781,2.84375l-0.96875,0.41015zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_2" stroke="null"/>
+  </g>
+ </g>
+
+</svg></a>
+                
+                
+                
+                    <a href="/ci_cd" title="CI/CD">CI/CD</a>
+                
+                
+                
+                    <a href="/products" title="PRODUCTS">PRODUCTS</a>
+                
+                
+                
+                    <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+                
+                
+                
+                    <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+                
+                
+                
+                    <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME">HIRE ME</a>
+                
+                
+                
+                    <a href="/about" title="ABOUT">ABOUT</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <ul class="nav">
+                    <li>
+                        <div class="hire_me_content">
+                        <i class="hire_me_live"></i>
+                        <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME" id="hire_me">HIRE ME</a>
+                        </div>
+                    </li>
+                </ul>
+        
+        
+        
+        
+        
+    </div>
+
+    <div class="search-button">
+
+    
+    <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+        <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+            <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+        </svg> Sponsor
+    </a>
+    
+
+    
+
+    
+        <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </a>
+    
+
+    </div>
+
+    <div class="site-nav-right">
+        
+        <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+            <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+                <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+            </svg> Sponsor
+        </a>
+        
+
+        
+
+        
+            <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            </a>
+        
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback / Question" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2023-05-12T12:00:00.000Z" itemprop="datePublished">
+                    2023-05-12
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Release/">Release</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">Feel the excitement; AppWorks 23.2 is GA, and this post is updating you on the latest functionalities</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2023/177a_update_on_23_2/feature_tag.webp)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>AWP 23.2 is GA for Q2 2023. Grab your beer/wine (or whatever!?) and let’s have an update on the latest/greatest features!</p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>The main <a href="/installation">installation</a> menu is NOT updated; Why? Well after double-checking the ‘OpenText AppWorks Platform Supported Environments’ PDF, I conclude it was much faster to follow my own <a href="/2022/09/02/148_the_awp_upgrade_survival_guide/">upgrade post</a>. All related software still works with this version (compared with <code>23.1</code>!)! A great choice as the upgrade (of CARS and the platform) took me not more than an hour of my time…Just between dinner and bringing the kids to bed. &#x1F601; What about OTDS? Well, It just still works fine after my upgrade…Don’t touch a winning team! I know AWP 23.2 is delivered with OTDS 23.1, but OTDS 22.4 works smoothly with AWP 23.2 watching the support table in the documentation.</p>
+<p>In this post we’ll review the <a href="https://support.opentext.com/csm?id=kb_article_view&sysparm_article=KB0789615" target="_blank" rel="noopener">AppWorks Platform 23.2 Release Notes</a>. Have a look yourself at the PDF too; We’ll just dive through the latest futures delivered in this GA release.</p>
+<hr>
+<h3 id="x1F195-Update-on-the-available-changes-in-23-2-x1F195"><a href="#x1F195-Update-on-the-available-changes-in-23-2-x1F195" class="headerlink" title="&#x1F195; Update on the available changes in 23.2 &#x1F195;"></a>&#x1F195; Update on the available changes in 23.2 &#x1F195;</h3><p>Let’s give it a go…But first we make sure we have a mail service container up and running! A first quick review on the release notes tells me a lot has changed in mail functionality. From a template perspective till a mail notification perspective on event subscriptions…So, we can follow our own <a href="/tags/Email/">blog posts</a> on conquering this, but let’s make it as simple as possible this time! How simple? Well, as simple as <a href="https://github.com/rnwood/smtp4dev" target="_blank" rel="noopener">smtp4dev</a>. Holy crap…What a rush, what a relief, a savior of the dev-mail-world! The only thing is that we can’t receive mail, but for our feature testing it’s only required to send out mail…To this dummy SMTP server! In quick steps after you’ve started your AppWorks platform:</p>
+<ul>
+<li>Download your package on your local laptop<ul>
+<li>I use <a href="https://github.com/rnwood/smtp4dev/releases" target="_blank" rel="noopener">Rnwood.Smtp4dev-win-x64-3.2.0-ci20221023104.zip</a></li>
+</ul>
+</li>
+<li>Unzip it</li>
+<li>Find ‘Rnwood.Smtp4dev.exe’ in the root, and double-click it</li>
+<li>DONE…Owh, and tune your browser in to URL <code>http://localhost:5000</code> for a simple receiver-client</li>
+<li>In AppWorks (in your own organization), create a new service container from the ‘System Resource Manager’ artifact) with this input:<ul>
+<li>Connector type: <code>E-mail</code></li>
+<li>Group name: <code>sg_email</code></li>
+<li>Service name: <code>sc_email</code></li>
+<li>Mail server (Outgoing)<ul>
+<li>Host: IP/hostname of your local laptop; Should be reachable from your AWP VM!</li>
+<li>Port: <code>25</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>That’s all, so no ‘Incoming Mail Server’ settings, no Mailboxes XML-config, and no DB-config either! It’s a party! &#x1F60D;</p>
+</blockquote>
+<p>You can evaluate your first mail call via the ‘Web Service Interface Explorer’ artifact with this SOAP request:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">SOAP:Envelope</span> <span class="attr">xmlns:SOAP</span>=<span class="string">"http://schemas.xmlsoap.org/soap/envelope/"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">SOAP:Body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">SendMail</span> <span class="attr">xmlns</span>=<span class="string">"http://schemas.cordys.com/1.0/email"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">to</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">address</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">emailAddress</span>&gt;</span>awdev@awp.com<span class="tag">&lt;/<span class="name">emailAddress</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">displayName</span>&gt;</span>awdev<span class="tag">&lt;/<span class="name">displayName</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">address</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">to</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">subject</span>&gt;</span>Hello world...<span class="tag">&lt;/<span class="name">subject</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">body</span> <span class="attr">type</span>=<span class="string">"normal"</span>&gt;</span>Nice...A body!<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">from</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">displayName</span>&gt;</span>no_reply<span class="tag">&lt;/<span class="name">displayName</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">emailAddress</span>&gt;</span>no_reply@awp.com<span class="tag">&lt;/<span class="name">emailAddress</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">replyTo</span>&gt;</span>no_reply@awp.com<span class="tag">&lt;/<span class="name">replyTo</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">from</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">SendMail</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">SOAP:Body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">SOAP:Envelope</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img alt="update_23_2_000" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683053887.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683053887.png"></p>
+<blockquote>
+<p>It’s not even required to make that ‘SetProfile’ service call as explained <a href="/2019/12/20/031_the_lazy_installation_to_make_a_mail_service_available/">here</a>! Why? Well because ‘smtp4dev’ an un-authorized service exposure…That’s why!</p>
+</blockquote>
+<p>With this, easy, and most elegant solution up and running, we quickly dive into the first feature…</p>
+<hr>
+<h4 id="Creating-and-updating-email-templates-in-runtime"><a href="#Creating-and-updating-email-templates-in-runtime" class="headerlink" title="Creating and updating email templates in runtime"></a>Creating and updating email templates in runtime</h4><p>Interesting first feature; From a clean workspace and project I start creating a first entity. I name it <code>todo</code> with just a <code>todo_name</code> text property, making the default BBs nice, adding the ‘Email’ BB (with corresponding configuration in the <code>configs</code> folder of the project!), and we just add one ‘Email template’ with nothing fancy…Because we can! I also make sure to update the <code>lyt_default</code> with an ‘Emails’ panel next to the ‘Form’ panel, so we have something to play with in runtime! Comment me when this task is already a step too far as I would like to make hard meters this time as I’m a bit behind schedule! &#x1F605;</p>
+<p><img alt="update_23_2_001" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683125570.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683125570.png"></p>
+<p>Deploy the entity, and have your first entity creation in runtime…Just with your (not recommended!) developer account for now. Before getting crazy and sending mails from this new entity instance, we first set the ‘From’ part in the ‘/app/admin’ section of our platform:</p>
+<p><img alt="update_23_2_002" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683125979.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683125979.png"></p>
+<p>Now, embrace yourself sending a message to our ‘smtp4dev’ dummy server…It’s a green flag for me! How about the new feature for the part of the post!? I didn’t find anything related during my first mail message…Where can I find it? Well, looks like we need to move our ass to the ‘Lists’ panel of the homepage:</p>
+<p><img alt="update_23_2_003" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683126331.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683126331.png"></p>
+<p>The difference between those 2 nodes:</p>
+<ul>
+<li><strong><em>End user email templates</em></strong>: Here your users can define new email templates and “see” the solution created templates as well when they have the checkmark <code>Show this email template to end users</code></li>
+<li><strong><em>System email templates</em></strong>: Are the templates (maybe corporate templates!?) created in the solution but have an unmarked checkbox on the option <code>Show this email template to end users</code></li>
+</ul>
+<p><img alt="update_23_2_004" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683126515.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683126515.png"></p>
+<p>Creating new user templates makes it possible to set them ‘In draft’, ‘Active’, or ‘In active’; Well, the states speak for themselves. There is also a small nuance in “typing”. A runtime created user template is of type ‘Dynamic’ where the user templates published from the solution gets type ‘Static’. After I made my new template ‘Active’ it was possible to send out a mail based on this new template…Niceeee!</p>
+<blockquote>
+<p>Notes during my journey on this feature:</p>
+<ul>
+<li>Does the template support expressions in runtime? Yes, according to the documentation, but I didn’t find an expression editor on the runtime side…So, good luck my dear end-user; Maybe have that beer with your low-code developer to eventually help you along!? &#x1F37A;</li>
+<li>Creating a template explicitly requires a ‘Save template’ button, so there is no auto-save like we normally see on an entity instance!?</li>
+<li>On database level these templates are saved in table <code>o2opentextentityruntimemodelsutilruntimeemailtemplate</code>…Just so you know when your end-users get enthusiastic and overload your system with new templates! &#x1F648;</li>
+</ul>
+</blockquote>
+<hr>
+<h4 id="Scheduling-of-email-notifications"><a href="#Scheduling-of-email-notifications" class="headerlink" title="Scheduling of email notifications"></a>Scheduling of email notifications</h4><p>This must definitely be a user profile preference; Let’s go there in runtime (from your avatar icon) and check this view:</p>
+<p><img alt="update_23_2_005" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683128043.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683128043.png"></p>
+<p>After this update, I will create some new instances of my brand-new entity! After 5 min. waiting…still no mail? Even not after following my notes from below (in this section)!? That’s a #RTFM as I see an error <code>The [ GetOAuthConfig ] method is not supported for the given configuration</code> passing by in <code>sudo tail -999f /opt/opentext/AppWorksPlatform/defaultInst/Logs/Application_Server.xml</code>. A quick ‘type’ change in my ‘Email’ service container solves this error from the logging with some dummy values:</p>
+<p><img alt="update_23_2_006" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683130154.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683130154.png"></p>
+<p>It restarts my service container correctly, but sending a mail with the <code>SendMail</code> SOAP request fails with error <code>Unknown oauth provider type</code>! Which sounds logical for my dummy values! After too much of the time diving into the all the oAuth mail details I did a <a href="https://forums.opentext.com/forums/developer/discussion/311415/scheduled-notification-user-preferences-in-23-2-error" target="_blank" rel="noopener">shout-out on the forum</a> if this is really the way to go!? Let’s figure out this feature another time when we have a clear view on the configuration. The documentation, under section ‘Enabling notifications’ and ‘Facilitating collaboration’, explains some things but is not giving me a solid answer (yet!).</p>
+<p><strong><em>Notes</em></strong>:</p>
+<ul>
+<li>The time selector “feels” new to me, not like other date/time selectors for a property…Or maybe it’s just me!?<ul>
+<li>I thought being smart, but the ‘Once per day’ will start the next day! Although I set it just 5 min. later from now…From a development perspective it’s better to have an “every 15 min. repeat” setting in place!</li>
+</ul>
+</li>
+<li>My first question would be: <em>Who, what, or how is responsible for sending out the mails?</em> Great question!<ul>
+<li>After you set your schedule a BPM is triggered (see the PIM) with name <code>setUserNotificationScheduler</code> running under your own account.</li>
+<li>This will create a new schedule under the active tab or the ‘Schedule Manager’ artifact with name <code>Notification_Scheduler_awdev@awp</code>; Looks like each user will get its own schedule instance for this.</li>
+<li>Ohw yeah, before I forget…Make sure you have the ‘Scheduling’ service container up and running in the ‘System’ space before you can even start with this all!!</li>
+<li>I even set the log-level to debug on Scheduling, Notification and Email service containers to get better insights why things went wrong</li>
+</ul>
+</li>
+<li>The documentation also mentions a “secret” ‘ScheduledEmailNotificationConfig’ in the administration section of the platform for the solution <code>OpentextEntityRuntimeModelsUtil</code>; Set the ‘From’ and ‘Reply to’ here as well!  </li>
+<li>There is also the frequency ‘Default’!? This disables the scheduling part, but still sends you notifications…I guess based on what you configured in the ‘Notification’ BBs for your entities! Although…after double-checking the ‘Notification’ BB, it looks like the list of events in the user preferences are system overall and not specific to an entity. An interesting question would be: <em>Do we need the ‘Notification’ BB on an entity to receive notifications or can we just sign up for global non-entity specific events?</em> Continue reading as I get new insights during my own journey!</li>
+</ul>
+<blockquote>
+<p>I moved back to the non-oAuth type of mail service which should be fine! Set up you own mail server from <a href="/tags/Email/">here</a></p>
+</blockquote>
+<p>…</p>
+<blockquote>
+<p>From an OTDS account perspective, I made sure to set the correct settings for a great experience in runtime (Like the firstname, lastname, and email)</p>
+<p><img alt="update_23_2_007" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683127765.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683127765.png"></p>
+</blockquote>
+<hr>
+<h4 id="Email-notifications-subscription"><a href="#Email-notifications-subscription" class="headerlink" title="Email notifications subscription"></a>Email notifications subscription</h4><p>Well, this feature is partly “Busted” in the previous section…Check that first screenshot again of the user preferences where you have a full list available of selectable events. Looks like these are not entity specific events, but system global events. When I plot this on a use-case within my current project, I miss already a feature here; Add conditional events! So, when I pass a certain lifecycle state for a specified entity instance, I would like to get notified. My impression is that it’s not possible (yet!), but we’re on a good track. Lots of customers still would like to have mail notification in their inbox instead of monitoring the platform each day.</p>
+<p>WAIT…Looks like I misunderstand the concept here! I think we DO need the ‘Notification’ BBs on the entities to send out the notification, but the end-user can choose in its user preferences to receive it by default (or scheduled…AHA!). Still, there is no possibility to add a condition as explained!? #FEATURE_REQUEST</p>
+<blockquote>
+<p>Later on, we explore the enhancements for ‘Dynamic workflow’ BB; adding a ‘Notification’ BB on this related entity exposes events on ‘Workflow’ level…I never thought of it like this…Interesting!</p>
+</blockquote>
+<hr>
+<h4 id="New-email-features"><a href="#New-email-features" class="headerlink" title="New email features"></a>New email features</h4><p>This feature has a sub list of features!</p>
+<p><strong><em>Email attachments opened/preview on new tab</em></strong></p>
+<p>Attachment handling must first be enabled on the ‘Email’ BB; For incoming and outgoing mail traffic:</p>
+<p><img alt="update_23_2_008" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683290909.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683290909.png"></p>
+<p>Once in place, you can add an attachment in runtime for a new mail:</p>
+<p><img alt="update_23_2_009" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683291027.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683291027.png"></p>
+<p>After sending the mail you can view the attachment, but it’s more a download which was already possible. Maybe this feature is more about saving attachments separate as content, so you can view them in a separate browser tab with a <code>&lt;Ctrl&gt;</code>-click from the ‘Content’ panel or just mark it for the preview panel in your layout!? Comment me!</p>
+<blockquote>
+<p>What I found interesting; And I see this over and over again! There is not always a consistent way of implementing things. Like for example the ‘Emails’ panel for a layout…Why can’t I checkmark an e-mail and have a view in the preview panel; You can only click it and get a modal popup? Why not add that same “feeling” like you do with a checkmark on a file from the ‘Content’ panel in your layout?</p>
+<p><img alt="update_23_2_010" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683291787.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683291787.png"></p>
+</blockquote>
+<p><strong><em>Define 5 email signatures (incl. a default signature)</em></strong></p>
+<p>A thing to do from your user profile preferences panel:</p>
+<p><img alt="update_23_2_011" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683292077.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683292077.png"></p>
+<blockquote>
+<p>Notes:</p>
+<ul>
+<li>The way of editing the signatures feels cumbersome for some reason…Maybe it’s me?</li>
+<li>I can exceed the number 5 of my defined signature templates. I can also select them all from a new mail!? So, I don’t get the ‘five’ for this feature:</li>
+</ul>
+<p><img alt="update_23_2_012" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683292231.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683292231.png"></p>
+</blockquote>
+<p><strong><em>Email attachment size increased/controlled to max. 25Mb</em></strong></p>
+<p>I always thought this was controllable already on the related ‘Emails’ entity for your entity; When you open the related ‘Content’ entity for the ‘Emails’ entity, you can set the file size here…right?</p>
+<p><img alt="update_23_2_013" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683292801.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683292801.png"></p>
+<blockquote>
+<p>After a double-check on the documentation, it looks like by default a mail attachment can only be 10Mb, but you can extend it to 25Mb in the <code>wcp.properties</code>; This is the flag for it: <code>platform.entityRuntime.emailSettings.maxAttachmentsSizeLimit=25</code></p>
+</blockquote>
+<p><strong><em>Add current user emailID to “From” email address</em></strong></p>
+<p>That’s an option on the ‘Email’ BB:</p>
+<p><img alt="update_23_2_014" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683290546.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683290546.png"></p>
+<p>In runtime, you’ll see it in the ‘From’:</p>
+<p><img alt="update_23_2_015" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683290615.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683290615.png"></p>
+<p><strong><em>Microsoft Graph global address book support as recipients (To. Cc. and Bcc)</em></strong></p>
+<p>This is pretty hard to try out for me as it requires me to have access to Active Directory settings in Azure to get a grip on oAuth data (client-id and client-secret) to make an API connection. So, I skip this one!</p>
+<blockquote>
+<p>There is an interesting quote in the documentation (section “Configuring the E-mail connector”) which is not matching this requirement: <code>GetFolders webservice in MSGraph does not returns default folders such as Tasks, Notes, Contacts, Journals etc. in the mail server.</code>. To make this feature a happy conclusion it should retrieve the contacts…right? Or maybe this is done differently! Contact me if you have this feature available on your environment…I would love to have a techie-review together with you.</p>
+</blockquote>
+<hr>
+<h4 id="Typed-REST-API"><a href="#Typed-REST-API" class="headerlink" title="Typed REST API"></a>Typed REST API</h4><p>This API, accessible via the ‘/app/admin’ portal or in my case via URL <code>http://192.168.56.107:8080/home/appworks_tips/app/entityservice/aw_tipsaw_generic</code>, is enhanced with ‘History’, ‘File’, and ‘Content’ BBs operations! So, when you add these BBs of your entity, it’s possible to have a view like this:</p>
+<p><img alt="update_23_2_016" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683289857.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683289857.png"></p>
+<hr>
+<h4 id="Enhancements-for-Dynamic-workflow"><a href="#Enhancements-for-Dynamic-workflow" class="headerlink" title="Enhancements for Dynamic workflow"></a>Enhancements for Dynamic workflow</h4><p>Also, this feature has a sub list of features! Before diving in, I just clean all my mess crafted so far; So, I only have a basic entity again (incl. the default BBs).<br>With this in place, I add the ‘Dynamic workflow’ BB and attach myself to the correct role <code>Workflow Template Administrator | Creator | Developer</code>. I also update the <code>lyt_default</code> layout for my entity to show 3 new panels (‘Tasks’, ‘Workflow Instances’, and ‘Progress Bar’ for dynamic workflows!). Now we’re ready to create new workflow templates in runtime! Get yourself notified that the entity is now also applied a ‘Task list’ BB to low-code task type of functionality. Don’t go too far yet…I browse through it one by one…</p>
+<p><strong><em>Update the workflow initiator</em></strong></p>
+<p>For this feature, we add the ‘Assignee’ BB to the related ‘DynamicWorkflows’ entity:</p>
+<p><img alt="update_23_2_017" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683626636.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683626636.png"></p>
+<p>In runtime, we now start a new workflow from our entity instance (you should have a ‘Start workflow’ button in the action bar for this when you have the correct role applied!) with a new static one-step flow like this:</p>
+<p><img alt="update_23_2_018" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683626815.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683626815.png"></p>
+<p>For the demo, I also start a second one, so I can switch between instances in runtime.</p>
+<p><img alt="update_23_2_019" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683628389.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683628389.png"></p>
+<p>Great, but how to “Open” or “Select” the workflow instance, so we can assign it to someone else? Well, after struggling for 30 min. (and still no answer!) I did a different approach viewing the dynamic flow layout!?…What I did is the following:</p>
+<ol>
+<li>Create a new layout <code>lyt_default</code> in the related ‘DynamicWorkflows’ entity which exposes the URL like this: <code>start/web/#/item/080027008c65a1edbb930e17180d841a.&lt;Id&gt;</code>. Well, actually it should be like this: <code>start/web/#/item/080027008c65a1edbb930e17180d841a.&lt;Id&gt;.&lt;Id&gt;</code>!</li>
+<li>To get the IDs, I get my developer tools <code>&lt;F12&gt;</code> ready in runtime with a view like this:<br><img alt="update_23_2_020" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683628982.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683628982.png"></li>
+<li>Moving my ass to this URL <code>http://192.168.56.101:8080/home/appworks_tips/app/start/web/item/080027008c65a1edbb930e17180d841a.3.16387</code> gives me the possibility to ‘Forward’ or assign the workflow instance to someone else:<br><img alt="update_23_2_021" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683629178.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683629178.png"></li>
+</ol>
+<p>So, jobs done!</p>
+<blockquote>
+<p>After a quick review (I didn’t try it), it should be possible to make the re-assign possible from a ‘Task’ perspective. So, opening the task with a layout exposing related workflow instance data/actions!? I still find it cumbersome, but that might be my logic or still not understanding the concepts 100%!? Comment me!<br>WAIT…I just had my lunch-break and came to the brilliant solution to just create a ‘List’ BB <code>lst_wfl_instances</code> in the related ‘DynamicWorkflows’ entity! A much simpler approach, but still…My first project working with this ‘Dynamic workflow’ BB is still to come.<br>AND…Checking out my own <a href="/2022/05/13/136a_update_on_22_2/">post</a>, we can add a ‘DynamicWorkflow’ grid on our form as well opening it from there…Well, that’s low-code…Multiple ways to Rome!</p>
+</blockquote>
+<p><strong><em>Dynamic workflow tasks can be approved or rejected</em></strong></p>
+<p>When you have a task configuration (on the related ‘LifecycleTask’ entity) like this:</p>
+<p><img alt="update_23_2_022" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683630083.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683630083.png"></p>
+<p>…and in runtime you start a new dynamic flow dropping of a new task of this type, you will have the ‘Approve’ and ‘Reject’ actions available for your task:</p>
+<p><img alt="update_23_2_023" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683630217.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683630217.png"></p>
+<p>Hitting the ‘Reject’ will get you to an interesting new modal popup for the next outcome:</p>
+<p><img alt="update_23_2_024" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683630329.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683630329.png"></p>
+<p><strong><em>Task names are now automatically filled with the task type</em></strong></p>
+<p>I already enabled this feature three screenshots back…Have a second look on the ‘Task configuration’! So, in runtime, creating a new workflow, the task-name is already filled for fast prototyping.</p>
+<p><img alt="update_23_2_025" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683635683.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683635683.png"></p>
+<p><strong><em>Completeness of a workflow</em></strong></p>
+<p>Quote from the documentation:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">The workflow is considered complete only when all tasks (incl. the auto-complete </span><br><span class="line">tasks!) of the workflow are completed, approved, or acknowledged.</span><br></pre></td></tr></table></figure>
+
+<p>Well, should this not be the case already? It looks like the previous version of the feature skipped the auto-complete, and acknowledgement tasks. So, these types of tasks are included in the completion state now:</p>
+<p><img alt="update_23_2_026" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683636280.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683636280.png"></p>
+<p><strong><em>Transfer workflow to another user (on inactivity or deleted user)</em></strong></p>
+<p>&#x2757;&#x2753; isn’t this the same feature as the first sub-feature “<em>Update the workflow initiator</em>“ &#x2757;&#x2753;<br>AND<br>&#x2757;&#x2753; to find them, matches the next, next sub-feature “<em>Support for inactive workflows/tasks</em>“ &#x2757;&#x2753;</p>
+<p><strong><em>New status icons and updates in workflow summary panel</em></strong></p>
+<p>“Workflow summary panel”? Where talking the ‘Workflow Instances’ panel…correct? This thing:</p>
+<p><img alt="update_23_2_027" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683638891.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683638891.png"></p>
+<p>Some notes should be in place before I get profounder:</p>
+<ul>
+<li>Why is one completed task solid green and the other is not?</li>
+<li>Why is there so much white space in the progress bar which you don’t have under control?</li>
+<li>What is the logic behind these icons? The blue-icon is my completed flow, the green-frosty one is ongoing?<br><img alt="update_23_2_028" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683639266.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683639266.png"></li>
+</ul>
+<blockquote>
+<p>It looks to me like we try to treat a multi-related entity in a single-minded UI!? I don’t know; It “smells” like a ‘Lifecycle’ implementation, but we hit the wall of multiple instances here and building our way out with dropdowns for switching it. It just feels like the implementation is not fitting the rest of the UI. Why not keep it simple and treat a repeating relation as a “repeating relation” with lists, grids, and repeating groups? When you mark an instance you can perfectly show a preview layout showing the correct data; When we can add a ‘toMany DynamicWorkflowTasks’ onto a form and can update its type to something new like “Task group”…How would that “smell” for a solution? &#x1F60E;</p>
+</blockquote>
+<p><strong><em>Support for inactive workflows/tasks</em></strong></p>
+<p>Well, it looks like a customer (?) really wants to have more control on abandoned workflows and tasks. There is support for 3 lists which I understand concept wise:</p>
+<ol>
+<li>‘All inactive workflows’</li>
+<li>‘My workflow inactive user tasks’</li>
+<li>‘All inactive user tasks’</li>
+</ol>
+<p>Only, I have no idea who to implement them after looking for it…Let’s find clues, but please comment me!<br>Are we talking “template” workflows here or the instances of the template? The templates can indeed be made (in)active, and you can filter on it in runtime under the ‘Workflow templates’ node (for workflow admins). From a workflow instances point of view, it is required to create a ‘List’ BB on the related ‘DynamicWorkflows’ entity, but the states follow the states of a running lifecycle (see the CIM!) which don’t include (active|inactive).<br>There is an “old” artifact ‘Inactive Users Tasks’…Are we talking about this? I don’t think so!? Do we need to add a ‘List’ BB to the ‘LifecycleTask’ where we filter on ‘Task.State’?<br>How about ‘My workflow’? Are these the workflows “assigned” to you from the corresponding building block and can contain tasks where the user is made inactive? Or do I get a result of tasks (of inactive users) where the workflow is assigned to me?</p>
+<blockquote>
+<p>Just a note for myself: In release <code>23.1</code> the feature “Inactive user task management for application users” explains <code>$(deletedUsersWithTasks())</code> and <code>$(disabledUsersWithTasks())</code> expressions for an e-mail template. I never tried them out myself, but they could have a connection with this feature…</p>
+</blockquote>
+<p>Check for answers on <a href="https://forums.opentext.com/forums/developer/discussion/311427/enhancements-for-dynamic-workflow-23-2" target="_blank" rel="noopener">this</a> forum post as I’m lost as well!</p>
+<p><strong><em>Task/workflow related event notification will have a correct link to open them directly</em></strong></p>
+<p>I trust OpenText on their blue eyes that the link is solidly brought to our beloved end-users! &#x1F607;</p>
+<hr>
+<h4 id="Rebranding-iHub-to-Magellan-Business-Intelligence-and-Reporting"><a href="#Rebranding-iHub-to-Magellan-Business-Intelligence-and-Reporting" class="headerlink" title="Rebranding iHub to Magellan Business Intelligence and Reporting"></a>Rebranding iHub to Magellan Business Intelligence and Reporting</h4><p>Is it a fully, fully rebrand? Or a fully rebrand? I know in my current project there is also some refactoring done, but not fully, fully! What is the difference? Well, consistency! You can rebrand labels and icons as nice as possible, but if you don’t rebrand the technical principles behind it, it will haunt you down until it’s been done. I know from experience; Especially when your developers circulate in the team! Let’s first see what has changed, but also have a look on the other side of the medal.</p>
+<p>There it is…Shining in the middle. My first opinion is the high contrast over the other icons, but this is only for designers…right?</p>
+<p><img alt="update_23_2_029" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683446791.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683446791.png"></p>
+<p>The service container connector is indeed renamed:</p>
+<p><img alt="update_23_2_030" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683446909.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683446909.png"></p>
+<p>The entity layout panel is renamed:</p>
+<p><img alt="update_23_2_031" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447031.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447031.png"></p>
+<p>Also in runtime:</p>
+<p><img alt="update_23_2_032" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447108.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447108.png"></p>
+<p>As well as in the administration portal:</p>
+<p><img alt="update_23_2_033" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447154.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447154.png"></p>
+<p>…</p>
+<p><strong><em>What can we still find on <code>ihub</code> for the platform:</em></strong></p>
+<p>On the server, I can still see <code>/opt/opentext/AppWorksPlatform/defaultInst/components/ihubconnector</code>.</p>
+<blockquote>
+<p>Have yourself also a search on the server (Ohw boy!):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo find /opt -<span class="built_in">type</span> f -name *ihub*</span><br><span class="line">sudo grep -rnw <span class="string">'/opt'</span> -e <span class="string">'ihub'</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>In runtime the developer tools still show iHub stuff:</p>
+<p><img alt="update_23_2_034" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447439.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447439.png"></p>
+<p>In design time the developer tools still show me this:</p>
+<p><img alt="update_23_2_035" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683448077.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683448077.png"></p>
+<p>The ‘XMLStore Explorer’ artifact still shows the good old CAF file:</p>
+<p><img alt="update_23_2_036" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447640.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447640.png"></p>
+<p>A view in the ‘Webservice Interface Explorer’ artifact:</p>
+<p><img alt="update_23_2_037" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447873.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683447873.png"></p>
+<p>…</p>
+<p>Conclusion? Looks to me there is still enough work to do…Is this a fair conclusion!? In my opinion it is, let’s see how this keeps standing after 5 years and scrambling the development team upside down! Well, I know the outcome already in lost time and unclear communication.</p>
+<hr>
+<h4 id="Save-email-to-Content-Server-with-type-email"><a href="#Save-email-to-Content-Server-with-type-email" class="headerlink" title="Save email to Content Server with type email"></a>Save email to Content Server with type email</h4><p>I don’t have OTCS up and running to try this out, but I can remember the discussion already from my 2 previous projects! For this feature we can set a flag in the ‘wcp.properties’ file: <code>platform.entityRuntime.emailSettings.emailMessageType=true</code></p>
+<p>By default, a mail is saved as ‘Document’; With this flag it’s saved as ‘Email’. This is now available for OTCS; Was this setting already available for Documentum? Please, comment to me…</p>
+<blockquote>
+<p>See also the documentation under section “Providing email functionality”</p>
+</blockquote>
+<hr>
+<h4 id="Configure-the-author-details-for-discussions"><a href="#Configure-the-author-details-for-discussions" class="headerlink" title="Configure the author details for discussions"></a>Configure the author details for discussions</h4><p>For this we add the ‘Discussion’ BB. Under the advanced configuration for this building block, we can open the related entity with this configuration part:</p>
+<p><img alt="update_23_2_038" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683449556.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683449556.png"></p>
+<blockquote>
+<p>An interesting observation: The ‘Discussion’ BB has a related ‘Discussions’ entity! I see this also for the ‘Content’ BB with a related ‘Contents’ entity. Are these valid names for entities? I had this conversation before…I think an entity can never have a name which intents it’s multiple instanced. So ‘Discussion, and ‘Content’ as entity name would be better; In my opinion, but comment me if you don’t agree with me?</p>
+</blockquote>
+<hr>
+<h4 id="Save-list-filter-configurations-in-user-preferences"><a href="#Save-list-filter-configurations-in-user-preferences" class="headerlink" title="Save list filter configurations in user preferences"></a>Save list filter configurations in user preferences</h4><p>It looks to me like the filter options are in more control to the end-user:</p>
+<p><img alt="update_23_2_039" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683450508.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683450508.png"></p>
+<blockquote>
+<p>Also, that ‘My saved filters’ is collapsible. When you also define filters in the ‘List’ BB they will be available in the ‘Views’ dropdown, but that’s a feature already available in previous releases!</p>
+</blockquote>
+<hr>
+<h4 id="Disable-layout-panels-using-rules"><a href="#Disable-layout-panels-using-rules" class="headerlink" title="Disable layout panels using rules"></a>Disable layout panels using rules</h4><p>Is this the end of creating ‘ReadOnly’ forms (a copy from a normal form) in our solutions? Ohw yeah…It is!! How? Well, create yourself a new ‘Rule Category’ BB with name <code>rc_read_only</code>. Next, create a new ‘Rule’ BB with name <code>e_onpropchange_read_only</code>. Set the advanced condition to <code>true</code> and make sure to set a ‘Disable’ action for the rule category. The final thing is setting the rule category to the panel in your layout:</p>
+<p><img alt="update_23_2_040" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683451737.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683451737.png"></p>
+<p>In runtime, the form is nicely grayed-out on the property fields without manipulation each field with a ‘Read only’ flag on form level…NICEEE!</p>
+<hr>
+<h4 id="Improved-performance-for-Entity-and-Rule-designers"><a href="#Improved-performance-for-Entity-and-Rule-designers" class="headerlink" title="Improved performance for Entity and Rule designers"></a>Improved performance for Entity and Rule designers</h4><p>Maybe it’s a placebo effect or maybe my project is just too small, but it “feels” faster on loading entities in design time! I trust OpenText on their blue eyes it’s made faster. In my current and larger entity project opening entities takes ages and developers complain about it. So, I hope an upgrade is planned soon for our project to move to <code>23.2</code> to get this issue solved on entity loading level.</p>
+<blockquote>
+<p>For a try-out I made an SVN copy of my current project and loaded it with a workspace sync into AppWorks. The entities load much, much faster, but I must say that we’re now locally on a laptop VM without any SVN/GIT connection! It’s also good to know the upgrade from this SVN copy (AWP <code>21.4</code>) went smooth after setting the correct permissions on server-level these commands:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chown tomcat:tomcat -R /opt/opentext/AppWorksPlatform/defaultInst/cws/sync/appworks_tips/ws_aw_tips/</span><br><span class="line">sudo chmod 777 -R /opt/opentext/AppWorksPlatform/defaultInst/cws/sync/appworks_tips/ws_aw_tips/</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>Comment me if you don’t have a clue about synchronizing a project like explained above…</p>
+<hr>
+<h4 id="JavaScript-APIs-for-AppWorks-Platform-client-operations"><a href="#JavaScript-APIs-for-AppWorks-Platform-client-operations" class="headerlink" title="JavaScript APIs for AppWorks Platform client operations"></a>JavaScript APIs for AppWorks Platform client operations</h4><p>There is indeed a new operation:</p>
+<p><img alt="update_23_2_041" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683453590.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683453590.png"></p>
+<p>This is the syntax using it:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">publicAPIProvider.createAndLinkChildToParent(</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">"itemId"</span> : <span class="string">"&#123;itemId&#125;"</span>,</span><br><span class="line">    <span class="string">"relationName"</span> : <span class="string">"&#123;relationName&#125;"</span>,</span><br><span class="line">    <span class="string">"properties"</span> : [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"name"</span> : <span class="string">"&#123;propertyName&#125;"</span>,</span><br><span class="line">        <span class="string">"value"</span>: <span class="string">"&#123;propertyValue&#125;"</span></span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"name"</span> : <span class="string">"&#123;propertyName2&#125;"</span>,</span><br><span class="line">        <span class="string">"value"</span>: <span class="string">"&#123;propertyValue2&#125;"</span></span><br><span class="line">      &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<p>Also, the ‘navigate’ method has support for the ‘Reusable’ type of homepages:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">publicAPIProvider.navigate(</span><br><span class="line">  <span class="string">"&#123;itemId&#125;"</span>,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="string">"layoutId"</span>: <span class="string">"&#123;layoutId&#125;"</span>,</span><br><span class="line">    <span class="string">"clearBreadcrumb"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">"breadcrumbName"</span>: <span class="string">"&#123;newName&#125;"</span>,</span><br><span class="line">    <span class="string">"type"</span>:<span class="string">"reusable"</span></span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="Support-for-entity-layouts-in-the-layout-panel"><a href="#Support-for-entity-layouts-in-the-layout-panel" class="headerlink" title="Support for entity layouts in the layout panel"></a>Support for entity layouts in the layout panel</h4><p>This is an option in the ‘Layout’ panel for an entity layout:</p>
+<p><img alt="update_23_2_042" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683535073.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683535073.png"></p>
+<p>Now we can also select current entity layouts (except itself…dûh)! In previous releases we didn’t have this checkbox, and we could only select homepage type of documents configured as ‘Reusable’; So, like this:</p>
+<p><img alt="update_23_2_043" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683535209.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683535209.png"></p>
+<hr>
+<h4 id="Support-for-OAuth-delegate-authentication-in-Microsoft-Graph-mail-protocols"><a href="#Support-for-OAuth-delegate-authentication-in-Microsoft-Graph-mail-protocols" class="headerlink" title="Support for OAuth delegate authentication in Microsoft Graph mail protocols"></a>Support for OAuth delegate authentication in Microsoft Graph mail protocols</h4><p>Well, nothing more, nothing less:</p>
+<p><img alt="update_23_2_044" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683293780.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683293780.png"></p>
+<blockquote>
+<p>You know what to do with it when you’re the MSGraph connection guru!</p>
+</blockquote>
+<hr>
+<h4 id="Automatic-creation-of-organization-in-container-based-deployment"><a href="#Automatic-creation-of-organization-in-container-based-deployment" class="headerlink" title="Automatic creation of organization in container-based deployment"></a>Automatic creation of organization in container-based deployment</h4><p>I still didn’t get the time for myself to dive into the container-based deployment without drowning. For some reason, my swimming straps snap when I’m almost reach the other side of the sea! It’s on my backlog for another try…</p>
+<p>What I did do is scanning the <a href="https://support.opentext.com/csm?id=kb_article_view&sysparm_article=KB0789619" target="_blank" rel="noopener">‘OpenText AppWorks Platform 23.2 Cloud Deployment Guide’</a> PDF on how this feature is configured. Looks to me that it’s part of the  MicroProfile Configuration (MPC) for a Docker image! A what? Yes, that’s why I probably drown every time. It “smells” like this (comment me when I’m totally wrong here):</p>
+<ol>
+<li><a href="https://support.opentext.com/csm?id=kb_article_view&sysparm_article=KB0789612" target="_blank" rel="noopener">Download</a> the AppWorks containerization package</li>
+<li>With <a href="https://docs.docker.com/compose/" target="_blank" rel="noopener">Docker compose</a> you can create new AppWorks platform images (well, I think multiple images from what I understand in my previous try-outs)</li>
+<li>An image is just a template on which you can create new containers landing on your preferred system; locally via <a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank" rel="noopener">minikube</a>, or in a cloud like Azure, AWS, or GCP; That’s a choice for you to make.</li>
+<li>The template images get an MPC file (<code>settings-all.yml</code>). In this file you can make the create-organization-feature setting for your container:</li>
+</ol>
+<p><img alt="update_23_2_045" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683364992.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683364992.png"></p>
+<blockquote>
+<p>From my last discussion with an insider it’s also possible to deploy solution specific containers where your crafted CAP files are directly in place for end-user consumption. The power here is not delivering a CAP file to TEST, but delivering a container to TEST! A quote from the Netherlands (in my native dialect): <code>Het kost wa, maar dan hedde ook wa</code>! &#x1F61C; </p>
+</blockquote>
+<hr>
+<h4 id="Integration-with-Core-for-Signature"><a href="#Integration-with-Core-for-Signature" class="headerlink" title="Integration with Core for Signature"></a>Integration with Core for Signature</h4><p>I’m not privileged to make a full eSig implementation, but I can for sure guide you the way…<br>First of all, you need to make sure having an ‘E-Signature Configuration’ like this (It’s a dedicated artifact in design time):</p>
+<p><img alt="update_23_2_046" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683538688.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683538688.png"></p>
+<p>Notes:</p>
+<ul>
+<li>eSig base URL is always the same: <a href="https://sign.core.opentext.com" target="_blank" rel="noopener">https://sign.core.opentext.com</a></li>
+<li>“Site ID” equals the “Tenant ID” which you can find in your Core admin center; This is the URL to <a href="https://admincenter.ot2.opentext.eu/" target="_blank" rel="noopener">Admin Center</a></li>
+<li>In ‘Admin Center’ you can also create a new set of ‘API service credentials’ (that’s your clientId and clientSecret!)</li>
+<li>The authorization endpoint has the tenant id applied: <a href="https://otdsauth.ot2.opentext.eu/otdstenant/{tenant_id}/login" target="_blank" rel="noopener">https://otdsauth.ot2.opentext.eu/otdstenant/{tenant_id}/login</a><ul>
+<li>Watch also the <code>.eu</code> instead of the documented <code>.com</code>!</li>
+</ul>
+</li>
+<li>This is also documented in the admin guide; section “Managing E-Signature configuration”<ul>
+<li>Here you also find the “polling/async” part if you don’t have your AppWorks URL publicly available for Core for Signature (eSig!)</li>
+</ul>
+</li>
+</ul>
+<p>With this configuration ready, you only need to add the ‘File’ BB (or ‘Content’ BB) and you will have action buttons in runtime available to make a signature call for the selected document. To see what is available, I just add a ‘Security’ BB which tells me this:</p>
+<p><img alt="update_23_2_047" class="post-img b-lazy" href="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683540688.png" data-src="/images/posts/2023/177a_update_on_23_2/177a_update_on_23_2_1683540688.png"></p>
+<p>If it’s an inline experience or a new tab/window is unclear. The documentation talks about “the Signature request window will open”…Comment me if you have it up and running; I’m curious having a demo from you in relation with AppWorks; I already saw a demo of “Core for Signature” itself.</p>
+<blockquote>
+<p>NOTE: eSig is supported for all supported content systems except platform repository! So, you need a valid ‘Documentstore’ connector with a relevant service container up and running. Things we explained already for <a href="/2022/02/18/127b_bring_life_in_the_otcs_docstore_connector/">OTCS</a> and <a href="/2021/10/01/113_bring_life_in_the_documentum_connector/">DCTM</a>.</p>
+</blockquote>
+<hr>
+<h4 id="Integration-with-Intelligent-viewing"><a href="#Integration-with-Intelligent-viewing" class="headerlink" title="Integration with Intelligent viewing"></a>Integration with Intelligent viewing</h4><p>It’s been a while ago having a check on the ‘Intelligent viewing’ software package. During that time, I can remember this quote: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">What about the fancy features like &#39;Redaction&#39;, &#39;Annotation&#39;, and &#39;Comparing&#39;? </span><br><span class="line">Well, those need to be enabled from the ‘Security’ BB of the entity. </span><br><span class="line">Only from OT support I retrieved (in that moment in time) information that our AWP </span><br><span class="line">only supports the ‘viewing’ part of IV which is sufficient for our post this far. </span><br><span class="line">Keep yourself informed on the new IV releases for an update on these topics!</span><br></pre></td></tr></table></figure>
+
+<p>Well, here is your update on what is currently possible with IV on our beloved platform:</p>
+<ul>
+<li>View documents</li>
+<li>Compare documents or versions</li>
+<li>Search (in content) documents</li>
+<li>Annotate documents</li>
+<li>Redact documents</li>
+<li>Publish documents</li>
+</ul>
+<p>Administrators can configure markup and highlight services of IV in AppWorks Platform along with viewer and publication services. It’s all based on licenses, so reach out to your sales representative to get it. The AppWorks Suite installation is delivered with the IV package and includes a limited license file <code>INTELLIGENT_VIEWING.lic</code>.</p>
+<blockquote>
+<p>You can find my ‘Intelligent viewing’ journey behind <a href="/tags/IntelligentViewing">this</a> tag.</p>
+</blockquote>
+<hr>
+<h4 id="CARS-upgraded-to-CARS-2-8"><a href="#CARS-upgraded-to-CARS-2-8" class="headerlink" title="CARS upgraded to CARS 2.8"></a>CARS upgraded to CARS 2.8</h4><p>A direct quote from the documentation:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">OpenText CARS version is upgraded to 2.8 with the latest version of OpenLDAP and </span><br><span class="line">OpenSSL, which addresses many security vulnerabilities. AppWorks Platform 23.2 </span><br><span class="line">works only with CARS 2.8 and customers who are upgrading from earlier versions </span><br><span class="line">of AppWorks Platform needs to upgrade CARS.</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="Setting-permissions-for-business-workspace-when-an-item-is-shared-to-a-role"><a href="#Setting-permissions-for-business-workspace-when-an-item-is-shared-to-a-role" class="headerlink" title="Setting permissions for business workspace when an item is shared to a role"></a>Setting permissions for business workspace when an item is shared to a role</h4><p>It’s not worth my time trying it out currently (as we need an OTCS with <a href="/tags/xECM/">xECM</a> connection up and running!), but let me explain what is going on for this feature in plain text. From an AppWorks perspective it’s possible to share an entity instance to a user or role; We have the ‘Sharing’ BB to accomplish this feature. When the entity instance also has a ‘Business workspace’ applied (configured via the ‘Documentstore’ connector in AppWorks) you need to have a mapping between the instance role in AppWorks and the team role in xECM to glue it all together on security level. For user-sharing this was already working fine, but now it’s also possible to share on role level (be it an application role or organization role in your solution) and have the corresponding group in xECM added and mapped to the related team role.</p>
+<p><strong>NOTE:</strong> The same roles must exist both in AppWorks and in xECM which sounds logical to me!</p>
+<hr>
+<h4 id="Deprecated-features"><a href="#Deprecated-features" class="headerlink" title="Deprecated features"></a>Deprecated features</h4><p>NONE! &#x1F60A;</p>
+<hr>
+<p>That’s it…AppWorks playground 23.2 is open and ready to build/upgrade your solution. It’s a ‘DONE’ from my side on this update post with a great overview of the new GA features for this Q2 2023 release. I see you in the next post…Have a good low coding weekend!</p>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="4-year anniversary!" href="/2023/05/19/177c_4_year_anniversary/">
+            <i class="fa-solid fa-backward"></i> 4-year anniversary!
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Update on OpenText World EMEA Innovation Summits" href="/2023/05/05/177b_update_ot_world_emea_london/">
+            Update on OpenText World EMEA Innovation Summits <i class="fa-solid fa-forward"></i>
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#x1F195-Update-on-the-available-changes-in-23-2-x1F195"><span class="toc-text">&amp;#x1F195; Update on the available changes in 23.2 &amp;#x1F195;</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Creating-and-updating-email-templates-in-runtime"><span class="toc-text">Creating and updating email templates in runtime</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Scheduling-of-email-notifications"><span class="toc-text">Scheduling of email notifications</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Email-notifications-subscription"><span class="toc-text">Email notifications subscription</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#New-email-features"><span class="toc-text">New email features</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Typed-REST-API"><span class="toc-text">Typed REST API</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Enhancements-for-Dynamic-workflow"><span class="toc-text">Enhancements for Dynamic workflow</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Rebranding-iHub-to-Magellan-Business-Intelligence-and-Reporting"><span class="toc-text">Rebranding iHub to Magellan Business Intelligence and Reporting</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Save-email-to-Content-Server-with-type-email"><span class="toc-text">Save email to Content Server with type email</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Configure-the-author-details-for-discussions"><span class="toc-text">Configure the author details for discussions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Save-list-filter-configurations-in-user-preferences"><span class="toc-text">Save list filter configurations in user preferences</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Disable-layout-panels-using-rules"><span class="toc-text">Disable layout panels using rules</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Improved-performance-for-Entity-and-Rule-designers"><span class="toc-text">Improved performance for Entity and Rule designers</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JavaScript-APIs-for-AppWorks-Platform-client-operations"><span class="toc-text">JavaScript APIs for AppWorks Platform client operations</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Support-for-entity-layouts-in-the-layout-panel"><span class="toc-text">Support for entity layouts in the layout panel</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Support-for-OAuth-delegate-authentication-in-Microsoft-Graph-mail-protocols"><span class="toc-text">Support for OAuth delegate authentication in Microsoft Graph mail protocols</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Automatic-creation-of-organization-in-container-based-deployment"><span class="toc-text">Automatic creation of organization in container-based deployment</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Integration-with-Core-for-Signature"><span class="toc-text">Integration with Core for Signature</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Integration-with-Intelligent-viewing"><span class="toc-text">Integration with Intelligent viewing</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CARS-upgraded-to-CARS-2-8"><span class="toc-text">CARS upgraded to CARS 2.8</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Setting-permissions-for-business-workspace-when-an-item-is-shared-to-a-role"><span class="toc-text">Setting permissions for business workspace when an item is shared to a role</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Deprecated-features"><span class="toc-text">Deprecated features</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2023/12/15/204_connect_source_control_after_project_creation/">The ultimate workspace wizardry; How to supercharge your WS with source control after creation</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/12/08/203_auto_assign_cases_tasks/">Ultimate productivity with this jaw-dropping follow-up to auto-assign Cases and Tasks</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/12/01/202_working_with_task_workqueues/">Unlock your knowledge for dominating task workqueues; You'll never work the same way again</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/24/201_subtyping_vs_database/">Shocking showdown; Subtyping vs. Database - You won't believe what happens</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/17/200_speedtest_parallel_processing/">Unbelievable results revealed; Harnessing parallel processing for mind-blowing insights</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/10/199_feel_the_power_of_a_form_section/">Behold the power of a section within an entity 'Form' building block</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/03/198_iconize_buttons_with_unicode/">Discover how to revolutionize your action buttons with Unicode icons</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/10/27/197_xslt_data_transformation/">Prepare the magic; Watch how XML data gets a mind-blowing makeover with XSLT</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Release/">Release</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/AI/" style="font-size: 14px;">AI</a> <a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/API/" style="font-size: 14.63px;">API</a> <a href="/tags/Abstract/" style="font-size: 14px;">Abstract</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/ActiveMQ/" style="font-size: 14.63px;">ActiveMQ</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 15.88px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 15.88px;">Anniversary</a> <a href="/tags/Apache/" style="font-size: 14.63px;">Apache</a> <a href="/tags/ApacheDirectoryStudio/" style="font-size: 14px;">ApacheDirectoryStudio</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Archive/" style="font-size: 14.63px;">Archive</a> <a href="/tags/Artifact/" style="font-size: 15.25px;">Artifact</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/Audit/" style="font-size: 14px;">Audit</a> <a href="/tags/Authentication/" style="font-size: 14.63px;">Authentication</a> <a href="/tags/BPM/" style="font-size: 22.75px;">BPM</a> <a href="/tags/Base64/" style="font-size: 14px;">Base64</a> <a href="/tags/Brava/" style="font-size: 14px;">Brava!</a> <a href="/tags/BuildingBlock/" style="font-size: 15.25px;">BuildingBlock</a> <a href="/tags/BuildingBlocks/" style="font-size: 15.25px;">BuildingBlocks</a> <a href="/tags/BulkUpdate/" style="font-size: 14px;">BulkUpdate</a> <a href="/tags/BusinessID/" style="font-size: 14px;">BusinessID</a> <a href="/tags/BusinessIdentifier/" style="font-size: 14px;">BusinessIdentifier</a> <a href="/tags/BusinessWorkspace/" style="font-size: 14px;">BusinessWorkspace</a> <a href="/tags/CAF/" style="font-size: 14px;">CAF</a> <a href="/tags/CARS/" style="font-size: 14.63px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 15.25px;">CD/CI</a> <a href="/tags/CIM/" style="font-size: 14px;">CIM</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMC/" style="font-size: 14px;">CMC</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 16.5px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/CaseInstanceMonitor/" style="font-size: 14px;">CaseInstanceMonitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Charts/" style="font-size: 14px;">Charts</a> <a href="/tags/ChatGPT/" style="font-size: 14px;">ChatGPT</a> <a href="/tags/Cleaning/" style="font-size: 14.63px;">Cleaning</a> <a href="/tags/Cloud/" style="font-size: 14px;">Cloud</a> <a href="/tags/Condition/" style="font-size: 14.63px;">Condition</a> <a href="/tags/ConfigEntity/" style="font-size: 14px;">ConfigEntity</a> <a href="/tags/ConnectedWorkspace/" style="font-size: 14px;">ConnectedWorkspace</a> <a href="/tags/Connector/" style="font-size: 15.88px;">Connector</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Content/" style="font-size: 16.5px;">Content</a> <a href="/tags/ContentServer/" style="font-size: 16.5px;">ContentServer</a> <a href="/tags/Custom/" style="font-size: 15.88px;">Custom</a> <a href="/tags/CustomWebservice/" style="font-size: 14px;">CustomWebservice</a> <a href="/tags/Customization/" style="font-size: 16.5px;">Customization</a> <a href="/tags/Data/" style="font-size: 14px;">Data</a> <a href="/tags/Database/" style="font-size: 17.13px;">Database</a> <a href="/tags/DatabaseMetadata/" style="font-size: 14.63px;">DatabaseMetadata</a> <a href="/tags/Date/" style="font-size: 14px;">Date</a> <a href="/tags/DateTime/" style="font-size: 14px;">DateTime</a> <a href="/tags/Debugging/" style="font-size: 14.63px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 17.75px;">Digital</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/DocumentstoreConnector/" style="font-size: 15.25px;">DocumentstoreConnector</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/EISConnector/" style="font-size: 14.63px;">EISConnector</a> <a href="/tags/Email/" style="font-size: 14.63px;">Email</a> <a href="/tags/EnterpriseWorld/" style="font-size: 19px;">EnterpriseWorld</a> <a href="/tags/Entity/" style="font-size: 20.25px;">Entity</a> <a href="/tags/EntityContext/" style="font-size: 14px;">EntityContext</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Explorer/" style="font-size: 14.63px;">Explorer</a> <a href="/tags/Expressions/" style="font-size: 14px;">Expressions</a> <a href="/tags/Feature/" style="font-size: 14px;">Feature</a> <a href="/tags/FileConnector/" style="font-size: 14px;">FileConnector</a> <a href="/tags/Filter/" style="font-size: 14px;">Filter</a> <a href="/tags/Flag/" style="font-size: 14px;">Flag</a> <a href="/tags/ForLoop/" style="font-size: 14px;">ForLoop</a> <a href="/tags/Form/" style="font-size: 19.63px;">Form</a> <a href="/tags/Function/" style="font-size: 14px;">Function</a> <a href="/tags/Gateway/" style="font-size: 14.63px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Google/" style="font-size: 14px;">Google</a> <a href="/tags/Graphics/" style="font-size: 14px;">Graphics</a> <a href="/tags/Grid/" style="font-size: 14px;">Grid</a> <a href="/tags/HTML5/" style="font-size: 14px;">HTML5</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/Homepage/" style="font-size: 14.63px;">Homepage</a> <a href="/tags/HowTo/" style="font-size: 15.88px;">HowTo</a> <a href="/tags/Icons/" style="font-size: 14px;">Icons</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14.63px;">Identity</a> <a href="/tags/IdentityPackage/" style="font-size: 15.25px;">IdentityPackage</a> <a href="/tags/InformationHub/" style="font-size: 14px;">InformationHub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.13px;">Installation</a> <a href="/tags/IntelligentViewing/" style="font-size: 14.63px;">IntelligentViewing</a> <a href="/tags/Interceptor/" style="font-size: 14px;">Interceptor</a> <a href="/tags/IsTemporaryCopy/" style="font-size: 14px;">IsTemporaryCopy</a> <a href="/tags/ItemStatus/" style="font-size: 14px;">ItemStatus</a> <a href="/tags/JMS/" style="font-size: 14.63px;">JMS</a> <a href="/tags/JMeter/" style="font-size: 14px;">JMeter</a> <a href="/tags/JSON/" style="font-size: 15.25px;">JSON</a> <a href="/tags/JShell/" style="font-size: 14px;">JShell</a> <a href="/tags/JUnit/" style="font-size: 14px;">JUnit</a> <a href="/tags/JXplorer/" style="font-size: 14px;">JXplorer</a> <a href="/tags/Java/" style="font-size: 15.88px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 14.63px;">JavaScript</a> <a href="/tags/JavaUI/" style="font-size: 14px;">JavaUI</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/LDAP/" style="font-size: 14.63px;">LDAP</a> <a href="/tags/LandingPage/" style="font-size: 14px;">LandingPage</a> <a href="/tags/Language/" style="font-size: 14.63px;">Language</a> <a href="/tags/LanguagePack/" style="font-size: 14px;">LanguagePack</a> <a href="/tags/Less/" style="font-size: 14px;">Less</a> <a href="/tags/License/" style="font-size: 14.63px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.88px;">Lifecycle</a> <a href="/tags/LinkDocument/" style="font-size: 14px;">LinkDocument</a> <a href="/tags/LinkedEntity/" style="font-size: 14px;">LinkedEntity</a> <a href="/tags/List/" style="font-size: 14.63px;">List</a> <a href="/tags/Logging/" style="font-size: 14px;">Logging</a> <a href="/tags/LongTextProperty/" style="font-size: 14px;">LongTextProperty</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 14.63px;">Management</a> <a href="/tags/Message/" style="font-size: 14px;">Message</a> <a href="/tags/Metadata/" style="font-size: 14px;">Metadata</a> <a href="/tags/Method/" style="font-size: 14px;">Method</a> <a href="/tags/Migration/" style="font-size: 14px;">Migration</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Mockito/" style="font-size: 14px;">Mockito</a> <a href="/tags/Model/" style="font-size: 14px;">Model</a> <a href="/tags/Modeling/" style="font-size: 14.63px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 14.63px;">Monitoring</a> <a href="/tags/NGINX/" style="font-size: 14px;">NGINX</a> <a href="/tags/Northwind/" style="font-size: 14px;">Northwind</a> <a href="/tags/Notification/" style="font-size: 14px;">Notification</a> <a href="/tags/OKTA/" style="font-size: 14px;">OKTA</a> <a href="/tags/OTDS/" style="font-size: 17.75px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 23.38px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Order/" style="font-size: 14px;">Order</a> <a href="/tags/Organization/" style="font-size: 15.25px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/Package/" style="font-size: 15.25px;">Package</a> <a href="/tags/Parallel/" style="font-size: 14px;">Parallel</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/Pattern/" style="font-size: 14px;">Pattern</a> <a href="/tags/Personal/" style="font-size: 14px;">Personal</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 14px;">Postman</a> <a href="/tags/PowerMockito/" style="font-size: 14px;">PowerMockito</a> <a href="/tags/Preferences/" style="font-size: 14px;">Preferences</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/ProgressionBar/" style="font-size: 14px;">ProgressionBar</a> <a href="/tags/Project/" style="font-size: 15.25px;">Project</a> <a href="/tags/Projects/" style="font-size: 14px;">Projects</a> <a href="/tags/Properties/" style="font-size: 14.63px;">Properties</a> <a href="/tags/Property/" style="font-size: 15.25px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/RHEL/" style="font-size: 14px;">RHEL</a> <a href="/tags/ReST/" style="font-size: 15.88px;">ReST</a> <a href="/tags/ReST-Gateway/" style="font-size: 14px;">ReST Gateway</a> <a href="/tags/Recap/" style="font-size: 15.88px;">Recap</a> <a href="/tags/RegularExpression/" style="font-size: 14.63px;">RegularExpression</a> <a href="/tags/Relations/" style="font-size: 15.25px;">Relations</a> <a href="/tags/Release/" style="font-size: 20.88px;">Release</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/ResultList/" style="font-size: 15.25px;">ResultList</a> <a href="/tags/Reusability/" style="font-size: 14px;">Reusability</a> <a href="/tags/Reverse-proxy/" style="font-size: 14px;">Reverse proxy</a> <a href="/tags/Role/" style="font-size: 14px;">Role</a> <a href="/tags/Roles/" style="font-size: 14.63px;">Roles</a> <a href="/tags/Rule/" style="font-size: 14.63px;">Rule</a> <a href="/tags/Rules/" style="font-size: 14px;">Rules</a> <a href="/tags/Runtime-Security/" style="font-size: 14px;">Runtime Security</a> <a href="/tags/SAML/" style="font-size: 14px;">SAML</a> <a href="/tags/SDK/" style="font-size: 14.63px;">SDK</a> <a href="/tags/SOAP/" style="font-size: 15.25px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 14.63px;">SVN</a> <a href="/tags/Scheduler/" style="font-size: 14px;">Scheduler</a> <a href="/tags/Search/" style="font-size: 14px;">Search</a> <a href="/tags/Section/" style="font-size: 14px;">Section</a> <a href="/tags/Sections/" style="font-size: 14px;">Sections</a> <a href="/tags/Security/" style="font-size: 14px;">Security</a> <a href="/tags/Selenium/" style="font-size: 14px;">Selenium</a> <a href="/tags/Service/" style="font-size: 14px;">Service</a> <a href="/tags/ServiceContainer/" style="font-size: 14px;">ServiceContainer</a> <a href="/tags/Setup/" style="font-size: 15.88px;">Setup</a> <a href="/tags/ShortLived/" style="font-size: 14px;">ShortLived</a> <a href="/tags/SimpleClient/" style="font-size: 14px;">SimpleClient</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 15.88px;">Software</a> <a href="/tags/Solutions/" style="font-size: 14px;">Solutions</a> <a href="/tags/SourceControl/" style="font-size: 14px;">SourceControl</a> <a href="/tags/Sources/" style="font-size: 14px;">Sources</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Storage/" style="font-size: 14px;">Storage</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/SubProcess/" style="font-size: 14px;">SubProcess</a> <a href="/tags/Subtyping/" style="font-size: 14.63px;">Subtyping</a> <a href="/tags/Sync/" style="font-size: 14px;">Sync</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/SynchronizedPartition/" style="font-size: 14px;">SynchronizedPartition</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 15.25px;">Task</a> <a href="/tags/TaskLayout/" style="font-size: 14px;">TaskLayout</a> <a href="/tags/Tasks/" style="font-size: 14.63px;">Tasks</a> <a href="/tags/Team/" style="font-size: 14px;">Team</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Test/" style="font-size: 14px;">Test</a> <a href="/tags/Testing/" style="font-size: 15.25px;">Testing</a> <a href="/tags/Theme/" style="font-size: 16.5px;">Theme</a> <a href="/tags/Time/" style="font-size: 14px;">Time</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/Title/" style="font-size: 14px;">Title</a> <a href="/tags/Toggle/" style="font-size: 14px;">Toggle</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/Tool/" style="font-size: 14px;">Tool</a> <a href="/tags/Tools/" style="font-size: 14.63px;">Tools</a> <a href="/tags/Transformation/" style="font-size: 14px;">Transformation</a> <a href="/tags/Translation/" style="font-size: 14.63px;">Translation</a> <a href="/tags/UDDI/" style="font-size: 14.63px;">UDDI</a> <a href="/tags/UnInstallation/" style="font-size: 14px;">UnInstallation</a> <a href="/tags/Unicode/" style="font-size: 14px;">Unicode</a> <a href="/tags/Update/" style="font-size: 18.38px;">Update</a> <a href="/tags/Upgrade/" style="font-size: 14px;">Upgrade</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/ValueAssistance/" style="font-size: 14.63px;">ValueAssistance</a> <a href="/tags/Version/" style="font-size: 14px;">Version</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/Video/" style="font-size: 14px;">Video</a> <a href="/tags/Viewer/" style="font-size: 14px;">Viewer</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WSAppServer/" style="font-size: 14px;">WSAppServer</a> <a href="/tags/WebLibraryDefinition/" style="font-size: 14.63px;">WebLibraryDefinition</a> <a href="/tags/Webservice/" style="font-size: 19.63px;">Webservice</a> <a href="/tags/WhileLoop/" style="font-size: 14px;">WhileLoop</a> <a href="/tags/Worklist/" style="font-size: 14px;">Worklist</a> <a href="/tags/Workqueue/" style="font-size: 14.63px;">Workqueue</a> <a href="/tags/Workspace/" style="font-size: 15.88px;">Workspace</a> <a href="/tags/XDS/" style="font-size: 14.63px;">XDS</a> <a href="/tags/XML/" style="font-size: 15.25px;">XML</a> <a href="/tags/XPath/" style="font-size: 15.25px;">XPath</a> <a href="/tags/XSLT/" style="font-size: 14px;">XSLT</a> <a href="/tags/xECM/" style="font-size: 16.5px;">xECM</a> <a href="/tags/xForm/" style="font-size: 16.5px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+
+	
+
+
+
+<div id="download002" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps prototyping booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download002" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="tfokgrtbsp">
+            <p><input class="search-input" type="text" placeholder="First name" name="UIMy41yrHk" id="id-UIMy41yrHk"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="frlQMmEVB9" id="id-frlQMmEVB9"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="p5xcHl0BfA" id="id-p5xcHl0BfA"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="download" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps fundamentals booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="qdlxpohveb">
+            <p><input class="search-input" type="text" placeholder="First name" name="9aiQvAsyHa" id="id-9aiQvAsyHa"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="pKdGB3hCf6" id="id-pKdGB3hCf6"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="8azv3a7ZO9" id="id-8azv3a7ZO9"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="hosting" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Plan you strategic AppWorks hosting</h1>
+        <h2 class="site-description">You will receive a mail with information on next steps</h2>
+        <form name="hosting" action="https://appworks-tips.email-provider.eu/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="ojenuvc25g">
+            <p><input class="search-input" type="text" placeholder="First name" name="kZYzubjXZ1" id="id-kZYzubjXZ1"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="DU7uu8Hd1B" id="id-DU7uu8Hd1B"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="7" name="waY3MUqJDo" id="id-waY3MUqJDo" placeholder="Turn you wish into a command"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="OTyYwKXWRE" id="id-OTyYwKXWRE"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><i>AppWorks hosting is a payable service handled via monthly invoicing. This means that you will be billed for the service <br>after it has been provided to you under our signed service agreement which we put in place after our free call.</i></p>
+            <p><input class="submit-input" type="submit" value="Take action!"></p>
+        </form>
+    </div>
+</div>
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="google" class="search-overlay subscribe-overlay">
+        <div class="search-form" style="height:8rem;">
+            
+            <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+            
+            <script async src="https://cse.google.com/cse.js?cx=784555e4960d85d09"></script>
+            <div id="cse" style="width: 80%; margin: 0 auto; text-align:left">
+            <div class="gcse-search"></div>
+            </div>
+            <a class="search-overlay-close" href="#"></a>
+        </div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback or any question</h1>
+        <h2 class="site-description">Send back any feedback or question so we can inspect and adapt our features or help you on your own journey.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback or any question"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Send"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2023
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Feel the excitement; AppWorks 23.2 is GA, and this post is updating you on the latest functionalities</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+
+<script src="/js/mix/post-lazy.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av.js"></script>-->
+
+<script src="/js/av.js"></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>

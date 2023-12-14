@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+<link rel="stylesheet" href="/css/products.css">
+
+	
+<link rel="stylesheet" href="/css/nav.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+    
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y597KBTG4E"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-Y597KBTG4E');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Dynamic task handling in parallel flow | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="A customer case worked out in small steps...This is the entity dynamic approval flow.">
+
+	
+	<meta name="keywords" content="appworks, opentext, bpm">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Dynamic task handling in parallel flow | AppWorks Tips">
+	<meta property="og:description" content="A customer case worked out in small steps...This is the entity dynamic approval flow.">
+	<meta property="og:url" content="https://appworks-tips.com/2021/11/26/118_dynamic_task_handling_in_parallel_flow/">
+
+	
+	<meta property="article:published_time" content="2021-11-26T12:11:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2021/11/26/118_dynamic_task_handling_in_parallel_flow/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+        <div class="site-header-sponsor">
+            
+                <a href="https://bos-ictservices.nl" target="_blank">
+                <img class="sponsor-image" src="https://bos-ictservices.nl/img/logo.png">
+                </a>
+            
+                <a href="https://github.com/sponsors/HetBenkt" target="_blank">
+                <img class="sponsor-image" src="/images/sponsor_here.png">
+                </a>
+            
+        </div>
+        
+        
+
+<nav class="site-nav">
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                
+                
+                    <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+                
+                
+                
+                    <a href="/installation" title="INSTALLATION 23.4">INSTALLATION 23.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
+  <g id="surface1">
+   <path d="m7.18359,7.74219c-0.29687,0.125 -0.39062,0.36328 -0.27734,0.6289l0.90234,-0.3789c-0.09765,-0.23047 -0.39062,-0.34766 -0.625,-0.25zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_1"/>
+   <path d="m14.48047,8.67969l1.12109,-0.67969l-1.12109,-0.67969l0.95312,-0.90234l-1.23828,-0.43359l0.75,-1.07813l-1.30468,-0.16406l0.50781,-1.21094l-1.30469,0.10938l0.24219,-1.28907l-1.25781,0.375l-0.02735,-1.30859l-1.15234,0.62891l-0.30078,-1.27735l-0.99219,0.85938l-0.5625,-1.1875l-0.79297,1.04297l-0.79297,-1.04297l-0.5625,1.1875l-0.99219,-0.85938l-0.30078,1.27735l-1.15234,-0.62891l-0.02734,1.30859l-1.25782,-0.375l0.2461,1.28907l-1.3086,-0.10938l0.50782,1.21094l-1.30079,0.16406l0.7461,1.07813l-1.23828,0.43359l0.95312,0.90234l-1.12109,0.67969l1.12109,0.67969l-0.95312,0.90234l1.23828,0.42969l-0.75,1.07812l1.30469,0.16797l-0.50782,1.21094l1.3086,-0.10937l-0.2461,1.28906l1.25782,-0.37891l0.02734,1.3125l1.15234,-0.6289l0.30078,1.27734l0.99219,-0.85938l0.5586,1.1875l0.79687,-1.04296l0.79297,1.04296l0.5625,-1.1875l0.99219,0.85938l0.30078,-1.27734l1.15234,0.6289l0.02735,-1.30859l1.25781,0.375l-0.2461,-1.28906l1.3086,0.10937l-0.50781,-1.21094l1.30468,-0.16406l-0.75,-1.08203l1.23828,-0.42969l-0.95312,-0.90234zm-9.05859,2.1289l-0.5586,-1.32421c-0.10547,-0.25 -0.26562,-0.44141 -0.54687,-0.32032c-0.30469,0.12891 -0.30469,0.35938 -0.16797,0.67969l0.53906,1.27344l-0.99219,0.42187l-1.05859,-2.5039l0.90625,-0.38282l0.16406,0.39063c0.09766,-0.39453 0.27344,-0.66016 0.65235,-0.82031c0.65625,-0.27735 1.13281,-0.02344 1.42187,0.66406l0.63281,1.5l-0.99218,0.42187zm2.58984,-1.01171c-0.80078,0.33984 -1.61719,0.14453 -1.97266,-0.69922c-0.34375,-0.82032 0.04688,-1.60547 0.85157,-1.94532c0.92578,-0.39062 1.7539,0.01172 2.125,0.92579l-1.89844,0.80078c0.1289,0.29687 0.4375,0.39453 0.70312,0.28515c0.15625,-0.0664 0.26953,-0.19922 0.27735,-0.3789l0.95312,-0.40235c0.08985,0.69532 -0.45312,1.16797 -1.03906,1.41407zm3.98828,-1.76954l-1.00781,-1.30468l-0.00781,0.0039l0.26953,1.61328l-0.96875,0.41016l-1.88282,-2.15234l0.96875,-0.41016l1.03516,1.38672l0.01172,-0.00391l-0.26953,-1.71093l0.84375,-0.35547l1.03515,1.38281l0.00782,-0.00391l-0.26563,-1.71093l0.94141,-0.39844l0.25781,2.84375l-0.96875,0.41015zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_2" stroke="null"/>
+  </g>
+ </g>
+
+</svg></a>
+                
+                
+                
+                    <a href="/ci_cd" title="CI/CD">CI/CD</a>
+                
+                
+                
+                    <a href="/products" title="PRODUCTS">PRODUCTS</a>
+                
+                
+                
+                    <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+                
+                
+                
+                    <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+                
+                
+                
+                    <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME">HIRE ME</a>
+                
+                
+                
+                    <a href="/about" title="ABOUT">ABOUT</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <ul class="nav">
+                    <li>
+                        <div class="hire_me_content">
+                        <i class="hire_me_live"></i>
+                        <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME" id="hire_me">HIRE ME</a>
+                        </div>
+                    </li>
+                </ul>
+        
+        
+        
+        
+        
+    </div>
+
+    <div class="search-button">
+
+    
+    <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+        <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+            <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+        </svg> Sponsor
+    </a>
+    
+
+    
+
+    
+        <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </a>
+    
+
+    </div>
+
+    <div class="site-nav-right">
+        
+        <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+            <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+                <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+            </svg> Sponsor
+        </a>
+        
+
+        
+
+        
+            <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            </a>
+        
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback / Question" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2021-11-26T12:00:00.000Z" itemprop="datePublished">
+                    2021-11-26
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Development/">Development</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">Dynamic task handling in parallel flow</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/feature_tag.webp)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>For this week I have a great customer case as backlog item to write about.</p>
+<p><strong>Case description:</strong> <em>Create an approval flow which makes it possible for a pre-selected approvers list to “sign-off” the requested entity instance as ‘Approved’. The approvers should retrieve sign-off tasks in parallel-mode, and it should be possible to check if a certain number of users already approved within the approval due-date.</em></p>
+<p>An interesting case as you will see such functionality is not directly available as standard building block on an entity. When we can’t build it with the standard building blocks, our next step is BPM with ‘webservices’. You’ll see this will exactly be the approach we’ll dive into for this post. It will be great…as always! &#128526; </p>
+<p>This post will also give you a 2.0 answer to Mr. Mission Impossible his comment on <a href="/2021/02/12/084_working_with_tasks_role_team_worklist_personal/">this</a> post: <em>Correct I don’t think there is an out-of-the-box option to allow a certain number of users to complete the task. However, you could assign the task to the team. Then, in the task layout, hide the claim button. Then add a “Complete Task” action rule in the Lifecycle child entity. Have a BPM run that determines if a sufficient number of team members have executed that action rule and then claim and complete the task on behalf of the user.</em></p>
+<p>We will extend this comment with 2 extra features:</p>
+<ol>
+<li>We keep track of the list of approver names that hit the ‘Complete Task’ action rule</li>
+<li>We make it possible to make that ‘Team’ dynamic. This way not all team members get a task, but only the pre-selected team-members as approver for the entity instance! For dynamic team approach we’ll use entities from the Identity package and when we use this, we also would like to make use of an OTDS instance to manage the data.</li>
+</ol>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>First some thoughts on several approaches (on what we could also do) with some advantages/disadvantages:</p>
+<ol>
+<li>When we send an approval task, we could send it to a predefined functional role. We can apply users to this role and assign to task to this role. This makes it really simple, but it will send only one task to be completed by one user of that role, and we need multiple approvals from several users.</li>
+<li>We could also send a task to each selected list of users on an entity and loop over it from a BPM standpoint. This approach is more work, but because we send tasks to a specific user it makes it a “sequential” approach where want to have a “parallel” approach.</li>
+<li>Next level will be the ‘comment’ (mentioned before) where we assign the task to the team (= organizational unit). Then, in the task layout, hide the claim button with an “Action Bar” BB. Add a “Complete Task” action rule in the Lifecycle child entity. The action starts a BPM that checks if all (or a certain number of) team members have executed that action rule and then claim and complete the task on behalf of the user.</li>
+<li>The approach described in this post…continue reading:</li>
+</ol>
+<p>This will be the outline we want to build to match the full requirement which is built on top of the valuable comment:</p>
+<ul>
+<li><p>Create a second OTDS test user ‘awtest@appworks’ to test with</p>
+<ul>
+<li>We will also use the OTDS account (for development): awdev@appworks</li>
+</ul>
+</li>
+<li><p>Create an entity</p>
+<ul>
+<li>With just one property: todo_name [TEXT, length 64]</li>
+<li>Generate the other BBs, so we can create new instances in runtime</li>
+<li>Add the CRUD operations webservice</li>
+</ul>
+</li>
+<li><p>Expose the webservices with the ‘appserver’ service container</p>
+</li>
+<li><p>Relate to many users (and add it to the ‘Create’ form as selectable ‘Approvers’)</p>
+<ul>
+<li>Name: todo_approvers</li>
+<li>Add the GET operation webservice of this relation</li>
+</ul>
+</li>
+<li><p>Create an action rule which starts a BPM</p>
+<ul>
+<li>Name: a_start_approval_flow</li>
+<li>Label: Start approval flow</li>
+<li>We have the option here to call a modal ‘Approvers’ dialog (This requires an additional ‘Approvers’ form on the entity)!</li>
+</ul>
+</li>
+<li><p>Create the BPM (dynamic_approval_flow) to be started from the action</p>
+<ul>
+<li><p>In pseudo-code:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">OrgUnit orgUnit = WebService.createOrgUnit(<span class="string">"ou_"</span> + processInstanceId);</span><br><span class="line">Position position = WebService.createPosition(<span class="string">"pos_"</span> + processInstanceId);</span><br><span class="line">List&lt;String&gt; todoApprovers = WebService.getRelatedTodoApprovers(todoItem.ItemId);</span><br><span class="line">List&lt;Assignment&gt; assignments = <span class="keyword">new</span> ArraryList&lt;&gt;();</span><br><span class="line"><span class="keyword">for</span>(String approver : todoApprovers) &#123;</span><br><span class="line">	User user = WebService.findUserByName(approver);</span><br><span class="line">	Person person = WebService.readPerson(user.getItemId());</span><br><span class="line">    assignments.add(WebService.CreateAssignment(position.getItemId(), person.getItemId()));</span><br><span class="line">&#125;</span><br><span class="line">Task task = Activity.assignWork(<span class="string">"ou_"</span> + processInstanceId);</span><br><span class="line"></span><br><span class="line"><span class="comment">//clean up, when done</span></span><br><span class="line">when(taskIsCompleted(task.getId())) &#123;</span><br><span class="line">    <span class="keyword">for</span>(Assignment assignment : assignments) &#123;</span><br><span class="line">		Assignment assignment = WebService.DeleteAssignment(assignment.getItemId());</span><br><span class="line">	&#125;</span><br><span class="line">    WebService.deleteOrgUnit(<span class="string">"ou_"</span> + processInstanceId);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>In this pseudo-code you can clearly see we heavily lean on the Identity package entities, and the exposed webservices with it.</p>
+</blockquote>
+</li>
+<li><p>We could optionally add some “break” functionality when task is not finished on time…we’ll see.</p>
+</li>
+</ul>
+</li>
+<li><p>Add lifecycle BB (this makes it possible to call entity information in BPM!)</p>
+<ul>
+<li>We want to be able to show an entity layout on a BPM activity task!</li>
+<li>This will introduce also a related ‘LifecycleTask’ entity with all BBs available where we’re going to keep track of the approvers…watch and learn!!</li>
+</ul>
+</li>
+<li><p>On the lifecycle task entity we’ll also create an action Rule</p>
+<ul>
+<li>Name: ‘a_complete_task’</li>
+<li>Label: Complete task</li>
+</ul>
+</li>
+<li><p>On this entity we also need a ‘tomany’ Users relation, so we keep track on the list</p>
+<ul>
+<li>With this we also expose the webservice for this relation to be used in the second BPM!</li>
+</ul>
+</li>
+<li><p>Create a second BPM (complete_task) to be started from the task action</p>
+<ul>
+<li><p>In pseudo-code:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">User user = WebService.findUserByName(flow_owner);</span><br><span class="line">WebService.AddApproverToTaskRelation(user.getItemId());</span><br><span class="line"><span class="keyword">if</span>(WebService.GetApproversToTaskRelation().size() == parentToDoInstance.getApprovers().size()) &#123;</span><br><span class="line">    Process approvalFlow = parentToDoInstance.getCurrentRunningApproversFlow();</span><br><span class="line">    WebService.ClaimAndCompleteTask(approvalFlow);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>The lifecycle task entity will also have its own action bar where we can trigger the ‘Approval completion’, and it will have a layout to show some task related information (like our approvers list!)</p>
+</li>
+<li><p>Finally, we will probably add some rules which hide some buttons at certain moments in time</p>
+</li>
+<li><p>Finally, finally…The ‘complete_task’ BPM should be able to claim and complete the final task from the ‘dynamic_approval_flow’ BPM…I don’t know how yet, but we’ll figure that one out when we’re at that moment in time… &#129300;</p>
+</li>
+</ul>
+<p>I know…It’s much, but keep reading as it will all be explained in small pieces. Ready?….Time for some craftsmanship! But first a quick coffee!</p>
+<hr>
+<h4 id="Create-a-second-OTDS-test-user-‘awtest-appworks’-to-test-with"><a href="#Create-a-second-OTDS-test-user-‘awtest-appworks’-to-test-with" class="headerlink" title="Create a second OTDS test user ‘awtest@appworks’ to test with"></a>Create a second OTDS test user ‘awtest@appworks’ to test with</h4><p>You can already see I will start to use OTDS for this implementation. Why? Well, because I will use parts of the ‘Identity’ package of the platform. Read about the ‘Identity package’ in <a href="/2021/06/18/099_the_tips_to_get_rid_of_the_identity_package/">this</a> post. The post tells you how to get rid of it, but this post will show you it can bring also valuable information to the surface. FYI: OpenText is also pushing to use OTDS in combination with AppWorks, so why not just use it from the beginning!</p>
+<p>Alright…Did you follow <a href="/tags/OTDS/">these</a> posts? If so, you should be able to dive into OTDS where I have at the moment only one user called: ‘awdev@appworks’.</p>
+<blockquote>
+<p>I use this account <code>otadmin@otds.admin</code> with this URL: <a href="http://192.168.56.107:8181/otds-admin/" target="_blank" rel="noopener">http://192.168.56.107:8181/otds-admin/</a></p>
+</blockquote>
+<p>Once logged in to OTDS, we go to the “Partitions” where you have the ‘appworks’ partition available. Hit the ‘Actions’ and view the current members:</p>
+<p><img alt="dynamic_task_001" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_001.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_001.png"></p>
+<blockquote>
+<p>I know…I already have 2 users available…I did some preparation for this post!</p>
+</blockquote>
+<p>Now add a new user:</p>
+<p><img alt="dynamic_task_002" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_002.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_002.png"></p>
+<p>I just use ‘awtest’ as username in the “General” tab, my “Account” tab looks like this, and the rest is left empty.</p>
+<p><img alt="dynamic_task_003" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_003.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_003.png"></p>
+<p>Now the account is added to the partition…Time to synchronize it to AppWorks. If you followed the OTDS posts, you have an ‘appworks_resource’ available in the “Resources” tab where you can do a ‘Consolidate’ action in the “Actions” menu:</p>
+<p><img alt="dynamic_task_004" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_004.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_004.png"></p>
+<blockquote>
+<p>I see now you can also consolidate from the ‘Partition’ directly!…There are always more roads to walk to the city of Rome! &#128522;</p>
+</blockquote>
+<p>When the ‘Consolidate’ happened you should see the just created account in AppWorks:</p>
+<p><img alt="dynamic_task_005" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_005.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_005.png"></p>
+<blockquote>
+<p>I assigned the ‘awtest@appworks’ account to the ‘Developer’ role for now as I don’t want to have any role based ‘security’ problems for this blog. Smart? Not in real life! Always test with an account which has the real security and roles applied for your solution!</p>
+<p>Check this logfile for some more monitoring on this action: <code>tail -999f /opt/tomcat/latest/logs/directory-provenance.log</code></p>
+</blockquote>
+<p>Quickly logout and login to see if it’s working and otherwise we’ll continue…</p>
+<hr>
+<h4 id="Create-an-entity"><a href="#Create-an-entity" class="headerlink" title="Create an entity"></a>Create an entity</h4><p>For this post we just use a simple ‘Todo’ entity with just one property <code>todo_name [TEXT, length 64]</code>. Let’s generate all the other basic BBs, so we can create new instances in runtime for quickly prototyping and testing…Nothing fancy here…correct?</p>
+<p>These are the simple things I updated after that initial creation of the entity:</p>
+<ul>
+<li>Give the DefaultList BB a better name: All Todo items</li>
+<li>In the entity properties<ul>
+<li>Give the entity itself a display name: Todo</li>
+<li>Give the entity a name: todo</li>
+</ul>
+</li>
+</ul>
+<p>Extra BBs to be applied are on this entity:</p>
+<ul>
+<li><p>A ‘to many’ relationship with the Identity entity ‘User’. I give it the name ‘todo_approvers’ and a label ‘Approvers’</p>
+</li>
+<li><p>The ‘Web service’ BB which exposes all the CRUD services, one ‘All’ find operation (although I can’t remember where it’s used!?), and also all the relationship operations:</p>
+<p><img alt="dynamic_task_006" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_006.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_006.png"></p>
+</li>
+<li><p>Add the lifecycle BB, but don’t design any lifecycle functionality. We need this BB, so it’s possible to get a grip on the entity information in a BPM which we will built start later on! Maybe you noticed the related ‘LifecycleTask’ entity when adding a lifecycle…Well, that will be the entity we will use for showing a nice task-layout to our end-user (keep on reading!)</p>
+</li>
+</ul>
+<p>As cherry on the cake we update the ‘Create’ form with the related “to many users”, so we have a selectable ‘Approvers’ list to fill in on the creation form.</p>
+<p><img alt="dynamic_task_007" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_007.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_007.png"></p>
+<blockquote>
+<p>I make sure we can only execute the minimal required actions, and we need to make sure it’s attached to a ‘Browse list’.</p>
+</blockquote>
+<p>Well, time for a save (in the ‘entities’ folder), and a first publication of the ‘Todo’ entity. After this we can create some runtime instances:</p>
+<p><img alt="dynamic_task_008" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_008.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_008.png"></p>
+<hr>
+<h4 id="Expose-the-webservices-with-the-‘Appserver’-service-container"><a href="#Expose-the-webservices-with-the-‘Appserver’-service-container" class="headerlink" title="Expose the webservices with the ‘Appserver’ service container"></a>Expose the webservices with the ‘Appserver’ service container</h4><p>As we have exposed the Webservices BB on our entity, we need to tell the platform what service container is responsible for handling these webservice requests. For this we’ll open the ‘System Resource Manager’ where we can create a new service group (with the top left corner button), and we attach the connector called ‘Application Server’. </p>
+<p><img alt="dynamic_task_009" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_009.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_009.png"></p>
+<p>We did a couple of times already in this blogsite, but in small steps per wizard screen:</p>
+<ul>
+<li>Select the ‘Application Server Connector’…click ‘Next &gt;’</li>
+<li>Give a name for the service group: <code>appserver_service_group</code> and mark the webservice interface called ‘Method Set Entity todo’…click ‘Next &gt;’</li>
+<li>Give a name for the service itself: <code>appserver_service_container</code>, make it start automatically, and assign it to the OS Process ‘Application Server’…click ‘Next &gt;’</li>
+<li>Click ‘Next &gt;’</li>
+<li>Click ‘Finish’</li>
+</ul>
+<p>How easy!</p>
+<p>With this service container in place it’s possible to test your exposed webservices with the ‘Web Service Interface Explorer’ like this:</p>
+<p><img alt="dynamic_task_010" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_010.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_010.png"></p>
+<p>With a SOAP request like this:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">SOAP:Envelope</span> <span class="attr">xmlns:SOAP</span>=<span class="string">"http://schemas.xmlsoap.org/soap/envelope/"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">SOAP:Body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Readtodo</span> <span class="attr">xmlns</span>=<span class="string">"http://schemas/appworks_tipsgeneric/todo/operations"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ns0:todo-id</span> <span class="attr">xmlns:ns0</span>=<span class="string">"http://schemas/appworks_tipsgeneric/todo"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ns0:Id</span>&gt;</span>655362<span class="tag">&lt;/<span class="name">ns0:Id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ns0:ItemId</span>&gt;</span>0800273e9411a1ebb7580c9f20961410.655362<span class="tag">&lt;/<span class="name">ns0:ItemId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">ns0:todo-id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">Readtodo</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">SOAP:Body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">SOAP:Envelope</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>The <code>ItemId</code> is retrieved from the runtime instance of our ‘todo’ items I’ve created in the first test. Have a look in the URL when you open the instance in runtime to view its metadata (check for <code>655362</code>):</p>
+<p>/home/appworks_tips/app/start/web/item/<strong>0800273e9411a1ebb7580c9f20961410.655362</strong>/0800273e9411a1ebb758109e356ca6ad/4e7ac7ca92543520b11a460cf67404dc?authID=OTDS</p>
+</blockquote>
+<p>Ok…services ready…time for some BPM action (which we will trigger via an action Rule in the step after it!)</p>
+<hr>
+<h4 id="Create-the-‘Dynamic-Approval’-BPM"><a href="#Create-the-‘Dynamic-Approval’-BPM" class="headerlink" title="Create the ‘Dynamic Approval’ BPM"></a>Create the ‘Dynamic Approval’ BPM</h4><p>Back into design-time where we right-click on the ‘bpms’ folder (create it if you don’t have it!) and create a new document of type ‘Business Process Model’. You get a black screen where we start with a simple BPM flow like this. We just follow the pseudo-code from before; nothing fancy and nothing attached (yet) to any of the activities (That’s the step after the Rule BB!):</p>
+<p><img alt="dynamic_task_011" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_011.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_011.png"></p>
+<blockquote>
+<p>Notes:</p>
+<ul>
+<li>Watch the flow arrows and connect them to the correct constructs (especially the for loops)!</li>
+<li>To create such a ‘for-loop-group’, you need to right-click to one activity and select your group option:</li>
+</ul>
+<p><img alt="dynamic_task_012" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_012.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_012.png"></p>
+</blockquote>
+<p>Save it for now (with name <code>dynamic_approval_flow</code>), and also do a first publication as we want to attach it to a Rule in the next step and see it triggered in runtime.</p>
+<p>Next step…</p>
+<hr>
+<h4 id="Create-an-action-rule-which-starts-the-BPM"><a href="#Create-an-action-rule-which-starts-the-BPM" class="headerlink" title="Create an action rule which starts the BPM"></a>Create an action rule which starts the BPM</h4><p>The first BPM is ready for consumption, and we execute this by adding an action rule to the ‘todo’ entity. Give is a name like <code>a_start_approval_flow</code> and we give it a label like ‘Start approval flow’.</p>
+<p><img alt="dynamic_task_013" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_013.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_013.png"></p>
+<p>This is how we model the rule. It just needs to start our BPM!</p>
+<p><img alt="dynamic_task_014" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_014.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_014.png"></p>
+<blockquote>
+<p>I named my BPM <code>approval</code> instead of the mentioned <code>dynamic_approval_flow</code>. Keeps you focused! 😁 </p>
+</blockquote>
+<p>In the screenshot, you can also see the option ‘Before the action is performed, launch a modal dialog’. This is where we could also choose our approvers! For this we need to remove the ‘Approvers’ list from the ‘Create’ form and create a separate form to show with this option. We keep it in the ‘Create’ form for now.</p>
+<p>Save, publish, and do a first test in runtime:</p>
+<p><img alt="dynamic_task_015" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_015.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_015.png"></p>
+<blockquote>
+<p>Because our entity already has a ‘DefaultLayout’ available (with an ‘Actionbar’ panel), we will directly see the action Rule on the Actionbar in runtime!</p>
+</blockquote>
+<p>Ok, hit that button and check the ‘<strong>P</strong>rocess <strong>I</strong>nstance <strong>M</strong>anager’ artifact for some feedback:</p>
+<p><img alt="dynamic_task_016" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_016.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_016.png"></p>
+<p>You will see the BPM will eventually fail because we didn’t do any implementations (yet!), but it gets started for now!</p>
+<p>Next…</p>
+<hr>
+<h4 id="Implement-the-BPM"><a href="#Implement-the-BPM" class="headerlink" title="Implement the BPM"></a>Implement the BPM</h4><p>Back to the <code>dynamic_approval_flow</code> BPM…Right-click the activity which must be a manual task (the third one from the end; just before the ‘For Each Assignment’). From the context menu, you are able to select the option ‘Insert’ and ‘Entity Layout’. Now you need to select the correct layout…This will be the “DefaultLayout” of our ‘todo’ entity (for now). Hover over it to identify the correct on!</p>
+<p><img alt="dynamic_task_017" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_017.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_017.png"></p>
+<p>You’ll see the activity gets updated with the same name, but we just update it to a nice task name like: ‘Approval’</p>
+<p>For all the other activities we will do some webservice calls. From the context menu on the first activity we can insert a ‘Web Service Operation’. Make sure to select the correct operations, so the BPM will look like this after applying them all:</p>
+<p><img alt="dynamic_task_018" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_018.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_018.png"></p>
+<blockquote>
+<p>All those services are part of the ‘Identity’ package delivered with the platform.</p>
+</blockquote>
+<p>Starts to look more like our pseudo-code…right? Also check those service icons and the manual task icon! The next step is the implementation (also called message mapping!) on all those services…First a soda-break. &#129380;</p>
+<p>…</p>
+<p>On the bottom of the BPM modeler, we see a tab ‘Message Map’…Enter it. The first mappings for the first three services look like this:</p>
+<p><strong>CreateOrganizationalUnit</strong></p>
+<p>We want to create a unique temporary <strong>O</strong>rganizational <strong>U</strong>nit for this flow. Why? Well, when we reach the ‘Approval’ manual activity we want to assign work to a ‘Team’ (from the identity perspective, a ‘Team’ is the same as an ‘OrganizationalUnit’). So, we make a temporary team (with a dynamic set of pre-selected approvers) to handle the task!</p>
+<p>To a unique OU, we make use of the unique identifier available for each running instance of the BPM. This information is saved in the ‘Instance properties’ of the BPM. So, the mapping we make looks like this:</p>
+<p><img alt="dynamic_task_019" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_019.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_019.png"></p>
+<p>We make the expression a bit more advanced by adding a prefix with a concatenate function:<br><code>concat(&quot;ou_&quot;, instance:instanceProperties/instance:identifier/text())</code></p>
+<p>So, this webservice will create a new OU with name: <code>ou_{flow_id}</code>. When we start our first test we’ll show you the outcome in runtime!</p>
+<p><strong>CreatePosition</strong></p>
+<p>Same trick here…name will be <code>pos_{flow_id}</code>. Only, this time we also need to pass in the ‘Id’ and ‘ItemId’ of the created Organizational Unit (which can be retrieved from the response of the previous webservice call)!</p>
+<p>This will be the expression for the position name: <code>concat(&quot;pos_&quot;, instance:instanceProperties/instance:identifier/text())</code></p>
+<p><img alt="dynamic_task_020" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_020.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_020.png"></p>
+<p><strong>Gettodo_approvers</strong></p>
+<p>This is a simple one, as we only need to pass in the so-called ‘rootEntityInstanceId’ (which is the ‘ItemId’ of the current “Todo” entity instance) to the ‘ItemId’ of the webservice:</p>
+<p><img alt="dynamic_task_021" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_021.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_021.png"></p>
+<blockquote>
+<p>If you didn’t know…It’s possible to select the property on the left/source side…hold the <code>&lt;Ctrl&gt;</code> key…and select the property on the right/target side! See that magic assignment created for you…Much easier…Much faster!</p>
+</blockquote>
+<p>Let’s do a first save with a publication and have a first test on the ‘Start approval flow’ action rule in runtime for these 3 services…</p>
+<p>After a run…Check the PIM where you will see some result like this:</p>
+<p><img alt="dynamic_task_022" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_022.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_022.png"></p>
+<p>Remember the ID and see our services do get calls…Double check in runtime for the identity homepage?</p>
+<p><img alt="dynamic_task_023" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_023.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_023.png"></p>
+<p>We also have the ‘Position’ in place:</p>
+<p><img alt="dynamic_task_024" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_024.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_024.png"></p>
+<p>The next thing is to create assignments per selected role! That’s our BPM loop…First have a check if the approvers are retrieved in the response:</p>
+<p><img alt="dynamic_task_025" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_025.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_025.png"></p>
+<p>For me, that’s a green flag where a retrieve my two selected OTDS users as ‘Approvers’! &#9989;</p>
+<blockquote>
+<p>I also removed the OU in runtime by hand for now…Later on we will remove it with the BPM!</p>
+</blockquote>
+<p>Next step…Our “Approvers” for-loop…This is a simple one and just an update in the properties of the for-loop itself:</p>
+<p><img alt="dynamic_task_026" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_026.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_026.png"></p>
+<blockquote>
+<ul>
+<li><p>Give the iterator a nice descriptive name.</p>
+</li>
+<li><p>For you to copy: <code>ns2:Gettodo_approversOutput/ns2:Gettodo_approversResponse/ns5:User/ns5:UserId/text()</code></p>
+</li>
+</ul>
+</blockquote>
+<p>Let’s continue with the 3 service calls in the loop.</p>
+<p><strong>FindUserByName</strong></p>
+<p>Well, our iterator has the userid (equals our username) text value attached. We should be fine with just a simple mapping like this:</p>
+<p><img alt="dynamic_task_027" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_027.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_027.png"></p>
+<p><strong>ReadPerson</strong></p>
+<p>The ‘ItemId’ of the previous call can be used as input for this call, but keep in mind we need this time the ‘toPerson’ id which is related from the ‘User’ entity…Again and easy task, but watch out to map the correct IDs of the related ‘Person’ entity:</p>
+<p><img alt="dynamic_task_028" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_028.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_028.png"></p>
+<p><strong>CreateAssignment</strong></p>
+<p>This one connects it all together, it’s just a bunch of ‘ItemIds’ mapped together (The one for ‘Position’ and for ‘Person’). Have a look in the ‘Consolidated view’ for the message map for the activity (that’s an option in the top bar where all the BPM icons can be found…Like the publish-icon)</p>
+<p><img alt="dynamic_task_029" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_029.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_029.png"></p>
+<p><strong><em>Question!</em></strong> <em>Why the extra steps to find the user by its name and have an extra service call with ‘ReadPerson’?</em> Great question!…That’s because the ‘Gettodo_approvers’ response doesn’t give us the proper information to create an assignment to the user. The ‘CreateAssignment’ requires a ‘Person’ entity as input where the ‘Gettodo_approvers’ returns a ‘User’ entity as output. We just convert our information from ‘User’ to ‘Person’; Maybe there is another way (as always, leave a comment), but this approach works fine for our demo (and we learn more about the available services)!</p>
+<p>Hmmm…Looks like we have a 0.1 version for our first BPM implementation…With service calls that create a temporary approvers team where we assign a team task to. Let’s do a save, a publication and have our first test in runtime! Don’t forget to assign some ‘Approvers’ on the ‘Todo’ instance as this information will be re-used in the BPM.</p>
+<p>Our Organizational Unit:</p>
+<p><img alt="dynamic_task_030" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_030.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_030.png"></p>
+<p>Nice…Our task?</p>
+<p><img alt="dynamic_task_031" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_031.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_031.png"></p>
+<p>Hmmm…empty!? Where did it go? or did the BPM fail?…Check PIM!</p>
+<p><img alt="dynamic_task_032" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_032.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_032.png"></p>
+<p>Looks fine by me…Who is the assignee??</p>
+<p><img alt="dynamic_task_033" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_033.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_033.png"></p>
+<p>Aha…That’s me, myself, and I…That’s a personal task…</p>
+<p><img alt="dynamic_task_034" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_034.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_034.png"></p>
+<p>Back to the drawing table…Or better…The next step! Configure the ‘Work assignment’ tab for the manual ‘Approval’ activity:</p>
+<p><img alt="dynamic_task_035" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_035.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_035.png"></p>
+<blockquote>
+<p><code>concat(&quot;ou_&quot;, instance:instanceProperties/instance:identifier/text())</code></p>
+</blockquote>
+<p>Save, publish, and try again…</p>
+<p><img alt="dynamic_task_036" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_036.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_036.png"></p>
+<p>Now we’re getting somewhere! How about the ‘awtest@appworks’ account? Ohwwwww mama!…Touch-down, task received, and works like a charm.</p>
+<p>Both accounts are able to claim the task and complete it, but that’s not what we want!! What we want at this moment is to disable those actions to complete the task and simulate some sort of “task completion”…Keep on reading…It will be explained!</p>
+<p>First the rest of the BPM…The clean-up part!</p>
+<p>…</p>
+<p>We already defined a for-loop for the created assignments, but we don’t have a “saved” list where we keep track on the created ItemIds for those assignments…Let’s first create this! We need a global process variable called ‘assignment_ids’. This can be created in the “Message Map” of the BPM in the ‘Source’ panel on the left. The option is called ‘Process Specific Messages’ where we create a new element:</p>
+<p><img alt="dynamic_task_037" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_037.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_037.png"></p>
+<p>On the ‘CreateAssignment’ activity we’ll add a ‘Post Assignment’ (see that screenshot above!) where we will map the retrieved ‘ItemId’ of the ‘CreateAssignment’ request to this global variable.</p>
+<p><img alt="dynamic_task_038" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_038.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_038.png"></p>
+<blockquote>
+<p>Notes:</p>
+<ul>
+<li><p>Update the ‘Replace with’ usage with the ‘Add Select’ usage.</p>
+</li>
+<li><p>Remove the ‘text()’ function in the end of the xPath expression in the ‘Advanced…’ editor: <code>ns27:CreateAssignmentOutput/ns27:CreateAssignmentResponse/ns28:Assignment/ns28:Assignment-id/ns28:ItemId</code></p>
+</li>
+</ul>
+</blockquote>
+<p>Once we reach the assignments for-loop we will walk over XML data which will eventually look like this:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">assignments_ids</span> <span class="attr">xmlns</span>=<span class="string">"http://schemas.cordys.com/default"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ItemId</span>&gt;</span>F8B156B4FF8F11E6EB2FFEEDADE25F8A.655363<span class="tag">&lt;/<span class="name">ItemId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ItemId</span>&gt;</span>F8B156B4FF8F11E6EB2FFEEDADE25F8A.655364<span class="tag">&lt;/<span class="name">ItemId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">assignments_ids</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Next is the cleanup…</p>
+<p>For the for-loop on the assignments we will need to do something like this in the properties:</p>
+<p><img alt="dynamic_task_039" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_039.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_039.png"></p>
+<blockquote>
+<p>For you to copy: <code>bpm:assignment_ids/ItemId/text()</code></p>
+</blockquote>
+<p>The final parts on those last two webservice calls:</p>
+<p><strong>DeleteAssignment</strong></p>
+<p>This one is as simple to assign our current iterator value to the ‘ItemId’ of the webservice:</p>
+<p><img alt="dynamic_task_040" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_040.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_040.png"></p>
+<p><strong>DeleteOrganizationalUnit</strong></p>
+<p>This one is as easy as connecting the response data of the ‘CreateOrganizationalUnit’ to this webservice:</p>
+<p><img alt="dynamic_task_041" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_041.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_041.png"></p>
+<p>Nice…Looks like we’re ready for a final test on this flow (after a save and publication). For now, we just use one of the 2 users to complete that task; This will change later on…Continue the grind…</p>
+<blockquote>
+<p>This is how my BPM UI looks like after a complete run. Note the 2 iterations on each loop!</p>
+<p><img alt="dynamic_task_042" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_042.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_042.png"></p>
+<p>You can open this view from the PIM, by selecting the BPM instance and click the ‘Show Graphical View’ icon.</p>
+</blockquote>
+<p>Also green marks like my screenshot? Time for the next step…</p>
+<hr>
+<h4 id="Create-the-‘Complete-task’-second-BPM"><a href="#Create-the-‘Complete-task’-second-BPM" class="headerlink" title="Create the ‘Complete task’ (second) BPM"></a>Create the ‘Complete task’ (second) BPM</h4><p>On our ‘bpms’ folder in the project, we create a new BPM. This time with name ‘complete_task’. Start simple with just one activity which will call just one webservice to retrieve some ‘Person’ information of the current user who is triggering this flow! Yes, the BPM will be triggered from an action Rule within the related ‘LifecycleTask’ entity…Remember that one?</p>
+<p>We start with this:</p>
+<p><img alt="dynamic_task_043" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_043.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_043.png"></p>
+<p>In the ‘Message Mapping’ of this webservice activity we need to pass in our current user (the one who triggered the action Rule!). Like this:</p>
+<p><img alt="dynamic_task_044" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_044.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_044.png"></p>
+<p>This is the expression I use: <code>substring-before(substring-after(instance:instanceProperties/instance:currentOwner/text(), &quot;cn=&quot;), &quot;,&quot;)</code></p>
+<p>Why? Well, the “currentOwner” value looks like this:<br><code>cn=awdev@appworks,cn=organizational users,o=appworks_tips,cn=cordys,cn=defaultInst,o=mydomain.com</code></p>
+<p>For our service call, we only need to pass in: <code>awdev@appworks</code></p>
+<p>Save it, publish it, and go for the next step…We’ll be back! </p>
+<hr>
+<h4 id="Configure-the-lifecycle-task-entity"><a href="#Configure-the-lifecycle-task-entity" class="headerlink" title="Configure the lifecycle task entity"></a>Configure the lifecycle task entity</h4><p>Alright…From the ‘todo’ entity (where also the lifecycle BB is applied), we have a BB available called ‘Task list’. Select it, and from the right panel you have the option to ‘Open’ this entity from the ‘Advanced configuration’ section.</p>
+<p><img alt="dynamic_task_045" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_045.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_045.png"></p>
+<p>You see a new entity with again the full list of building blocks to apply. This is what we need to add:</p>
+<p><strong><em>An action Rule</em></strong></p>
+<p>Name will be ‘a_complete_task’, and label will be ‘Complete task’. We don’t need any conditions. Just make sure it starts the ‘complete_task’ BPM.</p>
+<p><img alt="dynamic_task_046" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_046.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_046.png"></p>
+<p><strong><em>A ‘to many’ relation to “Users”</em></strong></p>
+<p>A screenshot describes a thousand words…</p>
+<p><img alt="dynamic_task_047" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_047.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_047.png"></p>
+<p><strong><em>An ‘Actionbar’</em></strong></p>
+<p>I give it a name ‘task_action_bar’ and only show the action rule ‘a_complete_task’. This way we hide all other actions and show only the minimal actions required!</p>
+<p><img alt="dynamic_task_048" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_048.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_048.png"></p>
+<blockquote>
+<p>Remember we talked about simulating a task completion…Well, this is it! You see it just triggers a BPM which updates another (task)approvers list. The real task completion will be handled differently…Keep on grinding…</p>
+</blockquote>
+<p><strong><em>A “Default” form</em></strong></p>
+<p>This one is used to show task related information (just our approvers list) in the DefaultLayout of the task.</p>
+<p><img alt="dynamic_task_049" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_049.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_049.png"></p>
+<p>Just drag &amp; drop the ‘Approvers’ relation to the form. I made it a grid with some user specific columns. I also made sure this grid can’t be manipulated at all, so all the actions on the grid are disabled (you don’t see it on the screenshot, but they are disabled!)</p>
+<p><strong><em>A Layout</em></strong> </p>
+<p>I name it ‘Task_Layout’ of type ‘Fit to screen’. It will look like this:</p>
+<p><img alt="dynamic_task_050" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_050.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_050.png"></p>
+<blockquote>
+<p>Notes:</p>
+<ul>
+<li>The “Form” panel will show that ‘Default’ form</li>
+<li>The “Actions” panel will show our ‘task_action_bar’</li>
+</ul>
+</blockquote>
+<p>To show this “Task_Layout” for our task, we need to jump back to the first BPM where we insert (again) an ‘Entity Layout’. Only this time we select this last created layout of the lifecycle-task entity!</p>
+<p><img alt="dynamic_task_051" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_051.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_051.png"></p>
+<p><strong><em>Expose the webservices</em></strong></p>
+<p>We just add the ‘Web service’ BB to the lifecycle task entity and (for now) we just mark all the operations:</p>
+<p><img alt="dynamic_task_052" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_052.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_052.png"></p>
+<blockquote>
+<p>Normally you select only what is required, but for our demo I just want to make sure we have it all in place.</p>
+</blockquote>
+<p>Done…Do a save, and a publication. Time (in runtime) to start a new approval flow from our ‘todo’ entity instance…It will drop an approval task to our dynamic team and when you ‘Open’ the task (don’t mark it as you see the ‘old’ actions, but we can fix that my using our own ‘List’ BB…not for now!) you should see our ‘Task_Layout’ with our ‘simulation’ action. Hit the ‘Complete task’, but it wouldn’t do that much…check the next step.</p>
+<blockquote>
+<p> What you can do is checking the PIM and see already if the correct ‘User’ data is retrieved with the related ‘Person’ data!</p>
+</blockquote>
+<hr>
+<h4 id="Implement-the-second-BPM"><a href="#Implement-the-second-BPM" class="headerlink" title="Implement the second BPM"></a>Implement the second BPM</h4><p>Now that we have our “Webservices” BB available on the lifecycle task, we can extend our ‘complete_task’ BPM. What we want is to update the approvers list which is related from the lifecycle task entity and shown on the ‘Default’ form of that same entity (all the good stuff we’ve created in the previous step).</p>
+<p>So, we just add another activity, and we apply to webservice ‘AddTotask_approvers’</p>
+<p><img alt="dynamic_task_053" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_053.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_053.png"></p>
+<blockquote>
+<p>Make sure to select the correct one, as we also see the webservice operation called ‘AddTotodo_approvers’ passing by in that selection!</p>
+</blockquote>
+<p>The mapping of the service activity will look like this consolidated view:</p>
+<p><img alt="dynamic_task_054" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_054.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_054.png"></p>
+<p>Almost forgot!…Make this BPM ‘Short-lived’, like ‘In-memory’, or like in ‘Stateless’ (check the properties on the BPM itself). This makes sure you have a nice interaction directly in runtime, so your approvers list is updated on the fly! The first BPM must be long-lived as we have a ‘Manual’ task in it.</p>
+<p>After publication, you should be able to hit that ‘Complete task’ action, and the user will be in the approvers list for this particular task. Also, the ‘awtest@appworks’ account is able to open this ‘Team’ task and give an approval:</p>
+<p><img alt="dynamic_task_055" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_055.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_055.png"></p>
+<p>Nice…Only, this doesn’t complete the task from our parent flow!? Correct!, but what we do have at this point in time is a dynamic list of approvers! So, in the ‘complete_task’ BPM we can now easily add some logic where we can check if the full approvers list (from our parent ‘todo’ entity instance’) did an approval for this task! We can even check if just 50% of the approvers did the task…Once that check is done we need to finish that parent task in some way!?</p>
+<hr>
+<h4 id="Build-that-check-and-finish-that-one-parent-task"><a href="#Build-that-check-and-finish-that-one-parent-task" class="headerlink" title="Build that check and finish that one parent task"></a>Build that check and finish that one parent task</h4><p>Before we continue in this section we need an interesting so-called ‘Runtime reference’ into our project…A what? This makes it possible to reuse platform components into your own project which are not yet available by default (like the webservices of the identity package we saw earlier!)</p>
+<p>In our project we create a new folder called ‘runtimerefs’ (at the same level as ‘bpms’ and ‘entities’). Right-click the folder, go for the ‘Add runtime reference’ menu-item and insert a new reference of type ‘Web Service Interface’ where we see an interesting modal screen:</p>
+<p><img alt="dynamic_task_056" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_056.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_056.png"></p>
+<p>Go to the ‘Cordys Notification’ package, select the runtime reference called ‘Method Set Notification 1.0’ and finish the wizard. What do we have available now on our project? Well, a set of services (to be called from a BPM for example) which have a relation with ‘Notification’. Not only “notification”, also ‘Task’ related services like for example the interesting service called ‘PerformTaskAction’…Keep on reading…</p>
+<p>So, we need to perform 3 tasks:</p>
+<ol>
+<li>Collect all the data we want to check (The approvers list from the initial ‘todo’ entity, and the task-approver list where we keep track on the approvals!)</li>
+<li>Build the ‘All approved?’ check itself</li>
+<li>When ready…Finish the parent task (with service call ‘PerformTaskAction’)!</li>
+</ol>
+<p>First thing to do is extending the ‘complete_task’ BPM with some activities (incl. the decision split) like this:</p>
+<p><img alt="dynamic_task_057" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_057.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_057.png"></p>
+<p>Keep in mind we are in ‘context’ of the lifecycle task entity of our ‘todo’ entity with this BPM! So, the first thing we need to do is getting access to our ‘todo’ entity. We can do this via the service called ‘ReadLifecycleTask’ service we exposed on the lifecycle-task entity…remember? In the mapping (of this first new activity) we can easily map the ‘rootEntityInstanceId’ with the ‘ItemId’</p>
+<p><img alt="dynamic_task_058" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_058.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_058.png"></p>
+<p>The response of this call will call have our ‘parent’ todo ItemId available, so in the next activity we can do a call to the exposed service ‘Gettodo_approvers’ with again a simple and efficient mapping:</p>
+<p><img alt="dynamic_task_059" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_059.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_059.png"></p>
+<p>The response of this call will retrieve our selected approvers list on the ‘todo’ entity. Keeps us with “an open end” on the ‘approvers’ list of the “current” lifecycle task entity (which is in scope) of this running BPM…So a service call to ‘Gettask_approvers’:</p>
+<p><img alt="dynamic_task_060" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_060.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_060.png"></p>
+<p>Next step is our “Check”!</p>
+<p>This one is easy now, as we have all the data collected. We can create a simple check like this:</p>
+<p><img alt="dynamic_task_061" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_061.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_061.png"></p>
+<blockquote>
+<p>For you to copy: <code>count(ns2:Gettodo_approversOutput/ns2:Gettodo_approversResponse/ns5:User) = count(ns13:Gettask_approversOutput/ns13:Gettask_approversResponse/ns5:User)</code></p>
+<p>Note that we use an xPath function to “count” the elements in both returned SOAP responses. We make it an ‘equal’ statement, but you can make it as fancy as you like! &#128526;</p>
+</blockquote>
+<p>We also make sure our decision is an ‘Exclusive’ type. This makes it sure that only 1 output is chosen based on the applied condition. </p>
+<blockquote>
+<p>The difference with ‘Inclusive’ is that all the other conditions are skipped when a condition is satisfied. So, with ‘inclusive’ all conditions are checked and that makes it possible to satisfy multiple conditions with multiply output flows!</p>
+</blockquote>
+<p>Then the final task which is completing the task of the parent BPM! The task is open for completion, but because it’s a ‘Team’ task we first need to ‘Claim’ it before we can complete. That’s another service call…This time a call from our runtime reference webservices called ‘ClaimTask’. Insert it and make sure you make the correct mapping with the correct properties:</p>
+<p><img alt="dynamic_task_062" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_062.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_062.png"></p>
+<blockquote>
+<p>You see an interesting ‘ParentTaskId’ passing by which is exactly what we need in this call! Later on (when the BPM is ready, and you double-checked the messages passing by), you will start to see some ID like this <code>0800273e-9411-a1eb-ba28-058f421301f9</code> where we normally see entity id’s passing by which look like this <code>0800273e9411a1ebb9593e71f8cc8a01.1.327686</code>. That’s another format! This is also the difference between the ‘new’ entity modeling paradigm versus the ‘older’ Cordys BPM paradigm. Our ‘Notification’ method set is also from the ‘older’ stamp, so this makes it work smoothly!</p>
+</blockquote>
+<p>Our task is claimed, time to also ‘Complete’ it in that final activity step where we (again) have the same TaskId mapping, but with an extra ‘Action’ parameter which we fill with the value ‘COMPLETE’:</p>
+<p><img alt="dynamic_task_063" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_063.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_063.png"></p>
+<blockquote>
+<p>The ‘PerformTaskAction’ is also reused from the ‘Notification’ runtime reference.</p>
+</blockquote>
+<p>The final flow?</p>
+<p><img alt="dynamic_task_064" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_064.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_064.png"></p>
+<blockquote>
+<p>For the complete overview, a copy of the consolidated view of the message map of the BPM</p>
+<p><img alt="dynamic_task_065" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_065.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_065.png"></p>
+</blockquote>
+<p>OK…Time for saving, deploying, and testing…</p>
+<p>Test steps:</p>
+<ul>
+<li><p>With account ‘awdev’: create a new ‘todo’ entity instance and add ‘awdev’ and ‘awtest’ as approvers</p>
+<p><img alt="dynamic_task_066" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_066.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_066.png"></p>
+</li>
+<li><p>With account ‘awdev’: open the entity and click the ‘Start approval flow’</p>
+<p><img alt="dynamic_task_067" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_067.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_067.png"></p>
+</li>
+<li><p>With account ‘awdev’: open the ‘Teams tasks’ and open the new task (don’t mark it for now)</p>
+</li>
+<li><p>With account ‘awdev’: click the action button ‘Complete task’ once, so you see your name in the approvers list (that’s the power of the interactive short-lived BPM!)</p>
+<p><img alt="dynamic_task_068" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_068.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_068.png"></p>
+</li>
+<li><p>With account ‘awtest’: open the ‘Teams tasks’ and <u>open</u> that same task</p>
+</li>
+<li><p>With account ‘awtest’: click the action button ‘Complete task’ once, so you also see this name in the approvers list</p>
+<p><img alt="dynamic_task_069" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_069.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_069.png"></p>
+</li>
+<li><p>All approvers did the job, so our parent task should be finished now</p>
+<p><img alt="dynamic_task_070" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_070.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_070.png"></p>
+</li>
+</ul>
+<p>Looks nice but have a further look as also the ‘Dynamic’ team (that ‘Target Name’) should be gone from the ‘Identity’ homepage! We need to check this with the ‘awdev’ account as our ‘awtest’ doesn’t have the ‘Administrator’ role to view the entity data! We have our first problem because the ‘Team’ is still there…damn!?</p>
+<p>Let’s check the PIM!</p>
+<p><img alt="dynamic_task_071" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_071.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_071.png"></p>
+<p>That’s an aborted flow…Why?</p>
+<p><img alt="dynamic_task_072" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_072.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_072.png"></p>
+<p>So, maybe our ‘awtest’ account doesn’t have ‘runtime’ permission for the ‘Service call ‘DeleteAssignment’…</p>
+<p>Let’s fix it, so you also know what to do what things break…I don’t know if it fixes the problem, but open the ‘Web Service Interface Explorer’, search for the service, get the property and update the security:</p>
+<p><img alt="dynamic_task_073" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_073.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_073.png"></p>
+<p>For now, I just add ‘everyone’ of the organization to allow this service but think about a better solution based on a role like ‘resources’!</p>
+<p><img alt="dynamic_task_074" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_074.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_074.png"></p>
+<p>Apply it and save it…Let’s do a rerun in runtime…</p>
+<p>…</p>
+<p>Still a failure in the PIM…Ok, let’s update our ‘awtest’ account, so it has the role ‘Identity Administration’!?</p>
+<p><img alt="dynamic_task_075" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_075.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_075.png"></p>
+<p>A rerun and this time we have a green light in the PIM! Only now our user has a lot more permission on the Identity package!? Is this a risk? This all depends…For my demo it’s not a risk, but for your environment it might be!? How to solve this? Real simple, make sure only those final service calls are done via an ‘Authorized’ user who has the ‘Identity Administrator’ role applied (or just ‘Administrator’ role).</p>
+<p><img alt="dynamic_task_076" class="post-img b-lazy" href="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_076.png" data-src="/images/posts/2021/118_dynamic_task_handling_in_parallel_flow/dynamic_task_076.png"></p>
+<p>Or maybe you can come up with something even better? Let me know in the comments!? Maybe do a task forward action to a real person (not a team) and make the final decision from that perspective…AppWorks delivers all kinds of solutions for this problem!</p>
+<hr>
+<p>Wowsers!…Is this a “DONE” or is this a “DONE”!? OK…It’s an end-to-end “DONE” for now as the requested functionality is working, but we can still improve things for our feature to work nicely for our end-users. Let’s do these improvements for next week. At this moment we never learned so much from the internal AppWorks webservices that it’s time for a beer first! 🍺 If you made it through the whole post…kudos for you!…We should grab a beer together next time. What you saw in this post is just one of the implementations done for a real customer, but it has beneficial information which can be of value on you own implementations too. So, reuse it and tell other people where to find it. I see you in the next post where we will improve our customer case with a 2.0 version…Cheers!</p>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="Dynamic task handling in parallel flow (2.0)" href="/2021/12/03/119_dynamic_task_handling_in_parallel_flow_2.0/">
+            <i class="fa-solid fa-backward"></i> Dynamic task handling in parallel flow (2.0)
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Update on OpenText Enterprise World (Digital 2021 Q4)" href="/2021/11/19/117a_update_enterprise_world_digital/">
+            Update on OpenText Enterprise World (Digital 2021 Q4) <i class="fa-solid fa-forward"></i>
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-second-OTDS-test-user-‘awtest-appworks’-to-test-with"><span class="toc-text">Create a second OTDS test user ‘awtest@appworks’ to test with</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-an-entity"><span class="toc-text">Create an entity</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Expose-the-webservices-with-the-‘Appserver’-service-container"><span class="toc-text">Expose the webservices with the ‘Appserver’ service container</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-the-‘Dynamic-Approval’-BPM"><span class="toc-text">Create the ‘Dynamic Approval’ BPM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-an-action-rule-which-starts-the-BPM"><span class="toc-text">Create an action rule which starts the BPM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Implement-the-BPM"><span class="toc-text">Implement the BPM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-the-‘Complete-task’-second-BPM"><span class="toc-text">Create the ‘Complete task’ (second) BPM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Configure-the-lifecycle-task-entity"><span class="toc-text">Configure the lifecycle task entity</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Implement-the-second-BPM"><span class="toc-text">Implement the second BPM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Build-that-check-and-finish-that-one-parent-task"><span class="toc-text">Build that check and finish that one parent task</span></a></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2023/12/15/204_connect_source_control_after_project_creation/">The ultimate workspace wizardry; How to supercharge your WS with source control after creation</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/12/08/203_auto_assign_cases_tasks/">Ultimate productivity with this jaw-dropping follow-up to auto-assign Cases and Tasks</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/12/01/202_working_with_task_workqueues/">Unlock your knowledge for dominating task workqueues; You'll never work the same way again</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/24/201_subtyping_vs_database/">Shocking showdown; Subtyping vs. Database - You won't believe what happens</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/17/200_speedtest_parallel_processing/">Unbelievable results revealed; Harnessing parallel processing for mind-blowing insights</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/10/199_feel_the_power_of_a_form_section/">Behold the power of a section within an entity 'Form' building block</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/11/03/198_iconize_buttons_with_unicode/">Discover how to revolutionize your action buttons with Unicode icons</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2023/10/27/197_xslt_data_transformation/">Prepare the magic; Watch how XML data gets a mind-blowing makeover with XSLT</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Release/">Release</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/AI/" style="font-size: 14px;">AI</a> <a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/API/" style="font-size: 14.63px;">API</a> <a href="/tags/Abstract/" style="font-size: 14px;">Abstract</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/ActiveMQ/" style="font-size: 14.63px;">ActiveMQ</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 15.88px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 15.88px;">Anniversary</a> <a href="/tags/Apache/" style="font-size: 14.63px;">Apache</a> <a href="/tags/ApacheDirectoryStudio/" style="font-size: 14px;">ApacheDirectoryStudio</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Archive/" style="font-size: 14.63px;">Archive</a> <a href="/tags/Artifact/" style="font-size: 15.25px;">Artifact</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/Audit/" style="font-size: 14px;">Audit</a> <a href="/tags/Authentication/" style="font-size: 14.63px;">Authentication</a> <a href="/tags/BPM/" style="font-size: 22.75px;">BPM</a> <a href="/tags/Base64/" style="font-size: 14px;">Base64</a> <a href="/tags/Brava/" style="font-size: 14px;">Brava!</a> <a href="/tags/BuildingBlock/" style="font-size: 15.25px;">BuildingBlock</a> <a href="/tags/BuildingBlocks/" style="font-size: 15.25px;">BuildingBlocks</a> <a href="/tags/BulkUpdate/" style="font-size: 14px;">BulkUpdate</a> <a href="/tags/BusinessID/" style="font-size: 14px;">BusinessID</a> <a href="/tags/BusinessIdentifier/" style="font-size: 14px;">BusinessIdentifier</a> <a href="/tags/BusinessWorkspace/" style="font-size: 14px;">BusinessWorkspace</a> <a href="/tags/CAF/" style="font-size: 14px;">CAF</a> <a href="/tags/CARS/" style="font-size: 14.63px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 15.25px;">CD/CI</a> <a href="/tags/CIM/" style="font-size: 14px;">CIM</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMC/" style="font-size: 14px;">CMC</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 16.5px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/CaseInstanceMonitor/" style="font-size: 14px;">CaseInstanceMonitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Charts/" style="font-size: 14px;">Charts</a> <a href="/tags/ChatGPT/" style="font-size: 14px;">ChatGPT</a> <a href="/tags/Cleaning/" style="font-size: 14.63px;">Cleaning</a> <a href="/tags/Cloud/" style="font-size: 14px;">Cloud</a> <a href="/tags/Condition/" style="font-size: 14.63px;">Condition</a> <a href="/tags/ConfigEntity/" style="font-size: 14px;">ConfigEntity</a> <a href="/tags/ConnectedWorkspace/" style="font-size: 14px;">ConnectedWorkspace</a> <a href="/tags/Connector/" style="font-size: 15.88px;">Connector</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Content/" style="font-size: 16.5px;">Content</a> <a href="/tags/ContentServer/" style="font-size: 16.5px;">ContentServer</a> <a href="/tags/Custom/" style="font-size: 15.88px;">Custom</a> <a href="/tags/CustomWebservice/" style="font-size: 14px;">CustomWebservice</a> <a href="/tags/Customization/" style="font-size: 16.5px;">Customization</a> <a href="/tags/Data/" style="font-size: 14px;">Data</a> <a href="/tags/Database/" style="font-size: 17.13px;">Database</a> <a href="/tags/DatabaseMetadata/" style="font-size: 14.63px;">DatabaseMetadata</a> <a href="/tags/Date/" style="font-size: 14px;">Date</a> <a href="/tags/DateTime/" style="font-size: 14px;">DateTime</a> <a href="/tags/Debugging/" style="font-size: 14.63px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 17.75px;">Digital</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/DocumentstoreConnector/" style="font-size: 15.25px;">DocumentstoreConnector</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/EISConnector/" style="font-size: 14.63px;">EISConnector</a> <a href="/tags/Email/" style="font-size: 14.63px;">Email</a> <a href="/tags/EnterpriseWorld/" style="font-size: 19px;">EnterpriseWorld</a> <a href="/tags/Entity/" style="font-size: 20.25px;">Entity</a> <a href="/tags/EntityContext/" style="font-size: 14px;">EntityContext</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Explorer/" style="font-size: 14.63px;">Explorer</a> <a href="/tags/Expressions/" style="font-size: 14px;">Expressions</a> <a href="/tags/Feature/" style="font-size: 14px;">Feature</a> <a href="/tags/FileConnector/" style="font-size: 14px;">FileConnector</a> <a href="/tags/Filter/" style="font-size: 14px;">Filter</a> <a href="/tags/Flag/" style="font-size: 14px;">Flag</a> <a href="/tags/ForLoop/" style="font-size: 14px;">ForLoop</a> <a href="/tags/Form/" style="font-size: 19.63px;">Form</a> <a href="/tags/Function/" style="font-size: 14px;">Function</a> <a href="/tags/Gateway/" style="font-size: 14.63px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Google/" style="font-size: 14px;">Google</a> <a href="/tags/Graphics/" style="font-size: 14px;">Graphics</a> <a href="/tags/Grid/" style="font-size: 14px;">Grid</a> <a href="/tags/HTML5/" style="font-size: 14px;">HTML5</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/Homepage/" style="font-size: 14.63px;">Homepage</a> <a href="/tags/HowTo/" style="font-size: 15.88px;">HowTo</a> <a href="/tags/Icons/" style="font-size: 14px;">Icons</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14.63px;">Identity</a> <a href="/tags/IdentityPackage/" style="font-size: 15.25px;">IdentityPackage</a> <a href="/tags/InformationHub/" style="font-size: 14px;">InformationHub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.13px;">Installation</a> <a href="/tags/IntelligentViewing/" style="font-size: 14.63px;">IntelligentViewing</a> <a href="/tags/Interceptor/" style="font-size: 14px;">Interceptor</a> <a href="/tags/IsTemporaryCopy/" style="font-size: 14px;">IsTemporaryCopy</a> <a href="/tags/ItemStatus/" style="font-size: 14px;">ItemStatus</a> <a href="/tags/JMS/" style="font-size: 14.63px;">JMS</a> <a href="/tags/JMeter/" style="font-size: 14px;">JMeter</a> <a href="/tags/JSON/" style="font-size: 15.25px;">JSON</a> <a href="/tags/JShell/" style="font-size: 14px;">JShell</a> <a href="/tags/JUnit/" style="font-size: 14px;">JUnit</a> <a href="/tags/JXplorer/" style="font-size: 14px;">JXplorer</a> <a href="/tags/Java/" style="font-size: 15.88px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 14.63px;">JavaScript</a> <a href="/tags/JavaUI/" style="font-size: 14px;">JavaUI</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/LDAP/" style="font-size: 14.63px;">LDAP</a> <a href="/tags/LandingPage/" style="font-size: 14px;">LandingPage</a> <a href="/tags/Language/" style="font-size: 14.63px;">Language</a> <a href="/tags/LanguagePack/" style="font-size: 14px;">LanguagePack</a> <a href="/tags/Less/" style="font-size: 14px;">Less</a> <a href="/tags/License/" style="font-size: 14.63px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.88px;">Lifecycle</a> <a href="/tags/LinkDocument/" style="font-size: 14px;">LinkDocument</a> <a href="/tags/LinkedEntity/" style="font-size: 14px;">LinkedEntity</a> <a href="/tags/List/" style="font-size: 14.63px;">List</a> <a href="/tags/Logging/" style="font-size: 14px;">Logging</a> <a href="/tags/LongTextProperty/" style="font-size: 14px;">LongTextProperty</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 14.63px;">Management</a> <a href="/tags/Message/" style="font-size: 14px;">Message</a> <a href="/tags/Metadata/" style="font-size: 14px;">Metadata</a> <a href="/tags/Method/" style="font-size: 14px;">Method</a> <a href="/tags/Migration/" style="font-size: 14px;">Migration</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Mockito/" style="font-size: 14px;">Mockito</a> <a href="/tags/Model/" style="font-size: 14px;">Model</a> <a href="/tags/Modeling/" style="font-size: 14.63px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 14.63px;">Monitoring</a> <a href="/tags/NGINX/" style="font-size: 14px;">NGINX</a> <a href="/tags/Northwind/" style="font-size: 14px;">Northwind</a> <a href="/tags/Notification/" style="font-size: 14px;">Notification</a> <a href="/tags/OKTA/" style="font-size: 14px;">OKTA</a> <a href="/tags/OTDS/" style="font-size: 17.75px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 23.38px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Order/" style="font-size: 14px;">Order</a> <a href="/tags/Organization/" style="font-size: 15.25px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/Package/" style="font-size: 15.25px;">Package</a> <a href="/tags/Parallel/" style="font-size: 14px;">Parallel</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/Pattern/" style="font-size: 14px;">Pattern</a> <a href="/tags/Personal/" style="font-size: 14px;">Personal</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 14px;">Postman</a> <a href="/tags/PowerMockito/" style="font-size: 14px;">PowerMockito</a> <a href="/tags/Preferences/" style="font-size: 14px;">Preferences</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/ProgressionBar/" style="font-size: 14px;">ProgressionBar</a> <a href="/tags/Project/" style="font-size: 15.25px;">Project</a> <a href="/tags/Projects/" style="font-size: 14px;">Projects</a> <a href="/tags/Properties/" style="font-size: 14.63px;">Properties</a> <a href="/tags/Property/" style="font-size: 15.25px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/RHEL/" style="font-size: 14px;">RHEL</a> <a href="/tags/ReST/" style="font-size: 15.88px;">ReST</a> <a href="/tags/ReST-Gateway/" style="font-size: 14px;">ReST Gateway</a> <a href="/tags/Recap/" style="font-size: 15.88px;">Recap</a> <a href="/tags/RegularExpression/" style="font-size: 14.63px;">RegularExpression</a> <a href="/tags/Relations/" style="font-size: 15.25px;">Relations</a> <a href="/tags/Release/" style="font-size: 20.88px;">Release</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/ResultList/" style="font-size: 15.25px;">ResultList</a> <a href="/tags/Reusability/" style="font-size: 14px;">Reusability</a> <a href="/tags/Reverse-proxy/" style="font-size: 14px;">Reverse proxy</a> <a href="/tags/Role/" style="font-size: 14px;">Role</a> <a href="/tags/Roles/" style="font-size: 14.63px;">Roles</a> <a href="/tags/Rule/" style="font-size: 14.63px;">Rule</a> <a href="/tags/Rules/" style="font-size: 14px;">Rules</a> <a href="/tags/Runtime-Security/" style="font-size: 14px;">Runtime Security</a> <a href="/tags/SAML/" style="font-size: 14px;">SAML</a> <a href="/tags/SDK/" style="font-size: 14.63px;">SDK</a> <a href="/tags/SOAP/" style="font-size: 15.25px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 14.63px;">SVN</a> <a href="/tags/Scheduler/" style="font-size: 14px;">Scheduler</a> <a href="/tags/Search/" style="font-size: 14px;">Search</a> <a href="/tags/Section/" style="font-size: 14px;">Section</a> <a href="/tags/Sections/" style="font-size: 14px;">Sections</a> <a href="/tags/Security/" style="font-size: 14px;">Security</a> <a href="/tags/Selenium/" style="font-size: 14px;">Selenium</a> <a href="/tags/Service/" style="font-size: 14px;">Service</a> <a href="/tags/ServiceContainer/" style="font-size: 14px;">ServiceContainer</a> <a href="/tags/Setup/" style="font-size: 15.88px;">Setup</a> <a href="/tags/ShortLived/" style="font-size: 14px;">ShortLived</a> <a href="/tags/SimpleClient/" style="font-size: 14px;">SimpleClient</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 15.88px;">Software</a> <a href="/tags/Solutions/" style="font-size: 14px;">Solutions</a> <a href="/tags/SourceControl/" style="font-size: 14px;">SourceControl</a> <a href="/tags/Sources/" style="font-size: 14px;">Sources</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Storage/" style="font-size: 14px;">Storage</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/SubProcess/" style="font-size: 14px;">SubProcess</a> <a href="/tags/Subtyping/" style="font-size: 14.63px;">Subtyping</a> <a href="/tags/Sync/" style="font-size: 14px;">Sync</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/SynchronizedPartition/" style="font-size: 14px;">SynchronizedPartition</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 15.25px;">Task</a> <a href="/tags/TaskLayout/" style="font-size: 14px;">TaskLayout</a> <a href="/tags/Tasks/" style="font-size: 14.63px;">Tasks</a> <a href="/tags/Team/" style="font-size: 14px;">Team</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Test/" style="font-size: 14px;">Test</a> <a href="/tags/Testing/" style="font-size: 15.25px;">Testing</a> <a href="/tags/Theme/" style="font-size: 16.5px;">Theme</a> <a href="/tags/Time/" style="font-size: 14px;">Time</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/Title/" style="font-size: 14px;">Title</a> <a href="/tags/Toggle/" style="font-size: 14px;">Toggle</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/Tool/" style="font-size: 14px;">Tool</a> <a href="/tags/Tools/" style="font-size: 14.63px;">Tools</a> <a href="/tags/Transformation/" style="font-size: 14px;">Transformation</a> <a href="/tags/Translation/" style="font-size: 14.63px;">Translation</a> <a href="/tags/UDDI/" style="font-size: 14.63px;">UDDI</a> <a href="/tags/UnInstallation/" style="font-size: 14px;">UnInstallation</a> <a href="/tags/Unicode/" style="font-size: 14px;">Unicode</a> <a href="/tags/Update/" style="font-size: 18.38px;">Update</a> <a href="/tags/Upgrade/" style="font-size: 14px;">Upgrade</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/ValueAssistance/" style="font-size: 14.63px;">ValueAssistance</a> <a href="/tags/Version/" style="font-size: 14px;">Version</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/Video/" style="font-size: 14px;">Video</a> <a href="/tags/Viewer/" style="font-size: 14px;">Viewer</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WSAppServer/" style="font-size: 14px;">WSAppServer</a> <a href="/tags/WebLibraryDefinition/" style="font-size: 14.63px;">WebLibraryDefinition</a> <a href="/tags/Webservice/" style="font-size: 19.63px;">Webservice</a> <a href="/tags/WhileLoop/" style="font-size: 14px;">WhileLoop</a> <a href="/tags/Worklist/" style="font-size: 14px;">Worklist</a> <a href="/tags/Workqueue/" style="font-size: 14.63px;">Workqueue</a> <a href="/tags/Workspace/" style="font-size: 15.88px;">Workspace</a> <a href="/tags/XDS/" style="font-size: 14.63px;">XDS</a> <a href="/tags/XML/" style="font-size: 15.25px;">XML</a> <a href="/tags/XPath/" style="font-size: 15.25px;">XPath</a> <a href="/tags/XSLT/" style="font-size: 14px;">XSLT</a> <a href="/tags/xECM/" style="font-size: 16.5px;">xECM</a> <a href="/tags/xForm/" style="font-size: 16.5px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+
+	
+
+
+
+<div id="download002" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps prototyping booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download002" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="tfokgrtbsp">
+            <p><input class="search-input" type="text" placeholder="First name" name="UIMy41yrHk" id="id-UIMy41yrHk"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="frlQMmEVB9" id="id-frlQMmEVB9"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="p5xcHl0BfA" id="id-p5xcHl0BfA"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="download" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps fundamentals booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="qdlxpohveb">
+            <p><input class="search-input" type="text" placeholder="First name" name="9aiQvAsyHa" id="id-9aiQvAsyHa"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="pKdGB3hCf6" id="id-pKdGB3hCf6"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="8azv3a7ZO9" id="id-8azv3a7ZO9"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="hosting" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Plan you strategic AppWorks hosting</h1>
+        <h2 class="site-description">You will receive a mail with information on next steps</h2>
+        <form name="hosting" action="https://appworks-tips.email-provider.eu/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="ojenuvc25g">
+            <p><input class="search-input" type="text" placeholder="First name" name="kZYzubjXZ1" id="id-kZYzubjXZ1"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="DU7uu8Hd1B" id="id-DU7uu8Hd1B"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="7" name="waY3MUqJDo" id="id-waY3MUqJDo" placeholder="Turn you wish into a command"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="OTyYwKXWRE" id="id-OTyYwKXWRE"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><i>AppWorks hosting is a payable service handled via monthly invoicing. This means that you will be billed for the service <br>after it has been provided to you under our signed service agreement which we put in place after our free call.</i></p>
+            <p><input class="submit-input" type="submit" value="Take action!"></p>
+        </form>
+    </div>
+</div>
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="google" class="search-overlay subscribe-overlay">
+        <div class="search-form" style="height:8rem;">
+            
+            <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+            
+            <script async src="https://cse.google.com/cse.js?cx=784555e4960d85d09"></script>
+            <div id="cse" style="width: 80%; margin: 0 auto; text-align:left">
+            <div class="gcse-search"></div>
+            </div>
+            <a class="search-overlay-close" href="#"></a>
+        </div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback or any question</h1>
+        <h2 class="site-description">Send back any feedback or question so we can inspect and adapt our features or help you on your own journey.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback or any question"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Send"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2023
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Dynamic task handling in parallel flow</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+
+<script src="/js/mix/post-lazy.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av.js"></script>-->
+
+<script src="/js/av.js"></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>

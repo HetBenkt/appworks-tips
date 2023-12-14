@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+    <configs>
+        <kinds>
+            <instance type="kind">
+                <key>k1</key>
+                <value>Kind 1</value>
+            </instance>
+            <instance type="kind">
+                <key>k2</key>
+                <value>Kind 2</value>
+            </instance>
+            <instance type="kind">
+                <key>k3</key>
+                <value>Kind 3</value>
+            </instance>
+        </kinds>
+        <types>
+            <instance type="type">
+                <key>t1</key>
+                <value>Type 1</value>
+                <kind>k3</kind>
+            </instance>
+            <instance type="type">
+                <key>t2</key>
+                <value>Type 2</value>
+                <kind>k2</kind>
+            </instance>
+            <instance type="type">
+                <key>t3</key>
+                <value>Type 3</value>
+                <kind>k1</kind>
+            </instance>
+        </types>
+        <areas>
+            <instance type="area">
+                <key>a1</key>
+                <value>Area 1</value>
+            </instance>
+            <instance type="area">
+                <key>a2</key>
+                <value>Area 2</value>
+            </instance>
+            <instance type="area">
+                <key>a3</key>
+                <value>Area 3</value>
+            </instance>
+        </areas>
+        <spaces>
+            <instance type="space">
+                <key>s1</key>
+                <value>Space 1</value>
+            </instance>
+            <instance type="space">
+                <key>s2</key>
+                <value>Space 2</value>
+            </instance>
+            <instance type="space">
+                <key>s3</key>
+                <value>Space 3</value>
+            </instance>
+        </spaces>
+        <categories>
+            <instance type="category">
+                <key>c1</key>
+                <value>Category 1</value>
+            </instance>
+            <instance type="category">
+                <key>c2</key>
+                <value>Category 2</value>
+            </instance>
+            <instance type="category">
+                <key>c3</key>
+                <value>Category 3</value>
+            </instance>
+        </categories>
+    </configs>
+    <externals>
+        <users>
+            <instance type="user">
+                <name>John Doe</name>
+                <email>john.doe@dummy.com</email>
+                <address>This is my address</address>
+            </instance>
+            <instance type="user">
+                <name>Marry Jane</name>
+                <email>marry.jane@dummy.com</email>
+                <address>This is her address</address>
+            </instance>
+            <instance type="user">
+                <name>Peter Parker</name>
+                <email>peter.parker@dummy.com</email>
+                <address>This is his address</address>
+            </instance>
+        </users>
+        <organizations>
+            <instance type="organization">
+                <name>Organization 1</name>
+                <email>noreply@org1.com</email>
+                <address>This is the address</address>
+            </instance>
+            <instance type="organization">
+                <name>Organization 2</name>
+                <email>noreply@org2.com</email>
+                <address>This is the address</address>
+            </instance>
+            <instance type="organization">
+                <name>Organization 3</name>
+                <email>noreply@org3.com</email>
+                <address>This is the address</address>
+            </instance>
+        </organizations>
+    </externals>
+    <publications>
+        <instance type="publication">
+            <name>Publication 1</name>
+            <max_download>3</max_download>
+            <summary>Hello publication 1...</summary>
+            <type>t1</type>
+        </instance>
+        <instance type="publication">
+            <name>Publication 2</name>
+            <max_download>5</max_download>
+            <summary>Hello publication 2...</summary>
+            <type>t2</type>
+        </instance>
+        <instance type="publication">
+            <name>Publication 3</name>
+            <max_download>7</max_download>
+            <summary>Hello publication 3...</summary>
+            <type>t3</type>
+        </instance>
+        <instance type="handbook">
+            <name>Handbook 1</name>
+            <max_download>3</max_download>
+            <summary>Hello handbook 1...</summary>
+            <type>t3</type>
+        </instance>
+        <instance type="handbook">
+            <name>Handbook 2</name>
+            <max_download>5</max_download>
+            <summary>Hello handbook 2...</summary>
+            <type>t2</type>
+        </instance>
+        <instance type="handbook">
+            <name>Handbook 3</name>
+            <max_download>7</max_download>
+            <summary>Hello handbook 3...</summary>
+            <type>t1</type>
+        </instance>
+        <instance type="conference_proceeding">
+            <name>Conference proceeding 1</name>
+            <max_download>3</max_download>
+            <summary>Hello conference_proceeding 1...</summary>
+            <type>t3</type>
+        </instance>
+        <instance type="conference_proceeding">
+            <name>Conference proceeding 2</name>
+            <max_download>5</max_download>
+            <summary>Hello conference_proceeding 2...</summary>
+            <type>t2</type>
+        </instance>
+        <instance type="conference_proceeding">
+            <name>Conference proceeding 3</name>
+            <max_download>7</max_download>
+            <summary>Hello conference_proceeding 3...</summary>
+            <type>t1</type>
+        </instance>
+    </publications>
+    <requests>
+        <instance type="request">
+            <publication>Publication 1</publication>
+            <area>a1</area>
+            <user>John Doe</user>
+            <organization>Organization 1</organization>
+            <reason>This is my reason</reason>
+            <project_name>This is my project</project_name>
+        </instance>
+        <instance type="request">
+            <publication>Publication 2</publication>
+            <area>a2</area>
+            <user>Marry Jane</user>
+            <organization>Organization 2</organization>
+            <reason>This is my reason</reason>
+            <project_name>This is my project</project_name>
+        </instance>
+        <instance type="request">
+            <publication>Publication 3</publication>
+            <area>a3</area>
+            <user>Peter Parker</user>
+            <organization>Organization 3</organization>
+            <reason>This is my reason</reason>
+            <project_name>This is my project</project_name>
+        </instance>
+    </requests>
+</data>
