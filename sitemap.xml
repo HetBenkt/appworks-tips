@@ -2,1696 +2,1703 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>https://appworks-tips.com/2023/12/29/206_generate_documentation_from_annotations/</loc>
+        <loc>https://appworks-tips.com/2024/01/19/208a_update_on_24_1/</loc>
         
-        <lastmod>2024-01-11T11:02:12.590Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/12/22/205_load_balancing_service_container/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.589Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/12/15/204_connect_source_control_after_project_creation/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.588Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/12/08/203_auto_assign_cases_tasks/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.587Z</lastmod>
+        <lastmod>2024-01-19T07:42:26.903Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2023/12/01/202_working_with_task_workqueues/</loc>
         
-        <lastmod>2024-01-11T11:02:12.586Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.247Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/11/24/201_subtyping_vs_database/</loc>
+        <loc>https://appworks-tips.com/2023/12/08/203_auto_assign_cases_tasks/</loc>
         
-        <lastmod>2024-01-11T11:02:12.585Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.247Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/12/15/204_connect_source_control_after_project_creation/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.247Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/12/22/205_load_balancing_service_container/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.247Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/12/29/206_generate_documentation_from_annotations/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.247Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2023/11/10/199_feel_the_power_of_a_form_section/</loc>
         
-        <lastmod>2024-01-11T11:02:12.584Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.241Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2023/11/17/200_speedtest_parallel_processing/</loc>
         
-        <lastmod>2024-01-11T11:02:12.584Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.241Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/11/03/198_iconize_buttons_with_unicode/</loc>
+        <loc>https://appworks-tips.com/2023/11/24/201_subtyping_vs_database/</loc>
         
-        <lastmod>2024-01-11T11:02:12.583Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/10/27/197_xslt_data_transformation/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.582Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/10/20/196b_update_enterprise_world_v_pass/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.581Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/10/06/196_bring_life_in_jms_connector/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.580Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/10/13/196a_update_on_23_4/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.580Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/09/29/195_install_apache_activemq/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.579Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/09/22/194_return_button_action_rule/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.578Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/09/08/192_magic_title_bb/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.577Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/09/15/193_be_carefull_on_to_one_relations/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.577Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.241Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2023/09/01/191_managing_queued_bpms/</loc>
         
-        <lastmod>2024-01-11T11:02:12.576Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.231Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/08/25/190_add_extra_props_to_entity_in_runtime/</loc>
+        <loc>https://appworks-tips.com/2023/09/08/192_magic_title_bb/</loc>
         
-        <lastmod>2024-01-11T11:02:12.575Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/08/18/189_nginx_as_reverse_proxy/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.574Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.231Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/08/11/188_craft_your_own_connector/</loc>
+        <loc>https://appworks-tips.com/2023/09/15/193_be_carefull_on_to_one_relations/</loc>
         
-        <lastmod>2024-01-11T11:02:12.573Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/08/04/187_read_base64_json_from_config/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.572Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.231Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/07/28/186_read_from_correct_level_in_xml_store/</loc>
+        <loc>https://appworks-tips.com/2023/09/22/194_return_button_action_rule/</loc>
         
-        <lastmod>2024-01-11T11:02:12.571Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/07/21/185_lifecycle_update_with_migration_insights/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.571Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.231Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/07/14/184a_update_on_23_3/</loc>
+        <loc>https://appworks-tips.com/2023/09/29/195_install_apache_activemq/</loc>
         
-        <lastmod>2024-01-11T11:02:12.571Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/07/07/184_ways_to_expose_list_data/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.570Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.231Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/06/30/183_versioning_an_entity_instance/</loc>
+        <loc>https://appworks-tips.com/2023/10/06/196_bring_life_in_jms_connector/</loc>
         
-        <lastmod>2024-01-11T11:02:12.569Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/06/23/182_order_a_list_bb_manually/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.568Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.231Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/06/16/181_run_javaui_tool/</loc>
+        <loc>https://appworks-tips.com/2023/10/27/197_xslt_data_transformation/</loc>
         
-        <lastmod>2024-01-11T11:02:12.568Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/06/09/180_bring_alive_the_rest_gateway_connector/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.567Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.231Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/05/26/178_playing_with_the_fileconnector/</loc>
+        <loc>https://appworks-tips.com/2023/11/03/198_iconize_buttons_with_unicode/</loc>
         
-        <lastmod>2024-01-11T11:02:12.566Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/06/02/179_create_custom_tile_landingpage/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.566Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.231Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/05/19/177c_4_year_anniversary/</loc>
+        <loc>https://appworks-tips.com/2023/10/20/196b_update_enterprise_world_v_pass/</loc>
         
-        <lastmod>2024-01-11T11:02:12.565Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/05/05/177b_update_ot_world_emea_london/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.565Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/05/12/177a_update_on_23_2/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.564Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.231Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2023/04/28/177_reset_business_id/</loc>
         
-        <lastmod>2024-01-11T11:02:12.563Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/04/14/175_import_CSS_in_theme_doc_with_wld/</loc>
+        <loc>https://appworks-tips.com/2023/05/12/177a_update_on_23_2/</loc>
         
-        <lastmod>2024-01-11T11:02:12.562Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/05/19/177c_4_year_anniversary/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/05/05/177b_update_ot_world_emea_london/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2023/04/21/176_update_date_time_prop_via_bpm_printf/</loc>
         
-        <lastmod>2024-01-11T11:02:12.562Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/04/07/174_export_project_model_for_reusability/</loc>
+        <loc>https://appworks-tips.com/2023/05/26/178_playing_with_the_fileconnector/</loc>
         
-        <lastmod>2024-01-11T11:02:12.561Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/03/31/173_set_date_time_field_default_at_12pm/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.560Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/03/17/171a_calling_chatgpt_from_discussion_bb/</loc>
+        <loc>https://appworks-tips.com/2023/06/23/182_order_a_list_bb_manually/</loc>
         
-        <lastmod>2024-01-11T11:02:12.559Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/03/24/172_just_a_dive_into_less/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.559Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/03/10/171_understand_xds_with_this_guide/</loc>
+        <loc>https://appworks-tips.com/2023/06/02/179_create_custom_tile_landingpage/</loc>
         
-        <lastmod>2024-01-11T11:02:12.558Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/02/24/169_leverage_the_power_of_jshell/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.558Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/03/03/170_copy_a_value_from_result_list/</loc>
+        <loc>https://appworks-tips.com/2023/06/09/180_bring_alive_the_rest_gateway_connector/</loc>
         
-        <lastmod>2024-01-11T11:02:12.558Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/02/17/168_your_first_steps_embracing_awp_sdk/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.557Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/02/10/167_making_an_entity_abstract_after_usage_in_prd/</loc>
+        <loc>https://appworks-tips.com/2023/06/16/181_run_javaui_tool/</loc>
         
-        <lastmod>2024-01-11T11:02:12.556Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/02/03/166a_update_on_23_1/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.556Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2023/01/13/164_a_css_hack_to_remove_the_user_inbox/</loc>
+        <loc>https://appworks-tips.com/2023/07/07/184_ways_to_expose_list_data/</loc>
         
-        <lastmod>2024-01-11T11:02:12.555Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/07/21/185_lifecycle_update_with_migration_insights/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/07/14/184a_update_on_23_3/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/08/04/187_read_base64_json_from_config/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/06/30/183_versioning_an_entity_instance/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/07/28/186_read_from_correct_level_in_xml_store/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/08/11/188_craft_your_own_connector/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/08/25/190_add_extra_props_to_entity_in_runtime/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/08/18/189_nginx_as_reverse_proxy/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.215Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2023/01/27/166_the_pathway_to_runtime_security_storage_location/</loc>
         
-        <lastmod>2024-01-11T11:02:12.555Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2023/01/20/165_relating_data_vs_saving_data/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.555Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2023/01/06/163_add_a_custom_icon_on_layout_tab/</loc>
         
-        <lastmod>2024-01-11T11:02:12.554Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/12/23/161_get_your_value_on_this_users_selected_security/</loc>
+        <loc>https://appworks-tips.com/2023/01/13/164_a_css_hack_to_remove_the_user_inbox/</loc>
         
-        <lastmod>2024-01-11T11:02:12.553Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/12/30/162_remote_debugging_an_awp_stack_trace/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.553Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/12/09/159_the_new_way_of_eis_connector_usage/</loc>
+        <loc>https://appworks-tips.com/2023/02/03/166a_update_on_23_1/</loc>
         
-        <lastmod>2024-01-11T11:02:12.552Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/12/16/160_the_power_of_filtering_list_group_grid/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.552Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/11/25/157_update_multiple_items_in_grid/</loc>
+        <loc>https://appworks-tips.com/2023/01/20/165_relating_data_vs_saving_data/</loc>
         
-        <lastmod>2024-01-11T11:02:12.551Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/12/02/158_building_a_custom_notification_icon_in_runtime/</loc>
+        <loc>https://appworks-tips.com/2023/03/03/170_copy_a_value_from_result_list/</loc>
         
-        <lastmod>2024-01-11T11:02:12.551Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/02/24/169_leverage_the_power_of_jshell/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/02/17/168_your_first_steps_embracing_awp_sdk/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/03/10/171_understand_xds_with_this_guide/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/02/10/167_making_an_entity_abstract_after_usage_in_prd/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/03/24/172_just_a_dive_into_less/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/04/14/175_import_CSS_in_theme_doc_with_wld/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/03/31/173_set_date_time_field_default_at_12pm/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/04/07/174_export_project_model_for_reusability/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2022/11/18/156_the_mystery_behind_tempcopy_and_itemstatus/</loc>
         
-        <lastmod>2024-01-11T11:02:12.550Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/11/11/155a_update_on_22_4/</loc>
+        <loc>https://appworks-tips.com/2022/11/25/157_update_multiple_items_in_grid/</loc>
         
-        <lastmod>2024-01-11T11:02:12.549Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/10/28/154_clearing_up_magic_of_the_cordys_log_table/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.548Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/11/04/155_combine_form_sections_with_selection_list/</loc>
+        <loc>https://appworks-tips.com/2022/12/23/161_get_your_value_on_this_users_selected_security/</loc>
         
-        <lastmod>2024-01-11T11:02:12.548Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/10/21/153_cleaning_up_runtime_mess_rtfm/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.548Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/10/14/152b_enterprise_world_cloud_overview/</loc>
+        <loc>https://appworks-tips.com/2022/12/16/160_the_power_of_filtering_list_group_grid/</loc>
         
-        <lastmod>2024-01-11T11:02:12.547Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/10/07/152a_update_enterprise_world_v_pass/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.546Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/09/23/151_using_translations_in_your_solution/</loc>
+        <loc>https://appworks-tips.com/2022/12/09/159_the_new_way_of_eis_connector_usage/</loc>
         
-        <lastmod>2024-01-11T11:02:12.545Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/09/30/152_undeploy_vs_rollback/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.545Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/09/16/150_build_a_template_bpm_to_copy_from/</loc>
+        <loc>https://appworks-tips.com/2022/12/30/162_remote_debugging_an_awp_stack_trace/</loc>
         
-        <lastmod>2024-01-11T11:02:12.544Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/08/26/147_fill_a_multiline_textfield_via_bpm/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.543Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/09/09/149_relate_two_dynamic_enums/</loc>
+        <loc>https://appworks-tips.com/2022/12/02/158_building_a_custom_notification_icon_in_runtime/</loc>
         
-        <lastmod>2024-01-11T11:02:12.543Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/09/02/148_the_awp_upgrade_survival_guide/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.543Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/08/12/145_get_a_grip_on_your_organization_id/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.542Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/08/19/146_drag_and_drop_between_panels/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.542Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/07/29/144_purge_audit_information/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.541Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/08/05/144a_update_on_22_3/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.541Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/07/15/142_review_advanced_expressions_in_rules/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.540Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/07/22/143_archiving_finished_bpm_runtime_instances/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.540Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.200Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2022/07/01/140_call_entity_ws_from_xform/</loc>
         
-        <lastmod>2024-01-11T11:02:12.539Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2022/07/08/141_call_execute_process_ws_from_xform/</loc>
         
-        <lastmod>2024-01-11T11:02:12.539Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/08/12/145_get_a_grip_on_your_organization_id/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/07/22/143_archiving_finished_bpm_runtime_instances/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/08/05/144a_update_on_22_3/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/07/29/144_purge_audit_information/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/07/15/142_review_advanced_expressions_in_rules/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/08/19/146_drag_and_drop_between_panels/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/09/16/150_build_a_template_bpm_to_copy_from/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/08/26/147_fill_a_multiline_textfield_via_bpm/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/09/23/151_using_translations_in_your_solution/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/09/09/149_relate_two_dynamic_enums/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/10/07/152a_update_enterprise_world_v_pass/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/09/30/152_undeploy_vs_rollback/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/11/11/155a_update_on_22_4/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/10/21/153_cleaning_up_runtime_mess_rtfm/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/11/04/155_combine_form_sections_with_selection_list/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/10/14/152b_enterprise_world_cloud_overview/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/10/28/154_clearing_up_magic_of_the_cordys_log_table/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2022/06/24/139a_update_enterprise_world_digital/</loc>
         
-        <lastmod>2024-01-11T11:02:12.538Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/06/10/138_reuse_bpm_by_multi_entity_context/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.537Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/06/17/139_dynamic_xpath_for_filtering_multiple_results/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.537Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.187Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2022/06/03/137a_embed_intelligent_viewer_in_aw_to_view_content/</loc>
         
-        <lastmod>2024-01-11T11:02:12.536Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.184Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/05/27/137_time_for_a_verified_intall_of_iv/</loc>
+        <loc>https://appworks-tips.com/2022/06/17/139_dynamic_xpath_for_filtering_multiple_results/</loc>
         
-        <lastmod>2024-01-11T11:02:12.535Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/05/20/136b_3_year_anniversary/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.535Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.184Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2022/05/06/136_keep_track_of_your_bpms_via_bi/</loc>
+        <loc>https://appworks-tips.com/2022/06/10/138_reuse_bpm_by_multi_entity_context/</loc>
         
-        <lastmod>2024-01-11T11:02:12.534Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/05/13/136a_update_on_22_2/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.534Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/04/22/134_playing_with_bpm_activity_ownership/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.533Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/04/29/135_working_with_feature_toggles/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.533Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/04/15/133_connecting_okta_as_idp_through_otds/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.533Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/04/08/132_calling_a_webservice_with_nil/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.532Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/03/25/130_handling_an_unavailable_service_in_bpm/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.531Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/04/01/131_get_current_user_in_bpm/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.531Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/03/18/129_the_number_one_tip_on_bpm_activity_flows/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.530Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/03/11/128_the_power_of_the_external_webservice_configuration/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.530Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/02/25/127c_your_final_destination_on_xecm_preparation/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.529Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/03/04/127d_extend_connected_ws_into_awp_via_business_ws/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.529Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/02/11/127a_connect_content_server_with_otds/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.528Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/02/18/127b_bring_life_in_the_otcs_docstore_connector/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.528Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/01/28/126a_update_on_22_1/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.527Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/02/04/127_install_content_server_with_this_ultimate_guide_21_2/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.527Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/01/14/125_extend_used_by_with_a_source_search/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.526Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/01/21/126_what_is_saved_in_the_database_for_a_bpm_service_container/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.526Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/12/31/123_expose_bpm_webservice_with_custom_xml_input/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.525Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2022/01/07/124_just_a_rules_trick_to_start_BPM_on_form_load/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.525Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/12/17/121_manage_solutions_and_filter_projects/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.524Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/12/24/122_how_to_create_custom_artifact_linked_runtime/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.524Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/12/03/119_dynamic_task_handling_in_parallel_flow_2.0/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.523Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/12/10/120_tip_for_fast_opening_your_workspace_documents/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.523Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/11/26/118_dynamic_task_handling_in_parallel_flow/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.522Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/11/19/117a_update_enterprise_world_digital/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.521Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/11/05/116a_a_tighter_customization_with_the_new_js_api/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.520Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/11/12/117_extending_the_restrequesthandler/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.520Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.184Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2021/10/29/116_exposing_the_bpm_delay_timer/</loc>
         
-        <lastmod>2024-01-11T11:02:12.519Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/10/15/114a_update_on_21_4/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.518Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2021/10/22/115_bpm_parent_child_learnings/</loc>
         
-        <lastmod>2024-01-11T11:02:12.518Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2021/10/01/113_bring_life_in_the_documentum_connector/</loc>
+        <loc>https://appworks-tips.com/2021/12/24/122_how_to_create_custom_artifact_linked_runtime/</loc>
         
-        <lastmod>2024-01-11T11:02:12.517Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/10/08/114_play_along_with_the_scheduler/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.517Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2021/09/24/112_install_documentum_with_this_ultimate_guide_21.2/</loc>
+        <loc>https://appworks-tips.com/2021/12/03/119_dynamic_task_handling_in_parallel_flow_2.0/</loc>
         
-        <lastmod>2024-01-11T11:02:12.516Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/09/17/111_read_xml_data_to_generate_entity_test_data/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.515Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2021/09/10/110_bpm_subprocess_vs_bpm_webservice/</loc>
+        <loc>https://appworks-tips.com/2021/11/12/117_extending_the_restrequesthandler/</loc>
         
-        <lastmod>2024-01-11T11:02:12.515Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/09/03/109_mocking_appworks_calls_in_junit_tests/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.514Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2021/08/27/108_use_videojs_to_view_video_content/</loc>
+        <loc>https://appworks-tips.com/2021/12/17/121_manage_solutions_and_filter_projects/</loc>
         
-        <lastmod>2024-01-11T11:02:12.513Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2021/08/13/106a_update_on_21_3/</loc>
+        <loc>https://appworks-tips.com/2021/12/10/120_tip_for_fast_opening_your_workspace_documents/</loc>
         
-        <lastmod>2024-01-11T11:02:12.512Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/11/26/118_dynamic_task_handling_in_parallel_flow/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/12/31/123_expose_bpm_webservice_with_custom_xml_input/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/01/07/124_just_a_rules_trick_to_start_BPM_on_form_load/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/01/14/125_extend_used_by_with_a_source_search/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/01/21/126_what_is_saved_in_the_database_for_a_bpm_service_container/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/01/28/126a_update_on_22_1/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/02/11/127a_connect_content_server_with_otds/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/02/18/127b_bring_life_in_the_otcs_docstore_connector/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/03/18/129_the_number_one_tip_on_bpm_activity_flows/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/03/04/127d_extend_connected_ws_into_awp_via_business_ws/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/02/25/127c_your_final_destination_on_xecm_preparation/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/03/11/128_the_power_of_the_external_webservice_configuration/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/03/25/130_handling_an_unavailable_service_in_bpm/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/04/22/134_playing_with_bpm_activity_ownership/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/05/06/136_keep_track_of_your_bpms_via_bi/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/04/08/132_calling_a_webservice_with_nil/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/04/01/131_get_current_user_in_bpm/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/04/15/133_connecting_okta_as_idp_through_otds/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/04/29/135_working_with_feature_toggles/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/05/27/137_time_for_a_verified_intall_of_iv/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/05/20/136b_3_year_anniversary/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/11/19/117a_update_enterprise_world_digital/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.168Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2021/08/20/107_calling_google_charts_api_with_entity_input/</loc>
         
-        <lastmod>2024-01-11T11:02:12.512Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/08/06/106_two_tips_on_skipping_an_activity/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.511Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2021/07/30/105_a_secret_custom_call_in_the_xpath_editor_exposed/</loc>
         
-        <lastmod>2024-01-11T11:02:12.510Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2021/07/16/103_your_first_baby_steps_on_working_with_html5_sdk/</loc>
+        <loc>https://appworks-tips.com/2021/08/13/106a_update_on_21_3/</loc>
         
-        <lastmod>2024-01-11T11:02:12.509Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/08/27/108_use_videojs_to_view_video_content/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/08/06/106_two_tips_on_skipping_an_activity/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/09/10/110_bpm_subprocess_vs_bpm_webservice/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/09/03/109_mocking_appworks_calls_in_junit_tests/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/09/24/112_install_documentum_with_this_ultimate_guide_21.2/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/10/01/113_bring_life_in_the_documentum_connector/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/09/17/111_read_xml_data_to_generate_entity_test_data/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/10/08/114_play_along_with_the_scheduler/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/10/15/114a_update_on_21_4/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.157Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2021/07/23/104_calling_soap_and_rest_via_postman/</loc>
         
-        <lastmod>2024-01-11T11:02:12.509Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/07/02/101_the_trick_to_bring_roles_alive_in_the_identity_package/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.421Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.074Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2021/07/09/102_the_magic_behind_a_synchronized_partition_in_otds/</loc>
         
-        <lastmod>2024-01-11T11:02:12.421Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.072Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2021/06/25/100_how_to_use_the_northwind_database_example_data/</loc>
+        <loc>https://appworks-tips.com/2021/07/16/103_your_first_baby_steps_on_working_with_html5_sdk/</loc>
         
-        <lastmod>2024-01-11T11:02:12.420Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/06/11/098_load_a_homepage_into_a_homepage/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.419Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/06/18/099_the_tips_to_get_rid_of_the_identity_package/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.419Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/06/04/097_the_number_one_tip_on_bpm_message_mapping/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.418Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/05/28/096_grab_your_details_on_brava_content_viewer/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.418Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/05/14/094a_2_year_anniversary/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.417Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/05/21/095_how_to_layout_metadata_with_content_side_by_side/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.417Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/04/30/093a_installation_survival_guide_update_21_2/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.416Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/05/07/094_other_ldap_browser_tool_jxplorer/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.416Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/04/16/092a_update_enterprise_world_digital/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.415Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/04/23/093_call_the_linkdocument_webservice_20.3_feature/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.415Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/04/09/092_is_apache_directory_studio_a_replacement_for_cmc/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.414Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/04/02/091_the_magic_of_crafting_a_custom_document_store/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.413Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/03/12/088_do_a_proper_removal_of_an_organization/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.411Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/03/19/089_the_search_for_content_on_the_server/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.411Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/03/26/090_your_golden_ticket_to_a_m_i_tasks_in_a_lifecycle/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.411Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/02/26/086_deployment_of_a_language_pack/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.410Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/03/05/087_what_happens_when_decreasing_a_property_length/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.410Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/02/19/085_the_art_of_playing_with_caf_files/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.409Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/02/05/083a_installation_survival_guide_update_21_1/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.409Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/02/12/084_working_with_tasks_role_team_worklist_personal/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.409Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/01/22/082_bootstrap_your_testing_with_jmeter/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.408Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2021/01/29/083_consuming_the_identity_package/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.408Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.072Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2021/01/15/081_bootstrap_your_testing_with_selenium/</loc>
         
-        <lastmod>2024-01-11T11:02:12.407Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2021/01/08/080_lets_customize_a_result_panel_on_a_homepage_layout/</loc>
+        <loc>https://appworks-tips.com/2021/02/12/084_working_with_tasks_role_team_worklist_personal/</loc>
         
-        <lastmod>2024-01-11T11:02:12.407Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/01/22/082_bootstrap_your_testing_with_jmeter/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/02/19/085_the_art_of_playing_with_caf_files/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/03/05/087_what_happens_when_decreasing_a_property_length/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/02/05/083a_installation_survival_guide_update_21_1/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/01/29/083_consuming_the_identity_package/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/03/26/090_your_golden_ticket_to_a_m_i_tasks_in_a_lifecycle/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/02/26/086_deployment_of_a_language_pack/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/04/02/091_the_magic_of_crafting_a_custom_document_store/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/03/19/089_the_search_for_content_on_the_server/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/03/12/088_do_a_proper_removal_of_an_organization/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/04/16/092a_update_enterprise_world_digital/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/04/09/092_is_apache_directory_studio_a_replacement_for_cmc/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/04/23/093_call_the_linkdocument_webservice_20.3_feature/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/05/14/094a_2_year_anniversary/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/04/30/093a_installation_survival_guide_update_21_2/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/05/21/095_how_to_layout_metadata_with_content_side_by_side/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/06/04/097_the_number_one_tip_on_bpm_message_mapping/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/05/07/094_other_ldap_browser_tool_jxplorer/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/06/18/099_the_tips_to_get_rid_of_the_identity_package/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/06/11/098_load_a_homepage_into_a_homepage/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/05/28/096_grab_your_details_on_brava_content_viewer/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/07/02/101_the_trick_to_bring_roles_alive_in_the_identity_package/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/06/25/100_how_to_use_the_northwind_database_example_data/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.057Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2021/01/01/079_the_endless_bpm_while_loop_with_conditional_breakpoint/</loc>
         
-        <lastmod>2024-01-11T11:02:12.406Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.056Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/</loc>
+        <loc>https://appworks-tips.com/2021/01/08/080_lets_customize_a_result_panel_on_a_homepage_layout/</loc>
         
-        <lastmod>2024-01-11T11:02:12.406Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/12/11/076_let_us_call_some_rest_from_an_xform/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.405Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/12/18/077_a_dive_on_contract_based_development/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.405Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/12/04/075_change_the_sysadmin_password_with_these_steps/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.404Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/11/27/074_automate_your_deployment_with_jenkins/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.404Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/11/13/072_build_your_solution_with_the_cli/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.403Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/11/20/073_deploy_your_solution_with_ant_tasks/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.403Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/11/06/071_lets_develop_an_eis_connector/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.402Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/10/30/070b_update_enterprise_world_digital/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.402Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/10/23/070a_installation_survival_guide_update_20_4/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.401Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/10/02/068_the_secret_path_of_adding_a_keywords_property/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.399Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/10/09/069_playing_with_lifecycle_state_conditions/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.399Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/10/16/070_the_tricks_on_regex_field_validation/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.399Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/09/25/067_the_very_easy_docker_installation_steps/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.398Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/09/18/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.398Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/09/04/064_see_how_easy_you_can_create_an_otds_tenant/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.397Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/09/11/065_install_ihub_with_this_simple_guide/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.397Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/08/21/062_the_art_of_creating_a_singleton_entity/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.396Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/08/28/063_your_final_destination_on_consuming_json_data_via_rest/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.396Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/08/14/061_your_best_shot_on_enduser_bpm_interaction/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.395Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/07/31/059_play_with_masterdata_webservice_in_bpm_loop/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.394Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/07/24/058_simple_steps_on_importing_entities_from_database_table/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.394Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/08/07/060_tips_on_making_a_soap_service_available_via_uddi_container/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.394Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/07/17/057a_installation_survival_guide_update_20_3/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.393Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/07/03/056_your_best_shot_on_monitoring_lifecycles_with_cim/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.392Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.056Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2020/07/10/057_make_a_web_library_definition_work_for_you/</loc>
         
-        <lastmod>2024-01-11T11:02:12.392Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/06/19/054_playing_with_the_mobile_building_blocks/</loc>
+        <loc>https://appworks-tips.com/2020/07/03/056_your_best_shot_on_monitoring_lifecycles_with_cim/</loc>
         
-        <lastmod>2024-01-11T11:02:12.391Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/07/24/058_simple_steps_on_importing_entities_from_database_table/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2020/06/26/055_see_how_easy_a_css_theme_is_used/</loc>
         
-        <lastmod>2024-01-11T11:02:12.391Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/06/12/053_easy_steps_to_make_the_appworks_gateway_available/</loc>
+        <loc>https://appworks-tips.com/2020/06/19/054_playing_with_the_mobile_building_blocks/</loc>
         
-        <lastmod>2024-01-11T11:02:12.389Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/05/29/051_how_to_create_an_appworks_package/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.389Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/06/05/052_how_to_deploy_an_appworks_package/</loc>
+        <loc>https://appworks-tips.com/2020/07/17/057a_installation_survival_guide_update_20_3/</loc>
         
-        <lastmod>2024-01-11T11:02:12.389Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/05/15/049a_1_year_anniversary/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.388Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/</loc>
+        <loc>https://appworks-tips.com/2020/07/31/059_play_with_masterdata_webservice_in_bpm_loop/</loc>
         
-        <lastmod>2024-01-11T11:02:12.388Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/05/01/048_exceed_number_of_follow_up_zeros/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.387Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/05/08/049_deleting_an_entity_the_proper_way/</loc>
+        <loc>https://appworks-tips.com/2020/08/28/063_your_final_destination_on_consuming_json_data_via_rest/</loc>
         
-        <lastmod>2024-01-11T11:02:12.387Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/04/24/047_a_dive_on_how_long_is_a_long_text/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.386Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/04/17/046b_update_enterprise_world_digital/</loc>
+        <loc>https://appworks-tips.com/2020/08/21/062_the_art_of_creating_a_singleton_entity/</loc>
         
-        <lastmod>2024-01-11T11:02:12.386Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/04/10/046a_installation_survival_guide_update_20_2/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.386Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/04/03/046_next_level_form_creation/</loc>
+        <loc>https://appworks-tips.com/2020/08/14/061_your_best_shot_on_enduser_bpm_interaction/</loc>
         
-        <lastmod>2024-01-11T11:02:12.385Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/03/27/045_how_to_create_conditional_value_assistance_on_two_props/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.384Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/03/20/044_the_explanation_of_versioning_appworks_releases/</loc>
+        <loc>https://appworks-tips.com/2020/08/07/060_tips_on_making_a_soap_service_available_via_uddi_container/</loc>
         
-        <lastmod>2024-01-11T11:02:12.384Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/03/13/043_the_required_tips_to_send_retrieve_email_with_attachments/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.384Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/03/06/042_your_guide_on_creating_a_dynamic_enumerated_text_property/</loc>
+        <loc>https://appworks-tips.com/2020/09/04/064_see_how_easy_you_can_create_an_otds_tenant/</loc>
         
-        <lastmod>2024-01-11T11:02:12.383Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/02/21/040_your_guide_on_playing_with_progression_bars/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.382Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/02/28/041_generate_a_random_int_for_a_property_value/</loc>
+        <loc>https://appworks-tips.com/2020/09/11/065_install_ihub_with_this_simple_guide/</loc>
         
-        <lastmod>2024-01-11T11:02:12.382Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/02/07/038_an_overview_on_the_building_blocks_categories/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.381Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/02/14/039_the_best_guide_on_entity_property_creation/</loc>
+        <loc>https://appworks-tips.com/2020/09/18/066_the_trick_of_using_an_entity_task_layout_in_your_bpm/</loc>
         
-        <lastmod>2024-01-11T11:02:12.381Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2020/01/17/035_the_trick_that_makes_it_possible_to_update_documentum_data/</loc>
+        <loc>https://appworks-tips.com/2020/10/02/068_the_secret_path_of_adding_a_keywords_property/</loc>
         
-        <lastmod>2024-01-11T11:02:12.380Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/09/25/067_the_very_easy_docker_installation_steps/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/10/09/069_playing_with_lifecycle_state_conditions/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/10/16/070_the_tricks_on_regex_field_validation/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/11/13/072_build_your_solution_with_the_cli/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/10/23/070a_installation_survival_guide_update_20_4/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/11/20/073_deploy_your_solution_with_ant_tasks/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/12/04/075_change_the_sysadmin_password_with_these_steps/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/12/18/077_a_dive_on_contract_based_development/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/11/06/071_lets_develop_an_eis_connector/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/11/27/074_automate_your_deployment_with_jenkins/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/10/30/070b_update_enterprise_world_digital/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/12/11/076_let_us_call_some_rest_from_an_xform/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/12/25/078_developing_an_interceptor_for_the_uddi_connector/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.040Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2020/01/24/036_pim_brings_bpm_monitoring_to_the_next_level/</loc>
         
-        <lastmod>2024-01-11T11:02:12.380Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/01/31/037_your_best_shot_on_bpm_debugging/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.380Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2020/01/10/034_creating_a_ws_appserver_service_container_the_proper_way/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.379Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/12/27/032_install_documentum_with_this_ultimate_guide/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.378Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2020/01/03/033_make_the_documentum_cmis_to_appworks_connection_work_for_you/</loc>
         
-        <lastmod>2024-01-11T11:02:12.378Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/12/20/031_the_lazy_installation_to_make_a_mail_service_available/</loc>
+        <loc>https://appworks-tips.com/2020/01/10/034_creating_a_ws_appserver_service_container_the_proper_way/</loc>
         
-        <lastmod>2024-01-11T11:02:12.377Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/02/21/040_your_guide_on_playing_with_progression_bars/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/02/07/038_an_overview_on_the_building_blocks_categories/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/01/17/035_the_trick_that_makes_it_possible_to_update_documentum_data/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/02/14/039_the_best_guide_on_entity_property_creation/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/01/31/037_your_best_shot_on_bpm_debugging/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/03/06/042_your_guide_on_creating_a_dynamic_enumerated_text_property/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/02/28/041_generate_a_random_int_for_a_property_value/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/03/20/044_the_explanation_of_versioning_appworks_releases/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/03/27/045_how_to_create_conditional_value_assistance_on_two_props/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/04/24/047_a_dive_on_how_long_is_a_long_text/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/04/10/046a_installation_survival_guide_update_20_2/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/04/17/046b_update_enterprise_world_digital/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/05/08/049_deleting_an_entity_the_proper_way/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/04/03/046_next_level_form_creation/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/06/05/052_how_to_deploy_an_appworks_package/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/05/15/049a_1_year_anniversary/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/05/01/048_exceed_number_of_follow_up_zeros/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/05/29/051_how_to_create_an_appworks_package/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/05/22/050_play_with_diacritics_in_a_textfield/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/06/12/053_easy_steps_to_make_the_appworks_gateway_available/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2019/12/13/030_make_otds_authentication_work_for_you/</loc>
         
-        <lastmod>2024-01-11T11:02:12.377Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/11/29/028a_installation_survival_guide_update_16_7/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.375Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/11/22/028_the_otds_installation_survival_guide/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.375Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2019/12/06/029_update_your_license_the_proper_way/</loc>
         
-        <lastmod>2024-01-11T11:02:12.375Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/11/01/025_the_most_important_explorer_artifacts_explained/</loc>
+        <loc>https://appworks-tips.com/2019/12/20/031_the_lazy_installation_to_make_a_mail_service_available/</loc>
         
-        <lastmod>2024-01-11T11:02:12.374Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/11/08/026_uninstalling_cars_the_proper_way/</loc>
+        <loc>https://appworks-tips.com/2019/12/27/032_install_documentum_with_this_ultimate_guide/</loc>
         
-        <lastmod>2024-01-11T11:02:12.374Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.025Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2019/11/15/027_the_secret_of_successful_installing_tomcat/</loc>
         
-        <lastmod>2024-01-11T11:02:12.374Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.024Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/2019/10/18/023_explaining_the_art_of_entity_identification/</loc>
+        <loc>https://appworks-tips.com/2019/11/29/028a_installation_survival_guide_update_16_7/</loc>
         
-        <lastmod>2024-01-11T11:02:12.373Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/10/25/024_an_overview_of_the_low_code_workspace/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.373Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/10/04/021_the_first_baby_steps_on_validating_publishing_and_testing/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.372Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/10/11/022_make_the_svn_buttons_work_for_you/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.372Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.371Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.371Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/09/27/020_how_to_make_abstraction_generalization_and_subtyping_possible/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.371Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/08/30/016_make_workspaces_and_project_structure_work_for_you/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.370Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.370Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/08/09/013_5_useful_steps_for_organization_management/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.369Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/08/23/015_the_lazy_installation_to_make_svn_available/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.369Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/08/16/014_the_secret_of_successful_adding_your_first_users/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.369Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/07/26/011_uninstalling_appworks_the_proper_way/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.368Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/08/02/012_4_useful_tips_for_appworks/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.368Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/07/19/010_make_package_deployment_work_for_you/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.367Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/07/12/009_the_appworks_installation_survival_guide/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.367Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/07/05/008_see_how_easily_you_can_install_cars/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.365Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/06/21/006_the_secret_of_successful_installing_tomee/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.363Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/06/28/007_your_way_to_a_done_postgresql_installation/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.363Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.024Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2019/06/14/005_a_few_quick_tips_to_help_you_install_java/</loc>
         
-        <lastmod>2024-01-11T11:02:12.362Z</lastmod>
-        
-    </url>
-    
-    <url>
-        <loc>https://appworks-tips.com/2019/06/07/004_back_to_the_basics_with_rhel/</loc>
-        
-        <lastmod>2024-01-11T11:02:12.361Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2019/05/31/003_an_appworks_license_in_5_amazing_steps/</loc>
         
-        <lastmod>2024-01-11T11:02:12.360Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/06/07/004_back_to_the_basics_with_rhel/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/06/28/007_your_way_to_a_done_postgresql_installation/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/06/21/006_the_secret_of_successful_installing_tomee/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/07/05/008_see_how_easily_you_can_install_cars/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/07/26/011_uninstalling_appworks_the_proper_way/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/07/19/010_make_package_deployment_work_for_you/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/07/12/009_the_appworks_installation_survival_guide/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/08/09/013_5_useful_steps_for_organization_management/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/08/02/012_4_useful_tips_for_appworks/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/08/16/014_the_secret_of_successful_adding_your_first_users/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/09/13/018_see_how_easily_you_can_make_entity_relations/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/08/30/016_make_workspaces_and_project_structure_work_for_you/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/09/06/017_the_secrets_of_successful_crafting_entities/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/08/23/015_the_lazy_installation_to_make_svn_available/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/09/27/020_how_to_make_abstraction_generalization_and_subtyping_possible/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/09/20/019_a_quick_way_of_synchronizing_a_workspace/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/10/18/023_explaining_the_art_of_entity_identification/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/10/11/022_make_the_svn_buttons_work_for_you/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/10/04/021_the_first_baby_steps_on_validating_publishing_and_testing/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/10/25/024_an_overview_of_the_low_code_workspace/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/11/08/026_uninstalling_cars_the_proper_way/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/11/01/025_the_most_important_explorer_artifacts_explained/</loc>
+        
+        <lastmod>2024-01-13T09:15:36.009Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2019/05/24/002_prepare_a_vm_image_in_this_ultimate_guide/</loc>
         
-        <lastmod>2024-01-11T11:02:12.358Z</lastmod>
+        <lastmod>2024-01-13T09:15:36.007Z</lastmod>
         
     </url>
     
     <url>
         <loc>https://appworks-tips.com/2019/05/17/001_a_quick_way_to_install_oracle_virtual_box/</loc>
         
-        <lastmod>2024-01-11T11:02:12.357Z</lastmod>
+        <lastmod>2024-01-13T09:15:35.993Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/10/13/196a_update_on_23_4/</loc>
+        
+        <lastmod>2024-01-13T08:47:58.005Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2021/11/05/116a_a_tighter_customization_with_the_new_js_api/</loc>
+        
+        <lastmod>2024-01-13T08:45:12.511Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/05/13/136a_update_on_22_2/</loc>
+        
+        <lastmod>2024-01-13T08:44:48.107Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2023/03/17/171a_calling_chatgpt_from_discussion_bb/</loc>
+        
+        <lastmod>2024-01-13T08:34:51.454Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2020/03/13/043_the_required_tips_to_send_retrieve_email_with_attachments/</loc>
+        
+        <lastmod>2024-01-13T08:34:16.924Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/02/04/127_install_content_server_with_this_ultimate_guide_21_2/</loc>
+        
+        <lastmod>2024-01-13T08:25:18.653Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2019/11/22/028_the_otds_installation_survival_guide/</loc>
+        
+        <lastmod>2024-01-13T08:18:07.989Z</lastmod>
+        
+    </url>
+    
+    <url>
+        <loc>https://appworks-tips.com/2022/09/02/148_the_awp_upgrade_survival_guide/</loc>
+        
+        <lastmod>2024-01-13T08:17:48.204Z</lastmod>
         
     </url>
     
@@ -1766,14 +1773,14 @@
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/ci_cd/index.html</loc>
+        <loc>https://appworks-tips.com/about/index.html</loc>
         
         <lastmod>2023-12-07T20:33:07.510Z</lastmod>
         
     </url>
     
     <url>
-        <loc>https://appworks-tips.com/about/index.html</loc>
+        <loc>https://appworks-tips.com/ci_cd/index.html</loc>
         
         <lastmod>2023-12-07T20:33:07.510Z</lastmod>
         
