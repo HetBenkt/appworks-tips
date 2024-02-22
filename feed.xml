@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2024-02-15T06:57:13.400Z</updated>
+  <updated>2024-02-22T07:33:27.187Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unbelievable hacks to supercharge your PSL data cleaning</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/02/23/213_cleaning_psl_data/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/213_cleaning_psl_data/feature_tag.webp" />
+    <id>https://appworks-tips.com/2024/02/23/213_cleaning_psl_data/</id>
+    <published>2024-02-23T12:00:00.000Z</published>
+    <updated>2024-02-22T07:33:27.187Z</updated>
+    
+    <summary type="html">
+    
+      This includes the insides of PSL data...finally an answer.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/213_cleaning_psl_data/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
+    
+      <category term="PSL" scheme="https://appworks-tips.com/tags/PSL/"/>
+    
+  </entry>
   
   <entry>
     <title>Unveiling the secrets of the &#39;Deployment Models&#39; artifact; Boost your tech IQ instantly</title>
@@ -229,7 +257,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/206_generate_documentation_from_annotations/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/29/206_generate_documentation_from_annotations/</id>
     <published>2023-12-29T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.571Z</updated>
+    <updated>2024-02-22T07:36:02.585Z</updated>
     
     <summary type="html">
     
@@ -255,7 +283,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/205_load_balancing_service_container/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/22/205_load_balancing_service_container/</id>
     <published>2023-12-22T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.569Z</updated>
+    <updated>2024-02-22T07:36:02.583Z</updated>
     
     <summary type="html">
     
@@ -283,7 +311,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/204_connect_source_control_after_project_creation/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/15/204_connect_source_control_after_project_creation/</id>
     <published>2023-12-15T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.568Z</updated>
+    <updated>2024-02-22T07:36:02.581Z</updated>
     
     <summary type="html">
     
@@ -309,7 +337,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/203_auto_assign_cases_tasks/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/08/203_auto_assign_cases_tasks/</id>
     <published>2023-12-08T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.567Z</updated>
+    <updated>2024-02-22T07:36:02.579Z</updated>
     
     <summary type="html">
     
@@ -335,7 +363,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/202_working_with_task_workqueues/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/01/202_working_with_task_workqueues/</id>
     <published>2023-12-01T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.566Z</updated>
+    <updated>2024-02-22T07:36:02.579Z</updated>
     
     <summary type="html">
     
@@ -361,7 +389,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/201_subtyping_vs_database/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/11/24/201_subtyping_vs_database/</id>
     <published>2023-11-24T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.566Z</updated>
+    <updated>2024-02-22T07:36:02.578Z</updated>
     
     <summary type="html">
     
@@ -387,7 +415,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/200_speedtest_parallel_processing/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/11/17/200_speedtest_parallel_processing/</id>
     <published>2023-11-17T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.565Z</updated>
+    <updated>2024-02-22T07:36:02.578Z</updated>
     
     <summary type="html">
     
@@ -413,7 +441,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/199_feel_the_power_of_a_form_section/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/11/10/199_feel_the_power_of_a_form_section/</id>
     <published>2023-11-10T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.565Z</updated>
+    <updated>2024-02-22T07:36:02.576Z</updated>
     
     <summary type="html">
     
@@ -439,7 +467,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/198_iconize_buttons_with_unicode/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/11/03/198_iconize_buttons_with_unicode/</id>
     <published>2023-11-03T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.564Z</updated>
+    <updated>2024-02-22T07:36:02.575Z</updated>
     
     <summary type="html">
     
@@ -465,7 +493,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/197_xslt_data_transformation/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/10/27/197_xslt_data_transformation/</id>
     <published>2023-10-27T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.563Z</updated>
+    <updated>2024-02-22T07:36:02.575Z</updated>
     
     <summary type="html">
     
@@ -491,7 +519,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/196b_update_enterprise_world_v_pass/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/10/20/196b_update_enterprise_world_v_pass/</id>
     <published>2023-10-20T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.562Z</updated>
+    <updated>2024-02-22T07:36:02.574Z</updated>
     
     <summary type="html">
     
@@ -519,7 +547,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/196a_update_on_23_4/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/10/13/196a_update_on_23_4/</id>
     <published>2023-10-13T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.562Z</updated>
+    <updated>2024-02-22T07:36:02.573Z</updated>
     
     <summary type="html">
     
@@ -549,7 +577,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/196_bring_life_in_jms_connector/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/10/06/196_bring_life_in_jms_connector/</id>
     <published>2023-10-06T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.561Z</updated>
+    <updated>2024-02-22T07:36:02.571Z</updated>
     
     <summary type="html">
     
@@ -579,7 +607,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/195_install_apache_activemq/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/09/29/195_install_apache_activemq/</id>
     <published>2023-09-29T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.560Z</updated>
+    <updated>2024-02-22T07:36:02.570Z</updated>
     
     <summary type="html">
     
@@ -607,7 +635,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/194_return_button_action_rule/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/09/22/194_return_button_action_rule/</id>
     <published>2023-09-22T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.560Z</updated>
+    <updated>2024-02-22T07:36:02.570Z</updated>
     
     <summary type="html">
     
@@ -631,7 +659,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/193_be_carefull_on_to_one_relations/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/09/15/193_be_carefull_on_to_one_relations/</id>
     <published>2023-09-15T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.559Z</updated>
+    <updated>2024-02-22T07:36:02.569Z</updated>
     
     <summary type="html">
     
@@ -657,7 +685,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/192_magic_title_bb/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/09/08/192_magic_title_bb/</id>
     <published>2023-09-08T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.558Z</updated>
+    <updated>2024-02-22T07:36:02.568Z</updated>
     
     <summary type="html">
     
@@ -683,7 +711,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/191_managing_queued_bpms/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/09/01/191_managing_queued_bpms/</id>
     <published>2023-09-01T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.557Z</updated>
+    <updated>2024-02-22T07:36:02.567Z</updated>
     
     <summary type="html">
     
@@ -707,7 +735,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/190_add_extra_props_to_entity_in_runtime/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/08/25/190_add_extra_props_to_entity_in_runtime/</id>
     <published>2023-08-25T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.556Z</updated>
+    <updated>2024-02-22T07:36:02.565Z</updated>
     
     <summary type="html">
     
@@ -733,7 +761,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/189_nginx_as_reverse_proxy/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/08/18/189_nginx_as_reverse_proxy/</id>
     <published>2023-08-18T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.555Z</updated>
+    <updated>2024-02-22T07:36:02.564Z</updated>
     
     <summary type="html">
     
@@ -759,7 +787,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/188_craft_your_own_connector/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/08/11/188_craft_your_own_connector/</id>
     <published>2023-08-11T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.555Z</updated>
+    <updated>2024-02-22T07:36:02.563Z</updated>
     
     <summary type="html">
     
@@ -783,7 +811,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/187_read_base64_json_from_config/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/08/04/187_read_base64_json_from_config/</id>
     <published>2023-08-04T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.554Z</updated>
+    <updated>2024-02-22T07:36:02.562Z</updated>
     
     <summary type="html">
     
@@ -811,7 +839,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/186_read_from_correct_level_in_xml_store/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/07/28/186_read_from_correct_level_in_xml_store/</id>
     <published>2023-07-28T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.553Z</updated>
+    <updated>2024-02-22T07:36:02.561Z</updated>
     
     <summary type="html">
     
@@ -835,7 +863,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/185_lifecycle_update_with_migration_insights/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/07/21/185_lifecycle_update_with_migration_insights/</id>
     <published>2023-07-21T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.552Z</updated>
+    <updated>2024-02-22T07:36:02.560Z</updated>
     
     <summary type="html">
     
@@ -863,7 +891,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/184a_update_on_23_3/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/07/14/184a_update_on_23_3/</id>
     <published>2023-07-14T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.552Z</updated>
+    <updated>2024-02-22T07:36:02.560Z</updated>
     
     <summary type="html">
     
@@ -893,7 +921,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/184_ways_to_expose_list_data/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/07/07/184_ways_to_expose_list_data/</id>
     <published>2023-07-07T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.551Z</updated>
+    <updated>2024-02-22T07:36:02.559Z</updated>
     
     <summary type="html">
     
@@ -921,7 +949,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/183_versioning_an_entity_instance/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/06/30/183_versioning_an_entity_instance/</id>
     <published>2023-06-30T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.550Z</updated>
+    <updated>2024-02-22T07:36:02.557Z</updated>
     
     <summary type="html">
     
@@ -935,9 +963,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
-    
       <category term="Entity" scheme="https://appworks-tips.com/tags/Entity/"/>
+    
+      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
     
       <category term="Version" scheme="https://appworks-tips.com/tags/Version/"/>
     
@@ -949,7 +977,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/182_order_a_list_bb_manually/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/06/23/182_order_a_list_bb_manually/</id>
     <published>2023-06-23T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.549Z</updated>
+    <updated>2024-02-22T07:36:02.556Z</updated>
     
     <summary type="html">
     
@@ -977,7 +1005,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/181_run_javaui_tool/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/06/16/181_run_javaui_tool/</id>
     <published>2023-06-16T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.549Z</updated>
+    <updated>2024-02-22T07:36:02.556Z</updated>
     
     <summary type="html">
     
@@ -1003,7 +1031,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/180_bring_alive_the_rest_gateway_connector/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/06/09/180_bring_alive_the_rest_gateway_connector/</id>
     <published>2023-06-09T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.548Z</updated>
+    <updated>2024-02-22T07:36:02.555Z</updated>
     
     <summary type="html">
     
@@ -1031,7 +1059,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/179_create_custom_tile_landingpage/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/06/02/179_create_custom_tile_landingpage/</id>
     <published>2023-06-02T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.547Z</updated>
+    <updated>2024-02-22T07:36:02.554Z</updated>
     
     <summary type="html">
     
@@ -1057,7 +1085,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/178_playing_with_the_fileconnector/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/05/26/178_playing_with_the_fileconnector/</id>
     <published>2023-05-26T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.546Z</updated>
+    <updated>2024-02-22T07:36:02.552Z</updated>
     
     <summary type="html">
     
@@ -1081,7 +1109,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/177c_4_year_anniversary/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/05/19/177c_4_year_anniversary/</id>
     <published>2023-05-19T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.545Z</updated>
+    <updated>2024-02-22T07:36:02.551Z</updated>
     
     <summary type="html">
     
@@ -1107,7 +1135,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/177a_update_on_23_2/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/05/12/177a_update_on_23_2/</id>
     <published>2023-05-12T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.543Z</updated>
+    <updated>2024-02-22T07:36:02.549Z</updated>
     
     <summary type="html">
     
@@ -1137,7 +1165,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/177b_update_ot_world_emea_london/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/05/05/177b_update_ot_world_emea_london/</id>
     <published>2023-05-05T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.545Z</updated>
+    <updated>2024-02-22T07:36:02.551Z</updated>
     
     <summary type="html">
     
@@ -1163,7 +1191,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/177_reset_business_id/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/04/28/177_reset_business_id/</id>
     <published>2023-04-28T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.542Z</updated>
+    <updated>2024-02-22T07:36:02.548Z</updated>
     
     <summary type="html">
     
@@ -1187,7 +1215,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/176_update_date_time_prop_via_bpm_printf/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/04/21/176_update_date_time_prop_via_bpm_printf/</id>
     <published>2023-04-21T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.542Z</updated>
+    <updated>2024-02-22T07:36:02.548Z</updated>
     
     <summary type="html">
     
@@ -1215,7 +1243,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/175_import_CSS_in_theme_doc_with_wld/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/04/14/175_import_CSS_in_theme_doc_with_wld/</id>
     <published>2023-04-14T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.541Z</updated>
+    <updated>2024-02-22T07:36:02.546Z</updated>
     
     <summary type="html">
     
@@ -1243,7 +1271,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/174_export_project_model_for_reusability/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/04/07/174_export_project_model_for_reusability/</id>
     <published>2023-04-07T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.541Z</updated>
+    <updated>2024-02-22T07:36:02.546Z</updated>
     
     <summary type="html">
     
@@ -1271,7 +1299,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/173_set_date_time_field_default_at_12pm/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/03/31/173_set_date_time_field_default_at_12pm/</id>
     <published>2023-03-31T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.539Z</updated>
+    <updated>2024-02-22T07:36:02.544Z</updated>
     
     <summary type="html">
     
@@ -1299,7 +1327,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/172_just_a_dive_into_less/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/03/24/172_just_a_dive_into_less/</id>
     <published>2023-03-24T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.539Z</updated>
+    <updated>2024-02-22T07:36:02.544Z</updated>
     
     <summary type="html">
     
@@ -1327,7 +1355,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/171a_calling_chatgpt_from_discussion_bb/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/03/17/171a_calling_chatgpt_from_discussion_bb/</id>
     <published>2023-03-17T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.538Z</updated>
+    <updated>2024-02-22T07:36:02.543Z</updated>
     
     <summary type="html">
     
@@ -1346,30 +1374,6 @@
       <category term="ChatGPT" scheme="https://appworks-tips.com/tags/ChatGPT/"/>
     
       <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Revolutionize your understanding of XDS with this comprehensive guide</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/03/10/171_understand_xds_with_this_guide/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/171_understand_xds_with_this_guide/feature_tag.webp" />
-    <id>https://appworks-tips.com/2023/03/10/171_understand_xds_with_this_guide/</id>
-    <published>2023-03-10T12:00:00.000Z</published>
-    <updated>2024-02-15T07:00:01.537Z</updated>
-    
-    <summary type="html">
-    
-      The XML Document Store exposes its secrets in this post.
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/171_understand_xds_with_this_guide/feature_tag.webp" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="XDS" scheme="https://appworks-tips.com/tags/XDS/"/>
     
   </entry>
   
