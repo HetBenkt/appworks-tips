@@ -1,7 +1,1515 @@
-<html><head></head><body>{# 文章页 #}
-{% extends '_layout.swig' %}
-{% import '_partials/post.swig' as template %}
-{% block content %}
-{% include '_partials/header.swig' %}
-{{ template.tpl() }}
-{% endblock %}</body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+<link rel="stylesheet" href="/css/products.css">
+
+	
+<link rel="stylesheet" href="/css/nav.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+    
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y597KBTG4E"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-Y597KBTG4E');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Building a custom notification icon in runtime | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="Every project asks for it; Time for a small hack on how to fulfill this requirement.">
+
+	
+	<meta name="keywords" content="appworks, opentext, notifications, customization">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Building a custom notification icon in runtime | AppWorks Tips">
+	<meta property="og:description" content="Every project asks for it; Time for a small hack on how to fulfill this requirement.">
+	<meta property="og:url" content="https://appworks-tips.com/2022/12/02/158_building_a_custom_notification_icon_in_runtime/">
+
+	
+	<meta property="article:published_time" content="2022-12-02T12:12:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2022/12/02/158_building_a_custom_notification_icon_in_runtime/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+        <div class="site-header-sponsor">
+            
+                <a href="https://bos-ictservices.nl" target="_blank">
+                <img class="sponsor-image" src="https://bos-ictservices.nl/img/logo.png">
+                </a>
+            
+                <a href="https://github.com/sponsors/HetBenkt" target="_blank">
+                <img class="sponsor-image" src="/images/sponsor_here.png">
+                </a>
+            
+        </div>
+        
+        
+
+<nav class="site-nav">
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                
+                
+                    <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+                
+                
+                
+                    <a href="/installation" title="INSTALLATION 23.4">INSTALLATION 23.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
+  <g id="surface1">
+   <path d="m7.18359,7.74219c-0.29687,0.125 -0.39062,0.36328 -0.27734,0.6289l0.90234,-0.3789c-0.09765,-0.23047 -0.39062,-0.34766 -0.625,-0.25zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_1"/>
+   <path d="m14.48047,8.67969l1.12109,-0.67969l-1.12109,-0.67969l0.95312,-0.90234l-1.23828,-0.43359l0.75,-1.07813l-1.30468,-0.16406l0.50781,-1.21094l-1.30469,0.10938l0.24219,-1.28907l-1.25781,0.375l-0.02735,-1.30859l-1.15234,0.62891l-0.30078,-1.27735l-0.99219,0.85938l-0.5625,-1.1875l-0.79297,1.04297l-0.79297,-1.04297l-0.5625,1.1875l-0.99219,-0.85938l-0.30078,1.27735l-1.15234,-0.62891l-0.02734,1.30859l-1.25782,-0.375l0.2461,1.28907l-1.3086,-0.10938l0.50782,1.21094l-1.30079,0.16406l0.7461,1.07813l-1.23828,0.43359l0.95312,0.90234l-1.12109,0.67969l1.12109,0.67969l-0.95312,0.90234l1.23828,0.42969l-0.75,1.07812l1.30469,0.16797l-0.50782,1.21094l1.3086,-0.10937l-0.2461,1.28906l1.25782,-0.37891l0.02734,1.3125l1.15234,-0.6289l0.30078,1.27734l0.99219,-0.85938l0.5586,1.1875l0.79687,-1.04296l0.79297,1.04296l0.5625,-1.1875l0.99219,0.85938l0.30078,-1.27734l1.15234,0.6289l0.02735,-1.30859l1.25781,0.375l-0.2461,-1.28906l1.3086,0.10937l-0.50781,-1.21094l1.30468,-0.16406l-0.75,-1.08203l1.23828,-0.42969l-0.95312,-0.90234zm-9.05859,2.1289l-0.5586,-1.32421c-0.10547,-0.25 -0.26562,-0.44141 -0.54687,-0.32032c-0.30469,0.12891 -0.30469,0.35938 -0.16797,0.67969l0.53906,1.27344l-0.99219,0.42187l-1.05859,-2.5039l0.90625,-0.38282l0.16406,0.39063c0.09766,-0.39453 0.27344,-0.66016 0.65235,-0.82031c0.65625,-0.27735 1.13281,-0.02344 1.42187,0.66406l0.63281,1.5l-0.99218,0.42187zm2.58984,-1.01171c-0.80078,0.33984 -1.61719,0.14453 -1.97266,-0.69922c-0.34375,-0.82032 0.04688,-1.60547 0.85157,-1.94532c0.92578,-0.39062 1.7539,0.01172 2.125,0.92579l-1.89844,0.80078c0.1289,0.29687 0.4375,0.39453 0.70312,0.28515c0.15625,-0.0664 0.26953,-0.19922 0.27735,-0.3789l0.95312,-0.40235c0.08985,0.69532 -0.45312,1.16797 -1.03906,1.41407zm3.98828,-1.76954l-1.00781,-1.30468l-0.00781,0.0039l0.26953,1.61328l-0.96875,0.41016l-1.88282,-2.15234l0.96875,-0.41016l1.03516,1.38672l0.01172,-0.00391l-0.26953,-1.71093l0.84375,-0.35547l1.03515,1.38281l0.00782,-0.00391l-0.26563,-1.71093l0.94141,-0.39844l0.25781,2.84375l-0.96875,0.41015zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_2" stroke="null"/>
+  </g>
+ </g>
+
+</svg></a>
+                
+                
+                
+                    <a href="/ci_cd" title="CI/CD">CI/CD</a>
+                
+                
+                
+                    <a href="/products" title="PRODUCTS">PRODUCTS</a>
+                
+                
+                
+                    <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+                
+                
+                
+                    <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+                
+                
+                
+                    <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME">HIRE ME</a>
+                
+                
+                
+                    <a href="/about" title="ABOUT">ABOUT</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <ul class="nav">
+                    <li>
+                        <div class="hire_me_content">
+                        <i class="hire_me_live"></i>
+                        <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME" id="hire_me">HIRE ME</a>
+                        </div>
+                    </li>
+                </ul>
+        
+        
+        
+        
+        
+    </div>
+
+    <div class="search-button">
+
+    
+    <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+        <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+            <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+        </svg> Sponsor
+    </a>
+    
+
+    
+
+    
+        <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </a>
+    
+
+    </div>
+
+    <div class="site-nav-right">
+        
+        <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+            <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+                <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+            </svg> Sponsor
+        </a>
+        
+
+        
+
+        
+            <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            </a>
+        
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback / Question" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2022-12-02T12:00:00.000Z" itemprop="datePublished">
+                    2022-12-2
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Development/">Development</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">Building a custom notification icon in runtime</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/feature_tag.webp)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>Oh man, how to start on this blog post!? “Notifications”! We want it all, but the AppWorks runtime is not provided with this feature out of the box. At least, not for now; This can always change somewhere in the future!? &#x1F914; Let’s not wait for it but come in action with our craftsmanship! I normally ask myself questions on how to implement such feature, but…</p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>…and introduce an entity with name ‘Notification’ with this set of properties:</p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Name</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Trigger type</td>
+<td>ntf_trigger_type</td>
+<td>Enum text</td>
+<td>Static values of ‘<strong>Event</strong>‘, ‘Time’, and ‘Condition’</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>ntf_message</td>
+<td>text</td>
+<td></td>
+</tr>
+<tr>
+<td>Is read</td>
+<td>ntf_is_read</td>
+<td>Boolean</td>
+<td>‘true’ or ‘<strong>false</strong>‘</td>
+</tr>
+</tbody></table>
+<p>Make it all nice and publishable, so you can create instances in runtime by hand (for now).</p>
+<blockquote>
+<p>For this post, we create instances of the notification entity manually, but in the end (out of scope for this post) we would like to automate this. So, notification instances will be created based on events like this:</p>
+<ul>
+<li><code>On &#39;project&#39; instance creation</code></li>
+<li><code>When a &#39;task&#39; is out of its due date</code></li>
+<li><code>When the budget of a &#39;project&#39; instance is exceeding its limitation</code></li>
+<li><code>On any entity instance update where the owner is a certain user</code></li>
+</ul>
+<p>I know…These are advanced conditional events managed via ‘Rule’ BBs triggering BPMs, but it should be possible with an interesting ‘Notification configuration’ entity model. Check the extension thoughts in the end of this post!</p>
+</blockquote>
+<p>Let’s continue our post; Notifications are user related, so we connect them with a ‘toOne’ relation to the ‘User’ “identity entity” of the platform. I also expose the ‘Web service’ BB on this entity with all CRUD operations enabled (just for this demo); this includes the relationship operations. Next to these operations, I created a new ‘NotificationsByUserId’ operation for later usage which includes an ‘Integer’ type of parameter which (later on) equals the identity id of the related ‘toOne’ user…Continue the grind for this one!</p>
+<p><img alt="bell_001" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663596335.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663596335.png"></p>
+<p>You know the drill on that last ‘Web service’ BB task…Yes, it requires a service container of the ‘Application Server’ from the ‘System Resource Manager’ artifact! Comment me if you don’t have a clue what I’m talking about. Ohhhh…Don’t forget to add that relationship to the ‘Create’ form so we ‘see’ what we’re doing in runtime. We can always remove it afterwards.</p>
+<p><img alt="bell_002" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663596635.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663596635.png"></p>
+<p>Also, update the ‘All notifications’ list BB with the related user entity information (the ‘UserId’ and identity ‘Id’). Just like this:</p>
+<p><img alt="bell_003" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663597072.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663597072.png"></p>
+<blockquote>
+<p>We also save the entity nicely in the ‘entities’ folder of our project…correct? I love you too! &#x1F618;</p>
+</blockquote>
+<p>Now, let’s publish it all and create some instances of the notification entity. Make sure to use some variety of data with also other related user accounts. The next step is to assess our ‘NotificationsByUserId’ webservice operation!</p>
+<p><img alt="bell_004" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663596855.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663596855.png"></p>
+<p>…</p>
+<p>The ‘All notifications’ list will show all entity instances, but we only would like to get ‘notified’ on our own notifications! Well, we exposed a nice webservice for this which we can evaluate with the ‘Web Service Interface Explorer’ artifact. Find it and try it out with a valid ‘UserId’ as parameter:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">SOAP:Envelope</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">SOAP:Body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">NotificationsByUserId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">UserId</span>&gt;</span>3<span class="tag">&lt;/<span class="name">UserId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">NotificationsByUserId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">SOAP:Body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">SOAP:Envelope</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>This is our response which is the input for the next step where we built a custom notification ‘Bell’ icon!</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">data</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">NotificationsByUserIdResponse</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- first entry --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">notification</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">notification-id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Id</span>&gt;</span>1<span class="tag">&lt;/<span class="name">Id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ItemId</span>&gt;</span>080027c2550fa1ed8e08aaad8e923151.1<span class="tag">&lt;/<span class="name">ItemId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">notification-id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ntf_trigger_type</span>&gt;</span>event<span class="tag">&lt;/<span class="name">ntf_trigger_type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ntf_message</span>&gt;</span>Hello words...<span class="tag">&lt;/<span class="name">ntf_message</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ntf_is_read</span>&gt;</span>false<span class="tag">&lt;/<span class="name">ntf_is_read</span>&gt;</span></span><br><span class="line">      ...</span><br><span class="line">      <span class="tag">&lt;<span class="name">to_one_user</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Identity-id</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">Id</span>&gt;</span>3<span class="tag">&lt;/<span class="name">Id</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">ItemId</span>&gt;</span>F8B156E1037111E6E9CB0FBF3334FBBF.3<span class="tag">&lt;/<span class="name">ItemId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Identity-id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">to_one_user</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">notification</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- second entry --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">notification</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">notification-id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Id</span>&gt;</span>2<span class="tag">&lt;/<span class="name">Id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ItemId</span>&gt;</span>080027c2550fa1ed8e08aaad8e923151.2<span class="tag">&lt;/<span class="name">ItemId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">notification-id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ntf_trigger_type</span>&gt;</span>condition<span class="tag">&lt;/<span class="name">ntf_trigger_type</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ntf_message</span>&gt;</span>Conditional message<span class="tag">&lt;/<span class="name">ntf_message</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ntf_is_read</span>&gt;</span>true<span class="tag">&lt;/<span class="name">ntf_is_read</span>&gt;</span></span><br><span class="line">      ...</span><br><span class="line">      <span class="tag">&lt;<span class="name">to_one_user</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Identity-id</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">Id</span>&gt;</span>3<span class="tag">&lt;/<span class="name">Id</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">ItemId</span>&gt;</span>F8B156E1037111E6E9CB0FBF3334FBBF.3<span class="tag">&lt;/<span class="name">ItemId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">Identity-id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">to_one_user</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">notification</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">NotificationsByUserIdResponse</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">data</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>What about the ‘All notifications’ list at runtime? Well, you can secure it so only the ‘Administration’ role can access it. The end-user only needs a new filtered list for his “own” notifications! This filtering is a bit out of scope for the post as it requires a small workaround trick to make it happen. Why? Well, you need a dynamic filter which can only read a specific value not directly available to make a satisfying check. In small steps to get you a simple glimpse on this thought:</p>
+<ul>
+<li>Create a ‘helper’ property <code>ntf_user_id</code> (not shown anywhere!)</li>
+<li>We set the value of this property with an event type of Rule BB on the relation change ‘toOneUser’; You can name it <code>e_on_rel_change_set_user_id</code>. So, when you “set” a new related user for the notification it will go off!</li>
+<li>The rule will start a small short-lived BPM (<code>bpm_set_user_id</code>) calling a ‘special’ runtime reference webservice with name <code>GetUserDetails</code> of ‘Method Set Notification 1.0’ which will update our ‘helper’ property with a valid value. Why this specific service? Well, it’s the only service returning a valid ‘UserId’ which we can check in the filtered list! A quick double-check BPM from my side:</li>
+</ul>
+<p><img alt="bell_005" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663688164.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663688164.png"></p>
+<p>With the “consolidated” view of the message map for your reference:</p>
+<p><img alt="bell_006" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663688247.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663688247.png"></p>
+<ul>
+<li>Our new list will have a filter like this <code>ntf_user_id equals to $(targetUser())</code>. The value of ‘targetUser()’ will return the current logged in UserId, so now you know why we need to do it like this as there is no other way to dynamically check a related user entity instance…Comment me if you don’t agree on this one and if you see another entry?</li>
+</ul>
+</blockquote>
+<p>Nice, everything cleared out. Our notification list is ready; Time for a small customization hack to show a solid bell icon when we have an “unread” notification on our name! &#x1F60E;</p>
+<hr>
+<h4 id="The-bell-icon"><a href="#The-bell-icon" class="headerlink" title="The bell icon"></a>The bell icon</h4><p>For this part of the post, I follow my own <a href="/2021/07/16/103_your_first_baby_steps_on_working_with_html5_sdk">HTML5 post</a> and end up with a structure like this in my project:</p>
+<p><img alt="bell_007" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663769809.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663769809.png"></p>
+<p>This is the start content of the ‘playground.htm’ file:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">title</span>&gt;</span>Notification bar<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"../../app/start/web/startup.css"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/cordys/thirdparty/jquery/jquery.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/cordys/html5/cordys.html5sdk.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./../js/playground.js"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello Notifications<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>This is the start content for ‘playground.js’ file:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hello world...'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Other notes:</p>
+<ul>
+<li><a href="https://fontawesome.com/search?q=bell" target="_blank" rel="noopener">Here</a> you can find the bell SVG images; Just download them and upload them to the project folder.</li>
+<li>After publication, you can check these URLs for content validation:<br>1 <code>http://192.168.56.107:8080/home/appworks_tips/nl-bos-gen-assets/html/playground.htm</code><br>2 <code>http://192.168.56.107:8080/home/appworks_tips/nl-bos-gen-assets/js/playground.js</code><br>3 <code>http://192.168.56.107:8080/home/appworks_tips/nl-bos-gen-assets/images/svg/bell-regular.svg</code><br>4 <code>http://192.168.56.107:8080/home/appworks_tips/nl-bos-gen-assets/images/svg/bell-solid.svg</code></li>
+</ul>
+</blockquote>
+<p>Open the <code>&lt;F12&gt;</code> developer tools of the browser to double-check the jQuery document ready console log! Once done, we go to the next step where we create a new homepage (name it <code>hp_main</code>) with ‘Lists’, ‘Results’, and ‘Web Content’ panels; The last one is of height 7%. This homepage will replace the default homepage of the platform.</p>
+<p><img alt="bell_008" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663770707.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663770707.png"></p>
+<blockquote>
+<p>This is the relative URL (including the current ‘userId’) behind the ‘Web Content’ panel: <code>./../../../nl-bos-gen-assets/html/playground.htm?userId={User.Identity.Id}</code></p>
+</blockquote>
+<p>In runtime, you’ll see this result:</p>
+<p><img alt="bell_009" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663770851.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663770851.png"></p>
+<blockquote>
+<p>If you’re using a regular test account (like we good low-coders do!), you need to set the runtime security on the homepage document context menu!</p>
+</blockquote>
+<p>Next step…A simple one! Show the bell icon! It’s a small update in the body of the HTML file:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: right; margin-right: 15px; margin-top: 10px;"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">id</span>=<span class="string">"regular"</span> <span class="attr">src</span> = <span class="string">"../images/svg/bell-regular.svg"</span> <span class="attr">alt</span>=<span class="string">"No notifications"</span> <span class="attr">style</span>=<span class="string">"width: 32px;"</span>/&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">id</span>=<span class="string">"solid"</span> <span class="attr">src</span> = <span class="string">"../images/svg/bell-solid.svg"</span> <span class="attr">alt</span>=<span class="string">"Notifications!"</span> <span class="attr">style</span>=<span class="string">"width: 32px; display: none;"</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Publish the file and refresh the browser; Or even better…Use an ‘Incognito’ browser where things just refresh nicer without annoying caches! The only thing left is the JavaScript implementation with this logic in mind:</p>
+<ol>
+<li>Get a grip of the ‘userId’ parameter sent with the homepage ‘Web Content’ panel</li>
+<li>Call our ‘NotificationsUnReadByUserId’ webservice with the ‘userId’ as parameter value</li>
+<li>On success, we can check if an unread notification is found and switch to the ‘solid’ bell icon!</li>
+<li>Finally, we want to poll (every 30 sec.) the webservice for new unread notifications…</li>
+</ol>
+<p>Double check this simple and readable implementation (watch the case-sensitivity for ‘userId’!):</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hello world...'</span>);</span><br><span class="line"></span><br><span class="line">    $.urlParam = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> results = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'[\?&amp;]'</span> + name + <span class="string">'=([^&amp;#]*)'</span>).exec(<span class="built_in">window</span>.location.href);</span><br><span class="line">        <span class="keyword">if</span> (results == <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> results[<span class="number">1</span>] || <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> userId = <span class="built_in">decodeURIComponent</span>($.urlParam(<span class="string">'userId'</span>));</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"userId:"</span>, userId);</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">handler</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        $.cordys.ajax(&#123;</span><br><span class="line">            method: <span class="string">"NotificationsByUserId"</span>,</span><br><span class="line">            namespace: <span class="string">"http://schemas/aw_tipsgeneric/notification/operations"</span>,</span><br><span class="line">            parameters: &#123;</span><br><span class="line">                <span class="string">"UserId"</span>: userId</span><br><span class="line">            &#125;,</span><br><span class="line">            success: successFunction,</span><br><span class="line">            error: errorFunction</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">successFunction</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"Response:"</span>, <span class="built_in">JSON</span>.stringify(response));</span><br><span class="line">            $.each(response, <span class="function"><span class="keyword">function</span>(<span class="params">entry, data</span>) </span>&#123;</span><br><span class="line">                <span class="keyword">if</span> (entry.includes(<span class="string">"notification"</span>)) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (<span class="built_in">String</span>(data.ntf_is_read).toLowerCase() == <span class="string">"false"</span>) &#123;</span><br><span class="line">                        <span class="comment">//found unread notification</span></span><br><span class="line">                        $(<span class="string">"#regular"</span>).css(<span class="string">"display"</span>, <span class="string">"none"</span>);</span><br><span class="line">                        $(<span class="string">"#solid"</span>).css(<span class="string">"display"</span>, <span class="string">"inline"</span>);</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        $(<span class="string">"#regular"</span>).css(<span class="string">"display"</span>, <span class="string">"inline"</span>);</span><br><span class="line">                        $(<span class="string">"#solid"</span>).css(<span class="string">"display"</span>, <span class="string">"none"</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">errorFunction</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"Error:"</span>, error);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    handler();</span><br><span class="line">    setInterval(handler, <span class="number">30</span> * <span class="number">1000</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>This is a copy of the JSON response of my success function for reference:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"notification"</span>:&#123;</span><br><span class="line">     <span class="attr">"notification-id"</span>:&#123;</span><br><span class="line">        <span class="attr">"Id"</span>:<span class="string">"327681"</span>, <span class="attr">"ItemId"</span>:<span class="string">"080027c2550fa1ed8caaf031231d98fc.327681"</span></span><br><span class="line">     &#125;,</span><br><span class="line">     <span class="attr">"ntf_trigger_type"</span>:<span class="string">"event"</span>, <span class="attr">"ntf_message"</span>:<span class="string">"hello"</span>, <span class="attr">"ntf_is_read"</span>:<span class="string">"false"</span>,</span><br><span class="line">     <span class="attr">"Title"</span>:&#123;</span><br><span class="line">        <span class="attr">"Value"</span>:<span class="string">"notification-327681"</span></span><br><span class="line">     &#125;,</span><br><span class="line">     <span class="attr">"to_one_user"</span>:&#123;</span><br><span class="line">        <span class="attr">"Identity-id"</span>:&#123;</span><br><span class="line">           <span class="attr">"Id"</span>:<span class="string">"4"</span>, <span class="attr">"ItemId"</span>:<span class="string">"F8B156E1037111E6E9CB0FBF3334FBBF.4"</span></span><br><span class="line">        &#125;</span><br><span class="line">     &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">"notification"</span>:&#123;</span><br><span class="line">     <span class="attr">"notification-id"</span>:&#123;</span><br><span class="line">        <span class="attr">"Id"</span>:<span class="string">"655361"</span>, <span class="attr">"ItemId"</span>:<span class="string">"080027c2550fa1ed8caaf031231d98fc.655361"</span></span><br><span class="line">     &#125;,</span><br><span class="line">     <span class="attr">"ntf_trigger_type"</span>:<span class="string">"event"</span>, <span class="attr">"ntf_message"</span>:<span class="string">"world"</span>, <span class="attr">"ntf_is_read"</span>:<span class="string">"true"</span>,</span><br><span class="line">     <span class="attr">"Title"</span>:&#123;</span><br><span class="line">        <span class="attr">"Value"</span>:<span class="string">"notification-655361"</span></span><br><span class="line">     &#125;,</span><br><span class="line">     <span class="attr">"to_one_user"</span>:&#123;</span><br><span class="line">        <span class="attr">"Identity-id"</span>:&#123;</span><br><span class="line">           <span class="attr">"Id"</span>:<span class="string">"3"</span>, <span class="attr">"ItemId"</span>:<span class="string">"F8B156E1037111E6E9CB0FBF3334FBBF.3"</span></span><br><span class="line">        &#125;</span><br><span class="line">     &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>Well, looks like the trick is working…at least for my post! &#x1F60E;</p>
+<p><img alt="bell_010" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663774335.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/158_building_a_custom_notification_icon_in_runtime_1663774335.png"></p>
+<hr>
+<h4 id="Extension-points"><a href="#Extension-points" class="headerlink" title="Extension points"></a>Extension points</h4><p>This post shows a simple demonstration of a nice notification bell, but off-course we can extend this with these features:</p>
+<ul>
+<li>Use a nice <a href="https://getbootstrap.com/docs/4.0/components/badge/" target="_blank" rel="noopener">bootstrap badge</a> as notification “Badge” which includes a number of unread items!</li>
+<li>Make the refresh poll interval configurable via the <a href="/2022/04/29/135_working_with_feature_toggles">global project configuration entity</a>.</li>
+<li>Make the icon clickable, so it opens a notifications homepage or a panel layout (as modal popup!?).</li>
+<li>Built a notification <strong>E</strong>ntity <strong>R</strong>elation <strong>D</strong>iagram like this to make it configurable when notification instances are created. With this implementation you can create ‘Rule’ BBs starting BPMs checking the configurations and create ‘Notification’ instances based on the input. I know…It’s next level and requires BPM craftsmanship with webservice calls but could be an interesting solution for your project!</li>
+</ul>
+<p><img alt="bell_011" class="post-img b-lazy" href="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/erd.png" data-src="/images/posts/2022/158_building_a_custom_notification_icon_in_runtime/erd.png"></p>
+<blockquote>
+<p>Use your imagination and creativity!</p>
+</blockquote>
+<hr>
+<p>A niceeeee “DONE” &#x1F60E; where we implemented a simple and efficient bell notification for the end-users when and ‘unread’ notification is waiting for action. It’s now all up to you to implement the extensions, so it can fit into your own solution. Have a happy crafting weekend, and I see you in a new post for next week…cheers!</p>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="The " new way" of eis connector usage" href="/2022/12/09/159_the_new_way_of_eis_connector_usage/">
+            <i class="fa-solid fa-backward"></i> The "new way" of EIS connector usage
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Update multiple items in a grid (aka bulk-update)" href="/2022/11/25/157_update_multiple_items_in_grid/">
+            Update multiple items in a grid (aka bulk-update) <i class="fa-solid fa-forward"></i>
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#The-bell-icon"><span class="toc-text">The bell icon</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Extension-points"><span class="toc-text">Extension points</span></a></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2024/03/08/215_the_cache_of_dynamic_enums_exposed/">Exposed and exploited; The dark side of Dynamic ENUM caches</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/03/01/214_get_history_data_after_entity_is_gone/">Shocking betrayal; Unearth disturbing history data after an entity instance disappears</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/23/213_cleaning_psl_data/">Unbelievable hacks to supercharge your PSL data cleaning</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/16/212_dive_into_deployment_models/">Unveiling the secrets of the 'Deployment Models' artifact; Boost your tech IQ instantly</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/09/211_install_awp_in_distributed_mode_ha/">Mastering AppWorks; The essential steps for a distributed mode installation</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/02/210_install_cars_in_distributed_mode_ha/">Revolutionize your ride; Unveiling the ultimate distributed mode for CARS</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/01/26/209_deadlines_and_escalation_with_alerts/">Supercharge your knowledge; Watch the mastery of deadlines, escalations, and alerts</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/01/19/208a_update_on_24_1/">A brand-new year, with a brand-new release; AppWorks 24.1 is GA for a features review</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Release/">Release</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/AI/" style="font-size: 14px;">AI</a> <a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/API/" style="font-size: 14.63px;">API</a> <a href="/tags/Abstract/" style="font-size: 14px;">Abstract</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/ActiveMQ/" style="font-size: 14.63px;">ActiveMQ</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 15.88px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 15.88px;">Anniversary</a> <a href="/tags/Annotation/" style="font-size: 14px;">Annotation</a> <a href="/tags/Apache/" style="font-size: 14.63px;">Apache</a> <a href="/tags/ApacheDirectoryStudio/" style="font-size: 14px;">ApacheDirectoryStudio</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Archive/" style="font-size: 14.63px;">Archive</a> <a href="/tags/Artifact/" style="font-size: 15.25px;">Artifact</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/Audit/" style="font-size: 14px;">Audit</a> <a href="/tags/Authentication/" style="font-size: 14.63px;">Authentication</a> <a href="/tags/BPM/" style="font-size: 22.75px;">BPM</a> <a href="/tags/Base64/" style="font-size: 14px;">Base64</a> <a href="/tags/Brava/" style="font-size: 14px;">Brava!</a> <a href="/tags/BuildingBlock/" style="font-size: 15.88px;">BuildingBlock</a> <a href="/tags/BuildingBlocks/" style="font-size: 15.25px;">BuildingBlocks</a> <a href="/tags/BulkUpdate/" style="font-size: 14px;">BulkUpdate</a> <a href="/tags/BusinessID/" style="font-size: 14px;">BusinessID</a> <a href="/tags/BusinessIdentifier/" style="font-size: 14px;">BusinessIdentifier</a> <a href="/tags/BusinessWorkspace/" style="font-size: 14px;">BusinessWorkspace</a> <a href="/tags/CAF/" style="font-size: 14px;">CAF</a> <a href="/tags/CARS/" style="font-size: 15.25px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 15.25px;">CD/CI</a> <a href="/tags/CIM/" style="font-size: 14px;">CIM</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMC/" style="font-size: 14px;">CMC</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 16.5px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/CaseInstanceMonitor/" style="font-size: 14px;">CaseInstanceMonitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Charts/" style="font-size: 14px;">Charts</a> <a href="/tags/ChatGPT/" style="font-size: 14px;">ChatGPT</a> <a href="/tags/Cleaning/" style="font-size: 14.63px;">Cleaning</a> <a href="/tags/Cloning/" style="font-size: 14px;">Cloning</a> <a href="/tags/Cloud/" style="font-size: 14px;">Cloud</a> <a href="/tags/Condition/" style="font-size: 14.63px;">Condition</a> <a href="/tags/ConfigEntity/" style="font-size: 14px;">ConfigEntity</a> <a href="/tags/ConnectedWorkspace/" style="font-size: 14px;">ConnectedWorkspace</a> <a href="/tags/Connector/" style="font-size: 15.88px;">Connector</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Content/" style="font-size: 16.5px;">Content</a> <a href="/tags/ContentServer/" style="font-size: 16.5px;">ContentServer</a> <a href="/tags/Create/" style="font-size: 14px;">Create</a> <a href="/tags/Custom/" style="font-size: 14px;">Custom</a> <a href="/tags/Customization/" style="font-size: 19px;">Customization</a> <a href="/tags/Data/" style="font-size: 14px;">Data</a> <a href="/tags/Database/" style="font-size: 17.13px;">Database</a> <a href="/tags/DatabaseMetadata/" style="font-size: 14.63px;">DatabaseMetadata</a> <a href="/tags/Date/" style="font-size: 14px;">Date</a> <a href="/tags/DateTime/" style="font-size: 14px;">DateTime</a> <a href="/tags/Deadline/" style="font-size: 14px;">Deadline</a> <a href="/tags/Debugging/" style="font-size: 14.63px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/DeploymentModels/" style="font-size: 14px;">DeploymentModels</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 17.75px;">Digital</a> <a href="/tags/Distributed/" style="font-size: 14.63px;">Distributed</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/Documentation/" style="font-size: 14px;">Documentation</a> <a href="/tags/DocumentstoreConnector/" style="font-size: 15.25px;">DocumentstoreConnector</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/DynamicEnum/" style="font-size: 14px;">DynamicEnum</a> <a href="/tags/EISConnector/" style="font-size: 14.63px;">EISConnector</a> <a href="/tags/Email/" style="font-size: 14.63px;">Email</a> <a href="/tags/EnterpriseWorld/" style="font-size: 19px;">EnterpriseWorld</a> <a href="/tags/Entity/" style="font-size: 20.25px;">Entity</a> <a href="/tags/EntityContext/" style="font-size: 14px;">EntityContext</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Escalation/" style="font-size: 14px;">Escalation</a> <a href="/tags/Explorer/" style="font-size: 14.63px;">Explorer</a> <a href="/tags/Expressions/" style="font-size: 14px;">Expressions</a> <a href="/tags/Feature/" style="font-size: 14px;">Feature</a> <a href="/tags/FileConnector/" style="font-size: 14px;">FileConnector</a> <a href="/tags/Filter/" style="font-size: 14px;">Filter</a> <a href="/tags/Flag/" style="font-size: 14px;">Flag</a> <a href="/tags/ForLoop/" style="font-size: 14px;">ForLoop</a> <a href="/tags/Form/" style="font-size: 19.63px;">Form</a> <a href="/tags/Function/" style="font-size: 14px;">Function</a> <a href="/tags/Gateway/" style="font-size: 14.63px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Google/" style="font-size: 14px;">Google</a> <a href="/tags/Graphics/" style="font-size: 14px;">Graphics</a> <a href="/tags/Grid/" style="font-size: 14px;">Grid</a> <a href="/tags/HTML5/" style="font-size: 14px;">HTML5</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/HighAvailability/" style="font-size: 14.63px;">HighAvailability</a> <a href="/tags/History/" style="font-size: 14px;">History</a> <a href="/tags/Homepage/" style="font-size: 14.63px;">Homepage</a> <a href="/tags/HowTo/" style="font-size: 16.5px;">HowTo</a> <a href="/tags/Icons/" style="font-size: 14px;">Icons</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14.63px;">Identity</a> <a href="/tags/IdentityPackage/" style="font-size: 15.25px;">IdentityPackage</a> <a href="/tags/InformationHub/" style="font-size: 14px;">InformationHub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.13px;">Installation</a> <a href="/tags/IntelligentViewing/" style="font-size: 14.63px;">IntelligentViewing</a> <a href="/tags/Interceptor/" style="font-size: 14px;">Interceptor</a> <a href="/tags/IsTemporaryCopy/" style="font-size: 14px;">IsTemporaryCopy</a> <a href="/tags/ItemStatus/" style="font-size: 14px;">ItemStatus</a> <a href="/tags/JMS/" style="font-size: 14.63px;">JMS</a> <a href="/tags/JMeter/" style="font-size: 14px;">JMeter</a> <a href="/tags/JSON/" style="font-size: 15.25px;">JSON</a> <a href="/tags/JShell/" style="font-size: 14px;">JShell</a> <a href="/tags/JUnit/" style="font-size: 14px;">JUnit</a> <a href="/tags/JXplorer/" style="font-size: 14px;">JXplorer</a> <a href="/tags/Java/" style="font-size: 15.88px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 14.63px;">JavaScript</a> <a href="/tags/JavaUI/" style="font-size: 14px;">JavaUI</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/LDAP/" style="font-size: 14.63px;">LDAP</a> <a href="/tags/LandingPage/" style="font-size: 14px;">LandingPage</a> <a href="/tags/Language/" style="font-size: 14.63px;">Language</a> <a href="/tags/LanguagePack/" style="font-size: 14px;">LanguagePack</a> <a href="/tags/Less/" style="font-size: 14px;">Less</a> <a href="/tags/License/" style="font-size: 14.63px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.88px;">Lifecycle</a> <a href="/tags/LinkDocument/" style="font-size: 14px;">LinkDocument</a> <a href="/tags/LinkedEntity/" style="font-size: 14px;">LinkedEntity</a> <a href="/tags/List/" style="font-size: 14.63px;">List</a> <a href="/tags/LoadBalancing/" style="font-size: 14px;">LoadBalancing</a> <a href="/tags/Logging/" style="font-size: 14px;">Logging</a> <a href="/tags/LongTextProperty/" style="font-size: 14px;">LongTextProperty</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 14.63px;">Management</a> <a href="/tags/Message/" style="font-size: 14px;">Message</a> <a href="/tags/Metadata/" style="font-size: 14px;">Metadata</a> <a href="/tags/Method/" style="font-size: 14px;">Method</a> <a href="/tags/Migration/" style="font-size: 14px;">Migration</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Mockito/" style="font-size: 14px;">Mockito</a> <a href="/tags/Model/" style="font-size: 14px;">Model</a> <a href="/tags/Modeling/" style="font-size: 14.63px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 14.63px;">Monitoring</a> <a href="/tags/NGINX/" style="font-size: 14px;">NGINX</a> <a href="/tags/Northwind/" style="font-size: 14px;">Northwind</a> <a href="/tags/Notification/" style="font-size: 14px;">Notification</a> <a href="/tags/OKTA/" style="font-size: 14px;">OKTA</a> <a href="/tags/OTDS/" style="font-size: 17.75px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 23.38px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Order/" style="font-size: 14px;">Order</a> <a href="/tags/Organization/" style="font-size: 15.25px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/PSL/" style="font-size: 14px;">PSL</a> <a href="/tags/Package/" style="font-size: 15.25px;">Package</a> <a href="/tags/Parallel/" style="font-size: 14px;">Parallel</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/Pattern/" style="font-size: 14px;">Pattern</a> <a href="/tags/Personal/" style="font-size: 14px;">Personal</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 14px;">Postman</a> <a href="/tags/PowerMockito/" style="font-size: 14px;">PowerMockito</a> <a href="/tags/Preferences/" style="font-size: 14px;">Preferences</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/ProgressionBar/" style="font-size: 14px;">ProgressionBar</a> <a href="/tags/Project/" style="font-size: 15.25px;">Project</a> <a href="/tags/Projects/" style="font-size: 14px;">Projects</a> <a href="/tags/Properties/" style="font-size: 14.63px;">Properties</a> <a href="/tags/Property/" style="font-size: 15.25px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/RHEL/" style="font-size: 14px;">RHEL</a> <a href="/tags/ReST/" style="font-size: 15.88px;">ReST</a> <a href="/tags/ReST-Gateway/" style="font-size: 14px;">ReST Gateway</a> <a href="/tags/Recap/" style="font-size: 15.88px;">Recap</a> <a href="/tags/RegularExpression/" style="font-size: 14.63px;">RegularExpression</a> <a href="/tags/Relations/" style="font-size: 15.25px;">Relations</a> <a href="/tags/Release/" style="font-size: 20.88px;">Release</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/ResultList/" style="font-size: 15.25px;">ResultList</a> <a href="/tags/Reusability/" style="font-size: 14px;">Reusability</a> <a href="/tags/Reverse-proxy/" style="font-size: 14px;">Reverse proxy</a> <a href="/tags/Role/" style="font-size: 14px;">Role</a> <a href="/tags/Roles/" style="font-size: 14.63px;">Roles</a> <a href="/tags/Rule/" style="font-size: 14.63px;">Rule</a> <a href="/tags/Rules/" style="font-size: 14px;">Rules</a> <a href="/tags/Runtime-Security/" style="font-size: 14px;">Runtime Security</a> <a href="/tags/SAML/" style="font-size: 14px;">SAML</a> <a href="/tags/SDK/" style="font-size: 14.63px;">SDK</a> <a href="/tags/SOAP/" style="font-size: 15.25px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 14.63px;">SVN</a> <a href="/tags/Scheduler/" style="font-size: 14px;">Scheduler</a> <a href="/tags/Search/" style="font-size: 14px;">Search</a> <a href="/tags/Section/" style="font-size: 14px;">Section</a> <a href="/tags/Sections/" style="font-size: 14px;">Sections</a> <a href="/tags/Security/" style="font-size: 14px;">Security</a> <a href="/tags/Selenium/" style="font-size: 14px;">Selenium</a> <a href="/tags/Service/" style="font-size: 14px;">Service</a> <a href="/tags/ServiceContainer/" style="font-size: 14.63px;">ServiceContainer</a> <a href="/tags/Setup/" style="font-size: 15.88px;">Setup</a> <a href="/tags/ShortLived/" style="font-size: 14px;">ShortLived</a> <a href="/tags/SimpleClient/" style="font-size: 14px;">SimpleClient</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 15.88px;">Software</a> <a href="/tags/Solutions/" style="font-size: 14px;">Solutions</a> <a href="/tags/SourceControl/" style="font-size: 14px;">SourceControl</a> <a href="/tags/Sources/" style="font-size: 14px;">Sources</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Storage/" style="font-size: 14px;">Storage</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/SubProcess/" style="font-size: 14px;">SubProcess</a> <a href="/tags/Subtyping/" style="font-size: 14.63px;">Subtyping</a> <a href="/tags/Sync/" style="font-size: 14px;">Sync</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/SynchronizedPartition/" style="font-size: 14px;">SynchronizedPartition</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 15.25px;">Task</a> <a href="/tags/TaskLayout/" style="font-size: 14px;">TaskLayout</a> <a href="/tags/Tasks/" style="font-size: 14.63px;">Tasks</a> <a href="/tags/Team/" style="font-size: 14px;">Team</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Test/" style="font-size: 14px;">Test</a> <a href="/tags/Testing/" style="font-size: 15.25px;">Testing</a> <a href="/tags/Theme/" style="font-size: 16.5px;">Theme</a> <a href="/tags/Time/" style="font-size: 14px;">Time</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/Title/" style="font-size: 14px;">Title</a> <a href="/tags/Toggle/" style="font-size: 14px;">Toggle</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/Tool/" style="font-size: 14px;">Tool</a> <a href="/tags/Tools/" style="font-size: 14.63px;">Tools</a> <a href="/tags/Transformation/" style="font-size: 14px;">Transformation</a> <a href="/tags/Translation/" style="font-size: 14.63px;">Translation</a> <a href="/tags/UDDI/" style="font-size: 14.63px;">UDDI</a> <a href="/tags/UnInstallation/" style="font-size: 14px;">UnInstallation</a> <a href="/tags/Unicode/" style="font-size: 14px;">Unicode</a> <a href="/tags/Update/" style="font-size: 18.38px;">Update</a> <a href="/tags/Upgrade/" style="font-size: 14px;">Upgrade</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/ValueAssistance/" style="font-size: 15.25px;">ValueAssistance</a> <a href="/tags/Version/" style="font-size: 14px;">Version</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/Video/" style="font-size: 14px;">Video</a> <a href="/tags/Viewer/" style="font-size: 14px;">Viewer</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WSAppServer/" style="font-size: 14px;">WSAppServer</a> <a href="/tags/WebLibraryDefinition/" style="font-size: 14.63px;">WebLibraryDefinition</a> <a href="/tags/Webservice/" style="font-size: 19.63px;">Webservice</a> <a href="/tags/WhileLoop/" style="font-size: 14px;">WhileLoop</a> <a href="/tags/Wizard/" style="font-size: 14px;">Wizard</a> <a href="/tags/Worklist/" style="font-size: 14px;">Worklist</a> <a href="/tags/Workqueue/" style="font-size: 14.63px;">Workqueue</a> <a href="/tags/Workspace/" style="font-size: 15.88px;">Workspace</a> <a href="/tags/XDS/" style="font-size: 14.63px;">XDS</a> <a href="/tags/XML/" style="font-size: 15.25px;">XML</a> <a href="/tags/XPath/" style="font-size: 15.25px;">XPath</a> <a href="/tags/XSLT/" style="font-size: 14px;">XSLT</a> <a href="/tags/xECM/" style="font-size: 16.5px;">xECM</a> <a href="/tags/xForm/" style="font-size: 16.5px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+
+	
+
+
+
+<div id="download002" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps prototyping booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download002" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="tfokgrtbsp">
+            <p><input class="search-input" type="text" placeholder="First name" name="UIMy41yrHk" id="id-UIMy41yrHk"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="frlQMmEVB9" id="id-frlQMmEVB9"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="p5xcHl0BfA" id="id-p5xcHl0BfA"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="download" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps fundamentals booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="qdlxpohveb">
+            <p><input class="search-input" type="text" placeholder="First name" name="9aiQvAsyHa" id="id-9aiQvAsyHa"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="pKdGB3hCf6" id="id-pKdGB3hCf6"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="8azv3a7ZO9" id="id-8azv3a7ZO9"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="hosting" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Plan you strategic AppWorks hosting</h1>
+        <h2 class="site-description">You will receive a mail with information on next steps</h2>
+        <form name="hosting" action="https://appworks-tips.email-provider.eu/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="ojenuvc25g">
+            <p><input class="search-input" type="text" placeholder="First name" name="kZYzubjXZ1" id="id-kZYzubjXZ1"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="DU7uu8Hd1B" id="id-DU7uu8Hd1B"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="7" name="waY3MUqJDo" id="id-waY3MUqJDo" placeholder="Turn you wish into a command"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="OTyYwKXWRE" id="id-OTyYwKXWRE"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><i>AppWorks hosting is a payable service handled via monthly invoicing. This means that you will be billed for the service <br>after it has been provided to you under our signed service agreement which we put in place after our free call.</i></p>
+            <p><input class="submit-input" type="submit" value="Take action!"></p>
+        </form>
+    </div>
+</div>
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="google" class="search-overlay subscribe-overlay">
+        <div class="search-form" style="height:8rem;">
+            
+            <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+            
+            <script async src="https://cse.google.com/cse.js?cx=784555e4960d85d09"></script>
+            <div id="cse" style="width: 80%; margin: 0 auto; text-align:left">
+            <div class="gcse-search"></div>
+            </div>
+            <a class="search-overlay-close" href="#"></a>
+        </div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback or any question</h1>
+        <h2 class="site-description">Send back any feedback or question so we can inspect and adapt our features or help you on your own journey.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback or any question"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Send"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2024
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Building a custom notification icon in runtime</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+
+<script src="/js/mix/post-lazy.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av.js"></script>-->
+
+<script src="/js/av.js"></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>

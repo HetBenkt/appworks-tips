@@ -1,7 +1,1982 @@
-<html><head></head><body>{# 文章页 #}
-{% extends '_layout.swig' %}
-{% import '_partials/post.swig' as template %}
-{% block content %}
-{% include '_partials/header.swig' %}
-{{ template.tpl() }}
-{% endblock %}</body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+<link rel="stylesheet" href="/css/products.css">
+
+	
+<link rel="stylesheet" href="/css/nav.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+    
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y597KBTG4E"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-Y597KBTG4E');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Discover the secret to effortlessly exporting your project model for maximum reusability | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="Time to reuse your entities the extended way.">
+
+	
+	<meta name="keywords" content="appworks, project, model, reusability">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Discover the secret to effortlessly exporting your project model for maximum reusability | AppWorks Tips">
+	<meta property="og:description" content="Time to reuse your entities the extended way.">
+	<meta property="og:url" content="https://appworks-tips.com/2023/04/07/174_export_project_model_for_reusability/">
+
+	
+	<meta property="article:published_time" content="2023-04-07T12:04:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2023/04/07/174_export_project_model_for_reusability/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+        <div class="site-header-sponsor">
+            
+                <a href="https://bos-ictservices.nl" target="_blank">
+                <img class="sponsor-image" src="https://bos-ictservices.nl/img/logo.png">
+                </a>
+            
+                <a href="https://github.com/sponsors/HetBenkt" target="_blank">
+                <img class="sponsor-image" src="/images/sponsor_here.png">
+                </a>
+            
+        </div>
+        
+        
+
+<nav class="site-nav">
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                
+                
+                    <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+                
+                
+                
+                    <a href="/installation" title="INSTALLATION 23.4">INSTALLATION 23.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
+  <g id="surface1">
+   <path d="m7.18359,7.74219c-0.29687,0.125 -0.39062,0.36328 -0.27734,0.6289l0.90234,-0.3789c-0.09765,-0.23047 -0.39062,-0.34766 -0.625,-0.25zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_1"/>
+   <path d="m14.48047,8.67969l1.12109,-0.67969l-1.12109,-0.67969l0.95312,-0.90234l-1.23828,-0.43359l0.75,-1.07813l-1.30468,-0.16406l0.50781,-1.21094l-1.30469,0.10938l0.24219,-1.28907l-1.25781,0.375l-0.02735,-1.30859l-1.15234,0.62891l-0.30078,-1.27735l-0.99219,0.85938l-0.5625,-1.1875l-0.79297,1.04297l-0.79297,-1.04297l-0.5625,1.1875l-0.99219,-0.85938l-0.30078,1.27735l-1.15234,-0.62891l-0.02734,1.30859l-1.25782,-0.375l0.2461,1.28907l-1.3086,-0.10938l0.50782,1.21094l-1.30079,0.16406l0.7461,1.07813l-1.23828,0.43359l0.95312,0.90234l-1.12109,0.67969l1.12109,0.67969l-0.95312,0.90234l1.23828,0.42969l-0.75,1.07812l1.30469,0.16797l-0.50782,1.21094l1.3086,-0.10937l-0.2461,1.28906l1.25782,-0.37891l0.02734,1.3125l1.15234,-0.6289l0.30078,1.27734l0.99219,-0.85938l0.5586,1.1875l0.79687,-1.04296l0.79297,1.04296l0.5625,-1.1875l0.99219,0.85938l0.30078,-1.27734l1.15234,0.6289l0.02735,-1.30859l1.25781,0.375l-0.2461,-1.28906l1.3086,0.10937l-0.50781,-1.21094l1.30468,-0.16406l-0.75,-1.08203l1.23828,-0.42969l-0.95312,-0.90234zm-9.05859,2.1289l-0.5586,-1.32421c-0.10547,-0.25 -0.26562,-0.44141 -0.54687,-0.32032c-0.30469,0.12891 -0.30469,0.35938 -0.16797,0.67969l0.53906,1.27344l-0.99219,0.42187l-1.05859,-2.5039l0.90625,-0.38282l0.16406,0.39063c0.09766,-0.39453 0.27344,-0.66016 0.65235,-0.82031c0.65625,-0.27735 1.13281,-0.02344 1.42187,0.66406l0.63281,1.5l-0.99218,0.42187zm2.58984,-1.01171c-0.80078,0.33984 -1.61719,0.14453 -1.97266,-0.69922c-0.34375,-0.82032 0.04688,-1.60547 0.85157,-1.94532c0.92578,-0.39062 1.7539,0.01172 2.125,0.92579l-1.89844,0.80078c0.1289,0.29687 0.4375,0.39453 0.70312,0.28515c0.15625,-0.0664 0.26953,-0.19922 0.27735,-0.3789l0.95312,-0.40235c0.08985,0.69532 -0.45312,1.16797 -1.03906,1.41407zm3.98828,-1.76954l-1.00781,-1.30468l-0.00781,0.0039l0.26953,1.61328l-0.96875,0.41016l-1.88282,-2.15234l0.96875,-0.41016l1.03516,1.38672l0.01172,-0.00391l-0.26953,-1.71093l0.84375,-0.35547l1.03515,1.38281l0.00782,-0.00391l-0.26563,-1.71093l0.94141,-0.39844l0.25781,2.84375l-0.96875,0.41015zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_2" stroke="null"/>
+  </g>
+ </g>
+
+</svg></a>
+                
+                
+                
+                    <a href="/ci_cd" title="CI/CD">CI/CD</a>
+                
+                
+                
+                    <a href="/products" title="PRODUCTS">PRODUCTS</a>
+                
+                
+                
+                    <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+                
+                
+                
+                    <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+                
+                
+                
+                    <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME">HIRE ME</a>
+                
+                
+                
+                    <a href="/about" title="ABOUT">ABOUT</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <ul class="nav">
+                    <li>
+                        <div class="hire_me_content">
+                        <i class="hire_me_live"></i>
+                        <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME" id="hire_me">HIRE ME</a>
+                        </div>
+                    </li>
+                </ul>
+        
+        
+        
+        
+        
+    </div>
+
+    <div class="search-button">
+
+    
+    <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+        <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+            <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+        </svg> Sponsor
+    </a>
+    
+
+    
+
+    
+        <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </a>
+    
+
+    </div>
+
+    <div class="site-nav-right">
+        
+        <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+            <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+                <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+            </svg> Sponsor
+        </a>
+        
+
+        
+
+        
+            <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            </a>
+        
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback / Question" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2023-04-07T12:00:00.000Z" itemprop="datePublished">
+                    2023-04-7
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Development/">Development</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">Discover the secret to effortlessly exporting your project model for maximum reusability</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2023/174_export_project_model_for_reusability/feature_tag.webp)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>For this post we’ll have an interesting use-case to cover. Long ago I already covered a post about <a href="/2019/09/27/020_how_to_make_abstraction_generalization_and_subtyping_possible/">abstraction/generalization on entities</a>. We also learned about <a href="https://appworks-tips.com/2021/12/17/121_manage_solutions_and_filter_projects/">separating/managing ‘Projects’ within a solution</a> the correct way. What we never covered on this blog site is pulling it one step higher where the whole solution is separating into several workspaces! This is where it gets interesting because we need to think upfront which parts of the solution are “generic” and what parts will be “specific”! We build this post based on a real live project where we are in the front line for deciding what our approach will be. So, let’s see what darkness will fall over our “new way of working”…Or will it only be a shining sun with green hills? &#x1F920;</p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>So, the post has an introduction…Now what? Well, what about a plan? Let’s first describe my scenario we’ll build for this post. It all has to do with a system where we create multiple ‘Request’ items on published/open ‘Publication’ items. A ‘Publication’ can be of a certain type and based on this type a certain flow/lifecycle is followed. So, some publications will follow the same/generic flow and others require a more specific flow. The type of publication can be a ‘Journal article’, a ‘Handbook’, or a ‘Research report’ (or whatever you can produce!); The publication for that ‘type’ will also be of a certain ‘kind’ like ‘Paper’ or ‘Digital’, or both. As said, the publication will follow a certain flow, but is eventually “Open” to make requests on. See a request like getting a copy of the “open” publication, but we can only manage the maximum requests for the maximum number of publications possible…How nice! &#x1F635;<br>Let’s also introduce the following information in a new ‘Request’:</p>
+<ul>
+<li>User specific information</li>
+<li>Optional organization data</li>
+<li>Some project related data</li>
+<li>The “Area” where we need the received publication for (like ‘Research’, ‘Development’, or ‘Other’)</li>
+<li>The “Space” where the received publication will live in (like ‘Internal’, ‘Global’, or ‘Variable’)…Or whatever!?</li>
+<li>All the “Categories” where the request applies to (like ‘Diversity’, ‘Improvement’, ‘Social’, or ‘Talent’)</li>
+</ul>
+<blockquote>
+<p>It’s all fake data but gives an interesting input to the solution we try to create here. Keep in mind that you can only make a request to an ‘Open’ publication and that the request will also follow a certain flow/lifecycle before receiving the publication.</p>
+</blockquote>
+<p>Our ‘Plot’ is in place…What’s next?</p>
+<hr>
+<h4 id="Entity-identification-and-ERD"><a href="#Entity-identification-and-ERD" class="headerlink" title="Entity identification and ERD"></a>Entity identification and ERD</h4><p>Before we start building features it’s always an excellent choice to start with an <strong>E</strong>ntity <strong>R</strong>elation <strong>D</strong>iagram. Why? Well, it provides an overview for the team, you can collaborate around it (make sure you do!), and all team members understand the intention and have a point on the horizon to work to! So, it is particularly important to keep this ERD up to date when you build new features for the solution.</p>
+<p>Based on the description, we can draw a minimal viable ERD like this (just to start the collaboration among team members!):</p>
+<p><img alt="mpk_001" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/erd.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/erd.png"></p>
+<p><em>Notes on the drawing:</em></p>
+<ul>
+<li>I use <a href="https://draw.io/" target="_blank" rel="noopener">draw.io</a> for these types of drawings, but you can use your own tool too</li>
+<li><code>{A}</code> is an indication for ‘Abstraction’; You can use other indicators like <code>{ID}</code> for ‘Identity package’ (when you relate to a ‘User’ entity for example!)</li>
+<li>The reason for the abstraction is that we know upfront each publication will follow its own lifecycle/flow; Otherwise, it was a simple solution to introduce a “type” property!</li>
+<li>Also watch the small indicators on the lines; they tell you if a relation is ‘toOne’, ‘toMany’, or if it’s a required/optional relation…take a close look and “ReThink”!</li>
+<li>The solution will be as configurable as possible; That’s why we have a lot of entities introduced which we can use as dynamic Enum properties…Think about flexibility! Have a look in <a href="/2023/01/20/165_relating_data_vs_saving_data/">this post</a> for the ‘why?’ answer!</li>
+</ul>
+<blockquote>
+<p>After a WhatsApp collaboration with a college on the ERD, we came to an interesting conclusion that the ‘Publication’ entity doesn’t need to be ‘Abstract’! Why? When you don’t make it abstract, you don’t need to create additional workspaces, projects, and subtypes for those publication types that follow the “generic” path…YES! That’s exactly why collaboration is important…Thank you for the input; You know who you are!</p>
+</blockquote>
+<hr>
+<h4 id="Describing-a-flow-per-publication-type"><a href="#Describing-a-flow-per-publication-type" class="headerlink" title="Describing a flow per publication type"></a>Describing a flow per publication type</h4><p>Our ERD introduces us to an abstraction with subtype entities. This is for a reason! We know each “specific” subtype will follow a certain flow. With these flows in place, you make sure to recognize matching patterns which we can move to the generic abstraction entity! Nice…now it’s getting interesting as thinking in patterns is always a challenging thing to do. Especially when you know that in a ‘real’ project the specific flows are not always clear to the project members…Even not for your analyst guy/gal!? You even need to watch out for changes in the future; Flows will change and can fall suddenly under the generic flow! Hmmm…So, how to start thinking when things are uncertain/unclear in the future? Well, just start with the information you have for now and evaluate the solution based on added information! Yes, that’s a great thought, but what if the foundational ERD model gets an update based on new information?…Great question! And that’s exactly why it is a challenging task to think in patterns! For now, we just start with the information we have…To keep the post simple, we make sure the ‘States’ are equal and what is happening in the states is equal for that same state-name. So, we have a choice of this list of states for each specific publication type:</p>
+<ul>
+<li><strong><em>“In draft”</em></strong>; When you create the publication, the lifecycle starts, and this is the first state where we enter an activity to create content and index it with correct metadata.</li>
+<li><strong><em>“For review”</em></strong>; After publication creation, it’s time for a peer review task.</li>
+<li><strong><em>“Prepare for publication”</em></strong>; After review, we do some magic back-office BPM stuff…We just run a dummy BPM!</li>
+<li><strong><em>“Open for requests”</em></strong>; Once done on the preparation, we get ourselves a task to keep track on all the requests coming in (so we see when we reach the max!…remember!?)</li>
+<li><strong><em>“Closed”</em></strong>; On max. reach, we automatically move to the ‘Closed’ state with a final task before archiving.</li>
+<li><strong><em>“Archived”</em></strong>; This state will put the publication to sleep for a GDPA-related retention period…</li>
+</ul>
+<p>Nice, now for the flows we think each specific publication will follow:</p>
+<p><strong><em>Journal article</em></strong></p>
+<p>“In draft” -&gt; “For review” -&gt; “Prepare for publication” -&gt; “Open for requests” -&gt; “Closed” -&gt; “Archived”</p>
+<p><strong><em>Handbook</em></strong></p>
+<p>“For review” -&gt; “Prepare for publication” -&gt; “Open for requests” -&gt; “Closed” -&gt; “Archived”</p>
+<p><strong><em>Research report</em></strong></p>
+<p>“In draft” -&gt; “For review” -&gt; “Prepare for publication” -&gt; “Open for requests” -&gt; “Closed” -&gt; “Archived”</p>
+<p><strong><em>Conference proceeding</em></strong></p>
+<p>“For review” -&gt; “Open for requests” -&gt; “Closed” -&gt; “Archived”</p>
+<p>…</p>
+<p>Do you see the pattern? Do you see where we can ‘Abstract’ things or reuse the same path!? It looks to me like “Journal article” and “Research report” follow the “generic” path here…Keep this in mind for later craftsmanship!</p>
+<blockquote>
+<p>For now, we only focus on the Lifecycle BB, but an entity will have a full set of building blocks that can follow this same mindset…Now you see how hard it is, but it’s still fun to think in these patterns! &#x1F609;</p>
+</blockquote>
+<hr>
+<h4 id="Describing-the-‘Request’-flow"><a href="#Describing-the-‘Request’-flow" class="headerlink" title="Describing the ‘Request’ flow"></a>Describing the ‘Request’ flow</h4><p>Our ‘Request’ flow starts when we have an “Open for requests” publication! Let’s make it simple again and create a flow like this:</p>
+<p>“Registered” -&gt; “In progress” -&gt; “Open for receiving” -&gt; “Received” -&gt; “Closing”</p>
+<ul>
+<li><strong><em>“Registered”</em></strong>; When we drop the request for an open publication into our solution; For now, manually, but we can make some fancy API around it (or use the <a href="/2022/05/13/136a_update_on_22_2/">ReST API of the platform itself</a>…in the end of that post)!</li>
+<li><strong><em>“In progress”</em></strong>; Some “Manager” most “pee” over the request…Why do we otherwise need managers!? &#x1F923;</li>
+<li><strong><em>“Open for receiving”</em></strong>; Finally, the outside user will receive a link to download the content</li>
+<li><strong><em>“Received”</em></strong>; Once we download the content, we move to this stage where we follow up on a correct download…Just verification</li>
+<li><strong><em>“Closing”</em></strong>; After the verification, it’s closing time for the request itself where we increase the number of downloads on the publication.</li>
+</ul>
+<p>Our solution is starting to get some “balls”…Let’s go to the next step!</p>
+<hr>
+<h4 id="Planning-out-the-build"><a href="#Planning-out-the-build" class="headerlink" title="Planning out the build"></a>Planning out the build</h4><p>How are we going to build the solution as described in the previous sections? Well, for this we make a plan! If we just start building something, I know from experience that will be a mess! So, where to start planning? What do we need? Well, we need entities! Of-course the main entities (‘Publication’ and ‘Request’), but we also need configuration entities in some ‘Administration’ sections (not visible to a normal end-user)! Right, so we’re talking “security” here. Let’s do something with 2 roles; the <code>solution_user</code> and the <code>solution_admin</code>…Ohw!…Don’t forget the <code>solution_manager</code> role to make that “pee”; So, 3 roles! Always keep security in place, but I leave a full security model out of scope for this post!<br>Now for the entities…What properties? Yes, what properties?…Let’s put some tables in place for specific details per entity:</p>
+<p><strong><em>Publication</em></strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Label</th>
+<th>Type</th>
+<th>Length</th>
+<th>Default value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pub_name</td>
+<td>Name</td>
+<td>Text</td>
+<td>32</td>
+<td></td>
+</tr>
+<tr>
+<td>pub_summary</td>
+<td>Summary</td>
+<td>Long text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pub_is_open</td>
+<td>Is open</td>
+<td>Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>pub_download_max</td>
+<td>Max. downloads</td>
+<td>Integer</td>
+<td></td>
+<td>50</td>
+</tr>
+<tr>
+<td>pub_download_nr</td>
+<td>Nr. of downloads</td>
+<td>Integer</td>
+<td></td>
+<td>0</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>The ‘type’ and ‘kind’ are ‘toOne’ relations from configuration entities…In case you ask yourself the question!?</p>
+</blockquote>
+<p><strong><em>Request</em></strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Label</th>
+<th>Type</th>
+<th>Length</th>
+<th>Default value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>req_name</td>
+<td>Name</td>
+<td>Text</td>
+<td>64</td>
+<td></td>
+</tr>
+<tr>
+<td>req_reason</td>
+<td>Reason</td>
+<td>Long Text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>req_prj_name</td>
+<td>Project name</td>
+<td>Text</td>
+<td>16</td>
+<td></td>
+</tr>
+<tr>
+<td>req_prj_summary</td>
+<td>Project summary</td>
+<td>Long Text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>req_prj_start_date</td>
+<td>Project start date</td>
+<td>Date</td>
+<td></td>
+<td>now()</td>
+</tr>
+<tr>
+<td>req_prj_end_date</td>
+<td>Project end date</td>
+<td>Date</td>
+<td></td>
+<td>{req_prj_start_date} + 1 month</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>We select the ‘publication’ via a ‘toOne’ relation on a ‘Ready for open’ publication…You’re still with me…correct!?<br>Also, other details will derive from the other related ‘Config’ entities described in the ERD.</p>
+</blockquote>
+<p><strong><em>External</em></strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Label</th>
+<th>Type</th>
+<th>Length</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ext_name</td>
+<td>Name</td>
+<td>Text</td>
+<td>32</td>
+</tr>
+<tr>
+<td>ext_address</td>
+<td>Address</td>
+<td>Text</td>
+<td>256</td>
+</tr>
+<tr>
+<td>ext_email</td>
+<td>E-mail</td>
+<td>Text</td>
+<td>32</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>This abstraction feels cumbersome, but ‘organization’ and ‘user’ are the same based on my first feeling…We can always change it to one entity with a Boolean flag <code>ext_is_org</code> property my-Agile-friend! &#x1F609;</p>
+</blockquote>
+<p><strong><em>area, space, category, type, and kind</em></strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Label</th>
+<th>Type</th>
+<th>Length</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>{3_char_code}_key</td>
+<td>Value</td>
+<td>Text</td>
+<td>16</td>
+</tr>
+<tr>
+<td>{3_char_code}_value</td>
+<td>Display name</td>
+<td>Text</td>
+<td>16</td>
+</tr>
+<tr>
+<td>{3_char_code}_is_default</td>
+<td>Is default</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>{3_char_code}_is_active</td>
+<td>Is active</td>
+<td>Boolean</td>
+<td></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Aha, 5 entities will have the same properties here! This “smells” like a “Config” abstraction to me! One to keep in mind!…Now you see (again!) the importance of putting things on paper first before you start building things! The more you collaborate with the team, the more fine-tuning will happen in the model…This will benefit a steady solution and a happy end-user! Hooray!! &#x1F389;</p>
+</blockquote>
+<p>You see me also using 16, 32, 64 as ‘Text’ length…This is just a habit of mine, learned from my Documentum time! There is no real reason behind it…It looks well-thought! &#x1F600; I’m from the 8-bit Nintendo generation (with <a href="https://en.wikipedia.org/wiki/Duck_Hunt" target="_blank" rel="noopener">“Duck Hunt”</a>!)…Does it have to do with that mindset!?</p>
+<p>…</p>
+<p>Let’s do a quick recap this far:</p>
+<ul>
+<li>&#x2705; ERD…</li>
+<li>&#x2705; Basic security model…Well, we have the roles defined!</li>
+<li>&#x2705; Entity properties…</li>
+<li>&#x2705; Basic flows on what should happen for the main entities…</li>
+<li>&#x274C; Workspace/Project structure…</li>
+</ul>
+<hr>
+<h4 id="Workspace-Project-structure"><a href="#Workspace-Project-structure" class="headerlink" title="Workspace/Project structure"></a>Workspace/Project structure</h4><p>Now it comes to your own imagination on how to build your solution…I already see some generic implementations, but also specific implementations! Let’s put it on paper where to place what…A tree view should be sufficient indicating also our first folder structure to start with:</p>
+<ul>
+<li><code>ws_svn_dev_publication</code><ul>
+<li><code>prj_publication</code><ul>
+<li><code>nl-bos-publication</code><ul>
+<li><code>entities</code></li>
+<li><code>bpms</code></li>
+<li><code>theme</code></li>
+<li><code>roles</code></li>
+<li><code>...</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>ws_svn_dev_handbook</code><ul>
+<li><code>prj_handbook</code><ul>
+<li><code>nl-bos-handbook</code><ul>
+<li><code>entities</code></li>
+<li><code>webservices</code></li>
+<li><code>...</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>ws_svn_dev_conference_proceeding</code><ul>
+<li><code>prj_conference_proceeding</code><ul>
+<li><code>nl-bos-conference-proceeding</code><ul>
+<li><code>entities</code></li>
+<li><code>bpms</code></li>
+<li><code>...</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>You don’t need the other workspaces because they reuse data from ‘Publication’! Time to build something now…</p>
+<p>…WAIT</p>
+<p>Damn…one thing I always forget, but very, very important…</p>
+<hr>
+<h4 id="UI-sketches"><a href="#UI-sketches" class="headerlink" title="UI sketches"></a>UI sketches</h4><p>As a developer, you can create the fanciest UI, but between a developer and an end-user is a big gap in technical insights. So, my advice is always to make sure you have a UI-expert in the team thinking of sketches; Instead of thinking of technical stuff. Leave the correct work to the correct people! For this post I’m on my own and to give you an impression, we can build something based on this input:</p>
+<p><strong><em>Create {External}</em></strong></p>
+<p><img alt="mpk_002" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/createexternal.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/createexternal.png"></p>
+<p><strong><em>Create {config}</em></strong></p>
+<p><img alt="mpk_003" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/createconfig.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/createconfig.png"></p>
+<p><strong><em>Create publication</em></strong></p>
+<p><img alt="mpk_004" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/createpublication.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/createpublication.png"></p>
+<p><strong><em>View/Edit publication</em></strong></p>
+<p><img alt="mpk_005" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/editpublication.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/editpublication.png"></p>
+<p><strong><em>Create Request</em></strong></p>
+<p><img alt="mpk_006" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/createrequest.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/createrequest.png"></p>
+<blockquote>
+<p>The ‘View/Edit’ on the request will have that same “smell” as the publication! Yes, I was “DONE” with all the drawing misery! &#x1F601; What I say…Hire a UI expert!<br>…<br>I create the sketches with a tool called <a href="http://pencil.evolus.vn" target="_blank" rel="noopener">Pencil</a></p>
+</blockquote>
+<hr>
+<h4 id="Time-for-some-craftsmanship"><a href="#Time-for-some-craftsmanship" class="headerlink" title="Time for some craftsmanship"></a>Time for some craftsmanship</h4><p>Finally! Now it’s our turn to put something in place based on the analyses from previous sections! So, spin up your AppWorks machine, dive into your most favorite organization and move yourself into the ‘Workspace Documents’ artifact. My ‘Workspace Documents’ always starts with my favorite workspace, but in this case we will start with new workspaces! So, if you’re lucky, you’re already on the ‘Organize Workspaces’ panel; If not you can use the ‘Manage Workspaces’ switch option in the top bar (most right icon) to create a new one. When ready, we start the creation of a new workspace with this input:</p>
+<ul>
+<li>Workspace name: <code>ws_dev_publication</code></li>
+<li>Description: <code>Workspace Development Publication</code></li>
+<li>Source Control Management type: none</li>
+<li>Project Name: <code>publication</code></li>
+<li>Package Owner: <code>aw_tips</code></li>
+<li>Product Name: <code>aw_publication</code></li>
+</ul>
+<p>After the wizard, you get a forward into the new workspace and project. Here we start with a namespace folder and a basic folder structure:</p>
+<ul>
+<li><code>nl-bos-publication</code><ul>
+<li><code>entities</code></li>
+<li><code>bpms</code></li>
+<li><code>roles</code></li>
+<li><code>theme</code></li>
+<li><code>homepages</code></li>
+</ul>
+</li>
+</ul>
+<p>Next step is to create a second workspace…Same task, but different input:</p>
+<ul>
+<li>Workspace name: <code>ws_dev_conference_proceeding</code></li>
+<li>Description: <code>Workspace Development Conference Proceeding</code></li>
+<li>Source Control Management type: none</li>
+<li>Project Name: <code>conference_proceeding</code></li>
+<li>Package Owner: <code>aw_tips</code></li>
+<li>Product Name: <code>aw_conference_proceeding</code></li>
+</ul>
+<p>Same for the subfolders; it’s just a first start…:</p>
+<ul>
+<li><code>nl-bos-conference-proceeding</code><ul>
+<li><code>entities</code></li>
+<li><code>bpms</code></li>
+<li><code>webservices</code></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Notes:</p>
+<ul>
+<li>I don’t use SVN, so no <code>_svn</code> prefix.</li>
+<li>We can discuss on the namespace hyphen here: <code>...conference-proceeding</code>; Why not an underscore…I feel you! &#x1F610;</li>
+</ul>
+</blockquote>
+<p><strong><em>Create the other ‘handbook’ workspace on your own; It has that same ‘smell’ as the last one!</em></strong></p>
+<p>…</p>
+<p>Now what? Well, what about preparation work! We already exposed some roles to create for further security, and I also prefer to have a dummy BPM available which we can use as placeholder before we do any real implementation. Let’s start with those roles (in the ‘Publication’ workspace!)…<code>fun_sol_user</code>, <code>fun_sol_admin</code>, and <code>fun_sol_manager</code>…remember? We have a <code>roles</code> folder in place already, so let’s right-click it and create those functional ‘Role’ documents directly:</p>
+<p><img alt="mpk_007" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674401087.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674401087.png"></p>
+<p>After publishing the roles, you can assign your test account (in my case <code>awtest</code>) to the <code>fun_sol_user</code> role from the ‘User Manager’ artifact:</p>
+<p><img alt="mpk_008" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673651222.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673651222.png"></p>
+<blockquote>
+<p>You see my test account is already a member of the internal role <code>Entity Runtime User</code>. I do this for each normal account by default; this provides the end-user access to our entity modelling solution!</p>
+</blockquote>
+<p>Now for that <code>bpm_dummy</code> BPM…right-click the <code>bpms</code> folder and create a new ‘Business Process Model’ type of document. The BPM creation looks just like this:</p>
+<p><img alt="mpk_009" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673799742.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673799742.png"></p>
+<p>Save it nicely in the <code>bpms</code> folder of the project. One thing not to forget! Always set the runtime security for a BPM. So, right-click the <code>bpm_dummy</code> from the project perspective and set it with the correct role(s):</p>
+<p><img alt="mpk_010" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673883350.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673883350.png"></p>
+<p>After this change, you can publish this new dummy model into runtime!</p>
+<p>…</p>
+<p>Next step will be our first entity <strong>‘Publication’</strong> in the generic workspace. Finally! So, back to the publication workspace and create a new entity based on our analysis!</p>
+<p><img alt="mpk_011" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674401741.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674401741.png"></p>
+<p>Fill in the properties screen, make the default building BBs nice and shiny; Have something like this:</p>
+<p><img alt="mpk_012" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673642717.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673642717.png"></p>
+<p><em>These are the things you don’t want to forget:</em></p>
+<ul>
+<li>Settings on the ‘Integer’ type of properties; min, max, and default values</li>
+<li>Remove the ‘None’ option for that ‘Boolean’ and add proper labels to it</li>
+<li>Update the field length for ‘Text’ fields</li>
+<li>Set a display name in the entity properties (top bar icon…most right one!)</li>
+<li>Make a nice ‘All publications’ label for the initial list BB</li>
+<li>We do NOT make the entity abstract (I know; In the ERD it is!); We already explained the reason behind it!</li>
+</ul>
+<p>Nice, save it all and close it; There is no need for a publication at this moment. We directly dive on the other entities. First the <strong>‘Request’</strong> entity…Smoothly like this:</p>
+<p><img alt="mpk_013" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673644114.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673644114.png"></p>
+<p><em>These are the things you don’t want to forget:</em></p>
+<ul>
+<li>Update the field length for ‘Text’ fields</li>
+<li>Set a display name in the entity properties</li>
+<li>Make a nice ‘All requests’ label for the list</li>
+<li>Also, this one is <u>not</u> an ‘Abstract’ entity!</li>
+</ul>
+<blockquote>
+<p>Progressive insight could give you a reason to make the ‘project’ specific properties a new entity; it’s choice to make…I leave it with you.</p>
+</blockquote>
+<p>Again, save it, no publish, and the next one…Our <strong>‘External’</strong> entity:</p>
+<p><img alt="mpk_014" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673645150.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673645150.png"></p>
+<p><em>These are the things you don’t want to forget:</em></p>
+<ul>
+<li>Update the field length for ‘Text’ fields</li>
+<li>Set a display name in the entity properties</li>
+<li>Make a nice ‘All externals’ label for the initial list BB</li>
+<li>This will be an ‘Abstract’ entity!…The choice is made! &#x1F60A;</li>
+</ul>
+<p>Save it, no publish…Next one; the abstract <strong>‘Config’</strong> entity:</p>
+<p><img alt="mpk_015" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673646912.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673646912.png"></p>
+<p><em>These are the things you don’t want to forget:</em></p>
+<ul>
+<li>Remove the ‘None’ option for that ‘Boolean’ and add proper labels to it; I make the ‘Is active’ property by default TRUE!</li>
+<li>Update the field length for ‘Text’ fields</li>
+<li>Set a display name in the entity properties</li>
+<li>Make a nice ‘All configs’ label for the initial list BB</li>
+<li>Make this entity also ‘Abstract’</li>
+</ul>
+<p>Save it, still no publish…Now it’s time to grab a soda! &#129380;</p>
+<blockquote>
+<p>Just to make sure…You created all the stuff from above in the ‘Publication’ workspace/project…correct?</p>
+</blockquote>
+<p>…</p>
+<p>Now what? Well, let’s create all the specific ‘Config’ entities and specific ‘External’ entities. How? Well, simple! Just right-click the corresponding entity and create a new subtype from it! This can be your end-result after some structuring.</p>
+<p><img alt="mpk_016" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674425331.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674425331.png"></p>
+<blockquote>
+<p>I thought a subtype was placed as child under its parent, but it looks like this party-feature is broken again…I’m on version <code>22.3</code>…Comment me if I was dreaming!?…Or was this only available for a ‘hasChild’ relation!? Let me know…</p>
+</blockquote>
+<p>It’s publication time on project level and see how our update looks like in runtime…Have a look yourself (as test account nicely in an incognito tab of your browser); It looks like crap…We can’t create anything! Why? Well, how about security? A good start to implement this as fast as possible as it will bring “pain” to the solution…Trust me! We have the roles already in place and connected role <code>fun_sol_user</code> to the test-user. So, the next step is adding the security BBs to your entities? A task to do on your own. Every security will get at least the <code>fun_sol_user</code> as accessor and for now I also mark all the permission for this role…We can fine tune later! This is a sample of one entity:</p>
+<p><img alt="mpk_017" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673651645.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673651645.png"></p>
+<blockquote>
+<p>The other entities look the same…Have also a look on the subtype entities!…Yes, that’s the power of inheritance!</p>
+</blockquote>
+<p>Time to republish and double check into runtime:</p>
+<p><img alt="mpk_018" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673651853.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673651853.png"></p>
+<p>Much better…Why do you think we can’t create any <code>config</code> and <code>external</code> entity instances? Yes, because they are “Abstract” and therefore non-instantiable! &#x1F605; Also, the ‘Publication’ is missing in the above screenshot, but that’s because it was ‘Abstract’ at that time…Yes, I also embrace the agility way of working!</p>
+<p>…</p>
+<p>After a quick break, we continue with our ‘generic’ lifecycle! Have a look again at the lifecycles defined before and pick the one with the most matching pattern for our ‘Publication’ entity! I choose this one as a generic implementation:</p>
+<p>“In draft” -&gt; “For review” -&gt; “Prepare for publication” -&gt; “Open for requests” -&gt; “Closed” -&gt; “Archived”</p>
+<p>Open the ‘Publication’ entity and add the ‘Lifecycle’ building block. The lifecycle editor starts with a clean screen, and you can start creating a flow like this:</p>
+<p><img alt="mpk_019" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673796160.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673796160.png"></p>
+<p>Make sure to set the ‘Primary transition’ for each flow…This gives a nice overview in the Lifecycle panel for a layout in a later moment.</p>
+<p><img alt="mpk_020" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673799604.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673799604.png"></p>
+<p>It’s not possible yet to publish this lifecycle as the BPM-activities have no model attached! In these situations, you can insert the available <code>bpm_dummy</code> BPM which we created for this situation!</p>
+<p><img alt="mpk_021" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674421492.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674421492.png"></p>
+<p>After this change, always check your ‘Security’ BB for any related updates! In this case the ‘Add tasks’ execution permission. When done, it’s time for a publication on this entity. Now, when we create a new instance of the entity (which is not possible because of abstraction), this lifecycle would start, and a task will land in our own inbox! Continue the read to see how this lifecycle will get a trigger…</p>
+<p>HOLD…STOP…Adding a lifecycle, will also add a related ‘LifecycleTask’ entity! Make sure to also add a ‘Security’ BB with the correct permissions for our role!</p>
+<p><img alt="mpk_022" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674127201.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674127201.png"></p>
+<p>…</p>
+<p>For the ‘Request’ entity, we do a similar task on the lifecycle and the ‘Security’ BB. It will be a result like this:</p>
+<p><img alt="mpk_023" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673801296.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673801296.png"></p>
+<p>Notes:</p>
+<ul>
+<li>Don’t forget the ‘Primary transaction’ option for the flows</li>
+<li>Use the <code>bpm_dummy</code> BPM as placeholder for the related activities</li>
+<li>Don’t forget to update the ‘Security’ BB…As I did! &#x1F605;…It’s a common mistake!…Also, for the related ‘LifecycleTask’ entity!</li>
+</ul>
+<p>When done, you can publish this entity as well! Great, we’re getting somewhere now…Do a quick review in runtime with your test account (without creating new requests; which is possible!…We do it later!), and have a quick candy-break before we continue…</p>
+<p>…</p>
+<p>We’re getting close to our end-goal now! This section will create subtypes from the ‘Publication’, but this time from our other workspaces! Yes, remember the header of this post…This will teach you the magic stuff of project model teleportation! With our ‘Publication’ project ready, it’s time to create a package out of it; including a model package…How? Well, right-click the project and go the package properties where we change two options:</p>
+<p><img alt="mpk_024" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673883653.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1673883653.png"></p>
+<p>The first option (‘Create Model Package’) exports a second file after package creation and downloading it. The second option enables deployment only to a specific organization; This last one is mostly the correct option. The ‘Shared’ option is only when you want to deliver functionality across organizations; Like utilities!</p>
+<p>Hit OK, right-click the project again, and create a package now. After creation, you can hit the download option which downloads 2 files! A .CAP file, but also a ‘.MPK’ file. You can find more information on a CAP file in <a href="/2020/05/29/051_how_to_create_an_appworks_package/">this</a> post. Only, what is in the MPK file? Well, have a quick view with 7-Zip. This is the structure I see:</p>
+<ul>
+<li>‘ModelPackage’ file in the root containing the package version information, its dependencies which (for our parent solution) will only have platform specific dependencies; So, when you use a ‘Property’ BB on your entity, it’s dependent on a ‘PropertyBase’ of the platform; The same for all other BBs!</li>
+<li>Subfolders where I recognize my <code>entities</code>, <code>homepages</code>, and <code>roles</code> folders. My <code>bpms</code> folder is not available so not part of the model…I guess!? The files in these folders seem to be my sources; like I normally also see passing by in SVN. In a CAP file these are more in a compiled/reduced version.</li>
+</ul>
+<p>Great…Now what? What can we do with our MPK file!? Well, let’s jump into the other workspace; Like <code>ws_dev_conference_proceeding</code>. From this workspace we would like to reuse our exported model…right? So, we can create a subtype from the ‘Publication’ entity! To do this, right-click that lower magic folder named <code>Imported Application Packages</code> in your workspace. If you ever wondered what this folder does!?…continue reading…</p>
+<p>It’s time to import an application package; Guess what package this will be?</p>
+<p><img alt="mpk_025" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674423592.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674423592.png"></p>
+<p>Yes, my friend…Select your MPK-file here…</p>
+<p><img alt="mpk_026" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674423682.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674423682.png"></p>
+<p>…And hit ‘Import’…In this import you can also select CAP-files, but only when items are marked with ‘Enable reuse in other applications’. Read about this option in the section “A final clarification note” below!</p>
+<p>After this import, we see directly our hard work passing by; And guess what…Right clicking the ‘Publication’ will let you create a subtype out of it with a new name.</p>
+<p><img alt="mpk_027" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674423798.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674423798.png"></p>
+<p>For this workspace that will be our entity <code>conference_proceeding</code> which we save in the <code>entities</code> folder of the related project:</p>
+<p><img alt="mpk_028" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674423906.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674423906.png"></p>
+<p>Now lay back and double-check on what is already available in this entity!?…It’s magic! &#x1F60E; WAIT for a publication on this entity! Why? We are dependent on another CAP package (the generic publication!) which requires a deployment! Let’s give it a go with the ‘Application Deployer’ artifact from within the ‘system’ space! If you’ve never done this task, have a look at <a href="/2020/06/05/052_how_to_deploy_an_appworks_package/">this</a> post; Make sure to deploy it to a specific organization; Not the ‘Shared’ space (which is also not possible when you fully follow the post on your platform!)</p>
+<p>After deployment, move back to your own organization, in the correct workspace <code>ws_dev_conference_proceeding</code>, and do the publication action on the subtype entity…It should be a success! &#x1F917; So, in runtime, we can now create a new ‘Conference proceeding’…correct? Well, Nope! There is one special trick to be done before we can do this. It’s a trick to replacing the ‘Security’ BB with a new one. Don’t ask me why? A bug? An unclear feature? It is, what it is…</p>
+<p><img alt="mpk_029" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674424317.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674424317.png"></p>
+<p>I even need to open the ‘Security’ BB and remark the set of permission on my generic configured role, so it looks like this (with those curly arrows):</p>
+<p><img alt="mpk_030" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674424372.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674424372.png"></p>
+<p>Right…Time for a republication on the project and in runtime, we finally start to see some results for our test user. We can now create a new ‘Conference proceeding’ entity instance! During creation, the lifecycle will start with a first task delivered in the inbox of the current user!</p>
+<p>Time for a party! &#x1F389;</p>
+<p>Now what? Well, what about the other workspaces? We can do this same trick for <code>ws_dev_handbook</code>! A task for you to do. After you’re done, and a publication for all projects, we can start running our first tests in runtime for our specific entities.</p>
+<p><img alt="mpk_031" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674141452.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674141452.png"></p>
+<p>Notes on the tests you execute:</p>
+<ul>
+<li>Keep a view on the <strong>C</strong>ase <strong>I</strong>nstance <strong>M</strong>anager artifact for started lifecycles</li>
+<li>Keep a view on the <strong>P</strong>rocess <strong>I</strong>nstance <strong>M</strong>anager artifact for started BPMs</li>
+<li>Keep a view on the inbox of your test user!…Your lifecycle instances will drop of tasks based on the activities in the current lifecycle stage!</li>
+</ul>
+<blockquote>
+<p>Keep in mind that when you don’t “see” the proper thing in runtime; that’s probably a ‘Security’ BB issue on your side!</p>
+</blockquote>
+<p>I have green flags all over the place! &#9989; Not at once (I’ll admit!), but finally it works as intended which is great!</p>
+<p>…</p>
+<p>What is beyond all this craftsmanship? Well, how about making it all nice like your UI expert told you!? &#x1F609; I continued crafting already on my own; here are some screenshots:</p>
+<p><img alt="mpk_032" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838475.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838475.png"></p>
+<p><img alt="mpk_033" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838538.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838538.png"></p>
+<p><img alt="mpk_034" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838504.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838504.png"></p>
+<p><img alt="mpk_035" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838556.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838556.png"></p>
+<p><img alt="mpk_036" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838652.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838652.png"></p>
+<p><img alt="mpk_037" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838705.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838705.png"></p>
+<p><img alt="mpk_038" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838764.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838764.png"></p>
+<p><img alt="mpk_039" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838884.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674838884.png"></p>
+<p>If you want to have a closer look, <a href="/images/posts/2023/174_export_project_model_for_reusability/appworks_tips.zip">this</a> file contains the zipped source exports from my projects to continue with…Have fun!</p>
+<blockquote>
+<p>I create this file via a workspace synchronization to the server (right-click on the projects!). If you follow this post you can have the same workspaces and projects already; Give it a sync on your side and copy the extracted ZIP content over that sync. on the server. After that last copy, you can re-sync it again, so your projects are filled with my data…Let me know if you don’t have a clue!? I can show it in a future post if you like…</p>
+</blockquote>
+<p>These are the packages I deliver into the world to have a deployment in your own environment to play with:</p>
+<ul>
+<li><a href="/images/posts/2023/174_export_project_model_for_reusability/aw_tips%20aw_publication%201.0.7.cap">Publication CAP</a> and <a href="/images/posts/2023/174_export_project_model_for_reusability/aw_tips%20aw_publication%201.0.7.mpk">Publication MPK</a></li>
+<li><a href="/images/posts/2023/174_export_project_model_for_reusability/aw_tips%20publication_testdata%201.0.0.cap">Publication testdata CAP</a> and <a href="/images/posts/2023/174_export_project_model_for_reusability/aw_tips%20publication_testdata%201.0.0.mpk">Publication testdata MPK</a></li>
+<li><a href="/images/posts/2023/174_export_project_model_for_reusability/aw_tips%20aw_conference_proceeding%201.0.0.cap">Conference proceeding</a></li>
+<li><a href="/images/posts/2023/174_export_project_model_for_reusability/aw_tips%20aw_handbook%201.0.0.cap">Handbook</a></li>
+</ul>
+<blockquote>
+<p>These are the post-actions after deployment of those packages:</p>
+<ul>
+<li>Connect your users to the correct solution roles (you know which we used by now)</li>
+<li>Create the ‘Application Server’ and ‘BPM’ service containers and relate the solution interfaces</li>
+<li>You will have a service available with name <code>bpm_test_data</code> to start the BPM with input <code>true</code> to generate the config entity instance in runtime</li>
+<li>In ‘/app/admin’ disable the “normal” homepage as described in this blog (below!); The solution has its own homepages.</li>
+<li>Make sure your simple test-account is member of the internal ‘Entity runtime user’</li>
+</ul>
+</blockquote>
+<hr>
+<h4 id="The-list-of-implementations-I-did-from-my-side"><a href="#The-list-of-implementations-I-did-from-my-side" class="headerlink" title="The list of implementations I did from my side"></a>The list of implementations I did from my side</h4><p>Just to get a nice overview of what I changed…specially for you! Because of the new year…Three months ago! &#x1F923;</p>
+<ul>
+<li>Replacing the 2 specific entities with their own Lifecycle BB and follow the flows analyzed in the top of this post.<ul>
+<li>The only thing I see going wrong is that <code>bpm_dummy</code> BPM isn’t found anymore; You can solve this via a BPM runtime reference to our generic package where we have this BPM available! Comment me if you only see question marks!?</li>
+</ul>
+</li>
+<li>Add relations like our ERD and update the forms to use them<ul>
+<li>Don’t forget to update the ‘Security’ BB for the relations!</li>
+</ul>
+</li>
+<li>Update the layouts so they “look &amp; feel” nice</li>
+<li>Update the ‘Create’ forms matching the UI sketches</li>
+<li>Add rules to set values on creation (like date <code>now()</code> for the project start date)</li>
+<li>Add a ‘Homepage’ publications as new homepage (with runtime security for my role) and disable to default homepage from <code>app/admin</code></li>
+</ul>
+<p><img alt="mpk_040" class="post-img b-lazy" href="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674143643.png" data-src="/images/posts/2023/174_export_project_model_for_reusability/174_export_project_model_for_reusability_1674143643.png"></p>
+<ul>
+<li>Adding a ‘Theme’ document…Always do this for any demo/customer; They like to see their branding passing by</li>
+<li>Update the lists to show the correct information by default</li>
+<li>Adding assets (like icons and images) to make the solution “smell” nice</li>
+<li>Make fields required where applicable</li>
+<li>Add task specific layouts to show when you open a task from the inbox/layout panel</li>
+<li><a href="/2023/01/13/164_a_css_hack_to_remove_the_user_inbox/">Hide the inbox with CSS</a>; I want to manage tasks in the “Case”</li>
+<li>Add webservice operations to make our life easier; This includes a service container of type ‘Application Server’</li>
+<li>Building logic to only request on “Open” publications</li>
+<li>Building the max. download logic; It will move the publication to the next lifecycle stage when max. download is reached</li>
+<li>Make configurations modifications only possible for the <code>fun_sol_admin</code> role</li>
+<li>Add a ‘Rule’ BB to set the request name magically</li>
+<li>Adding uniqueness check for publication name</li>
+<li>Generating config data via a BPM over XML data; This includes a service container of type ‘Business Process Management’. A trick learned <a href="/2021/09/17/111_read_xml_data_to_generate_entity_test_data/">here</a>!</li>
+</ul>
+<blockquote>
+<p>The quick bugs to be improved by you &#x1F605; (which I found after a review of my own implementation):</p>
+<ul>
+<li>The specific entities are not created through the <code>bpm_test_data</code> BPM/service call (this must be a BPM in the specific workspace; as separate project). Or make the parent smart enough to understand the difference!</li>
+<li>Requests don’t get a name via the <code>bpm_test_date</code> flow; Strange…Looks like an ‘onInit’ event is something else then a service ‘Create’ call (which probably triggers the ‘onCreate’ event!)</li>
+<li>Updating a configuration entity instance will be visible on all the related entities; See <a href="/2023/01/20/165_relating_data_vs_saving_data/">here</a> for a solution!</li>
+<li>‘External’ entity instances can have duplicate names; Just to keep in mind.</li>
+<li>It’s not possible (yet!) to create a new request for a selected publication…Can be an action rule!</li>
+<li>After a task is completed, the UI is not always updated. My first gut-feeling is that it has to do with the long-lived BPM template!?</li>
+<li>When a publication/request is eventually archived, you can still update fields!? Well, that’s part of the security model (not for this post!)</li>
+<li>Comment me if you find others…</li>
+</ul>
+</blockquote>
+<hr>
+<h4 id="Update-our-generic-package"><a href="#Update-our-generic-package" class="headerlink" title="Update our generic package"></a>Update our generic package</h4><p>Are you that smart person asking what to do when the parent ‘Publication’ workspace gets an update over time? Then you’re my guy (or gal)…These are the steps you need to do after that precious update:</p>
+<ol>
+<li>Update the package properties to a new next version. You can skip numbers, but NEVER decrease numbers (trust me…that’s my experience!)</li>
+<li>Create the new package (CAP + MPK)</li>
+<li>Install the upgrade package into the organization; from the ‘System’ space into your specific organization!</li>
+<li>Switch to the specific workspace</li>
+<li>Import the new MPK file (with the update checkbox enabled)</li>
+</ol>
+<p>That’s it…I also do a clean build on that project and do a full publication again (just to be sure).</p>
+<hr>
+<h4 id="Final-clarification-notes"><a href="#Final-clarification-notes" class="headerlink" title="Final clarification notes"></a>Final clarification notes</h4><p>During craftsmanship, we saw an interesting option passing by to create a <strong>M</strong>odel <strong>P</strong>ac<strong>K</strong>age file. From my point of view, I only have one important question to answer: <em>I know it’s an option to also import entities into another application by marking the entity (and other BBs) with ‘Enable reuse in other applications’, but how is this option related to this MPK?</em> Well, it looks like a simple answer too! You can export your entity models in two ways:</p>
+<ol>
+<li>Over a <strong>CAP file</strong>; Injects external application entities purely for reusability. You must explicitly mark the entities (and BBs) as “Enable reuse in other applications”.</li>
+<li>Over a <strong>MPK file</strong>; Injects external application entities for subtyping and customization. The option ‘Enable reuse in other applications’ has <u>nothing</u> to do with it!</li>
+</ol>
+<p>Some extra notes for clarification (as it took me some time to digest):</p>
+<ul>
+<li>“Application” in the above text equals the “Project” within a workspace (So, the “solution” you’re building in that project!). On this application/solution/project we can extract an application package!</li>
+<li>An “Application package” equals the CAP file with (optionally the MPK file)!</li>
+<li>Finally, the application package is deployable in a specific organization space and/or the shared space.</li>
+<li>Get yourself also informed on the low-code guide on section “Importing entities from other applications”…Interesting stuff!</li>
+</ul>
+<p>Comment on me when things are still unclear as I also read those things over and over again to understand what the documentation means sometimes! So, it’s not just you…&#x1F609;</p>
+<hr>
+<h4 id="Just-one-extra-final-final-note"><a href="#Just-one-extra-final-final-note" class="headerlink" title="Just one extra final, final note"></a>Just one extra final, final note</h4><p>Does this way (of working with multiple workspaces) really benefit our implementation needs? Well, YES and NO! O-boy…there we go again! &#x1F601; Will I recommend it for any type of solution? For sure not…It all depends on the size of the total solution, the way you want to implement, the number of developers you work together with, and the way you want to depend on other projects! This last one is especially important to keep in mind as you don’t want to end up with a large solution where project documents have a direct connection with other project documents! Working with separated workspaces will avoid this problem! On the other hand, it also introduces a complex way of working; when the parent project gets an update, you need to import the latest version of that parent package into the other workspaces (this is true also for each developer organization…If you did a split on that level). So, interesting! For smaller solutions I would just go for the one-workspace approach with multiple projects and watch out for your dependencies.</p>
+<hr>
+<p>A roller coaster “DONE” if I may say so and what a learning ride where we see again the power of the AppWorks platform and its abstraction techniques. I gave you a little insight on how to think first before you act. Pick the fruits of this mindset as it will help you in a steady extendable future on any low-code platform; Trust me on that one! &#x1F609; Cheers, and see you next week.</p>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="Discover how to import CSS in a 'Theme' document like a pro" href="/2023/04/14/175_import_CSS_in_theme_doc_with_wld/">
+            <i class="fa-solid fa-backward"></i> Discover how to import CSS in a 'Theme' document like a pro
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="You won't believe this simple trick for setting your date/time field default to 12PM" href="/2023/03/31/173_set_date_time_field_default_at_12pm/">
+            You won't believe this simple trick for setting your date/time field default to 12PM <i class="fa-solid fa-forward"></i>
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Entity-identification-and-ERD"><span class="toc-text">Entity identification and ERD</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Describing-a-flow-per-publication-type"><span class="toc-text">Describing a flow per publication type</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Describing-the-‘Request’-flow"><span class="toc-text">Describing the ‘Request’ flow</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Planning-out-the-build"><span class="toc-text">Planning out the build</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Workspace-Project-structure"><span class="toc-text">Workspace&#x2F;Project structure</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#UI-sketches"><span class="toc-text">UI sketches</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Time-for-some-craftsmanship"><span class="toc-text">Time for some craftsmanship</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#The-list-of-implementations-I-did-from-my-side"><span class="toc-text">The list of implementations I did from my side</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Update-our-generic-package"><span class="toc-text">Update our generic package</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Final-clarification-notes"><span class="toc-text">Final clarification notes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Just-one-extra-final-final-note"><span class="toc-text">Just one extra final, final note</span></a></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2024/03/08/215_the_cache_of_dynamic_enums_exposed/">Exposed and exploited; The dark side of Dynamic ENUM caches</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/03/01/214_get_history_data_after_entity_is_gone/">Shocking betrayal; Unearth disturbing history data after an entity instance disappears</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/23/213_cleaning_psl_data/">Unbelievable hacks to supercharge your PSL data cleaning</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/16/212_dive_into_deployment_models/">Unveiling the secrets of the 'Deployment Models' artifact; Boost your tech IQ instantly</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/09/211_install_awp_in_distributed_mode_ha/">Mastering AppWorks; The essential steps for a distributed mode installation</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/02/210_install_cars_in_distributed_mode_ha/">Revolutionize your ride; Unveiling the ultimate distributed mode for CARS</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/01/26/209_deadlines_and_escalation_with_alerts/">Supercharge your knowledge; Watch the mastery of deadlines, escalations, and alerts</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/01/19/208a_update_on_24_1/">A brand-new year, with a brand-new release; AppWorks 24.1 is GA for a features review</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Release/">Release</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/AI/" style="font-size: 14px;">AI</a> <a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/API/" style="font-size: 14.63px;">API</a> <a href="/tags/Abstract/" style="font-size: 14px;">Abstract</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/ActiveMQ/" style="font-size: 14.63px;">ActiveMQ</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 15.88px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 15.88px;">Anniversary</a> <a href="/tags/Annotation/" style="font-size: 14px;">Annotation</a> <a href="/tags/Apache/" style="font-size: 14.63px;">Apache</a> <a href="/tags/ApacheDirectoryStudio/" style="font-size: 14px;">ApacheDirectoryStudio</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Archive/" style="font-size: 14.63px;">Archive</a> <a href="/tags/Artifact/" style="font-size: 15.25px;">Artifact</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/Audit/" style="font-size: 14px;">Audit</a> <a href="/tags/Authentication/" style="font-size: 14.63px;">Authentication</a> <a href="/tags/BPM/" style="font-size: 22.75px;">BPM</a> <a href="/tags/Base64/" style="font-size: 14px;">Base64</a> <a href="/tags/Brava/" style="font-size: 14px;">Brava!</a> <a href="/tags/BuildingBlock/" style="font-size: 15.88px;">BuildingBlock</a> <a href="/tags/BuildingBlocks/" style="font-size: 15.25px;">BuildingBlocks</a> <a href="/tags/BulkUpdate/" style="font-size: 14px;">BulkUpdate</a> <a href="/tags/BusinessID/" style="font-size: 14px;">BusinessID</a> <a href="/tags/BusinessIdentifier/" style="font-size: 14px;">BusinessIdentifier</a> <a href="/tags/BusinessWorkspace/" style="font-size: 14px;">BusinessWorkspace</a> <a href="/tags/CAF/" style="font-size: 14px;">CAF</a> <a href="/tags/CARS/" style="font-size: 15.25px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 15.25px;">CD/CI</a> <a href="/tags/CIM/" style="font-size: 14px;">CIM</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMC/" style="font-size: 14px;">CMC</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 16.5px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/CaseInstanceMonitor/" style="font-size: 14px;">CaseInstanceMonitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Charts/" style="font-size: 14px;">Charts</a> <a href="/tags/ChatGPT/" style="font-size: 14px;">ChatGPT</a> <a href="/tags/Cleaning/" style="font-size: 14.63px;">Cleaning</a> <a href="/tags/Cloning/" style="font-size: 14px;">Cloning</a> <a href="/tags/Cloud/" style="font-size: 14px;">Cloud</a> <a href="/tags/Condition/" style="font-size: 14.63px;">Condition</a> <a href="/tags/ConfigEntity/" style="font-size: 14px;">ConfigEntity</a> <a href="/tags/ConnectedWorkspace/" style="font-size: 14px;">ConnectedWorkspace</a> <a href="/tags/Connector/" style="font-size: 15.88px;">Connector</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Content/" style="font-size: 16.5px;">Content</a> <a href="/tags/ContentServer/" style="font-size: 16.5px;">ContentServer</a> <a href="/tags/Create/" style="font-size: 14px;">Create</a> <a href="/tags/Custom/" style="font-size: 14px;">Custom</a> <a href="/tags/Customization/" style="font-size: 19px;">Customization</a> <a href="/tags/Data/" style="font-size: 14px;">Data</a> <a href="/tags/Database/" style="font-size: 17.13px;">Database</a> <a href="/tags/DatabaseMetadata/" style="font-size: 14.63px;">DatabaseMetadata</a> <a href="/tags/Date/" style="font-size: 14px;">Date</a> <a href="/tags/DateTime/" style="font-size: 14px;">DateTime</a> <a href="/tags/Deadline/" style="font-size: 14px;">Deadline</a> <a href="/tags/Debugging/" style="font-size: 14.63px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/DeploymentModels/" style="font-size: 14px;">DeploymentModels</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 17.75px;">Digital</a> <a href="/tags/Distributed/" style="font-size: 14.63px;">Distributed</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/Documentation/" style="font-size: 14px;">Documentation</a> <a href="/tags/DocumentstoreConnector/" style="font-size: 15.25px;">DocumentstoreConnector</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/DynamicEnum/" style="font-size: 14px;">DynamicEnum</a> <a href="/tags/EISConnector/" style="font-size: 14.63px;">EISConnector</a> <a href="/tags/Email/" style="font-size: 14.63px;">Email</a> <a href="/tags/EnterpriseWorld/" style="font-size: 19px;">EnterpriseWorld</a> <a href="/tags/Entity/" style="font-size: 20.25px;">Entity</a> <a href="/tags/EntityContext/" style="font-size: 14px;">EntityContext</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Escalation/" style="font-size: 14px;">Escalation</a> <a href="/tags/Explorer/" style="font-size: 14.63px;">Explorer</a> <a href="/tags/Expressions/" style="font-size: 14px;">Expressions</a> <a href="/tags/Feature/" style="font-size: 14px;">Feature</a> <a href="/tags/FileConnector/" style="font-size: 14px;">FileConnector</a> <a href="/tags/Filter/" style="font-size: 14px;">Filter</a> <a href="/tags/Flag/" style="font-size: 14px;">Flag</a> <a href="/tags/ForLoop/" style="font-size: 14px;">ForLoop</a> <a href="/tags/Form/" style="font-size: 19.63px;">Form</a> <a href="/tags/Function/" style="font-size: 14px;">Function</a> <a href="/tags/Gateway/" style="font-size: 14.63px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Google/" style="font-size: 14px;">Google</a> <a href="/tags/Graphics/" style="font-size: 14px;">Graphics</a> <a href="/tags/Grid/" style="font-size: 14px;">Grid</a> <a href="/tags/HTML5/" style="font-size: 14px;">HTML5</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/HighAvailability/" style="font-size: 14.63px;">HighAvailability</a> <a href="/tags/History/" style="font-size: 14px;">History</a> <a href="/tags/Homepage/" style="font-size: 14.63px;">Homepage</a> <a href="/tags/HowTo/" style="font-size: 16.5px;">HowTo</a> <a href="/tags/Icons/" style="font-size: 14px;">Icons</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14.63px;">Identity</a> <a href="/tags/IdentityPackage/" style="font-size: 15.25px;">IdentityPackage</a> <a href="/tags/InformationHub/" style="font-size: 14px;">InformationHub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.13px;">Installation</a> <a href="/tags/IntelligentViewing/" style="font-size: 14.63px;">IntelligentViewing</a> <a href="/tags/Interceptor/" style="font-size: 14px;">Interceptor</a> <a href="/tags/IsTemporaryCopy/" style="font-size: 14px;">IsTemporaryCopy</a> <a href="/tags/ItemStatus/" style="font-size: 14px;">ItemStatus</a> <a href="/tags/JMS/" style="font-size: 14.63px;">JMS</a> <a href="/tags/JMeter/" style="font-size: 14px;">JMeter</a> <a href="/tags/JSON/" style="font-size: 15.25px;">JSON</a> <a href="/tags/JShell/" style="font-size: 14px;">JShell</a> <a href="/tags/JUnit/" style="font-size: 14px;">JUnit</a> <a href="/tags/JXplorer/" style="font-size: 14px;">JXplorer</a> <a href="/tags/Java/" style="font-size: 15.88px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 14.63px;">JavaScript</a> <a href="/tags/JavaUI/" style="font-size: 14px;">JavaUI</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/LDAP/" style="font-size: 14.63px;">LDAP</a> <a href="/tags/LandingPage/" style="font-size: 14px;">LandingPage</a> <a href="/tags/Language/" style="font-size: 14.63px;">Language</a> <a href="/tags/LanguagePack/" style="font-size: 14px;">LanguagePack</a> <a href="/tags/Less/" style="font-size: 14px;">Less</a> <a href="/tags/License/" style="font-size: 14.63px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.88px;">Lifecycle</a> <a href="/tags/LinkDocument/" style="font-size: 14px;">LinkDocument</a> <a href="/tags/LinkedEntity/" style="font-size: 14px;">LinkedEntity</a> <a href="/tags/List/" style="font-size: 14.63px;">List</a> <a href="/tags/LoadBalancing/" style="font-size: 14px;">LoadBalancing</a> <a href="/tags/Logging/" style="font-size: 14px;">Logging</a> <a href="/tags/LongTextProperty/" style="font-size: 14px;">LongTextProperty</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 14.63px;">Management</a> <a href="/tags/Message/" style="font-size: 14px;">Message</a> <a href="/tags/Metadata/" style="font-size: 14px;">Metadata</a> <a href="/tags/Method/" style="font-size: 14px;">Method</a> <a href="/tags/Migration/" style="font-size: 14px;">Migration</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Mockito/" style="font-size: 14px;">Mockito</a> <a href="/tags/Model/" style="font-size: 14px;">Model</a> <a href="/tags/Modeling/" style="font-size: 14.63px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 14.63px;">Monitoring</a> <a href="/tags/NGINX/" style="font-size: 14px;">NGINX</a> <a href="/tags/Northwind/" style="font-size: 14px;">Northwind</a> <a href="/tags/Notification/" style="font-size: 14px;">Notification</a> <a href="/tags/OKTA/" style="font-size: 14px;">OKTA</a> <a href="/tags/OTDS/" style="font-size: 17.75px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 23.38px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Order/" style="font-size: 14px;">Order</a> <a href="/tags/Organization/" style="font-size: 15.25px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/PSL/" style="font-size: 14px;">PSL</a> <a href="/tags/Package/" style="font-size: 15.25px;">Package</a> <a href="/tags/Parallel/" style="font-size: 14px;">Parallel</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/Pattern/" style="font-size: 14px;">Pattern</a> <a href="/tags/Personal/" style="font-size: 14px;">Personal</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 14px;">Postman</a> <a href="/tags/PowerMockito/" style="font-size: 14px;">PowerMockito</a> <a href="/tags/Preferences/" style="font-size: 14px;">Preferences</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/ProgressionBar/" style="font-size: 14px;">ProgressionBar</a> <a href="/tags/Project/" style="font-size: 15.25px;">Project</a> <a href="/tags/Projects/" style="font-size: 14px;">Projects</a> <a href="/tags/Properties/" style="font-size: 14.63px;">Properties</a> <a href="/tags/Property/" style="font-size: 15.25px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/RHEL/" style="font-size: 14px;">RHEL</a> <a href="/tags/ReST/" style="font-size: 15.88px;">ReST</a> <a href="/tags/ReST-Gateway/" style="font-size: 14px;">ReST Gateway</a> <a href="/tags/Recap/" style="font-size: 15.88px;">Recap</a> <a href="/tags/RegularExpression/" style="font-size: 14.63px;">RegularExpression</a> <a href="/tags/Relations/" style="font-size: 15.25px;">Relations</a> <a href="/tags/Release/" style="font-size: 20.88px;">Release</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/ResultList/" style="font-size: 15.25px;">ResultList</a> <a href="/tags/Reusability/" style="font-size: 14px;">Reusability</a> <a href="/tags/Reverse-proxy/" style="font-size: 14px;">Reverse proxy</a> <a href="/tags/Role/" style="font-size: 14px;">Role</a> <a href="/tags/Roles/" style="font-size: 14.63px;">Roles</a> <a href="/tags/Rule/" style="font-size: 14.63px;">Rule</a> <a href="/tags/Rules/" style="font-size: 14px;">Rules</a> <a href="/tags/Runtime-Security/" style="font-size: 14px;">Runtime Security</a> <a href="/tags/SAML/" style="font-size: 14px;">SAML</a> <a href="/tags/SDK/" style="font-size: 14.63px;">SDK</a> <a href="/tags/SOAP/" style="font-size: 15.25px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 14.63px;">SVN</a> <a href="/tags/Scheduler/" style="font-size: 14px;">Scheduler</a> <a href="/tags/Search/" style="font-size: 14px;">Search</a> <a href="/tags/Section/" style="font-size: 14px;">Section</a> <a href="/tags/Sections/" style="font-size: 14px;">Sections</a> <a href="/tags/Security/" style="font-size: 14px;">Security</a> <a href="/tags/Selenium/" style="font-size: 14px;">Selenium</a> <a href="/tags/Service/" style="font-size: 14px;">Service</a> <a href="/tags/ServiceContainer/" style="font-size: 14.63px;">ServiceContainer</a> <a href="/tags/Setup/" style="font-size: 15.88px;">Setup</a> <a href="/tags/ShortLived/" style="font-size: 14px;">ShortLived</a> <a href="/tags/SimpleClient/" style="font-size: 14px;">SimpleClient</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 15.88px;">Software</a> <a href="/tags/Solutions/" style="font-size: 14px;">Solutions</a> <a href="/tags/SourceControl/" style="font-size: 14px;">SourceControl</a> <a href="/tags/Sources/" style="font-size: 14px;">Sources</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Storage/" style="font-size: 14px;">Storage</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/SubProcess/" style="font-size: 14px;">SubProcess</a> <a href="/tags/Subtyping/" style="font-size: 14.63px;">Subtyping</a> <a href="/tags/Sync/" style="font-size: 14px;">Sync</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/SynchronizedPartition/" style="font-size: 14px;">SynchronizedPartition</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 15.25px;">Task</a> <a href="/tags/TaskLayout/" style="font-size: 14px;">TaskLayout</a> <a href="/tags/Tasks/" style="font-size: 14.63px;">Tasks</a> <a href="/tags/Team/" style="font-size: 14px;">Team</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Test/" style="font-size: 14px;">Test</a> <a href="/tags/Testing/" style="font-size: 15.25px;">Testing</a> <a href="/tags/Theme/" style="font-size: 16.5px;">Theme</a> <a href="/tags/Time/" style="font-size: 14px;">Time</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/Title/" style="font-size: 14px;">Title</a> <a href="/tags/Toggle/" style="font-size: 14px;">Toggle</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/Tool/" style="font-size: 14px;">Tool</a> <a href="/tags/Tools/" style="font-size: 14.63px;">Tools</a> <a href="/tags/Transformation/" style="font-size: 14px;">Transformation</a> <a href="/tags/Translation/" style="font-size: 14.63px;">Translation</a> <a href="/tags/UDDI/" style="font-size: 14.63px;">UDDI</a> <a href="/tags/UnInstallation/" style="font-size: 14px;">UnInstallation</a> <a href="/tags/Unicode/" style="font-size: 14px;">Unicode</a> <a href="/tags/Update/" style="font-size: 18.38px;">Update</a> <a href="/tags/Upgrade/" style="font-size: 14px;">Upgrade</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/ValueAssistance/" style="font-size: 15.25px;">ValueAssistance</a> <a href="/tags/Version/" style="font-size: 14px;">Version</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/Video/" style="font-size: 14px;">Video</a> <a href="/tags/Viewer/" style="font-size: 14px;">Viewer</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WSAppServer/" style="font-size: 14px;">WSAppServer</a> <a href="/tags/WebLibraryDefinition/" style="font-size: 14.63px;">WebLibraryDefinition</a> <a href="/tags/Webservice/" style="font-size: 19.63px;">Webservice</a> <a href="/tags/WhileLoop/" style="font-size: 14px;">WhileLoop</a> <a href="/tags/Wizard/" style="font-size: 14px;">Wizard</a> <a href="/tags/Worklist/" style="font-size: 14px;">Worklist</a> <a href="/tags/Workqueue/" style="font-size: 14.63px;">Workqueue</a> <a href="/tags/Workspace/" style="font-size: 15.88px;">Workspace</a> <a href="/tags/XDS/" style="font-size: 14.63px;">XDS</a> <a href="/tags/XML/" style="font-size: 15.25px;">XML</a> <a href="/tags/XPath/" style="font-size: 15.25px;">XPath</a> <a href="/tags/XSLT/" style="font-size: 14px;">XSLT</a> <a href="/tags/xECM/" style="font-size: 16.5px;">xECM</a> <a href="/tags/xForm/" style="font-size: 16.5px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+
+	
+
+
+
+<div id="download002" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps prototyping booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download002" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="tfokgrtbsp">
+            <p><input class="search-input" type="text" placeholder="First name" name="UIMy41yrHk" id="id-UIMy41yrHk"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="frlQMmEVB9" id="id-frlQMmEVB9"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="p5xcHl0BfA" id="id-p5xcHl0BfA"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="download" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps fundamentals booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="qdlxpohveb">
+            <p><input class="search-input" type="text" placeholder="First name" name="9aiQvAsyHa" id="id-9aiQvAsyHa"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="pKdGB3hCf6" id="id-pKdGB3hCf6"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="8azv3a7ZO9" id="id-8azv3a7ZO9"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="hosting" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Plan you strategic AppWorks hosting</h1>
+        <h2 class="site-description">You will receive a mail with information on next steps</h2>
+        <form name="hosting" action="https://appworks-tips.email-provider.eu/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="ojenuvc25g">
+            <p><input class="search-input" type="text" placeholder="First name" name="kZYzubjXZ1" id="id-kZYzubjXZ1"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="DU7uu8Hd1B" id="id-DU7uu8Hd1B"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="7" name="waY3MUqJDo" id="id-waY3MUqJDo" placeholder="Turn you wish into a command"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="OTyYwKXWRE" id="id-OTyYwKXWRE"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><i>AppWorks hosting is a payable service handled via monthly invoicing. This means that you will be billed for the service <br>after it has been provided to you under our signed service agreement which we put in place after our free call.</i></p>
+            <p><input class="submit-input" type="submit" value="Take action!"></p>
+        </form>
+    </div>
+</div>
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="google" class="search-overlay subscribe-overlay">
+        <div class="search-form" style="height:8rem;">
+            
+            <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+            
+            <script async src="https://cse.google.com/cse.js?cx=784555e4960d85d09"></script>
+            <div id="cse" style="width: 80%; margin: 0 auto; text-align:left">
+            <div class="gcse-search"></div>
+            </div>
+            <a class="search-overlay-close" href="#"></a>
+        </div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback or any question</h1>
+        <h2 class="site-description">Send back any feedback or question so we can inspect and adapt our features or help you on your own journey.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback or any question"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Send"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2024
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Discover the secret to effortlessly exporting your project model for maximum reusability</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+
+<script src="/js/mix/post-lazy.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av.js"></script>-->
+
+<script src="/js/av.js"></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>

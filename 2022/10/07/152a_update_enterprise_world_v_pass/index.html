@@ -1,7 +1,1624 @@
-<html><head></head><body>{# 文章页 #}
-{% extends '_layout.swig' %}
-{% import '_partials/post.swig' as template %}
-{% block content %}
-{% include '_partials/header.swig' %}
-{{ template.tpl() }}
-{% endblock %}</body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+<link rel="stylesheet" href="/css/products.css">
+
+	
+<link rel="stylesheet" href="/css/nav.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+    
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y597KBTG4E"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-Y597KBTG4E');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Update on OpenText World (Limited V-Pass edition 2022 Q4) | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="Q4 is here; We dive into a limited digital world (Las Vegas) event...">
+
+	
+	<meta name="keywords" content="opentext, enterprise_world, digital, update">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Update on OpenText World (Limited V-Pass edition 2022 Q4) | AppWorks Tips">
+	<meta property="og:description" content="Q4 is here; We dive into a limited digital world (Las Vegas) event...">
+	<meta property="og:url" content="https://appworks-tips.com/2022/10/07/152a_update_enterprise_world_v_pass/">
+
+	
+	<meta property="article:published_time" content="2022-10-07T12:10:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2022/10/07/152a_update_enterprise_world_v_pass/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+        <div class="site-header-sponsor">
+            
+                <a href="https://bos-ictservices.nl" target="_blank">
+                <img class="sponsor-image" src="https://bos-ictservices.nl/img/logo.png">
+                </a>
+            
+                <a href="https://github.com/sponsors/HetBenkt" target="_blank">
+                <img class="sponsor-image" src="/images/sponsor_here.png">
+                </a>
+            
+        </div>
+        
+        
+
+<nav class="site-nav">
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                
+                
+                    <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+                
+                
+                
+                    <a href="/installation" title="INSTALLATION 23.4">INSTALLATION 23.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
+  <g id="surface1">
+   <path d="m7.18359,7.74219c-0.29687,0.125 -0.39062,0.36328 -0.27734,0.6289l0.90234,-0.3789c-0.09765,-0.23047 -0.39062,-0.34766 -0.625,-0.25zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_1"/>
+   <path d="m14.48047,8.67969l1.12109,-0.67969l-1.12109,-0.67969l0.95312,-0.90234l-1.23828,-0.43359l0.75,-1.07813l-1.30468,-0.16406l0.50781,-1.21094l-1.30469,0.10938l0.24219,-1.28907l-1.25781,0.375l-0.02735,-1.30859l-1.15234,0.62891l-0.30078,-1.27735l-0.99219,0.85938l-0.5625,-1.1875l-0.79297,1.04297l-0.79297,-1.04297l-0.5625,1.1875l-0.99219,-0.85938l-0.30078,1.27735l-1.15234,-0.62891l-0.02734,1.30859l-1.25782,-0.375l0.2461,1.28907l-1.3086,-0.10938l0.50782,1.21094l-1.30079,0.16406l0.7461,1.07813l-1.23828,0.43359l0.95312,0.90234l-1.12109,0.67969l1.12109,0.67969l-0.95312,0.90234l1.23828,0.42969l-0.75,1.07812l1.30469,0.16797l-0.50782,1.21094l1.3086,-0.10937l-0.2461,1.28906l1.25782,-0.37891l0.02734,1.3125l1.15234,-0.6289l0.30078,1.27734l0.99219,-0.85938l0.5586,1.1875l0.79687,-1.04296l0.79297,1.04296l0.5625,-1.1875l0.99219,0.85938l0.30078,-1.27734l1.15234,0.6289l0.02735,-1.30859l1.25781,0.375l-0.2461,-1.28906l1.3086,0.10937l-0.50781,-1.21094l1.30468,-0.16406l-0.75,-1.08203l1.23828,-0.42969l-0.95312,-0.90234zm-9.05859,2.1289l-0.5586,-1.32421c-0.10547,-0.25 -0.26562,-0.44141 -0.54687,-0.32032c-0.30469,0.12891 -0.30469,0.35938 -0.16797,0.67969l0.53906,1.27344l-0.99219,0.42187l-1.05859,-2.5039l0.90625,-0.38282l0.16406,0.39063c0.09766,-0.39453 0.27344,-0.66016 0.65235,-0.82031c0.65625,-0.27735 1.13281,-0.02344 1.42187,0.66406l0.63281,1.5l-0.99218,0.42187zm2.58984,-1.01171c-0.80078,0.33984 -1.61719,0.14453 -1.97266,-0.69922c-0.34375,-0.82032 0.04688,-1.60547 0.85157,-1.94532c0.92578,-0.39062 1.7539,0.01172 2.125,0.92579l-1.89844,0.80078c0.1289,0.29687 0.4375,0.39453 0.70312,0.28515c0.15625,-0.0664 0.26953,-0.19922 0.27735,-0.3789l0.95312,-0.40235c0.08985,0.69532 -0.45312,1.16797 -1.03906,1.41407zm3.98828,-1.76954l-1.00781,-1.30468l-0.00781,0.0039l0.26953,1.61328l-0.96875,0.41016l-1.88282,-2.15234l0.96875,-0.41016l1.03516,1.38672l0.01172,-0.00391l-0.26953,-1.71093l0.84375,-0.35547l1.03515,1.38281l0.00782,-0.00391l-0.26563,-1.71093l0.94141,-0.39844l0.25781,2.84375l-0.96875,0.41015zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_2" stroke="null"/>
+  </g>
+ </g>
+
+</svg></a>
+                
+                
+                
+                    <a href="/ci_cd" title="CI/CD">CI/CD</a>
+                
+                
+                
+                    <a href="/products" title="PRODUCTS">PRODUCTS</a>
+                
+                
+                
+                    <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+                
+                
+                
+                    <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+                
+                
+                
+                    <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME">HIRE ME</a>
+                
+                
+                
+                    <a href="/about" title="ABOUT">ABOUT</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <ul class="nav">
+                    <li>
+                        <div class="hire_me_content">
+                        <i class="hire_me_live"></i>
+                        <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME" id="hire_me">HIRE ME</a>
+                        </div>
+                    </li>
+                </ul>
+        
+        
+        
+        
+        
+    </div>
+
+    <div class="search-button">
+
+    
+    <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+        <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+            <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+        </svg> Sponsor
+    </a>
+    
+
+    
+
+    
+        <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </a>
+    
+
+    </div>
+
+    <div class="site-nav-right">
+        
+        <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+            <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+                <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+            </svg> Sponsor
+        </a>
+        
+
+        
+
+        
+            <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            </a>
+        
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback / Question" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2022-10-07T12:00:00.000Z" itemprop="datePublished">
+                    2022-10-7
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Enterprise-world/">Enterprise world</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">Update on OpenText World (Limited V-Pass edition 2022 Q4)</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2022/152a_update_enterprise_world_v_pass/feature_tag.webp)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>This post will give you a “limited” wrap-up of the <a href="https://www.opentextworld.com/event/6fe70c77-552e-4cd5-a36f-32a5f096a877" target="_blank" rel="noopener">‘Enterprise World (Las Vegas) V-pass 2022 Q4’</a> event from this week (October 4-6, 2022)! A three-day event physically happening in Las Vegas with lots of sharing sessions to join. Too bad for me; I will not join the party in the United States but signed myself in for a virtual pass. The V-pass is free and gives a view on the static available content! Remember this quote? <em>Those who come back ‘digital’, will win!</em>. Well, let’s see what value we can find these days.</p>
+<p>My focus points these days (as technical consultant) to keep you updated with AppWorks related information: <em>‘AppWorks’, ‘Documentum’, ‘D2’, ‘xCP’, ‘OTDS’, ‘OT2’ (Developer Services), ‘Intelligent Viewing’, OT Content Server’, ‘Extended ECM (xECM)’, ‘AI’, and ‘Cloud’</em></p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>…and have us a screenshot of the portal for the virtual pass:</p>
+<p><img alt="ot_world_2022_001" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664864762.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664864762.png"></p>
+<p>Looks promising!…The most important things we can do in this portal:</p>
+<ul>
+<li>‘Watch Keynotes’; Well, have yourself an imagination what you can do here…Brûh!? (as my son would describe it)</li>
+<li>‘Browse Sessions’; hmmm, my V-pass only has 12 sessions available; Most of them have a “Sales / Promotion / Happy-customer / Connect-it-all” smell; The keynotes are on my agenda…Let’s see!</li>
+<li>‘Explore resources’; This is a PDF-gallery-party with filtering on all the new stuff. AppWorks is not (yet!) in the list…O-boy!? Later on, I experience a delay (in timezone!?) where all the related PDF content on the physical sessions are released in this resource section too! Hooray!! Because of this delay, I made a promise to check it out for a post next week! &#x1F917; It will be great from what I see at the moment! Nicely categorized per <a href="https://www.opentext.nl/products-and-solutions/products/opentext-cloud" target="_blank" rel="noopener">OT Cloud Solution</a>!</li>
+<li>‘View sponsors’; What is an event without sponsors…Just have a look on (for me!) an interesting overview.</li>
+</ul>
+<p><img alt="ot_world_2022_001_1" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1665088141.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1665088141.png"></p>
+<blockquote>
+<p>What do I miss in this portal:</p>
+<ul>
+<li>‘Hands-On Labs’ with links to the Innovation, Product, and Developer labs.</li>
+<li>“Meet up” sessions</li>
+<li>Communications, chats…In other words ‘Interactivity’!? On the other hand; I do understand everyone is off-course very busy physically in Las Vegas. My last physical OT event was in Monaco and I can still remember that those are the longest days to make on connecting with people and consuming content.</li>
+</ul>
+</blockquote>
+<p>…</p>
+<p>Time to consume the content that is available for us with the first session for this event…The keynote from Mark J. Barrenechea…Go-Go-Gadget!</p>
+<hr>
+<h3 id="Opening-Keynote-Elevate-Business-with-the-Information-Advantage-by-Mark-J-Barrenechea"><a href="#Opening-Keynote-Elevate-Business-with-the-Information-Advantage-by-Mark-J-Barrenechea" class="headerlink" title="Opening Keynote: Elevate Business with the Information Advantage (by Mark J. Barrenechea)"></a>Opening Keynote: Elevate Business with the Information Advantage (by Mark J. Barrenechea)</h3><p>Live from <a href="https://www.venetianlasvegas.com/" target="_blank" rel="noopener">“The Venetian Resort Las Vegas”</a>; It’s 17.45 CEST, but it looks we start 15 min. later…</p>
+<blockquote>
+<p>In the meantime…Vegas is not in reach without by bike, only by plane from where I stay:</p>
+<p><img alt="ot_world_2022_002" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664898239.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664898239.png"></p>
+<p>It’s a <code>10 hr, 40 min</code> flight…Having the wind in the back!? 8.622 km away!</p>
+</blockquote>
+<p>In those 15 min. of waiting, a quick and short in-between intro about Las Vegas and a view on the area around the hotel. 3 minutes before the main act another “quicky” on social media updates with photo selfies on <a href="https://twitter.com/hashtag/opentextworld" target="_blank" rel="noopener">#opentextworld</a>…</p>
+<p>…</p>
+<p>Next step on our next step together…”Better together” (does it ring a bell?). We’re kicking off with CEO &amp; CTO OpenText ‘Mark J. Barrenechea’ (from US California!)…</p>
+<p><img alt="ot_world_2022_003" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664899479.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664899479.png"></p>
+<blockquote>
+<p><strong>“The great reunion”</strong>…We need to catch up from the last three years!</p>
+</blockquote>
+<p><strong>Business 2030</strong>…What does it look like? Digital transformation with a new set of requirements:</p>
+<ul>
+<li>Climate</li>
+<li>Information is abundant</li>
+<li>Work and the workforce</li>
+<li>Trust</li>
+<li>Compliance</li>
+<li>The green ledger</li>
+<li>AI, ML, and algorithms</li>
+<li>Much more…</li>
+</ul>
+<p><img alt="ot_world_2022_004" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664899768.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664899768.png"></p>
+<blockquote>
+<p>No event without sponsors…Even for the V-pass experience!</p>
+</blockquote>
+<p>OpenText in numbers:</p>
+<p><strong>Financial</strong>; 3,5B revenue, 1,5B OT cloud, and 500M in R&amp;D<br><strong>Product &amp; Market</strong>; Leader in clouds, 1T API calls, 75K customers, 4 cloud consumption options, 3K customers on private cloud, 11M subscribers<br><strong>Customers &amp; partners</strong>; 100K customers, partnerships (Microsoft, SAP, Google), <a href="https://zix.com/products/backup-recovery" target="_blank" rel="noopener">ZIX Carbonite</a></p>
+<p><em>The four forces:</em></p>
+<ol>
+<li>Rate of automation; exponential growth in software, robots, and machines</li>
+<li>Increase of computing power; doubling every 18 month in flops count</li>
+<li>Power of the network; nodes, connected users and machines. 9B people connected to the interwebs generating big data sets</li>
+<li>Datasets, the growth of information; input for intelligent and core</li>
+</ol>
+<p><img alt="ot_world_2022_005" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664900456.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664900456.png"></p>
+<blockquote>
+<p>Notes:</p>
+<ul>
+<li>The center of business 2030 is ‘Information core’</li>
+<li>Every industry digitally transformed through information and software acceleration</li>
+<li>Human centric work and workforces; It’s just math with instant expectations. It’s in our DNA with control of space, time and constant feedback</li>
+<li>New rules; climate innovation, social justice and compliance</li>
+<li>New requirements; AI applies to the current information management. We are software/information companies…We want to unlock growth!</li>
+</ul>
+</blockquote>
+<p>The vision…</p>
+<p><img alt="ot_world_2022_006" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664900804.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664900804.png"></p>
+<p>…</p>
+<p><strong><em>Information core -&gt; System of record -&gt; Systems of engagement</em></strong></p>
+<p>…</p>
+<p>Exponential in a linear period where there is a deception between linear- vs. exponential growth…Preparation is key to growth and to simplify the complexity:</p>
+<ul>
+<li>Build and own your digital capabilities</li>
+<li>Centralize the complexity</li>
+<li>Information automation standardization</li>
+<li>Move to the cloud</li>
+<li>Strategic information</li>
+<li>Create an intelligent information core…</li>
+</ul>
+<p><strong>“Information Core”</strong> in numbers:</p>
+<ul>
+<li>50M+ document in CS</li>
+<li>800K customer contracts</li>
+<li>7M+ sales documents</li>
+<li>1P unstructured data</li>
+<li>4.3T business network transactions per year</li>
+<li>1B+ emails per year</li>
+<li>180TB data per year</li>
+<li>3M+ support inquires per year</li>
+</ul>
+<p><img alt="ot_world_2022_007" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664901934.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664901934.png"></p>
+<p><strong><em>22.4 is <a href="https://blogs.opentext.com/announcing-opentext-cloud-editions-ce-22-4/" target="_blank" rel="noopener">“Cloud editions”</a></em></strong></p>
+<ul>
+<li>Magellan Integrated into cloud editions and AppWorks</li>
+<li>New algorithms &amp; libraries with more integrations</li>
+<li>New capabilities with Magellan risk guard</li>
+<li>Business solutions - we’re just getting started!</li>
+</ul>
+<blockquote>
+<p>Muhi’s comment on CE: Great innovations, never upgrade again, intelligent, security, connected. API brings integrations with apps and clouds (multi-cloud strategy); Extend business strategies and processes. Partners bring business data for improving information management. Be the platform of all platforms!</p>
+</blockquote>
+<p><strong><em>Version <code>23.2</code> is “Titanium”</em></strong><br><strong><em>Version <code>XX.X</code> is “Business 2030”</em></strong>…This is where we go to…</p>
+<p>Just mentioning in between: <strong><a href="https://support.opentext.com/" target="_blank" rel="noopener">THE OPENTEXT ZONE</a></strong> (your resource for all self-service stuff with OpenText)</p>
+<p>…</p>
+<p><strong>DEMO TIME</strong>…on “OpenText Core”</p>
+<p>A demonstration is given on ‘OpenText Core Content’ UI with business workspaces to structure your content viewing in SAP. It all embeds also into the powerful Microsoft Teams (via a channel). “Sales” lives in Salesforce; The same invoice information is also integrated here! Hooray…Connect it all with CE. In ‘Titanium’ we also get Google-drive integrations to directly add content into your Google presentations.</p>
+<p>Multi-saas-configurable-case-management-whatever-application…It’s a mouth full of Core Case Management from our AppWorks PO Nick King! It’s again a smooth demo with tools to move the frictions for hard tools into visual code with OpenText Lego-blocks (we’re working on more Lego parts!). There is an invoice workbench app (powered by OpenText developer cloud) embracing all the API consumption into one place.</p>
+<p>‘Exstream Communications designer’ can offer an environment integrated to OpenText Core; It manages rules for communication and delivery on content into the correct place. ‘Exstream Orchestrator’ brings workflow capabilities for further extending your information.</p>
+<p>‘Magellan Risk Guard manager’ with business intelligence reporting to give insight on your information. It contains data validation and recognition via classifiers on documents and images. Detecting risk counts with <strong>P</strong>ersonal <strong>I</strong>nformation reports.</p>
+<p>‘Trading grid’ online as command center to support customers managing risks. It’s a monitor to detect risks and sanctions; The ‘Lens’ tool will even go deeper into the data receiving the invoice data again injected in the initial demo (4 paragraphs back)…Connect it all!</p>
+<p>…</p>
+<p>The force behind all the connections…A new model to customer success…<br><strong>L</strong>and, <strong>O</strong>perate, <strong>V</strong>alue, <strong>E</strong>xpand (The OpenText <a href="https://www.youtube.com/watch?v=Qksz72Xtpwc" target="_blank" rel="noopener">LOVE-model</a>!)</p>
+<ul>
+<li>We are there with you to land in the cloud</li>
+<li>Deliver every 90 days to value your experience</li>
+<li>Find the unique path to expand</li>
+</ul>
+<blockquote>
+<p>How about <strong>L</strong>and, <strong>A</strong>dopt, <strong>E</strong>xpand, <strong>R</strong>enew?…LAER is dead!</p>
+</blockquote>
+<p>…</p>
+<p>Final remarks! Looking up into the sky…What do we see?</p>
+<p><img alt="ot_world_2022_008" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664905479.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664905479.png"></p>
+<blockquote>
+<p>The OpenText ‘Zero-In’ framework; Zero footprint, zero barriers, zero compromise!<br>Zoom-out for the final zoom-in to end with…The 1% challenge! Save the trees by reducing paper usage.</p>
+</blockquote>
+<hr>
+<h3 id="Simplify-Solution-Building-with-OpenText-APIs-by-Pamela-Bernardino"><a href="#Simplify-Solution-Building-with-OpenText-APIs-by-Pamela-Bernardino" class="headerlink" title="Simplify Solution Building with OpenText APIs (by Pamela Bernardino)"></a>Simplify Solution Building with OpenText APIs (by Pamela Bernardino)</h3><p>Second session for the evening of 4th October 2022! We’re learning about OpenText APIs…Leveraging the power of cloud API services.</p>
+<p><strong><em>Build, Embed, and Extend</em></strong></p>
+<p><strong>Postman</strong>; Provides API management including testing and documentation. Not only tech-companies use APIs! We see much usage in payment platforms and not only by the techies of the world! APIs are not just for software engineers. We move APIs to the C-suit where the back office can call them. We see API growth in the number of requests with organizations increasing their use of APIs in all aspects of their business. The future of APIs is great…A lot of businesses want to expand and invest in it.</p>
+<p><strong>Developer cloud with tools</strong>; OpenText cloud developer flow is ‘<strong>Build</strong>‘ with a visual studio code plugin, ‘<strong>Deploy</strong>‘ the configuration artifacts, and ‘<strong>Run</strong>‘ on your local machine via a NodeJS server. The Visual Studio plugin contains the connection and model sections:</p>
+<ul>
+<li><em>Groups</em>; A set of users</li>
+<li><em>Namespaces</em>; The space where the solution lives in</li>
+<li><em>Permissions</em>; Access to your domain model (your rights on it)</li>
+<li><em>Traits</em>; Grouping of properties (like an approval step)</li>
+<li><em>Types</em>; The domain model (your properties)</li>
+<li><em>Workflow</em>; The BPM running activities calling cloud APIs</li>
+</ul>
+<blockquote>
+<p>The tool/plugin is GA end of OpenText World! Download it <a href="https://marketplace.visualstudio.com/items?itemName=OpenText.ot2-vscode-extension-pack" target="_blank" rel="noopener">here</a></p>
+</blockquote>
+<p><strong>Commercialization flow</strong>: ‘<strong>Deploy</strong>‘ to development organization, ‘<strong>Promote</strong>‘ to commercial organization, and ‘<strong>Subscribe</strong>‘ customer to app and measure usage. OpenText cloud Administration is your location to bring your application alive. Reporting about API calls is available on the served tenants. We can have tenants for DEV, TST, ACP, or PRD. From a Postman perspective, you can create new tenants with API calls, create administration users and do other management tasks for your apps.</p>
+<p>…<br>Enterprise loaded apps are supported; security is managed…So, don’t worry! &#x1F913;<br>…</p>
+<p>Customers have unique challenges that require unique solutions. We want to enable the customer to move to the cloud. Seamless integration is important and the key to success. Cloud services are ideal to lower costs. We (at OpenText) are our biggest “developer” customer with hundreds of customers already under management.</p>
+<hr>
+<h3 id="Content-Cloud-Innovations-to-Master-Modern-Work-by-Michael-Cybala"><a href="#Content-Cloud-Innovations-to-Master-Modern-Work-by-Michael-Cybala" class="headerlink" title="Content Cloud Innovations to Master Modern Work (by Michael Cybala)"></a>Content Cloud Innovations to Master Modern Work (by Michael Cybala)</h3><p>Our third (and final) session for today…Key challenges: ‘Transformation’, ‘Competitiveness’, ‘Attract talent’, ‘Hybrid work’ (We’re still searching what is the best way), ‘Shift to cloud’ (How do we make the transition?), ‘Zero trust’ to secure the organization. Content is everywhere…</p>
+<p><img alt="ot_world_2022_009" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664915744.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664915744.png"></p>
+<p><strong><em>Master employee experiences</em></strong>; Employee is delved into unused systems and leave; protect your talent! Control content sprawl, seamless experience, better collaboration, and automate manual tasks.<br>OpenText SmartView gives a modern look with widget-able landing pages. Power to adopt pages for their own needs. Intelligent Viewing is embedded into applications. Core eSig is embedded into apps too. Co-authoring in MS Office brings a seamless editor functionality. xECM introduces structured content (a business workspace) to Teams.</p>
+<p><strong><em>Master operational efficiency</em></strong>; Content in context with solution templates and run anywhere.<br>Integrate with systems driving the process. OTCS seamless integrates with SAP. Content services help your business. Run anywhere, industry solutions, and connect to ERP and CRM.<br>Technologies that enable the efficiency:</p>
+<p><img alt="ot_world_2022_010" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664917149.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664917149.png"></p>
+<p>Pre-configured solutions, generate documents, and next: sales and procurement. Each quarter new features are delivered with beautiful landing pages to consume your information. Bridge content and process (xECM with AppWorks!). Enable case management with universal inboxes. Integrate ‘Core Capture’ with SalesForce; Automate document capture, extract and validate data. Even document generation is a valuable option to have integrated.</p>
+<p><strong><em>Master information protection</em></strong>; Automate classification, detect and act on sensitive and protected information.<br>Save, private, compliant. This goes beyond records management with ‘zero-trust’. AI-powered content analysis with <a href="https://learn.microsoft.com/en-us/azure/information-protection/what-is-information-protection" target="_blank" rel="noopener">Microsoft AIP</a> integration.<br>Customers want to move to the cloud, but there is a lack in trust. Customers want to be in control; Also in the cloud! Bring your own keys (BYOK) to get access to your information. Content is only safe in a repository, but it’s also exported and shared. MS AIP brings security to this exported content to prevent data leakage without disrupting business processes. Risk Gard helps in this entire process too.</p>
+<p>…</p>
+<p>Final giveaway!…new tailored offerings are available to move you to the cloud and modernize your environment:</p>
+<p><img alt="ot_world_2022_011" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664918157.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664918157.png"></p>
+<hr>
+<h3 id="Technology-Innovation-Keynote-amp-Innovation-Demo-Showcase-by-Muhi-S-Majzoub"><a href="#Technology-Innovation-Keynote-amp-Innovation-Demo-Showcase-by-Muhi-S-Majzoub" class="headerlink" title="Technology Innovation Keynote &amp; Innovation Demo Showcase (by Muhi S. Majzoub)"></a>Technology Innovation Keynote &amp; Innovation Demo Showcase (by Muhi S. Majzoub)</h3><p>A brand-new second day, and for me just one session on the planning on my V-pass experience. Day 2 is always “Muhi-time”, so relax and have yourself an update on some cloud-tech.</p>
+<p><strong><em>Project “Titanium”</em></strong></p>
+<p>Digital processes are key; remove paper is critical for the future. Invoices on paper can be replaced with active (compliant) e-Invoicing in a digital way.</p>
+<ul>
+<li><em>Intelligent</em>; Secure information</li>
+<li><em>Connected</em>; Integrate solutions</li>
+<li><em>Responsible</em>; Forward looking to meet the cloud</li>
+</ul>
+<p><strong>Extra note:</strong> OT Content Suit and Documentum will land in the cloud. OpenText keeps it up-to-date for you with all compliance rules around it!</p>
+<p>…</p>
+<h4 id="Developer-cloud"><a href="#Developer-cloud" class="headerlink" title="Developer cloud"></a>Developer cloud</h4><blockquote>
+<p><strong>Unleash developer creativity</strong>…Build integrations and custom apps using proven OT <strong>I</strong>nformation <strong>M</strong>anagement technology; Integrate cloud to cloud with multi-cloud strategies. It even connects to your private cloud where required. APIs are your next-gen agility.</p>
+</blockquote>
+<ul>
+<li><em>Intelligent</em>; Unlock and deliver flows.</li>
+<li><em>Connected</em>; Integrate apps with APIs to support automation with new tools in VS-code.</li>
+<li><em>Responsible</em>; Ensure that apps are secure with the “Risk Guard” cloud API services.</li>
+</ul>
+<p>A <strong><em>demo</em></strong> on the developer services shows features where the OpenText ‘Core content’ solution calls the API services. Postman is key to start with the API. Once in place you can start writing your JavaScript UI to do the rest…How easy!?</p>
+<p>Google partnership is introduced where they build an ecosystem to embrace OpenText products. ‘Business Workspaces’ are seen as the “collaboration of the future”. <strong>G</strong>oogle <strong>C</strong>loud <strong>P</strong>latform will get integrations with business workspaces and Google workspaces. Google has 35 cloud locations at the moment and is still expanding based on where the customers are found. Access information and make decisions from one insight (content in context at the correct time and location). The future of work is hybrid where we work remote and in the office when required. Google delivers a compliant solution to make your work hybrid with the new partnership with OpenText.</p>
+<p><strong><em>The roadmap of Titanium Developer cloud</em></strong></p>
+<p><img alt="ot_world_2022_012" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664986495.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664986495.png"></p>
+<p>…</p>
+<h4 id="Business-network-cloud"><a href="#Business-network-cloud" class="headerlink" title="Business network cloud"></a>Business network cloud</h4><blockquote>
+<p>Digitize supply chains; connect once, reach anything.</p>
+</blockquote>
+<ul>
+<li><em>Intelligent</em>; Collaborate with trading partners to improve agility. New ‘Active Access’ solution.</li>
+<li><em>Connected</em>; Connect data sources and integrate. New UI and integrate with legacy systems.</li>
+<li><em>Responsible</em>; Meet latest information for the future. Supply chain control tower. Monitor credit ratings and much more.</li>
+</ul>
+<p>ERP connectors in the supply chain <strong><em>demo</em></strong>. The ‘Trading Grid Online’ solution shows where you simply configure your connections with adapters (created with dev-kits, but it’s all done for you…No worries!). Don’t worry about authentication too…It’s all secure and all live within 30 sec. (sure!?…Well, in the demo!)</p>
+<p><img alt="ot_world_2022_013" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664987821.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664987821.png"></p>
+<p><strong><em>The roadmap of Titanium Business network cloud</em></strong></p>
+<p><img alt="ot_world_2022_013_1" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1665143241.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1665143241.png"></p>
+<p>…</p>
+<h4 id="Security-cloud"><a href="#Security-cloud" class="headerlink" title="Security cloud"></a>Security cloud</h4><blockquote>
+<p>Build a resilient and safer world. Protect the organization without inhibiting productivity and collaboration. Detect and investigate threats across endpoints, networks, and cloud.</p>
+</blockquote>
+<ul>
+<li><em>Intelligent</em>; Filter alerts to reduce burgeon on security operations.</li>
+<li><em>Connected</em>; Adapt to modern ways to work to collect from devices. ‘EnCase’ endpoint security.</li>
+<li><em>Responsible</em>; Investigate cyber-security incidents to get back on track quickly. ‘EnCase’ forensic/endpoint investigator.</li>
+</ul>
+<p>A <strong><em>demo</em></strong> is shown on <strong>N</strong>etwork <strong>D</strong>etection and <strong>R</strong>esponse which demonstrates the importance to visualize with great dashboards and widgets. It can show known-bad-behaviors to trigger an alert. “Bracata”, “Suricata” and “Zeek” are policies to get the correct insight for forensics.</p>
+<p><strong><em>The roadmap of Titanium Security cloud</em></strong></p>
+<p><img alt="ot_world_2022_014" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664988525.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664988525.png"></p>
+<p>…</p>
+<h4 id="Experience-cloud"><a href="#Experience-cloud" class="headerlink" title="Experience cloud"></a>Experience cloud</h4><blockquote>
+<p>Create communication-centric experiences.</p>
+</blockquote>
+<ul>
+<li><em>Intelligent</em>; Improve marketing ops with tools for authoring, etc.</li>
+<li><em>Connected</em>; Deliver relevant experiences powered by integrated data sources. OpenText ‘Media management’ solution is key here.</li>
+<li><em>Responsible</em>; Optimize it all for the best experience. “Qfinity” Contact Center-as-a-Service (CCaaS).</li>
+</ul>
+<p>The <strong><em>demo</em></strong> here is about Exstream with eSig and Core Content to automate communication creation. We want to have a one-to-one communication for all. Exstream has a ‘Communications Designer’ with simulation features to make a signature request and manage it through (off-course!) a Gmail interface…It’s a party! The solution is delivered with a flow model to manage all the business rules to deliver your signature package to the correct location.</p>
+<p><strong><em>The roadmap of Titanium Experience cloud</em></strong></p>
+<p><img alt="ot_world_2022_015" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664989124.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664989124.png"></p>
+<p>…</p>
+<h4 id="Content-cloud"><a href="#Content-cloud" class="headerlink" title="Content cloud"></a>Content cloud</h4><blockquote>
+<p>Master modern work where we manage and protect critical business document for the organization. Automation to create positive employee experiences and improve operational efficiency. Documentum is still innovated and for sure not forgotten!</p>
+</blockquote>
+<ul>
+<li><em>Intelligent</em>; Manage the full lifecycle of content. xECM is key where BYOK for information is critical.</li>
+<li><em>Connected</em>; Integrate content everywhere. Core Content gets a new mobile UI with all other great new features we will all LOVE!</li>
+<li><em>Responsible</em>; Automate what user can’t &amp; won’t do. Documentum get a ‘Health System’ with interesting graphs</li>
+</ul>
+<p><strong><em>Demo</em></strong> time for this cloud…Intelligent document classification and metadata extraction with the SaaS solution of the shelf. ‘Core Capture’ will scan and extract the data from a document. Next step is collaboration, indexing and approval (via MS Teams) where we see a seamless integration with Core Content. Even record compliance is applied in the background (it’s magic!). “Teams” starts the approval and Core Content manages the approval task for approval. After this approval it all moves to SalesForce with a final approved document to work with. Even in Core Content the business user can build his own workflow…Nice!? AND…It processes documents faster and reduces costs on error!</p>
+<p><strong><em>The roadmap of Titanium Content cloud</em></strong></p>
+<p><img alt="ot_world_2022_016" class="post-img b-lazy" href="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664990656.png" data-src="/images/posts/2022/152a_update_enterprise_world_v_pass/152a_update_enterprise_world_v_pass_1664990656.png"></p>
+<hr>
+<p><em>What happened on day three of the conference?</em> A great question with a solid answer! I don’t have a clue, and I even skipped day 3. Why? Well, I could only find more partner “sales” sessions with my V-pass, and I was a bit done with it!? I understand we need sales people, but with my technical background I’m just too sober to keep my full attention. Give me concrete facts to play with; They feel like presents under the Christmas tree which fires the lion within me!</p>
+<p><strong><em>Goals for this quarter</em></strong>: Move your ass to the cloud, start consuming APIs and share the joy! Don’t forget: You can integrate everything everywhere…In 30 sec.! Brûh! &#x1F632; <em>The complex doesn’t have to be complicated!</em> As I always say…”Just keep it simple!”</p>
+<hr>
+<p>That’s all my friends, this was the “<strong>V-pass</strong>“ update on the content virtually exposed on the digital portal. We missed some interaction, but we could still get a grip on some nice-valuable content parts…I save it for next week! So, a “DONE” for what it is for now; hopefully I can join physically next time when it’s all arranged closer at home. Have a nice weekend and till the next one…next week.</p>
+<blockquote>
+<p>A final interesting thing! In the corridors I have heard what content services are being used for OT2 (“Developer Cloud”). I thought it would be the flagship of the company “OpenText Content Server/Suite (OTCS)”, but it looks like the choice is made for “OpenText Documentum Server”…A wonderful thing! I always said Documentum is a steadier platform for a large content service minded architectures.</p>
+</blockquote>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="OpenText cloud overview (incl. AWP 22.4 update)" href="/2022/10/14/152b_enterprise_world_cloud_overview/">
+            <i class="fa-solid fa-backward"></i> OpenText cloud overview (incl. AWP 22.4 update)
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Undeploy vs. rollback" href="/2022/09/30/152_undeploy_vs_rollback/">
+            Undeploy vs. rollback <i class="fa-solid fa-forward"></i>
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Opening-Keynote-Elevate-Business-with-the-Information-Advantage-by-Mark-J-Barrenechea"><span class="toc-text">Opening Keynote: Elevate Business with the Information Advantage (by Mark J. Barrenechea)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Simplify-Solution-Building-with-OpenText-APIs-by-Pamela-Bernardino"><span class="toc-text">Simplify Solution Building with OpenText APIs (by Pamela Bernardino)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Content-Cloud-Innovations-to-Master-Modern-Work-by-Michael-Cybala"><span class="toc-text">Content Cloud Innovations to Master Modern Work (by Michael Cybala)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Technology-Innovation-Keynote-amp-Innovation-Demo-Showcase-by-Muhi-S-Majzoub"><span class="toc-text">Technology Innovation Keynote &amp; Innovation Demo Showcase (by Muhi S. Majzoub)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Developer-cloud"><span class="toc-text">Developer cloud</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Business-network-cloud"><span class="toc-text">Business network cloud</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Security-cloud"><span class="toc-text">Security cloud</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Experience-cloud"><span class="toc-text">Experience cloud</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Content-cloud"><span class="toc-text">Content cloud</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2024/03/08/215_the_cache_of_dynamic_enums_exposed/">Exposed and exploited; The dark side of Dynamic ENUM caches</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/03/01/214_get_history_data_after_entity_is_gone/">Shocking betrayal; Unearth disturbing history data after an entity instance disappears</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/23/213_cleaning_psl_data/">Unbelievable hacks to supercharge your PSL data cleaning</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/16/212_dive_into_deployment_models/">Unveiling the secrets of the 'Deployment Models' artifact; Boost your tech IQ instantly</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/09/211_install_awp_in_distributed_mode_ha/">Mastering AppWorks; The essential steps for a distributed mode installation</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/02/210_install_cars_in_distributed_mode_ha/">Revolutionize your ride; Unveiling the ultimate distributed mode for CARS</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/01/26/209_deadlines_and_escalation_with_alerts/">Supercharge your knowledge; Watch the mastery of deadlines, escalations, and alerts</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/01/19/208a_update_on_24_1/">A brand-new year, with a brand-new release; AppWorks 24.1 is GA for a features review</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Release/">Release</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/AI/" style="font-size: 14px;">AI</a> <a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/API/" style="font-size: 14.63px;">API</a> <a href="/tags/Abstract/" style="font-size: 14px;">Abstract</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/ActiveMQ/" style="font-size: 14.63px;">ActiveMQ</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 15.88px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 15.88px;">Anniversary</a> <a href="/tags/Annotation/" style="font-size: 14px;">Annotation</a> <a href="/tags/Apache/" style="font-size: 14.63px;">Apache</a> <a href="/tags/ApacheDirectoryStudio/" style="font-size: 14px;">ApacheDirectoryStudio</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Archive/" style="font-size: 14.63px;">Archive</a> <a href="/tags/Artifact/" style="font-size: 15.25px;">Artifact</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/Audit/" style="font-size: 14px;">Audit</a> <a href="/tags/Authentication/" style="font-size: 14.63px;">Authentication</a> <a href="/tags/BPM/" style="font-size: 22.75px;">BPM</a> <a href="/tags/Base64/" style="font-size: 14px;">Base64</a> <a href="/tags/Brava/" style="font-size: 14px;">Brava!</a> <a href="/tags/BuildingBlock/" style="font-size: 15.88px;">BuildingBlock</a> <a href="/tags/BuildingBlocks/" style="font-size: 15.25px;">BuildingBlocks</a> <a href="/tags/BulkUpdate/" style="font-size: 14px;">BulkUpdate</a> <a href="/tags/BusinessID/" style="font-size: 14px;">BusinessID</a> <a href="/tags/BusinessIdentifier/" style="font-size: 14px;">BusinessIdentifier</a> <a href="/tags/BusinessWorkspace/" style="font-size: 14px;">BusinessWorkspace</a> <a href="/tags/CAF/" style="font-size: 14px;">CAF</a> <a href="/tags/CARS/" style="font-size: 15.25px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 15.25px;">CD/CI</a> <a href="/tags/CIM/" style="font-size: 14px;">CIM</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMC/" style="font-size: 14px;">CMC</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 16.5px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/CaseInstanceMonitor/" style="font-size: 14px;">CaseInstanceMonitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Charts/" style="font-size: 14px;">Charts</a> <a href="/tags/ChatGPT/" style="font-size: 14px;">ChatGPT</a> <a href="/tags/Cleaning/" style="font-size: 14.63px;">Cleaning</a> <a href="/tags/Cloning/" style="font-size: 14px;">Cloning</a> <a href="/tags/Cloud/" style="font-size: 14px;">Cloud</a> <a href="/tags/Condition/" style="font-size: 14.63px;">Condition</a> <a href="/tags/ConfigEntity/" style="font-size: 14px;">ConfigEntity</a> <a href="/tags/ConnectedWorkspace/" style="font-size: 14px;">ConnectedWorkspace</a> <a href="/tags/Connector/" style="font-size: 15.88px;">Connector</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Content/" style="font-size: 16.5px;">Content</a> <a href="/tags/ContentServer/" style="font-size: 16.5px;">ContentServer</a> <a href="/tags/Create/" style="font-size: 14px;">Create</a> <a href="/tags/Custom/" style="font-size: 14px;">Custom</a> <a href="/tags/Customization/" style="font-size: 19px;">Customization</a> <a href="/tags/Data/" style="font-size: 14px;">Data</a> <a href="/tags/Database/" style="font-size: 17.13px;">Database</a> <a href="/tags/DatabaseMetadata/" style="font-size: 14.63px;">DatabaseMetadata</a> <a href="/tags/Date/" style="font-size: 14px;">Date</a> <a href="/tags/DateTime/" style="font-size: 14px;">DateTime</a> <a href="/tags/Deadline/" style="font-size: 14px;">Deadline</a> <a href="/tags/Debugging/" style="font-size: 14.63px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/DeploymentModels/" style="font-size: 14px;">DeploymentModels</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 17.75px;">Digital</a> <a href="/tags/Distributed/" style="font-size: 14.63px;">Distributed</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/Documentation/" style="font-size: 14px;">Documentation</a> <a href="/tags/DocumentstoreConnector/" style="font-size: 15.25px;">DocumentstoreConnector</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/DynamicEnum/" style="font-size: 14px;">DynamicEnum</a> <a href="/tags/EISConnector/" style="font-size: 14.63px;">EISConnector</a> <a href="/tags/Email/" style="font-size: 14.63px;">Email</a> <a href="/tags/EnterpriseWorld/" style="font-size: 19px;">EnterpriseWorld</a> <a href="/tags/Entity/" style="font-size: 20.25px;">Entity</a> <a href="/tags/EntityContext/" style="font-size: 14px;">EntityContext</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Escalation/" style="font-size: 14px;">Escalation</a> <a href="/tags/Explorer/" style="font-size: 14.63px;">Explorer</a> <a href="/tags/Expressions/" style="font-size: 14px;">Expressions</a> <a href="/tags/Feature/" style="font-size: 14px;">Feature</a> <a href="/tags/FileConnector/" style="font-size: 14px;">FileConnector</a> <a href="/tags/Filter/" style="font-size: 14px;">Filter</a> <a href="/tags/Flag/" style="font-size: 14px;">Flag</a> <a href="/tags/ForLoop/" style="font-size: 14px;">ForLoop</a> <a href="/tags/Form/" style="font-size: 19.63px;">Form</a> <a href="/tags/Function/" style="font-size: 14px;">Function</a> <a href="/tags/Gateway/" style="font-size: 14.63px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Google/" style="font-size: 14px;">Google</a> <a href="/tags/Graphics/" style="font-size: 14px;">Graphics</a> <a href="/tags/Grid/" style="font-size: 14px;">Grid</a> <a href="/tags/HTML5/" style="font-size: 14px;">HTML5</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/HighAvailability/" style="font-size: 14.63px;">HighAvailability</a> <a href="/tags/History/" style="font-size: 14px;">History</a> <a href="/tags/Homepage/" style="font-size: 14.63px;">Homepage</a> <a href="/tags/HowTo/" style="font-size: 16.5px;">HowTo</a> <a href="/tags/Icons/" style="font-size: 14px;">Icons</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14.63px;">Identity</a> <a href="/tags/IdentityPackage/" style="font-size: 15.25px;">IdentityPackage</a> <a href="/tags/InformationHub/" style="font-size: 14px;">InformationHub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.13px;">Installation</a> <a href="/tags/IntelligentViewing/" style="font-size: 14.63px;">IntelligentViewing</a> <a href="/tags/Interceptor/" style="font-size: 14px;">Interceptor</a> <a href="/tags/IsTemporaryCopy/" style="font-size: 14px;">IsTemporaryCopy</a> <a href="/tags/ItemStatus/" style="font-size: 14px;">ItemStatus</a> <a href="/tags/JMS/" style="font-size: 14.63px;">JMS</a> <a href="/tags/JMeter/" style="font-size: 14px;">JMeter</a> <a href="/tags/JSON/" style="font-size: 15.25px;">JSON</a> <a href="/tags/JShell/" style="font-size: 14px;">JShell</a> <a href="/tags/JUnit/" style="font-size: 14px;">JUnit</a> <a href="/tags/JXplorer/" style="font-size: 14px;">JXplorer</a> <a href="/tags/Java/" style="font-size: 15.88px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 14.63px;">JavaScript</a> <a href="/tags/JavaUI/" style="font-size: 14px;">JavaUI</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/LDAP/" style="font-size: 14.63px;">LDAP</a> <a href="/tags/LandingPage/" style="font-size: 14px;">LandingPage</a> <a href="/tags/Language/" style="font-size: 14.63px;">Language</a> <a href="/tags/LanguagePack/" style="font-size: 14px;">LanguagePack</a> <a href="/tags/Less/" style="font-size: 14px;">Less</a> <a href="/tags/License/" style="font-size: 14.63px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.88px;">Lifecycle</a> <a href="/tags/LinkDocument/" style="font-size: 14px;">LinkDocument</a> <a href="/tags/LinkedEntity/" style="font-size: 14px;">LinkedEntity</a> <a href="/tags/List/" style="font-size: 14.63px;">List</a> <a href="/tags/LoadBalancing/" style="font-size: 14px;">LoadBalancing</a> <a href="/tags/Logging/" style="font-size: 14px;">Logging</a> <a href="/tags/LongTextProperty/" style="font-size: 14px;">LongTextProperty</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 14.63px;">Management</a> <a href="/tags/Message/" style="font-size: 14px;">Message</a> <a href="/tags/Metadata/" style="font-size: 14px;">Metadata</a> <a href="/tags/Method/" style="font-size: 14px;">Method</a> <a href="/tags/Migration/" style="font-size: 14px;">Migration</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Mockito/" style="font-size: 14px;">Mockito</a> <a href="/tags/Model/" style="font-size: 14px;">Model</a> <a href="/tags/Modeling/" style="font-size: 14.63px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 14.63px;">Monitoring</a> <a href="/tags/NGINX/" style="font-size: 14px;">NGINX</a> <a href="/tags/Northwind/" style="font-size: 14px;">Northwind</a> <a href="/tags/Notification/" style="font-size: 14px;">Notification</a> <a href="/tags/OKTA/" style="font-size: 14px;">OKTA</a> <a href="/tags/OTDS/" style="font-size: 17.75px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 23.38px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Order/" style="font-size: 14px;">Order</a> <a href="/tags/Organization/" style="font-size: 15.25px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/PSL/" style="font-size: 14px;">PSL</a> <a href="/tags/Package/" style="font-size: 15.25px;">Package</a> <a href="/tags/Parallel/" style="font-size: 14px;">Parallel</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/Pattern/" style="font-size: 14px;">Pattern</a> <a href="/tags/Personal/" style="font-size: 14px;">Personal</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 14px;">Postman</a> <a href="/tags/PowerMockito/" style="font-size: 14px;">PowerMockito</a> <a href="/tags/Preferences/" style="font-size: 14px;">Preferences</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/ProgressionBar/" style="font-size: 14px;">ProgressionBar</a> <a href="/tags/Project/" style="font-size: 15.25px;">Project</a> <a href="/tags/Projects/" style="font-size: 14px;">Projects</a> <a href="/tags/Properties/" style="font-size: 14.63px;">Properties</a> <a href="/tags/Property/" style="font-size: 15.25px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/RHEL/" style="font-size: 14px;">RHEL</a> <a href="/tags/ReST/" style="font-size: 15.88px;">ReST</a> <a href="/tags/ReST-Gateway/" style="font-size: 14px;">ReST Gateway</a> <a href="/tags/Recap/" style="font-size: 15.88px;">Recap</a> <a href="/tags/RegularExpression/" style="font-size: 14.63px;">RegularExpression</a> <a href="/tags/Relations/" style="font-size: 15.25px;">Relations</a> <a href="/tags/Release/" style="font-size: 20.88px;">Release</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/ResultList/" style="font-size: 15.25px;">ResultList</a> <a href="/tags/Reusability/" style="font-size: 14px;">Reusability</a> <a href="/tags/Reverse-proxy/" style="font-size: 14px;">Reverse proxy</a> <a href="/tags/Role/" style="font-size: 14px;">Role</a> <a href="/tags/Roles/" style="font-size: 14.63px;">Roles</a> <a href="/tags/Rule/" style="font-size: 14.63px;">Rule</a> <a href="/tags/Rules/" style="font-size: 14px;">Rules</a> <a href="/tags/Runtime-Security/" style="font-size: 14px;">Runtime Security</a> <a href="/tags/SAML/" style="font-size: 14px;">SAML</a> <a href="/tags/SDK/" style="font-size: 14.63px;">SDK</a> <a href="/tags/SOAP/" style="font-size: 15.25px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 14.63px;">SVN</a> <a href="/tags/Scheduler/" style="font-size: 14px;">Scheduler</a> <a href="/tags/Search/" style="font-size: 14px;">Search</a> <a href="/tags/Section/" style="font-size: 14px;">Section</a> <a href="/tags/Sections/" style="font-size: 14px;">Sections</a> <a href="/tags/Security/" style="font-size: 14px;">Security</a> <a href="/tags/Selenium/" style="font-size: 14px;">Selenium</a> <a href="/tags/Service/" style="font-size: 14px;">Service</a> <a href="/tags/ServiceContainer/" style="font-size: 14.63px;">ServiceContainer</a> <a href="/tags/Setup/" style="font-size: 15.88px;">Setup</a> <a href="/tags/ShortLived/" style="font-size: 14px;">ShortLived</a> <a href="/tags/SimpleClient/" style="font-size: 14px;">SimpleClient</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 15.88px;">Software</a> <a href="/tags/Solutions/" style="font-size: 14px;">Solutions</a> <a href="/tags/SourceControl/" style="font-size: 14px;">SourceControl</a> <a href="/tags/Sources/" style="font-size: 14px;">Sources</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Storage/" style="font-size: 14px;">Storage</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/SubProcess/" style="font-size: 14px;">SubProcess</a> <a href="/tags/Subtyping/" style="font-size: 14.63px;">Subtyping</a> <a href="/tags/Sync/" style="font-size: 14px;">Sync</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/SynchronizedPartition/" style="font-size: 14px;">SynchronizedPartition</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 15.25px;">Task</a> <a href="/tags/TaskLayout/" style="font-size: 14px;">TaskLayout</a> <a href="/tags/Tasks/" style="font-size: 14.63px;">Tasks</a> <a href="/tags/Team/" style="font-size: 14px;">Team</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Test/" style="font-size: 14px;">Test</a> <a href="/tags/Testing/" style="font-size: 15.25px;">Testing</a> <a href="/tags/Theme/" style="font-size: 16.5px;">Theme</a> <a href="/tags/Time/" style="font-size: 14px;">Time</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/Title/" style="font-size: 14px;">Title</a> <a href="/tags/Toggle/" style="font-size: 14px;">Toggle</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/Tool/" style="font-size: 14px;">Tool</a> <a href="/tags/Tools/" style="font-size: 14.63px;">Tools</a> <a href="/tags/Transformation/" style="font-size: 14px;">Transformation</a> <a href="/tags/Translation/" style="font-size: 14.63px;">Translation</a> <a href="/tags/UDDI/" style="font-size: 14.63px;">UDDI</a> <a href="/tags/UnInstallation/" style="font-size: 14px;">UnInstallation</a> <a href="/tags/Unicode/" style="font-size: 14px;">Unicode</a> <a href="/tags/Update/" style="font-size: 18.38px;">Update</a> <a href="/tags/Upgrade/" style="font-size: 14px;">Upgrade</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/ValueAssistance/" style="font-size: 15.25px;">ValueAssistance</a> <a href="/tags/Version/" style="font-size: 14px;">Version</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/Video/" style="font-size: 14px;">Video</a> <a href="/tags/Viewer/" style="font-size: 14px;">Viewer</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WSAppServer/" style="font-size: 14px;">WSAppServer</a> <a href="/tags/WebLibraryDefinition/" style="font-size: 14.63px;">WebLibraryDefinition</a> <a href="/tags/Webservice/" style="font-size: 19.63px;">Webservice</a> <a href="/tags/WhileLoop/" style="font-size: 14px;">WhileLoop</a> <a href="/tags/Wizard/" style="font-size: 14px;">Wizard</a> <a href="/tags/Worklist/" style="font-size: 14px;">Worklist</a> <a href="/tags/Workqueue/" style="font-size: 14.63px;">Workqueue</a> <a href="/tags/Workspace/" style="font-size: 15.88px;">Workspace</a> <a href="/tags/XDS/" style="font-size: 14.63px;">XDS</a> <a href="/tags/XML/" style="font-size: 15.25px;">XML</a> <a href="/tags/XPath/" style="font-size: 15.25px;">XPath</a> <a href="/tags/XSLT/" style="font-size: 14px;">XSLT</a> <a href="/tags/xECM/" style="font-size: 16.5px;">xECM</a> <a href="/tags/xForm/" style="font-size: 16.5px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+
+	
+
+
+
+<div id="download002" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps prototyping booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download002" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="tfokgrtbsp">
+            <p><input class="search-input" type="text" placeholder="First name" name="UIMy41yrHk" id="id-UIMy41yrHk"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="frlQMmEVB9" id="id-frlQMmEVB9"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="p5xcHl0BfA" id="id-p5xcHl0BfA"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="download" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps fundamentals booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="qdlxpohveb">
+            <p><input class="search-input" type="text" placeholder="First name" name="9aiQvAsyHa" id="id-9aiQvAsyHa"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="pKdGB3hCf6" id="id-pKdGB3hCf6"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="8azv3a7ZO9" id="id-8azv3a7ZO9"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="hosting" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Plan you strategic AppWorks hosting</h1>
+        <h2 class="site-description">You will receive a mail with information on next steps</h2>
+        <form name="hosting" action="https://appworks-tips.email-provider.eu/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="ojenuvc25g">
+            <p><input class="search-input" type="text" placeholder="First name" name="kZYzubjXZ1" id="id-kZYzubjXZ1"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="DU7uu8Hd1B" id="id-DU7uu8Hd1B"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="7" name="waY3MUqJDo" id="id-waY3MUqJDo" placeholder="Turn you wish into a command"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="OTyYwKXWRE" id="id-OTyYwKXWRE"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><i>AppWorks hosting is a payable service handled via monthly invoicing. This means that you will be billed for the service <br>after it has been provided to you under our signed service agreement which we put in place after our free call.</i></p>
+            <p><input class="submit-input" type="submit" value="Take action!"></p>
+        </form>
+    </div>
+</div>
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="google" class="search-overlay subscribe-overlay">
+        <div class="search-form" style="height:8rem;">
+            
+            <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+            
+            <script async src="https://cse.google.com/cse.js?cx=784555e4960d85d09"></script>
+            <div id="cse" style="width: 80%; margin: 0 auto; text-align:left">
+            <div class="gcse-search"></div>
+            </div>
+            <a class="search-overlay-close" href="#"></a>
+        </div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback or any question</h1>
+        <h2 class="site-description">Send back any feedback or question so we can inspect and adapt our features or help you on your own journey.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback or any question"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Send"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2024
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Update on OpenText World (Limited V-Pass edition 2022 Q4)</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+
+<script src="/js/mix/post-lazy.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av.js"></script>-->
+
+<script src="/js/av.js"></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>

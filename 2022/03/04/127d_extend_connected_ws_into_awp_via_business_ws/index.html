@@ -1,7 +1,1688 @@
-<html><head></head><body>{# 文章页 #}
-{% extends '_layout.swig' %}
-{% import '_partials/post.swig' as template %}
-{% block content %}
-{% include '_partials/header.swig' %}
-{{ template.tpl() }}
-{% endblock %}</body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<head>
+	
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+	
+<link rel="stylesheet" href="/css/allinone.min.css">
+
+	
+<link rel="stylesheet" href="/css/products.css">
+
+	
+<link rel="stylesheet" href="/css/nav.css">
+
+	
+	
+<link rel="stylesheet" href="/css/quiz.css">
+
+	
+    
+
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y597KBTG4E"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-Y597KBTG4E');
+	</script>
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Extend your 'Connected Workspace' into the 'Business Workspace' | AppWorks Tips</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Antal Bos">
+	<meta name="description" content="The ultimate end-goal on a long-lasting backlog topic">
+
+	
+	<meta name="keywords" content="content_server, connected_workspace, business_workspace, xecm">
+	
+
+	
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="apple-touch-icon" href="/images/favicon.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="AppWorks Tips">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Extend your 'Connected Workspace' into the 'Business Workspace' | AppWorks Tips">
+	<meta property="og:description" content="The ultimate end-goal on a long-lasting backlog topic">
+	<meta property="og:url" content="https://appworks-tips.com/2022/03/04/127d_extend_connected_ws_into_awp_via_business_ws/">
+
+	
+	<meta property="article:published_time" content="2022-03-04T12:03:00+08:00"> 
+	<meta property="article:author" content="Antal Bos">
+	<meta property="article:published_first" content="AppWorks Tips, /2022/03/04/127d_extend_connected_ws_into_awp_via_business_ws/">
+	
+<link rel="alternate" href="/feed.xml" title="AppWorks Tips" type="application/atom+xml">
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+        <div class="site-header-sponsor">
+            
+                <a href="https://bos-ictservices.nl" target="_blank">
+                <img class="sponsor-image" src="https://bos-ictservices.nl/img/logo.png">
+                </a>
+            
+                <a href="https://github.com/sponsors/HetBenkt" target="_blank">
+                <img class="sponsor-image" src="/images/sponsor_here.png">
+                </a>
+            
+        </div>
+        
+        
+
+<nav class="site-nav">
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                <a href="/" title="Home">HOME</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">MENU
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                
+                
+                
+                    <a href="/where_to_start" title="WHERE TO START">WHERE TO START</a>
+                
+                
+                
+                    <a href="/installation" title="INSTALLATION 23.4">INSTALLATION 23.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
+  <g id="surface1">
+   <path d="m7.18359,7.74219c-0.29687,0.125 -0.39062,0.36328 -0.27734,0.6289l0.90234,-0.3789c-0.09765,-0.23047 -0.39062,-0.34766 -0.625,-0.25zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_1"/>
+   <path d="m14.48047,8.67969l1.12109,-0.67969l-1.12109,-0.67969l0.95312,-0.90234l-1.23828,-0.43359l0.75,-1.07813l-1.30468,-0.16406l0.50781,-1.21094l-1.30469,0.10938l0.24219,-1.28907l-1.25781,0.375l-0.02735,-1.30859l-1.15234,0.62891l-0.30078,-1.27735l-0.99219,0.85938l-0.5625,-1.1875l-0.79297,1.04297l-0.79297,-1.04297l-0.5625,1.1875l-0.99219,-0.85938l-0.30078,1.27735l-1.15234,-0.62891l-0.02734,1.30859l-1.25782,-0.375l0.2461,1.28907l-1.3086,-0.10938l0.50782,1.21094l-1.30079,0.16406l0.7461,1.07813l-1.23828,0.43359l0.95312,0.90234l-1.12109,0.67969l1.12109,0.67969l-0.95312,0.90234l1.23828,0.42969l-0.75,1.07812l1.30469,0.16797l-0.50782,1.21094l1.3086,-0.10937l-0.2461,1.28906l1.25782,-0.37891l0.02734,1.3125l1.15234,-0.6289l0.30078,1.27734l0.99219,-0.85938l0.5586,1.1875l0.79687,-1.04296l0.79297,1.04296l0.5625,-1.1875l0.99219,0.85938l0.30078,-1.27734l1.15234,0.6289l0.02735,-1.30859l1.25781,0.375l-0.2461,-1.28906l1.3086,0.10937l-0.50781,-1.21094l1.30468,-0.16406l-0.75,-1.08203l1.23828,-0.42969l-0.95312,-0.90234zm-9.05859,2.1289l-0.5586,-1.32421c-0.10547,-0.25 -0.26562,-0.44141 -0.54687,-0.32032c-0.30469,0.12891 -0.30469,0.35938 -0.16797,0.67969l0.53906,1.27344l-0.99219,0.42187l-1.05859,-2.5039l0.90625,-0.38282l0.16406,0.39063c0.09766,-0.39453 0.27344,-0.66016 0.65235,-0.82031c0.65625,-0.27735 1.13281,-0.02344 1.42187,0.66406l0.63281,1.5l-0.99218,0.42187zm2.58984,-1.01171c-0.80078,0.33984 -1.61719,0.14453 -1.97266,-0.69922c-0.34375,-0.82032 0.04688,-1.60547 0.85157,-1.94532c0.92578,-0.39062 1.7539,0.01172 2.125,0.92579l-1.89844,0.80078c0.1289,0.29687 0.4375,0.39453 0.70312,0.28515c0.15625,-0.0664 0.26953,-0.19922 0.27735,-0.3789l0.95312,-0.40235c0.08985,0.69532 -0.45312,1.16797 -1.03906,1.41407zm3.98828,-1.76954l-1.00781,-1.30468l-0.00781,0.0039l0.26953,1.61328l-0.96875,0.41016l-1.88282,-2.15234l0.96875,-0.41016l1.03516,1.38672l0.01172,-0.00391l-0.26953,-1.71093l0.84375,-0.35547l1.03515,1.38281l0.00782,-0.00391l-0.26563,-1.71093l0.94141,-0.39844l0.25781,2.84375l-0.96875,0.41015zm0,0" fill="rgb(255%,255%,0%)" fill-rule="nonzero" id="svg_2" stroke="null"/>
+  </g>
+ </g>
+
+</svg></a>
+                
+                
+                
+                    <a href="/ci_cd" title="CI/CD">CI/CD</a>
+                
+                
+                
+                    <a href="/products" title="PRODUCTS">PRODUCTS</a>
+                
+                
+                
+                    <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+                
+                
+                
+                    <a href="/abbreviations" title="ABBREVIATIONS">ABBREVIATIONS</a>
+                
+                
+                
+                    <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME">HIRE ME</a>
+                
+                
+                
+                    <a href="/about" title="ABOUT">ABOUT</a>
+                
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                <ul class="nav">
+                    <li>
+                        <div class="hire_me_content">
+                        <i class="hire_me_live"></i>
+                        <a href="https://bos-ictservices.nl" target="_blank" rel="noopener" title="HIRE ME" id="hire_me">HIRE ME</a>
+                        </div>
+                    </li>
+                </ul>
+        
+        
+        
+        
+        
+    </div>
+
+    <div class="search-button">
+
+    
+    <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+        <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+            <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+        </svg> Sponsor
+    </a>
+    
+
+    
+
+    
+        <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </a>
+    
+
+    </div>
+
+    <div class="site-nav-right">
+        
+        <a class="sponsor-button" title="Sponsor" href="https://github.com/sponsors/HetBenkt" target="_blank" style="margin: 0 3px;">
+            <svg aria-hidden="true" height="24" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-heart icon-sponsor text-pink mr-2">
+                <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"/>
+            </svg> Sponsor
+        </a>
+        
+
+        
+
+        
+            <a class="subscribe-button" title="Google search" href="#google" style="margin: 0 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            </a>
+        
+
+        
+        <a class="subscribe-button" title="Quiz" href="#quiz" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Subscribe" href="#subscribe" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+        
+
+        
+        <a class="subscribe-button" title="Feedback / Question" href="#feedback" style="margin: 0 3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </a>
+        
+
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/HetBenkt" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+    
+    <a class="social-link" title="linkedin" href="https://www.linkedin.com/in/antalbos" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007BB5;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M29.632,0H2.36C1.058,0,0,1.033,0,2.307v27.384C0,30.965,1.058,32,2.36,32h27.272
+			c1.305,0,2.367-1.035,2.367-2.309V2.307C31.999,1.033,30.937,0,29.632,0z"/>
+		<path class="st1" d="M4.741,11.997h4.751v15.271H4.741V11.997z M7.118,4.405c1.518,0,2.751,1.233,2.751,2.752
+			c0,1.52-1.233,2.753-2.751,2.753c-1.524,0-2.753-1.233-2.753-2.753C4.365,5.638,5.594,4.405,7.118,4.405"/>
+		<path class="st1" d="M12.47,11.997h4.55v2.088h0.065c0.633-1.201,2.181-2.467,4.49-2.467c4.806,0,5.694,3.162,5.694,7.275v8.375
+			h-4.746v-7.426c0-1.771-0.03-4.049-2.466-4.049c-2.47,0-2.846,1.93-2.846,3.922v7.553h-4.74V11.997z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="rss" href="/feed.xml" target="_blank" rel="noopener">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+<g>
+	<rect x="0" y="0" style="fill:#F78422;" width="455.731" height="455.731"/>
+	<g>
+		<path style="fill:#FFFFFF;" d="M296.208,159.16C234.445,97.397,152.266,63.382,64.81,63.382v64.348
+			c70.268,0,136.288,27.321,185.898,76.931c49.609,49.61,76.931,115.63,76.931,185.898h64.348
+			C391.986,303.103,357.971,220.923,296.208,159.16z"/>
+		<path style="fill:#FFFFFF;" d="M64.143,172.273v64.348c84.881,0,153.938,69.056,153.938,153.939h64.348
+			C282.429,270.196,184.507,172.273,64.143,172.273z"/>
+		<circle style="fill:#FFFFFF;" cx="109.833" cy="346.26" r="46.088"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </a>
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2022-03-04T12:00:00.000Z" itemprop="datePublished">
+                    2022-03-4
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/Management/">Management</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">Extend your 'Connected Workspace' into the 'Business Workspace'</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/feature_tag.webp)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>Hi there AppWorks fans,</p>
+<p>Welcome to a new installment of AppWorks tips.</p>
+<p>This is our final post on the extended ECM (xECM) part of the platform where we glue it all together with so-called business workspaces. This is a building block available on an entity within AppWorks. We’re ready on all preparation this far from all previous posts, so we should be fine to finalize this post with a “happy end”!</p>
+<hr>
+<p><strong>Let get right into it…</strong></p>
+<p>First <strong>an overview</strong> of what we have so far:</p>
+<ul>
+<li>We have AppWorks up and running: <code>http://192.168.56.107:8080/home/appworks_tips</code></li>
+<li>Also, OTCS is up and running: <code>http://192.168.56.107:8282/livelink/cs?func=llworkspace</code><ul>
+<li>Here we also installed and enabled the xECM module</li>
+</ul>
+</li>
+<li>Both platforms have a seamless authentication through OTDS: <code>http://192.168.56.107:8181/otds-admin</code><ul>
+<li>I have the account <code>awadmin</code> prepared for this.</li>
+</ul>
+</li>
+<li>We’ve created a documentstore service container in AppWorks which points to OTCS folder <code>/Enterprise/AppWorksContent</code><ul>
+<li>Updated the OTCS folder with “full access” for all (not smart but does the trick well enough!)</li>
+<li>We exposed an extra required CWS service layer: <code>http://192.168.56.103:8282/cws/services/DocumentManagement</code></li>
+<li>Created an entity with the ‘Content’ BB applied</li>
+</ul>
+</li>
+<li>Finally, we also prepared xECM to be able to use business workspaces<ul>
+<li>This exposed an extra webservice for xECM: <code>http://192.168.56.103:8282/otsapxecm/services/ECMLink</code></li>
+<li>Update the documentstore connector with this information</li>
+</ul>
+</li>
+</ul>
+<p>This will be <strong>the plan</strong> for this post:</p>
+<ul>
+<li>In AppWorks we create a second entity with the ‘Business workspace’ BB applied</li>
+<li>In OTCS we need to create several types of documents (keep on reading for more information):<ul>
+<li>A “Folder” to create a business workspaces (just like the <code>AppWorksContent</code>…With full permission!)</li>
+<li>A “Category”</li>
+<li>A “Classification”</li>
+<li>A “Workspace Type”</li>
+<li>A “Business Workspace”</li>
+</ul>
+</li>
+<li>In xECM (within OTCS) we create two extra documents:<ul>
+<li>A “Business Application”</li>
+<li>A “Business Object Type”</li>
+</ul>
+</li>
+<li>Do a final test AppWorks runtime (for the second entity)</li>
+<li>Post questions:<ul>
+<li>What do we see created in OTCS; should be a connected workspace?</li>
+<li>What is the <code>/app/admin</code> telling me now?</li>
+</ul>
+</li>
+</ul>
+<p>Time to descend and nail this post to a final conclusion…</p>
+<hr>
+<h4 id="A-second-entity-with-the-‘Business-workspace’-BB-applied"><a href="#A-second-entity-with-the-‘Business-workspace’-BB-applied" class="headerlink" title="A second entity with the ‘Business workspace’ BB applied"></a>A second entity with the ‘Business workspace’ BB applied</h4><p>Well, I guess you can do this step on your own…right?</p>
+<p>This is what I did:</p>
+<ol>
+<li><p>Open your workspace and corresponding project (or create one if you don’t have it yet)</p>
+</li>
+<li><p>Create an ‘entities’ folder (if not yet available)</p>
+</li>
+<li><p>Create a new ‘Entity’ type of document in this new folder (just with one property, and generate all the rest)</p>
+</li>
+<li><p>Update the layout of the entity with a ‘Business Workspace’ panel</p>
+</li>
+<li><p>Add the ‘Business workspace’ BB to it (make sure to select at minimal one property store)</p>
+<p><img alt="bws_001" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642498384.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642498384.png"></p>
+</li>
+<li><p>Publish it all, and have a first test</p>
+</li>
+</ol>
+<p>After creating a new instance of this entity and directly open it, we see our first (as expected!) hurdle to take:</p>
+<p><img alt="bws_002" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642498689.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642498689.png"></p>
+<hr>
+<h4 id="Create-a-second-“Folder”"><a href="#Create-a-second-“Folder”" class="headerlink" title="Create a second “Folder”"></a>Create a second “Folder”</h4><p>We’ve already created a folder in the ‘Enterprise’ workspace with name <code>AppWorksContent</code>. We just create a second one with name <code>AppWorksWorkspaces</code>. Don’t forget to apply a full permission on the public access level. Not smart, but it works for our demo!</p>
+<p><img alt="bws_002_1" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642688849.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642688849.png"></p>
+<p>Easy!…Next…</p>
+<hr>
+<h4 id="Create-a-“Category”"><a href="#Create-a-“Category”" class="headerlink" title="Create a “Category”"></a>Create a “Category”</h4><p>Time to do dive more into the OTCS configuration where we start with a new “Category”. An applied category to an object in content server will “describe” the object with custom metadata / properties, so we can easily find it back. I’m a Documentum guy, so it took me a while before the concept of “categories” fell into place. In Documentum, we use a tool called ‘Composer’ to create custom attributes on an object type. <em>Why do we need this specifically for xECM?</em> Well, eventually we would like to use a property in this category to fill it with a value retrieved from the AppWorks entity instance!</p>
+<p>Open OTCS (with in my case the <code>awadmin</code> account with full permission) on URL: <code>http://192.168.56.107:8282/livelink/cs</code>. Open the ‘Connected Workspaces’ from the menu:</p>
+<p><img alt="bws_003" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642588719.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642588719.png"></p>
+<p>We end up in the landing page for connected workspaces. Now open the ‘Categories’ element:</p>
+<p><img alt="bws_004" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642588827.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642588827.png"></p>
+<p>You see already the generated category passing by from our previous documentstore connector in AppWorks (have yourself a closer look if you like). We continue by creating a new category from the menu:</p>
+<p><img alt="bws_005" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642589004.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642589004.png"></p>
+<p>We see a new creation screen:</p>
+<p><img alt="bws_006" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642589101.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642589101.png"></p>
+<p>Give an interesting name and hit the ‘Add’ button. Now just open the new created category, and you have the ability to add new properties to it:</p>
+<p><img alt="bws_007" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642590296.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642590296.png"></p>
+<p>You will see this field configuration:</p>
+<p><img alt="bws_008" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642590498.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642590498.png"></p>
+<blockquote>
+<p>I give it the name <code>cat_bws_name</code> wisely to make the difference between the entity property <code>bws_name</code> which we will map to each other later on!</p>
+</blockquote>
+<p>This will be the end-result we can do a ‘Submit’ on (the second “flag”-property is just to play around with).</p>
+<p><img alt="bws_009" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642590675.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642590675.png"></p>
+<p>That’s it…Our first category in OTCS…Hooray!</p>
+<blockquote>
+<p>FYI: We can now use this category when you create (for example) a new folder / document in your favorite workspace, but this is something we’ll automate in the business workspace connection! Just continue the grind…</p>
+<p><img alt="bws_010" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642591551.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642591551.png"></p>
+</blockquote>
+<p>Next!</p>
+<hr>
+<h4 id="Create-a-“Classification”"><a href="#Create-a-“Classification”" class="headerlink" title="Create a “Classification”"></a>Create a “Classification”</h4><p>Another ‘Unknown’ terminology for me as a Documentum guy…Smells like another layer of information to find back your data. <strong>#RTFM</strong> tells me this: “It’s an alternative for users to organize, browse, and search items in OTCS. It provides a systematic grouping of knowledge or items based on a specific set of<br>criteria!”. Ahaa…I heard about this concept before from my ‘Intelligent Capture’-scanning (aka ‘Captiva’) connected people!</p>
+<p>So, let’s create our first classification!? Do this in the same ‘Connected Workspaces’ section in OTCS. Open the ‘Classifications’ link and create yourself a new classification. Well, almost!…First a “Classification Tree”? What?…Another unknown term!?</p>
+<blockquote>
+<p>A little Google would be in place…</p>
+<ul>
+<li><code>https://www.solver.com/classification-tree</code></li>
+<li><code>https://en.wikipedia.org/wiki/Decision_tree_learning</code></li>
+</ul>
+<p>Nice, so our ‘mined’ data will fall through a forest of classification trees, before it eventually will get its final classification applied…Interesting stuff, but out of scope for this post.</p>
+</blockquote>
+<p>We just continue our journey and create just a new tree with just one ‘trunk’! Let’s name it <code>one_trunked_tree</code>. &#x1F60F;</p>
+<p><img alt="bws_011" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642690304.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642690304.png"></p>
+<p>Before hitting the ‘Add’ button, we also apply our previous created category to our trunk (this makes sure all the classifications in the tree will inherit from it!)</p>
+<p>With the category applied we can hit the ‘Add’ button, we get back to the main screen where we can “Open” our one-trunked-tree.</p>
+<p><img alt="bws_012" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642689773.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642689773.png"></p>
+<p>Here we can now create a first classification with (how nice!?) the name <code>class1_branch</code></p>
+<p><img alt="bws_013" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642690471.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642690471.png"></p>
+<p>Watch the inherited category and hit the ‘Add’ button to commit it to OTCS. We also create another classification with name <code>class2_branch</code>. This is the final result:</p>
+<p><img alt="bws_014" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642690614.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642690614.png"></p>
+<p>Nice…Learned something in this section! Next…</p>
+<hr>
+<h4 id="Create-a-“Workspace-Type”"><a href="#Create-a-“Workspace-Type”" class="headerlink" title="Create a “Workspace Type”"></a>Create a “Workspace Type”</h4><p>Again, unknown territory…<strong>#RTFM</strong>…Looks like this type of document is a “framework provider” for creating business workspaces! Ahaa, we’re getting close. So, this document ‘describes’ how our business workspace will eventually look like! This ‘smells’ like a “template” kind of thing where our business workspace is an instance of it?…comment me if this is a valid conclusion!?</p>
+<p>Go to the ‘Connected workspace’ section again, open the ‘Workspace Types’ link, and create a new one:</p>
+<p><img alt="bws_015" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642691370.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642691370.png"></p>
+<p>We get an interesting form which we fill it like this</p>
+<ul>
+<li>Provide a name <code>appworks_ws_type</code> </li>
+<li>Add the workspace type name(s) for your languages (see it as the workspace type “label”). I just use <code>Appworks Workspace Type</code></li>
+<li>For the ‘Business Workspace Names’, I use <code>Appworks BWS - [7505:cat_bws_name]</code><ul>
+<li>The property “bws_category:cat_bws_appworks” is selected from the ‘Insert Attribute’ button!</li>
+</ul>
+</li>
+<li>The ‘Workspace Creation Settings’ gets an update to ‘Content Server Folder’ where we select our created <code>AppWorksWorkspaces</code> folder</li>
+</ul>
+<p>This should be your end-goal:</p>
+<p><img alt="bws_016" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642691976.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642691976.png"></p>
+<p>Hit the ‘Save Changes’ button to get back to the overview page of the ‘Workspace Types’</p>
+<p><img alt="bws_017" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642692090.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642692090.png"></p>
+<p>Next step…</p>
+<hr>
+<h4 id="Create-a-“Business-Workspace”"><a href="#Create-a-“Business-Workspace”" class="headerlink" title="Create a “Business Workspace”"></a>Create a “Business Workspace”</h4><p>Now open the ‘Document Templates’ section of the ‘Enterprise’ dropdown menu. This is the place to create a new ‘Business Workspace’…finally!</p>
+<p><img alt="bws_018" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642692293.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642692293.png"></p>
+<blockquote>
+<p>We are in a ‘templates’ section here, so the previous ‘smelled’ conclusion about business workspace isn’t fully correct. We create a template here, so the previous ‘Workspace Type’ is more a framework to describe our business workspace template! When we start to really create our business workspaces (in our <code>AppWorksWorkspaces</code> folder), we will have a business workspace instance of this template. Looks like a better conclusion to me! &#x1F605;</p>
+</blockquote>
+<p>The form data to use:</p>
+<ul>
+<li>Give a name like <code>appworks_bws_template</code></li>
+<li>Select the ‘Workspace type’: <code>appworks_ws_type</code></li>
+<li>Add our classification: <code>one_trunked_tree:class1_branch</code></li>
+<li>Apply our category: <code>bws_category</code></li>
+<li>Save it to: <code>Content Server Document Templates</code> (if not already selected!)</li>
+</ul>
+<p><img alt="bws_019" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642693292.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642693292.png"></p>
+<p>Hmmm…Looks like we glue it all together here!…Save it via the ‘Add’ button. After this, you can open our ‘templated’ business workspace to add a “body” with predefined folders:</p>
+<p><img alt="bws_020" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642693419.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642693419.png"></p>
+<blockquote>
+<p>Make sure the folder inherit the classification, and category from the parent business workspace template!</p>
+</blockquote>
+<p>We’re getting close my friends…Next!</p>
+<hr>
+<h4 id="Create-a-“Business-Application”-part-of-xECM"><a href="#Create-a-“Business-Application”-part-of-xECM" class="headerlink" title="Create a “Business Application” (part of xECM)"></a>Create a “Business Application” (part of xECM)</h4><p>Time for xECM! Open it from the ‘Enterprise’ dropdown menu (last one in the list if you followed all the information correctly!)</p>
+<p><img alt="bws_021" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642693697.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642693697.png"></p>
+<p>Let’s dive into the creation of a new connection to a business application (our external system…called AppWorks!). You enter a blank screen where we have the ability to add a new ‘Business Application’ type of document.</p>
+<p>This is how we fill in the requested form:</p>
+<ul>
+<li>Logical System Name: <code>xECM</code> (<strong>NOTE</strong>: This name needs to match the ‘External system ID’ defined on the documentstore connector in AppWorks!)</li>
+<li>Application Server Endpoint: <code>http://192.168.56.107:8080/home/appworks_tips/app/xecm/ECMLinkService?WSDL</code> (In AppWorks, each organization has its own xECM end-point available OOTB)</li>
+<li>Username: <code>sysadmin</code></li>
+<li>Password: <code>admin</code> (in my case!)</li>
+<li>System Name: <code>AppWorks Platform</code> (or whatever you like)</li>
+</ul>
+<p>This will be the end-result to give an ‘Apply’ to…Don’t ‘Save Changes’ yet!</p>
+<p><img alt="bws_022" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642694307.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642694307.png"></p>
+<p>You have now the ability to earn a green flag on the ‘Test’ button:</p>
+<p><img alt="bws_023" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642694471.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642694471.png"></p>
+<p>Now, save your stuff and give me a knuckle-bump if you made it this far…You’re my man (or woman)! &#128074;</p>
+<hr>
+<h4 id="Create-a-“Business-Object-Type”-part-of-xECM"><a href="#Create-a-“Business-Object-Type”-part-of-xECM" class="headerlink" title="Create a “Business Object Type” (part of xECM)"></a>Create a “Business Object Type” (part of xECM)</h4><p>Our last step…Also in the xECM space…The creation of a “Business Object Type” (the same steps as this business application)</p>
+<p>Start with a name like <code>appworks_bo_type</code> and select the just created business application <code>xECM (HTTP)</code>. Now let’s hit the ‘Select From Business Application’ button!</p>
+<p><img alt="bws_024" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642695192.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642695192.png"></p>
+<p>Do you see what I see? Isn’t that a recognizable number!? If not? Scroll back to the top of this post and look again!</p>
+<blockquote>
+<p>Also, double-check the roles on the AppWorks side for your ‘sysadmin’ account which you need to assign as configured on the entity ‘Security’ BB (if applied!)</p>
+</blockquote>
+<p>…<br>Exactly…That’s an ‘ItemID’ value from our beloved platform! &#x1F601;<br>…</p>
+<p>Well…Where are we waiting for…select it!</p>
+<p><img alt="bws_025" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642695429.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642695429.png"></p>
+<blockquote>
+<p>Later on, I also updated the ‘Display URL’ field to <code>http://192.168.56.103:8080/home/appworks_tips/app/start</code>. The screenshot points to a URL of SAP.<br>SPOILER ALERT: This is the location where the platform uses this URL definition:</p>
+<p><img alt="bws_025_1" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642759240.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642759240.png"></p>
+</blockquote>
+<p>Continue to the ‘Workspace Type’ and select our <code>appworks_ws_type</code>. Same for the ‘Workspace Template’ with value <code>Content Server Document Templates:appworks_bws_template</code></p>
+<p><img alt="bws_026" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642695635.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642695635.png"></p>
+<p>Further down we mark the option ‘Can be Added as Business Object’ and enable the option <code>Enable Metadata Mapping from the business application to OpenText Content Server</code>. Now we have the ability to add a ‘Business Object Name Pattern’ like this <code>[Properties: bws_name]</code></p>
+<blockquote>
+<p>Yes, you have it correct…This property should match the property name of our previous created entity (the one with the business workspace BB applied!)</p>
+</blockquote>
+<p><img alt="bws_027" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642695948.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642695948.png"></p>
+<p>In the property mapping we’ll do things like below. We do a mapping from the AppWorks properties to the OTCS properties of our category:</p>
+<p><img alt="bws_028" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642696209.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642696209.png"></p>
+<p>After hitting the ‘Save Changes’ button, we get a nice end-result back:</p>
+<p><img alt="bws_029" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642696404.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642696404.png"></p>
+<p>Looks promising for that final test step! &#x1F60D;</p>
+<hr>
+<h4 id="Try-our-second-entity-instance-in-runtime-again"><a href="#Try-our-second-entity-instance-in-runtime-again" class="headerlink" title="Try our second entity instance in runtime (again)"></a>Try our second entity instance in runtime (again)</h4><p>Back into AppWorks runtime…without any restart of any service! That’s for the first time!</p>
+<p>Open the already instantiated entity with the business workspace applied…Hit the ‘Synchronization workspace’ button!</p>
+<p>…</p>
+<p>!!OMG!! &amp;&amp; !!WTF!! (as my kids would pronounce it)</p>
+<p>…</p>
+<p><img alt="bws_030" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642696711.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642696711.png"></p>
+<p>The image clearly shows us a created business workspace with a name based on the configured ‘Workspace Type’ <code>appworks_ws_type</code>…Remember: <code>Appworks BWS - [7505:cat_bws_name]</code>!? So, this means our entity-property-value synchronizes to the category-property-value:</p>
+<p><img alt="bws_031" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642752486.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642752486.png"></p>
+<p>Nice…Beer time! &#x1F37A;</p>
+<hr>
+<h4 id="Post-questions-with-answers"><a href="#Post-questions-with-answers" class="headerlink" title="Post questions (with answers)"></a>Post questions (with answers)</h4><p>Let’s get ourselves time to answer some questions…</p>
+<p><strong>What do we see created in OTCS?</strong></p>
+<p>Well, have yourself a view in the ‘AppWorksWorkspaces’ folder via the SmartUI where the screenshot tells us a thousand words!</p>
+<p><img alt="bws_032" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642752707.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642752707.png"></p>
+<p><strong>What is the <code>/app/admin</code> telling me now?</strong></p>
+<p>Interesting, since I’ve applied the business workspace BB to my entity I already saw something happening here (Yes…I double-checked up-front!). Two things to note:</p>
+<ol>
+<li><p>‘Business workspace configuration’ for the corresponding entity:</p>
+<p><img alt="bws_033" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755071.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755071.png"></p>
+<blockquote>
+<p>For our post, we can leave this option as is (default ‘None’), but if you require different:</p>
+<ul>
+<li>‘Link existing business workspace’: When you create the Business WS manually in OTCS, and you want to link the Business-WS-enabled-entity instance in runtime to the already available business WS in OTCS. We made it already a 2.0 connection with automatic linking!</li>
+<li>‘Cross-application shared / related workspace’: Used when you have a similar object type in other applications too. This option enables you to share the business WS with multiple applications! An option out of scope for this post.</li>
+</ul>
+</blockquote>
+</li>
+<li><p>This is what I see for the reporting section with interesting insights:</p>
+<p><img alt="bws_034" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755648.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755648.png"></p>
+<blockquote>
+<p>Let us grep the screenshots…to give a “feeling”:</p>
+<p><img alt="bws_035" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755739.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755739.png"><br><img alt="bws_036" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755786.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755786.png"><br><img alt="bws_037" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755805.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755805.png"><br><img alt="bws_038" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755840.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642755840.png"></p>
+</blockquote>
+</li>
+</ol>
+<p>The last screenshot requires a file input! These quick steps provide you the correct file to play with:</p>
+<ul>
+<li><p>From OTCS, open the ‘Transport Warehouse’ from the Enterprise menu</p>
+</li>
+<li><p>Add a new document of type ‘Workbench’ with name: <code>wb_business_ws</code> (no further classification / categorization)</p>
+</li>
+<li><p>Now go to the ‘Business Object Type’ we’ve created before. The one with name <code>appworks_bo_type</code>. You can add it to the created workbench warehouse:</p>
+<p><img alt="bws_039" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642756268.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642756268.png"></p>
+</li>
+<li><p>Just follow the steps till you’ve added it…Nothing special</p>
+</li>
+<li><p>Go back to the created workbench (within the transport warehouse), and open it. You see the ‘Business Object Type’ passing by, and you can also hit the link ‘Add all to Transport Package’</p>
+<p><img alt="bws_040" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642757023.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642757023.png"></p>
+</li>
+<li><p>I give it the name <code>tp_business_ws</code> and ‘Add’ it.</p>
+</li>
+<li><p>Now we go to the ‘Transport Packages’ section of the ‘Warehouse’, where we can download our zipped package!</p>
+<p><img alt="bws_041" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642757163.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642757163.png"></p>
+</li>
+</ul>
+<p><strong>Add another entity property to the category flag <code>cat_bws_appworks</code>?</strong></p>
+<p>During the category creation, we’ve added a second field which is unused this far. We created this field specially for this question. Follow these steps to have a recap (a better understanding) of the connection!</p>
+<p>…</p>
+<p><strong><em>AppWorks design-time</em></strong></p>
+<ul>
+<li>Add a Boolean type of property to the <code>business_ws</code> entity with name: <code>bws_is_appworks</code><ul>
+<li>Remove the ‘none’ value as valid option</li>
+</ul>
+</li>
+<li>Update the “Create” form with this new property (add it as a checkbox)</li>
+<li>Select this new property in the ‘Business workspace’ BB for this entity (as configurable metadata to OTCS!)</li>
+<li>Save it and publish it.</li>
+</ul>
+<p><strong><em>OTCS</em></strong></p>
+<ul>
+<li><p>Go to the xECM section from the Enterprise menu</p>
+</li>
+<li><p>Open our ‘Business Object Type’ with name: <code>appworks_bo_type</code></p>
+</li>
+<li><p>Scroll to the ‘Property Mapping’ and add the mapping to <code>Content Server Categories:bws_category:cat_bws_appworks</code>; The value <code>Properties.bws_is_appworks</code> should be available from the “Business Property” field as drop-down (although it doesn’t look like a dropdown)!</p>
+<p><img alt="bws_042" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642760354.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642760354.png"></p>
+</li>
+</ul>
+<p><strong><em>AppWorks runtime</em></strong></p>
+<p>Just open the instanced entity of our business workspace entity and have a double check!</p>
+<p><img alt="bws_043" class="post-img b-lazy" href="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642760512.png" data-src="/images/posts/2022/127d_extend_connected_ws_into_awp_via_business_ws/127d_extend_connected_ws_into_awp_via_business_ws_1642760512.png"></p>
+<blockquote>
+<p>No, there was no manipulation behind it, no service restart either. Just a refresh of the screen! &#x1F607;</p>
+</blockquote>
+<p>…</p>
+<p><strong>Where can we find more information about this xECM connection?</strong></p>
+<ul>
+<li>Have a look in the low-code design guide. There is a section available called “Configuring Extended ECM for AppWorks Platform”. </li>
+<li>Have also a look at the security parameters of the OTCS instance behind the function URL: <code>http://192.168.56.107:8282/livelink/cs?func=admin.securityvars</code>. You might need to apply specific settings on your side!</li>
+<li>The extended connection like shown in this post depends heavily on the log files within the system. This is just a quick list of commands I used during my journey:</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#find files updated last minute</span></span><br><span class="line">sudo find /opt -<span class="built_in">type</span> f -cmin 1</span><br><span class="line"></span><br><span class="line"><span class="comment">#tail log files:</span></span><br><span class="line">sudo tail -999f /opt/tomee/apache-tomee-plus-8.0.6/logs/catalina.out</span><br><span class="line">sudo tail -999f /opt/tomcat/apache-tomcat-8.5.43/logs/directory-access.log</span><br><span class="line">sudo tail -999f /opt/tomcat/apache-tomcat-8.5.43/logs/localhost_access_log.&#123;date&#125;.txt</span><br><span class="line">sudo tail -999f /opt/tomcat_cs/apache-tomcat-8.5.43/logs/localhost_access_log.&#123;date&#125;.txt</span><br><span class="line">sudo tail -999f /opt/opentext/otds/opendj/logs/access</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>I guess that’s it…A proudly “DONE” where we finally put a point behind an interesting deep-dive on xECM. It was a ‘Black box’ to me, but now we’ve covered it from A-Z! If you made it all the way till the end, we should shake hands. I guess the platform will not get more complex after this journey where we learned about:</p>
+<ul>
+<li>Installing OTCS</li>
+<li>Connecting it to OTDS </li>
+<li>Applying a seamless login between OTCS and AppWorks </li>
+<li>Putting the documentstore connector in place</li>
+<li>Eventually, brought life in the business workspace BB. </li>
+</ul>
+<p>Time for vacation! Have a great week-end and CU in the next post on another great topics about any AppWorks-Tips!</p>
+<p>Don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <a class="prev-post" title="The power of the " external webservice configuration" artifact" href="/2022/03/11/128_the_power_of_the_external_webservice_configuration/">
+            <i class="fa-solid fa-backward"></i> The power of the "External Webservice Configuration" artifact
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Your final destination on xECM preparation" href="/2022/02/25/127c_your_final_destination_on_xecm_preparation/">
+            Your final destination on xECM preparation <i class="fa-solid fa-forward"></i>
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#A-second-entity-with-the-‘Business-workspace’-BB-applied"><span class="toc-text">A second entity with the ‘Business workspace’ BB applied</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-second-“Folder”"><span class="toc-text">Create a second “Folder”</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-“Category”"><span class="toc-text">Create a “Category”</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-“Classification”"><span class="toc-text">Create a “Classification”</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-“Workspace-Type”"><span class="toc-text">Create a “Workspace Type”</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-“Business-Workspace”"><span class="toc-text">Create a “Business Workspace”</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-“Business-Application”-part-of-xECM"><span class="toc-text">Create a “Business Application” (part of xECM)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-“Business-Object-Type”-part-of-xECM"><span class="toc-text">Create a “Business Object Type” (part of xECM)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Try-our-second-entity-instance-in-runtime-again"><span class="toc-text">Try our second entity instance in runtime (again)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Post-questions-with-answers"><span class="toc-text">Post questions (with answers)</span></a></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; AppWorks Tips &mdash;</small>
+    <h3 class="read-next-card-header-title">Recent Posts</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2024/03/08/215_the_cache_of_dynamic_enums_exposed/">Exposed and exploited; The dark side of Dynamic ENUM caches</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/03/01/214_get_history_data_after_entity_is_gone/">Shocking betrayal; Unearth disturbing history data after an entity instance disappears</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/23/213_cleaning_psl_data/">Unbelievable hacks to supercharge your PSL data cleaning</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/16/212_dive_into_deployment_models/">Unveiling the secrets of the 'Deployment Models' artifact; Boost your tech IQ instantly</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/09/211_install_awp_in_distributed_mode_ha/">Mastering AppWorks; The essential steps for a distributed mode installation</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/02/02/210_install_cars_in_distributed_mode_ha/">Revolutionize your ride; Unveiling the ultimate distributed mode for CARS</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/01/26/209_deadlines_and_escalation_with_alerts/">Supercharge your knowledge; Watch the mastery of deadlines, escalations, and alerts</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2024/01/19/208a_update_on_24_1/">A brand-new year, with a brand-new release; AppWorks 24.1 is GA for a features review</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">Categories</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Enterprise-world/">Enterprise world</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Installation/">Installation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Management/">Management</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Release/">Release</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(/images/cover.png)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">Tag Cloud</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/AI/" style="font-size: 14px;">AI</a> <a href="/tags/ANT/" style="font-size: 14px;">ANT</a> <a href="/tags/API/" style="font-size: 14.63px;">API</a> <a href="/tags/Abstract/" style="font-size: 14px;">Abstract</a> <a href="/tags/Abstraction/" style="font-size: 14px;">Abstraction</a> <a href="/tags/ActiveMQ/" style="font-size: 14.63px;">ActiveMQ</a> <a href="/tags/Administration/" style="font-size: 14px;">Administration</a> <a href="/tags/Analytics/" style="font-size: 15.88px;">Analytics</a> <a href="/tags/Anniversary/" style="font-size: 15.88px;">Anniversary</a> <a href="/tags/Annotation/" style="font-size: 14px;">Annotation</a> <a href="/tags/Apache/" style="font-size: 14.63px;">Apache</a> <a href="/tags/ApacheDirectoryStudio/" style="font-size: 14px;">ApacheDirectoryStudio</a> <a href="/tags/AppWorks/" style="font-size: 24px;">AppWorks</a> <a href="/tags/Archive/" style="font-size: 14.63px;">Archive</a> <a href="/tags/Artifact/" style="font-size: 15.25px;">Artifact</a> <a href="/tags/Artifacts/" style="font-size: 14px;">Artifacts</a> <a href="/tags/Audit/" style="font-size: 14px;">Audit</a> <a href="/tags/Authentication/" style="font-size: 14.63px;">Authentication</a> <a href="/tags/BPM/" style="font-size: 22.75px;">BPM</a> <a href="/tags/Base64/" style="font-size: 14px;">Base64</a> <a href="/tags/Brava/" style="font-size: 14px;">Brava!</a> <a href="/tags/BuildingBlock/" style="font-size: 15.88px;">BuildingBlock</a> <a href="/tags/BuildingBlocks/" style="font-size: 15.25px;">BuildingBlocks</a> <a href="/tags/BulkUpdate/" style="font-size: 14px;">BulkUpdate</a> <a href="/tags/BusinessID/" style="font-size: 14px;">BusinessID</a> <a href="/tags/BusinessIdentifier/" style="font-size: 14px;">BusinessIdentifier</a> <a href="/tags/BusinessWorkspace/" style="font-size: 14px;">BusinessWorkspace</a> <a href="/tags/CAF/" style="font-size: 14px;">CAF</a> <a href="/tags/CARS/" style="font-size: 15.25px;">CARS</a> <a href="/tags/CBD/" style="font-size: 14px;">CBD</a> <a href="/tags/CD-CI/" style="font-size: 15.25px;">CD/CI</a> <a href="/tags/CIM/" style="font-size: 14px;">CIM</a> <a href="/tags/CLI/" style="font-size: 14px;">CLI</a> <a href="/tags/CMC/" style="font-size: 14px;">CMC</a> <a href="/tags/CMIS/" style="font-size: 14px;">CMIS</a> <a href="/tags/CSS/" style="font-size: 16.5px;">CSS</a> <a href="/tags/CUSP/" style="font-size: 14px;">CUSP</a> <a href="/tags/CaseInstanceMonitor/" style="font-size: 14px;">CaseInstanceMonitor</a> <a href="/tags/CentOS/" style="font-size: 14px;">CentOS</a> <a href="/tags/Charts/" style="font-size: 14px;">Charts</a> <a href="/tags/ChatGPT/" style="font-size: 14px;">ChatGPT</a> <a href="/tags/Cleaning/" style="font-size: 14.63px;">Cleaning</a> <a href="/tags/Cloning/" style="font-size: 14px;">Cloning</a> <a href="/tags/Cloud/" style="font-size: 14px;">Cloud</a> <a href="/tags/Condition/" style="font-size: 14.63px;">Condition</a> <a href="/tags/ConfigEntity/" style="font-size: 14px;">ConfigEntity</a> <a href="/tags/ConnectedWorkspace/" style="font-size: 14px;">ConnectedWorkspace</a> <a href="/tags/Connector/" style="font-size: 15.88px;">Connector</a> <a href="/tags/Containerization/" style="font-size: 14px;">Containerization</a> <a href="/tags/Content/" style="font-size: 16.5px;">Content</a> <a href="/tags/ContentServer/" style="font-size: 16.5px;">ContentServer</a> <a href="/tags/Create/" style="font-size: 14px;">Create</a> <a href="/tags/Custom/" style="font-size: 14px;">Custom</a> <a href="/tags/Customization/" style="font-size: 19px;">Customization</a> <a href="/tags/Data/" style="font-size: 14px;">Data</a> <a href="/tags/Database/" style="font-size: 17.13px;">Database</a> <a href="/tags/DatabaseMetadata/" style="font-size: 14.63px;">DatabaseMetadata</a> <a href="/tags/Date/" style="font-size: 14px;">Date</a> <a href="/tags/DateTime/" style="font-size: 14px;">DateTime</a> <a href="/tags/Deadline/" style="font-size: 14px;">Deadline</a> <a href="/tags/Debugging/" style="font-size: 14.63px;">Debugging</a> <a href="/tags/Deploy/" style="font-size: 14px;">Deploy</a> <a href="/tags/Deployment/" style="font-size: 14px;">Deployment</a> <a href="/tags/DeploymentModels/" style="font-size: 14px;">DeploymentModels</a> <a href="/tags/Diacritics/" style="font-size: 14px;">Diacritics</a> <a href="/tags/Digital/" style="font-size: 17.75px;">Digital</a> <a href="/tags/Distributed/" style="font-size: 14.63px;">Distributed</a> <a href="/tags/Docker/" style="font-size: 14px;">Docker</a> <a href="/tags/Documentation/" style="font-size: 14px;">Documentation</a> <a href="/tags/DocumentstoreConnector/" style="font-size: 15.25px;">DocumentstoreConnector</a> <a href="/tags/Documentum/" style="font-size: 16.5px;">Documentum</a> <a href="/tags/DynamicEnum/" style="font-size: 14px;">DynamicEnum</a> <a href="/tags/EISConnector/" style="font-size: 14.63px;">EISConnector</a> <a href="/tags/Email/" style="font-size: 14.63px;">Email</a> <a href="/tags/EnterpriseWorld/" style="font-size: 19px;">EnterpriseWorld</a> <a href="/tags/Entity/" style="font-size: 20.25px;">Entity</a> <a href="/tags/EntityContext/" style="font-size: 14px;">EntityContext</a> <a href="/tags/Enumerated/" style="font-size: 14px;">Enumerated</a> <a href="/tags/Escalation/" style="font-size: 14px;">Escalation</a> <a href="/tags/Explorer/" style="font-size: 14.63px;">Explorer</a> <a href="/tags/Expressions/" style="font-size: 14px;">Expressions</a> <a href="/tags/Feature/" style="font-size: 14px;">Feature</a> <a href="/tags/FileConnector/" style="font-size: 14px;">FileConnector</a> <a href="/tags/Filter/" style="font-size: 14px;">Filter</a> <a href="/tags/Flag/" style="font-size: 14px;">Flag</a> <a href="/tags/ForLoop/" style="font-size: 14px;">ForLoop</a> <a href="/tags/Form/" style="font-size: 19.63px;">Form</a> <a href="/tags/Function/" style="font-size: 14px;">Function</a> <a href="/tags/Gateway/" style="font-size: 14.63px;">Gateway</a> <a href="/tags/Generalization/" style="font-size: 14px;">Generalization</a> <a href="/tags/Google/" style="font-size: 14px;">Google</a> <a href="/tags/Graphics/" style="font-size: 14px;">Graphics</a> <a href="/tags/Grid/" style="font-size: 14px;">Grid</a> <a href="/tags/HTML5/" style="font-size: 14px;">HTML5</a> <a href="/tags/Hierarchy/" style="font-size: 14px;">Hierarchy</a> <a href="/tags/HighAvailability/" style="font-size: 14.63px;">HighAvailability</a> <a href="/tags/History/" style="font-size: 14px;">History</a> <a href="/tags/Homepage/" style="font-size: 14.63px;">Homepage</a> <a href="/tags/HowTo/" style="font-size: 16.5px;">HowTo</a> <a href="/tags/Icons/" style="font-size: 14px;">Icons</a> <a href="/tags/Identification/" style="font-size: 14px;">Identification</a> <a href="/tags/Identity/" style="font-size: 14.63px;">Identity</a> <a href="/tags/IdentityPackage/" style="font-size: 15.25px;">IdentityPackage</a> <a href="/tags/InformationHub/" style="font-size: 14px;">InformationHub</a> <a href="/tags/Inheritance/" style="font-size: 14px;">Inheritance</a> <a href="/tags/Installation/" style="font-size: 22.13px;">Installation</a> <a href="/tags/IntelligentViewing/" style="font-size: 14.63px;">IntelligentViewing</a> <a href="/tags/Interceptor/" style="font-size: 14px;">Interceptor</a> <a href="/tags/IsTemporaryCopy/" style="font-size: 14px;">IsTemporaryCopy</a> <a href="/tags/ItemStatus/" style="font-size: 14px;">ItemStatus</a> <a href="/tags/JMS/" style="font-size: 14.63px;">JMS</a> <a href="/tags/JMeter/" style="font-size: 14px;">JMeter</a> <a href="/tags/JSON/" style="font-size: 15.25px;">JSON</a> <a href="/tags/JShell/" style="font-size: 14px;">JShell</a> <a href="/tags/JUnit/" style="font-size: 14px;">JUnit</a> <a href="/tags/JXplorer/" style="font-size: 14px;">JXplorer</a> <a href="/tags/Java/" style="font-size: 15.88px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 14.63px;">JavaScript</a> <a href="/tags/JavaUI/" style="font-size: 14px;">JavaUI</a> <a href="/tags/Jenkins/" style="font-size: 14px;">Jenkins</a> <a href="/tags/Keywords/" style="font-size: 14px;">Keywords</a> <a href="/tags/LDAP/" style="font-size: 14.63px;">LDAP</a> <a href="/tags/LandingPage/" style="font-size: 14px;">LandingPage</a> <a href="/tags/Language/" style="font-size: 14.63px;">Language</a> <a href="/tags/LanguagePack/" style="font-size: 14px;">LanguagePack</a> <a href="/tags/Less/" style="font-size: 14px;">Less</a> <a href="/tags/License/" style="font-size: 14.63px;">License</a> <a href="/tags/Lifecycle/" style="font-size: 15.88px;">Lifecycle</a> <a href="/tags/LinkDocument/" style="font-size: 14px;">LinkDocument</a> <a href="/tags/LinkedEntity/" style="font-size: 14px;">LinkedEntity</a> <a href="/tags/List/" style="font-size: 14.63px;">List</a> <a href="/tags/LoadBalancing/" style="font-size: 14px;">LoadBalancing</a> <a href="/tags/Logging/" style="font-size: 14px;">Logging</a> <a href="/tags/LongTextProperty/" style="font-size: 14px;">LongTextProperty</a> <a href="/tags/Magellan/" style="font-size: 14px;">Magellan</a> <a href="/tags/Management/" style="font-size: 14.63px;">Management</a> <a href="/tags/Message/" style="font-size: 14px;">Message</a> <a href="/tags/Metadata/" style="font-size: 14px;">Metadata</a> <a href="/tags/Method/" style="font-size: 14px;">Method</a> <a href="/tags/Migration/" style="font-size: 14px;">Migration</a> <a href="/tags/Mobile/" style="font-size: 14px;">Mobile</a> <a href="/tags/Mockito/" style="font-size: 14px;">Mockito</a> <a href="/tags/Model/" style="font-size: 14px;">Model</a> <a href="/tags/Modeling/" style="font-size: 14.63px;">Modeling</a> <a href="/tags/Monitoring/" style="font-size: 14.63px;">Monitoring</a> <a href="/tags/NGINX/" style="font-size: 14px;">NGINX</a> <a href="/tags/Northwind/" style="font-size: 14px;">Northwind</a> <a href="/tags/Notification/" style="font-size: 14px;">Notification</a> <a href="/tags/OKTA/" style="font-size: 14px;">OKTA</a> <a href="/tags/OTDS/" style="font-size: 17.75px;">OTDS</a> <a href="/tags/OpenText/" style="font-size: 23.38px;">OpenText</a> <a href="/tags/Oracle/" style="font-size: 14px;">Oracle</a> <a href="/tags/Order/" style="font-size: 14px;">Order</a> <a href="/tags/Organization/" style="font-size: 15.25px;">Organization</a> <a href="/tags/PIM/" style="font-size: 14px;">PIM</a> <a href="/tags/PSL/" style="font-size: 14px;">PSL</a> <a href="/tags/Package/" style="font-size: 15.25px;">Package</a> <a href="/tags/Parallel/" style="font-size: 14px;">Parallel</a> <a href="/tags/Password/" style="font-size: 14px;">Password</a> <a href="/tags/Pattern/" style="font-size: 14px;">Pattern</a> <a href="/tags/Personal/" style="font-size: 14px;">Personal</a> <a href="/tags/PostgreSQL/" style="font-size: 14px;">PostgreSQL</a> <a href="/tags/Postman/" style="font-size: 14px;">Postman</a> <a href="/tags/PowerMockito/" style="font-size: 14px;">PowerMockito</a> <a href="/tags/Preferences/" style="font-size: 14px;">Preferences</a> <a href="/tags/Preparation/" style="font-size: 14px;">Preparation</a> <a href="/tags/ProgressionBar/" style="font-size: 14px;">ProgressionBar</a> <a href="/tags/Project/" style="font-size: 15.25px;">Project</a> <a href="/tags/Projects/" style="font-size: 14px;">Projects</a> <a href="/tags/Properties/" style="font-size: 14.63px;">Properties</a> <a href="/tags/Property/" style="font-size: 15.25px;">Property</a> <a href="/tags/Publishing/" style="font-size: 14px;">Publishing</a> <a href="/tags/RHEL/" style="font-size: 14px;">RHEL</a> <a href="/tags/ReST/" style="font-size: 15.88px;">ReST</a> <a href="/tags/ReST-Gateway/" style="font-size: 14px;">ReST Gateway</a> <a href="/tags/Recap/" style="font-size: 15.88px;">Recap</a> <a href="/tags/RegularExpression/" style="font-size: 14.63px;">RegularExpression</a> <a href="/tags/Relations/" style="font-size: 15.25px;">Relations</a> <a href="/tags/Release/" style="font-size: 20.88px;">Release</a> <a href="/tags/Reporting/" style="font-size: 14px;">Reporting</a> <a href="/tags/ResultList/" style="font-size: 15.25px;">ResultList</a> <a href="/tags/Reusability/" style="font-size: 14px;">Reusability</a> <a href="/tags/Reverse-proxy/" style="font-size: 14px;">Reverse proxy</a> <a href="/tags/Role/" style="font-size: 14px;">Role</a> <a href="/tags/Roles/" style="font-size: 14.63px;">Roles</a> <a href="/tags/Rule/" style="font-size: 14.63px;">Rule</a> <a href="/tags/Rules/" style="font-size: 14px;">Rules</a> <a href="/tags/Runtime-Security/" style="font-size: 14px;">Runtime Security</a> <a href="/tags/SAML/" style="font-size: 14px;">SAML</a> <a href="/tags/SDK/" style="font-size: 14.63px;">SDK</a> <a href="/tags/SOAP/" style="font-size: 15.25px;">SOAP</a> <a href="/tags/SVN/" style="font-size: 14.63px;">SVN</a> <a href="/tags/Scheduler/" style="font-size: 14px;">Scheduler</a> <a href="/tags/Search/" style="font-size: 14px;">Search</a> <a href="/tags/Section/" style="font-size: 14px;">Section</a> <a href="/tags/Sections/" style="font-size: 14px;">Sections</a> <a href="/tags/Security/" style="font-size: 14px;">Security</a> <a href="/tags/Selenium/" style="font-size: 14px;">Selenium</a> <a href="/tags/Service/" style="font-size: 14px;">Service</a> <a href="/tags/ServiceContainer/" style="font-size: 14.63px;">ServiceContainer</a> <a href="/tags/Setup/" style="font-size: 15.88px;">Setup</a> <a href="/tags/ShortLived/" style="font-size: 14px;">ShortLived</a> <a href="/tags/SimpleClient/" style="font-size: 14px;">SimpleClient</a> <a href="/tags/Singleton/" style="font-size: 14px;">Singleton</a> <a href="/tags/Software/" style="font-size: 15.88px;">Software</a> <a href="/tags/Solutions/" style="font-size: 14px;">Solutions</a> <a href="/tags/SourceControl/" style="font-size: 14px;">SourceControl</a> <a href="/tags/Sources/" style="font-size: 14px;">Sources</a> <a href="/tags/Spring/" style="font-size: 14px;">Spring</a> <a href="/tags/State/" style="font-size: 14px;">State</a> <a href="/tags/Storage/" style="font-size: 14px;">Storage</a> <a href="/tags/Structure/" style="font-size: 14px;">Structure</a> <a href="/tags/SubProcess/" style="font-size: 14px;">SubProcess</a> <a href="/tags/Subtyping/" style="font-size: 14.63px;">Subtyping</a> <a href="/tags/Sync/" style="font-size: 14px;">Sync</a> <a href="/tags/Synch/" style="font-size: 14px;">Synch</a> <a href="/tags/Synchronization/" style="font-size: 14px;">Synchronization</a> <a href="/tags/SynchronizedPartition/" style="font-size: 14px;">SynchronizedPartition</a> <a href="/tags/Sysadmin/" style="font-size: 14px;">Sysadmin</a> <a href="/tags/Task/" style="font-size: 15.25px;">Task</a> <a href="/tags/TaskLayout/" style="font-size: 14px;">TaskLayout</a> <a href="/tags/Tasks/" style="font-size: 14.63px;">Tasks</a> <a href="/tags/Team/" style="font-size: 14px;">Team</a> <a href="/tags/Tenant/" style="font-size: 14px;">Tenant</a> <a href="/tags/Test/" style="font-size: 14px;">Test</a> <a href="/tags/Testing/" style="font-size: 15.25px;">Testing</a> <a href="/tags/Theme/" style="font-size: 16.5px;">Theme</a> <a href="/tags/Time/" style="font-size: 14px;">Time</a> <a href="/tags/Tips/" style="font-size: 14px;">Tips</a> <a href="/tags/Title/" style="font-size: 14px;">Title</a> <a href="/tags/Toggle/" style="font-size: 14px;">Toggle</a> <a href="/tags/TomEE/" style="font-size: 14px;">TomEE</a> <a href="/tags/Tomcat/" style="font-size: 14px;">Tomcat</a> <a href="/tags/Tool/" style="font-size: 14px;">Tool</a> <a href="/tags/Tools/" style="font-size: 14.63px;">Tools</a> <a href="/tags/Transformation/" style="font-size: 14px;">Transformation</a> <a href="/tags/Translation/" style="font-size: 14.63px;">Translation</a> <a href="/tags/UDDI/" style="font-size: 14.63px;">UDDI</a> <a href="/tags/UnInstallation/" style="font-size: 14px;">UnInstallation</a> <a href="/tags/Unicode/" style="font-size: 14px;">Unicode</a> <a href="/tags/Update/" style="font-size: 18.38px;">Update</a> <a href="/tags/Upgrade/" style="font-size: 14px;">Upgrade</a> <a href="/tags/Users/" style="font-size: 14px;">Users</a> <a href="/tags/VM/" style="font-size: 21.5px;">VM</a> <a href="/tags/Validating/" style="font-size: 14px;">Validating</a> <a href="/tags/Validation/" style="font-size: 14px;">Validation</a> <a href="/tags/ValueAssistance/" style="font-size: 15.25px;">ValueAssistance</a> <a href="/tags/Version/" style="font-size: 14px;">Version</a> <a href="/tags/Versioning/" style="font-size: 14px;">Versioning</a> <a href="/tags/Video/" style="font-size: 14px;">Video</a> <a href="/tags/Viewer/" style="font-size: 14px;">Viewer</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/WSAppServer/" style="font-size: 14px;">WSAppServer</a> <a href="/tags/WebLibraryDefinition/" style="font-size: 14.63px;">WebLibraryDefinition</a> <a href="/tags/Webservice/" style="font-size: 19.63px;">Webservice</a> <a href="/tags/WhileLoop/" style="font-size: 14px;">WhileLoop</a> <a href="/tags/Wizard/" style="font-size: 14px;">Wizard</a> <a href="/tags/Worklist/" style="font-size: 14px;">Worklist</a> <a href="/tags/Workqueue/" style="font-size: 14.63px;">Workqueue</a> <a href="/tags/Workspace/" style="font-size: 15.88px;">Workspace</a> <a href="/tags/XDS/" style="font-size: 14.63px;">XDS</a> <a href="/tags/XML/" style="font-size: 15.25px;">XML</a> <a href="/tags/XPath/" style="font-size: 15.25px;">XPath</a> <a href="/tags/XSLT/" style="font-size: 14px;">XSLT</a> <a href="/tags/xECM/" style="font-size: 16.5px;">xECM</a> <a href="/tags/xForm/" style="font-size: 16.5px;">xForm</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+
+	
+
+
+
+<div id="download002" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps prototyping booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download002" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="tfokgrtbsp">
+            <p><input class="search-input" type="text" placeholder="First name" name="UIMy41yrHk" id="id-UIMy41yrHk"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="frlQMmEVB9" id="id-frlQMmEVB9"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="p5xcHl0BfA" id="id-p5xcHl0BfA"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="download" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Download 10 steps fundamentals booklet</h1>
+        <h2 class="site-description">You will receive a mail with a link to download the content</h2>
+        <form name="download" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="qdlxpohveb">
+            <p><input class="search-input" type="text" placeholder="First name" name="9aiQvAsyHa" id="id-9aiQvAsyHa"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="pKdGB3hCf6" id="id-pKdGB3hCf6"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="8azv3a7ZO9" id="id-8azv3a7ZO9"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Grab it!"></p>
+        </form>
+    </div>
+</div>
+
+
+<div id="hosting" class="download-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Plan you strategic AppWorks hosting</h1>
+        <h2 class="site-description">You will receive a mail with information on next steps</h2>
+        <form name="hosting" action="https://appworks-tips.email-provider.eu/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="ojenuvc25g">
+            <p><input class="search-input" type="text" placeholder="First name" name="kZYzubjXZ1" id="id-kZYzubjXZ1"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="DU7uu8Hd1B" id="id-DU7uu8Hd1B"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="7" name="waY3MUqJDo" id="id-waY3MUqJDo" placeholder="Turn you wish into a command"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="OTyYwKXWRE" id="id-OTyYwKXWRE"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><i>AppWorks hosting is a payable service handled via monthly invoicing. This means that you will be billed for the service <br>after it has been provided to you under our signed service agreement which we put in place after our free call.</i></p>
+            <p><input class="submit-input" type="submit" value="Take action!"></p>
+        </form>
+    </div>
+</div>
+
+
+
+<div id="subscribe" class="subscribe-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Subscribe</h1>
+        <h2 class="site-description">Subscription for this site will get you notified on new posts and updates on activities.</h2>
+        <form name="subscribe" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="nn8tl1oyqg">
+            <p><input class="search-input" type="text" placeholder="First name" name="RuC1VnxFze" id="id-RuC1VnxFze"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="82ibVdHmnN" id="id-82ibVdHmnN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="EOK697iero" id="id-EOK697iero"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Subscribe"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="google" class="search-overlay subscribe-overlay">
+        <div class="search-form" style="height:8rem;">
+            
+            <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+            
+            <script async src="https://cse.google.com/cse.js?cx=784555e4960d85d09"></script>
+            <div id="cse" style="width: 80%; margin: 0 auto; text-align:left">
+            <div class="gcse-search"></div>
+            </div>
+            <a class="search-overlay-close" href="#"></a>
+        </div>
+</div>
+
+
+
+
+<div id="quiz" class="quiz-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="quiz-form">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <p><progress id="progress" max="100" value="0">0</progress></p>
+        <button class="quizbutton" id="start">Start Quiz</button>
+        <div id="quizcontainer" class="quiz-container">
+            <div id="quizdiv"></div>
+        </div>
+        <button class="quizbutton" id="next">Next Question</button>
+        <button class="quizbutton" id="finalize">Finalize Quiz</button>
+        <form id="submitform" name="quiz" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <h3>I HOPE YOU ANSWERED HONESTLY...</h3>
+            <p>Enter your email address to where we can send the results.</p>
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="xe0gibwwe3">
+            <p><input class="search-input" type="text" placeholder="First name" name="LwGuRGc9Yo" id="id-LwGuRGc9Yo"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="ePCIfeH8NN" id="id-ePCIfeH8NN"></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="PkFGrZcJyR" id="id-PkFGrZcJyR"></p>
+            <p><textarea id="id-iFB17EMSOH" name="iFB17EMSOH" placeholder="Results"></textarea></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input id="submit" class="submit-input" type="submit" value="Send my score"></p>
+        </form>
+        <div id="error" class="errortext"></div>
+    </div>
+</div>
+
+<div id="quizask" class="quizask-overlay subscribe-overlay">
+    <div id="quiz-ask">
+        <h1 class="site-title">Are you the AppWorks guy?</h1>
+        <h2 id="subtitle" class="site-description">Take this FAST quiz to find out your AppWorks score!</h2>
+        <button class="quizbuttonyes" id="yes" onclick="handleYes()">YES, LET ME SCORE MYSELF!</button>
+        <button class="quizbuttonno" id="no" onclick="handleNo()">NO, I'M NOT READY...</button>
+    </div>
+</div>
+
+
+
+
+<div id="feedback" class="feedback-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Feedback or any question</h1>
+        <h2 class="site-description">Send back any feedback or question so we can inspect and adapt our features or help you on your own journey.</h2>
+        <form name="feedback" action="https://appworks-tips.email-provider.nl/subscribe/post/index.php" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="next" value="https://appworks-tips.com/about/#thankyou">
+            <input type="hidden" name="a" value="xbdfwmptyg">
+            <input type="hidden" name="l" value="wmcfvnxdlc">
+            <p><input class="search-input" type="text" placeholder="First name" name="k8XsmX0JQC" id="id-k8XsmX0JQC"></p>
+            <p><input class="search-input" type="text" placeholder="Last name" name="5R9Tw5dSJv" id="id-5R9Tw5dSJv"></p>
+            <p><textarea class="search-input" style="height:150px !important;" rows="10" name="09pKJqfKgH" id="id-09pKJqfKgH" placeholder="Feedback or any question"></textarea></p>
+            <p><input class="search-input" type="email" placeholder="E-mail" name="nr0rSpcGwX" id="id-nr0rSpcGwX"></p>
+            <p><input autocomplete="new-password" type="email" id="email" name="email" placeholder="Your e-mail here" style="position:absolute;top:-9999px;left:-9999px;"></p>
+            <p><input class="submit-input" type="submit" value="Send"></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="thankyou" class="thankyou-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="/images/favicon.png" alt="AppWorks Tips">
+        
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="subscribe-form">
+        <h1 class="site-title">Thank you!</h1>
+        <h2 class="site-description">Check your mail inbox in the next 5-10 minutes for more information on your request.</h2>
+        
+    </div>
+</div>
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="AppWorks Tips">AppWorks Tips</a>
+			&copy; 2024
+		</section>
+		<section class="title">
+			Low-code development platform powered by OpenText
+		</section>
+		<nav class="site-footer-nav">
+			
+            <a href="https://www.opentext.com/products-and-solutions/products/digital-process-automation/appworks-platform" title="OpenText" target="_blank" rel="noopener">OpenText</a>
+            
+            <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+            <a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+        </nav>
+    </div>
+</footer>
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+        .then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="AppWorks Tips">
+			
+                <img src="/images/favicon.png" alt="AppWorks Tips icon">
+			
+            <span>AppWorks Tips</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Extend your 'Connected Workspace' into the 'Business Workspace'</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+
+
+<script src="/js/mix/post-lazy.min.js"></script>
+
+
+<script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
+
+
+
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av.js"></script>-->
+
+<script src="/js/av.js"></script>
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        verify: false,
+        notify: false,
+        appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
+        appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
+        placeholder: 'Comment here...',
+        pageSize: 10,
+        avatar: 'mm',
+        lang: 'en',
+        visitor: true,
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+
+
+
+    
+<script src="/js/jsquiz.js"></script>
+
+
+
+
+
+
+<script src="/js/formvalidation.js"></script>
+
+
+<script>
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            window.location.href = window.location.pathname + '#';
+        }
+    });
+</script>
+
+</body>
+</html>
