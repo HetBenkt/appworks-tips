@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing-page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body style="background: lightgray;">
+<!--#111b58; #4f3690; #2e3d98; #078db3; #055e78; #780050; #00639b; #3b296c-->
+<!--<img class="card-img-top" src="https://appworks-tips.com/images/logo.png">-->
+<div class="" style="margin: 1rem;">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card text-white mb-2" style="background: #111b58;">
+                <div class="card-header">
+                    <i class="fa-solid fa-bolt"></i> Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Solution 1</h5>
+                    <h6 class="card-subtitle mb-2 text-white-50">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="stretched-link"></a>
+                    <p style="font-size: 12px;"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card text-white mb-2" style="background: #4f3690;">
+                <div class="card-header">
+                    <i class="fa-regular fa-heart"></i> Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Solution 1</h5>
+                    <h6 class="card-subtitle mb-2 text-white-50">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="stretched-link"></a>
+                    <p style="font-size: 12px;"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card text-white mb-2" style="background: #2e3d98;">
+                <div class="card-header">
+                    <i class="fa-regular fa-star"></i> Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Solution 1</h5>
+                    <h6 class="card-subtitle mb-2 text-white-50">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="stretched-link"></a>
+                    <p style="font-size: 12px;"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card text-white mb-2" style="background: #078db3;">
+                <div class="card-header">
+                    <i class="fa-solid fa-shield-halved"></i> Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Solution 1</h5>
+                    <h6 class="card-subtitle mb-2 text-white-50">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="stretched-link"></a>
+                    <p style="font-size: 12px;"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card text-white mb-2" style="background: #055e78;">
+                <div class="card-header">
+                    <i class="fa-regular fa-bell"></i> Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Solution 1</h5>
+                    <h6 class="card-subtitle mb-2 text-white-50">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="stretched-link"></a>
+                    <p style="font-size: 12px;"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card text-white mb-2" style="background: #780050;">
+                <div class="card-header">
+                    <i class="fa-solid fa-gift"></i> Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Solution 1</h5>
+                    <h6 class="card-subtitle mb-2 text-white-50">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="stretched-link"></a>
+                    <p style="font-size: 12px;"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card text-white mb-2" style="background: #00639b;">
+                <div class="card-header">
+                    <i class="fa-regular fa-face-smile"></i> Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Solution 1</h5>
+                    <h6 class="card-subtitle mb-2 text-white-50">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="stretched-link"></a>
+                    <p style="font-size: 12px;"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card text-white mb-2" style="background: #3b296c;">
+                <div class="card-header">
+                    <i class="fa-regular fa-eye"></i> Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Solution 1</h5>
+                    <h6 class="card-subtitle mb-2 text-white-50">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="stretched-link"></a>
+                    <p style="font-size: 12px;"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+        integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

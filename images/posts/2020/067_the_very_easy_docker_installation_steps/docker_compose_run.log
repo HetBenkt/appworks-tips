@@ -1,0 +1,34 @@
+Creating network "appworks-platform-202-containerization_appworks_net" with the default driver
+Creating volume "appworks-platform-202-containerization_appworks_webroot_organization" with default driver
+Creating volume "appworks-platform-202-containerization_appworks_cluster" with default driver
+Creating volume "appworks-platform-202-containerization_appworks_node" with default driver
+Creating volume "appworks-platform-202-containerization_appworks_ldap_mdb_dir" with default driver
+Creating volume "appworks-platform-202-containerization_appworks_ldap_slapd_dir" with default driver
+Pulling ldap (osixia/openldap:1.3.0)...
+1.3.0: Pulling from osixia/openldap
+1ab2bdfe9778: Pull complete
+0abcaf321aa9: Pull complete
+6d688c3d4e02: Pull complete
+e3560bcbb6e7: Pull complete
+ff7bed76ee88: Pull complete
+c32f0fe69c97: Pull complete
+ae5e7b954ab8: Pull complete
+0386ed728a79: Pull complete
+63ad335042c4: Pull complete
+Digest: sha256:cb3f5fea3c3203acddc3e6b8a70642a0f994d89be3ec5f0e50621b2a9ea17a83
+Status: Downloaded newer image for osixia/openldap:1.3.0
+Pulling database (postgres:alpine)...
+alpine: Pulling from library/postgres
+aad63a933944: Pull complete
+a5b4c973b808: Pull complete
+074a034a3a7a: Pull complete
+48e4532f784a: Pull complete
+4e7e92e65f6a: Pull complete
+d5f366a1c147: Pull complete
+b33682350b13: Pull complete
+0204b658ab83: Pull complete
+Digest: sha256:c52d4eac43883c53113cee0ebd1ce0fe53ef0604708822901ecca6655968fa9a
+Status: Downloaded newer image for postgres:alpine
+Creating appworks-platform-202-containerization_ldap_1     ... done
+Creating appworks-platform-202-containerization_database_1 ... done
+Creating appworks-platform-202-containerization_appworks_1 ... done

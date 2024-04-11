@@ -1,0 +1,75 @@
+<data>
+  <xds_documentResponse xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.cordys.com/xds_document">
+    <tuple>
+      <old>
+        <xds_document>
+          <name>project</name>
+          <internal_name>project</internal_name>
+          <created_by>AppWorks Developer</created_by>
+          <created_date>2023-10-25T18:38:26.152</created_date>
+          <lastmodified_by>AppWorks Developer</lastmodified_by>
+          <lastmodified_date>2023-10-26T15:07:51.814</lastmodified_date>
+          <substring>Hello there!</substring>
+          <accesscontrolpolicy_id>OPEN_TO_ALL_ACL</accesscontrolpolicy_id>
+        </xds_document>
+      </old>
+    </tuple>
+    <tuple>
+      <old>
+        <xds_document>
+          <name>xds_document</name>
+          <internal_name>xds_document</internal_name>
+          <created_by>AppWorks Developer</created_by>
+          <created_date>2023-10-26T15:45:27.406</created_date>
+          <lastmodified_by>AppWorks Developer</lastmodified_by>
+          <lastmodified_date>2023-10-26T16:11:09.06</lastmodified_date>
+          <substring>This will be the service itself</substring>
+          <accesscontrolpolicy_id>OPEN_TO_ALL_ACL</accesscontrolpolicy_id>
+        </xds_document>
+      </old>
+    </tuple>
+    <tuple>
+      <old>
+        <xds_document>
+          <name>bpm_dummy</name>
+          <internal_name>bpm_dummy</internal_name>
+          <created_by>AppWorks Developer</created_by>
+          <created_date>2023-10-26T16:09:56.912</created_date>
+          <lastmodified_by>AppWorks Developer</lastmodified_by>
+          <lastmodified_date>2023-10-26T16:10:21.726</lastmodified_date>
+          <substring>Just a simple dummy BPM to do nothing</substring>
+          <accesscontrolpolicy_id>OPEN_TO_ALL_ACL</accesscontrolpolicy_id>
+        </xds_document>
+      </old>
+    </tuple>
+    <tuple>
+      <old>
+        <xds_document>
+          <name>ws_xds_document</name>
+          <internal_name>ws_xds_document</internal_name>
+          <created_by>AppWorks Developer</created_by>
+          <created_date>2023-10-26T15:45:27.406</created_date>
+          <lastmodified_by>AppWorks Developer</lastmodified_by>
+          <lastmodified_date>2023-10-26T16:11:29.068</lastmodified_date>
+          <substring>Just a generated service to grab this information</substring>
+          <accesscontrolpolicy_id>OPEN_TO_ALL_ACL</accesscontrolpolicy_id>
+        </xds_document>
+      </old>
+    </tuple>
+    <tuple>
+      <old>
+        <xds_document>
+          <name>wsi_xds_document</name>
+          <internal_name>wsi_xds_document</internal_name>
+          <created_by>AppWorks Developer</created_by>
+          <created_date>2023-10-26T15:45:27.404</created_date>
+          <lastmodified_by>AppWorks Developer</lastmodified_by>
+          <lastmodified_date>2023-10-26T16:11:29.068</lastmodified_date>
+          <substring>And this is the service interface</substring>
+          <accesscontrolpolicy_id>OPEN_TO_ALL_ACL</accesscontrolpolicy_id>
+        </xds_document>
+      </old>
+    </tuple>
+    <cursor xmlns:c="http://schemas.cordys.com/cws/1.0" xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.cordys.com/xds_document" numRows="5" />
+  </xds_documentResponse>
+</data>

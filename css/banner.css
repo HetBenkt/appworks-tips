@@ -1,0 +1,45 @@
+/*banner menu*/
+div#banner_menu {
+    position: absolute;
+    z-index: 99;
+    padding: 2rem;
+    padding-right: 4rem;
+    background: rgba(266, 215, 278, 0.3);
+    width: 24rem;
+    border-radius: 30px;
+    right: -22rem;
+    top: 9rem;
+    height: 34rem;
+    cursor: grab;
+}
+div#banner_menu > svg {
+    position: absolute;
+    left: 0.3rem;
+    margin-top: 13rem;
+}
+
+/*banner itself*/
+div#banner {
+    position: absolute;
+    z-index: 99;
+    width: 45rem;
+    border-radius: 5px;
+    right: 4rem;
+    top: 12rem;
+}
+div#banner > img {
+    border-radius: 5px;
+}
+div#banner:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    cursor: grab;
+}
+div#banner_small > img {
+    border-radius: 5px;
+}
+div#banner_small:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    cursor: grab;
+}
