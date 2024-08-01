@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2024-07-19T15:30:41.067Z</updated>
+  <updated>2024-07-19T15:37:21.114Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Disastrous attempt; The pitfalls of syncing solutions between organizations</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/08/02/234_sync_a_solution_between_organizations/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/234_sync_a_solution_between_organizations/feature_tag.webp" />
+    <id>https://appworks-tips.com/2024/08/02/234_sync_a_solution_between_organizations/</id>
+    <published>2024-08-02T12:00:00.000Z</published>
+    <updated>2024-07-19T15:37:21.114Z</updated>
+    
+    <summary type="html">
+    
+      How hard can a simple sync be?
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/234_sync_a_solution_between_organizations/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Sync" scheme="https://appworks-tips.com/tags/Sync/"/>
+    
+      <category term="CWS" scheme="https://appworks-tips.com/tags/CWS/"/>
+    
+  </entry>
   
   <entry>
     <title>Are you tired of customizing the BPM logging level manually via endless browsing the &quot;Deployed Process Models&quot; artifact?</title>
@@ -555,9 +583,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Relations" scheme="https://appworks-tips.com/tags/Relations/"/>
-    
       <category term="Inheritance" scheme="https://appworks-tips.com/tags/Inheritance/"/>
+    
+      <category term="Relations" scheme="https://appworks-tips.com/tags/Relations/"/>
     
   </entry>
   
@@ -641,9 +669,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="PSL" scheme="https://appworks-tips.com/tags/PSL/"/>
-    
       <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
+    
+      <category term="PSL" scheme="https://appworks-tips.com/tags/PSL/"/>
     
   </entry>
   
@@ -845,11 +873,11 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="ValueAssistance" scheme="https://appworks-tips.com/tags/ValueAssistance/"/>
-    
       <category term="Form" scheme="https://appworks-tips.com/tags/Form/"/>
     
       <category term="HowTo" scheme="https://appworks-tips.com/tags/HowTo/"/>
+    
+      <category term="ValueAssistance" scheme="https://appworks-tips.com/tags/ValueAssistance/"/>
     
   </entry>
   
@@ -927,9 +955,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Sync" scheme="https://appworks-tips.com/tags/Sync/"/>
-    
       <category term="Project" scheme="https://appworks-tips.com/tags/Project/"/>
+    
+      <category term="Sync" scheme="https://appworks-tips.com/tags/Sync/"/>
     
   </entry>
   
@@ -1354,32 +1382,6 @@
       <category term="Entity" scheme="https://appworks-tips.com/tags/Entity/"/>
     
       <category term="Property" scheme="https://appworks-tips.com/tags/Property/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Supercharge your AppWorks experience; Unleash the power of NGINX as the ultimate reverse proxy</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/08/18/189_nginx_as_reverse_proxy/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/189_nginx_as_reverse_proxy/feature_tag.webp" />
-    <id>https://appworks-tips.com/2023/08/18/189_nginx_as_reverse_proxy/</id>
-    <published>2023-08-18T12:00:00.000Z</published>
-    <updated>2024-07-19T15:39:16.696Z</updated>
-    
-    <summary type="html">
-    
-      A required trick to learn when you expose a public IP address safely to the world.
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/189_nginx_as_reverse_proxy/feature_tag.webp" />
-    
-      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="NGINX" scheme="https://appworks-tips.com/tags/NGINX/"/>
-    
-      <category term="Reverse proxy" scheme="https://appworks-tips.com/tags/Reverse-proxy/"/>
     
   </entry>
   
