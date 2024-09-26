@@ -339,7 +339,7 @@ h1 {
     -ms-flex-direction: column;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: rgba(255, 219, 129, 0.1);
+    background-color: white;
     border-radius: 5px;
     position: relative;
     z-index: 999;
@@ -355,7 +355,7 @@ a .sponsor-image {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     display: block;
-    border-radius: 10px;
+    border-radius: 3px;
     background: #e3e9ed;
     -o-object-fit: cover;
     object-fit: cover;
