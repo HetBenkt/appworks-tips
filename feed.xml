@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2024-10-17T09:50:10.277Z</updated>
+  <updated>2024-10-24T06:24:39.136Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Behold the power of a specific URL parameter; Just an item on the backlog of &quot;AppWorks Tips&quot;</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/10/25/244_explaining_rurl_parameter/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/244_explaining_rurl_parameter/feature_tag.webp" />
+    <id>https://appworks-tips.com/2024/10/25/244_explaining_rurl_parameter/</id>
+    <published>2024-10-25T12:00:00.000Z</published>
+    <updated>2024-10-24T06:24:39.136Z</updated>
+    
+    <summary type="html">
+    
+      The &#39;?rurl&#39; parameter explained.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/244_explaining_rurl_parameter/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="RURL" scheme="https://appworks-tips.com/tags/RURL/"/>
+    
+  </entry>
   
   <entry>
     <title>Discover the ultimate simplicity feature every case management solution requires</title>
@@ -801,9 +827,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
-    
       <category term="Debug" scheme="https://appworks-tips.com/tags/Debug/"/>
+    
+      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
     
   </entry>
   
@@ -1185,7 +1211,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/206_generate_documentation_from_annotations/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/29/206_generate_documentation_from_annotations/</id>
     <published>2023-12-29T12:00:00.000Z</published>
-    <updated>2024-10-17T09:51:16.444Z</updated>
+    <updated>2024-10-24T06:29:39.292Z</updated>
     
     <summary type="html">
     
@@ -1211,7 +1237,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/205_load_balancing_service_container/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/22/205_load_balancing_service_container/</id>
     <published>2023-12-22T12:00:00.000Z</published>
-    <updated>2024-10-17T09:51:16.444Z</updated>
+    <updated>2024-10-24T06:29:39.291Z</updated>
     
     <summary type="html">
     
@@ -1239,7 +1265,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/204_connect_source_control_after_project_creation/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/15/204_connect_source_control_after_project_creation/</id>
     <published>2023-12-15T12:00:00.000Z</published>
-    <updated>2024-10-17T09:51:16.444Z</updated>
+    <updated>2024-10-24T06:29:39.291Z</updated>
     
     <summary type="html">
     
@@ -1265,7 +1291,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/203_auto_assign_cases_tasks/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/08/203_auto_assign_cases_tasks/</id>
     <published>2023-12-08T12:00:00.000Z</published>
-    <updated>2024-10-17T09:51:16.444Z</updated>
+    <updated>2024-10-24T06:29:39.290Z</updated>
     
     <summary type="html">
     
@@ -1291,7 +1317,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/202_working_with_task_workqueues/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/01/202_working_with_task_workqueues/</id>
     <published>2023-12-01T12:00:00.000Z</published>
-    <updated>2024-10-17T09:51:16.444Z</updated>
+    <updated>2024-10-24T06:29:39.288Z</updated>
     
     <summary type="html">
     
@@ -1317,7 +1343,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/201_subtyping_vs_database/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/11/24/201_subtyping_vs_database/</id>
     <published>2023-11-24T12:00:00.000Z</published>
-    <updated>2024-10-17T09:51:16.444Z</updated>
+    <updated>2024-10-24T06:29:39.287Z</updated>
     
     <summary type="html">
     
@@ -1343,7 +1369,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/200_speedtest_parallel_processing/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/11/17/200_speedtest_parallel_processing/</id>
     <published>2023-11-17T12:00:00.000Z</published>
-    <updated>2024-10-17T09:51:16.444Z</updated>
+    <updated>2024-10-24T06:29:39.287Z</updated>
     
     <summary type="html">
     
@@ -1360,32 +1386,6 @@
       <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
     
       <category term="Parallel" scheme="https://appworks-tips.com/tags/Parallel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Behold the power of a section within an entity &#39;Form&#39; building block</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/11/10/199_feel_the_power_of_a_form_section/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/199_feel_the_power_of_a_form_section/feature_tag.webp" />
-    <id>https://appworks-tips.com/2023/11/10/199_feel_the_power_of_a_form_section/</id>
-    <published>2023-11-10T12:00:00.000Z</published>
-    <updated>2024-10-17T09:51:16.444Z</updated>
-    
-    <summary type="html">
-    
-      Finally, a use-case solved with the (I-never-understood) form sections feature.
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/199_feel_the_power_of_a_form_section/feature_tag.webp" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Form" scheme="https://appworks-tips.com/tags/Form/"/>
-    
-      <category term="Section" scheme="https://appworks-tips.com/tags/Section/"/>
     
   </entry>
   
