@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2024-10-24T06:24:39.136Z</updated>
+  <updated>2024-09-04T19:43:26.204Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>God-Given CSS tricks; Instantly style your custom tags like a pro</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/11/01/245_apply_css_to_custom_tag/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/245_apply_css_to_custom_tag/feature_tag.webp" />
+    <id>https://appworks-tips.com/2024/11/01/245_apply_css_to_custom_tag/</id>
+    <published>2024-11-01T12:00:00.000Z</published>
+    <updated>2024-09-04T19:43:26.204Z</updated>
+    
+    <summary type="html">
+    
+      Just a practical example for easy consumption!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/245_apply_css_to_custom_tag/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>Behold the power of a specific URL parameter; Just an item on the backlog of &quot;AppWorks Tips&quot;</title>
@@ -1197,9 +1223,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="ValueAssistance" scheme="https://appworks-tips.com/tags/ValueAssistance/"/>
-    
       <category term="Form" scheme="https://appworks-tips.com/tags/Form/"/>
+    
+      <category term="ValueAssistance" scheme="https://appworks-tips.com/tags/ValueAssistance/"/>
     
       <category term="HowTo" scheme="https://appworks-tips.com/tags/HowTo/"/>
     
@@ -1211,7 +1237,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/206_generate_documentation_from_annotations/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/29/206_generate_documentation_from_annotations/</id>
     <published>2023-12-29T12:00:00.000Z</published>
-    <updated>2024-10-24T06:29:39.292Z</updated>
+    <updated>2024-10-30T16:58:07.541Z</updated>
     
     <summary type="html">
     
@@ -1237,7 +1263,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/205_load_balancing_service_container/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/22/205_load_balancing_service_container/</id>
     <published>2023-12-22T12:00:00.000Z</published>
-    <updated>2024-10-24T06:29:39.291Z</updated>
+    <updated>2024-10-30T16:58:07.541Z</updated>
     
     <summary type="html">
     
@@ -1265,7 +1291,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/204_connect_source_control_after_project_creation/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/15/204_connect_source_control_after_project_creation/</id>
     <published>2023-12-15T12:00:00.000Z</published>
-    <updated>2024-10-24T06:29:39.291Z</updated>
+    <updated>2024-10-30T16:58:07.540Z</updated>
     
     <summary type="html">
     
@@ -1291,7 +1317,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/203_auto_assign_cases_tasks/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/08/203_auto_assign_cases_tasks/</id>
     <published>2023-12-08T12:00:00.000Z</published>
-    <updated>2024-10-24T06:29:39.290Z</updated>
+    <updated>2024-10-30T16:58:07.539Z</updated>
     
     <summary type="html">
     
@@ -1317,7 +1343,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/202_working_with_task_workqueues/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/12/01/202_working_with_task_workqueues/</id>
     <published>2023-12-01T12:00:00.000Z</published>
-    <updated>2024-10-24T06:29:39.288Z</updated>
+    <updated>2024-10-30T16:58:07.539Z</updated>
     
     <summary type="html">
     
@@ -1343,7 +1369,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/201_subtyping_vs_database/feature_tag.webp" />
     <id>https://appworks-tips.com/2023/11/24/201_subtyping_vs_database/</id>
     <published>2023-11-24T12:00:00.000Z</published>
-    <updated>2024-10-24T06:29:39.287Z</updated>
+    <updated>2024-10-30T16:58:07.538Z</updated>
     
     <summary type="html">
     
@@ -1360,32 +1386,6 @@
       <category term="Subtyping" scheme="https://appworks-tips.com/tags/Subtyping/"/>
     
       <category term="Database" scheme="https://appworks-tips.com/tags/Database/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unbelievable results revealed; Harnessing parallel processing for mind-blowing insights</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2023/11/17/200_speedtest_parallel_processing/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2023/200_speedtest_parallel_processing/feature_tag.webp" />
-    <id>https://appworks-tips.com/2023/11/17/200_speedtest_parallel_processing/</id>
-    <published>2023-11-17T12:00:00.000Z</published>
-    <updated>2024-10-24T06:29:39.287Z</updated>
-    
-    <summary type="html">
-    
-      Don&#39;t limit yourself in sequential thinking in BPMs.
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2023/200_speedtest_parallel_processing/feature_tag.webp" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
-    
-      <category term="Parallel" scheme="https://appworks-tips.com/tags/Parallel/"/>
     
   </entry>
   
