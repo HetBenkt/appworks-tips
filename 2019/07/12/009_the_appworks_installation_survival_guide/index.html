@@ -135,7 +135,7 @@
                 
                 
                 
-                    <a href="/installation" title="INSTALLATION 24.2">INSTALLATION 24.2 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <a href="/installation" title="INSTALLATION 24.4">INSTALLATION 24.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <g>
   <title>Layer 1</title>
   <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
@@ -386,7 +386,7 @@
 <li>The license information requested at OpenText support (not directly in the post, but we do need it when OTDS is installed)!</li>
 <li>The already installed ‘Oracle Virtual Box’ software from the previous post</li>
 <li>Our supported RHEL VM image with CARS/OpenLDAP installed from the previous posts</li>
-<li>OpenText Appworks Platform (will be downloaded from <a href="https://support.opentext.com" target="_blank" rel="noopener">OpenText support</a>)<ul>
+<li>“OpenText Process Automation” platform (will be downloaded from <a href="https://support.opentext.com" target="_blank" rel="noopener">OpenText support</a>)<ul>
 <li>Includes the OpenText documentation</li>
 </ul>
 </li>
@@ -395,32 +395,32 @@
 </ul>
 <hr>
 <p><strong>Let get right into it…</strong>Get your license file ready!</p>
-<p>Make the <strong>JDBC driver</strong> available for TomEE and AppWorks installation</p>
+<p>Make the <strong>JDBC driver</strong> available for TomEE and “OpenText Process Automation” installation</p>
 <p>Go to <a href="https://jdbc.postgresql.org/download" target="_blank" rel="noopener">postgresql download site</a> and download the latest version for our version 17 of Java! In this post we used: <code>https://jdbc.postgresql.org/download/postgresql-42.6.0.jar</code></p>
 <p>After download, upload it to the VM with WinSCP or MobaXTerm using the already available ‘sysadmin’ administrator.</p>
 <p>In the VM we move the file to the correct TomEE location: <code>sudo cp /home/sysadmin/postgresql-42.6.0.jar /opt/tomee/latest/lib/</code></p>
 <p>Give the ‘tomcat’ user ownership: <code>sudo chown tomcat:tomcat /opt/tomee/latest/lib/postgresql-42.6.0.jar</code></p>
 <p>Restart TomEE: <code>systemctl restart tomee</code></p>
 <p>To make it nicer and smoother we will update the ‘sysadmin’ bash_profile. So, edit the ~/.bash_profile of the ‘sysadmin’ user: <code>vi ~/.bash_profile</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .bash_profile</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Get the aliases and functions</span></span><br><span class="line"><span class="keyword">if</span> [ -f ~/.bashrc ]; <span class="keyword">then</span></span><br><span class="line">        . ~/.bashrc</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># User specific environment and startup programs</span></span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:/opt/tomee/apache-tomee-plus-9.1.0/lib/postgresql-42.6.0.jar</span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-17-openjdk-17.0.10.0.7-2.el8.x86_64</span><br><span class="line">LIB_PATH=<span class="variable">$JAVA_HOME</span>/lib/server</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/.<span class="built_in">local</span>/bin:<span class="variable">$HOME</span>/bin</span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="variable">$LD_LIBRARY_PATH</span>:<span class="variable">$LIB_PATH</span></span><br><span class="line"><span class="built_in">export</span> CATALINA_HOME=/opt/tomee/apache-tomee-plus-9.1.0</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .bash_profile</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Get the aliases and functions</span></span><br><span class="line"><span class="keyword">if</span> [ -f ~/.bashrc ]; <span class="keyword">then</span></span><br><span class="line">        . ~/.bashrc</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># User specific environment and startup programs</span></span><br><span class="line"><span class="built_in">export</span> CLASSPATH=<span class="variable">$CLASSPATH</span>:/opt/tomee/apache-tomee-plus-9.1.3/lib/postgresql-42.6.0.jar</span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-17-openjdk-17.0.13.0.11-3.el8.x86_64</span><br><span class="line">LIB_PATH=<span class="variable">$JAVA_HOME</span>/lib/server</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/.<span class="built_in">local</span>/bin:<span class="variable">$HOME</span>/bin</span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="variable">$LD_LIBRARY_PATH</span>:<span class="variable">$LIB_PATH</span></span><br><span class="line"><span class="built_in">export</span> CATALINA_HOME=/opt/tomee/apache-tomee-plus-9.1.3</span><br></pre></td></tr></table></figure>
 
 <p>When done reload your profile via the command: <code>source ~/.bash_profile</code></p>
 <p>Check if it’s all OK via: <code>env | grep PATH</code></p>
 <hr>
-<p>Before we continue our ‘AppWorks installation journey’ we first <strong>create a table space</strong> for our PostgreSQL database instance that we can use for our installation.</p>
+<p>Before we continue our ‘OPA installation journey’ we first <strong>create a table space</strong> for our PostgreSQL database instance that we can use for our installation.</p>
 <p>Let’s first create a nice location folder and own it by the ‘postgres’ user that was created during the installation of PostgreSQL.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /usr/data</span><br><span class="line">sudo mkdir /usr/data/appworks_ts</span><br><span class="line">sudo chown postgres /usr/data/appworks_ts/</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /usr/data</span><br><span class="line">sudo mkdir /usr/data/opa_ts</span><br><span class="line">sudo chown postgres /usr/data/opa_ts/</span><br></pre></td></tr></table></figure>
 
 <p>Now enter the psql CLI: <code>sudo -u postgres psql</code></p>
-<p>Create a tablespace with this SQL statement: <code>CREATE TABLESPACE appworks_ts LOCATION &#39;/usr/data/appworks_ts&#39;;</code></p>
+<p>Create a tablespace with this SQL statement: <code>CREATE TABLESPACE opa_ts LOCATION &#39;/usr/data/opa_ts&#39;;</code></p>
 <p>To see the result, execute this query: <code>select * from pg_tablespace;</code></p>
 <p><code>\q</code> to quit psql</p>
 <hr>
-<p>Now the major step of this blog post series. The <strong>installation of AppWorks</strong>.</p>
-<p>Go to your uploaded installation files: <code>cd ~/opentext-appworks-suite-24.2-linux/OpenTextAppWorksPlatform/</code></p>
-<p>Execute the magic command: <code>sudo CATALINA_HOME=$CATALINA_HOME CLASSPATH=$CLASSPATH ./OpenText_AppWorks_Platform_24.2.bin</code></p>
+<p>Now the major step of this blog post series. The <strong>installation of OpenText Process Automation</strong>.</p>
+<p>Go to your uploaded installation files: <code>cd ~/OpenText_Process_Automation_CE_Linux_24.4/</code></p>
+<p>Execute the magic command: <code>sudo CATALINA_HOME=$CATALINA_HOME CLASSPATH=$CLASSPATH ./OpenText_Process_Automation_24.4.bin</code></p>
 <blockquote>
-<p>Get the message: <em>Graphical installers are not supported by the VM. The console mode will be used instead</em>…You need to make sure your DISPLAY variable is correct! <code>export DISPLAY=IP:0.0</code><br>…<br>The “secret” silent installation call is: <code>sudo CATALINA_HOME=$CATALINA_HOME CLASSPATH=$CLASSPATH ./OpenText_AppWorks_Platform_23.2.bin -i silent -f ./cordys.installer.properties</code><br>This a copy of my <a href="/images/posts/2019/009_the_appworks_installation_survival_guide/cordys.installer.properties">cordys.installer.properties</a> which is based on the steps below.</p>
+<p>Get the message: <em>Graphical installers are not supported by the VM. The console mode will be used instead</em>…You need to make sure your DISPLAY variable is correct! <code>export DISPLAY=IP:0.0</code><br>…<br>The “secret” silent installation call is: <code>sudo CATALINA_HOME=$CATALINA_HOME CLASSPATH=$CLASSPATH ./OpenText_Process_Automation_24.4.bin -i silent -f ./cordys.installer.properties</code><br>This a copy of my <a href="/images/posts/2019/009_the_appworks_installation_survival_guide/cordys.installer.properties">cordys.installer.properties</a> which is based on the steps below.</p>
 </blockquote>
 <p><img alt="install_appworks_001" class="post-img b-lazy" href="/images/posts/2019/009_the_appworks_installation_survival_guide/install_appworks_001.png" data-src="/images/posts/2019/009_the_appworks_installation_survival_guide/install_appworks_001.png"></p>
 <p>Hit ‘Next’</p>
@@ -437,7 +437,7 @@
 <p>…<br><strong><em>In older versions of the platform license screens passed by now, but this changed since <a href="/2024/01/19/208a_update_on_24_1">version 24.1</a></em></strong><br>…</p>
 <p><img alt="install_appworks_009" class="post-img b-lazy" href="/images/posts/2019/009_the_appworks_installation_survival_guide/install_appworks_009.png" data-src="/images/posts/2019/009_the_appworks_installation_survival_guide/install_appworks_009.png"></p>
 <blockquote>
-<p>Notify yourself of the (default) renamed <code>AppWorksPlatformCE</code> folder!</p>
+<p>Notify yourself of the (default) renamed <code>ProcessAutomationCE</code> folder!</p>
 </blockquote>
 <p>Leave the (default) folder location and click ‘Next’</p>
 <p><img alt="install_appworks_010" class="post-img b-lazy" href="/images/posts/2019/009_the_appworks_installation_survival_guide/install_appworks_010.png" data-src="/images/posts/2019/009_the_appworks_installation_survival_guide/install_appworks_010.png"></p>
@@ -455,7 +455,7 @@
 <li>Default Port: 5432</li>
 <li>Username: postgres</li>
 <li>Password: admin (as we changed during the PostgreSQL installation post in this site)</li>
-<li>Database name: appworks_db</li>
+<li>Database name: opa_db</li>
 <li>Mark the ‘Create Database’ option</li>
 <li>DBA username: postgres</li>
 <li>DBA password: admin</li>
@@ -481,15 +481,15 @@
 <p><img alt="install_appworks_019" class="post-img b-lazy" href="/images/posts/2019/009_the_appworks_installation_survival_guide/install_appworks_019.png" data-src="/images/posts/2019/009_the_appworks_installation_survival_guide/install_appworks_019.png"></p>
 <p><img alt="install_appworks_020" class="post-img b-lazy" href="/images/posts/2019/009_the_appworks_installation_survival_guide/install_appworks_020.png" data-src="/images/posts/2019/009_the_appworks_installation_survival_guide/install_appworks_020.png"></p>
 <p>There it is…Our well-earned ‘Done’ button!</p>
-<p>Copy that URL as we will not be provided with that browser window! We need to do something like this from our local laptop: <code>http://192.168.56.107:8080/cordys/wcp/cap/install?nodeName=appworks</code>, but that is the next post…</p>
+<p>Copy that URL as we will not be provided with that browser window! We need to do something like this from our local laptop: <code>http://192.168.56.107:8080/cordys/wcp/cap/install?nodeName=opa</code>, but that is the next post…</p>
 <blockquote>
 <p>Can take some time before the screen is gone, but it’s done…done!</p>
 </blockquote>
-<p>To see what was done to the system check the log files: </p>
+<p>To see what was done to the system check the log files:</p>
 <p><code>cat /tmp/cordys_custom_log.log</code></p>
-<p><code>cat /opt/opentext/AppWorksPlatform/defaultInst/install_log/AppWorks\ Platform\ installation.Log</code></p>
-<p><code>cat /opt/opentext/AppWorksPlatform/defaultInst/install_log/configureapplicationserver.log</code></p>
-<p><code>sudo cat /opt/opentext/AppWorksPlatform/defaultInst/Logs/Application_Server.xml</code></p>
+<p><code>cat /opt/opentext/ProcessAutomationCE/defaultInst/install_log/Process\ Automation\ CE\ installation.Log</code></p>
+<p><code>cat /opt/opentext/ProcessAutomationCE/defaultInst/install_log/configureapplicationserver.log</code></p>
+<p><code>sudo cat /opt/opentext/ProcessAutomationCE/defaultInst/Logs/Application_Server.xml</code></p>
 <p>To see if AppWorks is running fine: <code>ps aux | grep defaultInst</code></p>
 <p>To stop and start AppWorks you can just restart the TomEE instance!</p>
 <blockquote>
@@ -575,6 +575,12 @@
       
       
       <li>
+        <a href="/2024/11/08/245a_update_on_24_4/">General Available; A new release for this last quarter of 2024; It's OPA (aka "AppWorks") 24.4 time...WHAT!?</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/2024/11/01/245_apply_css_to_custom_tag/">God-Given CSS tricks; Instantly style your custom tags like a pro</a>
       </li>
       
@@ -615,10 +621,6 @@
       </li>
       
       
-      
-      <li>
-        <a href="/2024/09/13/239_jstack_and_har_usage/">Boost your debugging skills today; Unlock the secrets of jstack and HAR files</a>
-      </li>
       
       
       

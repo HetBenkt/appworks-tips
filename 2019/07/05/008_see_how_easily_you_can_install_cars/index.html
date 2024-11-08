@@ -135,7 +135,7 @@
                 
                 
                 
-                    <a href="/installation" title="INSTALLATION 24.2">INSTALLATION 24.2 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <a href="/installation" title="INSTALLATION 24.4">INSTALLATION 24.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <g>
   <title>Layer 1</title>
   <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
@@ -394,13 +394,8 @@
 <hr>
 <p><strong>Let get right into it…</strong></p>
 <p>First things first…That will be downloading the correct software package from the OpenText support site on your local machine. So, login to <a href="https://support.opentext.com" target="_blank" rel="noopener">OpenText support</a></p>
-<p>In the central search box, just search for <code>#AppWorks24.2</code> or use this quick <a href="https://support.opentext.com/csm?id=search&q=%23AppWorks24.2" target="_blank" rel="noopener">link</a>! The results will show 3 types of downloads:</p>
-<ol>
-<li><strong>AppWorks Suite</strong> (We go for this one as it’s the full suite. The platform incl. the <strong>O</strong>pen<strong>T</strong>ext<strong>D</strong>irectory<strong>S</strong>ervices, Intelligent viewing (the Brava! future), and Gateway installation files)</li>
-<li>AppWorks Platform (This is only the platform…without other relative installation files)</li>
-<li>AppWorks Containerization (It’s for the cloud…If you know me, you also know why I don’t go for this option)</li>
-</ol>
-<p>From here you can download the file <code>opentext-appworks-suite-24.2-linux.zip</code>. Extract it to your local machine and upload it to the VM with WinSCP or MobaXTerm using the already available ‘sysadmin’ account (and just use the home folder <code>/home/sysadmin</code>).</p>
+<p>In the central search box, just search for <code>OpenText_Process_Automation_CE</code>! The results documents and software.</p>
+<p>From here you can download the file <code>OpenText_Process_Automation_CE_Linux_24.4.zip</code>. Extract it to your local machine and upload it to the VM with WinSCP or MobaXTerm using the already available ‘sysadmin’ account (and just use the home folder <code>/home/sysadmin</code>).</p>
 <hr>
 <p>Before we start the installation, we will do some <strong>pre-checks</strong> and <strong>pre-setup</strong></p>
 <p>Get yourself the installation PDF ‘AppWorks Platform 23.4 Installation Guide for Linux’ and open it.</p>
@@ -445,11 +440,11 @@
 </li>
 </ul>
 </blockquote>
-<p>Now you go to your uploaded installation files: <code>cd ~/opentext-appworks-suite-24.2-linux/OpenTextAppWorksPlatform/</code></p>
+<p>Now you go to your uploaded installation files: <code>cd ~/OpenText_Process_Automation_CE_Linux_24.4</code></p>
 <p>Update the execution option in the .bin files:</p>
 <ul>
 <li><code>chmod +x OpenText_CARS_2.8.bin</code></li>
-<li><code>chmod +x OpenText_AppWorks_Platform_24.2.bin</code></li>
+<li><code>chmod +x OpenText_Process_Automation_24.4.bin</code></li>
 </ul>
 <hr>
 <p>Now you are really, really ready to start with the installation of … Now, first we <strong>install the required CARS</strong>: <code>sudo ./OpenText_CARS_2.8.bin</code></p>
@@ -574,6 +569,12 @@
       
       
       <li>
+        <a href="/2024/11/08/245a_update_on_24_4/">General Available; A new release for this last quarter of 2024; It's OPA (aka "AppWorks") 24.4 time...WHAT!?</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/2024/11/01/245_apply_css_to_custom_tag/">God-Given CSS tricks; Instantly style your custom tags like a pro</a>
       </li>
       
@@ -614,10 +615,6 @@
       </li>
       
       
-      
-      <li>
-        <a href="/2024/09/13/239_jstack_and_har_usage/">Boost your debugging skills today; Unlock the secrets of jstack and HAR files</a>
-      </li>
       
       
       

@@ -135,7 +135,7 @@
                 
                 
                 
-                    <a href="/installation" title="INSTALLATION 24.2">INSTALLATION 24.2 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <a href="/installation" title="INSTALLATION 24.4">INSTALLATION 24.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <g>
   <title>Layer 1</title>
   <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
@@ -396,7 +396,7 @@
 <p>So, from your terminal screen give the command: <code>sudo yum -y install java-17-openjdk-devel</code></p>
 <p>When done you should have java available by the command: <code>java -version</code></p>
 <p>You will get this information back:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">openjdk version <span class="string">"17.0.10"</span> 2024-01-16 LTS</span><br><span class="line">OpenJDK Runtime Environment (Red_Hat-17.0.10.0.7-1) (build 17.0.10+7-LTS)</span><br><span class="line">OpenJDK 64-Bit Server VM (Red_Hat-17.0.10.0.7-1) (build 17.0.10+7-LTS, mixed mode, sharing)</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">openjdk version <span class="string">"17.0.13"</span> 2024-10-15 LTS</span><br><span class="line">OpenJDK Runtime Environment (Red_Hat-17.0.13.0.11-1) (build 17.0.13+11-LTS)</span><br><span class="line">OpenJDK 64-Bit Server VM (Red_Hat-17.0.13.0.11-1) (build 17.0.13+11-LTS, mixed mode, sharing)</span><br></pre></td></tr></table></figure>
 
 <p>To make it nicer and smoother we will create a new variable JAVA_HOME (and some others!). So, edit the ~/.bash_profile of the ‘sysadmin’ user: <code>vi ~/.bash_profile</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .bash_profile</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Get the aliases and functions</span></span><br><span class="line"><span class="keyword">if</span> [ -f ~/.bashrc ]; <span class="keyword">then</span></span><br><span class="line">        . ~/.bashrc</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># User specific environment and startup programs</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-17-openjdk-17.0.10.0.7-2.el8.x86_64</span><br><span class="line">LIB_PATH=<span class="variable">$JAVA_HOME</span>/lib/server</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/.<span class="built_in">local</span>/bin:<span class="variable">$HOME</span>/bin</span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="variable">$LD_LIBRARY_PATH</span>:<span class="variable">$LIB_PATH</span></span><br></pre></td></tr></table></figure>
@@ -488,6 +488,12 @@
       
       
       <li>
+        <a href="/2024/11/08/245a_update_on_24_4/">General Available; A new release for this last quarter of 2024; It's OPA (aka "AppWorks") 24.4 time...WHAT!?</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/2024/11/01/245_apply_css_to_custom_tag/">God-Given CSS tricks; Instantly style your custom tags like a pro</a>
       </li>
       
@@ -528,10 +534,6 @@
       </li>
       
       
-      
-      <li>
-        <a href="/2024/09/13/239_jstack_and_har_usage/">Boost your debugging skills today; Unlock the secrets of jstack and HAR files</a>
-      </li>
       
       
       

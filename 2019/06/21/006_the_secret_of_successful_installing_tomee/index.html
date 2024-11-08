@@ -135,7 +135,7 @@
                 
                 
                 
-                    <a href="/installation" title="INSTALLATION 24.2">INSTALLATION 24.2 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <a href="/installation" title="INSTALLATION 24.4">INSTALLATION 24.4 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <g>
   <title>Layer 1</title>
   <ellipse stroke="#000" ry="5.46874" rx="5.49999" id="svg_5" cy="7.79375" cx="8.0625" fill="#000000"/>
@@ -393,9 +393,9 @@
 <p>As for Java, also TomEE required a specific version as the documentation will tell us.</p>
 <p><img alt="general_001" class="post-img b-lazy" href="/images/posts/2019/006_the_secret_of_successful_installing_tomee/general_001.png" data-src="/images/posts/2019/006_the_secret_of_successful_installing_tomee/general_001.png"></p>
 <p>For TomEE, we first <strong>create a tomcat user</strong> who owns the installation: <code>sudo useradd -s /sbin/nologin tomcat</code></p>
-<p>Next, we need the URL from where we can download TomEE. This can be found here (for the version 8 we use on our image): <a href="https://archive.apache.org/dist/tomee/tomee-9.1.0/apache-tomee-9.1.0-plus.tar.gz" target="_blank" rel="noopener">TomEE 9.1.0 Plus</a></p>
-<p>It gives a list of mirror sites where we can <strong>download the correct file</strong> from with the command: <code>wget https://archive.apache.org/dist/tomee/tomee-9.1.0/apache-tomee-9.1.0-plus.tar.gz</code></p>
-<p>After download, we need to <strong>extract the file</strong>: <code>tar xvf apache-tomee-9.1.0-plus.tar.gz</code></p>
+<p>Next, we need the URL from where we can download TomEE. This can be found here (for the version 8 we use on our image): <a href="https://archive.apache.org/dist/tomee/tomee-9.1.3/apache-tomee-9.1.3-plus.tar.gz" target="_blank" rel="noopener">TomEE 9.1.3 Plus</a></p>
+<p>It gives a list of mirror sites where we can <strong>download the correct file</strong> from with the command: <code>wget https://archive.apache.org/dist/tomee/tomee-9.1.3/apache-tomee-9.1.3-plus.tar.gz</code></p>
+<p>After download, we need to <strong>extract the file</strong>: <code>tar xvf apache-tomee-9.1.3-plus.tar.gz</code></p>
 <blockquote>
 <p>The OpenText installation manual makes an additional step this time, it has to do with a ‘commons-daemon’ service, and the ‘jsvc’ tool that you need to generate! All these (complex steps) are needed to run tomcat in ‘daemon’ mode which is the Unix way for running TomEE as a service (like in Windows). The documentation is even talking about a ‘known issue’ in that daemon scripts which OpenText fixes with a <a href="https://knowledge.opentext.com/knowledge/llisapi.dll?func=ll&objid=77633208" target="_blank" rel="noopener">downloadable zip</a> with the corrected files!?<br>As we already saw in previous installations we can simply create our own ‘systemctl’ service and start/stop our TomEE with <code>systemctl stop|start tomee</code> like we do for all our services! Automatically enable this service to start on system start-up.</p>
 </blockquote>
@@ -406,9 +406,9 @@
 <p>Let’s move it all to a <strong>nice location with a service</strong> to start/stop it:</p>
 <ul>
 <li>Create a directory: <code>sudo mkdir /opt/tomee</code></li>
-<li>Move the extracted folder: <code>sudo mv apache-tomee-plus-9.1.0/ /opt/tomee/</code></li>
+<li>Move the extracted folder: <code>sudo mv apache-tomee-plus-9.1.3/ /opt/tomee/</code></li>
 <li>Own the new folder by the ‘tomcat’ user: <code>sudo chown -R tomcat:tomcat /opt/tomee/</code></li>
-<li>Make a nice link to it: <code>sudo ln -s /opt/tomee/apache-tomee-plus-9.1.0/ /opt/tomee/latest</code></li>
+<li>Make a nice link to it: <code>sudo ln -s /opt/tomee/apache-tomee-plus-9.1.3/ /opt/tomee/latest</code></li>
 </ul>
 <blockquote>
 <p>Don’t use this link in any other configuration file like the ‘tomee.service’, or the system variables like the CLASSPATH as it fails the whole AppWorks installation…That’s my own experience!</p>
@@ -417,7 +417,7 @@
 <li>Create a cool service for it: <code>sudo vi /usr/lib/systemd/system/tomee.service</code></li>
 </ul>
 <p>Add this content to the new file</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=TomEE 9 servlet container</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line"></span><br><span class="line">User=tomcat</span><br><span class="line">Group=tomcat</span><br><span class="line"></span><br><span class="line">Environment=<span class="string">"JAVA_HOME=/usr/lib/jvm/java-17-openjdk-17.0.10.0.7-2.el8.x86_64"</span></span><br><span class="line">Environment=<span class="string">"JAVA_OPTS=-Djava.security.egd=file:///dev/urandom"</span></span><br><span class="line"></span><br><span class="line">Environment=<span class="string">"CATALINA_BASE=/opt/tomee/apache-tomee-plus-9.1.0"</span></span><br><span class="line">Environment=<span class="string">"CATALINA_HOME=/opt/tomee/apache-tomee-plus-9.1.0"</span></span><br><span class="line">Environment=<span class="string">"CATALINA_PID=/opt/tomee/apache-tomee-plus-9.1.0/temp/tomee.pid"</span></span><br><span class="line">Environment=<span class="string">"CATALINA_OPTS=-Xms1024M -Xmx2048M -server -XX:+UseParallelGC -Dcom.sun.management.jmxremote.port=9090 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dbus.xml.vm.maxsize=2048"</span></span><br><span class="line"></span><br><span class="line">ExecStart=/opt/tomee/apache-tomee-plus-9.1.0/bin/startup.sh</span><br><span class="line">ExecStop=/opt/tomee/apache-tomee-plus-9.1.0/bin/shutdown.sh</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=TomEE 9 servlet container</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line"></span><br><span class="line">User=tomcat</span><br><span class="line">Group=tomcat</span><br><span class="line"></span><br><span class="line">Environment=<span class="string">"JAVA_HOME=/usr/lib/jvm/java-17-openjdk-17.0.13.0.11-3.el8.x86_64"</span></span><br><span class="line">Environment=<span class="string">"JAVA_OPTS=-Djava.security.egd=file:///dev/urandom"</span></span><br><span class="line"></span><br><span class="line">Environment=<span class="string">"CATALINA_BASE=/opt/tomee/apache-tomee-plus-9.1.3"</span></span><br><span class="line">Environment=<span class="string">"CATALINA_HOME=/opt/tomee/apache-tomee-plus-9.1.3"</span></span><br><span class="line">Environment=<span class="string">"CATALINA_PID=/opt/tomee/apache-tomee-plus-9.1.3/temp/tomee.pid"</span></span><br><span class="line">Environment=<span class="string">"CATALINA_OPTS=-Xms1024M -Xmx2048M -server -XX:+UseParallelGC -Dcom.sun.management.jmxremote.port=9090 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dbus.xml.vm.maxsize=2048"</span></span><br><span class="line"></span><br><span class="line">ExecStart=/opt/tomee/apache-tomee-plus-9.1.3/bin/startup.sh</span><br><span class="line">ExecStop=/opt/tomee/apache-tomee-plus-9.1.3/bin/shutdown.sh</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
 
 <p>Now save and quit the file <code>:wq</code></p>
 <p><strong>Last steps…</strong></p>
@@ -465,7 +465,7 @@
 <p>As a final step is the proper way to add the correct <strong>environment variables for the TomEE</strong> instance.</p>
 <p>Edit the ~/.bash_profile again for the ‘sysadmin’ user: <code>vi ~/.bash_profile</code></p>
 <p>The final version should look like this for now:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .bash_profile</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Get the aliases and functions</span></span><br><span class="line"><span class="keyword">if</span> [ -f ~/.bashrc ]; <span class="keyword">then</span></span><br><span class="line">        . ~/.bashrc</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># User specific environment and startup programs</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-17-openjdk-17.0.10.0.7-2.el8.x86_64</span><br><span class="line">LIB_PATH=<span class="variable">$JAVA_HOME</span>/lib/server</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/.<span class="built_in">local</span>/bin:<span class="variable">$HOME</span>/bin</span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="variable">$LD_LIBRARY_PATH</span>:<span class="variable">$LIB_PATH</span></span><br><span class="line"><span class="built_in">export</span> CATALINA_HOME=/opt/tomee/apache-tomee-plus-9.1.0</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># .bash_profile</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Get the aliases and functions</span></span><br><span class="line"><span class="keyword">if</span> [ -f ~/.bashrc ]; <span class="keyword">then</span></span><br><span class="line">        . ~/.bashrc</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># User specific environment and startup programs</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-17-openjdk-17.0.13.0.11-3.el8.x86_64</span><br><span class="line">LIB_PATH=<span class="variable">$JAVA_HOME</span>/lib/server</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/.<span class="built_in">local</span>/bin:<span class="variable">$HOME</span>/bin</span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="variable">$LD_LIBRARY_PATH</span>:<span class="variable">$LIB_PATH</span></span><br><span class="line"><span class="built_in">export</span> CATALINA_HOME=/opt/tomee/apache-tomee-plus-9.1.3</span><br></pre></td></tr></table></figure>
 
 <p>When done reload your profile via the command: <code>source ~/.bash_profile</code></p>
 <p>Check if it’s all OK via: <code>env | grep tomee</code></p>
@@ -548,6 +548,12 @@
       
       
       <li>
+        <a href="/2024/11/08/245a_update_on_24_4/">General Available; A new release for this last quarter of 2024; It's OPA (aka "AppWorks") 24.4 time...WHAT!?</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/2024/11/01/245_apply_css_to_custom_tag/">God-Given CSS tricks; Instantly style your custom tags like a pro</a>
       </li>
       
@@ -588,10 +594,6 @@
       </li>
       
       
-      
-      <li>
-        <a href="/2024/09/13/239_jstack_and_har_usage/">Boost your debugging skills today; Unlock the secrets of jstack and HAR files</a>
-      </li>
       
       
       
