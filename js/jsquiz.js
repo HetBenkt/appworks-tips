@@ -53,19 +53,19 @@ $.getJSON("/questions.json", function(json) {
         // show number of correct answers out of total
         var mailbody;
         if(totalValue <= 20) {
-            mailbody = `My dear AppWorks friend,\nYou reached a total of ${totalValue} points out of the max. ${json.length * 10} points.\nOeps...Do you really want to be the AppWorks guy?`;
+            mailbody = `My dear Process Automation friend,\nYou reached a total of ${totalValue} points out of the max. ${json.length * 10} points.\nOeps...Do you really want to be the Process Automation guy?`;
         }
         if(totalValue > 20 && totalValue <= 40 ) {
-            mailbody = `My dear AppWorks friend,\nYou reached a total of ${totalValue} points out of the max. ${json.length * 10} points.\nHmmm...You should work on your skills, but you are on the right track by landing on this site.`;
+            mailbody = `My dear Process Automation friend,\nYou reached a total of ${totalValue} points out of the max. ${json.length * 10} points.\nHmmm...You should work on your skills, but you are on the right track by landing on this site.`;
         }
         if(totalValue > 40 && totalValue <= 60) {
-            mailbody = `My dear AppWorks friend,\nYou reached a total of ${totalValue} points out of the max. ${json.length * 10} points.\nCool...Just do the extra bit of work to get closer to your target!`;
+            mailbody = `My dear Process Automation friend,\nYou reached a total of ${totalValue} points out of the max. ${json.length * 10} points.\nCool...Just do the extra bit of work to get closer to your target!`;
         }
         if(totalValue > 60 && totalValue <= 80) {
-            mailbody = `My dear AppWorks friend,\nYou reached a total of ${totalValue} points out of the max. ${json.length * 10} points.\nWow...You're getting somewhere so keep up the good work.`;
+            mailbody = `My dear Process Automation friend,\nYou reached a total of ${totalValue} points out of the max. ${json.length * 10} points.\nWow...You're getting somewhere so keep up the good work.`;
         }
         if(totalValue > 80 && totalValue <= 100) {
-            mailbody = `My dear AppWorks friend,\nYou reached a total of ${totalValue} points out of the max. ${json.length * 10} points.\nHell yeah!...We should be friends as you have your nose pointed to the best-of-all direction.`;
+            mailbody = `My dear Process Automation friend,\nYou reached a total of ${totalValue} points out of the max. ${json.length * 10} points.\nHell yeah!...We should be friends as you have your nose pointed to the best-of-all direction.`;
         }
         resultsContainer.innerHTML = mailbody;
     }
