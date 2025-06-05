@@ -1,0 +1,202 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Header xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+		<header xmlns="http://schemas.cordys.com/General/1.0/">
+			<Logger xmlns="http://schemas.cordys.com/General/1.0/"/>
+		</header>
+		<i18n:international xmlns:i18n="http://www.w3.org/2005/09/ws-i18n">
+			<i18n:locale>en-US</i18n:locale>
+		</i18n:international>
+	</SOAP:Header>
+	<SOAP:Body>
+		<EvaluateXPath xmlns="http://schemas.cordys.com/bpm/modeling/1.0">
+			<source>
+				<messagemap xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns8="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0" xmlns:ns7="http://schemas/OpenTextEntityIdentityComponents/Preference" xmlns:ns6="http://schemas/OpenTextEntityIdentityComponents/Person" xmlns:ns5="http://schemas/OpenTextEntityIdentityComponents/Identity" xmlns:ns4="http://schemas/OpenTextEntityIdentityComponents/User" xmlns:ns3="http://schemas.opentext.com/bps/entity/core" xmlns:ns2="http://schemas/OpenTextEntityIdentityComponents/User/operations" xmlns:bpm="http://schemas.cordys.com/default" xmlns:sm="http://www.w3.org/2005/07/scxml" xmlns:instance="http://schemas.cordys.com/bpm/instance/1.0" xmlns="http://schemas.cordys.com/bpm/instance/1.0" lockID="08002786-6f6a-a1f0-8015-76777bc83ab6">
+					<faults/>
+					<instanceProperties>
+						<processName xmlns="http://schemas.cordys.com/bpm/instance/1.0">nl-bos-generic/bpms/bpm_dummy</processName>
+						<processDescription xmlns="http://schemas.cordys.com/bpm/instance/1.0">bpm_dummy</processDescription>
+						<runtimeDocumentID xmlns="http://schemas.cordys.com/bpm/instance/1.0">08002786-6f6a-a1ef-befe-9d1f61ef1950</runtimeDocumentID>
+						<workspaceID xmlns="http://schemas.cordys.com/bpm/instance/1.0">08002786-6f6a-a1ef-b958-274f6ce53522</workspaceID>
+						<modelID>08002786-6f6a-a1ef-befe-db01eab40623</modelID>
+						<revisionID>08002786-6f6a-a1f0-8014-e466b60b9e4a</revisionID>
+						<activityInfo/>
+						<identifier>08002786-6f6a-a1f0-8015-7676fd6f3ab6</identifier>
+						<startTime>1741902917590</startTime>
+						<mainProcess>true</mainProcess>
+						<rootInstance>08002786-6f6a-a1f0-8015-7676fd6f3ab6</rootInstance>
+						<rootInstanceType value="1">PROCESS</rootInstanceType>
+						<rootModelRevisionID>08002786-6f6a-a1f0-8014-e466b60b9e4a</rootModelRevisionID>
+						<instantiationLocale>en-US</instantiationLocale>
+						<modelSpace>organization</modelSpace>
+						<crashRecovery>true</crashRecovery>
+						<monitor monitorLevel="COMPLETE">true</monitor>
+						<Logger xmlns="http://schemas.cordys.com/General/1.0/">
+							<DC name="process">nl-bos-generic/bpms/bpm_dummy</DC>
+							<DC name="instance">08002786-6f6a-a1f0-8015-7676fd6f3ab6</DC>
+							<DC name="hopCount">0</DC>
+							<DC name="correlationID">08002786-6f6a-a1f0-8015-76777a71bab6</DC>
+						</Logger>
+						<startedBy>cn=opadev@opa,cn=organizational users,o=opa_tips,cn=cordys,cn=defaultInst,o=25.1.com</startedBy>
+						<currentOwner>cn=opadev@opa,cn=organizational users,o=opa_tips,cn=cordys,cn=defaultInst,o=25.1.com</currentOwner>
+						<organization>o=opa_tips,cn=cordys,cn=defaultInst,o=25.1.com</organization>
+						<designTimeWorkspaceID>08002786-6f6a-a1ef-b958-274f6ce53522</designTimeWorkspaceID>
+						<processInstantiationType>Run from Process Designer</processInstantiationType>
+						<priority>3</priority>
+						<parentType value="1">PROCESS</parentType>
+						<insertedInPim>true</insertedInPim>
+						<stateInfo/>
+					</instanceProperties>
+					<GetAllUsersInput xmlns="http://schemas/OpenTextEntityIdentityComponents/User/operations"/>
+					<GetAllUsersOutput xmlns="http://schemas/OpenTextEntityIdentityComponents/User/operations">
+						<GetAllUsersResponse xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wstxns1="http://schemas/OpenTextEntityIdentityComponents/User/operations" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+							<wstxns2:User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wstxns1="http://schemas/OpenTextEntityIdentityComponents/User/operations" xmlns="http://schemas/OpenTextEntityIdentityComponents/User" xmlns:wstxns2="http://schemas/OpenTextEntityIdentityComponents/User">
+								<wstxns3:Name xmlns:wstxns3="http://schemas/OpenTextEntityIdentityComponents/Identity">opaadmin@opa</wstxns3:Name>
+								<FullName xmlns="http://schemas/OpenTextEntityIdentityComponents/User">opaadmin</FullName>
+								<PartitionName xmlns="http://schemas/OpenTextEntityIdentityComponents/User">opa</PartitionName>
+								<AccountDisabled xmlns="http://schemas/OpenTextEntityIdentityComponents/User">false</AccountDisabled>
+								<wstxns4:IdentityDisplayName xmlns:wstxns4="http://schemas/OpenTextEntityIdentityComponents/Identity">OPA Administrator</wstxns4:IdentityDisplayName>
+								<wstxns5:Description xmlns:wstxns5="http://schemas/OpenTextEntityIdentityComponents/Identity" xsi:nil="true"/>
+								<UserId xmlns="http://schemas/OpenTextEntityIdentityComponents/User">opaadmin@opa</UserId>
+								<memberid xmlns="http://schemas/OpenTextEntityIdentityComponents/User">3d4b4e68-79a8-103f-898a-8bce9d9680f2</memberid>
+								<toPerson xmlns="http://schemas/OpenTextEntityIdentityComponents/User">
+									<wstxns6:Person-id xmlns="http://schemas/OpenTextEntityIdentityComponents/Person" xmlns:wstxns6="http://schemas/OpenTextEntityIdentityComponents/Person">
+										<Id xmlns="http://schemas/OpenTextEntityIdentityComponents/Person">3</Id>
+										<ItemId xmlns="http://schemas/OpenTextEntityIdentityComponents/Person">F8B156B4FF8F11E6E6562305FE2BDF32.3</ItemId>
+									</wstxns6:Person-id>
+								</toPerson>
+								<wstxns7:Identity-id xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity" xmlns:wstxns7="http://schemas/OpenTextEntityIdentityComponents/Identity">
+									<Id xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity">4</Id>
+									<ItemId xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity">F8B156E1037111E6E9CB0FBF3334FBBF.4</ItemId>
+								</wstxns7:Identity-id>
+								<wstxns8:Title xmlns="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0" xmlns:wstxns8="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">
+									<Value xmlns="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">opaadmin@opa</Value>
+								</wstxns8:Title>
+							</wstxns2:User>
+							<wstxns9:User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wstxns1="http://schemas/OpenTextEntityIdentityComponents/User/operations" xmlns="http://schemas/OpenTextEntityIdentityComponents/User" xmlns:wstxns9="http://schemas/OpenTextEntityIdentityComponents/User">
+								<wstxns10:Name xmlns:wstxns10="http://schemas/OpenTextEntityIdentityComponents/Identity">opadev@opa</wstxns10:Name>
+								<FullName xmlns="http://schemas/OpenTextEntityIdentityComponents/User">opadev</FullName>
+								<PartitionName xmlns="http://schemas/OpenTextEntityIdentityComponents/User">opa</PartitionName>
+								<AccountDisabled xmlns="http://schemas/OpenTextEntityIdentityComponents/User">false</AccountDisabled>
+								<wstxns11:IdentityDisplayName xmlns:wstxns11="http://schemas/OpenTextEntityIdentityComponents/Identity">OPA Developer</wstxns11:IdentityDisplayName>
+								<wstxns12:Description xmlns:wstxns12="http://schemas/OpenTextEntityIdentityComponents/Identity" xsi:nil="true"/>
+								<UserId xmlns="http://schemas/OpenTextEntityIdentityComponents/User">opadev@opa</UserId>
+								<memberid xmlns="http://schemas/OpenTextEntityIdentityComponents/User">3c703576-79a8-103f-8988-8bce9d9680f2</memberid>
+								<toPerson xmlns="http://schemas/OpenTextEntityIdentityComponents/User">
+									<wstxns13:Person-id xmlns="http://schemas/OpenTextEntityIdentityComponents/Person" xmlns:wstxns13="http://schemas/OpenTextEntityIdentityComponents/Person">
+										<Id xmlns="http://schemas/OpenTextEntityIdentityComponents/Person">2</Id>
+										<ItemId xmlns="http://schemas/OpenTextEntityIdentityComponents/Person">F8B156B4FF8F11E6E6562305FE2BDF32.2</ItemId>
+									</wstxns13:Person-id>
+								</toPerson>
+								<wstxns14:Identity-id xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity" xmlns:wstxns14="http://schemas/OpenTextEntityIdentityComponents/Identity">
+									<Id xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity">3</Id>
+									<ItemId xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity">F8B156E1037111E6E9CB0FBF3334FBBF.3</ItemId>
+								</wstxns14:Identity-id>
+								<wstxns15:Title xmlns="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0" xmlns:wstxns15="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">
+									<Value xmlns="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">opadev@opa</Value>
+								</wstxns15:Title>
+							</wstxns9:User>
+							<wstxns16:User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wstxns1="http://schemas/OpenTextEntityIdentityComponents/User/operations" xmlns="http://schemas/OpenTextEntityIdentityComponents/User" xmlns:wstxns16="http://schemas/OpenTextEntityIdentityComponents/User">
+								<wstxns17:Name xmlns:wstxns17="http://schemas/OpenTextEntityIdentityComponents/Identity">opatest@opa</wstxns17:Name>
+								<FullName xmlns="http://schemas/OpenTextEntityIdentityComponents/User">opatest</FullName>
+								<PartitionName xmlns="http://schemas/OpenTextEntityIdentityComponents/User">opa</PartitionName>
+								<AccountDisabled xmlns="http://schemas/OpenTextEntityIdentityComponents/User">false</AccountDisabled>
+								<wstxns18:IdentityDisplayName xmlns:wstxns18="http://schemas/OpenTextEntityIdentityComponents/Identity">OPA Tester</wstxns18:IdentityDisplayName>
+								<wstxns19:Description xmlns:wstxns19="http://schemas/OpenTextEntityIdentityComponents/Identity" xsi:nil="true"/>
+								<UserId xmlns="http://schemas/OpenTextEntityIdentityComponents/User">opatest@opa</UserId>
+								<memberid xmlns="http://schemas/OpenTextEntityIdentityComponents/User">3d6ceca8-79a8-103f-898c-8bce9d9680f2</memberid>
+								<toPerson xmlns="http://schemas/OpenTextEntityIdentityComponents/User">
+									<wstxns20:Person-id xmlns="http://schemas/OpenTextEntityIdentityComponents/Person" xmlns:wstxns20="http://schemas/OpenTextEntityIdentityComponents/Person">
+										<Id xmlns="http://schemas/OpenTextEntityIdentityComponents/Person">4</Id>
+										<ItemId xmlns="http://schemas/OpenTextEntityIdentityComponents/Person">F8B156B4FF8F11E6E6562305FE2BDF32.4</ItemId>
+									</wstxns20:Person-id>
+								</toPerson>
+								<wstxns21:Identity-id xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity" xmlns:wstxns21="http://schemas/OpenTextEntityIdentityComponents/Identity">
+									<Id xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity">5</Id>
+									<ItemId xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity">F8B156E1037111E6E9CB0FBF3334FBBF.5</ItemId>
+								</wstxns21:Identity-id>
+								<wstxns22:Title xmlns="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0" xmlns:wstxns22="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">
+									<Value xmlns="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">opatest@opa</Value>
+								</wstxns22:Title>
+							</wstxns16:User>
+							<wstxns23:User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wstxns1="http://schemas/OpenTextEntityIdentityComponents/User/operations" xmlns="http://schemas/OpenTextEntityIdentityComponents/User" xmlns:wstxns23="http://schemas/OpenTextEntityIdentityComponents/User">
+								<wstxns24:Name xmlns:wstxns24="http://schemas/OpenTextEntityIdentityComponents/Identity">otadmin@otds.admin</wstxns24:Name>
+								<FullName xmlns="http://schemas/OpenTextEntityIdentityComponents/User">otadmin</FullName>
+								<PartitionName xmlns="http://schemas/OpenTextEntityIdentityComponents/User">OTDSADMIN</PartitionName>
+								<AccountDisabled xmlns="http://schemas/OpenTextEntityIdentityComponents/User">false</AccountDisabled>
+								<wstxns25:IdentityDisplayName xmlns:wstxns25="http://schemas/OpenTextEntityIdentityComponents/Identity">otadmin@otds.admin</wstxns25:IdentityDisplayName>
+								<wstxns26:Description xmlns:wstxns26="http://schemas/OpenTextEntityIdentityComponents/Identity" xsi:nil="true"/>
+								<UserId xmlns="http://schemas/OpenTextEntityIdentityComponents/User">otadmin@otds.admin</UserId>
+								<memberid xmlns="http://schemas/OpenTextEntityIdentityComponents/User">b11c5306-79a7-103f-8986-8bce9d9680f2</memberid>
+								<toPerson xmlns="http://schemas/OpenTextEntityIdentityComponents/User">
+									<wstxns27:Person-id xmlns="http://schemas/OpenTextEntityIdentityComponents/Person" xmlns:wstxns27="http://schemas/OpenTextEntityIdentityComponents/Person">
+										<Id xmlns="http://schemas/OpenTextEntityIdentityComponents/Person">1</Id>
+										<ItemId xmlns="http://schemas/OpenTextEntityIdentityComponents/Person">F8B156B4FF8F11E6E6562305FE2BDF32.1</ItemId>
+									</wstxns27:Person-id>
+								</toPerson>
+								<wstxns28:Identity-id xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity" xmlns:wstxns28="http://schemas/OpenTextEntityIdentityComponents/Identity">
+									<Id xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity">2</Id>
+									<ItemId xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity">F8B156E1037111E6E9CB0FBF3334FBBF.2</ItemId>
+								</wstxns28:Identity-id>
+								<wstxns29:Title xmlns="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0" xmlns:wstxns29="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">
+									<Value xmlns="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">otadmin@otds.admin</Value>
+								</wstxns29:Title>
+							</wstxns23:User>
+							<wstxns30:User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wstxns1="http://schemas/OpenTextEntityIdentityComponents/User/operations" xmlns="http://schemas/OpenTextEntityIdentityComponents/User" xmlns:wstxns30="http://schemas/OpenTextEntityIdentityComponents/User">
+								<wstxns31:Name xmlns:wstxns31="http://schemas/OpenTextEntityIdentityComponents/Identity">sysadmin</wstxns31:Name>
+								<FullName xmlns="http://schemas/OpenTextEntityIdentityComponents/User">sysadmin</FullName>
+								<PartitionName xmlns="http://schemas/OpenTextEntityIdentityComponents/User" xsi:nil="true"/>
+								<AccountDisabled xmlns="http://schemas/OpenTextEntityIdentityComponents/User" xsi:nil="true"/>
+								<wstxns32:IdentityDisplayName xmlns:wstxns32="http://schemas/OpenTextEntityIdentityComponents/Identity" xsi:nil="true"/>
+								<wstxns33:Description xmlns:wstxns33="http://schemas/OpenTextEntityIdentityComponents/Identity" xsi:nil="true"/>
+								<UserId xmlns="http://schemas/OpenTextEntityIdentityComponents/User">sysadmin</UserId>
+								<memberid xmlns="http://schemas/OpenTextEntityIdentityComponents/User" xsi:nil="true"/>
+								<wstxns34:Identity-id xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity" xmlns:wstxns34="http://schemas/OpenTextEntityIdentityComponents/Identity">
+									<Id xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity">1</Id>
+									<ItemId xmlns="http://schemas/OpenTextEntityIdentityComponents/Identity">F8B156E1037111E6E9CB0FBF3334FBBF.1</ItemId>
+								</wstxns34:Identity-id>
+								<wstxns35:Title xmlns="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0" xmlns:wstxns35="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">
+									<Value xmlns="http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0">sysadmin</Value>
+								</wstxns35:Title>
+							</wstxns30:User>
+						</GetAllUsersResponse>
+					</GetAllUsersOutput>
+				</messagemap>
+			</source>
+			<xpath>substring-after(substring-before(instance:instanceProperties/instance:currentOwner/text(), ',cn='), 'cn=')</xpath>
+			<namespaces>
+				<namespace>
+					<prefix>instance</prefix>
+					<value>http://schemas.cordys.com/bpm/instance/1.0</value>
+				</namespace>
+				<namespace>
+					<prefix>xpe1</prefix>
+					<value>http://schemas.cordys.com/General/1.0/</value>
+				</namespace>
+				<namespace>
+					<prefix>ns2</prefix>
+					<value>http://schemas/OpenTextEntityIdentityComponents/User/operations</value>
+				</namespace>
+				<namespace>
+					<prefix>ns4</prefix>
+					<value>http://schemas/OpenTextEntityIdentityComponents/User</value>
+				</namespace>
+				<namespace>
+					<prefix>ns5</prefix>
+					<value>http://schemas/OpenTextEntityIdentityComponents/Identity</value>
+				</namespace>
+				<namespace>
+					<prefix>xsi</prefix>
+					<value>http://www.w3.org/2001/XMLSchema-instance</value>
+				</namespace>
+				<namespace>
+					<prefix>ns6</prefix>
+					<value>http://schemas/OpenTextEntityIdentityComponents/Person</value>
+				</namespace>
+				<namespace>
+					<prefix>ns8</prefix>
+					<value>http://schemas.opentext.com/entitymodeling/buildingblocks/title/1.0</value>
+				</namespace>
+			</namespaces>
+		</EvaluateXPath>
+	</SOAP:Body>
+</SOAP:Envelope>
