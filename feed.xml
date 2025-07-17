@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2025-07-03T08:18:56.932Z</updated>
+  <updated>2025-07-03T07:08:13.298Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unlock hidden insights; Build a stunning Grafana dashboard to monitor OPA like a bro (part 2)</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2025/07/18/276_grafana_hearthcheck_dashboard_2/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/276_grafana_hearthcheck_dashboard_2/feature_tag.webp" />
+    <id>https://appworks-tips.com/2025/07/18/276_grafana_hearthcheck_dashboard_2/</id>
+    <published>2025-07-18T12:00:00.000Z</published>
+    <updated>2025-07-03T07:08:13.298Z</updated>
+    
+    <summary type="html">
+    
+      Continue the grind on making a shiny Grafana OPA dashboard...
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2025/276_grafana_hearthcheck_dashboard_2/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Grafana" scheme="https://appworks-tips.com/tags/Grafana/"/>
+    
+      <category term="Reporting" scheme="https://appworks-tips.com/tags/Reporting/"/>
+    
+      <category term="HealthCheck" scheme="https://appworks-tips.com/tags/HealthCheck/"/>
+    
+  </entry>
   
   <entry>
     <title>Unlock hidden insights; Build a stunning Grafana dashboard to monitor OPA like a bro (part 1)</title>
@@ -1376,34 +1406,6 @@
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Disastrous attempt; The pitfalls of syncing solutions between organizations</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/08/02/234_sync_a_solution_between_organizations/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/234_sync_a_solution_between_organizations/feature_tag.webp" />
-    <id>https://appworks-tips.com/2024/08/02/234_sync_a_solution_between_organizations/</id>
-    <published>2024-08-02T12:00:00.000Z</published>
-    <updated>2025-07-03T08:43:26.649Z</updated>
-    
-    <summary type="html">
-    
-      How hard can a simple sync be?
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/234_sync_a_solution_between_organizations/feature_tag.webp" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Sync" scheme="https://appworks-tips.com/tags/Sync/"/>
-    
-      <category term="CWS" scheme="https://appworks-tips.com/tags/CWS/"/>
     
   </entry>
   
