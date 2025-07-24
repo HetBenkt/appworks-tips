@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2025-07-03T07:08:13.298Z</updated>
+  <updated>2025-07-03T08:34:59.044Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unlock hidden insights; Build a stunning Grafana dashboard to monitor OPA like a bro (part 3)</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2025/07/25/277_grafana_hearthcheck_dashboard_3/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/277_grafana_hearthcheck_dashboard_3/feature_tag.webp" />
+    <id>https://appworks-tips.com/2025/07/25/277_grafana_hearthcheck_dashboard_3/</id>
+    <published>2025-07-25T12:00:00.000Z</published>
+    <updated>2025-07-03T08:34:59.044Z</updated>
+    
+    <summary type="html">
+    
+      Avoiding the traps with the help of AI (ChatGPT)
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2025/277_grafana_hearthcheck_dashboard_3/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Grafana" scheme="https://appworks-tips.com/tags/Grafana/"/>
+    
+      <category term="Reporting" scheme="https://appworks-tips.com/tags/Reporting/"/>
+    
+      <category term="HealthCheck" scheme="https://appworks-tips.com/tags/HealthCheck/"/>
+    
+  </entry>
   
   <entry>
     <title>Unlock hidden insights; Build a stunning Grafana dashboard to monitor OPA like a bro (part 2)</title>
@@ -1376,36 +1406,6 @@
       <category term="BuildingBlock" scheme="https://appworks-tips.com/tags/BuildingBlock/"/>
     
       <category term="Tracking" scheme="https://appworks-tips.com/tags/Tracking/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>A new release, in this new third quarter of 2024; GA AppWorks 24.3 is here</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/08/09/234a_update_on_24_3/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/234a_update_on_24_3/feature_tag.webp" />
-    <id>https://appworks-tips.com/2024/08/09/234a_update_on_24_3/</id>
-    <published>2024-08-09T12:00:00.000Z</published>
-    <updated>2025-07-03T08:43:26.649Z</updated>
-    
-    <summary type="html">
-    
-      It&#39;s review time on a new pack of candies...
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/234a_update_on_24_3/feature_tag.webp" />
-    
-      <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
-    
-    
-      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
-      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    
-      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
   </entry>
   
