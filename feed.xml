@@ -725,9 +725,9 @@
     
       <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
     
-      <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
-    
       <category term="PIM" scheme="https://appworks-tips.com/tags/PIM/"/>
+    
+      <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
     
   </entry>
   
@@ -1325,9 +1325,9 @@
     
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
-      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
-    
       <category term="Debug" scheme="https://appworks-tips.com/tags/Debug/"/>
+    
+      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
     
   </entry>
   
