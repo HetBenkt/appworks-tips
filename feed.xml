@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2025-09-03T15:54:52.126Z</updated>
+  <updated>2025-09-11T11:32:44.684Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unlock the secret to splitting administration roles like a bro</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2025/09/12/283_split_admin_roles/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/283_split_admin_roles/feature_tag.webp" />
+    <id>https://appworks-tips.com/2025/09/12/283_split_admin_roles/</id>
+    <published>2025-09-12T12:00:00.000Z</published>
+    <updated>2025-09-11T11:32:44.684Z</updated>
+    
+    <summary type="html">
+    
+      Just an admin strategy with this one simple shift.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2025/283_split_admin_roles/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Administration" scheme="https://appworks-tips.com/tags/Administration/"/>
+    
+      <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
+    
+  </entry>
   
   <entry>
     <title>Access granted...or denied? Dynamic security like you’ve never seen</title>
@@ -457,11 +485,11 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
-    
       <category term="xECM" scheme="https://appworks-tips.com/tags/xECM/"/>
     
       <category term="SAML" scheme="https://appworks-tips.com/tags/SAML/"/>
+    
+      <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     
   </entry>
   
@@ -545,9 +573,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
-    
       <category term="SAML" scheme="https://appworks-tips.com/tags/SAML/"/>
+    
+      <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     
   </entry>
   
@@ -863,11 +891,11 @@
     
       <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
     
-      <category term="PIM" scheme="https://appworks-tips.com/tags/PIM/"/>
+      <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
     
       <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
     
-      <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
+      <category term="PIM" scheme="https://appworks-tips.com/tags/PIM/"/>
     
   </entry>
   
@@ -919,9 +947,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
-    
       <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
+    
+      <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
     
   </entry>
   
@@ -1043,7 +1071,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/251_make_default_ui_less_busy_with_css/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/27/251_make_default_ui_less_busy_with_css/</id>
     <published>2024-12-27T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.599Z</updated>
+    <updated>2025-09-11T11:40:31.614Z</updated>
     
     <summary type="html">
     
@@ -1069,7 +1097,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/250_lifecycle_output_flow_to_the_test/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/20/250_lifecycle_output_flow_to_the_test/</id>
     <published>2024-12-20T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.599Z</updated>
+    <updated>2025-09-11T11:40:31.614Z</updated>
     
     <summary type="html">
     
@@ -1095,7 +1123,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/249_filter_task_assigned_cases/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/13/249_filter_task_assigned_cases/</id>
     <published>2024-12-13T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.598Z</updated>
+    <updated>2025-09-11T11:40:31.614Z</updated>
     
     <summary type="html">
     
@@ -1123,7 +1151,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/248a_update_enterprise_world_v_pass/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/06/248a_update_enterprise_world_v_pass/</id>
     <published>2024-12-06T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.597Z</updated>
+    <updated>2025-09-11T11:40:31.614Z</updated>
     
     <summary type="html">
     
@@ -1153,7 +1181,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/248_implement_worst_case_scenario/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/11/29/248_implement_worst_case_scenario/</id>
     <published>2024-11-29T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.597Z</updated>
+    <updated>2025-09-11T11:40:31.614Z</updated>
     
     <summary type="html">
     
@@ -1179,7 +1207,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/247_a_secret_custom_call_in_the_xpath_editor_exposed_2/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/11/22/247_a_secret_custom_call_in_the_xpath_editor_exposed_2/</id>
     <published>2024-11-22T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.596Z</updated>
+    <updated>2025-09-11T11:40:31.610Z</updated>
     
     <summary type="html">
     
@@ -1209,7 +1237,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/246_debug_trick_on_rootentityinstanceid/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/11/15/246_debug_trick_on_rootentityinstanceid/</id>
     <published>2024-11-15T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.595Z</updated>
+    <updated>2025-09-11T11:40:31.610Z</updated>
     
     <summary type="html">
     
@@ -1237,7 +1265,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/245a_update_on_24_4/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/11/08/245a_update_on_24_4/</id>
     <published>2024-11-08T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.595Z</updated>
+    <updated>2025-09-11T11:40:31.610Z</updated>
     
     <summary type="html">
     
@@ -1269,7 +1297,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/245_apply_css_to_custom_tag/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/11/01/245_apply_css_to_custom_tag/</id>
     <published>2024-11-01T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.594Z</updated>
+    <updated>2025-09-11T11:40:31.610Z</updated>
     
     <summary type="html">
     
@@ -1295,7 +1323,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/244_explaining_rurl_parameter/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/10/25/244_explaining_rurl_parameter/</id>
     <published>2024-10-25T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.594Z</updated>
+    <updated>2025-09-11T11:40:31.610Z</updated>
     
     <summary type="html">
     
@@ -1321,7 +1349,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/243_favorite_cases_implementation/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/10/18/243_favorite_cases_implementation/</id>
     <published>2024-10-18T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.593Z</updated>
+    <updated>2025-09-11T11:40:31.610Z</updated>
     
     <summary type="html">
     
@@ -1347,7 +1375,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/242a_just_a_tostring_function_exposed/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/10/11/242a_just_a_tostring_function_exposed/</id>
     <published>2024-10-11T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.593Z</updated>
+    <updated>2025-09-11T11:40:31.609Z</updated>
     
     <summary type="html">
     
@@ -1373,7 +1401,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/242_stay_in_case_with_task_hack/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/10/04/242_stay_in_case_with_task_hack/</id>
     <published>2024-10-04T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.592Z</updated>
+    <updated>2025-09-11T11:40:31.597Z</updated>
     
     <summary type="html">
     
@@ -1390,32 +1418,6 @@
       <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
       <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unlock hidden &quot;admin&quot; power; Instantly add a homepage featuring PIM, CIM, and config layout</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/09/27/241_add_admin_homepage_in_runtime/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/241_add_admin_homepage_in_runtime/feature_tag.webp" />
-    <id>https://appworks-tips.com/2024/09/27/241_add_admin_homepage_in_runtime/</id>
-    <published>2024-09-27T12:00:00.000Z</published>
-    <updated>2025-09-03T16:09:09.591Z</updated>
-    
-    <summary type="html">
-    
-      All from within runtime.
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/241_add_admin_homepage_in_runtime/feature_tag.webp" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    
-      <category term="Administration" scheme="https://appworks-tips.com/tags/Administration/"/>
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
   </entry>
   
