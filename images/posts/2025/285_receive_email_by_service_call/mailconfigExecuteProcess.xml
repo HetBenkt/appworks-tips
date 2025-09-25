@@ -1,0 +1,127 @@
+<emailboxes xmlns="http://schemas.cordys.com/1.0/email/configuration">
+  <emailbox>
+    <name>Gmail</name>
+    <!--Use this as "username" to authenticate against Google itself!-->
+    <username>OPA@gmail.com</username>
+    <!--Dont't use the real password, but use an 
+    "apppassword" https://myaccount.google.com/apppasswords-->
+    <password>xxxx xxxx xxxx xxxx</password>
+    <folders>
+      <!--Make sure you have this as new label available within 
+      your Gmail mailbox and create a rule when when `@opentext.com` 
+      is in the header references it applies this label-->
+      <folder>OPA_REPLY</folder>
+    </folders>
+    <triggers>
+      <trigger appliesTo="OPA_REPLY">
+        <name>OPA_REPLY</name>
+        <priority>1001</priority>
+        <rules>
+          <rule section="SUBJECT">
+            <pattern type="REGEX">
+              <value>.+</value>
+              <store>
+                <token>
+                  <name>Subject</name>
+                  <value>0</value>
+                </token>
+              </store>
+            </pattern>
+          </rule>
+          <rule section="TO">
+            <pattern type="REGEX">
+              <value>.+</value>
+              <store>
+                <token>
+                  <name>To</name>
+                  <value>0</value>
+                </token>
+              </store>
+            </pattern>
+          </rule>
+          <rule section="FROM">
+            <pattern type="REGEX">
+              <value>.+</value>
+              <store>
+                <token>
+                  <name>From</name>
+                  <value>0</value>
+                </token>
+              </store>
+            </pattern>
+          </rule>
+          <rule section="MULTIPART">
+            <pattern type="CUSTOM">
+              <value>com.eibus.applicationconnector.email.sample.Base64Plugin</value>
+              <store>
+                <token>
+                  <name>Base64Attachment</name>
+                  <value>string</value>
+                </token>
+              </store>
+            </pattern>
+          </rule>
+        </rules>
+        <message>
+          <method>ExecuteProcess</method>
+          <timeout>60000</timeout>
+          <namespace>http://schemas.cordys.com/bpm/execution/1.0</namespace>
+          <!--Use a correct DN from the 'User Manager' artifact executing this method!-->
+          <user>cn=sysadmin,cn=organizational users,o=opa_tips,cn=cordys,cn=defaultInst,o=25.1.com</user>
+          <!--Always use TRUE...don't shoot the messenger-->
+          <sync>true</sync>
+          <input>
+            <type>definition</type>
+            <receiver>nl-bos-generic/bpms/bpm_manage_mail</receiver>
+            <source>Run from Mail trigger</source>
+            <message>
+              <!--Use a matching namespace here equal the one in the BPM properties for this message!-->
+              <bpm:mail_input xmlns:bpm="http://schemas.cordys.com/default">
+                <bpm:subject/>
+                <bpm:to/>
+                <bpm:from/>
+                <bpm:attachment/>
+              </bpm:mail_input>
+            </message>
+          </input>
+          <mappings>
+            <mapping>
+              <source>.//subject</source>
+              <value src="Subject" />
+            </mapping>
+            <mapping>
+              <source>.//to</source>
+              <value src="To" />
+            </mapping>
+            <mapping>
+              <source>.//from</source>
+              <value src="From" />
+            </mapping>
+            <!--This is the full mail itself-->
+            <mapping>
+              <source>.//attachment</source>
+              <value src="Base64Attachment" />
+            </mapping>
+            <!--Possible mappings we saw passing by in the logging of our failures (not for this post)!
+            <mapping>
+              <source>.//sysStorageID</source>
+              <value src="sysStorageID" />
+            </mapping>
+            <mapping>
+              <source>.//sysLogicalID</source>
+              <value src="sysLogicalID" />
+            </mapping>
+            <mapping>
+              <source>.//sysRawEmail</source>
+              <value src="sysRawEmail" />
+            </mapping>
+            -->
+          </mappings>
+        </message>
+      </trigger>
+    </triggers>
+    <!--These two settings are also for me an open question to investigate-->
+    <automaticrestart xmlns:tns="http://schemas.cordys.com/1.0/email">true</automaticrestart>
+    <restartinprogress xmlns:tns="http://schemas.cordys.com/1.0/email/configuration">false</restartinprogress>
+  </emailbox>
+</emailboxes>
