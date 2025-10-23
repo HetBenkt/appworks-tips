@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2025-10-15T10:32:02.489Z</updated>
+  <updated>2025-10-23T06:43:46.332Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OPA 25.4 is GA; Right on time in the first weekend of Q4...Excellent job</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2025/10/24/288a_update_on_25_4/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/288a_update_on_25_4/feature_tag.webp" />
+    <id>https://appworks-tips.com/2025/10/24/288a_update_on_25_4/</id>
+    <published>2025-10-24T12:00:00.000Z</published>
+    <updated>2025-10-23T06:43:46.332Z</updated>
+    
+    <summary type="html">
+    
+      Let&#39;s review the new features with this new GA release!
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2025/288a_update_on_25_4/feature_tag.webp" />
+    
+      <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
+    
+    
+      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
+    
+  </entry>
   
   <entry>
     <title>Your final destiny on the never-ending struggle to get a &#39;UserDN&#39; value</title>
@@ -311,9 +341,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
       <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -681,9 +711,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
       <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -881,9 +911,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
-    
       <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
+    
+      <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
     
       <category term="LDAPAdmin" scheme="https://appworks-tips.com/tags/LDAPAdmin/"/>
     
@@ -999,9 +1029,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
       <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -1031,9 +1061,9 @@
     
       <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
     
-      <category term="PIM" scheme="https://appworks-tips.com/tags/PIM/"/>
-    
       <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
+    
+      <category term="PIM" scheme="https://appworks-tips.com/tags/PIM/"/>
     
       <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
     
@@ -1211,7 +1241,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/251_make_default_ui_less_busy_with_css/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/27/251_make_default_ui_less_busy_with_css/</id>
     <published>2024-12-27T12:00:00.000Z</published>
-    <updated>2025-10-15T10:34:11.571Z</updated>
+    <updated>2025-10-23T06:45:26.428Z</updated>
     
     <summary type="html">
     
@@ -1237,7 +1267,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/250_lifecycle_output_flow_to_the_test/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/20/250_lifecycle_output_flow_to_the_test/</id>
     <published>2024-12-20T12:00:00.000Z</published>
-    <updated>2025-10-15T10:34:11.571Z</updated>
+    <updated>2025-10-23T06:45:26.428Z</updated>
     
     <summary type="html">
     
@@ -1263,7 +1293,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/249_filter_task_assigned_cases/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/13/249_filter_task_assigned_cases/</id>
     <published>2024-12-13T12:00:00.000Z</published>
-    <updated>2025-10-15T10:34:11.571Z</updated>
+    <updated>2025-10-23T06:45:26.428Z</updated>
     
     <summary type="html">
     
@@ -1291,7 +1321,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/248a_update_enterprise_world_v_pass/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/06/248a_update_enterprise_world_v_pass/</id>
     <published>2024-12-06T12:00:00.000Z</published>
-    <updated>2025-10-15T10:34:11.571Z</updated>
+    <updated>2025-10-23T06:45:26.428Z</updated>
     
     <summary type="html">
     
@@ -1321,7 +1351,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/248_implement_worst_case_scenario/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/11/29/248_implement_worst_case_scenario/</id>
     <published>2024-11-29T12:00:00.000Z</published>
-    <updated>2025-10-15T10:34:11.571Z</updated>
+    <updated>2025-10-23T06:45:26.428Z</updated>
     
     <summary type="html">
     
@@ -1347,7 +1377,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/247_a_secret_custom_call_in_the_xpath_editor_exposed_2/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/11/22/247_a_secret_custom_call_in_the_xpath_editor_exposed_2/</id>
     <published>2024-11-22T12:00:00.000Z</published>
-    <updated>2025-10-15T10:34:11.571Z</updated>
+    <updated>2025-10-23T06:45:26.428Z</updated>
     
     <summary type="html">
     
@@ -1377,7 +1407,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/246_debug_trick_on_rootentityinstanceid/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/11/15/246_debug_trick_on_rootentityinstanceid/</id>
     <published>2024-11-15T12:00:00.000Z</published>
-    <updated>2025-10-15T10:34:11.571Z</updated>
+    <updated>2025-10-23T06:45:26.428Z</updated>
     
     <summary type="html">
     
@@ -1396,38 +1426,6 @@
       <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
     
       <category term="Debug" scheme="https://appworks-tips.com/tags/Debug/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>General Available; A new release for this last quarter of 2024; It&#39;s OPA (aka &quot;AppWorks&quot;) 24.4 time...WHAT!?</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/11/08/245a_update_on_24_4/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/245a_update_on_24_4/feature_tag.webp" />
-    <id>https://appworks-tips.com/2024/11/08/245a_update_on_24_4/</id>
-    <published>2024-11-08T12:00:00.000Z</published>
-    <updated>2025-10-15T10:34:11.571Z</updated>
-    
-    <summary type="html">
-    
-      Time to figure out what is going on this time on the GA feature release...
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/245a_update_on_24_4/feature_tag.webp" />
-    
-      <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
-    
-    
-      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
-      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    
-      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
     
   </entry>
   
