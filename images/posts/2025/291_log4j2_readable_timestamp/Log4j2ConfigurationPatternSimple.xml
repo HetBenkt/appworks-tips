@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" packages="com.eibus.util.logger.appender,com.cordys.logger.internal,com.cordys.cap.logger.appender">
+    <Properties>
+        <Property name="logsFolderLocation"><!--Provide custom logs folder location--></Property>
+    </Properties>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT" immediateFlush="true">
+            <PatternLayout pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <ProcessNamedDailyRollingFileAppender name="file" fileName="${logsFolderLocation}%N.xml" filePattern="${logsFolderLocation}%N.xml.%d{yyyy-MM-dd}">
+            <PatternLayout pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </ProcessNamedDailyRollingFileAppender>
+        <ApplicationNameBasedAppender name="ApplicationNameBasedAppender">
+            <PatternLayout pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </ApplicationNameBasedAppender>        
+        <!--
+        <OSBasedEventAppender name="OSBasedEventAppender">
+            <PatternLayout pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </OSBasedEventAppender>
+        -->
+        <CordysZeroConfJDBCAppender name="CordysZeroConfJDBCAppender"/>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.cordys.cap.applicationconnector.CAPMethod$CapLogger" level="info" additivity="false">
+            <AppenderRef ref="ApplicationNameBasedAppender"/>
+        </Logger>
+        <Logger name="com.eibus.management.AlertSystem" level="info">
+            <!--
+            <AppenderRef ref="OSBasedEventAppender"/>
+            -->
+        </Logger>
+        <Logger name="com.eibus.management.ManagedComponent" level="info"/>
+        <Root level="error">
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="CordysZeroConfJDBCAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

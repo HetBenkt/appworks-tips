@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" packages="com.eibus.util.logger.appender,com.cordys.logger.internal,com.cordys.cap.logger.appender">
+    <Properties>
+        <Property name="logsFolderLocation"><!--Provide custom logs folder location--></Property>
+    </Properties>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT" immediateFlush="true">
+            <XMLLayout locationInfo="true"/>
+        </Console>
+        <ProcessNamedDailyRollingFileAppender name="file" fileName="${logsFolderLocation}%N.xml" filePattern="${logsFolderLocation}%N.xml.%d{yyyy-MM-dd}">
+            <XMLLayout locationInfo="true"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </ProcessNamedDailyRollingFileAppender>
+        <ApplicationNameBasedAppender name="ApplicationNameBasedAppender">
+            <XMLLayout locationInfo="true"/>
+        </ApplicationNameBasedAppender>        
+        <!--
+        <OSBasedEventAppender name="OSBasedEventAppender">
+            <XMLLayout locationInfo="true"/>
+        </OSBasedEventAppender>
+        -->
+        <CordysZeroConfJDBCAppender name="CordysZeroConfJDBCAppender"/>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.cordys.cap.applicationconnector.CAPMethod$CapLogger" level="info" additivity="false">
+            <AppenderRef ref="ApplicationNameBasedAppender"/>
+        </Logger>
+        <Logger name="com.eibus.management.AlertSystem" level="info">
+            <!--
+            <AppenderRef ref="OSBasedEventAppender"/>
+            -->
+        </Logger>
+        <Logger name="com.eibus.management.ManagedComponent" level="info"/>
+        <Root level="error">
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="CordysZeroConfJDBCAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2025-11-06T09:28:34.685Z</updated>
+  <updated>2025-11-12T16:59:58.813Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>This is how you fix the Log4J2’s Application_Server.xml timestamps that drive you crazy</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2025/11/14/291_log4j2_readable_timestamp/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/291_log4j2_readable_timestamp/feature_tag.webp" />
+    <id>https://appworks-tips.com/2025/11/14/291_log4j2_readable_timestamp/</id>
+    <published>2025-11-14T12:00:00.000Z</published>
+    <updated>2025-11-12T16:59:58.813Z</updated>
+    
+    <summary type="html">
+    
+      Tired of unreadable timestamps? Here&#39;s the tweak that makes them readable.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2025/291_log4j2_readable_timestamp/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Log4J2" scheme="https://appworks-tips.com/tags/Log4J2/"/>
+    
+  </entry>
   
   <entry>
     <title>Automate your life; Restart service containers instantly with automation</title>
@@ -65,9 +91,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="ServiceContainer" scheme="https://appworks-tips.com/tags/ServiceContainer/"/>
-    
       <category term="Organization" scheme="https://appworks-tips.com/tags/Organization/"/>
+    
+      <category term="ServiceContainer" scheme="https://appworks-tips.com/tags/ServiceContainer/"/>
     
       <category term="Automation" scheme="https://appworks-tips.com/tags/Automation/"/>
     
@@ -95,9 +121,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
       <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -397,15 +423,15 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
       <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
-      <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
-    
       <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
+    
+      <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
     
   </entry>
   
@@ -605,9 +631,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
-    
       <category term="Entity" scheme="https://appworks-tips.com/tags/Entity/"/>
+    
+      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
     
   </entry>
   
@@ -633,9 +659,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
-    
       <category term="Entity" scheme="https://appworks-tips.com/tags/Entity/"/>
+    
+      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
     
   </entry>
   
@@ -769,15 +795,15 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
       <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
-      <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
-    
       <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
+    
+      <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
     
   </entry>
   
@@ -1061,9 +1087,9 @@
     
       <category term="Update" scheme="https://appworks-tips.com/tags/Update/"/>
     
-      <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
-    
       <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
+    
+      <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
     
       <category term="Event" scheme="https://appworks-tips.com/tags/Event/"/>
     
@@ -1091,9 +1117,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
       <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -1121,11 +1147,11 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="PIM" scheme="https://appworks-tips.com/tags/PIM/"/>
+      <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
     
       <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
     
-      <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
+      <category term="PIM" scheme="https://appworks-tips.com/tags/PIM/"/>
     
       <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
     
@@ -1179,9 +1205,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
-    
       <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
+    
+      <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
     
   </entry>
   
@@ -1303,7 +1329,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/251_make_default_ui_less_busy_with_css/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/27/251_make_default_ui_less_busy_with_css/</id>
     <published>2024-12-27T12:00:00.000Z</published>
-    <updated>2025-11-06T09:32:49.003Z</updated>
+    <updated>2025-11-12T17:00:10.548Z</updated>
     
     <summary type="html">
     
@@ -1329,7 +1355,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/250_lifecycle_output_flow_to_the_test/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/20/250_lifecycle_output_flow_to_the_test/</id>
     <published>2024-12-20T12:00:00.000Z</published>
-    <updated>2025-11-06T09:32:49.002Z</updated>
+    <updated>2025-11-12T17:00:10.548Z</updated>
     
     <summary type="html">
     
@@ -1355,7 +1381,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/249_filter_task_assigned_cases/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/13/249_filter_task_assigned_cases/</id>
     <published>2024-12-13T12:00:00.000Z</published>
-    <updated>2025-11-06T09:32:49.000Z</updated>
+    <updated>2025-11-12T17:00:10.547Z</updated>
     
     <summary type="html">
     
@@ -1383,7 +1409,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/248a_update_enterprise_world_v_pass/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/06/248a_update_enterprise_world_v_pass/</id>
     <published>2024-12-06T12:00:00.000Z</published>
-    <updated>2025-11-06T09:32:48.999Z</updated>
+    <updated>2025-11-12T17:00:10.547Z</updated>
     
     <summary type="html">
     
@@ -1403,35 +1429,9 @@
     
       <category term="Update" scheme="https://appworks-tips.com/tags/Update/"/>
     
-      <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
-    
       <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Foolproof the success; Implement worst-case scenarios in your BPM template</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/11/29/248_implement_worst_case_scenario/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/248_implement_worst_case_scenario/feature_tag.webp" />
-    <id>https://appworks-tips.com/2024/11/29/248_implement_worst_case_scenario/</id>
-    <published>2024-11-29T12:00:00.000Z</published>
-    <updated>2025-11-06T09:32:48.998Z</updated>
-    
-    <summary type="html">
-    
-      In case %$&amp;^#%%@! hits the fan...
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/248_implement_worst_case_scenario/feature_tag.webp" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
-    
-      <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
+      <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
     
   </entry>
   
