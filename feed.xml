@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2025-11-12T16:59:58.813Z</updated>
+  <updated>2025-11-20T08:35:26.026Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unleashing the power of RabbitMQ on RHEL; Prepare JMS like a pro</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2025/11/21/292_install_rabbitmq/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/292_install_rabbitmq/feature_tag.webp" />
+    <id>https://appworks-tips.com/2025/11/21/292_install_rabbitmq/</id>
+    <published>2025-11-21T12:00:00.000Z</published>
+    <updated>2025-11-20T08:35:26.026Z</updated>
+    
+    <summary type="html">
+    
+      The JMS connector (again) on the top of my backlog; This is the preparation phase.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2025/292_install_rabbitmq/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="RabbitMQ" scheme="https://appworks-tips.com/tags/RabbitMQ/"/>
+    
+      <category term="JMS" scheme="https://appworks-tips.com/tags/JMS/"/>
+    
+  </entry>
   
   <entry>
     <title>This is how you fix the Log4J2’s Application_Server.xml timestamps that drive you crazy</title>
@@ -121,9 +149,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    
       <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -423,15 +451,15 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
-      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
-    
       <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
     
       <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
   </entry>
   
@@ -795,15 +823,15 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    
-      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    
-      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
-    
       <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
     
       <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
+    
+      <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    
+      <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
   </entry>
   
@@ -997,9 +1025,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
-    
       <category term="LDAP" scheme="https://appworks-tips.com/tags/LDAP/"/>
+    
+      <category term="Tools" scheme="https://appworks-tips.com/tags/Tools/"/>
     
       <category term="LDAPAdmin" scheme="https://appworks-tips.com/tags/LDAPAdmin/"/>
     
@@ -1117,9 +1145,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    
       <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -1147,9 +1175,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
-    
       <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
+    
+      <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
     
       <category term="PIM" scheme="https://appworks-tips.com/tags/PIM/"/>
     
@@ -1205,9 +1233,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
-    
       <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
+    
+      <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
     
   </entry>
   
@@ -1329,7 +1357,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/251_make_default_ui_less_busy_with_css/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/27/251_make_default_ui_less_busy_with_css/</id>
     <published>2024-12-27T12:00:00.000Z</published>
-    <updated>2025-11-12T17:00:10.548Z</updated>
+    <updated>2025-11-20T08:36:03.233Z</updated>
     
     <summary type="html">
     
@@ -1355,7 +1383,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/250_lifecycle_output_flow_to_the_test/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/20/250_lifecycle_output_flow_to_the_test/</id>
     <published>2024-12-20T12:00:00.000Z</published>
-    <updated>2025-11-12T17:00:10.548Z</updated>
+    <updated>2025-11-20T08:36:03.233Z</updated>
     
     <summary type="html">
     
@@ -1381,7 +1409,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/249_filter_task_assigned_cases/feature_tag.webp" />
     <id>https://appworks-tips.com/2024/12/13/249_filter_task_assigned_cases/</id>
     <published>2024-12-13T12:00:00.000Z</published>
-    <updated>2025-11-12T17:00:10.547Z</updated>
+    <updated>2025-11-20T08:36:03.227Z</updated>
     
     <summary type="html">
     
@@ -1400,38 +1428,6 @@
       <category term="Task" scheme="https://appworks-tips.com/tags/Task/"/>
     
       <category term="Cases" scheme="https://appworks-tips.com/tags/Cases/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Update on OpenText World (Limited V-Pass edition 2024 Q4)</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/12/06/248a_update_enterprise_world_v_pass/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/248a_update_enterprise_world_v_pass/feature_tag.webp" />
-    <id>https://appworks-tips.com/2024/12/06/248a_update_enterprise_world_v_pass/</id>
-    <published>2024-12-06T12:00:00.000Z</published>
-    <updated>2025-11-12T17:00:10.547Z</updated>
-    
-    <summary type="html">
-    
-      Q4 is here again; We dive into a limited digital world (Las Vegas) event 2024!
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/248a_update_enterprise_world_v_pass/feature_tag.webp" />
-    
-      <category term="Enterprise world" scheme="https://appworks-tips.com/categories/Enterprise-world/"/>
-    
-    
-      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    
-      <category term="EnterpriseWorld" scheme="https://appworks-tips.com/tags/EnterpriseWorld/"/>
-    
-      <category term="Digital" scheme="https://appworks-tips.com/tags/Digital/"/>
-    
-      <category term="Update" scheme="https://appworks-tips.com/tags/Update/"/>
-    
-      <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
-    
-      <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
     
   </entry>
   
