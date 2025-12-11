@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2025-12-05T11:04:45.258Z</updated>
+  <updated>2025-12-11T07:48:09.012Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>True maintenance happens over true logging; Prepare yourself for a tracing impact</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2025/12/12/294_trace_messages_to_entityruntime/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/294_trace_messages_to_entityruntime/feature_tag.webp" />
+    <id>https://appworks-tips.com/2025/12/12/294_trace_messages_to_entityruntime/</id>
+    <published>2025-12-12T12:00:00.000Z</published>
+    <updated>2025-12-11T07:48:09.012Z</updated>
+    
+    <summary type="html">
+    
+      Repack your knowledge with this secret feature flag.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2025/294_trace_messages_to_entityruntime/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Logging" scheme="https://appworks-tips.com/tags/Logging/"/>
+    
+      <category term="Trace" scheme="https://appworks-tips.com/tags/Trace/"/>
+    
+  </entry>
   
   <entry>
     <title>Update on OpenText World (LinkedIn edition 2025 Q4)</title>
@@ -325,9 +353,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
-    
       <category term="Mail" scheme="https://appworks-tips.com/tags/Mail/"/>
+    
+      <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
     
   </entry>
   
@@ -353,9 +381,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
-    
       <category term="Mail" scheme="https://appworks-tips.com/tags/Mail/"/>
+    
+      <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
     
   </entry>
   
@@ -1410,32 +1438,6 @@
       <category term="Form" scheme="https://appworks-tips.com/tags/Form/"/>
     
       <category term="Layout" scheme="https://appworks-tips.com/tags/Layout/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Transform your cluttered UI instantly with these simple CSS hacks</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2024/12/27/251_make_default_ui_less_busy_with_css/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2024/251_make_default_ui_less_busy_with_css/feature_tag.webp" />
-    <id>https://appworks-tips.com/2024/12/27/251_make_default_ui_less_busy_with_css/</id>
-    <published>2024-12-27T12:00:00.000Z</published>
-    <updated>2025-12-05T11:06:02.986Z</updated>
-    
-    <summary type="html">
-    
-      Let&#39;s say that less is more!
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2024/251_make_default_ui_less_busy_with_css/feature_tag.webp" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    
-      <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
-    
-      <category term="AppWorks" scheme="https://appworks-tips.com/tags/AppWorks/"/>
     
   </entry>
   
