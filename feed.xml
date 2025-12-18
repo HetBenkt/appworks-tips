@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2025-12-11T07:48:09.012Z</updated>
+  <updated>2025-12-18T07:26:33.691Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Enrich your development eXperience with this development console update</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2025/12/19/295_crud_itemid_in_dev_console_with_js_api/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/295_crud_itemid_in_dev_console_with_js_api/feature_tag.webp" />
+    <id>https://appworks-tips.com/2025/12/19/295_crud_itemid_in_dev_console_with_js_api/</id>
+    <published>2025-12-19T12:00:00.000Z</published>
+    <updated>2025-12-18T07:26:33.691Z</updated>
+    
+    <summary type="html">
+    
+      Some things are just right under your nose, but unnoticeable until someone tells you about it.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2025/295_crud_itemid_in_dev_console_with_js_api/feature_tag.webp" />
+    
+      <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    
+    
+      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="API" scheme="https://appworks-tips.com/tags/API/"/>
+    
+  </entry>
   
   <entry>
     <title>True maintenance happens over true logging; Prepare yourself for a tracing impact</title>
@@ -1410,34 +1436,6 @@
       <category term="UDDI" scheme="https://appworks-tips.com/tags/UDDI/"/>
     
       <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>The game-changing power of layout-driven creation</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2025/01/03/252_creation_via_layout_not_form/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/252_creation_via_layout_not_form/feature_tag.webp" />
-    <id>https://appworks-tips.com/2025/01/03/252_creation_via_layout_not_form/</id>
-    <published>2025-01-03T12:00:00.000Z</published>
-    <updated>2025-10-06T20:14:19.431Z</updated>
-    
-    <summary type="html">
-    
-      A new entry for entity instantiation.
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2025/252_creation_via_layout_not_form/feature_tag.webp" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    
-      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    
-      <category term="Form" scheme="https://appworks-tips.com/tags/Form/"/>
-    
-      <category term="Layout" scheme="https://appworks-tips.com/tags/Layout/"/>
     
   </entry>
   
