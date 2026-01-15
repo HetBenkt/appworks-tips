@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2026-01-08T08:47:57.836Z</updated>
+  <updated>2026-01-14T19:47:49.783Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -16,6 +16,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Searching; A common feature with every project with also mixed feelings</title>
+    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2026/01/16/299_simple_search_with_third_party_lib/"/>
+    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2026/299_simple_search_with_third_party_lib/feature_tag.webp" />
+    <id>https://appworks-tips.com/2026/01/16/299_simple_search_with_third_party_lib/</id>
+    <published>2026-01-16T12:00:00.000Z</published>
+    <updated>2026-01-14T19:47:49.783Z</updated>
+    
+    <summary type="html">
+    
+      Let just build something simple our own.
+    
+    </summary>
+    <media:thumbnail url="https://appworks-tips.com/images/posts/2026/299_simple_search_with_third_party_lib/feature_tag.webp" />
+    
+      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    
+    
+      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    
+      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    
+      <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
+    
+      <category term="Search" scheme="https://appworks-tips.com/tags/Search/"/>
+    
+  </entry>
   
   <entry>
     <title>Update CAP package details after deployment is done</title>
@@ -79,7 +107,7 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/297_christmas_treatment/feature_tag.webp" />
     <id>https://appworks-tips.com/2025/12/26/297_christmas_treatment/</id>
     <published>2025-12-26T12:00:00.000Z</published>
-    <updated>2025-12-31T10:36:06.945Z</updated>
+    <updated>2026-01-09T10:41:44.929Z</updated>
     
     <summary type="html">
     
@@ -96,6 +124,8 @@
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
       <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
+    
+      <category term="Random" scheme="https://appworks-tips.com/tags/Random/"/>
     
   </entry>
   
@@ -347,9 +377,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    
       <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -649,9 +679,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    
       <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -1021,9 +1051,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    
       <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -1343,9 +1373,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    
       <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
+    
+      <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
     
       <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     
@@ -1373,9 +1403,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
-    
       <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
+    
+      <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
     
       <category term="PIM" scheme="https://appworks-tips.com/tags/PIM/"/>
     
@@ -1406,34 +1436,6 @@
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
       <category term="OTDS" scheme="https://appworks-tips.com/tags/OTDS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to create a custom artifact with a runtime-link - part 2!</title>
-    <link rel="alternate" type="text/html" href="https://appworks-tips.com/2025/01/31/256_crafting_a_custom_artifact/"/>
-    <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2025/256_crafting_a_custom_artifact/feature_tag.webp" />
-    <id>https://appworks-tips.com/2025/01/31/256_crafting_a_custom_artifact/</id>
-    <published>2025-01-31T12:00:00.000Z</published>
-    <updated>2025-12-31T10:36:06.893Z</updated>
-    
-    <summary type="html">
-    
-      We did it before, but we&#39;ll learn as we&#39;ll explore...
-    
-    </summary>
-    <media:thumbnail url="https://appworks-tips.com/images/posts/2025/256_crafting_a_custom_artifact/feature_tag.webp" />
-    
-      <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    
-    
-      <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    
-      <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    
-      <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
-    
-      <category term="Artifact" scheme="https://appworks-tips.com/tags/Artifact/"/>
     
   </entry>
   
