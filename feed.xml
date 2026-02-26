@@ -6,7 +6,7 @@
   <link rel="self" href="https://appworks-tips.com/feed.xml"/>
   
   <link href="https://appworks-tips.com/"/>
-  <updated>2026-02-25T22:05:05.305Z</updated>
+  <updated>2026-02-26T18:42:32.675Z</updated>
   <id>https://appworks-tips.com/</id>
   
   <author>
@@ -23,11 +23,11 @@
     <link rel="enclosure" type="image/png" href="https://appworks-tips.com/images/posts/2026/304_embed_google_maps_in_case/feature_tag.webp" />
     <id>https://appworks-tips.com/2026/02/27/304_embed_google_maps_in_case/</id>
     <published>2026-02-27T12:00:00.000Z</published>
-    <updated>2026-02-25T22:05:05.305Z</updated>
+    <updated>2026-02-26T18:42:32.675Z</updated>
     
     <summary type="html">
     
-      It&#39;s time to embed Google Maps in you valuable case management system.
+      It&#39;s time to embed Google Maps in your valuable case management system.
     
     </summary>
     <media:thumbnail url="https://appworks-tips.com/images/posts/2026/304_embed_google_maps_in_case/feature_tag.webp" />
@@ -661,9 +661,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
-    
       <category term="Mail" scheme="https://appworks-tips.com/tags/Mail/"/>
+    
+      <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
     
   </entry>
   
@@ -689,9 +689,9 @@
     
       <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     
-      <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
-    
       <category term="Mail" scheme="https://appworks-tips.com/tags/Mail/"/>
+    
+      <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
     
   </entry>
   
