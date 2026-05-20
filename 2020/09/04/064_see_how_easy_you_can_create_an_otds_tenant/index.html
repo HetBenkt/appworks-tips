@@ -391,7 +391,7 @@
 <hr>
 <p><strong>Let’s get right into it…</strong></p>
 <p>First make sure your OTDS instance is running bright and shining!</p>
-<p><a target="_blank" rel="noopener" href="http://192.168.56.107:8181/otds-admin/">http://192.168.56.107:8181/otds-admin/</a> and login with ‘<a href="mailto:&#x6f;&#116;&#x61;&#x64;&#x6d;&#105;&#x6e;&#x40;&#x6f;&#x74;&#x64;&#x73;&#x2e;&#x61;&#x64;&#x6d;&#x69;&#x6e;">otadmin@otds.admin</a>‘. For me it’s password ‘admin’</p>
+<p><a target="_blank" rel="noopener" href="http://192.168.56.107:8181/otds-admin/">http://192.168.56.107:8181/otds-admin/</a> and login with ‘<a href="mailto:&#x6f;&#x74;&#97;&#x64;&#109;&#105;&#110;&#64;&#x6f;&#x74;&#x64;&#x73;&#46;&#97;&#x64;&#109;&#x69;&#110;">otadmin@otds.admin</a>‘. For me it’s password ‘admin’</p>
 <p><img alt="tenant_001" class="post-img b-lazy" href="/images/posts/2020/064_see_how_easy_you_can_create_an_otds_tenant/tenant_001.png" data-src="/images/posts/2020/064_see_how_easy_you_can_create_an_otds_tenant/tenant_001.png"></p>
 <p>Now that it is up and running, we can close it again as we need go back to the server&#x2F;VM with <a target="_blank" rel="noopener" href="https://mobaxterm.mobatek.net/">MobaXTerm</a> or <a target="_blank" rel="noopener" href="https://www.putty.org/">PuTTY</a> via SSH. Make connection and go to the installation directory of OTDS</p>
 <p><code> cd /opt/opentext/otds/install/</code></p>
@@ -399,7 +399,7 @@
 <p>And give this magic command: <code>./otdstenant.sh -addtenant dctm admin</code></p>
 <ul>
 <li><code>dctm</code> is the name of the tenant</li>
-<li><code>admin</code> is the password for the tenant specific user ‘<a href="mailto:&#x6f;&#x74;&#x61;&#100;&#109;&#x69;&#x6e;&#64;&#111;&#116;&#x64;&#115;&#46;&#97;&#x64;&#x6d;&#x69;&#110;">otadmin@otds.admin</a>‘</li>
+<li><code>admin</code> is the password for the tenant specific user ‘<a href="mailto:&#111;&#116;&#x61;&#x64;&#x6d;&#x69;&#110;&#64;&#x6f;&#116;&#x64;&#x73;&#46;&#97;&#x64;&#x6d;&#105;&#x6e;">otadmin@otds.admin</a>‘</li>
 </ul>
 <p>You get some logging output that should end with <code>***** OtdsDeploy Ended *****</code></p>
 <hr>
@@ -411,7 +411,7 @@
 <h5 id="Access-the-tenant"><a href="#Access-the-tenant" class="headerlink" title="Access the tenant"></a>Access the tenant</h5><p>Ok…we’ve created a new tenant, but now what?</p>
 <p>Normally we login with this URL: <a target="_blank" rel="noopener" href="http://192.168.56.107:8181/otds-admin">http://192.168.56.107:8181/otds-admin</a></p>
 <p>Let’s access our tenant be using this URL: <a target="_blank" rel="noopener" href="http://192.168.56.107:8181/otdstenant/dctm/otds-admin">http://192.168.56.107:8181/otdstenant/dctm/otds-admin</a></p>
-<p>You can use your account ‘<a href="mailto:&#111;&#x74;&#97;&#x64;&#x6d;&#105;&#x6e;&#64;&#111;&#116;&#x64;&#115;&#x2e;&#97;&#100;&#x6d;&#x69;&#x6e;">otadmin@otds.admin</a>‘ with the password you provided in the ‘addtenant’ command!</p>
+<p>You can use your account ‘<a href="mailto:&#111;&#116;&#97;&#100;&#x6d;&#105;&#x6e;&#64;&#x6f;&#x74;&#x64;&#115;&#46;&#97;&#x64;&#x6d;&#x69;&#110;">otadmin@otds.admin</a>‘ with the password you provided in the ‘addtenant’ command!</p>
 <hr>
 <p>And there you have it. A new tenant on top of the already running OTDS instance. A clean and simple “DONE” this time! Nothing more and nothing less, but ready for you start using this new tenant that can be treated as ‘new OTDS instance’.</p>
 <p>Cheers…And don’t forget to <a href="#subscribe">subscribe</a> to get updates on the activities happening on this site. Have you noticed the <a href="#quiz">quiz</a> where you find out if you are also “The AppWorks guy”?</p>
