@@ -12,7 +12,7 @@
   <rights>All rights reserved 2026, Antal Bos</rights>
   <subtitle>Installments, thoughts, tricks and ideas</subtitle>
   <title>OpenText™ Process Automation Tips</title>
-  <updated>2026-05-18T16:41:13.436Z</updated>
+  <updated>2026-05-20T21:29:20.778Z</updated>
   <entry>
     <author>
       <name>Antal Bos</name>
@@ -25,9 +25,9 @@
     <id>https://appworks-tips.com/2026/05/22/315a_7_year_anniversary/</id>
     <link href="https://appworks-tips.com/2026/05/22/315a_7_year_anniversary/"/>
     <published>2026-05-22T12:00:00.000Z</published>
-    <summary>It's been 7 years since I started the blogging journey; We'll do a recap of last year on wins and losses.</summary>
+    <summary>It's been 7 years since my blogging started; We'll do a recap of last year on wins and losses.</summary>
     <title>7-year anniversary!</title>
-    <updated>2026-05-18T16:41:13.436Z</updated>
+    <updated>2026-05-20T21:29:20.778Z</updated>
   </entry>
   <entry>
     <author>
@@ -93,9 +93,9 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    <category term="TomEE" scheme="https://appworks-tips.com/tags/TomEE/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="TomEE" scheme="https://appworks-tips.com/tags/TomEE/"/>
     <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <category term="SSL" scheme="https://appworks-tips.com/tags/SSL/"/>
     <category term="HTTPS" scheme="https://appworks-tips.com/tags/HTTPS/"/>
