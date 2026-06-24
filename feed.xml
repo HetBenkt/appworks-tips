@@ -12,17 +12,34 @@
   <rights>All rights reserved 2026, Antal Bos</rights>
   <subtitle>Installments, thoughts, tricks and ideas</subtitle>
   <title>OpenText™ Process Automation Tips</title>
-  <updated>2026-06-18T07:21:30.779Z</updated>
+  <updated>2026-06-24T19:28:23.180Z</updated>
   <entry>
     <author>
       <name>Antal Bos</name>
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    <category term="Webservice" scheme="https://appworks-tips.com/tags/Webservice/"/>
+    <category term="XML" scheme="https://appworks-tips.com/tags/XML/"/>
+    <id>https://appworks-tips.com/2026/06/26/319_read_external_xml_file/</id>
+    <link href="https://appworks-tips.com/2026/06/26/319_read_external_xml_file/"/>
+    <published>2026-06-26T12:00:00.000Z</published>
+    <summary>It's not that hard once someone tells you how to accomplish it!</summary>
+    <title>The hidden power of reading externally hosted XML files</title>
+    <updated>2026-06-24T19:28:23.180Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Antal Bos</name>
+      <email>contact@appworks-tips.com</email>
+    </author>
+    <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Webservice" scheme="https://appworks-tips.com/tags/Webservice/"/>
     <category term="SOAP" scheme="https://appworks-tips.com/tags/SOAP/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="Mocking" scheme="https://appworks-tips.com/tags/Mocking/"/>
     <category term="REST" scheme="https://appworks-tips.com/tags/REST/"/>
     <id>https://appworks-tips.com/2026/06/19/318_mock_soap_services_with_headless_wiremock/</id>
@@ -38,11 +55,11 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="SOAP" scheme="https://appworks-tips.com/tags/SOAP/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="REST" scheme="https://appworks-tips.com/tags/REST/"/>
     <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
+    <category term="REST" scheme="https://appworks-tips.com/tags/REST/"/>
     <id>https://appworks-tips.com/2026/06/12/317_convert_platform_rest_call_into_soap_call/</id>
     <link href="https://appworks-tips.com/2026/06/12/317_convert_platform_rest_call_into_soap_call/"/>
     <published>2026-06-12T12:00:00.000Z</published>
@@ -56,8 +73,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="xECM" scheme="https://appworks-tips.com/tags/xECM/"/>
     <category term="BusinessWorkspace" scheme="https://appworks-tips.com/tags/BusinessWorkspace/"/>
     <category term="Cleaning" scheme="https://appworks-tips.com/tags/Cleaning/"/>
@@ -74,11 +91,11 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
+    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     <id>https://appworks-tips.com/2026/05/29/315b_update_on_26_2/</id>
     <link href="https://appworks-tips.com/2026/05/29/315b_update_on_26_2/"/>
     <published>2026-05-29T12:00:00.000Z</published>
@@ -108,8 +125,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <category term="CIS-CAT" scheme="https://appworks-tips.com/tags/CIS-CAT/"/>
     <category term="OpenSCAP" scheme="https://appworks-tips.com/tags/OpenSCAP/"/>
@@ -126,8 +143,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <category term="SSL" scheme="https://appworks-tips.com/tags/SSL/"/>
     <category term="HTTPS" scheme="https://appworks-tips.com/tags/HTTPS/"/>
@@ -147,10 +164,10 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="NGINX" scheme="https://appworks-tips.com/tags/NGINX/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
+    <category term="NGINX" scheme="https://appworks-tips.com/tags/NGINX/"/>
     <category term="SSL" scheme="https://appworks-tips.com/tags/SSL/"/>
     <category term="HTTPS" scheme="https://appworks-tips.com/tags/HTTPS/"/>
     <id>https://appworks-tips.com/2026/05/01/313_https_with_ssl_over_nginx/</id>
@@ -166,8 +183,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="TomEE" scheme="https://appworks-tips.com/tags/TomEE/"/>
     <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <category term="SSL" scheme="https://appworks-tips.com/tags/SSL/"/>
@@ -185,11 +202,11 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="CLI" scheme="https://appworks-tips.com/tags/CLI/"/>
     <category term="CI/CD" scheme="https://appworks-tips.com/tags/CI-CD/"/>
     <category term="ANT" scheme="https://appworks-tips.com/tags/ANT/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <id>https://appworks-tips.com/2026/04/17/311_cloneservicecontainers_ant_task/</id>
     <link href="https://appworks-tips.com/2026/04/17/311_cloneservicecontainers_ant_task/"/>
     <published>2026-04-17T12:00:00.000Z</published>
@@ -203,9 +220,9 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Deployment" scheme="https://appworks-tips.com/tags/Deployment/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="CAP" scheme="https://appworks-tips.com/tags/CAP/"/>
     <id>https://appworks-tips.com/2026/04/10/310_jars_in_specific_org_during_cap_deployment/</id>
     <link href="https://appworks-tips.com/2026/04/10/310_jars_in_specific_org_during_cap_deployment/"/>
@@ -220,8 +237,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Rule" scheme="https://appworks-tips.com/tags/Rule/"/>
     <category term="Runtime" scheme="https://appworks-tips.com/tags/Runtime/"/>
     <id>https://appworks-tips.com/2026/04/03/309_avoid_onchange_rule_trap/</id>
@@ -237,8 +254,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Rule" scheme="https://appworks-tips.com/tags/Rule/"/>
     <category term="Runtime" scheme="https://appworks-tips.com/tags/Runtime/"/>
     <id>https://appworks-tips.com/2026/03/27/308_dev_console_rule_results_insights/</id>
@@ -254,9 +271,9 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="BPM" scheme="https://appworks-tips.com/tags/BPM/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="MessageMap" scheme="https://appworks-tips.com/tags/MessageMap/"/>
     <id>https://appworks-tips.com/2026/03/20/307_try_out_messagemap_usage_variants/</id>
     <link href="https://appworks-tips.com/2026/03/20/307_try_out_messagemap_usage_variants/"/>
@@ -271,8 +288,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="HealthCheck" scheme="https://appworks-tips.com/tags/HealthCheck/"/>
     <id>https://appworks-tips.com/2026/03/13/306_add_custom_service_content_to_health_url/</id>
     <link href="https://appworks-tips.com/2026/03/13/306_add_custom_service_content_to_health_url/"/>
@@ -287,8 +304,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="NGINX" scheme="https://appworks-tips.com/tags/NGINX/"/>
     <category term="Reverse proxy" scheme="https://appworks-tips.com/tags/Reverse-proxy/"/>
     <id>https://appworks-tips.com/2026/03/06/305_extend_nginx_to_xecm/</id>
@@ -304,8 +321,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="GoogleMaps" scheme="https://appworks-tips.com/tags/GoogleMaps/"/>
     <id>https://appworks-tips.com/2026/02/27/304_embed_google_maps_in_case/</id>
     <link href="https://appworks-tips.com/2026/02/27/304_embed_google_maps_in_case/"/>
@@ -320,9 +337,9 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <id>https://appworks-tips.com/2026/02/20/303_split_css_from_case_task/</id>
     <link href="https://appworks-tips.com/2026/02/20/303_split_css_from_case_task/"/>
     <published>2026-02-20T12:00:00.000Z</published>
@@ -336,11 +353,11 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
+    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     <id>https://appworks-tips.com/2026/02/13/302a_update_on_26_1/</id>
     <link href="https://appworks-tips.com/2026/02/13/302a_update_on_26_1/"/>
     <published>2026-02-13T12:00:00.000Z</published>
@@ -354,9 +371,9 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Lifecycle" scheme="https://appworks-tips.com/tags/Lifecycle/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <id>https://appworks-tips.com/2026/02/06/302_lifecycle_backwards_compatibility/</id>
     <link href="https://appworks-tips.com/2026/02/06/302_lifecycle_backwards_compatibility/"/>
     <published>2026-02-06T12:00:00.000Z</published>
@@ -370,9 +387,9 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Task" scheme="https://appworks-tips.com/tags/Task/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="Memo" scheme="https://appworks-tips.com/tags/Memo/"/>
     <id>https://appworks-tips.com/2026/01/30/301_view_memo_for_task/</id>
     <link href="https://appworks-tips.com/2026/01/30/301_view_memo_for_task/"/>
@@ -387,8 +404,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Mail" scheme="https://appworks-tips.com/tags/Mail/"/>
     <category term="Template" scheme="https://appworks-tips.com/tags/Template/"/>
     <id>https://appworks-tips.com/2026/01/23/300_runtime_mail_templates_magic/</id>
@@ -406,9 +423,9 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="Search" scheme="https://appworks-tips.com/tags/Search/"/>
     <id>https://appworks-tips.com/2026/01/16/299_simple_search_with_third_party_lib/</id>
     <link href="https://appworks-tips.com/2026/01/16/299_simple_search_with_third_party_lib/"/>
@@ -423,10 +440,10 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Package" scheme="https://appworks-tips.com/tags/Package/"/>
     <category term="Deployment" scheme="https://appworks-tips.com/tags/Deployment/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="Staging" scheme="https://appworks-tips.com/tags/Staging/"/>
     <id>https://appworks-tips.com/2026/01/09/298a_staging_packages/</id>
     <link href="https://appworks-tips.com/2026/01/09/298a_staging_packages/"/>
@@ -441,8 +458,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Garbage" scheme="https://appworks-tips.com/tags/Garbage/"/>
     <id>https://appworks-tips.com/2026/01/02/298_implementing_a_garbage_bin/</id>
     <link href="https://appworks-tips.com/2026/01/02/298_implementing_a_garbage_bin/"/>
@@ -457,16 +474,16 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="Random" scheme="https://appworks-tips.com/tags/Random/"/>
     <id>https://appworks-tips.com/2025/12/26/297_christmas_treatment/</id>
     <link href="https://appworks-tips.com/2025/12/26/297_christmas_treatment/"/>
     <published>2025-12-26T12:00:00.000Z</published>
     <summary>...and a happy new year!</summary>
     <title>Ho, Ho, Hoooooo; Merry Christmas</title>
-    <updated>2026-06-18T07:27:11.924Z</updated>
+    <updated>2026-06-24T19:43:42.795Z</updated>
   </entry>
   <entry>
     <author>
@@ -474,15 +491,15 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="API" scheme="https://appworks-tips.com/tags/API/"/>
     <id>https://appworks-tips.com/2025/12/19/295_crud_itemid_in_dev_console_with_js_api/</id>
     <link href="https://appworks-tips.com/2025/12/19/295_crud_itemid_in_dev_console_with_js_api/"/>
     <published>2025-12-19T12:00:00.000Z</published>
     <summary>Some things are just right under your nose, but unnoticeable until someone tells you about it.</summary>
     <title>Enrich your development eXperience with this development console update</title>
-    <updated>2026-06-18T07:27:11.923Z</updated>
+    <updated>2026-06-24T19:43:42.794Z</updated>
   </entry>
   <entry>
     <author>
@@ -490,8 +507,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Logging" scheme="https://appworks-tips.com/tags/Logging/"/>
     <category term="Trace" scheme="https://appworks-tips.com/tags/Trace/"/>
     <id>https://appworks-tips.com/2025/12/12/294_trace_messages_to_entityruntime/</id>
@@ -499,7 +516,7 @@
     <published>2025-12-12T12:00:00.000Z</published>
     <summary>Repack your knowledge with this secret feature flag.</summary>
     <title>True maintenance happens over true logging; Prepare yourself for a tracing impact</title>
-    <updated>2026-06-18T07:27:11.922Z</updated>
+    <updated>2026-06-24T19:43:42.792Z</updated>
   </entry>
   <entry>
     <author>
@@ -518,7 +535,7 @@
     <published>2025-12-05T12:00:00.000Z</published>
     <summary>Q4 is here again; We go through the keynotes of OT world (Nashville) 2025!</summary>
     <title>Update on OpenText World (LinkedIn edition 2025 Q4)</title>
-    <updated>2026-06-18T07:27:11.921Z</updated>
+    <updated>2026-06-24T19:43:42.791Z</updated>
   </entry>
   <entry>
     <author>
@@ -526,8 +543,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Connector" scheme="https://appworks-tips.com/tags/Connector/"/>
     <category term="JMS" scheme="https://appworks-tips.com/tags/JMS/"/>
     <category term="RabbitMQ" scheme="https://appworks-tips.com/tags/RabbitMQ/"/>
@@ -536,7 +553,7 @@
     <published>2025-11-28T12:00:00.000Z</published>
     <summary>Built your loosely coupled solutions via queueing mechanisms.</summary>
     <title>Discover (again!) the hidden power of JMS; Transform your world with queues</title>
-    <updated>2026-06-18T07:27:11.919Z</updated>
+    <updated>2026-06-24T19:43:42.790Z</updated>
   </entry>
   <entry>
     <author>
@@ -544,8 +561,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="JMS" scheme="https://appworks-tips.com/tags/JMS/"/>
     <category term="RabbitMQ" scheme="https://appworks-tips.com/tags/RabbitMQ/"/>
     <id>https://appworks-tips.com/2025/11/21/292_install_rabbitmq/</id>
@@ -553,7 +570,7 @@
     <published>2025-11-21T12:00:00.000Z</published>
     <summary>The JMS connector (again) on the top of my backlog; This is the preparation phase.</summary>
     <title>Unleashing the power of RabbitMQ on RHEL; Prepare JMS like a pro</title>
-    <updated>2026-06-18T07:27:11.918Z</updated>
+    <updated>2026-06-24T19:43:42.789Z</updated>
   </entry>
   <entry>
     <author>
@@ -561,15 +578,15 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Log4J2" scheme="https://appworks-tips.com/tags/Log4J2/"/>
     <id>https://appworks-tips.com/2025/11/14/291_log4j2_readable_timestamp/</id>
     <link href="https://appworks-tips.com/2025/11/14/291_log4j2_readable_timestamp/"/>
     <published>2025-11-14T12:00:00.000Z</published>
     <summary>Tired of unreadable timestamps? Here's the tweak that makes them readable.</summary>
     <title>This is how you fix the Log4J2’s Application_Server.xml timestamps that drive you crazy</title>
-    <updated>2026-06-18T07:27:11.917Z</updated>
+    <updated>2026-06-24T19:43:42.789Z</updated>
   </entry>
   <entry>
     <author>
@@ -577,15 +594,15 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ServiceContainer" scheme="https://appworks-tips.com/tags/ServiceContainer/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <id>https://appworks-tips.com/2025/11/07/290_restart_service_container_from_soap_call/</id>
     <link href="https://appworks-tips.com/2025/11/07/290_restart_service_container_from_soap_call/"/>
     <published>2025-11-07T12:00:00.000Z</published>
     <summary>Stop or start them anytime with a simple service call.</summary>
     <title>Automate your life; Restart service containers instantly with automation</title>
-    <updated>2026-06-18T07:27:11.916Z</updated>
+    <updated>2026-06-24T19:43:42.788Z</updated>
   </entry>
   <entry>
     <author>
@@ -593,20 +610,20 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    <category term="Organization" scheme="https://appworks-tips.com/tags/Organization/"/>
     <category term="ServiceContainer" scheme="https://appworks-tips.com/tags/ServiceContainer/"/>
     <category term="CLI" scheme="https://appworks-tips.com/tags/CLI/"/>
     <category term="CI/CD" scheme="https://appworks-tips.com/tags/CI-CD/"/>
     <category term="ANT" scheme="https://appworks-tips.com/tags/ANT/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="Organization" scheme="https://appworks-tips.com/tags/Organization/"/>
     <category term="Automation" scheme="https://appworks-tips.com/tags/Automation/"/>
     <id>https://appworks-tips.com/2025/10/31/289_automate_creation_org_and_service_containers/</id>
     <link href="https://appworks-tips.com/2025/10/31/289_automate_creation_org_and_service_containers/"/>
     <published>2025-10-31T12:00:00.000Z</published>
     <summary>Take full control — re-init with simple CLI calls.</summary>
     <title>Stop wasting time; Instantly create an organization (incl. service containers and DSO) with automation</title>
-    <updated>2026-06-18T07:27:11.915Z</updated>
+    <updated>2026-06-24T19:43:42.787Z</updated>
   </entry>
   <entry>
     <author>
@@ -614,17 +631,17 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
+    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     <id>https://appworks-tips.com/2025/10/24/288a_update_on_25_4/</id>
     <link href="https://appworks-tips.com/2025/10/24/288a_update_on_25_4/"/>
     <published>2025-10-24T12:00:00.000Z</published>
     <summary>Let's review the new features with this new GA release!</summary>
     <title>OPA 25.4 is GA; Right on time in the first weekend of Q4...Excellent job</title>
-    <updated>2026-06-18T07:27:11.914Z</updated>
+    <updated>2026-06-24T19:43:42.786Z</updated>
   </entry>
   <entry>
     <author>
@@ -632,8 +649,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Service" scheme="https://appworks-tips.com/tags/Service/"/>
     <category term="UserDN" scheme="https://appworks-tips.com/tags/UserDN/"/>
     <id>https://appworks-tips.com/2025/10/17/288_get_userdn_for_person_user_entity/</id>
@@ -641,7 +658,7 @@
     <published>2025-10-17T12:00:00.000Z</published>
     <summary>The holy grail is found with an easy (unfamiliar) service call.</summary>
     <title>Your final destiny on the never-ending struggle to get a 'UserDN' value</title>
-    <updated>2026-06-18T07:27:11.913Z</updated>
+    <updated>2026-06-24T19:43:42.785Z</updated>
   </entry>
   <entry>
     <author>
@@ -649,8 +666,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Layout" scheme="https://appworks-tips.com/tags/Layout/"/>
     <category term="Configuration" scheme="https://appworks-tips.com/tags/Configuration/"/>
     <category term="Godmode" scheme="https://appworks-tips.com/tags/Godmode/"/>
@@ -659,7 +676,7 @@
     <published>2025-10-10T12:00:00.000Z</published>
     <summary>A feature flag that will increase your development speed drastically.</summary>
     <title>Behold the power of a &quot;Godmode&quot; tab</title>
-    <updated>2026-06-18T07:27:11.912Z</updated>
+    <updated>2026-06-24T19:43:42.785Z</updated>
   </entry>
   <entry>
     <author>
@@ -667,15 +684,15 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Lifecycle" scheme="https://appworks-tips.com/tags/Lifecycle/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <id>https://appworks-tips.com/2025/10/03/286_conditional_activities_in_lifecycle/</id>
     <link href="https://appworks-tips.com/2025/10/03/286_conditional_activities_in_lifecycle/"/>
     <published>2025-10-03T12:00:00.000Z</published>
     <summary>You'll never ever forget this way of lifecycle implementation.</summary>
     <title>Question; How on earth can you create conditions between activities in a lifecycle?</title>
-    <updated>2026-06-18T07:27:11.911Z</updated>
+    <updated>2026-06-24T19:43:42.784Z</updated>
   </entry>
   <entry>
     <author>
@@ -683,16 +700,16 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="Mail" scheme="https://appworks-tips.com/tags/Mail/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
+    <category term="Mail" scheme="https://appworks-tips.com/tags/Mail/"/>
     <id>https://appworks-tips.com/2025/09/26/285_receive_email_by_service_call/</id>
     <link href="https://appworks-tips.com/2025/09/26/285_receive_email_by_service_call/"/>
     <published>2025-09-26T12:00:00.000Z</published>
     <summary>Read, learn, and share with others makes us all better.</summary>
     <title>The OpenText best-practice implementation of &quot;receiveEmail&quot;</title>
-    <updated>2026-06-18T07:27:11.910Z</updated>
+    <updated>2026-06-24T19:43:42.783Z</updated>
   </entry>
   <entry>
     <author>
@@ -700,16 +717,16 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="Mail" scheme="https://appworks-tips.com/tags/Mail/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
+    <category term="Mail" scheme="https://appworks-tips.com/tags/Mail/"/>
     <id>https://appworks-tips.com/2025/09/19/284_receive_email_with_the_magic_trick/</id>
     <link href="https://appworks-tips.com/2025/09/19/284_receive_email_with_the_magic_trick/"/>
     <published>2025-09-19T12:00:00.000Z</published>
     <summary>A service call beyond any non-documented knowledge.</summary>
     <title>Cast a spell on your inbox with &quot;receiveEmail&quot;</title>
-    <updated>2026-06-18T07:27:11.909Z</updated>
+    <updated>2026-06-24T19:43:42.782Z</updated>
   </entry>
   <entry>
     <author>
@@ -717,8 +734,8 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Administration" scheme="https://appworks-tips.com/tags/Administration/"/>
     <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <id>https://appworks-tips.com/2025/09/12/283_split_admin_roles/</id>
@@ -726,7 +743,7 @@
     <published>2025-09-12T12:00:00.000Z</published>
     <summary>Just an admin strategy with this one simple shift.</summary>
     <title>Unlock the secret to splitting administration roles like a bro</title>
-    <updated>2026-06-18T07:27:11.908Z</updated>
+    <updated>2026-06-24T19:43:42.781Z</updated>
   </entry>
   <entry>
     <author>
@@ -734,15 +751,15 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <id>https://appworks-tips.com/2025/09/05/282_dynamic_security_based_on_entity_membership/</id>
     <link href="https://appworks-tips.com/2025/09/05/282_dynamic_security_based_on_entity_membership/"/>
     <published>2025-09-05T12:00:00.000Z</published>
     <summary>Real-time permissions based on entity membership.</summary>
     <title>Access granted...or denied? Dynamic security like you’ve never seen</title>
-    <updated>2026-06-18T07:27:11.907Z</updated>
+    <updated>2026-06-24T19:43:42.780Z</updated>
   </entry>
   <entry>
     <author>
@@ -750,15 +767,15 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="DueDate" scheme="https://appworks-tips.com/tags/DueDate/"/>
     <id>https://appworks-tips.com/2025/08/29/281_ui_view_on_lifecycle_out_of_due/</id>
     <link href="https://appworks-tips.com/2025/08/29/281_ui_view_on_lifecycle_out_of_due/"/>
     <published>2025-08-29T12:00:00.000Z</published>
     <summary>When SLAs expire, the UI shows its true state.</summary>
     <title>The shocking UI behavior you’ll see when a Lifecycle skips its due date</title>
-    <updated>2026-06-18T07:27:11.906Z</updated>
+    <updated>2026-06-24T19:43:42.779Z</updated>
   </entry>
   <entry>
     <author>
@@ -766,15 +783,15 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="BusinessCalendar" scheme="https://appworks-tips.com/tags/BusinessCalendar/"/>
     <id>https://appworks-tips.com/2025/08/22/280_play_with_business_calendars/</id>
     <link href="https://appworks-tips.com/2025/08/22/280_play_with_business_calendars/"/>
     <published>2025-08-22T12:00:00.000Z</published>
     <summary>Play, learn, and master time-based logic.</summary>
     <title>Unlock hidden superpowers; How business calendars turbocharge your &quot;Process Automation&quot;</title>
-    <updated>2026-06-18T07:27:11.905Z</updated>
+    <updated>2026-06-24T19:43:42.778Z</updated>
   </entry>
   <entry>
     <author>
@@ -782,15 +799,15 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Lifecycle" scheme="https://appworks-tips.com/tags/Lifecycle/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <id>https://appworks-tips.com/2025/08/15/279_document_receive_construct_in_lifecycle/</id>
     <link href="https://appworks-tips.com/2025/08/15/279_document_receive_construct_in_lifecycle/"/>
     <published>2025-08-15T12:00:00.000Z</published>
     <summary>It's about time to put &quot;Document received&quot; to the test!</summary>
     <title>Unlock the full power of your entity lifecycle with this overlooked construct</title>
-    <updated>2026-06-18T07:27:11.904Z</updated>
+    <updated>2026-06-24T19:43:42.777Z</updated>
   </entry>
   <entry>
     <author>
@@ -798,11 +815,11 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
-    <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
+    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
     <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
     <id>https://appworks-tips.com/2025/08/08/278a_update_on_25_3/</id>
@@ -810,7 +827,7 @@
     <published>2025-08-08T12:00:00.000Z</published>
     <summary>New features, new fun, new theories, and new practical examples!</summary>
     <title>Vacation period is DONE (for me); Time to move on with GA OPA 25.3</title>
-    <updated>2026-06-18T07:27:11.903Z</updated>
+    <updated>2026-06-24T19:43:42.776Z</updated>
   </entry>
   <entry>
     <author>
@@ -818,17 +835,17 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Reporting" scheme="https://appworks-tips.com/tags/Reporting/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="HealthCheck" scheme="https://appworks-tips.com/tags/HealthCheck/"/>
     <category term="Grafana" scheme="https://appworks-tips.com/tags/Grafana/"/>
+    <category term="HealthCheck" scheme="https://appworks-tips.com/tags/HealthCheck/"/>
     <id>https://appworks-tips.com/2025/08/01/278_grafana_hearthcheck_dashboard_4/</id>
     <link href="https://appworks-tips.com/2025/08/01/278_grafana_hearthcheck_dashboard_4/"/>
     <published>2025-08-01T12:00:00.000Z</published>
     <summary>When numbers hit a threshold, you want to get informed. Let's find out the &quot;how&quot;?</summary>
     <title>Unlock hidden insights; Build a stunning Grafana dashboard to monitor OPA like a bro (part 4)</title>
-    <updated>2026-06-18T07:27:11.902Z</updated>
+    <updated>2026-06-24T19:43:42.775Z</updated>
   </entry>
   <entry>
     <author>
@@ -836,17 +853,17 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Reporting" scheme="https://appworks-tips.com/tags/Reporting/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="HealthCheck" scheme="https://appworks-tips.com/tags/HealthCheck/"/>
     <category term="Grafana" scheme="https://appworks-tips.com/tags/Grafana/"/>
+    <category term="HealthCheck" scheme="https://appworks-tips.com/tags/HealthCheck/"/>
     <id>https://appworks-tips.com/2025/07/25/277_grafana_hearthcheck_dashboard_3/</id>
     <link href="https://appworks-tips.com/2025/07/25/277_grafana_hearthcheck_dashboard_3/"/>
     <published>2025-07-25T12:00:00.000Z</published>
     <summary>Avoiding the traps with the help of AI (ChatGPT)</summary>
     <title>Unlock hidden insights; Build a stunning Grafana dashboard to monitor OPA like a bro (part 3)</title>
-    <updated>2026-06-18T07:27:11.901Z</updated>
+    <updated>2026-06-24T19:43:42.774Z</updated>
   </entry>
   <entry>
     <author>
@@ -854,34 +871,16 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Reporting" scheme="https://appworks-tips.com/tags/Reporting/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="HealthCheck" scheme="https://appworks-tips.com/tags/HealthCheck/"/>
     <category term="Grafana" scheme="https://appworks-tips.com/tags/Grafana/"/>
+    <category term="HealthCheck" scheme="https://appworks-tips.com/tags/HealthCheck/"/>
     <id>https://appworks-tips.com/2025/07/18/276_grafana_hearthcheck_dashboard_2/</id>
     <link href="https://appworks-tips.com/2025/07/18/276_grafana_hearthcheck_dashboard_2/"/>
     <published>2025-07-18T12:00:00.000Z</published>
     <summary>Continue the grind on making a shiny Grafana OPA dashboard...</summary>
     <title>Unlock hidden insights; Build a stunning Grafana dashboard to monitor OPA like a bro (part 2)</title>
-    <updated>2026-06-18T07:27:11.900Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Antal Bos</name>
-      <email>contact@appworks-tips.com</email>
-    </author>
-    <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Reporting" scheme="https://appworks-tips.com/tags/Reporting/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="HealthCheck" scheme="https://appworks-tips.com/tags/HealthCheck/"/>
-    <category term="Grafana" scheme="https://appworks-tips.com/tags/Grafana/"/>
-    <id>https://appworks-tips.com/2025/07/11/275_grafana_hearthcheck_dashboard_1/</id>
-    <link href="https://appworks-tips.com/2025/07/11/275_grafana_hearthcheck_dashboard_1/"/>
-    <published>2025-07-11T12:00:00.000Z</published>
-    <summary>Track performance, catch anomalies, and optimize like a DevOps ninja!</summary>
-    <title>Unlock hidden insights; Build a stunning Grafana dashboard to monitor OPA like a bro (part 1)</title>
-    <updated>2026-06-18T07:27:11.899Z</updated>
+    <updated>2026-06-24T19:43:42.773Z</updated>
   </entry>
 </feed>
