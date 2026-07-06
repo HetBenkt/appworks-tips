@@ -449,7 +449,7 @@
 <p>This can be done from the ‘Directory’ section where we open the ‘People’ node. Here we can add a new person:</p>
 <p><img alt="saml_007" class="post-img b-lazy" href="/images/posts/2022/133_connecting_okta_as_idp_through_otds/133_connecting_okta_as_idp_through_otds_1638789282.png" data-src="/images/posts/2022/133_connecting_okta_as_idp_through_otds/133_connecting_okta_as_idp_through_otds_1638789282.png"></p>
 <blockquote>
-<p>I just create 2 persons. ‘<a href="mailto:&#x75;&#115;&#101;&#x72;&#49;&#x40;&#97;&#x70;&#112;&#119;&#x6f;&#x72;&#107;&#x73;&#46;&#99;&#x6f;&#x6d;">user1@appworks.com</a>‘ and ‘<a href="mailto:&#117;&#x73;&#x65;&#114;&#x32;&#x40;&#97;&#x70;&#112;&#x77;&#x6f;&#114;&#107;&#115;&#x2e;&#x63;&#111;&#x6d;">user2@appworks.com</a>‘ with both password ‘User@-02’ (Yes, it must be something complex!)</p>
+<p>I just create 2 persons. ‘<a href="mailto:&#117;&#115;&#101;&#114;&#49;&#x40;&#x61;&#112;&#112;&#x77;&#111;&#114;&#107;&#x73;&#46;&#99;&#111;&#x6d;">user1@appworks.com</a>‘ and ‘<a href="mailto:&#x75;&#115;&#101;&#x72;&#x32;&#64;&#97;&#x70;&#x70;&#x77;&#111;&#114;&#x6b;&#x73;&#x2e;&#x63;&#x6f;&#x6d;">user2@appworks.com</a>‘ with both password ‘User@-02’ (Yes, it must be something complex!)</p>
 </blockquote>
 <p>Once created, it’s time to assign those users to our created app:</p>
 <p><img alt="saml_008" class="post-img b-lazy" href="/images/posts/2022/133_connecting_okta_as_idp_through_otds/133_connecting_okta_as_idp_through_otds_1638789541.png" data-src="/images/posts/2022/133_connecting_okta_as_idp_through_otds/133_connecting_okta_as_idp_through_otds_1638789541.png"></p>
@@ -502,7 +502,7 @@
 <p>It’s getting more interesting by the minute! When you look at the properties of this account, you will also see the ‘firstname’, ‘lastname’, and ‘email’ being filled with valid data from Okta. The ‘email’ is the most important one as we defined it as ‘Auth. Principle Attribute’ in the ‘AuthHandler’ settings…remember?</p>
 <p><em>How did the information get from Okta to OTDS?</em> Well, continue the grind…</p>
 <hr>
-<h4 id="Raise-OTDS-log-level"><a href="#Raise-OTDS-log-level" class="headerlink" title="Raise OTDS log-level"></a>Raise OTDS log-level</h4><p>Time to raise the log level of our OTDS instance to expose a bit more login information. For this we need to dive back into OTDS: <code>http://192.168.56.107:8181/otds-admin/</code><br>Login with account ‘<a href="mailto:&#x6f;&#x74;&#x61;&#100;&#x6d;&#x69;&#x6e;&#64;&#x6f;&#x74;&#100;&#115;&#46;&#x61;&#100;&#109;&#x69;&#110;">otadmin@otds.admin</a> (with in my case password ‘admin’) and open the ‘System Config’ section. Here we set the corresponding setting:</p>
+<h4 id="Raise-OTDS-log-level"><a href="#Raise-OTDS-log-level" class="headerlink" title="Raise OTDS log-level"></a>Raise OTDS log-level</h4><p>Time to raise the log level of our OTDS instance to expose a bit more login information. For this we need to dive back into OTDS: <code>http://192.168.56.107:8181/otds-admin/</code><br>Login with account ‘<a href="mailto:&#111;&#x74;&#97;&#x64;&#x6d;&#105;&#110;&#64;&#x6f;&#116;&#100;&#115;&#46;&#x61;&#x64;&#x6d;&#105;&#110;">otadmin@otds.admin</a> (with in my case password ‘admin’) and open the ‘System Config’ section. Here we set the corresponding setting:</p>
 <p><img alt="saml_020" class="post-img b-lazy" href="/images/posts/2022/133_connecting_okta_as_idp_through_otds/133_connecting_okta_as_idp_through_otds_1638784350.png" data-src="/images/posts/2022/133_connecting_okta_as_idp_through_otds/133_connecting_okta_as_idp_through_otds_1638784350.png"></p>
 <p>After this change we can monitor 2 logfiles (with a bit of clean-up for readability!) which monitors a second login attempt with account: <code>user2@appworks.com</code></p>
 <ol>
@@ -560,10 +560,10 @@
     </nav>
 
     
-    <div class="inner">
-        <div id="comment"></div>
-    </div>
     
+    <div class="inner">
+        <div class="giscus"></div>
+    </div>
     
 </main>
 
@@ -1728,27 +1728,10 @@
 
     
     
-        <!--<script src="//cdn1.lncld.net/static/js/3.0.4/av.js"></script>-->
-        
-<script src="/js/av.js"></script>
-
-        <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-        <script>
-            new Valine({
-                el: '#comment' ,
-                verify: false,
-                notify: false,
-                appId: 'dor4t8gpwq6ebpX8kspvlpMA-MdYXbMMI',
-                appKey: 'Wbep2nECKklP8vD8aVNmd2Si',
-                placeholder: 'Comment here...',
-                pageSize: 10,
-                avatar: 'mm',
-                lang: 'en',
-                visitor: true,
-            });
+    
+    
+        <script src="https://giscus.app/client.js" data-repo="HetBenkt/appworks-tips" data-repo-id="MDEwOlJlcG9zaXRvcnkxODY5NzIzNjE=" data-category="Announcements" data-category-id="DIC_kwDOCyT4yc4DAFDQ" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin async>
         </script>
-    
-    
     
 
 
