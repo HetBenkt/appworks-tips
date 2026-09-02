@@ -12,7 +12,25 @@
   <rights>All rights reserved 2026, Antal Bos</rights>
   <subtitle>Installments, thoughts, tricks and ideas</subtitle>
   <title>OpenText™ Process Automation Tips</title>
-  <updated>2026-08-27T05:53:36.325Z</updated>
+  <updated>2026-09-02T21:01:06.884Z</updated>
+  <entry>
+    <author>
+      <name>Antal Bos</name>
+      <email>contact@appworks-tips.com</email>
+    </author>
+    <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    <category term="Email" scheme="https://appworks-tips.com/tags/Email/"/>
+    <category term="Database" scheme="https://appworks-tips.com/tags/Database/"/>
+    <category term="DynamicWorkflow" scheme="https://appworks-tips.com/tags/DynamicWorkflow/"/>
+    <id>https://appworks-tips.com/2026/09/04/329_move_dynamic_wfl_instance_and_mail_templates/</id>
+    <link href="https://appworks-tips.com/2026/09/04/329_move_dynamic_wfl_instance_and_mail_templates/"/>
+    <published>2026-09-04T12:00:00.000Z</published>
+    <summary>This is a smart database copy from one instance to another.</summary>
+    <title>Panic at your business analyst; his valuable dynamic flows and email templates can't be moved to prod</title>
+    <updated>2026-09-02T21:01:06.884Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Antal Bos</name>
@@ -319,8 +337,8 @@
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <category term="NGINX" scheme="https://appworks-tips.com/tags/NGINX/"/>
+    <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <category term="SSL" scheme="https://appworks-tips.com/tags/SSL/"/>
     <category term="HTTPS" scheme="https://appworks-tips.com/tags/HTTPS/"/>
     <id>https://appworks-tips.com/2026/05/01/313_https_with_ssl_over_nginx/</id>
@@ -636,7 +654,7 @@
     <published>2025-12-26T12:00:00.000Z</published>
     <summary>...and a happy new year!</summary>
     <title>Ho, Ho, Hoooooo; Merry Christmas</title>
-    <updated>2026-08-25T08:03:02.584Z</updated>
+    <updated>2026-09-02T09:20:16.831Z</updated>
   </entry>
   <entry>
     <author>
@@ -652,7 +670,7 @@
     <published>2025-12-19T12:00:00.000Z</published>
     <summary>Some things are just right under your nose, but unnoticeable until someone tells you about it.</summary>
     <title>Enrich your development eXperience with this development console update</title>
-    <updated>2026-08-25T08:03:02.584Z</updated>
+    <updated>2026-09-02T09:20:16.830Z</updated>
   </entry>
   <entry>
     <author>
@@ -669,7 +687,7 @@
     <published>2025-12-12T12:00:00.000Z</published>
     <summary>Repack your knowledge with this secret feature flag.</summary>
     <title>True maintenance happens over true logging; Prepare yourself for a tracing impact</title>
-    <updated>2026-08-25T08:03:02.583Z</updated>
+    <updated>2026-09-02T09:20:16.828Z</updated>
   </entry>
   <entry>
     <author>
@@ -688,7 +706,7 @@
     <published>2025-12-05T12:00:00.000Z</published>
     <summary>Q4 is here again; We go through the keynotes of OT world (Nashville) 2025!</summary>
     <title>Update on OpenText World (LinkedIn edition 2025 Q4)</title>
-    <updated>2026-08-25T08:03:02.583Z</updated>
+    <updated>2026-09-02T09:20:16.828Z</updated>
   </entry>
   <entry>
     <author>
@@ -706,7 +724,7 @@
     <published>2025-11-28T12:00:00.000Z</published>
     <summary>Built your loosely coupled solutions via queueing mechanisms.</summary>
     <title>Discover (again!) the hidden power of JMS; Transform your world with queues</title>
-    <updated>2026-08-25T08:03:02.582Z</updated>
+    <updated>2026-09-02T09:20:16.827Z</updated>
   </entry>
   <entry>
     <author>
@@ -723,7 +741,7 @@
     <published>2025-11-21T12:00:00.000Z</published>
     <summary>The JMS connector (again) on the top of my backlog; This is the preparation phase.</summary>
     <title>Unleashing the power of RabbitMQ on RHEL; Prepare JMS like a pro</title>
-    <updated>2026-08-25T08:03:02.582Z</updated>
+    <updated>2026-09-02T09:20:16.825Z</updated>
   </entry>
   <entry>
     <author>
@@ -739,7 +757,7 @@
     <published>2025-11-14T12:00:00.000Z</published>
     <summary>Tired of unreadable timestamps? Here's the tweak that makes them readable.</summary>
     <title>This is how you fix the Log4J2’s Application_Server.xml timestamps that drive you crazy</title>
-    <updated>2026-08-25T08:03:02.581Z</updated>
+    <updated>2026-09-02T09:20:16.824Z</updated>
   </entry>
   <entry>
     <author>
@@ -755,7 +773,7 @@
     <published>2025-11-07T12:00:00.000Z</published>
     <summary>Stop or start them anytime with a simple service call.</summary>
     <title>Automate your life; Restart service containers instantly with automation</title>
-    <updated>2026-08-25T08:03:02.581Z</updated>
+    <updated>2026-09-02T09:20:16.823Z</updated>
   </entry>
   <entry>
     <author>
@@ -776,7 +794,7 @@
     <published>2025-10-31T12:00:00.000Z</published>
     <summary>Take full control — re-init with simple CLI calls.</summary>
     <title>Stop wasting time; Instantly create an organization (incl. service containers and DSO) with automation</title>
-    <updated>2026-08-25T08:03:02.580Z</updated>
+    <updated>2026-09-02T09:20:16.822Z</updated>
   </entry>
   <entry>
     <author>
@@ -794,7 +812,7 @@
     <published>2025-10-24T12:00:00.000Z</published>
     <summary>Let's review the new features with this new GA release!</summary>
     <title>OPA 25.4 is GA; Right on time in the first weekend of Q4...Excellent job</title>
-    <updated>2026-08-25T08:03:02.580Z</updated>
+    <updated>2026-09-02T09:20:16.821Z</updated>
   </entry>
   <entry>
     <author>
@@ -804,14 +822,14 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Service" scheme="https://appworks-tips.com/tags/Service/"/>
     <category term="UserDN" scheme="https://appworks-tips.com/tags/UserDN/"/>
+    <category term="Service" scheme="https://appworks-tips.com/tags/Service/"/>
     <id>https://appworks-tips.com/2025/10/17/288_get_userdn_for_person_user_entity/</id>
     <link href="https://appworks-tips.com/2025/10/17/288_get_userdn_for_person_user_entity/"/>
     <published>2025-10-17T12:00:00.000Z</published>
     <summary>The holy grail is found with an easy (unfamiliar) service call.</summary>
     <title>Your final destiny on the never-ending struggle to get a 'UserDN' value</title>
-    <updated>2026-08-25T08:03:02.579Z</updated>
+    <updated>2026-09-02T09:20:16.820Z</updated>
   </entry>
   <entry>
     <author>
@@ -829,7 +847,7 @@
     <published>2025-10-10T12:00:00.000Z</published>
     <summary>A feature flag that will increase your development speed drastically.</summary>
     <title>Behold the power of a &quot;Godmode&quot; tab</title>
-    <updated>2026-08-25T08:03:02.579Z</updated>
+    <updated>2026-09-02T09:20:16.819Z</updated>
   </entry>
   <entry>
     <author>
@@ -845,7 +863,7 @@
     <published>2025-10-03T12:00:00.000Z</published>
     <summary>You'll never ever forget this way of lifecycle implementation.</summary>
     <title>Question; How on earth can you create conditions between activities in a lifecycle?</title>
-    <updated>2026-08-25T08:03:02.578Z</updated>
+    <updated>2026-09-02T09:20:16.818Z</updated>
   </entry>
   <entry>
     <author>
@@ -862,23 +880,6 @@
     <published>2025-09-26T12:00:00.000Z</published>
     <summary>Read, learn, and share with others makes us all better.</summary>
     <title>The OpenText best-practice implementation of &quot;receiveEmail&quot;</title>
-    <updated>2026-08-25T08:03:02.578Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Antal Bos</name>
-      <email>contact@appworks-tips.com</email>
-    </author>
-    <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
-    <category term="Mail" scheme="https://appworks-tips.com/tags/Mail/"/>
-    <id>https://appworks-tips.com/2025/09/19/284_receive_email_with_the_magic_trick/</id>
-    <link href="https://appworks-tips.com/2025/09/19/284_receive_email_with_the_magic_trick/"/>
-    <published>2025-09-19T12:00:00.000Z</published>
-    <summary>A service call beyond any non-documented knowledge.</summary>
-    <title>Cast a spell on your inbox with &quot;receiveEmail&quot;</title>
-    <updated>2026-08-25T08:03:02.577Z</updated>
+    <updated>2026-09-02T09:20:16.816Z</updated>
   </entry>
 </feed>
