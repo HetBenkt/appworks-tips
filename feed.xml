@@ -12,7 +12,7 @@
   <rights>All rights reserved 2026, Antal Bos</rights>
   <subtitle>Installments, thoughts, tricks and ideas</subtitle>
   <title>OpenText™ Process Automation Tips</title>
-  <updated>2026-09-16T06:15:18.504Z</updated>
+  <updated>2026-09-16T15:23:47.116Z</updated>
   <entry>
     <author>
       <name>Antal Bos</name>
@@ -21,14 +21,14 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="N8N" scheme="https://appworks-tips.com/tags/N8N/"/>
     <category term="Services" scheme="https://appworks-tips.com/tags/Services/"/>
+    <category term="N8N" scheme="https://appworks-tips.com/tags/N8N/"/>
     <id>https://appworks-tips.com/2026/09/18/331_play_with_n8n/</id>
     <link href="https://appworks-tips.com/2026/09/18/331_play_with_n8n/"/>
     <published>2026-09-18T12:00:00.000Z</published>
-    <summary>It's not what you think; there is more behind what we see in the UI.</summary>
+    <summary>Time to see what we can learn and eXperience in this space.</summary>
     <title>Unlock the power of n8n; The ultimate beginner's guide to effortless service management</title>
-    <updated>2026-09-16T06:15:18.504Z</updated>
+    <updated>2026-09-16T15:23:47.116Z</updated>
   </entry>
   <entry>
     <author>
@@ -263,8 +263,8 @@
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="SOAP" scheme="https://appworks-tips.com/tags/SOAP/"/>
-    <category term="REST" scheme="https://appworks-tips.com/tags/REST/"/>
     <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
+    <category term="REST" scheme="https://appworks-tips.com/tags/REST/"/>
     <id>https://appworks-tips.com/2026/06/12/317_convert_platform_rest_call_into_soap_call/</id>
     <link href="https://appworks-tips.com/2026/06/12/317_convert_platform_rest_call_into_soap_call/"/>
     <published>2026-06-12T12:00:00.000Z</published>
@@ -681,8 +681,8 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
     <category term="Random" scheme="https://appworks-tips.com/tags/Random/"/>
+    <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
     <id>https://appworks-tips.com/2025/12/26/297_christmas_treatment/</id>
     <link href="https://appworks-tips.com/2025/12/26/297_christmas_treatment/"/>
     <published>2025-12-26T12:00:00.000Z</published>
