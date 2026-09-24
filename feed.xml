@@ -12,7 +12,24 @@
   <rights>All rights reserved 2026, Antal Bos</rights>
   <subtitle>Installments, thoughts, tricks and ideas</subtitle>
   <title>OpenText™ Process Automation Tips</title>
-  <updated>2026-09-16T15:23:47.116Z</updated>
+  <updated>2026-09-24T05:37:09.062Z</updated>
+  <entry>
+    <author>
+      <name>Antal Bos</name>
+      <email>contact@appworks-tips.com</email>
+    </author>
+    <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    <category term="Services" scheme="https://appworks-tips.com/tags/Services/"/>
+    <category term="N8N" scheme="https://appworks-tips.com/tags/N8N/"/>
+    <id>https://appworks-tips.com/2026/09/25/332_three_ways_to_call_opa_from_n8n/</id>
+    <link href="https://appworks-tips.com/2026/09/25/332_three_ways_to_call_opa_from_n8n/"/>
+    <published>2026-09-25T12:00:00.000Z</published>
+    <summary>It doesn't get any easier than this...</summary>
+    <title>Unlock the power of n8n; Three sample calls to OPA</title>
+    <updated>2026-09-24T05:37:09.062Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Antal Bos</name>
@@ -288,7 +305,7 @@
     <published>2026-06-05T12:00:00.000Z</published>
     <summary>Prevent unwanted business workspace deletion with a controlled cleanup approach.</summary>
     <title>The dangerous side effect of case instance deletion (and how to avoid it)</title>
-    <updated>2026-06-04T08:44:51.718Z</updated>
+    <updated>2026-09-17T16:01:36.040Z</updated>
   </entry>
   <entry>
     <author>
@@ -371,8 +388,8 @@
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <category term="NGINX" scheme="https://appworks-tips.com/tags/NGINX/"/>
+    <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <category term="SSL" scheme="https://appworks-tips.com/tags/SSL/"/>
     <category term="HTTPS" scheme="https://appworks-tips.com/tags/HTTPS/"/>
     <id>https://appworks-tips.com/2026/05/01/313_https_with_ssl_over_nginx/</id>
@@ -688,7 +705,7 @@
     <published>2025-12-26T12:00:00.000Z</published>
     <summary>...and a happy new year!</summary>
     <title>Ho, Ho, Hoooooo; Merry Christmas</title>
-    <updated>2026-09-15T10:34:31.940Z</updated>
+    <updated>2026-09-21T15:27:40.918Z</updated>
   </entry>
   <entry>
     <author>
@@ -704,7 +721,7 @@
     <published>2025-12-19T12:00:00.000Z</published>
     <summary>Some things are just right under your nose, but unnoticeable until someone tells you about it.</summary>
     <title>Enrich your development eXperience with this development console update</title>
-    <updated>2026-09-15T10:34:31.940Z</updated>
+    <updated>2026-09-21T15:27:40.918Z</updated>
   </entry>
   <entry>
     <author>
@@ -721,7 +738,7 @@
     <published>2025-12-12T12:00:00.000Z</published>
     <summary>Repack your knowledge with this secret feature flag.</summary>
     <title>True maintenance happens over true logging; Prepare yourself for a tracing impact</title>
-    <updated>2026-09-15T10:34:31.939Z</updated>
+    <updated>2026-09-21T15:27:40.918Z</updated>
   </entry>
   <entry>
     <author>
@@ -733,14 +750,14 @@
     <category term="EnterpriseWorld" scheme="https://appworks-tips.com/tags/EnterpriseWorld/"/>
     <category term="Digital" scheme="https://appworks-tips.com/tags/Digital/"/>
     <category term="Update" scheme="https://appworks-tips.com/tags/Update/"/>
-    <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
     <category term="AI" scheme="https://appworks-tips.com/tags/AI/"/>
+    <category term="Aviator" scheme="https://appworks-tips.com/tags/Aviator/"/>
     <id>https://appworks-tips.com/2025/12/05/293a_update_enterprise_world_v_pass/</id>
     <link href="https://appworks-tips.com/2025/12/05/293a_update_enterprise_world_v_pass/"/>
     <published>2025-12-05T12:00:00.000Z</published>
     <summary>Q4 is here again; We go through the keynotes of OT world (Nashville) 2025!</summary>
     <title>Update on OpenText World (LinkedIn edition 2025 Q4)</title>
-    <updated>2026-09-15T10:34:31.939Z</updated>
+    <updated>2026-09-21T15:27:40.917Z</updated>
   </entry>
   <entry>
     <author>
@@ -758,7 +775,7 @@
     <published>2025-11-28T12:00:00.000Z</published>
     <summary>Built your loosely coupled solutions via queueing mechanisms.</summary>
     <title>Discover (again!) the hidden power of JMS; Transform your world with queues</title>
-    <updated>2026-09-15T10:34:31.939Z</updated>
+    <updated>2026-09-21T15:27:40.917Z</updated>
   </entry>
   <entry>
     <author>
@@ -775,7 +792,7 @@
     <published>2025-11-21T12:00:00.000Z</published>
     <summary>The JMS connector (again) on the top of my backlog; This is the preparation phase.</summary>
     <title>Unleashing the power of RabbitMQ on RHEL; Prepare JMS like a pro</title>
-    <updated>2026-09-15T10:34:31.938Z</updated>
+    <updated>2026-09-21T15:27:40.916Z</updated>
   </entry>
   <entry>
     <author>
@@ -791,7 +808,7 @@
     <published>2025-11-14T12:00:00.000Z</published>
     <summary>Tired of unreadable timestamps? Here's the tweak that makes them readable.</summary>
     <title>This is how you fix the Log4J2’s Application_Server.xml timestamps that drive you crazy</title>
-    <updated>2026-09-15T10:34:31.938Z</updated>
+    <updated>2026-09-21T15:27:40.916Z</updated>
   </entry>
   <entry>
     <author>
@@ -807,7 +824,7 @@
     <published>2025-11-07T12:00:00.000Z</published>
     <summary>Stop or start them anytime with a simple service call.</summary>
     <title>Automate your life; Restart service containers instantly with automation</title>
-    <updated>2026-09-15T10:34:31.938Z</updated>
+    <updated>2026-09-21T15:27:40.916Z</updated>
   </entry>
   <entry>
     <author>
@@ -828,7 +845,7 @@
     <published>2025-10-31T12:00:00.000Z</published>
     <summary>Take full control — re-init with simple CLI calls.</summary>
     <title>Stop wasting time; Instantly create an organization (incl. service containers and DSO) with automation</title>
-    <updated>2026-09-15T10:34:31.937Z</updated>
+    <updated>2026-09-21T15:27:40.916Z</updated>
   </entry>
   <entry>
     <author>
@@ -846,7 +863,7 @@
     <published>2025-10-24T12:00:00.000Z</published>
     <summary>Let's review the new features with this new GA release!</summary>
     <title>OPA 25.4 is GA; Right on time in the first weekend of Q4...Excellent job</title>
-    <updated>2026-09-15T10:34:31.937Z</updated>
+    <updated>2026-09-21T15:27:40.915Z</updated>
   </entry>
   <entry>
     <author>
@@ -863,24 +880,6 @@
     <published>2025-10-17T12:00:00.000Z</published>
     <summary>The holy grail is found with an easy (unfamiliar) service call.</summary>
     <title>Your final destiny on the never-ending struggle to get a 'UserDN' value</title>
-    <updated>2026-09-15T10:34:31.937Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Antal Bos</name>
-      <email>contact@appworks-tips.com</email>
-    </author>
-    <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Layout" scheme="https://appworks-tips.com/tags/Layout/"/>
-    <category term="Configuration" scheme="https://appworks-tips.com/tags/Configuration/"/>
-    <category term="Godmode" scheme="https://appworks-tips.com/tags/Godmode/"/>
-    <id>https://appworks-tips.com/2025/10/10/287_the_power_of_a_godmode_tab/</id>
-    <link href="https://appworks-tips.com/2025/10/10/287_the_power_of_a_godmode_tab/"/>
-    <published>2025-10-10T12:00:00.000Z</published>
-    <summary>A feature flag that will increase your development speed drastically.</summary>
-    <title>Behold the power of a &quot;Godmode&quot; tab</title>
-    <updated>2026-09-15T10:34:31.936Z</updated>
+    <updated>2026-09-21T15:27:40.915Z</updated>
   </entry>
 </feed>
