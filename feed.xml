@@ -12,7 +12,7 @@
   <rights>All rights reserved 2026, Antal Bos</rights>
   <subtitle>Installments, thoughts, tricks and ideas</subtitle>
   <title>OpenText™ Process Automation Tips</title>
-  <updated>2026-09-24T05:37:09.062Z</updated>
+  <updated>2026-10-01T10:18:15.416Z</updated>
   <entry>
     <author>
       <name>Antal Bos</name>
@@ -21,8 +21,25 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Services" scheme="https://appworks-tips.com/tags/Services/"/>
+    <category term="List" scheme="https://appworks-tips.com/tags/List/"/>
+    <category term="MyCases" scheme="https://appworks-tips.com/tags/MyCases/"/>
+    <id>https://appworks-tips.com/2026/10/02/333_filter_my_created_cases_from_homepage/</id>
+    <link href="https://appworks-tips.com/2026/10/02/333_filter_my_created_cases_from_homepage/"/>
+    <published>2026-10-02T12:00:00.000Z</published>
+    <summary>Filter out the cases you created and keep the rest out of sight!</summary>
+    <title>Stop searching through everybody else's cases; Filter out your own created cases</title>
+    <updated>2026-10-01T10:18:15.416Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Antal Bos</name>
+      <email>contact@appworks-tips.com</email>
+    </author>
+    <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="N8N" scheme="https://appworks-tips.com/tags/N8N/"/>
+    <category term="Services" scheme="https://appworks-tips.com/tags/Services/"/>
     <id>https://appworks-tips.com/2026/09/25/332_three_ways_to_call_opa_from_n8n/</id>
     <link href="https://appworks-tips.com/2026/09/25/332_three_ways_to_call_opa_from_n8n/"/>
     <published>2026-09-25T12:00:00.000Z</published>
@@ -38,8 +55,8 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Services" scheme="https://appworks-tips.com/tags/Services/"/>
     <category term="N8N" scheme="https://appworks-tips.com/tags/N8N/"/>
+    <category term="Services" scheme="https://appworks-tips.com/tags/Services/"/>
     <id>https://appworks-tips.com/2026/09/18/331_play_with_n8n/</id>
     <link href="https://appworks-tips.com/2026/09/18/331_play_with_n8n/"/>
     <published>2026-09-18T12:00:00.000Z</published>
@@ -192,8 +209,8 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Users" scheme="https://appworks-tips.com/tags/Users/"/>
     <category term="OTDS" scheme="https://appworks-tips.com/tags/OTDS/"/>
+    <category term="Users" scheme="https://appworks-tips.com/tags/Users/"/>
     <id>https://appworks-tips.com/2026/07/17/322_delete_user_when_tasks_and_case_assigned/</id>
     <link href="https://appworks-tips.com/2026/07/17/322_delete_user_when_tasks_and_case_assigned/"/>
     <published>2026-07-17T12:00:00.000Z</published>
@@ -280,8 +297,8 @@
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="SOAP" scheme="https://appworks-tips.com/tags/SOAP/"/>
-    <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
     <category term="REST" scheme="https://appworks-tips.com/tags/REST/"/>
+    <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
     <id>https://appworks-tips.com/2026/06/12/317_convert_platform_rest_call_into_soap_call/</id>
     <link href="https://appworks-tips.com/2026/06/12/317_convert_platform_rest_call_into_soap_call/"/>
     <published>2026-06-12T12:00:00.000Z</published>
@@ -388,8 +405,8 @@
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="NGINX" scheme="https://appworks-tips.com/tags/NGINX/"/>
     <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
+    <category term="NGINX" scheme="https://appworks-tips.com/tags/NGINX/"/>
     <category term="SSL" scheme="https://appworks-tips.com/tags/SSL/"/>
     <category term="HTTPS" scheme="https://appworks-tips.com/tags/HTTPS/"/>
     <id>https://appworks-tips.com/2026/05/01/313_https_with_ssl_over_nginx/</id>
@@ -698,14 +715,14 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Random" scheme="https://appworks-tips.com/tags/Random/"/>
     <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
+    <category term="Random" scheme="https://appworks-tips.com/tags/Random/"/>
     <id>https://appworks-tips.com/2025/12/26/297_christmas_treatment/</id>
     <link href="https://appworks-tips.com/2025/12/26/297_christmas_treatment/"/>
     <published>2025-12-26T12:00:00.000Z</published>
     <summary>...and a happy new year!</summary>
     <title>Ho, Ho, Hoooooo; Merry Christmas</title>
-    <updated>2026-09-21T15:27:40.918Z</updated>
+    <updated>2026-09-29T11:55:47.410Z</updated>
   </entry>
   <entry>
     <author>
@@ -721,7 +738,7 @@
     <published>2025-12-19T12:00:00.000Z</published>
     <summary>Some things are just right under your nose, but unnoticeable until someone tells you about it.</summary>
     <title>Enrich your development eXperience with this development console update</title>
-    <updated>2026-09-21T15:27:40.918Z</updated>
+    <updated>2026-09-29T11:55:47.409Z</updated>
   </entry>
   <entry>
     <author>
@@ -738,7 +755,7 @@
     <published>2025-12-12T12:00:00.000Z</published>
     <summary>Repack your knowledge with this secret feature flag.</summary>
     <title>True maintenance happens over true logging; Prepare yourself for a tracing impact</title>
-    <updated>2026-09-21T15:27:40.918Z</updated>
+    <updated>2026-09-29T11:55:47.409Z</updated>
   </entry>
   <entry>
     <author>
@@ -757,7 +774,7 @@
     <published>2025-12-05T12:00:00.000Z</published>
     <summary>Q4 is here again; We go through the keynotes of OT world (Nashville) 2025!</summary>
     <title>Update on OpenText World (LinkedIn edition 2025 Q4)</title>
-    <updated>2026-09-21T15:27:40.917Z</updated>
+    <updated>2026-09-29T11:55:47.408Z</updated>
   </entry>
   <entry>
     <author>
@@ -775,7 +792,7 @@
     <published>2025-11-28T12:00:00.000Z</published>
     <summary>Built your loosely coupled solutions via queueing mechanisms.</summary>
     <title>Discover (again!) the hidden power of JMS; Transform your world with queues</title>
-    <updated>2026-09-21T15:27:40.917Z</updated>
+    <updated>2026-09-29T11:55:47.408Z</updated>
   </entry>
   <entry>
     <author>
@@ -792,7 +809,7 @@
     <published>2025-11-21T12:00:00.000Z</published>
     <summary>The JMS connector (again) on the top of my backlog; This is the preparation phase.</summary>
     <title>Unleashing the power of RabbitMQ on RHEL; Prepare JMS like a pro</title>
-    <updated>2026-09-21T15:27:40.916Z</updated>
+    <updated>2026-09-29T11:55:47.407Z</updated>
   </entry>
   <entry>
     <author>
@@ -808,7 +825,7 @@
     <published>2025-11-14T12:00:00.000Z</published>
     <summary>Tired of unreadable timestamps? Here's the tweak that makes them readable.</summary>
     <title>This is how you fix the Log4J2’s Application_Server.xml timestamps that drive you crazy</title>
-    <updated>2026-09-21T15:27:40.916Z</updated>
+    <updated>2026-09-29T11:55:47.406Z</updated>
   </entry>
   <entry>
     <author>
@@ -824,7 +841,7 @@
     <published>2025-11-07T12:00:00.000Z</published>
     <summary>Stop or start them anytime with a simple service call.</summary>
     <title>Automate your life; Restart service containers instantly with automation</title>
-    <updated>2026-09-21T15:27:40.916Z</updated>
+    <updated>2026-09-29T11:55:47.406Z</updated>
   </entry>
   <entry>
     <author>
@@ -845,7 +862,7 @@
     <published>2025-10-31T12:00:00.000Z</published>
     <summary>Take full control — re-init with simple CLI calls.</summary>
     <title>Stop wasting time; Instantly create an organization (incl. service containers and DSO) with automation</title>
-    <updated>2026-09-21T15:27:40.916Z</updated>
+    <updated>2026-09-29T11:55:47.406Z</updated>
   </entry>
   <entry>
     <author>
@@ -863,23 +880,6 @@
     <published>2025-10-24T12:00:00.000Z</published>
     <summary>Let's review the new features with this new GA release!</summary>
     <title>OPA 25.4 is GA; Right on time in the first weekend of Q4...Excellent job</title>
-    <updated>2026-09-21T15:27:40.915Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Antal Bos</name>
-      <email>contact@appworks-tips.com</email>
-    </author>
-    <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Service" scheme="https://appworks-tips.com/tags/Service/"/>
-    <category term="UserDN" scheme="https://appworks-tips.com/tags/UserDN/"/>
-    <id>https://appworks-tips.com/2025/10/17/288_get_userdn_for_person_user_entity/</id>
-    <link href="https://appworks-tips.com/2025/10/17/288_get_userdn_for_person_user_entity/"/>
-    <published>2025-10-17T12:00:00.000Z</published>
-    <summary>The holy grail is found with an easy (unfamiliar) service call.</summary>
-    <title>Your final destiny on the never-ending struggle to get a 'UserDN' value</title>
-    <updated>2026-09-21T15:27:40.915Z</updated>
+    <updated>2026-09-29T11:55:47.405Z</updated>
   </entry>
 </feed>
