@@ -1,24 +1,4 @@
 $(function() {
-    $("form[name='hosting']").validate({
-        rules: {
-            "kZYzubjXZ1": "required",
-            "DU7uu8Hd1B": "required",
-            "waY3MUqJDo": "required",
-            "OTyYwKXWRE": {
-                required: true,
-                email: true
-            }
-        },
-        messages: {
-            "kZYzubjXZ1": "Please enter your first name",
-            "DU7uu8Hd1B": "Please enter your last name",
-            "waY3MUqJDo": "Please enter your wishes",
-            "OTyYwKXWRE": "Please enter a valid email address"
-        },
-        submitHandler: function(form) {
-            form.submit();
-        }
-    });
 
     $("form[name='download']").validate({
         rules: {

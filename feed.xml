@@ -55,8 +55,8 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="N8N" scheme="https://appworks-tips.com/tags/N8N/"/>
     <category term="Services" scheme="https://appworks-tips.com/tags/Services/"/>
+    <category term="N8N" scheme="https://appworks-tips.com/tags/N8N/"/>
     <id>https://appworks-tips.com/2026/09/25/332_three_ways_to_call_opa_from_n8n/</id>
     <link href="https://appworks-tips.com/2026/09/25/332_three_ways_to_call_opa_from_n8n/"/>
     <published>2026-09-25T12:00:00.000Z</published>
@@ -72,8 +72,8 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="N8N" scheme="https://appworks-tips.com/tags/N8N/"/>
     <category term="Services" scheme="https://appworks-tips.com/tags/Services/"/>
+    <category term="N8N" scheme="https://appworks-tips.com/tags/N8N/"/>
     <id>https://appworks-tips.com/2026/09/18/331_play_with_n8n/</id>
     <link href="https://appworks-tips.com/2026/09/18/331_play_with_n8n/"/>
     <published>2026-09-18T12:00:00.000Z</published>
@@ -294,8 +294,8 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Webservice" scheme="https://appworks-tips.com/tags/Webservice/"/>
     <category term="SOAP" scheme="https://appworks-tips.com/tags/SOAP/"/>
+    <category term="Webservice" scheme="https://appworks-tips.com/tags/Webservice/"/>
     <category term="Mocking" scheme="https://appworks-tips.com/tags/Mocking/"/>
     <category term="REST" scheme="https://appworks-tips.com/tags/REST/"/>
     <id>https://appworks-tips.com/2026/06/19/318_mock_soap_services_with_headless_wiremock/</id>
@@ -314,8 +314,8 @@
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="SOAP" scheme="https://appworks-tips.com/tags/SOAP/"/>
-    <category term="REST" scheme="https://appworks-tips.com/tags/REST/"/>
     <category term="WebService" scheme="https://appworks-tips.com/tags/WebService/"/>
+    <category term="REST" scheme="https://appworks-tips.com/tags/REST/"/>
     <id>https://appworks-tips.com/2026/06/12/317_convert_platform_rest_call_into_soap_call/</id>
     <link href="https://appworks-tips.com/2026/06/12/317_convert_platform_rest_call_into_soap_call/"/>
     <published>2026-06-12T12:00:00.000Z</published>
@@ -347,10 +347,10 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
+    <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
     <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     <id>https://appworks-tips.com/2026/05/29/315b_update_on_26_2/</id>
     <link href="https://appworks-tips.com/2026/05/29/315b_update_on_26_2/"/>
@@ -439,9 +439,9 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
+    <category term="TomEE" scheme="https://appworks-tips.com/tags/TomEE/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="TomEE" scheme="https://appworks-tips.com/tags/TomEE/"/>
     <category term="Security" scheme="https://appworks-tips.com/tags/Security/"/>
     <category term="SSL" scheme="https://appworks-tips.com/tags/SSL/"/>
     <category term="HTTPS" scheme="https://appworks-tips.com/tags/HTTPS/"/>
@@ -609,10 +609,10 @@
       <email>contact@appworks-tips.com</email>
     </author>
     <category term="Release" scheme="https://appworks-tips.com/categories/Release/"/>
+    <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
+    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Installation" scheme="https://appworks-tips.com/tags/Installation/"/>
-    <category term="VM" scheme="https://appworks-tips.com/tags/VM/"/>
     <category term="Release" scheme="https://appworks-tips.com/tags/Release/"/>
     <id>https://appworks-tips.com/2026/02/13/302a_update_on_26_1/</id>
     <link href="https://appworks-tips.com/2026/02/13/302a_update_on_26_1/"/>
@@ -681,8 +681,8 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
     <category term="Search" scheme="https://appworks-tips.com/tags/Search/"/>
+    <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
     <id>https://appworks-tips.com/2026/01/16/299_simple_search_with_third_party_lib/</id>
     <link href="https://appworks-tips.com/2026/01/16/299_simple_search_with_third_party_lib/"/>
     <published>2026-01-16T12:00:00.000Z</published>
@@ -732,8 +732,8 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
     <category term="Random" scheme="https://appworks-tips.com/tags/Random/"/>
+    <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
     <id>https://appworks-tips.com/2025/12/26/297_christmas_treatment/</id>
     <link href="https://appworks-tips.com/2025/12/26/297_christmas_treatment/"/>
     <published>2025-12-26T12:00:00.000Z</published>
