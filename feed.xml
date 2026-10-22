@@ -12,7 +12,24 @@
   <rights>All rights reserved 2026, Antal Bos</rights>
   <subtitle>Installments, thoughts, tricks and ideas</subtitle>
   <title>OpenText™ Process Automation Tips</title>
-  <updated>2026-10-14T20:11:43.519Z</updated>
+  <updated>2026-10-22T12:09:08.112Z</updated>
+  <entry>
+    <author>
+      <name>Antal Bos</name>
+      <email>contact@appworks-tips.com</email>
+    </author>
+    <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
+    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
+    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
+    <category term="BIRT" scheme="https://appworks-tips.com/tags/BIRT/"/>
+    <category term="Report" scheme="https://appworks-tips.com/tags/Report/"/>
+    <id>https://appworks-tips.com/2026/10/23/336_bring_alive_birt_connector/</id>
+    <link href="https://appworks-tips.com/2026/10/23/336_bring_alive_birt_connector/"/>
+    <published>2026-10-23T12:00:00.000Z</published>
+    <summary>Be amazed what this tool can do for your organization!</summary>
+    <title>It's alive; is it a bird? no, it's the enablement of the BIRT-connector</title>
+    <updated>2026-10-22T12:09:08.112Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Antal Bos</name>
@@ -861,21 +878,5 @@
     <summary>Tired of unreadable timestamps? Here's the tweak that makes them readable.</summary>
     <title>This is how you fix the Log4J2’s Application_Server.xml timestamps that drive you crazy</title>
     <updated>2026-10-14T20:22:04.899Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Antal Bos</name>
-      <email>contact@appworks-tips.com</email>
-    </author>
-    <category term="Management" scheme="https://appworks-tips.com/categories/Management/"/>
-    <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
-    <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="ServiceContainer" scheme="https://appworks-tips.com/tags/ServiceContainer/"/>
-    <id>https://appworks-tips.com/2025/11/07/290_restart_service_container_from_soap_call/</id>
-    <link href="https://appworks-tips.com/2025/11/07/290_restart_service_container_from_soap_call/"/>
-    <published>2025-11-07T12:00:00.000Z</published>
-    <summary>Stop or start them anytime with a simple service call.</summary>
-    <title>Automate your life; Restart service containers instantly with automation</title>
-    <updated>2026-10-14T20:22:04.898Z</updated>
   </entry>
 </feed>
