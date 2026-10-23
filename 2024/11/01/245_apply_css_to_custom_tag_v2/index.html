@@ -73,12 +73,12 @@
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="God-Given CSS tricks; Instantly style your custom tags like a pro | OpenText™ Process Automation Tips">
 	<meta property="og:description" content="Just a practical example for easy consumption!">
-	<meta property="og:url" content="https://appworks-tips.com/2024/11/01/245_apply_css_to_custom_tag/">
+	<meta property="og:url" content="https://appworks-tips.com/2024/11/01/245_apply_css_to_custom_tag_v2/">
 
 	
 	<meta property="article:published_time" content="2024-11-01T12:11:00+08:00"> 
 	<meta property="article:author" content="Antal Bos">
-	<meta property="article:published_first" content="OpenText™ Process Automation Tips, /2024/11/01/245_apply_css_to_custom_tag/">
+	<meta property="article:published_first" content="OpenText™ Process Automation Tips, /2024/11/01/245_apply_css_to_custom_tag_v2/">
 	
 <link rel="alternate" href="/feed.xml" title="OpenText™ Process Automation Tips" type="application/atom+xml">
 </head>
@@ -384,7 +384,7 @@
         </header>
         <article class="post-full ">
             
-            <figure class="post-full-image" style="background-image: url(/images/posts/2024/245_apply_css_to_custom_tag/feature_tag.webp)">
+            <figure class="post-full-image" style="background-image: url(/images/posts/2024/245_apply_css_to_custom_tag_v2/feature_tag.webp)">
             </figure>
             
             <section class="post-full-content">
@@ -395,7 +395,7 @@
 <hr>
 <p><strong>Let’s get right into it…</strong></p>
 <p>Let’s assume you have a feature rich ‘Case’ entity with a full range of building blocks applied. Like this:</p>
-<p><img alt="csstag_001" class="post-img b-lazy" href="/images/posts/2024/245_apply_css_to_custom_tag/245_apply_css_to_custom_tag_1725375259.png" data-src="/images/posts/2024/245_apply_css_to_custom_tag/245_apply_css_to_custom_tag_1725375259.png"></p>
+<p><img alt="csstag_001" class="post-img b-lazy" href="/images/posts/2024/245_apply_css_to_custom_tag_v2/245_apply_css_to_custom_tag_v2_1725375259.png" data-src="/images/posts/2024/245_apply_css_to_custom_tag_v2/245_apply_css_to_custom_tag_v2_1725375259.png"></p>
 <blockquote>
 <p>Notes to make it publishable:</p>
 <ul>
@@ -406,13 +406,13 @@
 <p>Hard to do? Have a comment below…</p>
 </blockquote>
 <p>To enrich the runtime UI with all the options possible, we update our default layout with all the extra relevant panels:</p>
-<p><img alt="csstag_002" class="post-img b-lazy" href="/images/posts/2024/245_apply_css_to_custom_tag/245_apply_css_to_custom_tag_1725375758.png" data-src="/images/posts/2024/245_apply_css_to_custom_tag/245_apply_css_to_custom_tag_1725375758.png"></p>
+<p><img alt="csstag_002" class="post-img b-lazy" href="/images/posts/2024/245_apply_css_to_custom_tag_v2/245_apply_css_to_custom_tag_v2_1725375758.png" data-src="/images/posts/2024/245_apply_css_to_custom_tag_v2/245_apply_css_to_custom_tag_v2_1725375758.png"></p>
 <p>Do a publication and create your first ‘Case’ instance in runtime. Well, so far so good! From that same runtime let’s say you want to have a different background color for your ‘Tasks’ actions? For this we start de developer tools <code>&lt;F12&gt;</code> where you can use the element selector tool on the header bar in the UI:</p>
-<p><img alt="csstag_003" class="post-img b-lazy" href="/images/posts/2024/245_apply_css_to_custom_tag/245_apply_css_to_custom_tag_1725376848.png" data-src="/images/posts/2024/245_apply_css_to_custom_tag/245_apply_css_to_custom_tag_1725376848.png"></p>
+<p><img alt="csstag_003" class="post-img b-lazy" href="/images/posts/2024/245_apply_css_to_custom_tag_v2/245_apply_css_to_custom_tag_v2_1725376848.png" data-src="/images/posts/2024/245_apply_css_to_custom_tag_v2/245_apply_css_to_custom_tag_v2_1725376848.png"></p>
 <p>Once selected, hit the <code>+</code> sign in the top right and update the new “inspector” style with this content:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.header-menu</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: darkcyan <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img alt="csstag_004" class="post-img b-lazy" href="/images/posts/2024/245_apply_css_to_custom_tag/245_apply_css_to_custom_tag_1725379394.png" data-src="/images/posts/2024/245_apply_css_to_custom_tag/245_apply_css_to_custom_tag_1725379394.png"></p>
+<p><img alt="csstag_004" class="post-img b-lazy" href="/images/posts/2024/245_apply_css_to_custom_tag_v2/245_apply_css_to_custom_tag_v2_1725379394.png" data-src="/images/posts/2024/245_apply_css_to_custom_tag_v2/245_apply_css_to_custom_tag_v2_1725379394.png"></p>
 <blockquote>
 <p>The “inspector” style is only for the current page&#x2F;session; After refresh it’s gone! So, when your element is fine, copy it into the CSS of your solution!</p>
 </blockquote>
@@ -426,7 +426,7 @@
 <p>All nice and advanced stuff; We’re learning here, but can we do better, and can we be smarter?<br>Yes, please! &#x1f917;</p>
 <p>…</p>
 <p>Go back into runtime and open the default layout of the entity. On the ‘Tasks’ panel, go to the properties of the panel, and add a CSS class name…AHA!</p>
-<p><img alt="csstag_005" class="post-img b-lazy" href="/images/posts/2024/245_apply_css_to_custom_tag/245_apply_css_to_custom_tag_1725381451.png" data-src="/images/posts/2024/245_apply_css_to_custom_tag/245_apply_css_to_custom_tag_1725381451.png"></p>
+<p><img alt="csstag_005" class="post-img b-lazy" href="/images/posts/2024/245_apply_css_to_custom_tag_v2/245_apply_css_to_custom_tag_v2_1725381451.png" data-src="/images/posts/2024/245_apply_css_to_custom_tag_v2/245_apply_css_to_custom_tag_v2_1725381451.png"></p>
 <p>Do a publication and see how this small update impacts the CSS from before:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">layout-panel<span class="selector-class">.customTasks</span> &gt; panel-parent-<span class="attribute">container</span> &gt; panel-<span class="attribute">container</span> &gt; <span class="selector-tag">div</span> &gt; results-<span class="attribute">grid</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-tag">div</span> &gt; <span class="selector-class">.header-menu</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: darkcyan <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 

@@ -330,8 +330,8 @@
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
     <category term="Webservice" scheme="https://appworks-tips.com/tags/Webservice/"/>
-    <category term="SOAP" scheme="https://appworks-tips.com/tags/SOAP/"/>
     <category term="Mocking" scheme="https://appworks-tips.com/tags/Mocking/"/>
+    <category term="SOAP" scheme="https://appworks-tips.com/tags/SOAP/"/>
     <category term="REST" scheme="https://appworks-tips.com/tags/REST/"/>
     <id>https://appworks-tips.com/2026/06/19/318_mock_soap_services_with_headless_wiremock/</id>
     <link href="https://appworks-tips.com/2026/06/19/318_mock_soap_services_with_headless_wiremock/"/>
@@ -716,8 +716,8 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
     <category term="Search" scheme="https://appworks-tips.com/tags/Search/"/>
+    <category term="Customization" scheme="https://appworks-tips.com/tags/Customization/"/>
     <id>https://appworks-tips.com/2026/01/16/299_simple_search_with_third_party_lib/</id>
     <link href="https://appworks-tips.com/2026/01/16/299_simple_search_with_third_party_lib/"/>
     <published>2026-01-16T12:00:00.000Z</published>
@@ -767,8 +767,8 @@
     <category term="Development" scheme="https://appworks-tips.com/categories/Development/"/>
     <category term="ProcessAutomation" scheme="https://appworks-tips.com/tags/ProcessAutomation/"/>
     <category term="OpenText" scheme="https://appworks-tips.com/tags/OpenText/"/>
-    <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
     <category term="Random" scheme="https://appworks-tips.com/tags/Random/"/>
+    <category term="CSS" scheme="https://appworks-tips.com/tags/CSS/"/>
     <id>https://appworks-tips.com/2025/12/26/297_christmas_treatment/</id>
     <link href="https://appworks-tips.com/2025/12/26/297_christmas_treatment/"/>
     <published>2025-12-26T12:00:00.000Z</published>
