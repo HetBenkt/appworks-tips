@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.27" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.24.0.v202603111104</property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">soapEndPoint</property>
+            <property name="id">4</property>
+            <expression name="value" type="javascript">params["SOAP_END_POINT"].value</expression>
+        </structure>
+        <structure>
+            <property name="name">connectionClass</property>
+            <property name="id">4</property>
+        </structure>
+        <structure>
+            <property name="name">connectionTimeOut</property>
+            <property name="id">4</property>
+        </structure>
+        <structure>
+            <property name="name">wsdlURI</property>
+            <property name="id">4</property>
+            <expression name="value" type="javascript">params["WSDL_URL"].value</expression>
+        </structure>
+        <structure>
+            <property name="name">driverClassPath</property>
+            <property name="id">4</property>
+        </structure>
+        <structure>
+            <property name="name">OdaConnProfileName</property>
+            <property name="id">4</property>
+        </structure>
+        <structure>
+            <property name="name">OdaConnProfileStorePath</property>
+            <property name="id">4</property>
+        </structure>
+    </list-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="WSDL_URL" id="5">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="SOAP_END_POINT" id="6">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.ws" name="opa_ws_get_all_process_models" id="4">
+            <property name="soapEndPoint">http://192.168.56.102:8080/home/opa_tips/com.eibus.web.soap.Gateway.wcp?SAMLart=e0pBVkEtQUVTL0dDTS9Ob1BhZGRpbmctUEJLREYyV2l0aEhtYWNTSEEyNTZ9VDNuyhdKWPGa7ThipcB4txXj57dcYz7sgREBuXAjH7I1UrFhtulrLny2v3ZChi2Gc570k7WXrJsqRMUptJi/NeV6ONzcSxQNZBoNU97S6ETWgqt+3RcURTPY5z4cZDA+NCGnhwYd0sws</property>
+            <property name="wsdlURI">http://192.168.56.102:8080/cordys/WSDLGateway.wcp?service=http%3A%2F%2Fschemas.cordys.com%2Fbpm%2Fdeployment%2F1.0/GetAllProcessModels&amp;organization=o%3Dopa_tips%2Ccn%3Dcordys%2Ccn%3DdefaultInst%2Co%3Dappworks-tips.com&amp;version=isv</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.ws.dataSet" name="opa_ds_get_all_process_models" id="7">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">Name</property>
+                    <expression name="expression">row["lastmodifiedby"] == null&#13;
+     ? ""&#13;
+     : row["lastmodifiedby"].split(",")[0].replace("cn=", "")</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">processname</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">processname</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">description</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">description</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">status</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">status</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lastmodifiedby</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">lastmodifiedby</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">lastmodifiedon</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">lastmodifiedon</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">runtimedocumentid</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">runtimedocumentid</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">processname</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">description</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">status</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">lastmodifiedby</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">lastmodifiedon</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">runtimedocumentid</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">opa_ws_get_all_process_models</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">processname</property>
+                    <property name="nativeName">processname</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">description</property>
+                    <property name="nativeName">description</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">status</property>
+                    <property name="nativeName">status</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">lastmodifiedby</property>
+                    <property name="nativeName">lastmodifiedby</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">lastmodifiedon</property>
+                    <property name="nativeName">lastmodifiedon</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">runtimedocumentid</property>
+                    <property name="nativeName">runtimedocumentid</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[<?xml version="1.0"?>
+<SOAP-ENV:Envelope
+xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Body>
+		<m:GetAllProcessModels xmlns:m="http://schemas.cordys.com/bpm/deployment/1.0">
+		</m:GetAllProcessModels>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>processname</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>processname</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>description</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>description</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>status</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>status</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>lastmodifiedby</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>lastmodifiedby</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>lastmodifiedon</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>lastmodifiedon</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>runtimedocumentid</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>runtimedocumentid</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>operationTrace</name>
+                    <value>GetAllProcessModelsService$-$GetAllProcessModelsPort$-$GetAllProcessModels</value>
+                </ex-property>
+                <ex-property>
+                    <name>xmlQueryText</name>
+                    <value>table0#-TNAME-#table0#:#[/SOAP-ENV:Envelope/SOAP-ENV:Body/GetAllProcessModelsResponse/data/tuple/old/bizprocess]#:#{processname;STRING;/processname},{description;STRING;/description},{status;STRING;/status},{lastmodifiedby;STRING;/lastmodifiedby},{lastmodifiedon;STRING;/lastmodifiedon},{runtimedocumentid;STRING;/runtimedocumentid}#:#&lt;"","http:%%schemas.cordys.com%bpm%deployment%1.0";"xsd","http:%%www.w3.org%2001%XMLSchema";"SOAP-ENC","http:%%schemas.xmlsoap.org%soap%encoding%";"m","http:%%schemas.cordys.com%bpm%deployment%1.0";"SOAP-ENV","http:%%schemas.xmlsoap.org%soap%envelope%";"xsi","http:%%www.w3.org%2001%XMLSchema-instance"></value>
+                </ex-property>
+                <ex-property>
+                    <name>xmlFileURI</name>
+                </ex-property>
+                <ex-property>
+                    <name>xsdFileURI</name>
+                </ex-property>
+                <ex-property>
+                    <name>ResponseSchema</name>
+                    <value>FromWSServer</value>
+                </ex-property>
+                <ex-property>
+                    <name>useSoapEndPoint</name>
+                    <value>true</value>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="8">
+            <property name="dataSet">opa_ds_get_all_process_models</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">processname</property>
+                    <text-property name="displayName">processname</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["processname"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">description</property>
+                    <text-property name="displayName">description</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["description"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">status</property>
+                    <text-property name="displayName">status</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["status"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lastmodifiedby</property>
+                    <text-property name="displayName">lastmodifiedby</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lastmodifiedby"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">lastmodifiedon</property>
+                    <text-property name="displayName">lastmodifiedon</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["lastmodifiedon"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">runtimedocumentid</property>
+                    <text-property name="displayName">runtimedocumentid</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["runtimedocumentid"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Name</property>
+                    <text-property name="displayName">Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="47"/>
+            <column id="48"/>
+            <column id="49"/>
+            <column id="50"/>
+            <column id="51"/>
+            <column id="52"/>
+            <column id="53"/>
+            <header>
+                <row id="9">
+                    <cell id="10">
+                        <label id="11">
+                            <text-property name="text">processname</text-property>
+                        </label>
+                    </cell>
+                    <cell id="12">
+                        <label id="13">
+                            <text-property name="text">description</text-property>
+                        </label>
+                    </cell>
+                    <cell id="14">
+                        <label id="15">
+                            <text-property name="text">status</text-property>
+                        </label>
+                    </cell>
+                    <cell id="16">
+                        <label id="17">
+                            <text-property name="text">lastmodifiedby</text-property>
+                        </label>
+                    </cell>
+                    <cell id="18">
+                        <label id="19">
+                            <text-property name="text">lastmodifiedon</text-property>
+                        </label>
+                    </cell>
+                    <cell id="20">
+                        <label id="21">
+                            <text-property name="text">runtimedocumentid</text-property>
+                        </label>
+                    </cell>
+                    <cell id="22">
+                        <label id="23">
+                            <text-property name="text">Name</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="24">
+                    <cell id="25">
+                        <data id="26">
+                            <property name="resultSetColumn">processname</property>
+                        </data>
+                    </cell>
+                    <cell id="27">
+                        <data id="28">
+                            <property name="resultSetColumn">description</property>
+                        </data>
+                    </cell>
+                    <cell id="29">
+                        <data id="30">
+                            <property name="resultSetColumn">status</property>
+                        </data>
+                    </cell>
+                    <cell id="31">
+                        <data id="32">
+                            <property name="resultSetColumn">lastmodifiedby</property>
+                        </data>
+                    </cell>
+                    <cell id="33">
+                        <data id="34">
+                            <property name="resultSetColumn">lastmodifiedon</property>
+                        </data>
+                    </cell>
+                    <cell id="35">
+                        <data id="36">
+                            <property name="resultSetColumn">runtimedocumentid</property>
+                        </data>
+                    </cell>
+                    <cell id="37">
+                        <data id="38">
+                            <property name="resultSetColumn">Name</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="39">
+                    <cell id="40"/>
+                    <cell id="41"/>
+                    <cell id="42"/>
+                    <cell id="43"/>
+                    <cell id="44"/>
+                    <cell id="45"/>
+                    <cell id="46"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>
